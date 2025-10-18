@@ -153,8 +153,8 @@ pub mod ccr;
 pub type Cr = crate::Reg<cr::CrSpec>;
 #[doc = "PWM Control Register. Enables PWM outputs and selects either single edge or double edge controlled PWM outputs."]
 pub mod cr;
-pub use Mr as Mr4;
 pub use mr as mr4;
+pub use Mr as Mr4;
 #[doc = "PCR (rw) register accessor: PWM Control Register. Enables PWM outputs and selects either single edge or double edge controlled PWM outputs.\n\nYou can [`read`](crate::Reg::read) this register and get [`pcr::R`]. You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`pcr::W`]. You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@pcr`] module"]
 #[doc(alias = "PCR")]
 pub type Pcr = crate::Reg<pcr::PcrSpec>;

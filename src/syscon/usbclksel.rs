@@ -5,7 +5,7 @@ pub type W = crate::W<UsbclkselSpec>;
 #[doc = "Selects the divide value for creating the USB clock from the selected PLL output. Only the values shown below can produce even number multiples of 48 MHz from the PLL. Warning: Improper setting of this value will result in incorrect operation of the USB interface. Only the main oscillator in conjunction with either PLL0 or PLL1 can provide a clock that meets USB accuracy and jitter specifications. Other values cannot produce the 48 MHz clock required for USB operation.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
-pub enum Enum {
+pub enum Usbdiv {
     #[doc = "0: The divider is turned off, no clock will be provided to the USB subsystem."]
     TheDividerIsTurne = 0,
     #[doc = "4: PLL0 output is divided by 4. PLL0 output must be 192 MHz."]
@@ -13,47 +13,47 @@ pub enum Enum {
     #[doc = "6: PLL0 output is divided by 6. PLL0 output must be 288 MHz."]
     Pll0OutputIsDivid = 6,
 }
-impl From<Enum> for u8 {
+impl From<Usbdiv> for u8 {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Usbdiv) -> Self {
         variant as _
     }
 }
-impl crate::FieldSpec for Enum {
+impl crate::FieldSpec for Usbdiv {
     type Ux = u8;
 }
-impl crate::IsEnum for Enum {}
+impl crate::IsEnum for Usbdiv {}
 #[doc = "Field `USBDIV` reader - Selects the divide value for creating the USB clock from the selected PLL output. Only the values shown below can produce even number multiples of 48 MHz from the PLL. Warning: Improper setting of this value will result in incorrect operation of the USB interface. Only the main oscillator in conjunction with either PLL0 or PLL1 can provide a clock that meets USB accuracy and jitter specifications. Other values cannot produce the 48 MHz clock required for USB operation."]
-pub type UsbdivR = crate::FieldReader<Enum>;
+pub type UsbdivR = crate::FieldReader<Usbdiv>;
 impl UsbdivR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Option<Enum> {
+    pub const fn variant(&self) -> Option<Usbdiv> {
         match self.bits {
-            0 => Some(Enum::TheDividerIsTurne),
-            4 => Some(Enum::Pll0OutputIsDivid),
-            6 => Some(Enum::Pll0OutputIsDivid),
+            0 => Some(Usbdiv::TheDividerIsTurne),
+            4 => Some(Usbdiv::Pll0OutputIsDivid),
+            6 => Some(Usbdiv::Pll0OutputIsDivid),
             _ => None,
         }
     }
     #[doc = "The divider is turned off, no clock will be provided to the USB subsystem."]
     #[inline(always)]
     pub fn is_the_divider_is_turne(&self) -> bool {
-        *self == Enum::TheDividerIsTurne
+        *self == Usbdiv::TheDividerIsTurne
     }
     #[doc = "PLL0 output is divided by 4. PLL0 output must be 192 MHz."]
     #[inline(always)]
     pub fn is_pll0_output_is_divid(&self) -> bool {
-        *self == Enum::Pll0OutputIsDivid
+        *self == Usbdiv::Pll0OutputIsDivid
     }
     #[doc = "PLL0 output is divided by 6. PLL0 output must be 288 MHz."]
     #[inline(always)]
     pub fn is_pll0_output_is_divid(&self) -> bool {
-        *self == Enum::Pll0OutputIsDivid
+        *self == Usbdiv::Pll0OutputIsDivid
     }
 }
 #[doc = "Field `USBDIV` writer - Selects the divide value for creating the USB clock from the selected PLL output. Only the values shown below can produce even number multiples of 48 MHz from the PLL. Warning: Improper setting of this value will result in incorrect operation of the USB interface. Only the main oscillator in conjunction with either PLL0 or PLL1 can provide a clock that meets USB accuracy and jitter specifications. Other values cannot produce the 48 MHz clock required for USB operation."]
-pub type UsbdivW<'a, REG> = crate::FieldWriter<'a, REG, 5, Enum>;
+pub type UsbdivW<'a, REG> = crate::FieldWriter<'a, REG, 5, Usbdiv>;
 impl<'a, REG> UsbdivW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -62,23 +62,23 @@ where
     #[doc = "The divider is turned off, no clock will be provided to the USB subsystem."]
     #[inline(always)]
     pub fn the_divider_is_turne(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::TheDividerIsTurne)
+        self.variant(Usbdiv::TheDividerIsTurne)
     }
     #[doc = "PLL0 output is divided by 4. PLL0 output must be 192 MHz."]
     #[inline(always)]
     pub fn pll0_output_is_divid(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Pll0OutputIsDivid)
+        self.variant(Usbdiv::Pll0OutputIsDivid)
     }
     #[doc = "PLL0 output is divided by 6. PLL0 output must be 288 MHz."]
     #[inline(always)]
     pub fn pll0_output_is_divid(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Pll0OutputIsDivid)
+        self.variant(Usbdiv::Pll0OutputIsDivid)
     }
 }
 #[doc = "Selects the input clock for the USB clock divider.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
-pub enum Enum {
+pub enum Usbsel {
     #[doc = "0: Sysclk is used as the input to the USB clock divider. When this clock is selected, the USB can be accessed by software but cannot perform USB functions."]
     SysclkIsUsedAsTh = 0,
     #[doc = "1: The output of the Main PLL is used as the input to the USB clock divider."]
@@ -86,47 +86,47 @@ pub enum Enum {
     #[doc = "2: The output of the Alt PLL is used as the input to the USB clock divider."]
     TheOutputOfTheAl = 2,
 }
-impl From<Enum> for u8 {
+impl From<Usbsel> for u8 {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Usbsel) -> Self {
         variant as _
     }
 }
-impl crate::FieldSpec for Enum {
+impl crate::FieldSpec for Usbsel {
     type Ux = u8;
 }
-impl crate::IsEnum for Enum {}
+impl crate::IsEnum for Usbsel {}
 #[doc = "Field `USBSEL` reader - Selects the input clock for the USB clock divider."]
-pub type UsbselR = crate::FieldReader<Enum>;
+pub type UsbselR = crate::FieldReader<Usbsel>;
 impl UsbselR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Option<Enum> {
+    pub const fn variant(&self) -> Option<Usbsel> {
         match self.bits {
-            0 => Some(Enum::SysclkIsUsedAsTh),
-            1 => Some(Enum::TheOutputOfTheMa),
-            2 => Some(Enum::TheOutputOfTheAl),
+            0 => Some(Usbsel::SysclkIsUsedAsTh),
+            1 => Some(Usbsel::TheOutputOfTheMa),
+            2 => Some(Usbsel::TheOutputOfTheAl),
             _ => None,
         }
     }
     #[doc = "Sysclk is used as the input to the USB clock divider. When this clock is selected, the USB can be accessed by software but cannot perform USB functions."]
     #[inline(always)]
     pub fn is_sysclk_is_used_as_th(&self) -> bool {
-        *self == Enum::SysclkIsUsedAsTh
+        *self == Usbsel::SysclkIsUsedAsTh
     }
     #[doc = "The output of the Main PLL is used as the input to the USB clock divider."]
     #[inline(always)]
     pub fn is_the_output_of_the_ma(&self) -> bool {
-        *self == Enum::TheOutputOfTheMa
+        *self == Usbsel::TheOutputOfTheMa
     }
     #[doc = "The output of the Alt PLL is used as the input to the USB clock divider."]
     #[inline(always)]
     pub fn is_the_output_of_the_al(&self) -> bool {
-        *self == Enum::TheOutputOfTheAl
+        *self == Usbsel::TheOutputOfTheAl
     }
 }
 #[doc = "Field `USBSEL` writer - Selects the input clock for the USB clock divider."]
-pub type UsbselW<'a, REG> = crate::FieldWriter<'a, REG, 2, Enum>;
+pub type UsbselW<'a, REG> = crate::FieldWriter<'a, REG, 2, Usbsel>;
 impl<'a, REG> UsbselW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -135,17 +135,17 @@ where
     #[doc = "Sysclk is used as the input to the USB clock divider. When this clock is selected, the USB can be accessed by software but cannot perform USB functions."]
     #[inline(always)]
     pub fn sysclk_is_used_as_th(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::SysclkIsUsedAsTh)
+        self.variant(Usbsel::SysclkIsUsedAsTh)
     }
     #[doc = "The output of the Main PLL is used as the input to the USB clock divider."]
     #[inline(always)]
     pub fn the_output_of_the_ma(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::TheOutputOfTheMa)
+        self.variant(Usbsel::TheOutputOfTheMa)
     }
     #[doc = "The output of the Alt PLL is used as the input to the USB clock divider."]
     #[inline(always)]
     pub fn the_output_of_the_al(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::TheOutputOfTheAl)
+        self.variant(Usbsel::TheOutputOfTheAl)
     }
 }
 impl R {

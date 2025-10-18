@@ -5,7 +5,7 @@ pub type W = crate::W<P1_17Spec>;
 #[doc = "Selects pin function for pin P1\\[17\\]\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
-pub enum Enum {
+pub enum Func {
     #[doc = "0: General purpose digital input/output pin."]
     P1_17 = 0,
     #[doc = "1: Ethernet MIIM data input and output."]
@@ -13,47 +13,47 @@ pub enum Enum {
     #[doc = "2: I2S receive master clock."]
     I2sRxMclk = 2,
 }
-impl From<Enum> for u8 {
+impl From<Func> for u8 {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Func) -> Self {
         variant as _
     }
 }
-impl crate::FieldSpec for Enum {
+impl crate::FieldSpec for Func {
     type Ux = u8;
 }
-impl crate::IsEnum for Enum {}
+impl crate::IsEnum for Func {}
 #[doc = "Field `FUNC` reader - Selects pin function for pin P1\\[17\\]"]
-pub type FuncR = crate::FieldReader<Enum>;
+pub type FuncR = crate::FieldReader<Func>;
 impl FuncR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Option<Enum> {
+    pub const fn variant(&self) -> Option<Func> {
         match self.bits {
-            0 => Some(Enum::P1_17),
-            1 => Some(Enum::EnetMdio),
-            2 => Some(Enum::I2sRxMclk),
+            0 => Some(Func::P1_17),
+            1 => Some(Func::EnetMdio),
+            2 => Some(Func::I2sRxMclk),
             _ => None,
         }
     }
     #[doc = "General purpose digital input/output pin."]
     #[inline(always)]
     pub fn is_p1_17(&self) -> bool {
-        *self == Enum::P1_17
+        *self == Func::P1_17
     }
     #[doc = "Ethernet MIIM data input and output."]
     #[inline(always)]
     pub fn is_enet_mdio(&self) -> bool {
-        *self == Enum::EnetMdio
+        *self == Func::EnetMdio
     }
     #[doc = "I2S receive master clock."]
     #[inline(always)]
     pub fn is_i2s_rx_mclk(&self) -> bool {
-        *self == Enum::I2sRxMclk
+        *self == Func::I2sRxMclk
     }
 }
 #[doc = "Field `FUNC` writer - Selects pin function for pin P1\\[17\\]"]
-pub type FuncW<'a, REG> = crate::FieldWriter<'a, REG, 3, Enum>;
+pub type FuncW<'a, REG> = crate::FieldWriter<'a, REG, 3, Func>;
 impl<'a, REG> FuncW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -62,23 +62,23 @@ where
     #[doc = "General purpose digital input/output pin."]
     #[inline(always)]
     pub fn p1_17(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::P1_17)
+        self.variant(Func::P1_17)
     }
     #[doc = "Ethernet MIIM data input and output."]
     #[inline(always)]
     pub fn enet_mdio(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::EnetMdio)
+        self.variant(Func::EnetMdio)
     }
     #[doc = "I2S receive master clock."]
     #[inline(always)]
     pub fn i2s_rx_mclk(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::I2sRxMclk)
+        self.variant(Func::I2sRxMclk)
     }
 }
 #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control).\n\nValue on reset: 2"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
-pub enum Enum {
+pub enum Mode {
     #[doc = "0: Inactive (no pull-down/pull-up resistor enabled)."]
     InactiveNoPullDo = 0,
     #[doc = "1: Pull-down resistor enabled."]
@@ -88,53 +88,53 @@ pub enum Enum {
     #[doc = "3: Repeater mode."]
     RepeaterMode_ = 3,
 }
-impl From<Enum> for u8 {
+impl From<Mode> for u8 {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Mode) -> Self {
         variant as _
     }
 }
-impl crate::FieldSpec for Enum {
+impl crate::FieldSpec for Mode {
     type Ux = u8;
 }
-impl crate::IsEnum for Enum {}
+impl crate::IsEnum for Mode {}
 #[doc = "Field `MODE` reader - Selects function mode (on-chip pull-up/pull-down resistor control)."]
-pub type ModeR = crate::FieldReader<Enum>;
+pub type ModeR = crate::FieldReader<Mode>;
 impl ModeR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Mode {
         match self.bits {
-            0 => Enum::InactiveNoPullDo,
-            1 => Enum::PullDownResistorE,
-            2 => Enum::PullUpResistorEna,
-            3 => Enum::RepeaterMode_,
+            0 => Mode::InactiveNoPullDo,
+            1 => Mode::PullDownResistorE,
+            2 => Mode::PullUpResistorEna,
+            3 => Mode::RepeaterMode_,
             _ => unreachable!(),
         }
     }
     #[doc = "Inactive (no pull-down/pull-up resistor enabled)."]
     #[inline(always)]
     pub fn is_inactive_no_pull_do(&self) -> bool {
-        *self == Enum::InactiveNoPullDo
+        *self == Mode::InactiveNoPullDo
     }
     #[doc = "Pull-down resistor enabled."]
     #[inline(always)]
     pub fn is_pull_down_resistor_e(&self) -> bool {
-        *self == Enum::PullDownResistorE
+        *self == Mode::PullDownResistorE
     }
     #[doc = "Pull-up resistor enabled."]
     #[inline(always)]
     pub fn is_pull_up_resistor_ena(&self) -> bool {
-        *self == Enum::PullUpResistorEna
+        *self == Mode::PullUpResistorEna
     }
     #[doc = "Repeater mode."]
     #[inline(always)]
     pub fn is_repeater_mode_(&self) -> bool {
-        *self == Enum::RepeaterMode_
+        *self == Mode::RepeaterMode_
     }
 }
 #[doc = "Field `MODE` writer - Selects function mode (on-chip pull-up/pull-down resistor control)."]
-pub type ModeW<'a, REG> = crate::FieldWriter<'a, REG, 2, Enum, crate::Safe>;
+pub type ModeW<'a, REG> = crate::FieldWriter<'a, REG, 2, Mode, crate::Safe>;
 impl<'a, REG> ModeW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -143,62 +143,62 @@ where
     #[doc = "Inactive (no pull-down/pull-up resistor enabled)."]
     #[inline(always)]
     pub fn inactive_no_pull_do(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::InactiveNoPullDo)
+        self.variant(Mode::InactiveNoPullDo)
     }
     #[doc = "Pull-down resistor enabled."]
     #[inline(always)]
     pub fn pull_down_resistor_e(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::PullDownResistorE)
+        self.variant(Mode::PullDownResistorE)
     }
     #[doc = "Pull-up resistor enabled."]
     #[inline(always)]
     pub fn pull_up_resistor_ena(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::PullUpResistorEna)
+        self.variant(Mode::PullUpResistorEna)
     }
     #[doc = "Repeater mode."]
     #[inline(always)]
     pub fn repeater_mode_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::RepeaterMode_)
+        self.variant(Mode::RepeaterMode_)
     }
 }
 #[doc = "Hysteresis.\n\nValue on reset: 1"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Hys {
     #[doc = "0: Disable."]
     Disable_ = 0,
     #[doc = "1: Enable."]
     Enable_ = 1,
 }
-impl From<Enum> for bool {
+impl From<Hys> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Hys) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `HYS` reader - Hysteresis."]
-pub type HysR = crate::BitReader<Enum>;
+pub type HysR = crate::BitReader<Hys>;
 impl HysR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Hys {
         match self.bits {
-            false => Enum::Disable_,
-            true => Enum::Enable_,
+            false => Hys::Disable_,
+            true => Hys::Enable_,
         }
     }
     #[doc = "Disable."]
     #[inline(always)]
     pub fn is_disable_(&self) -> bool {
-        *self == Enum::Disable_
+        *self == Hys::Disable_
     }
     #[doc = "Enable."]
     #[inline(always)]
     pub fn is_enable_(&self) -> bool {
-        *self == Enum::Enable_
+        *self == Hys::Enable_
     }
 }
 #[doc = "Field `HYS` writer - Hysteresis."]
-pub type HysW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type HysW<'a, REG> = crate::BitWriter<'a, REG, Hys>;
 impl<'a, REG> HysW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -206,52 +206,52 @@ where
     #[doc = "Disable."]
     #[inline(always)]
     pub fn disable_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Disable_)
+        self.variant(Hys::Disable_)
     }
     #[doc = "Enable."]
     #[inline(always)]
     pub fn enable_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Enable_)
+        self.variant(Hys::Enable_)
     }
 }
 #[doc = "Invert input\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Inv {
     #[doc = "0: Input not inverted (HIGH on pin reads as 1, LOW on pin reads as 0)."]
     InputNotInverted_ = 0,
     #[doc = "1: Input inverted (HIGH on pin reads as 0, LOW on pin reads as 1)."]
     InputInvertedHigh = 1,
 }
-impl From<Enum> for bool {
+impl From<Inv> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Inv) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `INV` reader - Invert input"]
-pub type InvR = crate::BitReader<Enum>;
+pub type InvR = crate::BitReader<Inv>;
 impl InvR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Inv {
         match self.bits {
-            false => Enum::InputNotInverted_,
-            true => Enum::InputInvertedHigh,
+            false => Inv::InputNotInverted_,
+            true => Inv::InputInvertedHigh,
         }
     }
     #[doc = "Input not inverted (HIGH on pin reads as 1, LOW on pin reads as 0)."]
     #[inline(always)]
     pub fn is_input_not_inverted_(&self) -> bool {
-        *self == Enum::InputNotInverted_
+        *self == Inv::InputNotInverted_
     }
     #[doc = "Input inverted (HIGH on pin reads as 0, LOW on pin reads as 1)."]
     #[inline(always)]
     pub fn is_input_inverted_high(&self) -> bool {
-        *self == Enum::InputInvertedHigh
+        *self == Inv::InputInvertedHigh
     }
 }
 #[doc = "Field `INV` writer - Invert input"]
-pub type InvW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type InvW<'a, REG> = crate::BitWriter<'a, REG, Inv>;
 impl<'a, REG> InvW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -259,52 +259,52 @@ where
     #[doc = "Input not inverted (HIGH on pin reads as 1, LOW on pin reads as 0)."]
     #[inline(always)]
     pub fn input_not_inverted_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::InputNotInverted_)
+        self.variant(Inv::InputNotInverted_)
     }
     #[doc = "Input inverted (HIGH on pin reads as 0, LOW on pin reads as 1)."]
     #[inline(always)]
     pub fn input_inverted_high(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::InputInvertedHigh)
+        self.variant(Inv::InputInvertedHigh)
     }
 }
 #[doc = "Driver slew rate\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Slew {
     #[doc = "0: Standard mode, output slew rate control is enabled. More outputs can be switched simultaneously."]
     Standard = 0,
     #[doc = "1: Fast mode, slew rate control is disabled. Refer to the appropriate specific device data sheet for details."]
     Fast = 1,
 }
-impl From<Enum> for bool {
+impl From<Slew> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Slew) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `SLEW` reader - Driver slew rate"]
-pub type SlewR = crate::BitReader<Enum>;
+pub type SlewR = crate::BitReader<Slew>;
 impl SlewR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Slew {
         match self.bits {
-            false => Enum::Standard,
-            true => Enum::Fast,
+            false => Slew::Standard,
+            true => Slew::Fast,
         }
     }
     #[doc = "Standard mode, output slew rate control is enabled. More outputs can be switched simultaneously."]
     #[inline(always)]
     pub fn is_standard(&self) -> bool {
-        *self == Enum::Standard
+        *self == Slew::Standard
     }
     #[doc = "Fast mode, slew rate control is disabled. Refer to the appropriate specific device data sheet for details."]
     #[inline(always)]
     pub fn is_fast(&self) -> bool {
-        *self == Enum::Fast
+        *self == Slew::Fast
     }
 }
 #[doc = "Field `SLEW` writer - Driver slew rate"]
-pub type SlewW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type SlewW<'a, REG> = crate::BitWriter<'a, REG, Slew>;
 impl<'a, REG> SlewW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -312,52 +312,52 @@ where
     #[doc = "Standard mode, output slew rate control is enabled. More outputs can be switched simultaneously."]
     #[inline(always)]
     pub fn standard(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Standard)
+        self.variant(Slew::Standard)
     }
     #[doc = "Fast mode, slew rate control is disabled. Refer to the appropriate specific device data sheet for details."]
     #[inline(always)]
     pub fn fast(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Fast)
+        self.variant(Slew::Fast)
     }
 }
 #[doc = "Open-drain mode.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Od {
     #[doc = "0: Disable."]
     Disable_ = 0,
     #[doc = "1: Open-drain mode enabled. This is not a true open-drain mode. Input cannot be pulled up above VDD."]
     OpenDrainModeEnab = 1,
 }
-impl From<Enum> for bool {
+impl From<Od> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Od) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `OD` reader - Open-drain mode."]
-pub type OdR = crate::BitReader<Enum>;
+pub type OdR = crate::BitReader<Od>;
 impl OdR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Od {
         match self.bits {
-            false => Enum::Disable_,
-            true => Enum::OpenDrainModeEnab,
+            false => Od::Disable_,
+            true => Od::OpenDrainModeEnab,
         }
     }
     #[doc = "Disable."]
     #[inline(always)]
     pub fn is_disable_(&self) -> bool {
-        *self == Enum::Disable_
+        *self == Od::Disable_
     }
     #[doc = "Open-drain mode enabled. This is not a true open-drain mode. Input cannot be pulled up above VDD."]
     #[inline(always)]
     pub fn is_open_drain_mode_enab(&self) -> bool {
-        *self == Enum::OpenDrainModeEnab
+        *self == Od::OpenDrainModeEnab
     }
 }
 #[doc = "Field `OD` writer - Open-drain mode."]
-pub type OdW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type OdW<'a, REG> = crate::BitWriter<'a, REG, Od>;
 impl<'a, REG> OdW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -365,12 +365,12 @@ where
     #[doc = "Disable."]
     #[inline(always)]
     pub fn disable_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Disable_)
+        self.variant(Od::Disable_)
     }
     #[doc = "Open-drain mode enabled. This is not a true open-drain mode. Input cannot be pulled up above VDD."]
     #[inline(always)]
     pub fn open_drain_mode_enab(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::OpenDrainModeEnab)
+        self.variant(Od::OpenDrainModeEnab)
     }
 }
 impl R {

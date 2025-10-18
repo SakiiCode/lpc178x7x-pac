@@ -2,758 +2,758 @@
 pub type R = crate::R<CntconSpec>;
 #[doc = "Counter 0 rising edge mode, channel 0.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Tc0mci0Re {
     #[doc = "0: A rising edge on MCI0 does not affect counter 0."]
     ARisingEdgeOnMci = 0,
     #[doc = "1: If MODE0 is 1, counter 0 advances on a rising edge on MCI0."]
     Rising = 1,
 }
-impl From<Enum> for bool {
+impl From<Tc0mci0Re> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Tc0mci0Re) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `TC0MCI0_RE` reader - Counter 0 rising edge mode, channel 0."]
-pub type Tc0mci0ReR = crate::BitReader<Enum>;
+pub type Tc0mci0ReR = crate::BitReader<Tc0mci0Re>;
 impl Tc0mci0ReR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Tc0mci0Re {
         match self.bits {
-            false => Enum::ARisingEdgeOnMci,
-            true => Enum::Rising,
+            false => Tc0mci0Re::ARisingEdgeOnMci,
+            true => Tc0mci0Re::Rising,
         }
     }
     #[doc = "A rising edge on MCI0 does not affect counter 0."]
     #[inline(always)]
     pub fn is_a_rising_edge_on_mci(&self) -> bool {
-        *self == Enum::ARisingEdgeOnMci
+        *self == Tc0mci0Re::ARisingEdgeOnMci
     }
     #[doc = "If MODE0 is 1, counter 0 advances on a rising edge on MCI0."]
     #[inline(always)]
     pub fn is_rising(&self) -> bool {
-        *self == Enum::Rising
+        *self == Tc0mci0Re::Rising
     }
 }
 #[doc = "Counter 0 falling edge mode, channel 0.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Tc0mci0Fe {
     #[doc = "0: A falling edge on MCI0 does not affect counter 0."]
     AFallingEdgeOnMc = 0,
     #[doc = "1: If MODE0 is 1, counter 0 advances on a falling edge on MCI0."]
     Falling = 1,
 }
-impl From<Enum> for bool {
+impl From<Tc0mci0Fe> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Tc0mci0Fe) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `TC0MCI0_FE` reader - Counter 0 falling edge mode, channel 0."]
-pub type Tc0mci0FeR = crate::BitReader<Enum>;
+pub type Tc0mci0FeR = crate::BitReader<Tc0mci0Fe>;
 impl Tc0mci0FeR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Tc0mci0Fe {
         match self.bits {
-            false => Enum::AFallingEdgeOnMc,
-            true => Enum::Falling,
+            false => Tc0mci0Fe::AFallingEdgeOnMc,
+            true => Tc0mci0Fe::Falling,
         }
     }
     #[doc = "A falling edge on MCI0 does not affect counter 0."]
     #[inline(always)]
     pub fn is_a_falling_edge_on_mc(&self) -> bool {
-        *self == Enum::AFallingEdgeOnMc
+        *self == Tc0mci0Fe::AFallingEdgeOnMc
     }
     #[doc = "If MODE0 is 1, counter 0 advances on a falling edge on MCI0."]
     #[inline(always)]
     pub fn is_falling(&self) -> bool {
-        *self == Enum::Falling
+        *self == Tc0mci0Fe::Falling
     }
 }
 #[doc = "Counter 0 rising edge mode, channel 1.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Tc0mci1Re {
     #[doc = "0: A rising edge on MCI1 does not affect counter 0."]
     ARisingEdgeOnMci = 0,
     #[doc = "1: If MODE0 is 1, counter 0 advances on a rising edge on MCI1."]
     Rising = 1,
 }
-impl From<Enum> for bool {
+impl From<Tc0mci1Re> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Tc0mci1Re) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `TC0MCI1_RE` reader - Counter 0 rising edge mode, channel 1."]
-pub type Tc0mci1ReR = crate::BitReader<Enum>;
+pub type Tc0mci1ReR = crate::BitReader<Tc0mci1Re>;
 impl Tc0mci1ReR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Tc0mci1Re {
         match self.bits {
-            false => Enum::ARisingEdgeOnMci,
-            true => Enum::Rising,
+            false => Tc0mci1Re::ARisingEdgeOnMci,
+            true => Tc0mci1Re::Rising,
         }
     }
     #[doc = "A rising edge on MCI1 does not affect counter 0."]
     #[inline(always)]
     pub fn is_a_rising_edge_on_mci(&self) -> bool {
-        *self == Enum::ARisingEdgeOnMci
+        *self == Tc0mci1Re::ARisingEdgeOnMci
     }
     #[doc = "If MODE0 is 1, counter 0 advances on a rising edge on MCI1."]
     #[inline(always)]
     pub fn is_rising(&self) -> bool {
-        *self == Enum::Rising
+        *self == Tc0mci1Re::Rising
     }
 }
 #[doc = "Counter 0 falling edge mode, channel 1.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Tc0mci1Fe {
     #[doc = "0: A falling edge on MCI1 does not affect counter 0."]
     AFallingEdgeOnMc = 0,
     #[doc = "1: If MODE0 is 1, counter 0 advances on a falling edge on MCI1."]
     Falling = 1,
 }
-impl From<Enum> for bool {
+impl From<Tc0mci1Fe> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Tc0mci1Fe) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `TC0MCI1_FE` reader - Counter 0 falling edge mode, channel 1."]
-pub type Tc0mci1FeR = crate::BitReader<Enum>;
+pub type Tc0mci1FeR = crate::BitReader<Tc0mci1Fe>;
 impl Tc0mci1FeR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Tc0mci1Fe {
         match self.bits {
-            false => Enum::AFallingEdgeOnMc,
-            true => Enum::Falling,
+            false => Tc0mci1Fe::AFallingEdgeOnMc,
+            true => Tc0mci1Fe::Falling,
         }
     }
     #[doc = "A falling edge on MCI1 does not affect counter 0."]
     #[inline(always)]
     pub fn is_a_falling_edge_on_mc(&self) -> bool {
-        *self == Enum::AFallingEdgeOnMc
+        *self == Tc0mci1Fe::AFallingEdgeOnMc
     }
     #[doc = "If MODE0 is 1, counter 0 advances on a falling edge on MCI1."]
     #[inline(always)]
     pub fn is_falling(&self) -> bool {
-        *self == Enum::Falling
+        *self == Tc0mci1Fe::Falling
     }
 }
 #[doc = "Counter 0 rising edge mode, channel 2.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Tc0mci2Re {
     #[doc = "0: A rising edge on MCI0 does not affect counter 0."]
     ARisingEdgeOnMci = 0,
     #[doc = "1: If MODE0 is 1, counter 0 advances on a rising edge on MCI2."]
     Rising = 1,
 }
-impl From<Enum> for bool {
+impl From<Tc0mci2Re> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Tc0mci2Re) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `TC0MCI2_RE` reader - Counter 0 rising edge mode, channel 2."]
-pub type Tc0mci2ReR = crate::BitReader<Enum>;
+pub type Tc0mci2ReR = crate::BitReader<Tc0mci2Re>;
 impl Tc0mci2ReR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Tc0mci2Re {
         match self.bits {
-            false => Enum::ARisingEdgeOnMci,
-            true => Enum::Rising,
+            false => Tc0mci2Re::ARisingEdgeOnMci,
+            true => Tc0mci2Re::Rising,
         }
     }
     #[doc = "A rising edge on MCI0 does not affect counter 0."]
     #[inline(always)]
     pub fn is_a_rising_edge_on_mci(&self) -> bool {
-        *self == Enum::ARisingEdgeOnMci
+        *self == Tc0mci2Re::ARisingEdgeOnMci
     }
     #[doc = "If MODE0 is 1, counter 0 advances on a rising edge on MCI2."]
     #[inline(always)]
     pub fn is_rising(&self) -> bool {
-        *self == Enum::Rising
+        *self == Tc0mci2Re::Rising
     }
 }
 #[doc = "Counter 0 falling edge mode, channel 2.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Tc0mci2Fe {
     #[doc = "0: A falling edge on MCI0 does not affect counter 0."]
     AFallingEdgeOnMc = 0,
     #[doc = "1: If MODE0 is 1, counter 0 advances on a falling edge on MCI2."]
     Fallling = 1,
 }
-impl From<Enum> for bool {
+impl From<Tc0mci2Fe> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Tc0mci2Fe) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `TC0MCI2_FE` reader - Counter 0 falling edge mode, channel 2."]
-pub type Tc0mci2FeR = crate::BitReader<Enum>;
+pub type Tc0mci2FeR = crate::BitReader<Tc0mci2Fe>;
 impl Tc0mci2FeR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Tc0mci2Fe {
         match self.bits {
-            false => Enum::AFallingEdgeOnMc,
-            true => Enum::Fallling,
+            false => Tc0mci2Fe::AFallingEdgeOnMc,
+            true => Tc0mci2Fe::Fallling,
         }
     }
     #[doc = "A falling edge on MCI0 does not affect counter 0."]
     #[inline(always)]
     pub fn is_a_falling_edge_on_mc(&self) -> bool {
-        *self == Enum::AFallingEdgeOnMc
+        *self == Tc0mci2Fe::AFallingEdgeOnMc
     }
     #[doc = "If MODE0 is 1, counter 0 advances on a falling edge on MCI2."]
     #[inline(always)]
     pub fn is_fallling(&self) -> bool {
-        *self == Enum::Fallling
+        *self == Tc0mci2Fe::Fallling
     }
 }
 #[doc = "Counter 1 rising edge mode, channel 0.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Tc1mci0Re {
     #[doc = "0: A rising edge on MCI0 does not affect counter 1."]
     ARisingEdgeOnMci = 0,
     #[doc = "1: If MODE1 is 1, counter 1 advances on a rising edge on MCI0."]
     Rising = 1,
 }
-impl From<Enum> for bool {
+impl From<Tc1mci0Re> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Tc1mci0Re) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `TC1MCI0_RE` reader - Counter 1 rising edge mode, channel 0."]
-pub type Tc1mci0ReR = crate::BitReader<Enum>;
+pub type Tc1mci0ReR = crate::BitReader<Tc1mci0Re>;
 impl Tc1mci0ReR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Tc1mci0Re {
         match self.bits {
-            false => Enum::ARisingEdgeOnMci,
-            true => Enum::Rising,
+            false => Tc1mci0Re::ARisingEdgeOnMci,
+            true => Tc1mci0Re::Rising,
         }
     }
     #[doc = "A rising edge on MCI0 does not affect counter 1."]
     #[inline(always)]
     pub fn is_a_rising_edge_on_mci(&self) -> bool {
-        *self == Enum::ARisingEdgeOnMci
+        *self == Tc1mci0Re::ARisingEdgeOnMci
     }
     #[doc = "If MODE1 is 1, counter 1 advances on a rising edge on MCI0."]
     #[inline(always)]
     pub fn is_rising(&self) -> bool {
-        *self == Enum::Rising
+        *self == Tc1mci0Re::Rising
     }
 }
 #[doc = "Counter 1 falling edge mode, channel 0.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Tc1mci0Fe {
     #[doc = "0: A falling edge on MCI0 does not affect counter 1."]
     AFallingEdgeOnMc = 0,
     #[doc = "1: If MODE1 is 1, counter 1 advances on a falling edge on MCI0."]
     Falling = 1,
 }
-impl From<Enum> for bool {
+impl From<Tc1mci0Fe> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Tc1mci0Fe) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `TC1MCI0_FE` reader - Counter 1 falling edge mode, channel 0."]
-pub type Tc1mci0FeR = crate::BitReader<Enum>;
+pub type Tc1mci0FeR = crate::BitReader<Tc1mci0Fe>;
 impl Tc1mci0FeR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Tc1mci0Fe {
         match self.bits {
-            false => Enum::AFallingEdgeOnMc,
-            true => Enum::Falling,
+            false => Tc1mci0Fe::AFallingEdgeOnMc,
+            true => Tc1mci0Fe::Falling,
         }
     }
     #[doc = "A falling edge on MCI0 does not affect counter 1."]
     #[inline(always)]
     pub fn is_a_falling_edge_on_mc(&self) -> bool {
-        *self == Enum::AFallingEdgeOnMc
+        *self == Tc1mci0Fe::AFallingEdgeOnMc
     }
     #[doc = "If MODE1 is 1, counter 1 advances on a falling edge on MCI0."]
     #[inline(always)]
     pub fn is_falling(&self) -> bool {
-        *self == Enum::Falling
+        *self == Tc1mci0Fe::Falling
     }
 }
 #[doc = "Counter 1 rising edge mode, channel 1.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Tc1mci1Re {
     #[doc = "0: A rising edge on MCI1 does not affect counter 1."]
     ARisingEdgeOnMci = 0,
     #[doc = "1: If MODE1 is 1, counter 1 advances on a rising edge on MCI1."]
     Rising = 1,
 }
-impl From<Enum> for bool {
+impl From<Tc1mci1Re> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Tc1mci1Re) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `TC1MCI1_RE` reader - Counter 1 rising edge mode, channel 1."]
-pub type Tc1mci1ReR = crate::BitReader<Enum>;
+pub type Tc1mci1ReR = crate::BitReader<Tc1mci1Re>;
 impl Tc1mci1ReR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Tc1mci1Re {
         match self.bits {
-            false => Enum::ARisingEdgeOnMci,
-            true => Enum::Rising,
+            false => Tc1mci1Re::ARisingEdgeOnMci,
+            true => Tc1mci1Re::Rising,
         }
     }
     #[doc = "A rising edge on MCI1 does not affect counter 1."]
     #[inline(always)]
     pub fn is_a_rising_edge_on_mci(&self) -> bool {
-        *self == Enum::ARisingEdgeOnMci
+        *self == Tc1mci1Re::ARisingEdgeOnMci
     }
     #[doc = "If MODE1 is 1, counter 1 advances on a rising edge on MCI1."]
     #[inline(always)]
     pub fn is_rising(&self) -> bool {
-        *self == Enum::Rising
+        *self == Tc1mci1Re::Rising
     }
 }
 #[doc = "Counter 1 falling edge mode, channel 1.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Tc1mci1Fe {
     #[doc = "0: A falling edge on MCI0 does not affect counter 1."]
     AFallingEdgeOnMc = 0,
     #[doc = "1: If MODE1 is 1, counter 1 advances on a falling edge on MCI1."]
     Falling = 1,
 }
-impl From<Enum> for bool {
+impl From<Tc1mci1Fe> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Tc1mci1Fe) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `TC1MCI1_FE` reader - Counter 1 falling edge mode, channel 1."]
-pub type Tc1mci1FeR = crate::BitReader<Enum>;
+pub type Tc1mci1FeR = crate::BitReader<Tc1mci1Fe>;
 impl Tc1mci1FeR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Tc1mci1Fe {
         match self.bits {
-            false => Enum::AFallingEdgeOnMc,
-            true => Enum::Falling,
+            false => Tc1mci1Fe::AFallingEdgeOnMc,
+            true => Tc1mci1Fe::Falling,
         }
     }
     #[doc = "A falling edge on MCI0 does not affect counter 1."]
     #[inline(always)]
     pub fn is_a_falling_edge_on_mc(&self) -> bool {
-        *self == Enum::AFallingEdgeOnMc
+        *self == Tc1mci1Fe::AFallingEdgeOnMc
     }
     #[doc = "If MODE1 is 1, counter 1 advances on a falling edge on MCI1."]
     #[inline(always)]
     pub fn is_falling(&self) -> bool {
-        *self == Enum::Falling
+        *self == Tc1mci1Fe::Falling
     }
 }
 #[doc = "Counter 1 rising edge mode, channel 2.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Tc1mci2Re {
     #[doc = "0: A rising edge on MCI2 does not affect counter 1."]
     ARisingEdgeOnMci = 0,
     #[doc = "1: If MODE1 is 1, counter 1 advances on a rising edge on MCI2."]
     Rising = 1,
 }
-impl From<Enum> for bool {
+impl From<Tc1mci2Re> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Tc1mci2Re) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `TC1MCI2_RE` reader - Counter 1 rising edge mode, channel 2."]
-pub type Tc1mci2ReR = crate::BitReader<Enum>;
+pub type Tc1mci2ReR = crate::BitReader<Tc1mci2Re>;
 impl Tc1mci2ReR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Tc1mci2Re {
         match self.bits {
-            false => Enum::ARisingEdgeOnMci,
-            true => Enum::Rising,
+            false => Tc1mci2Re::ARisingEdgeOnMci,
+            true => Tc1mci2Re::Rising,
         }
     }
     #[doc = "A rising edge on MCI2 does not affect counter 1."]
     #[inline(always)]
     pub fn is_a_rising_edge_on_mci(&self) -> bool {
-        *self == Enum::ARisingEdgeOnMci
+        *self == Tc1mci2Re::ARisingEdgeOnMci
     }
     #[doc = "If MODE1 is 1, counter 1 advances on a rising edge on MCI2."]
     #[inline(always)]
     pub fn is_rising(&self) -> bool {
-        *self == Enum::Rising
+        *self == Tc1mci2Re::Rising
     }
 }
 #[doc = "Counter 1 falling edge mode, channel 2.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Tc1mci2Fe {
     #[doc = "0: A falling edge on MCI2 does not affect counter 1."]
     AFallingEdgeOnMc = 0,
     #[doc = "1: If MODE1 is 1, counter 1 advances on a falling edge on MCI2."]
     Falling = 1,
 }
-impl From<Enum> for bool {
+impl From<Tc1mci2Fe> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Tc1mci2Fe) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `TC1MCI2_FE` reader - Counter 1 falling edge mode, channel 2."]
-pub type Tc1mci2FeR = crate::BitReader<Enum>;
+pub type Tc1mci2FeR = crate::BitReader<Tc1mci2Fe>;
 impl Tc1mci2FeR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Tc1mci2Fe {
         match self.bits {
-            false => Enum::AFallingEdgeOnMc,
-            true => Enum::Falling,
+            false => Tc1mci2Fe::AFallingEdgeOnMc,
+            true => Tc1mci2Fe::Falling,
         }
     }
     #[doc = "A falling edge on MCI2 does not affect counter 1."]
     #[inline(always)]
     pub fn is_a_falling_edge_on_mc(&self) -> bool {
-        *self == Enum::AFallingEdgeOnMc
+        *self == Tc1mci2Fe::AFallingEdgeOnMc
     }
     #[doc = "If MODE1 is 1, counter 1 advances on a falling edge on MCI2."]
     #[inline(always)]
     pub fn is_falling(&self) -> bool {
-        *self == Enum::Falling
+        *self == Tc1mci2Fe::Falling
     }
 }
 #[doc = "Counter 2 rising edge mode, channel 0.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Tc2mci0Re {
     #[doc = "0: A rising edge on MCI0 does not affect counter 2."]
     ARisingEdgeOnMci = 0,
     #[doc = "1: If MODE2 is 1, counter 2 advances on a rising edge on MCI0."]
     Rising = 1,
 }
-impl From<Enum> for bool {
+impl From<Tc2mci0Re> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Tc2mci0Re) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `TC2MCI0_RE` reader - Counter 2 rising edge mode, channel 0."]
-pub type Tc2mci0ReR = crate::BitReader<Enum>;
+pub type Tc2mci0ReR = crate::BitReader<Tc2mci0Re>;
 impl Tc2mci0ReR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Tc2mci0Re {
         match self.bits {
-            false => Enum::ARisingEdgeOnMci,
-            true => Enum::Rising,
+            false => Tc2mci0Re::ARisingEdgeOnMci,
+            true => Tc2mci0Re::Rising,
         }
     }
     #[doc = "A rising edge on MCI0 does not affect counter 2."]
     #[inline(always)]
     pub fn is_a_rising_edge_on_mci(&self) -> bool {
-        *self == Enum::ARisingEdgeOnMci
+        *self == Tc2mci0Re::ARisingEdgeOnMci
     }
     #[doc = "If MODE2 is 1, counter 2 advances on a rising edge on MCI0."]
     #[inline(always)]
     pub fn is_rising(&self) -> bool {
-        *self == Enum::Rising
+        *self == Tc2mci0Re::Rising
     }
 }
 #[doc = "Counter 2 falling edge mode, channel 0.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Tc2mci0Fe {
     #[doc = "0: A falling edge on MCI0 does not affect counter 2."]
     AFallingEdgeOnMc = 0,
     #[doc = "1: If MODE2 is 1, counter 2 advances on a falling edge on MCI0."]
     Falling = 1,
 }
-impl From<Enum> for bool {
+impl From<Tc2mci0Fe> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Tc2mci0Fe) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `TC2MCI0_FE` reader - Counter 2 falling edge mode, channel 0."]
-pub type Tc2mci0FeR = crate::BitReader<Enum>;
+pub type Tc2mci0FeR = crate::BitReader<Tc2mci0Fe>;
 impl Tc2mci0FeR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Tc2mci0Fe {
         match self.bits {
-            false => Enum::AFallingEdgeOnMc,
-            true => Enum::Falling,
+            false => Tc2mci0Fe::AFallingEdgeOnMc,
+            true => Tc2mci0Fe::Falling,
         }
     }
     #[doc = "A falling edge on MCI0 does not affect counter 2."]
     #[inline(always)]
     pub fn is_a_falling_edge_on_mc(&self) -> bool {
-        *self == Enum::AFallingEdgeOnMc
+        *self == Tc2mci0Fe::AFallingEdgeOnMc
     }
     #[doc = "If MODE2 is 1, counter 2 advances on a falling edge on MCI0."]
     #[inline(always)]
     pub fn is_falling(&self) -> bool {
-        *self == Enum::Falling
+        *self == Tc2mci0Fe::Falling
     }
 }
 #[doc = "Counter 2 rising edge mode, channel 1.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Tc2mci1Re {
     #[doc = "0: A rising edge on MCI1 does not affect counter 2."]
     ARisingEdgeOnMci = 0,
     #[doc = "1: If MODE2 is 1, counter 2 advances on a rising edge on MCI1."]
     Rising = 1,
 }
-impl From<Enum> for bool {
+impl From<Tc2mci1Re> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Tc2mci1Re) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `TC2MCI1_RE` reader - Counter 2 rising edge mode, channel 1."]
-pub type Tc2mci1ReR = crate::BitReader<Enum>;
+pub type Tc2mci1ReR = crate::BitReader<Tc2mci1Re>;
 impl Tc2mci1ReR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Tc2mci1Re {
         match self.bits {
-            false => Enum::ARisingEdgeOnMci,
-            true => Enum::Rising,
+            false => Tc2mci1Re::ARisingEdgeOnMci,
+            true => Tc2mci1Re::Rising,
         }
     }
     #[doc = "A rising edge on MCI1 does not affect counter 2."]
     #[inline(always)]
     pub fn is_a_rising_edge_on_mci(&self) -> bool {
-        *self == Enum::ARisingEdgeOnMci
+        *self == Tc2mci1Re::ARisingEdgeOnMci
     }
     #[doc = "If MODE2 is 1, counter 2 advances on a rising edge on MCI1."]
     #[inline(always)]
     pub fn is_rising(&self) -> bool {
-        *self == Enum::Rising
+        *self == Tc2mci1Re::Rising
     }
 }
 #[doc = "Counter 2 falling edge mode, channel 1.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Tc2mci1Fe {
     #[doc = "0: A falling edge on MCI1 does not affect counter 2."]
     AFallingEdgeOnMc = 0,
     #[doc = "1: If MODE2 is 1, counter 2 advances on a falling edge on MCI1."]
     Falling = 1,
 }
-impl From<Enum> for bool {
+impl From<Tc2mci1Fe> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Tc2mci1Fe) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `TC2MCI1_FE` reader - Counter 2 falling edge mode, channel 1."]
-pub type Tc2mci1FeR = crate::BitReader<Enum>;
+pub type Tc2mci1FeR = crate::BitReader<Tc2mci1Fe>;
 impl Tc2mci1FeR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Tc2mci1Fe {
         match self.bits {
-            false => Enum::AFallingEdgeOnMc,
-            true => Enum::Falling,
+            false => Tc2mci1Fe::AFallingEdgeOnMc,
+            true => Tc2mci1Fe::Falling,
         }
     }
     #[doc = "A falling edge on MCI1 does not affect counter 2."]
     #[inline(always)]
     pub fn is_a_falling_edge_on_mc(&self) -> bool {
-        *self == Enum::AFallingEdgeOnMc
+        *self == Tc2mci1Fe::AFallingEdgeOnMc
     }
     #[doc = "If MODE2 is 1, counter 2 advances on a falling edge on MCI1."]
     #[inline(always)]
     pub fn is_falling(&self) -> bool {
-        *self == Enum::Falling
+        *self == Tc2mci1Fe::Falling
     }
 }
 #[doc = "Counter 2 rising edge mode, channel 2.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Tc2mci2Re {
     #[doc = "0: A rising edge on MCI2 does not affect counter 2."]
     ARisingEdgeOnMci = 0,
     #[doc = "1: If MODE2 is 1, counter 2 advances on a rising edge on MCI2."]
     Risiing = 1,
 }
-impl From<Enum> for bool {
+impl From<Tc2mci2Re> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Tc2mci2Re) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `TC2MCI2_RE` reader - Counter 2 rising edge mode, channel 2."]
-pub type Tc2mci2ReR = crate::BitReader<Enum>;
+pub type Tc2mci2ReR = crate::BitReader<Tc2mci2Re>;
 impl Tc2mci2ReR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Tc2mci2Re {
         match self.bits {
-            false => Enum::ARisingEdgeOnMci,
-            true => Enum::Risiing,
+            false => Tc2mci2Re::ARisingEdgeOnMci,
+            true => Tc2mci2Re::Risiing,
         }
     }
     #[doc = "A rising edge on MCI2 does not affect counter 2."]
     #[inline(always)]
     pub fn is_a_rising_edge_on_mci(&self) -> bool {
-        *self == Enum::ARisingEdgeOnMci
+        *self == Tc2mci2Re::ARisingEdgeOnMci
     }
     #[doc = "If MODE2 is 1, counter 2 advances on a rising edge on MCI2."]
     #[inline(always)]
     pub fn is_risiing(&self) -> bool {
-        *self == Enum::Risiing
+        *self == Tc2mci2Re::Risiing
     }
 }
 #[doc = "Counter 2 falling edge mode, channel 2.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Tc2mci2Fe {
     #[doc = "0: A falling edge on MCI2 does not affect counter 2."]
     AFallingEdgeOnMc = 0,
     #[doc = "1: If MODE2 is 1, counter 2 advances on a falling edge on MCI2."]
     Falling = 1,
 }
-impl From<Enum> for bool {
+impl From<Tc2mci2Fe> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Tc2mci2Fe) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `TC2MCI2_FE` reader - Counter 2 falling edge mode, channel 2."]
-pub type Tc2mci2FeR = crate::BitReader<Enum>;
+pub type Tc2mci2FeR = crate::BitReader<Tc2mci2Fe>;
 impl Tc2mci2FeR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Tc2mci2Fe {
         match self.bits {
-            false => Enum::AFallingEdgeOnMc,
-            true => Enum::Falling,
+            false => Tc2mci2Fe::AFallingEdgeOnMc,
+            true => Tc2mci2Fe::Falling,
         }
     }
     #[doc = "A falling edge on MCI2 does not affect counter 2."]
     #[inline(always)]
     pub fn is_a_falling_edge_on_mc(&self) -> bool {
-        *self == Enum::AFallingEdgeOnMc
+        *self == Tc2mci2Fe::AFallingEdgeOnMc
     }
     #[doc = "If MODE2 is 1, counter 2 advances on a falling edge on MCI2."]
     #[inline(always)]
     pub fn is_falling(&self) -> bool {
-        *self == Enum::Falling
+        *self == Tc2mci2Fe::Falling
     }
 }
 #[doc = "Channel 0 counter/timer mode.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Cntr0 {
     #[doc = "0: Channel 0 is in timer mode."]
     Channel0IsInTime = 0,
     #[doc = "1: Channel 0 is in counter mode."]
     Channel0IsInCoun = 1,
 }
-impl From<Enum> for bool {
+impl From<Cntr0> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Cntr0) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `CNTR0` reader - Channel 0 counter/timer mode."]
-pub type Cntr0R = crate::BitReader<Enum>;
+pub type Cntr0R = crate::BitReader<Cntr0>;
 impl Cntr0R {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Cntr0 {
         match self.bits {
-            false => Enum::Channel0IsInTime,
-            true => Enum::Channel0IsInCoun,
+            false => Cntr0::Channel0IsInTime,
+            true => Cntr0::Channel0IsInCoun,
         }
     }
     #[doc = "Channel 0 is in timer mode."]
     #[inline(always)]
     pub fn is_channel_0_is_in_time(&self) -> bool {
-        *self == Enum::Channel0IsInTime
+        *self == Cntr0::Channel0IsInTime
     }
     #[doc = "Channel 0 is in counter mode."]
     #[inline(always)]
     pub fn is_channel_0_is_in_coun(&self) -> bool {
-        *self == Enum::Channel0IsInCoun
+        *self == Cntr0::Channel0IsInCoun
     }
 }
 #[doc = "Channel 1 counter/timer mode.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Cntr1 {
     #[doc = "0: Channel 1 is in timer mode."]
     Channel1IsInTime = 0,
     #[doc = "1: Channel 1 is in counter mode."]
     Channel1IsInCoun = 1,
 }
-impl From<Enum> for bool {
+impl From<Cntr1> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Cntr1) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `CNTR1` reader - Channel 1 counter/timer mode."]
-pub type Cntr1R = crate::BitReader<Enum>;
+pub type Cntr1R = crate::BitReader<Cntr1>;
 impl Cntr1R {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Cntr1 {
         match self.bits {
-            false => Enum::Channel1IsInTime,
-            true => Enum::Channel1IsInCoun,
+            false => Cntr1::Channel1IsInTime,
+            true => Cntr1::Channel1IsInCoun,
         }
     }
     #[doc = "Channel 1 is in timer mode."]
     #[inline(always)]
     pub fn is_channel_1_is_in_time(&self) -> bool {
-        *self == Enum::Channel1IsInTime
+        *self == Cntr1::Channel1IsInTime
     }
     #[doc = "Channel 1 is in counter mode."]
     #[inline(always)]
     pub fn is_channel_1_is_in_coun(&self) -> bool {
-        *self == Enum::Channel1IsInCoun
+        *self == Cntr1::Channel1IsInCoun
     }
 }
 #[doc = "Channel 2 counter/timer mode.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Cntr2 {
     #[doc = "0: Channel 2 is in timer mode."]
     Channel2IsInTime = 0,
     #[doc = "1: Channel 2 is in counter mode."]
     Channel2IsInCoun = 1,
 }
-impl From<Enum> for bool {
+impl From<Cntr2> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Cntr2) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `CNTR2` reader - Channel 2 counter/timer mode."]
-pub type Cntr2R = crate::BitReader<Enum>;
+pub type Cntr2R = crate::BitReader<Cntr2>;
 impl Cntr2R {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Cntr2 {
         match self.bits {
-            false => Enum::Channel2IsInTime,
-            true => Enum::Channel2IsInCoun,
+            false => Cntr2::Channel2IsInTime,
+            true => Cntr2::Channel2IsInCoun,
         }
     }
     #[doc = "Channel 2 is in timer mode."]
     #[inline(always)]
     pub fn is_channel_2_is_in_time(&self) -> bool {
-        *self == Enum::Channel2IsInTime
+        *self == Cntr2::Channel2IsInTime
     }
     #[doc = "Channel 2 is in counter mode."]
     #[inline(always)]
     pub fn is_channel_2_is_in_coun(&self) -> bool {
-        *self == Enum::Channel2IsInCoun
+        *self == Cntr2::Channel2IsInCoun
     }
 }
 impl R {

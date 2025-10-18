@@ -2,44 +2,44 @@
 pub type R = crate::R<IirSpec>;
 #[doc = "Interrupt status. Note that IIR\\[0\\] is active low. The pending interrupt can be determined by evaluating IIR\\[3:1\\].\n\nValue on reset: 1"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Intstatus {
     #[doc = "0: At least one interrupt is pending."]
     AtLeastOneInterru = 0,
     #[doc = "1: No interrupt is pending."]
     NoInterruptIsPend = 1,
 }
-impl From<Enum> for bool {
+impl From<Intstatus> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Intstatus) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `INTSTATUS` reader - Interrupt status. Note that IIR\\[0\\] is active low. The pending interrupt can be determined by evaluating IIR\\[3:1\\]."]
-pub type IntstatusR = crate::BitReader<Enum>;
+pub type IntstatusR = crate::BitReader<Intstatus>;
 impl IntstatusR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Intstatus {
         match self.bits {
-            false => Enum::AtLeastOneInterru,
-            true => Enum::NoInterruptIsPend,
+            false => Intstatus::AtLeastOneInterru,
+            true => Intstatus::NoInterruptIsPend,
         }
     }
     #[doc = "At least one interrupt is pending."]
     #[inline(always)]
     pub fn is_at_least_one_interru(&self) -> bool {
-        *self == Enum::AtLeastOneInterru
+        *self == Intstatus::AtLeastOneInterru
     }
     #[doc = "No interrupt is pending."]
     #[inline(always)]
     pub fn is_no_interrupt_is_pend(&self) -> bool {
-        *self == Enum::NoInterruptIsPend
+        *self == Intstatus::NoInterruptIsPend
     }
 }
 #[doc = "Interrupt identification. IER\\[3:1\\] identifies an interrupt corresponding to the UART1 Rx or TX FIFO. All other combinations of IER\\[3:1\\] not listed below are reserved (100,101,111).\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
-pub enum Enum {
+pub enum Intid {
     #[doc = "3: 1 - Receive Line Status (RLS)."]
     Rls = 3,
     #[doc = "2: 2a - Receive Data Available (RDA)."]
@@ -51,55 +51,55 @@ pub enum Enum {
     #[doc = "0: 4 - Modem Interrupt."]
     Modem = 0,
 }
-impl From<Enum> for u8 {
+impl From<Intid> for u8 {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Intid) -> Self {
         variant as _
     }
 }
-impl crate::FieldSpec for Enum {
+impl crate::FieldSpec for Intid {
     type Ux = u8;
 }
-impl crate::IsEnum for Enum {}
+impl crate::IsEnum for Intid {}
 #[doc = "Field `INTID` reader - Interrupt identification. IER\\[3:1\\] identifies an interrupt corresponding to the UART1 Rx or TX FIFO. All other combinations of IER\\[3:1\\] not listed below are reserved (100,101,111)."]
-pub type IntidR = crate::FieldReader<Enum>;
+pub type IntidR = crate::FieldReader<Intid>;
 impl IntidR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Option<Enum> {
+    pub const fn variant(&self) -> Option<Intid> {
         match self.bits {
-            3 => Some(Enum::Rls),
-            2 => Some(Enum::Rda),
-            6 => Some(Enum::Cti),
-            1 => Some(Enum::Thre),
-            0 => Some(Enum::Modem),
+            3 => Some(Intid::Rls),
+            2 => Some(Intid::Rda),
+            6 => Some(Intid::Cti),
+            1 => Some(Intid::Thre),
+            0 => Some(Intid::Modem),
             _ => None,
         }
     }
     #[doc = "1 - Receive Line Status (RLS)."]
     #[inline(always)]
     pub fn is_rls(&self) -> bool {
-        *self == Enum::Rls
+        *self == Intid::Rls
     }
     #[doc = "2a - Receive Data Available (RDA)."]
     #[inline(always)]
     pub fn is_rda(&self) -> bool {
-        *self == Enum::Rda
+        *self == Intid::Rda
     }
     #[doc = "2b - Character Time-out Indicator (CTI)."]
     #[inline(always)]
     pub fn is_cti(&self) -> bool {
-        *self == Enum::Cti
+        *self == Intid::Cti
     }
     #[doc = "3 - THRE Interrupt."]
     #[inline(always)]
     pub fn is_thre(&self) -> bool {
-        *self == Enum::Thre
+        *self == Intid::Thre
     }
     #[doc = "4 - Modem Interrupt."]
     #[inline(always)]
     pub fn is_modem(&self) -> bool {
-        *self == Enum::Modem
+        *self == Intid::Modem
     }
 }
 #[doc = "Field `FIFOENABLE` reader - Copies of FCR\\[0\\]."]

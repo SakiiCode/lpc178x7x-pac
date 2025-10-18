@@ -5,7 +5,7 @@ pub type W = crate::W<P0_13Spec>;
 #[doc = "Selects pin function for pin P0\\[13\\]"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
-pub enum Enum {
+pub enum Func {
     #[doc = "0: General purpose digital input/output pin."]
     P0_13 = 0,
     #[doc = "1: USB port 2 GoodLink LED indicator. It is LOW when the device is configured (non-control endpoints enabled), or when the host is enabled and has detected a device on the bus. It is HIGH when the device is not configured, or when host is enabled and has not detected a device on the bus, or during global suspend. It transitions between LOW and HIGH (flashes) when the host is enabled and detects activity on the bus."]
@@ -15,53 +15,53 @@ pub enum Enum {
     #[doc = "3: A/D converter 0, input 7. When configured as an ADC input, the digital function of the pin must be disabled."]
     Adc0In7 = 3,
 }
-impl From<Enum> for u8 {
+impl From<Func> for u8 {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Func) -> Self {
         variant as _
     }
 }
-impl crate::FieldSpec for Enum {
+impl crate::FieldSpec for Func {
     type Ux = u8;
 }
-impl crate::IsEnum for Enum {}
+impl crate::IsEnum for Func {}
 #[doc = "Field `FUNC` reader - Selects pin function for pin P0\\[13\\]"]
-pub type FuncR = crate::FieldReader<Enum>;
+pub type FuncR = crate::FieldReader<Func>;
 impl FuncR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Option<Enum> {
+    pub const fn variant(&self) -> Option<Func> {
         match self.bits {
-            0 => Some(Enum::P0_13),
-            1 => Some(Enum::UsbUpLed2),
-            2 => Some(Enum::Ssp1Mosi),
-            3 => Some(Enum::Adc0In7),
+            0 => Some(Func::P0_13),
+            1 => Some(Func::UsbUpLed2),
+            2 => Some(Func::Ssp1Mosi),
+            3 => Some(Func::Adc0In7),
             _ => None,
         }
     }
     #[doc = "General purpose digital input/output pin."]
     #[inline(always)]
     pub fn is_p0_13(&self) -> bool {
-        *self == Enum::P0_13
+        *self == Func::P0_13
     }
     #[doc = "USB port 2 GoodLink LED indicator. It is LOW when the device is configured (non-control endpoints enabled), or when the host is enabled and has detected a device on the bus. It is HIGH when the device is not configured, or when host is enabled and has not detected a device on the bus, or during global suspend. It transitions between LOW and HIGH (flashes) when the host is enabled and detects activity on the bus."]
     #[inline(always)]
     pub fn is_usb_up_led2(&self) -> bool {
-        *self == Enum::UsbUpLed2
+        *self == Func::UsbUpLed2
     }
     #[doc = "Master Out Slave In for SSP1."]
     #[inline(always)]
     pub fn is_ssp1_mosi(&self) -> bool {
-        *self == Enum::Ssp1Mosi
+        *self == Func::Ssp1Mosi
     }
     #[doc = "A/D converter 0, input 7. When configured as an ADC input, the digital function of the pin must be disabled."]
     #[inline(always)]
     pub fn is_adc0_in_7(&self) -> bool {
-        *self == Enum::Adc0In7
+        *self == Func::Adc0In7
     }
 }
 #[doc = "Field `FUNC` writer - Selects pin function for pin P0\\[13\\]"]
-pub type FuncW<'a, REG> = crate::FieldWriter<'a, REG, 3, Enum>;
+pub type FuncW<'a, REG> = crate::FieldWriter<'a, REG, 3, Func>;
 impl<'a, REG> FuncW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -70,22 +70,22 @@ where
     #[doc = "General purpose digital input/output pin."]
     #[inline(always)]
     pub fn p0_13(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::P0_13)
+        self.variant(Func::P0_13)
     }
     #[doc = "USB port 2 GoodLink LED indicator. It is LOW when the device is configured (non-control endpoints enabled), or when the host is enabled and has detected a device on the bus. It is HIGH when the device is not configured, or when host is enabled and has not detected a device on the bus, or during global suspend. It transitions between LOW and HIGH (flashes) when the host is enabled and detects activity on the bus."]
     #[inline(always)]
     pub fn usb_up_led2(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::UsbUpLed2)
+        self.variant(Func::UsbUpLed2)
     }
     #[doc = "Master Out Slave In for SSP1."]
     #[inline(always)]
     pub fn ssp1_mosi(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Ssp1Mosi)
+        self.variant(Func::Ssp1Mosi)
     }
     #[doc = "A/D converter 0, input 7. When configured as an ADC input, the digital function of the pin must be disabled."]
     #[inline(always)]
     pub fn adc0_in_7(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Adc0In7)
+        self.variant(Func::Adc0In7)
     }
 }
 impl R {

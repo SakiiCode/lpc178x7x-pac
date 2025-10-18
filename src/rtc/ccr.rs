@@ -4,42 +4,42 @@ pub type R = crate::R<CcrSpec>;
 pub type W = crate::W<CcrSpec>;
 #[doc = "Clock Enable.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Clken {
     #[doc = "1: The time counters are enabled."]
     TheTimeCountersAr = 1,
     #[doc = "0: The time counters are disabled so that they may be initialized."]
     TheTimeCountersAr = 0,
 }
-impl From<Enum> for bool {
+impl From<Clken> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Clken) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `CLKEN` reader - Clock Enable."]
-pub type ClkenR = crate::BitReader<Enum>;
+pub type ClkenR = crate::BitReader<Clken>;
 impl ClkenR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Clken {
         match self.bits {
-            true => Enum::TheTimeCountersAr,
-            false => Enum::TheTimeCountersAr,
+            true => Clken::TheTimeCountersAr,
+            false => Clken::TheTimeCountersAr,
         }
     }
     #[doc = "The time counters are enabled."]
     #[inline(always)]
     pub fn is_the_time_counters_ar(&self) -> bool {
-        *self == Enum::TheTimeCountersAr
+        *self == Clken::TheTimeCountersAr
     }
     #[doc = "The time counters are disabled so that they may be initialized."]
     #[inline(always)]
     pub fn is_the_time_counters_ar(&self) -> bool {
-        *self == Enum::TheTimeCountersAr
+        *self == Clken::TheTimeCountersAr
     }
 }
 #[doc = "Field `CLKEN` writer - Clock Enable."]
-pub type ClkenW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type ClkenW<'a, REG> = crate::BitWriter<'a, REG, Clken>;
 impl<'a, REG> ClkenW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -47,52 +47,52 @@ where
     #[doc = "The time counters are enabled."]
     #[inline(always)]
     pub fn the_time_counters_ar(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::TheTimeCountersAr)
+        self.variant(Clken::TheTimeCountersAr)
     }
     #[doc = "The time counters are disabled so that they may be initialized."]
     #[inline(always)]
     pub fn the_time_counters_ar(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::TheTimeCountersAr)
+        self.variant(Clken::TheTimeCountersAr)
     }
 }
 #[doc = "CTC Reset.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Ctcrst {
     #[doc = "1: When one, the elements in the internal oscillator divider are reset, and remain reset until CCR\\[1\\] is changed to zero. This is the divider that generates the 1 Hz clock from the 32.768 kHz crystal. The state of the divider is not visible to software."]
     Reset = 1,
     #[doc = "0: No effect."]
     NoEffect_ = 0,
 }
-impl From<Enum> for bool {
+impl From<Ctcrst> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Ctcrst) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `CTCRST` reader - CTC Reset."]
-pub type CtcrstR = crate::BitReader<Enum>;
+pub type CtcrstR = crate::BitReader<Ctcrst>;
 impl CtcrstR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Ctcrst {
         match self.bits {
-            true => Enum::Reset,
-            false => Enum::NoEffect_,
+            true => Ctcrst::Reset,
+            false => Ctcrst::NoEffect_,
         }
     }
     #[doc = "When one, the elements in the internal oscillator divider are reset, and remain reset until CCR\\[1\\] is changed to zero. This is the divider that generates the 1 Hz clock from the 32.768 kHz crystal. The state of the divider is not visible to software."]
     #[inline(always)]
     pub fn is_reset(&self) -> bool {
-        *self == Enum::Reset
+        *self == Ctcrst::Reset
     }
     #[doc = "No effect."]
     #[inline(always)]
     pub fn is_no_effect_(&self) -> bool {
-        *self == Enum::NoEffect_
+        *self == Ctcrst::NoEffect_
     }
 }
 #[doc = "Field `CTCRST` writer - CTC Reset."]
-pub type CtcrstW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type CtcrstW<'a, REG> = crate::BitWriter<'a, REG, Ctcrst>;
 impl<'a, REG> CtcrstW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -100,52 +100,52 @@ where
     #[doc = "When one, the elements in the internal oscillator divider are reset, and remain reset until CCR\\[1\\] is changed to zero. This is the divider that generates the 1 Hz clock from the 32.768 kHz crystal. The state of the divider is not visible to software."]
     #[inline(always)]
     pub fn reset(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Reset)
+        self.variant(Ctcrst::Reset)
     }
     #[doc = "No effect."]
     #[inline(always)]
     pub fn no_effect_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::NoEffect_)
+        self.variant(Ctcrst::NoEffect_)
     }
 }
 #[doc = "Calibration counter enable.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Ccalen {
     #[doc = "1: The calibration counter is disabled and reset to zero."]
     TheCalibrationCoun = 1,
     #[doc = "0: The calibration counter is enabled and counting, using the 1 Hz clock. When the calibration counter is equal to the value of the CALIBRATION register, the counter resets and repeats counting up to the value of the CALIBRATION register. See Section 30.6.4.2 and Section 30.6.5."]
     TheCalibrationCoun = 0,
 }
-impl From<Enum> for bool {
+impl From<Ccalen> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Ccalen) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `CCALEN` reader - Calibration counter enable."]
-pub type CcalenR = crate::BitReader<Enum>;
+pub type CcalenR = crate::BitReader<Ccalen>;
 impl CcalenR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Ccalen {
         match self.bits {
-            true => Enum::TheCalibrationCoun,
-            false => Enum::TheCalibrationCoun,
+            true => Ccalen::TheCalibrationCoun,
+            false => Ccalen::TheCalibrationCoun,
         }
     }
     #[doc = "The calibration counter is disabled and reset to zero."]
     #[inline(always)]
     pub fn is_the_calibration_coun(&self) -> bool {
-        *self == Enum::TheCalibrationCoun
+        *self == Ccalen::TheCalibrationCoun
     }
     #[doc = "The calibration counter is enabled and counting, using the 1 Hz clock. When the calibration counter is equal to the value of the CALIBRATION register, the counter resets and repeats counting up to the value of the CALIBRATION register. See Section 30.6.4.2 and Section 30.6.5."]
     #[inline(always)]
     pub fn is_the_calibration_coun(&self) -> bool {
-        *self == Enum::TheCalibrationCoun
+        *self == Ccalen::TheCalibrationCoun
     }
 }
 #[doc = "Field `CCALEN` writer - Calibration counter enable."]
-pub type CcalenW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type CcalenW<'a, REG> = crate::BitWriter<'a, REG, Ccalen>;
 impl<'a, REG> CcalenW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -153,12 +153,12 @@ where
     #[doc = "The calibration counter is disabled and reset to zero."]
     #[inline(always)]
     pub fn the_calibration_coun(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::TheCalibrationCoun)
+        self.variant(Ccalen::TheCalibrationCoun)
     }
     #[doc = "The calibration counter is enabled and counting, using the 1 Hz clock. When the calibration counter is equal to the value of the CALIBRATION register, the counter resets and repeats counting up to the value of the CALIBRATION register. See Section 30.6.4.2 and Section 30.6.5."]
     #[inline(always)]
     pub fn the_calibration_coun(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::TheCalibrationCoun)
+        self.variant(Ccalen::TheCalibrationCoun)
     }
 }
 impl R {

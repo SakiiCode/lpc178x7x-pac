@@ -4,42 +4,42 @@ pub type R = crate::R<CtrlSpec>;
 pub type W = crate::W<CtrlSpec>;
 #[doc = "DMA interrupt request\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum IntDmaReq {
     #[doc = "0: Clear on any write to the DACR register."]
     ClearOnAnyWriteT = 0,
     #[doc = "1: Set by hardware when the timer times out."]
     SetByHardwareWhen = 1,
 }
-impl From<Enum> for bool {
+impl From<IntDmaReq> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: IntDmaReq) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `INT_DMA_REQ` reader - DMA interrupt request"]
-pub type IntDmaReqR = crate::BitReader<Enum>;
+pub type IntDmaReqR = crate::BitReader<IntDmaReq>;
 impl IntDmaReqR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> IntDmaReq {
         match self.bits {
-            false => Enum::ClearOnAnyWriteT,
-            true => Enum::SetByHardwareWhen,
+            false => IntDmaReq::ClearOnAnyWriteT,
+            true => IntDmaReq::SetByHardwareWhen,
         }
     }
     #[doc = "Clear on any write to the DACR register."]
     #[inline(always)]
     pub fn is_clear_on_any_write_t(&self) -> bool {
-        *self == Enum::ClearOnAnyWriteT
+        *self == IntDmaReq::ClearOnAnyWriteT
     }
     #[doc = "Set by hardware when the timer times out."]
     #[inline(always)]
     pub fn is_set_by_hardware_when(&self) -> bool {
-        *self == Enum::SetByHardwareWhen
+        *self == IntDmaReq::SetByHardwareWhen
     }
 }
 #[doc = "Field `INT_DMA_REQ` writer - DMA interrupt request"]
-pub type IntDmaReqW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type IntDmaReqW<'a, REG> = crate::BitWriter<'a, REG, IntDmaReq>;
 impl<'a, REG> IntDmaReqW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -47,52 +47,52 @@ where
     #[doc = "Clear on any write to the DACR register."]
     #[inline(always)]
     pub fn clear_on_any_write_t(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::ClearOnAnyWriteT)
+        self.variant(IntDmaReq::ClearOnAnyWriteT)
     }
     #[doc = "Set by hardware when the timer times out."]
     #[inline(always)]
     pub fn set_by_hardware_when(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::SetByHardwareWhen)
+        self.variant(IntDmaReq::SetByHardwareWhen)
     }
 }
 #[doc = "Double buffering\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum DblbufEna {
     #[doc = "0: Disable"]
     Disable = 0,
     #[doc = "1: Enable. When this bit and the CNT_ENA bit are both set, the double-buffering feature in the DACR register will be enabled. Writes to the DACR register are written to a pre-buffer and then transferred to the DACR on the next time-out of the counter."]
     EnableWhenThisBi = 1,
 }
-impl From<Enum> for bool {
+impl From<DblbufEna> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: DblbufEna) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `DBLBUF_ENA` reader - Double buffering"]
-pub type DblbufEnaR = crate::BitReader<Enum>;
+pub type DblbufEnaR = crate::BitReader<DblbufEna>;
 impl DblbufEnaR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> DblbufEna {
         match self.bits {
-            false => Enum::Disable,
-            true => Enum::EnableWhenThisBi,
+            false => DblbufEna::Disable,
+            true => DblbufEna::EnableWhenThisBi,
         }
     }
     #[doc = "Disable"]
     #[inline(always)]
     pub fn is_disable(&self) -> bool {
-        *self == Enum::Disable
+        *self == DblbufEna::Disable
     }
     #[doc = "Enable. When this bit and the CNT_ENA bit are both set, the double-buffering feature in the DACR register will be enabled. Writes to the DACR register are written to a pre-buffer and then transferred to the DACR on the next time-out of the counter."]
     #[inline(always)]
     pub fn is_enable_when_this_bi(&self) -> bool {
-        *self == Enum::EnableWhenThisBi
+        *self == DblbufEna::EnableWhenThisBi
     }
 }
 #[doc = "Field `DBLBUF_ENA` writer - Double buffering"]
-pub type DblbufEnaW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type DblbufEnaW<'a, REG> = crate::BitWriter<'a, REG, DblbufEna>;
 impl<'a, REG> DblbufEnaW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -100,52 +100,52 @@ where
     #[doc = "Disable"]
     #[inline(always)]
     pub fn disable(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Disable)
+        self.variant(DblbufEna::Disable)
     }
     #[doc = "Enable. When this bit and the CNT_ENA bit are both set, the double-buffering feature in the DACR register will be enabled. Writes to the DACR register are written to a pre-buffer and then transferred to the DACR on the next time-out of the counter."]
     #[inline(always)]
     pub fn enable_when_this_bi(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::EnableWhenThisBi)
+        self.variant(DblbufEna::EnableWhenThisBi)
     }
 }
 #[doc = "Time-out counter operation\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum CntEna {
     #[doc = "0: Disable"]
     Disable = 0,
     #[doc = "1: Enable"]
     Enable = 1,
 }
-impl From<Enum> for bool {
+impl From<CntEna> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: CntEna) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `CNT_ENA` reader - Time-out counter operation"]
-pub type CntEnaR = crate::BitReader<Enum>;
+pub type CntEnaR = crate::BitReader<CntEna>;
 impl CntEnaR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> CntEna {
         match self.bits {
-            false => Enum::Disable,
-            true => Enum::Enable,
+            false => CntEna::Disable,
+            true => CntEna::Enable,
         }
     }
     #[doc = "Disable"]
     #[inline(always)]
     pub fn is_disable(&self) -> bool {
-        *self == Enum::Disable
+        *self == CntEna::Disable
     }
     #[doc = "Enable"]
     #[inline(always)]
     pub fn is_enable(&self) -> bool {
-        *self == Enum::Enable
+        *self == CntEna::Enable
     }
 }
 #[doc = "Field `CNT_ENA` writer - Time-out counter operation"]
-pub type CntEnaW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type CntEnaW<'a, REG> = crate::BitWriter<'a, REG, CntEna>;
 impl<'a, REG> CntEnaW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -153,52 +153,52 @@ where
     #[doc = "Disable"]
     #[inline(always)]
     pub fn disable(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Disable)
+        self.variant(CntEna::Disable)
     }
     #[doc = "Enable"]
     #[inline(always)]
     pub fn enable(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Enable)
+        self.variant(CntEna::Enable)
     }
 }
 #[doc = "DMA access\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum DmaEna {
     #[doc = "0: Disable"]
     Disable = 0,
     #[doc = "1: Enable. DMA Burst Request Input 7 is enabled for the DAC (see Table 672)."]
     EnableDmaBurstRe = 1,
 }
-impl From<Enum> for bool {
+impl From<DmaEna> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: DmaEna) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `DMA_ENA` reader - DMA access"]
-pub type DmaEnaR = crate::BitReader<Enum>;
+pub type DmaEnaR = crate::BitReader<DmaEna>;
 impl DmaEnaR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> DmaEna {
         match self.bits {
-            false => Enum::Disable,
-            true => Enum::EnableDmaBurstRe,
+            false => DmaEna::Disable,
+            true => DmaEna::EnableDmaBurstRe,
         }
     }
     #[doc = "Disable"]
     #[inline(always)]
     pub fn is_disable(&self) -> bool {
-        *self == Enum::Disable
+        *self == DmaEna::Disable
     }
     #[doc = "Enable. DMA Burst Request Input 7 is enabled for the DAC (see Table 672)."]
     #[inline(always)]
     pub fn is_enable_dma_burst_re(&self) -> bool {
-        *self == Enum::EnableDmaBurstRe
+        *self == DmaEna::EnableDmaBurstRe
     }
 }
 #[doc = "Field `DMA_ENA` writer - DMA access"]
-pub type DmaEnaW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type DmaEnaW<'a, REG> = crate::BitWriter<'a, REG, DmaEna>;
 impl<'a, REG> DmaEnaW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -206,12 +206,12 @@ where
     #[doc = "Disable"]
     #[inline(always)]
     pub fn disable(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Disable)
+        self.variant(DmaEna::Disable)
     }
     #[doc = "Enable. DMA Burst Request Input 7 is enabled for the DAC (see Table 672)."]
     #[inline(always)]
     pub fn enable_dma_burst_re(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::EnableDmaBurstRe)
+        self.variant(DmaEna::EnableDmaBurstRe)
     }
 }
 impl R {

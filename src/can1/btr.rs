@@ -20,42 +20,42 @@ pub type Tesg2R = crate::FieldReader;
 pub type Tesg2W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
 #[doc = "Sampling\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Sam {
     #[doc = "0: The bus is sampled once (recommended for high speed buses)"]
     TheBusIsSampledO = 0,
     #[doc = "1: The bus is sampled 3 times (recommended for low to medium speed buses to filter spikes on the bus-line)"]
     TheBusIsSampled3 = 1,
 }
-impl From<Enum> for bool {
+impl From<Sam> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Sam) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `SAM` reader - Sampling"]
-pub type SamR = crate::BitReader<Enum>;
+pub type SamR = crate::BitReader<Sam>;
 impl SamR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Sam {
         match self.bits {
-            false => Enum::TheBusIsSampledO,
-            true => Enum::TheBusIsSampled3,
+            false => Sam::TheBusIsSampledO,
+            true => Sam::TheBusIsSampled3,
         }
     }
     #[doc = "The bus is sampled once (recommended for high speed buses)"]
     #[inline(always)]
     pub fn is_the_bus_is_sampled_o(&self) -> bool {
-        *self == Enum::TheBusIsSampledO
+        *self == Sam::TheBusIsSampledO
     }
     #[doc = "The bus is sampled 3 times (recommended for low to medium speed buses to filter spikes on the bus-line)"]
     #[inline(always)]
     pub fn is_the_bus_is_sampled_3(&self) -> bool {
-        *self == Enum::TheBusIsSampled3
+        *self == Sam::TheBusIsSampled3
     }
 }
 #[doc = "Field `SAM` writer - Sampling"]
-pub type SamW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type SamW<'a, REG> = crate::BitWriter<'a, REG, Sam>;
 impl<'a, REG> SamW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -63,12 +63,12 @@ where
     #[doc = "The bus is sampled once (recommended for high speed buses)"]
     #[inline(always)]
     pub fn the_bus_is_sampled_o(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::TheBusIsSampledO)
+        self.variant(Sam::TheBusIsSampledO)
     }
     #[doc = "The bus is sampled 3 times (recommended for low to medium speed buses to filter spikes on the bus-line)"]
     #[inline(always)]
     pub fn the_bus_is_sampled_3(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::TheBusIsSampled3)
+        self.variant(Sam::TheBusIsSampled3)
     }
 }
 impl R {

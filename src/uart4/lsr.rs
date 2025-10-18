@@ -2,290 +2,290 @@
 pub type R = crate::R<LsrSpec>;
 #[doc = "Receiver Data Ready. UnLSR\\[0\\] is set when the UnRBR holds an unread character and is cleared when the UARTn RBR FIFO is empty.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Rdr {
     #[doc = "0: The UARTn receiver FIFO is empty."]
     TheUartnReceiverF = 0,
     #[doc = "1: The UARTn receiver FIFO is not empty."]
     TheUartnReceiverF = 1,
 }
-impl From<Enum> for bool {
+impl From<Rdr> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Rdr) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `RDR` reader - Receiver Data Ready. UnLSR\\[0\\] is set when the UnRBR holds an unread character and is cleared when the UARTn RBR FIFO is empty."]
-pub type RdrR = crate::BitReader<Enum>;
+pub type RdrR = crate::BitReader<Rdr>;
 impl RdrR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Rdr {
         match self.bits {
-            false => Enum::TheUartnReceiverF,
-            true => Enum::TheUartnReceiverF,
+            false => Rdr::TheUartnReceiverF,
+            true => Rdr::TheUartnReceiverF,
         }
     }
     #[doc = "The UARTn receiver FIFO is empty."]
     #[inline(always)]
     pub fn is_the_uartn_receiver_f(&self) -> bool {
-        *self == Enum::TheUartnReceiverF
+        *self == Rdr::TheUartnReceiverF
     }
     #[doc = "The UARTn receiver FIFO is not empty."]
     #[inline(always)]
     pub fn is_the_uartn_receiver_f(&self) -> bool {
-        *self == Enum::TheUartnReceiverF
+        *self == Rdr::TheUartnReceiverF
     }
 }
 #[doc = "Overrun Error. The overrun error condition is set as soon as it occurs. An UnLSR read clears UnLSR\\[1\\]. UnLSR\\[1\\] is set when UARTn RSR has a new character assembled and the UARTn RBR FIFO is full. In this case, the UARTn RBR FIFO will not be overwritten and the character in the UARTn RSR will be lost.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Oe {
     #[doc = "0: Overrun error status is inactive."]
     OverrunErrorStatus = 0,
     #[doc = "1: Overrun error status is active."]
     OverrunErrorStatus = 1,
 }
-impl From<Enum> for bool {
+impl From<Oe> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Oe) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `OE` reader - Overrun Error. The overrun error condition is set as soon as it occurs. An UnLSR read clears UnLSR\\[1\\]. UnLSR\\[1\\] is set when UARTn RSR has a new character assembled and the UARTn RBR FIFO is full. In this case, the UARTn RBR FIFO will not be overwritten and the character in the UARTn RSR will be lost."]
-pub type OeR = crate::BitReader<Enum>;
+pub type OeR = crate::BitReader<Oe>;
 impl OeR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Oe {
         match self.bits {
-            false => Enum::OverrunErrorStatus,
-            true => Enum::OverrunErrorStatus,
+            false => Oe::OverrunErrorStatus,
+            true => Oe::OverrunErrorStatus,
         }
     }
     #[doc = "Overrun error status is inactive."]
     #[inline(always)]
     pub fn is_overrun_error_status(&self) -> bool {
-        *self == Enum::OverrunErrorStatus
+        *self == Oe::OverrunErrorStatus
     }
     #[doc = "Overrun error status is active."]
     #[inline(always)]
     pub fn is_overrun_error_status(&self) -> bool {
-        *self == Enum::OverrunErrorStatus
+        *self == Oe::OverrunErrorStatus
     }
 }
 #[doc = "Parity Error. When the parity bit of a received character is in the wrong state, a parity error occurs. An UnLSR read clears UnLSR\\[2\\]. Time of parity error detection is dependent on UnFCR\\[0\\]. Note: A parity error is associated with the character at the top of the UARTn RBR FIFO.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Pe {
     #[doc = "0: Parity error status is inactive."]
     ParityErrorStatus_ = 0,
     #[doc = "1: Parity error status is active."]
     ParityErrorStatus_ = 1,
 }
-impl From<Enum> for bool {
+impl From<Pe> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Pe) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `PE` reader - Parity Error. When the parity bit of a received character is in the wrong state, a parity error occurs. An UnLSR read clears UnLSR\\[2\\]. Time of parity error detection is dependent on UnFCR\\[0\\]. Note: A parity error is associated with the character at the top of the UARTn RBR FIFO."]
-pub type PeR = crate::BitReader<Enum>;
+pub type PeR = crate::BitReader<Pe>;
 impl PeR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Pe {
         match self.bits {
-            false => Enum::ParityErrorStatus_,
-            true => Enum::ParityErrorStatus_,
+            false => Pe::ParityErrorStatus_,
+            true => Pe::ParityErrorStatus_,
         }
     }
     #[doc = "Parity error status is inactive."]
     #[inline(always)]
     pub fn is_parity_error_status_(&self) -> bool {
-        *self == Enum::ParityErrorStatus_
+        *self == Pe::ParityErrorStatus_
     }
     #[doc = "Parity error status is active."]
     #[inline(always)]
     pub fn is_parity_error_status_(&self) -> bool {
-        *self == Enum::ParityErrorStatus_
+        *self == Pe::ParityErrorStatus_
     }
 }
 #[doc = "Framing Error. When the stop bit of a received character is a logic 0, a framing error occurs. An UnLSR read clears UnLSR\\[3\\]. The time of the framing error detection is dependent on UnFCR\\[0\\]. Upon detection of a framing error, the Rx will attempt to resynchronize to the data and assume that the bad stop bit is actually an early start bit. However, it cannot be assumed that the next received byte will be correct even if there is no Framing Error. Note: A framing error is associated with the character at the top of the UARTn RBR FIFO.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Fe {
     #[doc = "0: Framing error status is inactive."]
     FramingErrorStatus = 0,
     #[doc = "1: Framing error status is active."]
     FramingErrorStatus = 1,
 }
-impl From<Enum> for bool {
+impl From<Fe> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Fe) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `FE` reader - Framing Error. When the stop bit of a received character is a logic 0, a framing error occurs. An UnLSR read clears UnLSR\\[3\\]. The time of the framing error detection is dependent on UnFCR\\[0\\]. Upon detection of a framing error, the Rx will attempt to resynchronize to the data and assume that the bad stop bit is actually an early start bit. However, it cannot be assumed that the next received byte will be correct even if there is no Framing Error. Note: A framing error is associated with the character at the top of the UARTn RBR FIFO."]
-pub type FeR = crate::BitReader<Enum>;
+pub type FeR = crate::BitReader<Fe>;
 impl FeR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Fe {
         match self.bits {
-            false => Enum::FramingErrorStatus,
-            true => Enum::FramingErrorStatus,
+            false => Fe::FramingErrorStatus,
+            true => Fe::FramingErrorStatus,
         }
     }
     #[doc = "Framing error status is inactive."]
     #[inline(always)]
     pub fn is_framing_error_status(&self) -> bool {
-        *self == Enum::FramingErrorStatus
+        *self == Fe::FramingErrorStatus
     }
     #[doc = "Framing error status is active."]
     #[inline(always)]
     pub fn is_framing_error_status(&self) -> bool {
-        *self == Enum::FramingErrorStatus
+        *self == Fe::FramingErrorStatus
     }
 }
 #[doc = "Break Interrupt. When RXDn is held in the spacing state (all zeroes) for one full character transmission (start, data, parity, stop), a break interrupt occurs. Once the break condition has been detected, the receiver goes idle until RXDn goes to marking state (all ones). An UnLSR read clears this status bit. The time of break detection is dependent on UnFCR\\[0\\]. Note: The break interrupt is associated with the character at the top of the UARTn RBR FIFO.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Bi {
     #[doc = "0: Break interrupt status is inactive."]
     BreakInterruptStat = 0,
     #[doc = "1: Break interrupt status is active."]
     BreakInterruptStat = 1,
 }
-impl From<Enum> for bool {
+impl From<Bi> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Bi) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `BI` reader - Break Interrupt. When RXDn is held in the spacing state (all zeroes) for one full character transmission (start, data, parity, stop), a break interrupt occurs. Once the break condition has been detected, the receiver goes idle until RXDn goes to marking state (all ones). An UnLSR read clears this status bit. The time of break detection is dependent on UnFCR\\[0\\]. Note: The break interrupt is associated with the character at the top of the UARTn RBR FIFO."]
-pub type BiR = crate::BitReader<Enum>;
+pub type BiR = crate::BitReader<Bi>;
 impl BiR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Bi {
         match self.bits {
-            false => Enum::BreakInterruptStat,
-            true => Enum::BreakInterruptStat,
+            false => Bi::BreakInterruptStat,
+            true => Bi::BreakInterruptStat,
         }
     }
     #[doc = "Break interrupt status is inactive."]
     #[inline(always)]
     pub fn is_break_interrupt_stat(&self) -> bool {
-        *self == Enum::BreakInterruptStat
+        *self == Bi::BreakInterruptStat
     }
     #[doc = "Break interrupt status is active."]
     #[inline(always)]
     pub fn is_break_interrupt_stat(&self) -> bool {
-        *self == Enum::BreakInterruptStat
+        *self == Bi::BreakInterruptStat
     }
 }
 #[doc = "Transmitter Holding Register Empty. THRE is set immediately upon detection of an empty UARTn THR and is cleared on a UnTHR write.\n\nValue on reset: 1"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Thre {
     #[doc = "0: UnTHR contains valid data."]
     UnthrContainsValid = 0,
     #[doc = "1: UnTHR is empty."]
     UnthrIsEmpty_ = 1,
 }
-impl From<Enum> for bool {
+impl From<Thre> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Thre) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `THRE` reader - Transmitter Holding Register Empty. THRE is set immediately upon detection of an empty UARTn THR and is cleared on a UnTHR write."]
-pub type ThreR = crate::BitReader<Enum>;
+pub type ThreR = crate::BitReader<Thre>;
 impl ThreR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Thre {
         match self.bits {
-            false => Enum::UnthrContainsValid,
-            true => Enum::UnthrIsEmpty_,
+            false => Thre::UnthrContainsValid,
+            true => Thre::UnthrIsEmpty_,
         }
     }
     #[doc = "UnTHR contains valid data."]
     #[inline(always)]
     pub fn is_unthr_contains_valid(&self) -> bool {
-        *self == Enum::UnthrContainsValid
+        *self == Thre::UnthrContainsValid
     }
     #[doc = "UnTHR is empty."]
     #[inline(always)]
     pub fn is_unthr_is_empty_(&self) -> bool {
-        *self == Enum::UnthrIsEmpty_
+        *self == Thre::UnthrIsEmpty_
     }
 }
 #[doc = "Transmitter Empty. TEMT is set when both UnTHR and UnTSR are empty; TEMT is cleared when either the UnTSR or the UnTHR contain valid data.\n\nValue on reset: 1"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Temt {
     #[doc = "0: UnTHR and/or the UnTSR contains valid data."]
     ValidData = 0,
     #[doc = "1: UnTHR and the UnTSR are empty."]
     Empty = 1,
 }
-impl From<Enum> for bool {
+impl From<Temt> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Temt) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `TEMT` reader - Transmitter Empty. TEMT is set when both UnTHR and UnTSR are empty; TEMT is cleared when either the UnTSR or the UnTHR contain valid data."]
-pub type TemtR = crate::BitReader<Enum>;
+pub type TemtR = crate::BitReader<Temt>;
 impl TemtR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Temt {
         match self.bits {
-            false => Enum::ValidData,
-            true => Enum::Empty,
+            false => Temt::ValidData,
+            true => Temt::Empty,
         }
     }
     #[doc = "UnTHR and/or the UnTSR contains valid data."]
     #[inline(always)]
     pub fn is_valid_data(&self) -> bool {
-        *self == Enum::ValidData
+        *self == Temt::ValidData
     }
     #[doc = "UnTHR and the UnTSR are empty."]
     #[inline(always)]
     pub fn is_empty(&self) -> bool {
-        *self == Enum::Empty
+        *self == Temt::Empty
     }
 }
 #[doc = "Error in RX FIFO . UnLSR\\[7\\] is set when a character with a Rx error such as framing error, parity error or break interrupt, is loaded into the UnRBR. This bit is cleared when the UnLSR register is read and there are no subsequent errors in the UARTn FIFO.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Rxfe {
     #[doc = "0: UnRBR contains no UARTn RX errors or UnFCR\\[0\\]=0."]
     UnrbrContainsNoUa = 0,
     #[doc = "1: UARTn RBR contains at least one UARTn RX error."]
     UartnRbrContainsA = 1,
 }
-impl From<Enum> for bool {
+impl From<Rxfe> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Rxfe) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `RXFE` reader - Error in RX FIFO . UnLSR\\[7\\] is set when a character with a Rx error such as framing error, parity error or break interrupt, is loaded into the UnRBR. This bit is cleared when the UnLSR register is read and there are no subsequent errors in the UARTn FIFO."]
-pub type RxfeR = crate::BitReader<Enum>;
+pub type RxfeR = crate::BitReader<Rxfe>;
 impl RxfeR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Rxfe {
         match self.bits {
-            false => Enum::UnrbrContainsNoUa,
-            true => Enum::UartnRbrContainsA,
+            false => Rxfe::UnrbrContainsNoUa,
+            true => Rxfe::UartnRbrContainsA,
         }
     }
     #[doc = "UnRBR contains no UARTn RX errors or UnFCR\\[0\\]=0."]
     #[inline(always)]
     pub fn is_unrbr_contains_no_ua(&self) -> bool {
-        *self == Enum::UnrbrContainsNoUa
+        *self == Rxfe::UnrbrContainsNoUa
     }
     #[doc = "UARTn RBR contains at least one UARTn RX error."]
     #[inline(always)]
     pub fn is_uartn_rbr_contains_a(&self) -> bool {
-        *self == Enum::UartnRbrContainsA
+        *self == Rxfe::UartnRbrContainsA
     }
 }
 impl R {

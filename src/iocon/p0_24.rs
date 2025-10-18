@@ -5,7 +5,7 @@ pub type W = crate::W<P0_24Spec>;
 #[doc = "Selects pin function for pin P0\\[24\\]"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
-pub enum Enum {
+pub enum Func {
     #[doc = "0: General purpose digital input/output pin."]
     P0_24 = 0,
     #[doc = "1: A/D converter 0, input 1. When configured as an ADC input, the digital function of the pin must be disabled."]
@@ -15,53 +15,53 @@ pub enum Enum {
     #[doc = "3: Capture input for Timer 3, channel 1."]
     T3Cap1 = 3,
 }
-impl From<Enum> for u8 {
+impl From<Func> for u8 {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Func) -> Self {
         variant as _
     }
 }
-impl crate::FieldSpec for Enum {
+impl crate::FieldSpec for Func {
     type Ux = u8;
 }
-impl crate::IsEnum for Enum {}
+impl crate::IsEnum for Func {}
 #[doc = "Field `FUNC` reader - Selects pin function for pin P0\\[24\\]"]
-pub type FuncR = crate::FieldReader<Enum>;
+pub type FuncR = crate::FieldReader<Func>;
 impl FuncR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Option<Enum> {
+    pub const fn variant(&self) -> Option<Func> {
         match self.bits {
-            0 => Some(Enum::P0_24),
-            1 => Some(Enum::Adc0In1),
-            2 => Some(Enum::I2sRxWs),
-            3 => Some(Enum::T3Cap1),
+            0 => Some(Func::P0_24),
+            1 => Some(Func::Adc0In1),
+            2 => Some(Func::I2sRxWs),
+            3 => Some(Func::T3Cap1),
             _ => None,
         }
     }
     #[doc = "General purpose digital input/output pin."]
     #[inline(always)]
     pub fn is_p0_24(&self) -> bool {
-        *self == Enum::P0_24
+        *self == Func::P0_24
     }
     #[doc = "A/D converter 0, input 1. When configured as an ADC input, the digital function of the pin must be disabled."]
     #[inline(always)]
     pub fn is_adc0_in_1(&self) -> bool {
-        *self == Enum::Adc0In1
+        *self == Func::Adc0In1
     }
     #[doc = "Receive Word Select. It is driven by the master and received by the slave. Corresponds to the signal WS in the I2S-bus specification."]
     #[inline(always)]
     pub fn is_i2s_rx_ws(&self) -> bool {
-        *self == Enum::I2sRxWs
+        *self == Func::I2sRxWs
     }
     #[doc = "Capture input for Timer 3, channel 1."]
     #[inline(always)]
     pub fn is_t3_cap1(&self) -> bool {
-        *self == Enum::T3Cap1
+        *self == Func::T3Cap1
     }
 }
 #[doc = "Field `FUNC` writer - Selects pin function for pin P0\\[24\\]"]
-pub type FuncW<'a, REG> = crate::FieldWriter<'a, REG, 3, Enum>;
+pub type FuncW<'a, REG> = crate::FieldWriter<'a, REG, 3, Func>;
 impl<'a, REG> FuncW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -70,22 +70,22 @@ where
     #[doc = "General purpose digital input/output pin."]
     #[inline(always)]
     pub fn p0_24(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::P0_24)
+        self.variant(Func::P0_24)
     }
     #[doc = "A/D converter 0, input 1. When configured as an ADC input, the digital function of the pin must be disabled."]
     #[inline(always)]
     pub fn adc0_in_1(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Adc0In1)
+        self.variant(Func::Adc0In1)
     }
     #[doc = "Receive Word Select. It is driven by the master and received by the slave. Corresponds to the signal WS in the I2S-bus specification."]
     #[inline(always)]
     pub fn i2s_rx_ws(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::I2sRxWs)
+        self.variant(Func::I2sRxWs)
     }
     #[doc = "Capture input for Timer 3, channel 1."]
     #[inline(always)]
     pub fn t3_cap1(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::T3Cap1)
+        self.variant(Func::T3Cap1)
     }
 }
 impl R {

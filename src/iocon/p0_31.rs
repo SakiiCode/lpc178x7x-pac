@@ -5,47 +5,47 @@ pub type W = crate::W<P0_31Spec>;
 #[doc = "Selects pin function for pin P0\\[31\\]\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
-pub enum Enum {
+pub enum Func {
     #[doc = "0: General purpose digital input/output pin."]
     P0_31 = 0,
     #[doc = "1: USB port 2 bidirectional D+ line."]
     UsbDp2 = 1,
 }
-impl From<Enum> for u8 {
+impl From<Func> for u8 {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Func) -> Self {
         variant as _
     }
 }
-impl crate::FieldSpec for Enum {
+impl crate::FieldSpec for Func {
     type Ux = u8;
 }
-impl crate::IsEnum for Enum {}
+impl crate::IsEnum for Func {}
 #[doc = "Field `FUNC` reader - Selects pin function for pin P0\\[31\\]"]
-pub type FuncR = crate::FieldReader<Enum>;
+pub type FuncR = crate::FieldReader<Func>;
 impl FuncR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Option<Enum> {
+    pub const fn variant(&self) -> Option<Func> {
         match self.bits {
-            0 => Some(Enum::P0_31),
-            1 => Some(Enum::UsbDp2),
+            0 => Some(Func::P0_31),
+            1 => Some(Func::UsbDp2),
             _ => None,
         }
     }
     #[doc = "General purpose digital input/output pin."]
     #[inline(always)]
     pub fn is_p0_31(&self) -> bool {
-        *self == Enum::P0_31
+        *self == Func::P0_31
     }
     #[doc = "USB port 2 bidirectional D+ line."]
     #[inline(always)]
     pub fn is_usb_dp2(&self) -> bool {
-        *self == Enum::UsbDp2
+        *self == Func::UsbDp2
     }
 }
 #[doc = "Field `FUNC` writer - Selects pin function for pin P0\\[31\\]"]
-pub type FuncW<'a, REG> = crate::FieldWriter<'a, REG, 3, Enum>;
+pub type FuncW<'a, REG> = crate::FieldWriter<'a, REG, 3, Func>;
 impl<'a, REG> FuncW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -54,12 +54,12 @@ where
     #[doc = "General purpose digital input/output pin."]
     #[inline(always)]
     pub fn p0_31(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::P0_31)
+        self.variant(Func::P0_31)
     }
     #[doc = "USB port 2 bidirectional D+ line."]
     #[inline(always)]
     pub fn usb_dp2(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::UsbDp2)
+        self.variant(Func::UsbDp2)
     }
 }
 impl R {

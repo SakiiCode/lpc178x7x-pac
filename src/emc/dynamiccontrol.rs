@@ -4,42 +4,42 @@ pub type R = crate::R<DynamiccontrolSpec>;
 pub type W = crate::W<DynamiccontrolSpec>;
 #[doc = "Dynamic memory clock enable.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Ce {
     #[doc = "0: Clock enable of idle devices are deasserted to save power (POR reset value)."]
     Powersave = 0,
     #[doc = "1: All clock enables are driven HIGH continuously.\\[1\\]"]
     High = 1,
 }
-impl From<Enum> for bool {
+impl From<Ce> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Ce) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `CE` reader - Dynamic memory clock enable."]
-pub type CeR = crate::BitReader<Enum>;
+pub type CeR = crate::BitReader<Ce>;
 impl CeR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Ce {
         match self.bits {
-            false => Enum::Powersave,
-            true => Enum::High,
+            false => Ce::Powersave,
+            true => Ce::High,
         }
     }
     #[doc = "Clock enable of idle devices are deasserted to save power (POR reset value)."]
     #[inline(always)]
     pub fn is_powersave(&self) -> bool {
-        *self == Enum::Powersave
+        *self == Ce::Powersave
     }
     #[doc = "All clock enables are driven HIGH continuously.\\[1\\]"]
     #[inline(always)]
     pub fn is_high(&self) -> bool {
-        *self == Enum::High
+        *self == Ce::High
     }
 }
 #[doc = "Field `CE` writer - Dynamic memory clock enable."]
-pub type CeW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type CeW<'a, REG> = crate::BitWriter<'a, REG, Ce>;
 impl<'a, REG> CeW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -47,52 +47,52 @@ where
     #[doc = "Clock enable of idle devices are deasserted to save power (POR reset value)."]
     #[inline(always)]
     pub fn powersave(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Powersave)
+        self.variant(Ce::Powersave)
     }
     #[doc = "All clock enables are driven HIGH continuously.\\[1\\]"]
     #[inline(always)]
     pub fn high(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::High)
+        self.variant(Ce::High)
     }
 }
 #[doc = "Dynamic memory clock control. When clock control is LOW the output clock CLKOUT is stopped when there are no SDRAM transactions. The clock is also stopped during self-refresh mode.\n\nValue on reset: 1"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Cs {
     #[doc = "0: CLKOUT stops when all SDRAMs are idle and during self-refresh mode."]
     Stop = 0,
     #[doc = "1: CLKOUT runs continuously (POR reset value)."]
     Run = 1,
 }
-impl From<Enum> for bool {
+impl From<Cs> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Cs) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `CS` reader - Dynamic memory clock control. When clock control is LOW the output clock CLKOUT is stopped when there are no SDRAM transactions. The clock is also stopped during self-refresh mode."]
-pub type CsR = crate::BitReader<Enum>;
+pub type CsR = crate::BitReader<Cs>;
 impl CsR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Cs {
         match self.bits {
-            false => Enum::Stop,
-            true => Enum::Run,
+            false => Cs::Stop,
+            true => Cs::Run,
         }
     }
     #[doc = "CLKOUT stops when all SDRAMs are idle and during self-refresh mode."]
     #[inline(always)]
     pub fn is_stop(&self) -> bool {
-        *self == Enum::Stop
+        *self == Cs::Stop
     }
     #[doc = "CLKOUT runs continuously (POR reset value)."]
     #[inline(always)]
     pub fn is_run(&self) -> bool {
-        *self == Enum::Run
+        *self == Cs::Run
     }
 }
 #[doc = "Field `CS` writer - Dynamic memory clock control. When clock control is LOW the output clock CLKOUT is stopped when there are no SDRAM transactions. The clock is also stopped during self-refresh mode."]
-pub type CsW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type CsW<'a, REG> = crate::BitWriter<'a, REG, Cs>;
 impl<'a, REG> CsW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -100,52 +100,52 @@ where
     #[doc = "CLKOUT stops when all SDRAMs are idle and during self-refresh mode."]
     #[inline(always)]
     pub fn stop(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Stop)
+        self.variant(Cs::Stop)
     }
     #[doc = "CLKOUT runs continuously (POR reset value)."]
     #[inline(always)]
     pub fn run(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Run)
+        self.variant(Cs::Run)
     }
 }
 #[doc = "Self-refresh request, EMCSREFREQ. By writing 1 to this bit self-refresh can be entered under software control. Writing 0 to this bit returns the EMC to normal mode. The self-refresh acknowledge bit in the Status register must be polled to discover the current operating mode of the EMC.\\[2\\]\n\nValue on reset: 1"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Sr {
     #[doc = "0: Normal mode."]
     NormalMode_ = 0,
     #[doc = "1: Enter self-refresh mode (POR reset value)."]
     EnterSelfRefreshM = 1,
 }
-impl From<Enum> for bool {
+impl From<Sr> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Sr) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `SR` reader - Self-refresh request, EMCSREFREQ. By writing 1 to this bit self-refresh can be entered under software control. Writing 0 to this bit returns the EMC to normal mode. The self-refresh acknowledge bit in the Status register must be polled to discover the current operating mode of the EMC.\\[2\\]"]
-pub type SrR = crate::BitReader<Enum>;
+pub type SrR = crate::BitReader<Sr>;
 impl SrR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Sr {
         match self.bits {
-            false => Enum::NormalMode_,
-            true => Enum::EnterSelfRefreshM,
+            false => Sr::NormalMode_,
+            true => Sr::EnterSelfRefreshM,
         }
     }
     #[doc = "Normal mode."]
     #[inline(always)]
     pub fn is_normal_mode_(&self) -> bool {
-        *self == Enum::NormalMode_
+        *self == Sr::NormalMode_
     }
     #[doc = "Enter self-refresh mode (POR reset value)."]
     #[inline(always)]
     pub fn is_enter_self_refresh_m(&self) -> bool {
-        *self == Enum::EnterSelfRefreshM
+        *self == Sr::EnterSelfRefreshM
     }
 }
 #[doc = "Field `SR` writer - Self-refresh request, EMCSREFREQ. By writing 1 to this bit self-refresh can be entered under software control. Writing 0 to this bit returns the EMC to normal mode. The self-refresh acknowledge bit in the Status register must be polled to discover the current operating mode of the EMC.\\[2\\]"]
-pub type SrW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type SrW<'a, REG> = crate::BitWriter<'a, REG, Sr>;
 impl<'a, REG> SrW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -153,52 +153,52 @@ where
     #[doc = "Normal mode."]
     #[inline(always)]
     pub fn normal_mode_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::NormalMode_)
+        self.variant(Sr::NormalMode_)
     }
     #[doc = "Enter self-refresh mode (POR reset value)."]
     #[inline(always)]
     pub fn enter_self_refresh_m(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::EnterSelfRefreshM)
+        self.variant(Sr::EnterSelfRefreshM)
     }
 }
 #[doc = "Memory clock control.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Mmc {
     #[doc = "0: CLKOUT enabled (POR reset value)."]
     ClkoutEnabledPor_ = 0,
     #[doc = "1: CLKOUT disabled.\\[3\\]"]
     ClkoutDisabled = 1,
 }
-impl From<Enum> for bool {
+impl From<Mmc> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Mmc) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `MMC` reader - Memory clock control."]
-pub type MmcR = crate::BitReader<Enum>;
+pub type MmcR = crate::BitReader<Mmc>;
 impl MmcR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Mmc {
         match self.bits {
-            false => Enum::ClkoutEnabledPor_,
-            true => Enum::ClkoutDisabled,
+            false => Mmc::ClkoutEnabledPor_,
+            true => Mmc::ClkoutDisabled,
         }
     }
     #[doc = "CLKOUT enabled (POR reset value)."]
     #[inline(always)]
     pub fn is_clkout_enabled_por_(&self) -> bool {
-        *self == Enum::ClkoutEnabledPor_
+        *self == Mmc::ClkoutEnabledPor_
     }
     #[doc = "CLKOUT disabled.\\[3\\]"]
     #[inline(always)]
     pub fn is_clkout_disabled(&self) -> bool {
-        *self == Enum::ClkoutDisabled
+        *self == Mmc::ClkoutDisabled
     }
 }
 #[doc = "Field `MMC` writer - Memory clock control."]
-pub type MmcW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type MmcW<'a, REG> = crate::BitWriter<'a, REG, Mmc>;
 impl<'a, REG> MmcW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -206,18 +206,18 @@ where
     #[doc = "CLKOUT enabled (POR reset value)."]
     #[inline(always)]
     pub fn clkout_enabled_por_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::ClkoutEnabledPor_)
+        self.variant(Mmc::ClkoutEnabledPor_)
     }
     #[doc = "CLKOUT disabled.\\[3\\]"]
     #[inline(always)]
     pub fn clkout_disabled(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::ClkoutDisabled)
+        self.variant(Mmc::ClkoutDisabled)
     }
 }
 #[doc = "SDRAM initialization.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
-pub enum Enum {
+pub enum I {
     #[doc = "0: Issue SDRAM NORMAL operation command (POR reset value)."]
     Normal = 0,
     #[doc = "1: Issue SDRAM MODE command."]
@@ -227,53 +227,53 @@ pub enum Enum {
     #[doc = "3: Issue SDRAM NOP (no operation) command)"]
     Nop = 3,
 }
-impl From<Enum> for u8 {
+impl From<I> for u8 {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: I) -> Self {
         variant as _
     }
 }
-impl crate::FieldSpec for Enum {
+impl crate::FieldSpec for I {
     type Ux = u8;
 }
-impl crate::IsEnum for Enum {}
+impl crate::IsEnum for I {}
 #[doc = "Field `I` reader - SDRAM initialization."]
-pub type IR = crate::FieldReader<Enum>;
+pub type IR = crate::FieldReader<I>;
 impl IR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> I {
         match self.bits {
-            0 => Enum::Normal,
-            1 => Enum::Mode,
-            2 => Enum::Pall,
-            3 => Enum::Nop,
+            0 => I::Normal,
+            1 => I::Mode,
+            2 => I::Pall,
+            3 => I::Nop,
             _ => unreachable!(),
         }
     }
     #[doc = "Issue SDRAM NORMAL operation command (POR reset value)."]
     #[inline(always)]
     pub fn is_normal(&self) -> bool {
-        *self == Enum::Normal
+        *self == I::Normal
     }
     #[doc = "Issue SDRAM MODE command."]
     #[inline(always)]
     pub fn is_mode(&self) -> bool {
-        *self == Enum::Mode
+        *self == I::Mode
     }
     #[doc = "Issue SDRAM PALL (precharge all) command."]
     #[inline(always)]
     pub fn is_pall(&self) -> bool {
-        *self == Enum::Pall
+        *self == I::Pall
     }
     #[doc = "Issue SDRAM NOP (no operation) command)"]
     #[inline(always)]
     pub fn is_nop(&self) -> bool {
-        *self == Enum::Nop
+        *self == I::Nop
     }
 }
 #[doc = "Field `I` writer - SDRAM initialization."]
-pub type IW<'a, REG> = crate::FieldWriter<'a, REG, 2, Enum, crate::Safe>;
+pub type IW<'a, REG> = crate::FieldWriter<'a, REG, 2, I, crate::Safe>;
 impl<'a, REG> IW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -282,22 +282,22 @@ where
     #[doc = "Issue SDRAM NORMAL operation command (POR reset value)."]
     #[inline(always)]
     pub fn normal(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Normal)
+        self.variant(I::Normal)
     }
     #[doc = "Issue SDRAM MODE command."]
     #[inline(always)]
     pub fn mode(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Mode)
+        self.variant(I::Mode)
     }
     #[doc = "Issue SDRAM PALL (precharge all) command."]
     #[inline(always)]
     pub fn pall(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Pall)
+        self.variant(I::Pall)
     }
     #[doc = "Issue SDRAM NOP (no operation) command)"]
     #[inline(always)]
     pub fn nop(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Nop)
+        self.variant(I::Nop)
     }
 }
 impl R {

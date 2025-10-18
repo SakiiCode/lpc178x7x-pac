@@ -8,42 +8,42 @@ pub type CclkdivR = crate::FieldReader;
 pub type CclkdivW<'a, REG> = crate::FieldWriter<'a, REG, 5>;
 #[doc = "Selects the input clock for the CPU clock divider.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Cclksel {
     #[doc = "0: Sysclk is used as the input to the CPU clock divider."]
     SysclkIsUsedAsTh = 0,
     #[doc = "1: The output of the Main PLL is used as the input to the CPU clock divider."]
     TheOutputOfTheMa = 1,
 }
-impl From<Enum> for bool {
+impl From<Cclksel> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Cclksel) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `CCLKSEL` reader - Selects the input clock for the CPU clock divider."]
-pub type CclkselR = crate::BitReader<Enum>;
+pub type CclkselR = crate::BitReader<Cclksel>;
 impl CclkselR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Cclksel {
         match self.bits {
-            false => Enum::SysclkIsUsedAsTh,
-            true => Enum::TheOutputOfTheMa,
+            false => Cclksel::SysclkIsUsedAsTh,
+            true => Cclksel::TheOutputOfTheMa,
         }
     }
     #[doc = "Sysclk is used as the input to the CPU clock divider."]
     #[inline(always)]
     pub fn is_sysclk_is_used_as_th(&self) -> bool {
-        *self == Enum::SysclkIsUsedAsTh
+        *self == Cclksel::SysclkIsUsedAsTh
     }
     #[doc = "The output of the Main PLL is used as the input to the CPU clock divider."]
     #[inline(always)]
     pub fn is_the_output_of_the_ma(&self) -> bool {
-        *self == Enum::TheOutputOfTheMa
+        *self == Cclksel::TheOutputOfTheMa
     }
 }
 #[doc = "Field `CCLKSEL` writer - Selects the input clock for the CPU clock divider."]
-pub type CclkselW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type CclkselW<'a, REG> = crate::BitWriter<'a, REG, Cclksel>;
 impl<'a, REG> CclkselW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -51,12 +51,12 @@ where
     #[doc = "Sysclk is used as the input to the CPU clock divider."]
     #[inline(always)]
     pub fn sysclk_is_used_as_th(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::SysclkIsUsedAsTh)
+        self.variant(Cclksel::SysclkIsUsedAsTh)
     }
     #[doc = "The output of the Main PLL is used as the input to the CPU clock divider."]
     #[inline(always)]
     pub fn the_output_of_the_ma(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::TheOutputOfTheMa)
+        self.variant(Cclksel::TheOutputOfTheMa)
     }
 }
 impl R {

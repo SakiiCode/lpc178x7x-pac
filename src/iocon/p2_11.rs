@@ -5,7 +5,7 @@ pub type W = crate::W<P2_11Spec>;
 #[doc = "Selects pin function for pin P2\\[11\\]"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
-pub enum Enum {
+pub enum Func {
     #[doc = "0: General purpose digital input/output pin. This pin includes a 5 ns input glitch filter."]
     P2_11 = 0,
     #[doc = "1: External interrupt 1 input."]
@@ -17,59 +17,59 @@ pub enum Enum {
     #[doc = "7: LCD clock."]
     LcdClkin = 7,
 }
-impl From<Enum> for u8 {
+impl From<Func> for u8 {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Func) -> Self {
         variant as _
     }
 }
-impl crate::FieldSpec for Enum {
+impl crate::FieldSpec for Func {
     type Ux = u8;
 }
-impl crate::IsEnum for Enum {}
+impl crate::IsEnum for Func {}
 #[doc = "Field `FUNC` reader - Selects pin function for pin P2\\[11\\]"]
-pub type FuncR = crate::FieldReader<Enum>;
+pub type FuncR = crate::FieldReader<Func>;
 impl FuncR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Option<Enum> {
+    pub const fn variant(&self) -> Option<Func> {
         match self.bits {
-            0 => Some(Enum::P2_11),
-            1 => Some(Enum::Eint1),
-            2 => Some(Enum::SdDat1),
-            3 => Some(Enum::I2sTxSck),
-            7 => Some(Enum::LcdClkin),
+            0 => Some(Func::P2_11),
+            1 => Some(Func::Eint1),
+            2 => Some(Func::SdDat1),
+            3 => Some(Func::I2sTxSck),
+            7 => Some(Func::LcdClkin),
             _ => None,
         }
     }
     #[doc = "General purpose digital input/output pin. This pin includes a 5 ns input glitch filter."]
     #[inline(always)]
     pub fn is_p2_11(&self) -> bool {
-        *self == Enum::P2_11
+        *self == Func::P2_11
     }
     #[doc = "External interrupt 1 input."]
     #[inline(always)]
     pub fn is_eint1(&self) -> bool {
-        *self == Enum::Eint1
+        *self == Func::Eint1
     }
     #[doc = "Data line 1 for SD card interface."]
     #[inline(always)]
     pub fn is_sd_dat_1(&self) -> bool {
-        *self == Enum::SdDat1
+        *self == Func::SdDat1
     }
     #[doc = "Transmit Clock. It is driven by the master and received by the slave. Corresponds to the signal SCK in the I2S-bus specification."]
     #[inline(always)]
     pub fn is_i2s_tx_sck(&self) -> bool {
-        *self == Enum::I2sTxSck
+        *self == Func::I2sTxSck
     }
     #[doc = "LCD clock."]
     #[inline(always)]
     pub fn is_lcd_clkin(&self) -> bool {
-        *self == Enum::LcdClkin
+        *self == Func::LcdClkin
     }
 }
 #[doc = "Field `FUNC` writer - Selects pin function for pin P2\\[11\\]"]
-pub type FuncW<'a, REG> = crate::FieldWriter<'a, REG, 3, Enum>;
+pub type FuncW<'a, REG> = crate::FieldWriter<'a, REG, 3, Func>;
 impl<'a, REG> FuncW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -78,27 +78,27 @@ where
     #[doc = "General purpose digital input/output pin. This pin includes a 5 ns input glitch filter."]
     #[inline(always)]
     pub fn p2_11(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::P2_11)
+        self.variant(Func::P2_11)
     }
     #[doc = "External interrupt 1 input."]
     #[inline(always)]
     pub fn eint1(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Eint1)
+        self.variant(Func::Eint1)
     }
     #[doc = "Data line 1 for SD card interface."]
     #[inline(always)]
     pub fn sd_dat_1(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::SdDat1)
+        self.variant(Func::SdDat1)
     }
     #[doc = "Transmit Clock. It is driven by the master and received by the slave. Corresponds to the signal SCK in the I2S-bus specification."]
     #[inline(always)]
     pub fn i2s_tx_sck(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::I2sTxSck)
+        self.variant(Func::I2sTxSck)
     }
     #[doc = "LCD clock."]
     #[inline(always)]
     pub fn lcd_clkin(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::LcdClkin)
+        self.variant(Func::LcdClkin)
     }
 }
 impl R {

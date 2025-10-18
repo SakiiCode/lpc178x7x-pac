@@ -4,42 +4,42 @@ pub type R = crate::R<ExtmodeSpec>;
 pub type W = crate::W<ExtmodeSpec>;
 #[doc = "Level or edge sensitivity select for EINT0.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Extmode0 {
     #[doc = "0: Level sensitive."]
     LevelSensitive_ = 0,
     #[doc = "1: Edge sensitive."]
     EdgeSensitive_ = 1,
 }
-impl From<Enum> for bool {
+impl From<Extmode0> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Extmode0) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `EXTMODE0` reader - Level or edge sensitivity select for EINT0."]
-pub type Extmode0R = crate::BitReader<Enum>;
+pub type Extmode0R = crate::BitReader<Extmode0>;
 impl Extmode0R {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Extmode0 {
         match self.bits {
-            false => Enum::LevelSensitive_,
-            true => Enum::EdgeSensitive_,
+            false => Extmode0::LevelSensitive_,
+            true => Extmode0::EdgeSensitive_,
         }
     }
     #[doc = "Level sensitive."]
     #[inline(always)]
     pub fn is_level_sensitive_(&self) -> bool {
-        *self == Enum::LevelSensitive_
+        *self == Extmode0::LevelSensitive_
     }
     #[doc = "Edge sensitive."]
     #[inline(always)]
     pub fn is_edge_sensitive_(&self) -> bool {
-        *self == Enum::EdgeSensitive_
+        *self == Extmode0::EdgeSensitive_
     }
 }
 #[doc = "Field `EXTMODE0` writer - Level or edge sensitivity select for EINT0."]
-pub type Extmode0W<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type Extmode0W<'a, REG> = crate::BitWriter<'a, REG, Extmode0>;
 impl<'a, REG> Extmode0W<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -47,52 +47,52 @@ where
     #[doc = "Level sensitive."]
     #[inline(always)]
     pub fn level_sensitive_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::LevelSensitive_)
+        self.variant(Extmode0::LevelSensitive_)
     }
     #[doc = "Edge sensitive."]
     #[inline(always)]
     pub fn edge_sensitive_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::EdgeSensitive_)
+        self.variant(Extmode0::EdgeSensitive_)
     }
 }
 #[doc = "Level or edge sensitivity select for EINT1.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Extmode1 {
     #[doc = "0: Level sensitive."]
     LevelSensitive_ = 0,
     #[doc = "1: Edge sensitive."]
     EdgeSensitive_ = 1,
 }
-impl From<Enum> for bool {
+impl From<Extmode1> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Extmode1) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `EXTMODE1` reader - Level or edge sensitivity select for EINT1."]
-pub type Extmode1R = crate::BitReader<Enum>;
+pub type Extmode1R = crate::BitReader<Extmode1>;
 impl Extmode1R {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Extmode1 {
         match self.bits {
-            false => Enum::LevelSensitive_,
-            true => Enum::EdgeSensitive_,
+            false => Extmode1::LevelSensitive_,
+            true => Extmode1::EdgeSensitive_,
         }
     }
     #[doc = "Level sensitive."]
     #[inline(always)]
     pub fn is_level_sensitive_(&self) -> bool {
-        *self == Enum::LevelSensitive_
+        *self == Extmode1::LevelSensitive_
     }
     #[doc = "Edge sensitive."]
     #[inline(always)]
     pub fn is_edge_sensitive_(&self) -> bool {
-        *self == Enum::EdgeSensitive_
+        *self == Extmode1::EdgeSensitive_
     }
 }
 #[doc = "Field `EXTMODE1` writer - Level or edge sensitivity select for EINT1."]
-pub type Extmode1W<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type Extmode1W<'a, REG> = crate::BitWriter<'a, REG, Extmode1>;
 impl<'a, REG> Extmode1W<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -100,52 +100,52 @@ where
     #[doc = "Level sensitive."]
     #[inline(always)]
     pub fn level_sensitive_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::LevelSensitive_)
+        self.variant(Extmode1::LevelSensitive_)
     }
     #[doc = "Edge sensitive."]
     #[inline(always)]
     pub fn edge_sensitive_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::EdgeSensitive_)
+        self.variant(Extmode1::EdgeSensitive_)
     }
 }
 #[doc = "Level or edge sensitivity select for EINT2.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Extmode2 {
     #[doc = "0: Level sensitive."]
     LevelSensitive_ = 0,
     #[doc = "1: Edge sensitive."]
     EdgeSensitive_ = 1,
 }
-impl From<Enum> for bool {
+impl From<Extmode2> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Extmode2) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `EXTMODE2` reader - Level or edge sensitivity select for EINT2."]
-pub type Extmode2R = crate::BitReader<Enum>;
+pub type Extmode2R = crate::BitReader<Extmode2>;
 impl Extmode2R {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Extmode2 {
         match self.bits {
-            false => Enum::LevelSensitive_,
-            true => Enum::EdgeSensitive_,
+            false => Extmode2::LevelSensitive_,
+            true => Extmode2::EdgeSensitive_,
         }
     }
     #[doc = "Level sensitive."]
     #[inline(always)]
     pub fn is_level_sensitive_(&self) -> bool {
-        *self == Enum::LevelSensitive_
+        *self == Extmode2::LevelSensitive_
     }
     #[doc = "Edge sensitive."]
     #[inline(always)]
     pub fn is_edge_sensitive_(&self) -> bool {
-        *self == Enum::EdgeSensitive_
+        *self == Extmode2::EdgeSensitive_
     }
 }
 #[doc = "Field `EXTMODE2` writer - Level or edge sensitivity select for EINT2."]
-pub type Extmode2W<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type Extmode2W<'a, REG> = crate::BitWriter<'a, REG, Extmode2>;
 impl<'a, REG> Extmode2W<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -153,52 +153,52 @@ where
     #[doc = "Level sensitive."]
     #[inline(always)]
     pub fn level_sensitive_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::LevelSensitive_)
+        self.variant(Extmode2::LevelSensitive_)
     }
     #[doc = "Edge sensitive."]
     #[inline(always)]
     pub fn edge_sensitive_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::EdgeSensitive_)
+        self.variant(Extmode2::EdgeSensitive_)
     }
 }
 #[doc = "Level or edge sensitivity select for EINT3.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Extmode3 {
     #[doc = "0: Level sensitive."]
     LevelSensitive_ = 0,
     #[doc = "1: Edge sensitive."]
     EdgeSensitive_ = 1,
 }
-impl From<Enum> for bool {
+impl From<Extmode3> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Extmode3) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `EXTMODE3` reader - Level or edge sensitivity select for EINT3."]
-pub type Extmode3R = crate::BitReader<Enum>;
+pub type Extmode3R = crate::BitReader<Extmode3>;
 impl Extmode3R {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Extmode3 {
         match self.bits {
-            false => Enum::LevelSensitive_,
-            true => Enum::EdgeSensitive_,
+            false => Extmode3::LevelSensitive_,
+            true => Extmode3::EdgeSensitive_,
         }
     }
     #[doc = "Level sensitive."]
     #[inline(always)]
     pub fn is_level_sensitive_(&self) -> bool {
-        *self == Enum::LevelSensitive_
+        *self == Extmode3::LevelSensitive_
     }
     #[doc = "Edge sensitive."]
     #[inline(always)]
     pub fn is_edge_sensitive_(&self) -> bool {
-        *self == Enum::EdgeSensitive_
+        *self == Extmode3::EdgeSensitive_
     }
 }
 #[doc = "Field `EXTMODE3` writer - Level or edge sensitivity select for EINT3."]
-pub type Extmode3W<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type Extmode3W<'a, REG> = crate::BitWriter<'a, REG, Extmode3>;
 impl<'a, REG> Extmode3W<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -206,12 +206,12 @@ where
     #[doc = "Level sensitive."]
     #[inline(always)]
     pub fn level_sensitive_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::LevelSensitive_)
+        self.variant(Extmode3::LevelSensitive_)
     }
     #[doc = "Edge sensitive."]
     #[inline(always)]
     pub fn edge_sensitive_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::EdgeSensitive_)
+        self.variant(Extmode3::EdgeSensitive_)
     }
 }
 impl R {

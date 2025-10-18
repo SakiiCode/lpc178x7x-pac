@@ -5,7 +5,7 @@ pub type W = crate::W<P2_12Spec>;
 #[doc = "Selects pin function for pin P2\\[12\\]"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
-pub enum Enum {
+pub enum Func {
     #[doc = "0: General purpose digital input/output pin. This pin includes a 5 ns input glitch filter."]
     P2_12 = 0,
     #[doc = "1: External interrupt 2 input."]
@@ -23,77 +23,77 @@ pub enum Enum {
     #[doc = "7: LCD data."]
     LcdVd18 = 7,
 }
-impl From<Enum> for u8 {
+impl From<Func> for u8 {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Func) -> Self {
         variant as _
     }
 }
-impl crate::FieldSpec for Enum {
+impl crate::FieldSpec for Func {
     type Ux = u8;
 }
-impl crate::IsEnum for Enum {}
+impl crate::IsEnum for Func {}
 #[doc = "Field `FUNC` reader - Selects pin function for pin P2\\[12\\]"]
-pub type FuncR = crate::FieldReader<Enum>;
+pub type FuncR = crate::FieldReader<Func>;
 impl FuncR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Func {
         match self.bits {
-            0 => Enum::P2_12,
-            1 => Enum::Eint2,
-            2 => Enum::SdDat2,
-            3 => Enum::I2sTxWs,
-            4 => Enum::LcdVd4,
-            5 => Enum::LcdVd3,
-            6 => Enum::LcdVd8,
-            7 => Enum::LcdVd18,
+            0 => Func::P2_12,
+            1 => Func::Eint2,
+            2 => Func::SdDat2,
+            3 => Func::I2sTxWs,
+            4 => Func::LcdVd4,
+            5 => Func::LcdVd3,
+            6 => Func::LcdVd8,
+            7 => Func::LcdVd18,
             _ => unreachable!(),
         }
     }
     #[doc = "General purpose digital input/output pin. This pin includes a 5 ns input glitch filter."]
     #[inline(always)]
     pub fn is_p2_12(&self) -> bool {
-        *self == Enum::P2_12
+        *self == Func::P2_12
     }
     #[doc = "External interrupt 2 input."]
     #[inline(always)]
     pub fn is_eint2(&self) -> bool {
-        *self == Enum::Eint2
+        *self == Func::Eint2
     }
     #[doc = "Data line 2 for SD card interface."]
     #[inline(always)]
     pub fn is_sd_dat_2(&self) -> bool {
-        *self == Enum::SdDat2
+        *self == Func::SdDat2
     }
     #[doc = "Transmit Word Select. It is driven by the master and received by the slave. Corresponds to the signal WS in the I2S-bus specification."]
     #[inline(always)]
     pub fn is_i2s_tx_ws(&self) -> bool {
-        *self == Enum::I2sTxWs
+        *self == Func::I2sTxWs
     }
     #[doc = "LCD data."]
     #[inline(always)]
     pub fn is_lcd_vd_4(&self) -> bool {
-        *self == Enum::LcdVd4
+        *self == Func::LcdVd4
     }
     #[doc = "LCD data."]
     #[inline(always)]
     pub fn is_lcd_vd_3(&self) -> bool {
-        *self == Enum::LcdVd3
+        *self == Func::LcdVd3
     }
     #[doc = "LCD data."]
     #[inline(always)]
     pub fn is_lcd_vd_8(&self) -> bool {
-        *self == Enum::LcdVd8
+        *self == Func::LcdVd8
     }
     #[doc = "LCD data."]
     #[inline(always)]
     pub fn is_lcd_vd_18(&self) -> bool {
-        *self == Enum::LcdVd18
+        *self == Func::LcdVd18
     }
 }
 #[doc = "Field `FUNC` writer - Selects pin function for pin P2\\[12\\]"]
-pub type FuncW<'a, REG> = crate::FieldWriter<'a, REG, 3, Enum, crate::Safe>;
+pub type FuncW<'a, REG> = crate::FieldWriter<'a, REG, 3, Func, crate::Safe>;
 impl<'a, REG> FuncW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -102,42 +102,42 @@ where
     #[doc = "General purpose digital input/output pin. This pin includes a 5 ns input glitch filter."]
     #[inline(always)]
     pub fn p2_12(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::P2_12)
+        self.variant(Func::P2_12)
     }
     #[doc = "External interrupt 2 input."]
     #[inline(always)]
     pub fn eint2(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Eint2)
+        self.variant(Func::Eint2)
     }
     #[doc = "Data line 2 for SD card interface."]
     #[inline(always)]
     pub fn sd_dat_2(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::SdDat2)
+        self.variant(Func::SdDat2)
     }
     #[doc = "Transmit Word Select. It is driven by the master and received by the slave. Corresponds to the signal WS in the I2S-bus specification."]
     #[inline(always)]
     pub fn i2s_tx_ws(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::I2sTxWs)
+        self.variant(Func::I2sTxWs)
     }
     #[doc = "LCD data."]
     #[inline(always)]
     pub fn lcd_vd_4(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::LcdVd4)
+        self.variant(Func::LcdVd4)
     }
     #[doc = "LCD data."]
     #[inline(always)]
     pub fn lcd_vd_3(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::LcdVd3)
+        self.variant(Func::LcdVd3)
     }
     #[doc = "LCD data."]
     #[inline(always)]
     pub fn lcd_vd_8(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::LcdVd8)
+        self.variant(Func::LcdVd8)
     }
     #[doc = "LCD data."]
     #[inline(always)]
     pub fn lcd_vd_18(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::LcdVd18)
+        self.variant(Func::LcdVd18)
     }
 }
 impl R {

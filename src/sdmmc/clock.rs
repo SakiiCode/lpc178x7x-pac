@@ -8,42 +8,42 @@ pub type ClkdivR = crate::FieldReader;
 pub type ClkdivW<'a, REG> = crate::FieldWriter<'a, REG, 8>;
 #[doc = "Enable SD card bus clock:\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Enable {
     #[doc = "0: Clock disabled."]
     ClockDisabled_ = 0,
     #[doc = "1: Clock enabled."]
     ClockEnabled_ = 1,
 }
-impl From<Enum> for bool {
+impl From<Enable> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Enable) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `ENABLE` reader - Enable SD card bus clock:"]
-pub type EnableR = crate::BitReader<Enum>;
+pub type EnableR = crate::BitReader<Enable>;
 impl EnableR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Enable {
         match self.bits {
-            false => Enum::ClockDisabled_,
-            true => Enum::ClockEnabled_,
+            false => Enable::ClockDisabled_,
+            true => Enable::ClockEnabled_,
         }
     }
     #[doc = "Clock disabled."]
     #[inline(always)]
     pub fn is_clock_disabled_(&self) -> bool {
-        *self == Enum::ClockDisabled_
+        *self == Enable::ClockDisabled_
     }
     #[doc = "Clock enabled."]
     #[inline(always)]
     pub fn is_clock_enabled_(&self) -> bool {
-        *self == Enum::ClockEnabled_
+        *self == Enable::ClockEnabled_
     }
 }
 #[doc = "Field `ENABLE` writer - Enable SD card bus clock:"]
-pub type EnableW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type EnableW<'a, REG> = crate::BitWriter<'a, REG, Enable>;
 impl<'a, REG> EnableW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -51,52 +51,52 @@ where
     #[doc = "Clock disabled."]
     #[inline(always)]
     pub fn clock_disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::ClockDisabled_)
+        self.variant(Enable::ClockDisabled_)
     }
     #[doc = "Clock enabled."]
     #[inline(always)]
     pub fn clock_enabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::ClockEnabled_)
+        self.variant(Enable::ClockEnabled_)
     }
 }
 #[doc = "Disable SD_CLK output when bus is idle:\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Pwrsave {
     #[doc = "0: Always enabled."]
     AlwaysEnabled_ = 0,
     #[doc = "1: Clock enabled when bus is active."]
     ClockEnabledWhenB = 1,
 }
-impl From<Enum> for bool {
+impl From<Pwrsave> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Pwrsave) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `PWRSAVE` reader - Disable SD_CLK output when bus is idle:"]
-pub type PwrsaveR = crate::BitReader<Enum>;
+pub type PwrsaveR = crate::BitReader<Pwrsave>;
 impl PwrsaveR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Pwrsave {
         match self.bits {
-            false => Enum::AlwaysEnabled_,
-            true => Enum::ClockEnabledWhenB,
+            false => Pwrsave::AlwaysEnabled_,
+            true => Pwrsave::ClockEnabledWhenB,
         }
     }
     #[doc = "Always enabled."]
     #[inline(always)]
     pub fn is_always_enabled_(&self) -> bool {
-        *self == Enum::AlwaysEnabled_
+        *self == Pwrsave::AlwaysEnabled_
     }
     #[doc = "Clock enabled when bus is active."]
     #[inline(always)]
     pub fn is_clock_enabled_when_b(&self) -> bool {
-        *self == Enum::ClockEnabledWhenB
+        *self == Pwrsave::ClockEnabledWhenB
     }
 }
 #[doc = "Field `PWRSAVE` writer - Disable SD_CLK output when bus is idle:"]
-pub type PwrsaveW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type PwrsaveW<'a, REG> = crate::BitWriter<'a, REG, Pwrsave>;
 impl<'a, REG> PwrsaveW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -104,52 +104,52 @@ where
     #[doc = "Always enabled."]
     #[inline(always)]
     pub fn always_enabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::AlwaysEnabled_)
+        self.variant(Pwrsave::AlwaysEnabled_)
     }
     #[doc = "Clock enabled when bus is active."]
     #[inline(always)]
     pub fn clock_enabled_when_b(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::ClockEnabledWhenB)
+        self.variant(Pwrsave::ClockEnabledWhenB)
     }
 }
 #[doc = "Enable bypass of clock divide logic:\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Bypass {
     #[doc = "0: Disable bypass."]
     DisableBypass_ = 0,
     #[doc = "1: Enable bypass. MCLK driven to card bus output (SD_CLK)."]
     EnableBypassMclk_ = 1,
 }
-impl From<Enum> for bool {
+impl From<Bypass> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Bypass) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `BYPASS` reader - Enable bypass of clock divide logic:"]
-pub type BypassR = crate::BitReader<Enum>;
+pub type BypassR = crate::BitReader<Bypass>;
 impl BypassR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Bypass {
         match self.bits {
-            false => Enum::DisableBypass_,
-            true => Enum::EnableBypassMclk_,
+            false => Bypass::DisableBypass_,
+            true => Bypass::EnableBypassMclk_,
         }
     }
     #[doc = "Disable bypass."]
     #[inline(always)]
     pub fn is_disable_bypass_(&self) -> bool {
-        *self == Enum::DisableBypass_
+        *self == Bypass::DisableBypass_
     }
     #[doc = "Enable bypass. MCLK driven to card bus output (SD_CLK)."]
     #[inline(always)]
     pub fn is_enable_bypass_mclk_(&self) -> bool {
-        *self == Enum::EnableBypassMclk_
+        *self == Bypass::EnableBypassMclk_
     }
 }
 #[doc = "Field `BYPASS` writer - Enable bypass of clock divide logic:"]
-pub type BypassW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type BypassW<'a, REG> = crate::BitWriter<'a, REG, Bypass>;
 impl<'a, REG> BypassW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -157,52 +157,52 @@ where
     #[doc = "Disable bypass."]
     #[inline(always)]
     pub fn disable_bypass_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::DisableBypass_)
+        self.variant(Bypass::DisableBypass_)
     }
     #[doc = "Enable bypass. MCLK driven to card bus output (SD_CLK)."]
     #[inline(always)]
     pub fn enable_bypass_mclk_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::EnableBypassMclk_)
+        self.variant(Bypass::EnableBypassMclk_)
     }
 }
 #[doc = "Enable wide bus mode.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Widebus {
     #[doc = "0: Standard bus mode (only SD_DAT\\[0\\] used)."]
     StandardBusModeO = 0,
     #[doc = "1: Wide bus mode (SD_DAT\\[3:0\\] used)"]
     WideBusModeSdDa = 1,
 }
-impl From<Enum> for bool {
+impl From<Widebus> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Widebus) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `WIDEBUS` reader - Enable wide bus mode."]
-pub type WidebusR = crate::BitReader<Enum>;
+pub type WidebusR = crate::BitReader<Widebus>;
 impl WidebusR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Widebus {
         match self.bits {
-            false => Enum::StandardBusModeO,
-            true => Enum::WideBusModeSdDa,
+            false => Widebus::StandardBusModeO,
+            true => Widebus::WideBusModeSdDa,
         }
     }
     #[doc = "Standard bus mode (only SD_DAT\\[0\\] used)."]
     #[inline(always)]
     pub fn is_standard_bus_mode_o(&self) -> bool {
-        *self == Enum::StandardBusModeO
+        *self == Widebus::StandardBusModeO
     }
     #[doc = "Wide bus mode (SD_DAT\\[3:0\\] used)"]
     #[inline(always)]
     pub fn is_wide_bus_mode_sd_da(&self) -> bool {
-        *self == Enum::WideBusModeSdDa
+        *self == Widebus::WideBusModeSdDa
     }
 }
 #[doc = "Field `WIDEBUS` writer - Enable wide bus mode."]
-pub type WidebusW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type WidebusW<'a, REG> = crate::BitWriter<'a, REG, Widebus>;
 impl<'a, REG> WidebusW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -210,12 +210,12 @@ where
     #[doc = "Standard bus mode (only SD_DAT\\[0\\] used)."]
     #[inline(always)]
     pub fn standard_bus_mode_o(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::StandardBusModeO)
+        self.variant(Widebus::StandardBusModeO)
     }
     #[doc = "Wide bus mode (SD_DAT\\[3:0\\] used)"]
     #[inline(always)]
     pub fn wide_bus_mode_sd_da(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::WideBusModeSdDa)
+        self.variant(Widebus::WideBusModeSdDa)
     }
 }
 impl R {

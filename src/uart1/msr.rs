@@ -2,146 +2,146 @@
 pub type R = crate::R<MsrSpec>;
 #[doc = "Delta CTS. Set upon state change of input CTS. Cleared on an MSR read.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Dcts {
     #[doc = "0: No change detected on modem input, CTS."]
     NoChangeDetectedO = 0,
     #[doc = "1: State change detected on modem input, CTS."]
     StateChangeDetecte = 1,
 }
-impl From<Enum> for bool {
+impl From<Dcts> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Dcts) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `DCTS` reader - Delta CTS. Set upon state change of input CTS. Cleared on an MSR read."]
-pub type DctsR = crate::BitReader<Enum>;
+pub type DctsR = crate::BitReader<Dcts>;
 impl DctsR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Dcts {
         match self.bits {
-            false => Enum::NoChangeDetectedO,
-            true => Enum::StateChangeDetecte,
+            false => Dcts::NoChangeDetectedO,
+            true => Dcts::StateChangeDetecte,
         }
     }
     #[doc = "No change detected on modem input, CTS."]
     #[inline(always)]
     pub fn is_no_change_detected_o(&self) -> bool {
-        *self == Enum::NoChangeDetectedO
+        *self == Dcts::NoChangeDetectedO
     }
     #[doc = "State change detected on modem input, CTS."]
     #[inline(always)]
     pub fn is_state_change_detecte(&self) -> bool {
-        *self == Enum::StateChangeDetecte
+        *self == Dcts::StateChangeDetecte
     }
 }
 #[doc = "Delta DSR. Set upon state change of input DSR. Cleared on an MSR read.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Ddsr {
     #[doc = "0: No change detected on modem input, DSR."]
     NoChangeDetectedO = 0,
     #[doc = "1: State change detected on modem input, DSR."]
     StateChangeDetecte = 1,
 }
-impl From<Enum> for bool {
+impl From<Ddsr> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Ddsr) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `DDSR` reader - Delta DSR. Set upon state change of input DSR. Cleared on an MSR read."]
-pub type DdsrR = crate::BitReader<Enum>;
+pub type DdsrR = crate::BitReader<Ddsr>;
 impl DdsrR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Ddsr {
         match self.bits {
-            false => Enum::NoChangeDetectedO,
-            true => Enum::StateChangeDetecte,
+            false => Ddsr::NoChangeDetectedO,
+            true => Ddsr::StateChangeDetecte,
         }
     }
     #[doc = "No change detected on modem input, DSR."]
     #[inline(always)]
     pub fn is_no_change_detected_o(&self) -> bool {
-        *self == Enum::NoChangeDetectedO
+        *self == Ddsr::NoChangeDetectedO
     }
     #[doc = "State change detected on modem input, DSR."]
     #[inline(always)]
     pub fn is_state_change_detecte(&self) -> bool {
-        *self == Enum::StateChangeDetecte
+        *self == Ddsr::StateChangeDetecte
     }
 }
 #[doc = "Trailing Edge RI. Set upon low to high transition of input RI. Cleared on an MSR read.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Teri {
     #[doc = "0: No change detected on modem input, RI."]
     NoChangeDetectedO = 0,
     #[doc = "1: Low-to-high transition detected on RI."]
     LowToHighTransiti = 1,
 }
-impl From<Enum> for bool {
+impl From<Teri> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Teri) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `TERI` reader - Trailing Edge RI. Set upon low to high transition of input RI. Cleared on an MSR read."]
-pub type TeriR = crate::BitReader<Enum>;
+pub type TeriR = crate::BitReader<Teri>;
 impl TeriR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Teri {
         match self.bits {
-            false => Enum::NoChangeDetectedO,
-            true => Enum::LowToHighTransiti,
+            false => Teri::NoChangeDetectedO,
+            true => Teri::LowToHighTransiti,
         }
     }
     #[doc = "No change detected on modem input, RI."]
     #[inline(always)]
     pub fn is_no_change_detected_o(&self) -> bool {
-        *self == Enum::NoChangeDetectedO
+        *self == Teri::NoChangeDetectedO
     }
     #[doc = "Low-to-high transition detected on RI."]
     #[inline(always)]
     pub fn is_low_to_high_transiti(&self) -> bool {
-        *self == Enum::LowToHighTransiti
+        *self == Teri::LowToHighTransiti
     }
 }
 #[doc = "Delta DCD. Set upon state change of input DCD. Cleared on an MSR read.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Ddcd {
     #[doc = "0: No change detected on modem input, DCD."]
     NoChangeDetectedO = 0,
     #[doc = "1: State change detected on modem input, DCD."]
     StateChangeDetecte = 1,
 }
-impl From<Enum> for bool {
+impl From<Ddcd> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Ddcd) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `DDCD` reader - Delta DCD. Set upon state change of input DCD. Cleared on an MSR read."]
-pub type DdcdR = crate::BitReader<Enum>;
+pub type DdcdR = crate::BitReader<Ddcd>;
 impl DdcdR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Ddcd {
         match self.bits {
-            false => Enum::NoChangeDetectedO,
-            true => Enum::StateChangeDetecte,
+            false => Ddcd::NoChangeDetectedO,
+            true => Ddcd::StateChangeDetecte,
         }
     }
     #[doc = "No change detected on modem input, DCD."]
     #[inline(always)]
     pub fn is_no_change_detected_o(&self) -> bool {
-        *self == Enum::NoChangeDetectedO
+        *self == Ddcd::NoChangeDetectedO
     }
     #[doc = "State change detected on modem input, DCD."]
     #[inline(always)]
     pub fn is_state_change_detecte(&self) -> bool {
-        *self == Enum::StateChangeDetecte
+        *self == Ddcd::StateChangeDetecte
     }
 }
 #[doc = "Field `CTS` reader - Clear To Send State. Complement of input signal CTS. This bit is connected to MCR\\[1\\] in modem loopback mode."]

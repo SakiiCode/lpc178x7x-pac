@@ -3,7 +3,7 @@ pub type W = crate::W<CmdcodeSpec>;
 #[doc = "The command phase:\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
-pub enum Enum {
+pub enum CmdPhase {
     #[doc = "2: Read"]
     Read = 2,
     #[doc = "1: Write"]
@@ -11,18 +11,18 @@ pub enum Enum {
     #[doc = "5: Command"]
     Command = 5,
 }
-impl From<Enum> for u8 {
+impl From<CmdPhase> for u8 {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: CmdPhase) -> Self {
         variant as _
     }
 }
-impl crate::FieldSpec for Enum {
+impl crate::FieldSpec for CmdPhase {
     type Ux = u8;
 }
-impl crate::IsEnum for Enum {}
+impl crate::IsEnum for CmdPhase {}
 #[doc = "Field `CMD_PHASE` writer - The command phase:"]
-pub type CmdPhaseW<'a, REG> = crate::FieldWriter<'a, REG, 8, Enum>;
+pub type CmdPhaseW<'a, REG> = crate::FieldWriter<'a, REG, 8, CmdPhase>;
 impl<'a, REG> CmdPhaseW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -31,17 +31,17 @@ where
     #[doc = "Read"]
     #[inline(always)]
     pub fn read(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Read)
+        self.variant(CmdPhase::Read)
     }
     #[doc = "Write"]
     #[inline(always)]
     pub fn write(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Write)
+        self.variant(CmdPhase::Write)
     }
     #[doc = "Command"]
     #[inline(always)]
     pub fn command(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Command)
+        self.variant(CmdPhase::Command)
     }
 }
 #[doc = "Field `CMD_CODE_WDATA` writer - This is a multi-purpose field. When CMD_PHASE is Command or Read, this field contains the code for the command (CMD_CODE). When CMD_PHASE is Write, this field contains the command write data (CMD_WDATA)."]

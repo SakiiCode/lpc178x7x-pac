@@ -21,7 +21,7 @@ pub type Em3W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "External Match Control 0. Determines the functionality of External Match 0.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
-pub enum Enum {
+pub enum Emc0 {
     #[doc = "0: Do Nothing."]
     DoNothing_ = 0,
     #[doc = "1: Clear the corresponding External Match bit/output to 0 (MATn.m pin is LOW if pinned out)."]
@@ -31,53 +31,53 @@ pub enum Enum {
     #[doc = "3: Toggle the corresponding External Match bit/output."]
     ToggleTheCorrespon = 3,
 }
-impl From<Enum> for u8 {
+impl From<Emc0> for u8 {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Emc0) -> Self {
         variant as _
     }
 }
-impl crate::FieldSpec for Enum {
+impl crate::FieldSpec for Emc0 {
     type Ux = u8;
 }
-impl crate::IsEnum for Enum {}
+impl crate::IsEnum for Emc0 {}
 #[doc = "Field `EMC0` reader - External Match Control 0. Determines the functionality of External Match 0."]
-pub type Emc0R = crate::FieldReader<Enum>;
+pub type Emc0R = crate::FieldReader<Emc0>;
 impl Emc0R {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Emc0 {
         match self.bits {
-            0 => Enum::DoNothing_,
-            1 => Enum::ClearTheCorrespond,
-            2 => Enum::SetTheCorrespondin,
-            3 => Enum::ToggleTheCorrespon,
+            0 => Emc0::DoNothing_,
+            1 => Emc0::ClearTheCorrespond,
+            2 => Emc0::SetTheCorrespondin,
+            3 => Emc0::ToggleTheCorrespon,
             _ => unreachable!(),
         }
     }
     #[doc = "Do Nothing."]
     #[inline(always)]
     pub fn is_do_nothing_(&self) -> bool {
-        *self == Enum::DoNothing_
+        *self == Emc0::DoNothing_
     }
     #[doc = "Clear the corresponding External Match bit/output to 0 (MATn.m pin is LOW if pinned out)."]
     #[inline(always)]
     pub fn is_clear_the_correspond(&self) -> bool {
-        *self == Enum::ClearTheCorrespond
+        *self == Emc0::ClearTheCorrespond
     }
     #[doc = "Set the corresponding External Match bit/output to 1 (MATn.m pin is HIGH if pinned out)."]
     #[inline(always)]
     pub fn is_set_the_correspondin(&self) -> bool {
-        *self == Enum::SetTheCorrespondin
+        *self == Emc0::SetTheCorrespondin
     }
     #[doc = "Toggle the corresponding External Match bit/output."]
     #[inline(always)]
     pub fn is_toggle_the_correspon(&self) -> bool {
-        *self == Enum::ToggleTheCorrespon
+        *self == Emc0::ToggleTheCorrespon
     }
 }
 #[doc = "Field `EMC0` writer - External Match Control 0. Determines the functionality of External Match 0."]
-pub type Emc0W<'a, REG> = crate::FieldWriter<'a, REG, 2, Enum, crate::Safe>;
+pub type Emc0W<'a, REG> = crate::FieldWriter<'a, REG, 2, Emc0, crate::Safe>;
 impl<'a, REG> Emc0W<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -86,28 +86,28 @@ where
     #[doc = "Do Nothing."]
     #[inline(always)]
     pub fn do_nothing_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::DoNothing_)
+        self.variant(Emc0::DoNothing_)
     }
     #[doc = "Clear the corresponding External Match bit/output to 0 (MATn.m pin is LOW if pinned out)."]
     #[inline(always)]
     pub fn clear_the_correspond(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::ClearTheCorrespond)
+        self.variant(Emc0::ClearTheCorrespond)
     }
     #[doc = "Set the corresponding External Match bit/output to 1 (MATn.m pin is HIGH if pinned out)."]
     #[inline(always)]
     pub fn set_the_correspondin(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::SetTheCorrespondin)
+        self.variant(Emc0::SetTheCorrespondin)
     }
     #[doc = "Toggle the corresponding External Match bit/output."]
     #[inline(always)]
     pub fn toggle_the_correspon(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::ToggleTheCorrespon)
+        self.variant(Emc0::ToggleTheCorrespon)
     }
 }
 #[doc = "External Match Control 1. Determines the functionality of External Match 1.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
-pub enum Enum {
+pub enum Emc1 {
     #[doc = "0: Do Nothing."]
     DoNothing_ = 0,
     #[doc = "1: Clear the corresponding External Match bit/output to 0 (MATn.m pin is LOW if pinned out)."]
@@ -117,53 +117,53 @@ pub enum Enum {
     #[doc = "3: Toggle the corresponding External Match bit/output."]
     ToggleTheCorrespon = 3,
 }
-impl From<Enum> for u8 {
+impl From<Emc1> for u8 {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Emc1) -> Self {
         variant as _
     }
 }
-impl crate::FieldSpec for Enum {
+impl crate::FieldSpec for Emc1 {
     type Ux = u8;
 }
-impl crate::IsEnum for Enum {}
+impl crate::IsEnum for Emc1 {}
 #[doc = "Field `EMC1` reader - External Match Control 1. Determines the functionality of External Match 1."]
-pub type Emc1R = crate::FieldReader<Enum>;
+pub type Emc1R = crate::FieldReader<Emc1>;
 impl Emc1R {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Emc1 {
         match self.bits {
-            0 => Enum::DoNothing_,
-            1 => Enum::ClearTheCorrespond,
-            2 => Enum::SetTheCorrespondin,
-            3 => Enum::ToggleTheCorrespon,
+            0 => Emc1::DoNothing_,
+            1 => Emc1::ClearTheCorrespond,
+            2 => Emc1::SetTheCorrespondin,
+            3 => Emc1::ToggleTheCorrespon,
             _ => unreachable!(),
         }
     }
     #[doc = "Do Nothing."]
     #[inline(always)]
     pub fn is_do_nothing_(&self) -> bool {
-        *self == Enum::DoNothing_
+        *self == Emc1::DoNothing_
     }
     #[doc = "Clear the corresponding External Match bit/output to 0 (MATn.m pin is LOW if pinned out)."]
     #[inline(always)]
     pub fn is_clear_the_correspond(&self) -> bool {
-        *self == Enum::ClearTheCorrespond
+        *self == Emc1::ClearTheCorrespond
     }
     #[doc = "Set the corresponding External Match bit/output to 1 (MATn.m pin is HIGH if pinned out)."]
     #[inline(always)]
     pub fn is_set_the_correspondin(&self) -> bool {
-        *self == Enum::SetTheCorrespondin
+        *self == Emc1::SetTheCorrespondin
     }
     #[doc = "Toggle the corresponding External Match bit/output."]
     #[inline(always)]
     pub fn is_toggle_the_correspon(&self) -> bool {
-        *self == Enum::ToggleTheCorrespon
+        *self == Emc1::ToggleTheCorrespon
     }
 }
 #[doc = "Field `EMC1` writer - External Match Control 1. Determines the functionality of External Match 1."]
-pub type Emc1W<'a, REG> = crate::FieldWriter<'a, REG, 2, Enum, crate::Safe>;
+pub type Emc1W<'a, REG> = crate::FieldWriter<'a, REG, 2, Emc1, crate::Safe>;
 impl<'a, REG> Emc1W<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -172,28 +172,28 @@ where
     #[doc = "Do Nothing."]
     #[inline(always)]
     pub fn do_nothing_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::DoNothing_)
+        self.variant(Emc1::DoNothing_)
     }
     #[doc = "Clear the corresponding External Match bit/output to 0 (MATn.m pin is LOW if pinned out)."]
     #[inline(always)]
     pub fn clear_the_correspond(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::ClearTheCorrespond)
+        self.variant(Emc1::ClearTheCorrespond)
     }
     #[doc = "Set the corresponding External Match bit/output to 1 (MATn.m pin is HIGH if pinned out)."]
     #[inline(always)]
     pub fn set_the_correspondin(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::SetTheCorrespondin)
+        self.variant(Emc1::SetTheCorrespondin)
     }
     #[doc = "Toggle the corresponding External Match bit/output."]
     #[inline(always)]
     pub fn toggle_the_correspon(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::ToggleTheCorrespon)
+        self.variant(Emc1::ToggleTheCorrespon)
     }
 }
 #[doc = "External Match Control 2. Determines the functionality of External Match 2.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
-pub enum Enum {
+pub enum Emc2 {
     #[doc = "0: Do Nothing."]
     DoNothing_ = 0,
     #[doc = "1: Clear the corresponding External Match bit/output to 0 (MATn.m pin is LOW if pinned out)."]
@@ -203,53 +203,53 @@ pub enum Enum {
     #[doc = "3: Toggle the corresponding External Match bit/output."]
     ToggleTheCorrespon = 3,
 }
-impl From<Enum> for u8 {
+impl From<Emc2> for u8 {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Emc2) -> Self {
         variant as _
     }
 }
-impl crate::FieldSpec for Enum {
+impl crate::FieldSpec for Emc2 {
     type Ux = u8;
 }
-impl crate::IsEnum for Enum {}
+impl crate::IsEnum for Emc2 {}
 #[doc = "Field `EMC2` reader - External Match Control 2. Determines the functionality of External Match 2."]
-pub type Emc2R = crate::FieldReader<Enum>;
+pub type Emc2R = crate::FieldReader<Emc2>;
 impl Emc2R {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Emc2 {
         match self.bits {
-            0 => Enum::DoNothing_,
-            1 => Enum::ClearTheCorrespond,
-            2 => Enum::SetTheCorrespondin,
-            3 => Enum::ToggleTheCorrespon,
+            0 => Emc2::DoNothing_,
+            1 => Emc2::ClearTheCorrespond,
+            2 => Emc2::SetTheCorrespondin,
+            3 => Emc2::ToggleTheCorrespon,
             _ => unreachable!(),
         }
     }
     #[doc = "Do Nothing."]
     #[inline(always)]
     pub fn is_do_nothing_(&self) -> bool {
-        *self == Enum::DoNothing_
+        *self == Emc2::DoNothing_
     }
     #[doc = "Clear the corresponding External Match bit/output to 0 (MATn.m pin is LOW if pinned out)."]
     #[inline(always)]
     pub fn is_clear_the_correspond(&self) -> bool {
-        *self == Enum::ClearTheCorrespond
+        *self == Emc2::ClearTheCorrespond
     }
     #[doc = "Set the corresponding External Match bit/output to 1 (MATn.m pin is HIGH if pinned out)."]
     #[inline(always)]
     pub fn is_set_the_correspondin(&self) -> bool {
-        *self == Enum::SetTheCorrespondin
+        *self == Emc2::SetTheCorrespondin
     }
     #[doc = "Toggle the corresponding External Match bit/output."]
     #[inline(always)]
     pub fn is_toggle_the_correspon(&self) -> bool {
-        *self == Enum::ToggleTheCorrespon
+        *self == Emc2::ToggleTheCorrespon
     }
 }
 #[doc = "Field `EMC2` writer - External Match Control 2. Determines the functionality of External Match 2."]
-pub type Emc2W<'a, REG> = crate::FieldWriter<'a, REG, 2, Enum, crate::Safe>;
+pub type Emc2W<'a, REG> = crate::FieldWriter<'a, REG, 2, Emc2, crate::Safe>;
 impl<'a, REG> Emc2W<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -258,28 +258,28 @@ where
     #[doc = "Do Nothing."]
     #[inline(always)]
     pub fn do_nothing_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::DoNothing_)
+        self.variant(Emc2::DoNothing_)
     }
     #[doc = "Clear the corresponding External Match bit/output to 0 (MATn.m pin is LOW if pinned out)."]
     #[inline(always)]
     pub fn clear_the_correspond(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::ClearTheCorrespond)
+        self.variant(Emc2::ClearTheCorrespond)
     }
     #[doc = "Set the corresponding External Match bit/output to 1 (MATn.m pin is HIGH if pinned out)."]
     #[inline(always)]
     pub fn set_the_correspondin(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::SetTheCorrespondin)
+        self.variant(Emc2::SetTheCorrespondin)
     }
     #[doc = "Toggle the corresponding External Match bit/output."]
     #[inline(always)]
     pub fn toggle_the_correspon(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::ToggleTheCorrespon)
+        self.variant(Emc2::ToggleTheCorrespon)
     }
 }
 #[doc = "External Match Control 3. Determines the functionality of External Match 3.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
-pub enum Enum {
+pub enum Emc3 {
     #[doc = "0: Do Nothing."]
     DoNothing_ = 0,
     #[doc = "1: Clear the corresponding External Match bit/output to 0 (MATn.m pin is LOW if pinned out)."]
@@ -289,53 +289,53 @@ pub enum Enum {
     #[doc = "3: Toggle the corresponding External Match bit/output."]
     ToggleTheCorrespon = 3,
 }
-impl From<Enum> for u8 {
+impl From<Emc3> for u8 {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Emc3) -> Self {
         variant as _
     }
 }
-impl crate::FieldSpec for Enum {
+impl crate::FieldSpec for Emc3 {
     type Ux = u8;
 }
-impl crate::IsEnum for Enum {}
+impl crate::IsEnum for Emc3 {}
 #[doc = "Field `EMC3` reader - External Match Control 3. Determines the functionality of External Match 3."]
-pub type Emc3R = crate::FieldReader<Enum>;
+pub type Emc3R = crate::FieldReader<Emc3>;
 impl Emc3R {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Emc3 {
         match self.bits {
-            0 => Enum::DoNothing_,
-            1 => Enum::ClearTheCorrespond,
-            2 => Enum::SetTheCorrespondin,
-            3 => Enum::ToggleTheCorrespon,
+            0 => Emc3::DoNothing_,
+            1 => Emc3::ClearTheCorrespond,
+            2 => Emc3::SetTheCorrespondin,
+            3 => Emc3::ToggleTheCorrespon,
             _ => unreachable!(),
         }
     }
     #[doc = "Do Nothing."]
     #[inline(always)]
     pub fn is_do_nothing_(&self) -> bool {
-        *self == Enum::DoNothing_
+        *self == Emc3::DoNothing_
     }
     #[doc = "Clear the corresponding External Match bit/output to 0 (MATn.m pin is LOW if pinned out)."]
     #[inline(always)]
     pub fn is_clear_the_correspond(&self) -> bool {
-        *self == Enum::ClearTheCorrespond
+        *self == Emc3::ClearTheCorrespond
     }
     #[doc = "Set the corresponding External Match bit/output to 1 (MATn.m pin is HIGH if pinned out)."]
     #[inline(always)]
     pub fn is_set_the_correspondin(&self) -> bool {
-        *self == Enum::SetTheCorrespondin
+        *self == Emc3::SetTheCorrespondin
     }
     #[doc = "Toggle the corresponding External Match bit/output."]
     #[inline(always)]
     pub fn is_toggle_the_correspon(&self) -> bool {
-        *self == Enum::ToggleTheCorrespon
+        *self == Emc3::ToggleTheCorrespon
     }
 }
 #[doc = "Field `EMC3` writer - External Match Control 3. Determines the functionality of External Match 3."]
-pub type Emc3W<'a, REG> = crate::FieldWriter<'a, REG, 2, Enum, crate::Safe>;
+pub type Emc3W<'a, REG> = crate::FieldWriter<'a, REG, 2, Emc3, crate::Safe>;
 impl<'a, REG> Emc3W<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -344,22 +344,22 @@ where
     #[doc = "Do Nothing."]
     #[inline(always)]
     pub fn do_nothing_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::DoNothing_)
+        self.variant(Emc3::DoNothing_)
     }
     #[doc = "Clear the corresponding External Match bit/output to 0 (MATn.m pin is LOW if pinned out)."]
     #[inline(always)]
     pub fn clear_the_correspond(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::ClearTheCorrespond)
+        self.variant(Emc3::ClearTheCorrespond)
     }
     #[doc = "Set the corresponding External Match bit/output to 1 (MATn.m pin is HIGH if pinned out)."]
     #[inline(always)]
     pub fn set_the_correspondin(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::SetTheCorrespondin)
+        self.variant(Emc3::SetTheCorrespondin)
     }
     #[doc = "Toggle the corresponding External Match bit/output."]
     #[inline(always)]
     pub fn toggle_the_correspon(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::ToggleTheCorrespon)
+        self.variant(Emc3::ToggleTheCorrespon)
     }
 }
 impl R {

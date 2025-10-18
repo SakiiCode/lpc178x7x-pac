@@ -4,42 +4,42 @@ pub type R = crate::R<Rs485ctrlSpec>;
 pub type W = crate::W<Rs485ctrlSpec>;
 #[doc = "NMM enable.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Nmmen {
     #[doc = "0: RS-485/EIA-485 Normal Multidrop Mode (NMM) is disabled."]
     Disabled = 0,
     #[doc = "1: RS-485/EIA-485 Normal Multidrop Mode (NMM) is enabled. In this mode, an address is detected when a received byte has the parity bit = 1, generating a received data interrupt. See Section 18.6.16 RS-485/EIA-485 modes of operation."]
     Enabled = 1,
 }
-impl From<Enum> for bool {
+impl From<Nmmen> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Nmmen) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `NMMEN` reader - NMM enable."]
-pub type NmmenR = crate::BitReader<Enum>;
+pub type NmmenR = crate::BitReader<Nmmen>;
 impl NmmenR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Nmmen {
         match self.bits {
-            false => Enum::Disabled,
-            true => Enum::Enabled,
+            false => Nmmen::Disabled,
+            true => Nmmen::Enabled,
         }
     }
     #[doc = "RS-485/EIA-485 Normal Multidrop Mode (NMM) is disabled."]
     #[inline(always)]
     pub fn is_disabled(&self) -> bool {
-        *self == Enum::Disabled
+        *self == Nmmen::Disabled
     }
     #[doc = "RS-485/EIA-485 Normal Multidrop Mode (NMM) is enabled. In this mode, an address is detected when a received byte has the parity bit = 1, generating a received data interrupt. See Section 18.6.16 RS-485/EIA-485 modes of operation."]
     #[inline(always)]
     pub fn is_enabled(&self) -> bool {
-        *self == Enum::Enabled
+        *self == Nmmen::Enabled
     }
 }
 #[doc = "Field `NMMEN` writer - NMM enable."]
-pub type NmmenW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type NmmenW<'a, REG> = crate::BitWriter<'a, REG, Nmmen>;
 impl<'a, REG> NmmenW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -47,52 +47,52 @@ where
     #[doc = "RS-485/EIA-485 Normal Multidrop Mode (NMM) is disabled."]
     #[inline(always)]
     pub fn disabled(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Disabled)
+        self.variant(Nmmen::Disabled)
     }
     #[doc = "RS-485/EIA-485 Normal Multidrop Mode (NMM) is enabled. In this mode, an address is detected when a received byte has the parity bit = 1, generating a received data interrupt. See Section 18.6.16 RS-485/EIA-485 modes of operation."]
     #[inline(always)]
     pub fn enabled(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Enabled)
+        self.variant(Nmmen::Enabled)
     }
 }
 #[doc = "Receiver enable.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Rxdis {
     #[doc = "0: The receiver is enabled."]
     Enabled = 0,
     #[doc = "1: The receiver is disabled."]
     Disabled = 1,
 }
-impl From<Enum> for bool {
+impl From<Rxdis> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Rxdis) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `RXDIS` reader - Receiver enable."]
-pub type RxdisR = crate::BitReader<Enum>;
+pub type RxdisR = crate::BitReader<Rxdis>;
 impl RxdisR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Rxdis {
         match self.bits {
-            false => Enum::Enabled,
-            true => Enum::Disabled,
+            false => Rxdis::Enabled,
+            true => Rxdis::Disabled,
         }
     }
     #[doc = "The receiver is enabled."]
     #[inline(always)]
     pub fn is_enabled(&self) -> bool {
-        *self == Enum::Enabled
+        *self == Rxdis::Enabled
     }
     #[doc = "The receiver is disabled."]
     #[inline(always)]
     pub fn is_disabled(&self) -> bool {
-        *self == Enum::Disabled
+        *self == Rxdis::Disabled
     }
 }
 #[doc = "Field `RXDIS` writer - Receiver enable."]
-pub type RxdisW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type RxdisW<'a, REG> = crate::BitWriter<'a, REG, Rxdis>;
 impl<'a, REG> RxdisW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -100,52 +100,52 @@ where
     #[doc = "The receiver is enabled."]
     #[inline(always)]
     pub fn enabled(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Enabled)
+        self.variant(Rxdis::Enabled)
     }
     #[doc = "The receiver is disabled."]
     #[inline(always)]
     pub fn disabled(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Disabled)
+        self.variant(Rxdis::Disabled)
     }
 }
 #[doc = "AAD enable.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Aaden {
     #[doc = "0: Auto Address Detect (AAD) is disabled."]
     Disabled = 0,
     #[doc = "1: Auto Address Detect (AAD) is enabled."]
     Enabled = 1,
 }
-impl From<Enum> for bool {
+impl From<Aaden> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Aaden) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `AADEN` reader - AAD enable."]
-pub type AadenR = crate::BitReader<Enum>;
+pub type AadenR = crate::BitReader<Aaden>;
 impl AadenR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Aaden {
         match self.bits {
-            false => Enum::Disabled,
-            true => Enum::Enabled,
+            false => Aaden::Disabled,
+            true => Aaden::Enabled,
         }
     }
     #[doc = "Auto Address Detect (AAD) is disabled."]
     #[inline(always)]
     pub fn is_disabled(&self) -> bool {
-        *self == Enum::Disabled
+        *self == Aaden::Disabled
     }
     #[doc = "Auto Address Detect (AAD) is enabled."]
     #[inline(always)]
     pub fn is_enabled(&self) -> bool {
-        *self == Enum::Enabled
+        *self == Aaden::Enabled
     }
 }
 #[doc = "Field `AADEN` writer - AAD enable."]
-pub type AadenW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type AadenW<'a, REG> = crate::BitWriter<'a, REG, Aaden>;
 impl<'a, REG> AadenW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -153,52 +153,52 @@ where
     #[doc = "Auto Address Detect (AAD) is disabled."]
     #[inline(always)]
     pub fn disabled(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Disabled)
+        self.variant(Aaden::Disabled)
     }
     #[doc = "Auto Address Detect (AAD) is enabled."]
     #[inline(always)]
     pub fn enabled(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Enabled)
+        self.variant(Aaden::Enabled)
     }
 }
 #[doc = "Direction control enable.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Dctrl {
     #[doc = "0: Disable Auto Direction Control."]
     DisableAutoDirecti = 0,
     #[doc = "1: Enable Auto Direction Control."]
     EnableAutoDirectio = 1,
 }
-impl From<Enum> for bool {
+impl From<Dctrl> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Dctrl) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `DCTRL` reader - Direction control enable."]
-pub type DctrlR = crate::BitReader<Enum>;
+pub type DctrlR = crate::BitReader<Dctrl>;
 impl DctrlR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Dctrl {
         match self.bits {
-            false => Enum::DisableAutoDirecti,
-            true => Enum::EnableAutoDirectio,
+            false => Dctrl::DisableAutoDirecti,
+            true => Dctrl::EnableAutoDirectio,
         }
     }
     #[doc = "Disable Auto Direction Control."]
     #[inline(always)]
     pub fn is_disable_auto_directi(&self) -> bool {
-        *self == Enum::DisableAutoDirecti
+        *self == Dctrl::DisableAutoDirecti
     }
     #[doc = "Enable Auto Direction Control."]
     #[inline(always)]
     pub fn is_enable_auto_directio(&self) -> bool {
-        *self == Enum::EnableAutoDirectio
+        *self == Dctrl::EnableAutoDirectio
     }
 }
 #[doc = "Field `DCTRL` writer - Direction control enable."]
-pub type DctrlW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type DctrlW<'a, REG> = crate::BitWriter<'a, REG, Dctrl>;
 impl<'a, REG> DctrlW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -206,52 +206,52 @@ where
     #[doc = "Disable Auto Direction Control."]
     #[inline(always)]
     pub fn disable_auto_directi(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::DisableAutoDirecti)
+        self.variant(Dctrl::DisableAutoDirecti)
     }
     #[doc = "Enable Auto Direction Control."]
     #[inline(always)]
     pub fn enable_auto_directio(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::EnableAutoDirectio)
+        self.variant(Dctrl::EnableAutoDirectio)
     }
 }
 #[doc = "Direction control pin polarity. This bit reverses the polarity of the direction control signal on the Un_OE pin.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Oinv {
     #[doc = "0: The direction control pin will be driven to logic 0 when the transmitter has data to be sent. It will be driven to logic 1 after the last bit of data has been transmitted."]
     Dirlow = 0,
     #[doc = "1: The direction control pin will be driven to logic 1 when the transmitter has data to be sent. It will be driven to logic 0 after the last bit of data has been transmitted."]
     Dirhigh = 1,
 }
-impl From<Enum> for bool {
+impl From<Oinv> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Oinv) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `OINV` reader - Direction control pin polarity. This bit reverses the polarity of the direction control signal on the Un_OE pin."]
-pub type OinvR = crate::BitReader<Enum>;
+pub type OinvR = crate::BitReader<Oinv>;
 impl OinvR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Oinv {
         match self.bits {
-            false => Enum::Dirlow,
-            true => Enum::Dirhigh,
+            false => Oinv::Dirlow,
+            true => Oinv::Dirhigh,
         }
     }
     #[doc = "The direction control pin will be driven to logic 0 when the transmitter has data to be sent. It will be driven to logic 1 after the last bit of data has been transmitted."]
     #[inline(always)]
     pub fn is_dirlow(&self) -> bool {
-        *self == Enum::Dirlow
+        *self == Oinv::Dirlow
     }
     #[doc = "The direction control pin will be driven to logic 1 when the transmitter has data to be sent. It will be driven to logic 0 after the last bit of data has been transmitted."]
     #[inline(always)]
     pub fn is_dirhigh(&self) -> bool {
-        *self == Enum::Dirhigh
+        *self == Oinv::Dirhigh
     }
 }
 #[doc = "Field `OINV` writer - Direction control pin polarity. This bit reverses the polarity of the direction control signal on the Un_OE pin."]
-pub type OinvW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type OinvW<'a, REG> = crate::BitWriter<'a, REG, Oinv>;
 impl<'a, REG> OinvW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -259,12 +259,12 @@ where
     #[doc = "The direction control pin will be driven to logic 0 when the transmitter has data to be sent. It will be driven to logic 1 after the last bit of data has been transmitted."]
     #[inline(always)]
     pub fn dirlow(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Dirlow)
+        self.variant(Oinv::Dirlow)
     }
     #[doc = "The direction control pin will be driven to logic 1 when the transmitter has data to be sent. It will be driven to logic 0 after the last bit of data has been transmitted."]
     #[inline(always)]
     pub fn dirhigh(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Dirhigh)
+        self.variant(Oinv::Dirhigh)
     }
 }
 impl R {

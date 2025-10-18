@@ -2,182 +2,182 @@
 pub type R = crate::R<OtgclkstSpec>;
 #[doc = "Host clock status.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum HostClkOn {
     #[doc = "0: Host clock is not available."]
     HostClockIsNotAv = 0,
     #[doc = "1: Host clock is available."]
     HostClockIsAvaila = 1,
 }
-impl From<Enum> for bool {
+impl From<HostClkOn> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: HostClkOn) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `HOST_CLK_ON` reader - Host clock status."]
-pub type HostClkOnR = crate::BitReader<Enum>;
+pub type HostClkOnR = crate::BitReader<HostClkOn>;
 impl HostClkOnR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> HostClkOn {
         match self.bits {
-            false => Enum::HostClockIsNotAv,
-            true => Enum::HostClockIsAvaila,
+            false => HostClkOn::HostClockIsNotAv,
+            true => HostClkOn::HostClockIsAvaila,
         }
     }
     #[doc = "Host clock is not available."]
     #[inline(always)]
     pub fn is_host_clock_is_not_av(&self) -> bool {
-        *self == Enum::HostClockIsNotAv
+        *self == HostClkOn::HostClockIsNotAv
     }
     #[doc = "Host clock is available."]
     #[inline(always)]
     pub fn is_host_clock_is_availa(&self) -> bool {
-        *self == Enum::HostClockIsAvaila
+        *self == HostClkOn::HostClockIsAvaila
     }
 }
 #[doc = "Device clock status.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum DevClkOn {
     #[doc = "0: Device clock is not available."]
     DeviceClockIsNot_ = 0,
     #[doc = "1: Device clock is available."]
     DeviceClockIsAvai = 1,
 }
-impl From<Enum> for bool {
+impl From<DevClkOn> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: DevClkOn) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `DEV_CLK_ON` reader - Device clock status."]
-pub type DevClkOnR = crate::BitReader<Enum>;
+pub type DevClkOnR = crate::BitReader<DevClkOn>;
 impl DevClkOnR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> DevClkOn {
         match self.bits {
-            false => Enum::DeviceClockIsNot_,
-            true => Enum::DeviceClockIsAvai,
+            false => DevClkOn::DeviceClockIsNot_,
+            true => DevClkOn::DeviceClockIsAvai,
         }
     }
     #[doc = "Device clock is not available."]
     #[inline(always)]
     pub fn is_device_clock_is_not_(&self) -> bool {
-        *self == Enum::DeviceClockIsNot_
+        *self == DevClkOn::DeviceClockIsNot_
     }
     #[doc = "Device clock is available."]
     #[inline(always)]
     pub fn is_device_clock_is_avai(&self) -> bool {
-        *self == Enum::DeviceClockIsAvai
+        *self == DevClkOn::DeviceClockIsAvai
     }
 }
 #[doc = "I2C clock status.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum I2cClkOn {
     #[doc = "0: I2C clock is not available."]
     I2cClockIsNotAva = 0,
     #[doc = "1: I2C clock is available."]
     I2cClockIsAvailab = 1,
 }
-impl From<Enum> for bool {
+impl From<I2cClkOn> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: I2cClkOn) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `I2C_CLK_ON` reader - I2C clock status."]
-pub type I2cClkOnR = crate::BitReader<Enum>;
+pub type I2cClkOnR = crate::BitReader<I2cClkOn>;
 impl I2cClkOnR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> I2cClkOn {
         match self.bits {
-            false => Enum::I2cClockIsNotAva,
-            true => Enum::I2cClockIsAvailab,
+            false => I2cClkOn::I2cClockIsNotAva,
+            true => I2cClkOn::I2cClockIsAvailab,
         }
     }
     #[doc = "I2C clock is not available."]
     #[inline(always)]
     pub fn is_i2c_clock_is_not_ava(&self) -> bool {
-        *self == Enum::I2cClockIsNotAva
+        *self == I2cClkOn::I2cClockIsNotAva
     }
     #[doc = "I2C clock is available."]
     #[inline(always)]
     pub fn is_i2c_clock_is_availab(&self) -> bool {
-        *self == Enum::I2cClockIsAvailab
+        *self == I2cClkOn::I2cClockIsAvailab
     }
 }
 #[doc = "OTG clock status.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum OtgClkOn {
     #[doc = "0: OTG clock is not available."]
     OtgClockIsNotAva = 0,
     #[doc = "1: OTG clock is available."]
     OtgClockIsAvailab = 1,
 }
-impl From<Enum> for bool {
+impl From<OtgClkOn> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: OtgClkOn) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `OTG_CLK_ON` reader - OTG clock status."]
-pub type OtgClkOnR = crate::BitReader<Enum>;
+pub type OtgClkOnR = crate::BitReader<OtgClkOn>;
 impl OtgClkOnR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> OtgClkOn {
         match self.bits {
-            false => Enum::OtgClockIsNotAva,
-            true => Enum::OtgClockIsAvailab,
+            false => OtgClkOn::OtgClockIsNotAva,
+            true => OtgClkOn::OtgClockIsAvailab,
         }
     }
     #[doc = "OTG clock is not available."]
     #[inline(always)]
     pub fn is_otg_clock_is_not_ava(&self) -> bool {
-        *self == Enum::OtgClockIsNotAva
+        *self == OtgClkOn::OtgClockIsNotAva
     }
     #[doc = "OTG clock is available."]
     #[inline(always)]
     pub fn is_otg_clock_is_availab(&self) -> bool {
-        *self == Enum::OtgClockIsAvailab
+        *self == OtgClkOn::OtgClockIsAvailab
     }
 }
 #[doc = "AHB master clock status.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum AhbClkOn {
     #[doc = "0: AHB clock is not available."]
     AhbClockIsNotAva = 0,
     #[doc = "1: AHB clock is available."]
     AhbClockIsAvailab = 1,
 }
-impl From<Enum> for bool {
+impl From<AhbClkOn> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: AhbClkOn) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `AHB_CLK_ON` reader - AHB master clock status."]
-pub type AhbClkOnR = crate::BitReader<Enum>;
+pub type AhbClkOnR = crate::BitReader<AhbClkOn>;
 impl AhbClkOnR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> AhbClkOn {
         match self.bits {
-            false => Enum::AhbClockIsNotAva,
-            true => Enum::AhbClockIsAvailab,
+            false => AhbClkOn::AhbClockIsNotAva,
+            true => AhbClkOn::AhbClockIsAvailab,
         }
     }
     #[doc = "AHB clock is not available."]
     #[inline(always)]
     pub fn is_ahb_clock_is_not_ava(&self) -> bool {
-        *self == Enum::AhbClockIsNotAva
+        *self == AhbClkOn::AhbClockIsNotAva
     }
     #[doc = "AHB clock is available."]
     #[inline(always)]
     pub fn is_ahb_clock_is_availab(&self) -> bool {
-        *self == Enum::AhbClockIsAvailab
+        *self == AhbClkOn::AhbClockIsAvailab
     }
 }
 impl R {

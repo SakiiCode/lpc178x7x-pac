@@ -4,42 +4,42 @@ pub type R = crate::R<ExtpolarSpec>;
 pub type W = crate::W<ExtpolarSpec>;
 #[doc = "External interrupt polarity for EINT0.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Extpolar0 {
     #[doc = "0: Low-active or falling-edge sensitive (depending on EXTMODE0)."]
     LowActiveOrFallin = 0,
     #[doc = "1: High-active or rising-edge sensitive (depending on EXTMODE0)."]
     HighActiveOrRisin = 1,
 }
-impl From<Enum> for bool {
+impl From<Extpolar0> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Extpolar0) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `EXTPOLAR0` reader - External interrupt polarity for EINT0."]
-pub type Extpolar0R = crate::BitReader<Enum>;
+pub type Extpolar0R = crate::BitReader<Extpolar0>;
 impl Extpolar0R {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Extpolar0 {
         match self.bits {
-            false => Enum::LowActiveOrFallin,
-            true => Enum::HighActiveOrRisin,
+            false => Extpolar0::LowActiveOrFallin,
+            true => Extpolar0::HighActiveOrRisin,
         }
     }
     #[doc = "Low-active or falling-edge sensitive (depending on EXTMODE0)."]
     #[inline(always)]
     pub fn is_low_active_or_fallin(&self) -> bool {
-        *self == Enum::LowActiveOrFallin
+        *self == Extpolar0::LowActiveOrFallin
     }
     #[doc = "High-active or rising-edge sensitive (depending on EXTMODE0)."]
     #[inline(always)]
     pub fn is_high_active_or_risin(&self) -> bool {
-        *self == Enum::HighActiveOrRisin
+        *self == Extpolar0::HighActiveOrRisin
     }
 }
 #[doc = "Field `EXTPOLAR0` writer - External interrupt polarity for EINT0."]
-pub type Extpolar0W<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type Extpolar0W<'a, REG> = crate::BitWriter<'a, REG, Extpolar0>;
 impl<'a, REG> Extpolar0W<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -47,52 +47,52 @@ where
     #[doc = "Low-active or falling-edge sensitive (depending on EXTMODE0)."]
     #[inline(always)]
     pub fn low_active_or_fallin(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::LowActiveOrFallin)
+        self.variant(Extpolar0::LowActiveOrFallin)
     }
     #[doc = "High-active or rising-edge sensitive (depending on EXTMODE0)."]
     #[inline(always)]
     pub fn high_active_or_risin(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::HighActiveOrRisin)
+        self.variant(Extpolar0::HighActiveOrRisin)
     }
 }
 #[doc = "External interrupt polarity for EINT1.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Extpolar1 {
     #[doc = "0: Low-active or falling-edge sensitive (depending on EXTMODE1)."]
     LowActiveOrFallin = 0,
     #[doc = "1: High-active or rising-edge sensitive (depending on EXTMODE1)."]
     HighActiveOrRisin = 1,
 }
-impl From<Enum> for bool {
+impl From<Extpolar1> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Extpolar1) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `EXTPOLAR1` reader - External interrupt polarity for EINT1."]
-pub type Extpolar1R = crate::BitReader<Enum>;
+pub type Extpolar1R = crate::BitReader<Extpolar1>;
 impl Extpolar1R {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Extpolar1 {
         match self.bits {
-            false => Enum::LowActiveOrFallin,
-            true => Enum::HighActiveOrRisin,
+            false => Extpolar1::LowActiveOrFallin,
+            true => Extpolar1::HighActiveOrRisin,
         }
     }
     #[doc = "Low-active or falling-edge sensitive (depending on EXTMODE1)."]
     #[inline(always)]
     pub fn is_low_active_or_fallin(&self) -> bool {
-        *self == Enum::LowActiveOrFallin
+        *self == Extpolar1::LowActiveOrFallin
     }
     #[doc = "High-active or rising-edge sensitive (depending on EXTMODE1)."]
     #[inline(always)]
     pub fn is_high_active_or_risin(&self) -> bool {
-        *self == Enum::HighActiveOrRisin
+        *self == Extpolar1::HighActiveOrRisin
     }
 }
 #[doc = "Field `EXTPOLAR1` writer - External interrupt polarity for EINT1."]
-pub type Extpolar1W<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type Extpolar1W<'a, REG> = crate::BitWriter<'a, REG, Extpolar1>;
 impl<'a, REG> Extpolar1W<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -100,52 +100,52 @@ where
     #[doc = "Low-active or falling-edge sensitive (depending on EXTMODE1)."]
     #[inline(always)]
     pub fn low_active_or_fallin(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::LowActiveOrFallin)
+        self.variant(Extpolar1::LowActiveOrFallin)
     }
     #[doc = "High-active or rising-edge sensitive (depending on EXTMODE1)."]
     #[inline(always)]
     pub fn high_active_or_risin(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::HighActiveOrRisin)
+        self.variant(Extpolar1::HighActiveOrRisin)
     }
 }
 #[doc = "External interrupt polarity for EINT2.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Extpolar2 {
     #[doc = "0: Low-active or falling-edge sensitive (depending on EXTMODE2)."]
     LowActiveOrFallin = 0,
     #[doc = "1: High-active or rising-edge sensitive (depending on EXTMODE2)."]
     HighActiveOrRisin = 1,
 }
-impl From<Enum> for bool {
+impl From<Extpolar2> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Extpolar2) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `EXTPOLAR2` reader - External interrupt polarity for EINT2."]
-pub type Extpolar2R = crate::BitReader<Enum>;
+pub type Extpolar2R = crate::BitReader<Extpolar2>;
 impl Extpolar2R {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Extpolar2 {
         match self.bits {
-            false => Enum::LowActiveOrFallin,
-            true => Enum::HighActiveOrRisin,
+            false => Extpolar2::LowActiveOrFallin,
+            true => Extpolar2::HighActiveOrRisin,
         }
     }
     #[doc = "Low-active or falling-edge sensitive (depending on EXTMODE2)."]
     #[inline(always)]
     pub fn is_low_active_or_fallin(&self) -> bool {
-        *self == Enum::LowActiveOrFallin
+        *self == Extpolar2::LowActiveOrFallin
     }
     #[doc = "High-active or rising-edge sensitive (depending on EXTMODE2)."]
     #[inline(always)]
     pub fn is_high_active_or_risin(&self) -> bool {
-        *self == Enum::HighActiveOrRisin
+        *self == Extpolar2::HighActiveOrRisin
     }
 }
 #[doc = "Field `EXTPOLAR2` writer - External interrupt polarity for EINT2."]
-pub type Extpolar2W<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type Extpolar2W<'a, REG> = crate::BitWriter<'a, REG, Extpolar2>;
 impl<'a, REG> Extpolar2W<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -153,52 +153,52 @@ where
     #[doc = "Low-active or falling-edge sensitive (depending on EXTMODE2)."]
     #[inline(always)]
     pub fn low_active_or_fallin(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::LowActiveOrFallin)
+        self.variant(Extpolar2::LowActiveOrFallin)
     }
     #[doc = "High-active or rising-edge sensitive (depending on EXTMODE2)."]
     #[inline(always)]
     pub fn high_active_or_risin(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::HighActiveOrRisin)
+        self.variant(Extpolar2::HighActiveOrRisin)
     }
 }
 #[doc = "External interrupt polarity for EINT3.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Extpolar3 {
     #[doc = "0: Low-active or falling-edge sensitive (depending on EXTMODE3)."]
     LowActiveOrFallin = 0,
     #[doc = "1: High-active or rising-edge sensitive (depending on EXTMODE3)."]
     HighActiveOrRisin = 1,
 }
-impl From<Enum> for bool {
+impl From<Extpolar3> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Extpolar3) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `EXTPOLAR3` reader - External interrupt polarity for EINT3."]
-pub type Extpolar3R = crate::BitReader<Enum>;
+pub type Extpolar3R = crate::BitReader<Extpolar3>;
 impl Extpolar3R {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Extpolar3 {
         match self.bits {
-            false => Enum::LowActiveOrFallin,
-            true => Enum::HighActiveOrRisin,
+            false => Extpolar3::LowActiveOrFallin,
+            true => Extpolar3::HighActiveOrRisin,
         }
     }
     #[doc = "Low-active or falling-edge sensitive (depending on EXTMODE3)."]
     #[inline(always)]
     pub fn is_low_active_or_fallin(&self) -> bool {
-        *self == Enum::LowActiveOrFallin
+        *self == Extpolar3::LowActiveOrFallin
     }
     #[doc = "High-active or rising-edge sensitive (depending on EXTMODE3)."]
     #[inline(always)]
     pub fn is_high_active_or_risin(&self) -> bool {
-        *self == Enum::HighActiveOrRisin
+        *self == Extpolar3::HighActiveOrRisin
     }
 }
 #[doc = "Field `EXTPOLAR3` writer - External interrupt polarity for EINT3."]
-pub type Extpolar3W<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type Extpolar3W<'a, REG> = crate::BitWriter<'a, REG, Extpolar3>;
 impl<'a, REG> Extpolar3W<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -206,12 +206,12 @@ where
     #[doc = "Low-active or falling-edge sensitive (depending on EXTMODE3)."]
     #[inline(always)]
     pub fn low_active_or_fallin(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::LowActiveOrFallin)
+        self.variant(Extpolar3::LowActiveOrFallin)
     }
     #[doc = "High-active or rising-edge sensitive (depending on EXTMODE3)."]
     #[inline(always)]
     pub fn high_active_or_risin(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::HighActiveOrRisin)
+        self.variant(Extpolar3::HighActiveOrRisin)
     }
 }
 impl R {

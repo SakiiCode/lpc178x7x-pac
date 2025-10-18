@@ -4,42 +4,42 @@ pub type R = crate::R<AcrSpec>;
 pub type W = crate::W<AcrSpec>;
 #[doc = "Auto-baud start bit. This bit is automatically cleared after auto-baud completion.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Start {
     #[doc = "0: Auto-baud stop (auto-baud is not running)."]
     Stop = 0,
     #[doc = "1: Auto-baud start (auto-baud is running). Auto-baud run bit. This bit is automatically cleared after auto-baud completion."]
     Start = 1,
 }
-impl From<Enum> for bool {
+impl From<Start> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Start) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `START` reader - Auto-baud start bit. This bit is automatically cleared after auto-baud completion."]
-pub type StartR = crate::BitReader<Enum>;
+pub type StartR = crate::BitReader<Start>;
 impl StartR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Start {
         match self.bits {
-            false => Enum::Stop,
-            true => Enum::Start,
+            false => Start::Stop,
+            true => Start::Start,
         }
     }
     #[doc = "Auto-baud stop (auto-baud is not running)."]
     #[inline(always)]
     pub fn is_stop(&self) -> bool {
-        *self == Enum::Stop
+        *self == Start::Stop
     }
     #[doc = "Auto-baud start (auto-baud is running). Auto-baud run bit. This bit is automatically cleared after auto-baud completion."]
     #[inline(always)]
     pub fn is_start(&self) -> bool {
-        *self == Enum::Start
+        *self == Start::Start
     }
 }
 #[doc = "Field `START` writer - Auto-baud start bit. This bit is automatically cleared after auto-baud completion."]
-pub type StartW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type StartW<'a, REG> = crate::BitWriter<'a, REG, Start>;
 impl<'a, REG> StartW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -47,52 +47,52 @@ where
     #[doc = "Auto-baud stop (auto-baud is not running)."]
     #[inline(always)]
     pub fn stop(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Stop)
+        self.variant(Start::Stop)
     }
     #[doc = "Auto-baud start (auto-baud is running). Auto-baud run bit. This bit is automatically cleared after auto-baud completion."]
     #[inline(always)]
     pub fn start(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Start)
+        self.variant(Start::Start)
     }
 }
 #[doc = "Auto-baud mode select bit.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Mode {
     #[doc = "0: Mode 0."]
     Mode0_ = 0,
     #[doc = "1: Mode 1."]
     Mode1_ = 1,
 }
-impl From<Enum> for bool {
+impl From<Mode> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Mode) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `MODE` reader - Auto-baud mode select bit."]
-pub type ModeR = crate::BitReader<Enum>;
+pub type ModeR = crate::BitReader<Mode>;
 impl ModeR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Mode {
         match self.bits {
-            false => Enum::Mode0_,
-            true => Enum::Mode1_,
+            false => Mode::Mode0_,
+            true => Mode::Mode1_,
         }
     }
     #[doc = "Mode 0."]
     #[inline(always)]
     pub fn is_mode_0_(&self) -> bool {
-        *self == Enum::Mode0_
+        *self == Mode::Mode0_
     }
     #[doc = "Mode 1."]
     #[inline(always)]
     pub fn is_mode_1_(&self) -> bool {
-        *self == Enum::Mode1_
+        *self == Mode::Mode1_
     }
 }
 #[doc = "Field `MODE` writer - Auto-baud mode select bit."]
-pub type ModeW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type ModeW<'a, REG> = crate::BitWriter<'a, REG, Mode>;
 impl<'a, REG> ModeW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -100,52 +100,52 @@ where
     #[doc = "Mode 0."]
     #[inline(always)]
     pub fn mode_0_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Mode0_)
+        self.variant(Mode::Mode0_)
     }
     #[doc = "Mode 1."]
     #[inline(always)]
     pub fn mode_1_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Mode1_)
+        self.variant(Mode::Mode1_)
     }
 }
 #[doc = "Auto-baud restart bit.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Autorestart {
     #[doc = "0: No restart"]
     NoRestart = 0,
     #[doc = "1: Restart in case of time-out (counter restarts at next UART1 Rx falling edge)"]
     RestartInCaseOfT = 1,
 }
-impl From<Enum> for bool {
+impl From<Autorestart> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Autorestart) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `AUTORESTART` reader - Auto-baud restart bit."]
-pub type AutorestartR = crate::BitReader<Enum>;
+pub type AutorestartR = crate::BitReader<Autorestart>;
 impl AutorestartR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Autorestart {
         match self.bits {
-            false => Enum::NoRestart,
-            true => Enum::RestartInCaseOfT,
+            false => Autorestart::NoRestart,
+            true => Autorestart::RestartInCaseOfT,
         }
     }
     #[doc = "No restart"]
     #[inline(always)]
     pub fn is_no_restart(&self) -> bool {
-        *self == Enum::NoRestart
+        *self == Autorestart::NoRestart
     }
     #[doc = "Restart in case of time-out (counter restarts at next UART1 Rx falling edge)"]
     #[inline(always)]
     pub fn is_restart_in_case_of_t(&self) -> bool {
-        *self == Enum::RestartInCaseOfT
+        *self == Autorestart::RestartInCaseOfT
     }
 }
 #[doc = "Field `AUTORESTART` writer - Auto-baud restart bit."]
-pub type AutorestartW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type AutorestartW<'a, REG> = crate::BitWriter<'a, REG, Autorestart>;
 impl<'a, REG> AutorestartW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -153,52 +153,52 @@ where
     #[doc = "No restart"]
     #[inline(always)]
     pub fn no_restart(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::NoRestart)
+        self.variant(Autorestart::NoRestart)
     }
     #[doc = "Restart in case of time-out (counter restarts at next UART1 Rx falling edge)"]
     #[inline(always)]
     pub fn restart_in_case_of_t(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::RestartInCaseOfT)
+        self.variant(Autorestart::RestartInCaseOfT)
     }
 }
 #[doc = "End of auto-baud interrupt clear bit (write-only).\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Abeointclr {
     #[doc = "0: Writing a 0 has no impact."]
     WritingA0HasNoI = 0,
     #[doc = "1: Writing a 1 will clear the corresponding interrupt in the IIR."]
     WritingA1WillCle = 1,
 }
-impl From<Enum> for bool {
+impl From<Abeointclr> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Abeointclr) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `ABEOINTCLR` reader - End of auto-baud interrupt clear bit (write-only)."]
-pub type AbeointclrR = crate::BitReader<Enum>;
+pub type AbeointclrR = crate::BitReader<Abeointclr>;
 impl AbeointclrR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Abeointclr {
         match self.bits {
-            false => Enum::WritingA0HasNoI,
-            true => Enum::WritingA1WillCle,
+            false => Abeointclr::WritingA0HasNoI,
+            true => Abeointclr::WritingA1WillCle,
         }
     }
     #[doc = "Writing a 0 has no impact."]
     #[inline(always)]
     pub fn is_writing_a_0_has_no_i(&self) -> bool {
-        *self == Enum::WritingA0HasNoI
+        *self == Abeointclr::WritingA0HasNoI
     }
     #[doc = "Writing a 1 will clear the corresponding interrupt in the IIR."]
     #[inline(always)]
     pub fn is_writing_a_1_will_cle(&self) -> bool {
-        *self == Enum::WritingA1WillCle
+        *self == Abeointclr::WritingA1WillCle
     }
 }
 #[doc = "Field `ABEOINTCLR` writer - End of auto-baud interrupt clear bit (write-only)."]
-pub type AbeointclrW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type AbeointclrW<'a, REG> = crate::BitWriter<'a, REG, Abeointclr>;
 impl<'a, REG> AbeointclrW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -206,52 +206,52 @@ where
     #[doc = "Writing a 0 has no impact."]
     #[inline(always)]
     pub fn writing_a_0_has_no_i(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::WritingA0HasNoI)
+        self.variant(Abeointclr::WritingA0HasNoI)
     }
     #[doc = "Writing a 1 will clear the corresponding interrupt in the IIR."]
     #[inline(always)]
     pub fn writing_a_1_will_cle(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::WritingA1WillCle)
+        self.variant(Abeointclr::WritingA1WillCle)
     }
 }
 #[doc = "Auto-baud time-out interrupt clear bit (write-only).\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Abtointclr {
     #[doc = "0: Writing a 0 has no impact."]
     WritingA0HasNoI = 0,
     #[doc = "1: Writing a 1 will clear the corresponding interrupt in the IIR."]
     WritingA1WillCle = 1,
 }
-impl From<Enum> for bool {
+impl From<Abtointclr> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Abtointclr) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `ABTOINTCLR` reader - Auto-baud time-out interrupt clear bit (write-only)."]
-pub type AbtointclrR = crate::BitReader<Enum>;
+pub type AbtointclrR = crate::BitReader<Abtointclr>;
 impl AbtointclrR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Abtointclr {
         match self.bits {
-            false => Enum::WritingA0HasNoI,
-            true => Enum::WritingA1WillCle,
+            false => Abtointclr::WritingA0HasNoI,
+            true => Abtointclr::WritingA1WillCle,
         }
     }
     #[doc = "Writing a 0 has no impact."]
     #[inline(always)]
     pub fn is_writing_a_0_has_no_i(&self) -> bool {
-        *self == Enum::WritingA0HasNoI
+        *self == Abtointclr::WritingA0HasNoI
     }
     #[doc = "Writing a 1 will clear the corresponding interrupt in the IIR."]
     #[inline(always)]
     pub fn is_writing_a_1_will_cle(&self) -> bool {
-        *self == Enum::WritingA1WillCle
+        *self == Abtointclr::WritingA1WillCle
     }
 }
 #[doc = "Field `ABTOINTCLR` writer - Auto-baud time-out interrupt clear bit (write-only)."]
-pub type AbtointclrW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type AbtointclrW<'a, REG> = crate::BitWriter<'a, REG, Abtointclr>;
 impl<'a, REG> AbtointclrW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -259,12 +259,12 @@ where
     #[doc = "Writing a 0 has no impact."]
     #[inline(always)]
     pub fn writing_a_0_has_no_i(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::WritingA0HasNoI)
+        self.variant(Abtointclr::WritingA0HasNoI)
     }
     #[doc = "Writing a 1 will clear the corresponding interrupt in the IIR."]
     #[inline(always)]
     pub fn writing_a_1_will_cle(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::WritingA1WillCle)
+        self.variant(Abtointclr::WritingA1WillCle)
     }
 }
 impl R {

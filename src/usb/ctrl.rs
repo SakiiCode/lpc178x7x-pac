@@ -4,42 +4,42 @@ pub type R = crate::R<CtrlSpec>;
 pub type W = crate::W<CtrlSpec>;
 #[doc = "Read mode control. Enables reading data from the OUT endpoint buffer for the endpoint specified in the LOG_ENDPOINT field using the USBRxData register. This bit is cleared by hardware when the last word of the current packet is read from USBRxData.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum RdEn {
     #[doc = "0: Disabled."]
     Disabled_ = 0,
     #[doc = "1: Enabled."]
     Enabled_ = 1,
 }
-impl From<Enum> for bool {
+impl From<RdEn> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: RdEn) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `RD_EN` reader - Read mode control. Enables reading data from the OUT endpoint buffer for the endpoint specified in the LOG_ENDPOINT field using the USBRxData register. This bit is cleared by hardware when the last word of the current packet is read from USBRxData."]
-pub type RdEnR = crate::BitReader<Enum>;
+pub type RdEnR = crate::BitReader<RdEn>;
 impl RdEnR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> RdEn {
         match self.bits {
-            false => Enum::Disabled_,
-            true => Enum::Enabled_,
+            false => RdEn::Disabled_,
+            true => RdEn::Enabled_,
         }
     }
     #[doc = "Disabled."]
     #[inline(always)]
     pub fn is_disabled_(&self) -> bool {
-        *self == Enum::Disabled_
+        *self == RdEn::Disabled_
     }
     #[doc = "Enabled."]
     #[inline(always)]
     pub fn is_enabled_(&self) -> bool {
-        *self == Enum::Enabled_
+        *self == RdEn::Enabled_
     }
 }
 #[doc = "Field `RD_EN` writer - Read mode control. Enables reading data from the OUT endpoint buffer for the endpoint specified in the LOG_ENDPOINT field using the USBRxData register. This bit is cleared by hardware when the last word of the current packet is read from USBRxData."]
-pub type RdEnW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type RdEnW<'a, REG> = crate::BitWriter<'a, REG, RdEn>;
 impl<'a, REG> RdEnW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -47,52 +47,52 @@ where
     #[doc = "Disabled."]
     #[inline(always)]
     pub fn disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Disabled_)
+        self.variant(RdEn::Disabled_)
     }
     #[doc = "Enabled."]
     #[inline(always)]
     pub fn enabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Enabled_)
+        self.variant(RdEn::Enabled_)
     }
 }
 #[doc = "Write mode control. Enables writing data to the IN endpoint buffer for the endpoint specified in the LOG_ENDPOINT field using the USBTxData register. This bit is cleared by hardware when the number of bytes in USBTxLen have been sent.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum WrEn {
     #[doc = "0: Disabled."]
     Disabled_ = 0,
     #[doc = "1: Enabled."]
     Enabled_ = 1,
 }
-impl From<Enum> for bool {
+impl From<WrEn> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: WrEn) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `WR_EN` reader - Write mode control. Enables writing data to the IN endpoint buffer for the endpoint specified in the LOG_ENDPOINT field using the USBTxData register. This bit is cleared by hardware when the number of bytes in USBTxLen have been sent."]
-pub type WrEnR = crate::BitReader<Enum>;
+pub type WrEnR = crate::BitReader<WrEn>;
 impl WrEnR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> WrEn {
         match self.bits {
-            false => Enum::Disabled_,
-            true => Enum::Enabled_,
+            false => WrEn::Disabled_,
+            true => WrEn::Enabled_,
         }
     }
     #[doc = "Disabled."]
     #[inline(always)]
     pub fn is_disabled_(&self) -> bool {
-        *self == Enum::Disabled_
+        *self == WrEn::Disabled_
     }
     #[doc = "Enabled."]
     #[inline(always)]
     pub fn is_enabled_(&self) -> bool {
-        *self == Enum::Enabled_
+        *self == WrEn::Enabled_
     }
 }
 #[doc = "Field `WR_EN` writer - Write mode control. Enables writing data to the IN endpoint buffer for the endpoint specified in the LOG_ENDPOINT field using the USBTxData register. This bit is cleared by hardware when the number of bytes in USBTxLen have been sent."]
-pub type WrEnW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type WrEnW<'a, REG> = crate::BitWriter<'a, REG, WrEn>;
 impl<'a, REG> WrEnW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -100,12 +100,12 @@ where
     #[doc = "Disabled."]
     #[inline(always)]
     pub fn disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Disabled_)
+        self.variant(WrEn::Disabled_)
     }
     #[doc = "Enabled."]
     #[inline(always)]
     pub fn enabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Enabled_)
+        self.variant(WrEn::Enabled_)
     }
 }
 #[doc = "Field `LOG_ENDPOINT` reader - Logical Endpoint number."]

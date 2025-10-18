@@ -2,20 +2,20 @@
 pub type W = crate::W<DevintpriSpec>;
 #[doc = "Frame interrupt routing\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Frame {
     #[doc = "0: FRAME interrupt is routed to USB_INT_REQ_LP."]
     Lp = 0,
     #[doc = "1: FRAME interrupt is routed to USB_INT_REQ_HP."]
     Hp = 1,
 }
-impl From<Enum> for bool {
+impl From<Frame> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Frame) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `FRAME` writer - Frame interrupt routing"]
-pub type FrameW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type FrameW<'a, REG> = crate::BitWriter<'a, REG, Frame>;
 impl<'a, REG> FrameW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -23,30 +23,30 @@ where
     #[doc = "FRAME interrupt is routed to USB_INT_REQ_LP."]
     #[inline(always)]
     pub fn lp(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Lp)
+        self.variant(Frame::Lp)
     }
     #[doc = "FRAME interrupt is routed to USB_INT_REQ_HP."]
     #[inline(always)]
     pub fn hp(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Hp)
+        self.variant(Frame::Hp)
     }
 }
 #[doc = "Fast endpoint interrupt routing\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum EpFast {
     #[doc = "0: EP_FAST interrupt is routed to USB_INT_REQ_LP."]
     Lp = 0,
     #[doc = "1: EP_FAST interrupt is routed to USB_INT_REQ_HP."]
     Hp = 1,
 }
-impl From<Enum> for bool {
+impl From<EpFast> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: EpFast) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `EP_FAST` writer - Fast endpoint interrupt routing"]
-pub type EpFastW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type EpFastW<'a, REG> = crate::BitWriter<'a, REG, EpFast>;
 impl<'a, REG> EpFastW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -54,12 +54,12 @@ where
     #[doc = "EP_FAST interrupt is routed to USB_INT_REQ_LP."]
     #[inline(always)]
     pub fn lp(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Lp)
+        self.variant(EpFast::Lp)
     }
     #[doc = "EP_FAST interrupt is routed to USB_INT_REQ_HP."]
     #[inline(always)]
     pub fn hp(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Hp)
+        self.variant(EpFast::Hp)
     }
 }
 impl W {

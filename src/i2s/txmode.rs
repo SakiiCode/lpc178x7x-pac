@@ -5,47 +5,47 @@ pub type W = crate::W<TxmodeSpec>;
 #[doc = "Clock source selection for the transmit bit clock divider.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
-pub enum Enum {
+pub enum Txclksel {
     #[doc = "0: Select the TX fractional rate divider clock output as the source"]
     SelectTheTxFracti = 0,
     #[doc = "2: Select the RX_MCLK signal as the TX_MCLK clock source"]
     SelectTheRxMclkS = 2,
 }
-impl From<Enum> for u8 {
+impl From<Txclksel> for u8 {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Txclksel) -> Self {
         variant as _
     }
 }
-impl crate::FieldSpec for Enum {
+impl crate::FieldSpec for Txclksel {
     type Ux = u8;
 }
-impl crate::IsEnum for Enum {}
+impl crate::IsEnum for Txclksel {}
 #[doc = "Field `TXCLKSEL` reader - Clock source selection for the transmit bit clock divider."]
-pub type TxclkselR = crate::FieldReader<Enum>;
+pub type TxclkselR = crate::FieldReader<Txclksel>;
 impl TxclkselR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Txclksel {
         match self.bits {
-            0 => Enum::SelectTheTxFracti,
-            2 => Enum::SelectTheRxMclkS,
+            0 => Txclksel::SelectTheTxFracti,
+            2 => Txclksel::SelectTheRxMclkS,
             _ => unreachable!(),
         }
     }
     #[doc = "Select the TX fractional rate divider clock output as the source"]
     #[inline(always)]
     pub fn is_select_the_tx_fracti(&self) -> bool {
-        *self == Enum::SelectTheTxFracti
+        *self == Txclksel::SelectTheTxFracti
     }
     #[doc = "Select the RX_MCLK signal as the TX_MCLK clock source"]
     #[inline(always)]
     pub fn is_select_the_rx_mclk_s(&self) -> bool {
-        *self == Enum::SelectTheRxMclkS
+        *self == Txclksel::SelectTheRxMclkS
     }
 }
 #[doc = "Field `TXCLKSEL` writer - Clock source selection for the transmit bit clock divider."]
-pub type TxclkselW<'a, REG> = crate::FieldWriter<'a, REG, 2, Enum>;
+pub type TxclkselW<'a, REG> = crate::FieldWriter<'a, REG, 2, Txclksel>;
 impl<'a, REG> TxclkselW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -54,12 +54,12 @@ where
     #[doc = "Select the TX fractional rate divider clock output as the source"]
     #[inline(always)]
     pub fn select_the_tx_fracti(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::SelectTheTxFracti)
+        self.variant(Txclksel::SelectTheTxFracti)
     }
     #[doc = "Select the RX_MCLK signal as the TX_MCLK clock source"]
     #[inline(always)]
     pub fn select_the_rx_mclk_s(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::SelectTheRxMclkS)
+        self.variant(Txclksel::SelectTheRxMclkS)
     }
 }
 #[doc = "Field `TX4PIN` reader - Transmit 4-pin mode selection. When 1, enables 4-pin mode."]

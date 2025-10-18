@@ -4,42 +4,42 @@ pub type R = crate::R<ConfigSpec>;
 pub type W = crate::W<ConfigSpec>;
 #[doc = "Endian mode. On power-on reset, the value of the endian bit is 0. All data must be flushed in the EMC before switching between little-endian and big-endian modes.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Em {
     #[doc = "0: Little-endian mode (POR reset value)."]
     Littleendian = 0,
     #[doc = "1: Big-endian mode."]
     Bigendian = 1,
 }
-impl From<Enum> for bool {
+impl From<Em> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Em) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `EM` reader - Endian mode. On power-on reset, the value of the endian bit is 0. All data must be flushed in the EMC before switching between little-endian and big-endian modes."]
-pub type EmR = crate::BitReader<Enum>;
+pub type EmR = crate::BitReader<Em>;
 impl EmR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Em {
         match self.bits {
-            false => Enum::Littleendian,
-            true => Enum::Bigendian,
+            false => Em::Littleendian,
+            true => Em::Bigendian,
         }
     }
     #[doc = "Little-endian mode (POR reset value)."]
     #[inline(always)]
     pub fn is_littleendian(&self) -> bool {
-        *self == Enum::Littleendian
+        *self == Em::Littleendian
     }
     #[doc = "Big-endian mode."]
     #[inline(always)]
     pub fn is_bigendian(&self) -> bool {
-        *self == Enum::Bigendian
+        *self == Em::Bigendian
     }
 }
 #[doc = "Field `EM` writer - Endian mode. On power-on reset, the value of the endian bit is 0. All data must be flushed in the EMC before switching between little-endian and big-endian modes."]
-pub type EmW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type EmW<'a, REG> = crate::BitWriter<'a, REG, Em>;
 impl<'a, REG> EmW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -47,52 +47,52 @@ where
     #[doc = "Little-endian mode (POR reset value)."]
     #[inline(always)]
     pub fn littleendian(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Littleendian)
+        self.variant(Em::Littleendian)
     }
     #[doc = "Big-endian mode."]
     #[inline(always)]
     pub fn bigendian(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Bigendian)
+        self.variant(Em::Bigendian)
     }
 }
 #[doc = "CCLK: CLKOUT ratio. This bit must contain 0 for proper operation of the EMC.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Clkr {
     #[doc = "0: 1:1(POR reset value)"]
     Porreset = 0,
     #[doc = "1: 1:2 (this option is not available on the LPC178x/177x)"]
     Donotuse = 1,
 }
-impl From<Enum> for bool {
+impl From<Clkr> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Clkr) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `CLKR` reader - CCLK: CLKOUT ratio. This bit must contain 0 for proper operation of the EMC."]
-pub type ClkrR = crate::BitReader<Enum>;
+pub type ClkrR = crate::BitReader<Clkr>;
 impl ClkrR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Clkr {
         match self.bits {
-            false => Enum::Porreset,
-            true => Enum::Donotuse,
+            false => Clkr::Porreset,
+            true => Clkr::Donotuse,
         }
     }
     #[doc = "1:1(POR reset value)"]
     #[inline(always)]
     pub fn is_porreset(&self) -> bool {
-        *self == Enum::Porreset
+        *self == Clkr::Porreset
     }
     #[doc = "1:2 (this option is not available on the LPC178x/177x)"]
     #[inline(always)]
     pub fn is_donotuse(&self) -> bool {
-        *self == Enum::Donotuse
+        *self == Clkr::Donotuse
     }
 }
 #[doc = "Field `CLKR` writer - CCLK: CLKOUT ratio. This bit must contain 0 for proper operation of the EMC."]
-pub type ClkrW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type ClkrW<'a, REG> = crate::BitWriter<'a, REG, Clkr>;
 impl<'a, REG> ClkrW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -100,12 +100,12 @@ where
     #[doc = "1:1(POR reset value)"]
     #[inline(always)]
     pub fn porreset(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Porreset)
+        self.variant(Clkr::Porreset)
     }
     #[doc = "1:2 (this option is not available on the LPC178x/177x)"]
     #[inline(always)]
     pub fn donotuse(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Donotuse)
+        self.variant(Clkr::Donotuse)
     }
 }
 impl R {

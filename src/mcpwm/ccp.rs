@@ -4,42 +4,42 @@ pub type R = crate::R<CcpSpec>;
 pub type W = crate::W<CcpSpec>;
 #[doc = "Communication pattern output A, channel 0.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Ccpa0 {
     #[doc = "0: MCOA0 passive."]
     Mcoa0Passive_ = 0,
     #[doc = "1: internal MCOA0."]
     InternalMcoa0_ = 1,
 }
-impl From<Enum> for bool {
+impl From<Ccpa0> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Ccpa0) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `CCPA0` reader - Communication pattern output A, channel 0."]
-pub type Ccpa0R = crate::BitReader<Enum>;
+pub type Ccpa0R = crate::BitReader<Ccpa0>;
 impl Ccpa0R {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Ccpa0 {
         match self.bits {
-            false => Enum::Mcoa0Passive_,
-            true => Enum::InternalMcoa0_,
+            false => Ccpa0::Mcoa0Passive_,
+            true => Ccpa0::InternalMcoa0_,
         }
     }
     #[doc = "MCOA0 passive."]
     #[inline(always)]
     pub fn is_mcoa0_passive_(&self) -> bool {
-        *self == Enum::Mcoa0Passive_
+        *self == Ccpa0::Mcoa0Passive_
     }
     #[doc = "internal MCOA0."]
     #[inline(always)]
     pub fn is_internal_mcoa0_(&self) -> bool {
-        *self == Enum::InternalMcoa0_
+        *self == Ccpa0::InternalMcoa0_
     }
 }
 #[doc = "Field `CCPA0` writer - Communication pattern output A, channel 0."]
-pub type Ccpa0W<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type Ccpa0W<'a, REG> = crate::BitWriter<'a, REG, Ccpa0>;
 impl<'a, REG> Ccpa0W<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -47,52 +47,52 @@ where
     #[doc = "MCOA0 passive."]
     #[inline(always)]
     pub fn mcoa0_passive_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Mcoa0Passive_)
+        self.variant(Ccpa0::Mcoa0Passive_)
     }
     #[doc = "internal MCOA0."]
     #[inline(always)]
     pub fn internal_mcoa0_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::InternalMcoa0_)
+        self.variant(Ccpa0::InternalMcoa0_)
     }
 }
 #[doc = "Communication pattern output B, channel 0.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Ccpb0 {
     #[doc = "0: MCOB0 passive."]
     Mcob0Passive_ = 0,
     #[doc = "1: MCOB0 tracks internal MCOA0."]
     Mcob0TracksInterna = 1,
 }
-impl From<Enum> for bool {
+impl From<Ccpb0> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Ccpb0) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `CCPB0` reader - Communication pattern output B, channel 0."]
-pub type Ccpb0R = crate::BitReader<Enum>;
+pub type Ccpb0R = crate::BitReader<Ccpb0>;
 impl Ccpb0R {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Ccpb0 {
         match self.bits {
-            false => Enum::Mcob0Passive_,
-            true => Enum::Mcob0TracksInterna,
+            false => Ccpb0::Mcob0Passive_,
+            true => Ccpb0::Mcob0TracksInterna,
         }
     }
     #[doc = "MCOB0 passive."]
     #[inline(always)]
     pub fn is_mcob0_passive_(&self) -> bool {
-        *self == Enum::Mcob0Passive_
+        *self == Ccpb0::Mcob0Passive_
     }
     #[doc = "MCOB0 tracks internal MCOA0."]
     #[inline(always)]
     pub fn is_mcob0_tracks_interna(&self) -> bool {
-        *self == Enum::Mcob0TracksInterna
+        *self == Ccpb0::Mcob0TracksInterna
     }
 }
 #[doc = "Field `CCPB0` writer - Communication pattern output B, channel 0."]
-pub type Ccpb0W<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type Ccpb0W<'a, REG> = crate::BitWriter<'a, REG, Ccpb0>;
 impl<'a, REG> Ccpb0W<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -100,52 +100,52 @@ where
     #[doc = "MCOB0 passive."]
     #[inline(always)]
     pub fn mcob0_passive_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Mcob0Passive_)
+        self.variant(Ccpb0::Mcob0Passive_)
     }
     #[doc = "MCOB0 tracks internal MCOA0."]
     #[inline(always)]
     pub fn mcob0_tracks_interna(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Mcob0TracksInterna)
+        self.variant(Ccpb0::Mcob0TracksInterna)
     }
 }
 #[doc = "Communication pattern output A, channel 1.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Ccpa1 {
     #[doc = "0: MCOA1 passive."]
     Mcoa1Passive_ = 0,
     #[doc = "1: MCOA1 tracks internal MCOA0."]
     Mcoa1TracksInterna = 1,
 }
-impl From<Enum> for bool {
+impl From<Ccpa1> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Ccpa1) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `CCPA1` reader - Communication pattern output A, channel 1."]
-pub type Ccpa1R = crate::BitReader<Enum>;
+pub type Ccpa1R = crate::BitReader<Ccpa1>;
 impl Ccpa1R {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Ccpa1 {
         match self.bits {
-            false => Enum::Mcoa1Passive_,
-            true => Enum::Mcoa1TracksInterna,
+            false => Ccpa1::Mcoa1Passive_,
+            true => Ccpa1::Mcoa1TracksInterna,
         }
     }
     #[doc = "MCOA1 passive."]
     #[inline(always)]
     pub fn is_mcoa1_passive_(&self) -> bool {
-        *self == Enum::Mcoa1Passive_
+        *self == Ccpa1::Mcoa1Passive_
     }
     #[doc = "MCOA1 tracks internal MCOA0."]
     #[inline(always)]
     pub fn is_mcoa1_tracks_interna(&self) -> bool {
-        *self == Enum::Mcoa1TracksInterna
+        *self == Ccpa1::Mcoa1TracksInterna
     }
 }
 #[doc = "Field `CCPA1` writer - Communication pattern output A, channel 1."]
-pub type Ccpa1W<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type Ccpa1W<'a, REG> = crate::BitWriter<'a, REG, Ccpa1>;
 impl<'a, REG> Ccpa1W<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -153,52 +153,52 @@ where
     #[doc = "MCOA1 passive."]
     #[inline(always)]
     pub fn mcoa1_passive_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Mcoa1Passive_)
+        self.variant(Ccpa1::Mcoa1Passive_)
     }
     #[doc = "MCOA1 tracks internal MCOA0."]
     #[inline(always)]
     pub fn mcoa1_tracks_interna(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Mcoa1TracksInterna)
+        self.variant(Ccpa1::Mcoa1TracksInterna)
     }
 }
 #[doc = "Communication pattern output B, channel 1.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Ccpb1 {
     #[doc = "0: MCOB1 passive."]
     Mcob1Passive_ = 0,
     #[doc = "1: MCOB1 tracks internal MCOA0."]
     Mcob1TracksInterna = 1,
 }
-impl From<Enum> for bool {
+impl From<Ccpb1> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Ccpb1) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `CCPB1` reader - Communication pattern output B, channel 1."]
-pub type Ccpb1R = crate::BitReader<Enum>;
+pub type Ccpb1R = crate::BitReader<Ccpb1>;
 impl Ccpb1R {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Ccpb1 {
         match self.bits {
-            false => Enum::Mcob1Passive_,
-            true => Enum::Mcob1TracksInterna,
+            false => Ccpb1::Mcob1Passive_,
+            true => Ccpb1::Mcob1TracksInterna,
         }
     }
     #[doc = "MCOB1 passive."]
     #[inline(always)]
     pub fn is_mcob1_passive_(&self) -> bool {
-        *self == Enum::Mcob1Passive_
+        *self == Ccpb1::Mcob1Passive_
     }
     #[doc = "MCOB1 tracks internal MCOA0."]
     #[inline(always)]
     pub fn is_mcob1_tracks_interna(&self) -> bool {
-        *self == Enum::Mcob1TracksInterna
+        *self == Ccpb1::Mcob1TracksInterna
     }
 }
 #[doc = "Field `CCPB1` writer - Communication pattern output B, channel 1."]
-pub type Ccpb1W<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type Ccpb1W<'a, REG> = crate::BitWriter<'a, REG, Ccpb1>;
 impl<'a, REG> Ccpb1W<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -206,52 +206,52 @@ where
     #[doc = "MCOB1 passive."]
     #[inline(always)]
     pub fn mcob1_passive_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Mcob1Passive_)
+        self.variant(Ccpb1::Mcob1Passive_)
     }
     #[doc = "MCOB1 tracks internal MCOA0."]
     #[inline(always)]
     pub fn mcob1_tracks_interna(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Mcob1TracksInterna)
+        self.variant(Ccpb1::Mcob1TracksInterna)
     }
 }
 #[doc = "Communication pattern output A, channel 2.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Ccpa2 {
     #[doc = "0: MCOA2 passive."]
     Mcoa2Passive_ = 0,
     #[doc = "1: MCOA2 tracks internal MCOA0."]
     Mcoa2TracksInterna = 1,
 }
-impl From<Enum> for bool {
+impl From<Ccpa2> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Ccpa2) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `CCPA2` reader - Communication pattern output A, channel 2."]
-pub type Ccpa2R = crate::BitReader<Enum>;
+pub type Ccpa2R = crate::BitReader<Ccpa2>;
 impl Ccpa2R {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Ccpa2 {
         match self.bits {
-            false => Enum::Mcoa2Passive_,
-            true => Enum::Mcoa2TracksInterna,
+            false => Ccpa2::Mcoa2Passive_,
+            true => Ccpa2::Mcoa2TracksInterna,
         }
     }
     #[doc = "MCOA2 passive."]
     #[inline(always)]
     pub fn is_mcoa2_passive_(&self) -> bool {
-        *self == Enum::Mcoa2Passive_
+        *self == Ccpa2::Mcoa2Passive_
     }
     #[doc = "MCOA2 tracks internal MCOA0."]
     #[inline(always)]
     pub fn is_mcoa2_tracks_interna(&self) -> bool {
-        *self == Enum::Mcoa2TracksInterna
+        *self == Ccpa2::Mcoa2TracksInterna
     }
 }
 #[doc = "Field `CCPA2` writer - Communication pattern output A, channel 2."]
-pub type Ccpa2W<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type Ccpa2W<'a, REG> = crate::BitWriter<'a, REG, Ccpa2>;
 impl<'a, REG> Ccpa2W<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -259,52 +259,52 @@ where
     #[doc = "MCOA2 passive."]
     #[inline(always)]
     pub fn mcoa2_passive_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Mcoa2Passive_)
+        self.variant(Ccpa2::Mcoa2Passive_)
     }
     #[doc = "MCOA2 tracks internal MCOA0."]
     #[inline(always)]
     pub fn mcoa2_tracks_interna(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Mcoa2TracksInterna)
+        self.variant(Ccpa2::Mcoa2TracksInterna)
     }
 }
 #[doc = "Communication pattern output B, channel 2.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Ccpb2 {
     #[doc = "0: MCOB2 passive."]
     Mcob2Passive_ = 0,
     #[doc = "1: MCOB2 tracks internal MCOA0."]
     Mcob2TracksInterna = 1,
 }
-impl From<Enum> for bool {
+impl From<Ccpb2> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Ccpb2) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `CCPB2` reader - Communication pattern output B, channel 2."]
-pub type Ccpb2R = crate::BitReader<Enum>;
+pub type Ccpb2R = crate::BitReader<Ccpb2>;
 impl Ccpb2R {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Ccpb2 {
         match self.bits {
-            false => Enum::Mcob2Passive_,
-            true => Enum::Mcob2TracksInterna,
+            false => Ccpb2::Mcob2Passive_,
+            true => Ccpb2::Mcob2TracksInterna,
         }
     }
     #[doc = "MCOB2 passive."]
     #[inline(always)]
     pub fn is_mcob2_passive_(&self) -> bool {
-        *self == Enum::Mcob2Passive_
+        *self == Ccpb2::Mcob2Passive_
     }
     #[doc = "MCOB2 tracks internal MCOA0."]
     #[inline(always)]
     pub fn is_mcob2_tracks_interna(&self) -> bool {
-        *self == Enum::Mcob2TracksInterna
+        *self == Ccpb2::Mcob2TracksInterna
     }
 }
 #[doc = "Field `CCPB2` writer - Communication pattern output B, channel 2."]
-pub type Ccpb2W<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type Ccpb2W<'a, REG> = crate::BitWriter<'a, REG, Ccpb2>;
 impl<'a, REG> Ccpb2W<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -312,12 +312,12 @@ where
     #[doc = "MCOB2 passive."]
     #[inline(always)]
     pub fn mcob2_passive_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Mcob2Passive_)
+        self.variant(Ccpb2::Mcob2Passive_)
     }
     #[doc = "MCOB2 tracks internal MCOA0."]
     #[inline(always)]
     pub fn mcob2_tracks_interna(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Mcob2TracksInterna)
+        self.variant(Ccpb2::Mcob2TracksInterna)
     }
 }
 impl R {

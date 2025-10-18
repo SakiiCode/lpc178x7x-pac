@@ -4,42 +4,42 @@ pub type R = crate::R<ModSpec>;
 pub type W = crate::W<ModSpec>;
 #[doc = "Watchdog enable bit. This bit is Set Only. See Table 652.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Wden {
     #[doc = "0: The watchdog timer is stopped."]
     Stop = 0,
     #[doc = "1: The watchdog timer is running."]
     Run = 1,
 }
-impl From<Enum> for bool {
+impl From<Wden> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Wden) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `WDEN` reader - Watchdog enable bit. This bit is Set Only. See Table 652."]
-pub type WdenR = crate::BitReader<Enum>;
+pub type WdenR = crate::BitReader<Wden>;
 impl WdenR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Wden {
         match self.bits {
-            false => Enum::Stop,
-            true => Enum::Run,
+            false => Wden::Stop,
+            true => Wden::Run,
         }
     }
     #[doc = "The watchdog timer is stopped."]
     #[inline(always)]
     pub fn is_stop(&self) -> bool {
-        *self == Enum::Stop
+        *self == Wden::Stop
     }
     #[doc = "The watchdog timer is running."]
     #[inline(always)]
     pub fn is_run(&self) -> bool {
-        *self == Enum::Run
+        *self == Wden::Run
     }
 }
 #[doc = "Field `WDEN` writer - Watchdog enable bit. This bit is Set Only. See Table 652."]
-pub type WdenW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type WdenW<'a, REG> = crate::BitWriter<'a, REG, Wden>;
 impl<'a, REG> WdenW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -47,52 +47,52 @@ where
     #[doc = "The watchdog timer is stopped."]
     #[inline(always)]
     pub fn stop(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Stop)
+        self.variant(Wden::Stop)
     }
     #[doc = "The watchdog timer is running."]
     #[inline(always)]
     pub fn run(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Run)
+        self.variant(Wden::Run)
     }
 }
 #[doc = "Watchdog reset enable bit. This bit is Set Only. See Table 652.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Wdreset {
     #[doc = "0: A watchdog timeout will not cause a chip reset."]
     Noreset = 0,
     #[doc = "1: A watchdog timeout will cause a chip reset."]
     Reset = 1,
 }
-impl From<Enum> for bool {
+impl From<Wdreset> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Wdreset) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `WDRESET` reader - Watchdog reset enable bit. This bit is Set Only. See Table 652."]
-pub type WdresetR = crate::BitReader<Enum>;
+pub type WdresetR = crate::BitReader<Wdreset>;
 impl WdresetR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Wdreset {
         match self.bits {
-            false => Enum::Noreset,
-            true => Enum::Reset,
+            false => Wdreset::Noreset,
+            true => Wdreset::Reset,
         }
     }
     #[doc = "A watchdog timeout will not cause a chip reset."]
     #[inline(always)]
     pub fn is_noreset(&self) -> bool {
-        *self == Enum::Noreset
+        *self == Wdreset::Noreset
     }
     #[doc = "A watchdog timeout will cause a chip reset."]
     #[inline(always)]
     pub fn is_reset(&self) -> bool {
-        *self == Enum::Reset
+        *self == Wdreset::Reset
     }
 }
 #[doc = "Field `WDRESET` writer - Watchdog reset enable bit. This bit is Set Only. See Table 652."]
-pub type WdresetW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type WdresetW<'a, REG> = crate::BitWriter<'a, REG, Wdreset>;
 impl<'a, REG> WdresetW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -100,12 +100,12 @@ where
     #[doc = "A watchdog timeout will not cause a chip reset."]
     #[inline(always)]
     pub fn noreset(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Noreset)
+        self.variant(Wdreset::Noreset)
     }
     #[doc = "A watchdog timeout will cause a chip reset."]
     #[inline(always)]
     pub fn reset(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Reset)
+        self.variant(Wdreset::Reset)
     }
 }
 #[doc = "Field `WDTOF` reader - Watchdog time-out flag. Set when the watchdog timer times out, by a feed error, or by events associated with WDPROTECT, cleared by software. Causes a chip reset if WDRESET = 1. See Section WDTOF."]
@@ -118,42 +118,42 @@ pub type WdintR = crate::BitReader;
 pub type WdintW<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Watchdog update mode. This bit is Set Only. See Section WDPROTECT.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Wdprotect {
     #[doc = "0: The watchdog reload value (WDTC) can be changed at any time."]
     Change = 0,
     #[doc = "1: The watchdog reload value (WDTC) can be changed only after the counter is below the value of WDWARNINT and WDWINDOW. Note: this mode is intended for use only when WDRESET =1."]
     ChangeWCnt = 1,
 }
-impl From<Enum> for bool {
+impl From<Wdprotect> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Wdprotect) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `WDPROTECT` reader - Watchdog update mode. This bit is Set Only. See Section WDPROTECT."]
-pub type WdprotectR = crate::BitReader<Enum>;
+pub type WdprotectR = crate::BitReader<Wdprotect>;
 impl WdprotectR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Wdprotect {
         match self.bits {
-            false => Enum::Change,
-            true => Enum::ChangeWCnt,
+            false => Wdprotect::Change,
+            true => Wdprotect::ChangeWCnt,
         }
     }
     #[doc = "The watchdog reload value (WDTC) can be changed at any time."]
     #[inline(always)]
     pub fn is_change(&self) -> bool {
-        *self == Enum::Change
+        *self == Wdprotect::Change
     }
     #[doc = "The watchdog reload value (WDTC) can be changed only after the counter is below the value of WDWARNINT and WDWINDOW. Note: this mode is intended for use only when WDRESET =1."]
     #[inline(always)]
     pub fn is_change_w_cnt(&self) -> bool {
-        *self == Enum::ChangeWCnt
+        *self == Wdprotect::ChangeWCnt
     }
 }
 #[doc = "Field `WDPROTECT` writer - Watchdog update mode. This bit is Set Only. See Section WDPROTECT."]
-pub type WdprotectW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type WdprotectW<'a, REG> = crate::BitWriter<'a, REG, Wdprotect>;
 impl<'a, REG> WdprotectW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -161,12 +161,12 @@ where
     #[doc = "The watchdog reload value (WDTC) can be changed at any time."]
     #[inline(always)]
     pub fn change(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Change)
+        self.variant(Wdprotect::Change)
     }
     #[doc = "The watchdog reload value (WDTC) can be changed only after the counter is below the value of WDWARNINT and WDWINDOW. Note: this mode is intended for use only when WDRESET =1."]
     #[inline(always)]
     pub fn change_w_cnt(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::ChangeWCnt)
+        self.variant(Wdprotect::ChangeWCnt)
     }
 }
 impl R {

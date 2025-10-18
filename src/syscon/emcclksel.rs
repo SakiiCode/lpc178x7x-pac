@@ -4,42 +4,42 @@ pub type R = crate::R<EmcclkselSpec>;
 pub type W = crate::W<EmcclkselSpec>;
 #[doc = "Selects the EMC clock rate relative to the CPU clock.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Emcdiv {
     #[doc = "0: The EMC uses the same clock as the CPU."]
     TheEmcUsesTheSam = 0,
     #[doc = "1: The EMC uses a clock at half the rate of the CPU."]
     TheEmcUsesAClock = 1,
 }
-impl From<Enum> for bool {
+impl From<Emcdiv> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Emcdiv) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `EMCDIV` reader - Selects the EMC clock rate relative to the CPU clock."]
-pub type EmcdivR = crate::BitReader<Enum>;
+pub type EmcdivR = crate::BitReader<Emcdiv>;
 impl EmcdivR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Emcdiv {
         match self.bits {
-            false => Enum::TheEmcUsesTheSam,
-            true => Enum::TheEmcUsesAClock,
+            false => Emcdiv::TheEmcUsesTheSam,
+            true => Emcdiv::TheEmcUsesAClock,
         }
     }
     #[doc = "The EMC uses the same clock as the CPU."]
     #[inline(always)]
     pub fn is_the_emc_uses_the_sam(&self) -> bool {
-        *self == Enum::TheEmcUsesTheSam
+        *self == Emcdiv::TheEmcUsesTheSam
     }
     #[doc = "The EMC uses a clock at half the rate of the CPU."]
     #[inline(always)]
     pub fn is_the_emc_uses_a_clock(&self) -> bool {
-        *self == Enum::TheEmcUsesAClock
+        *self == Emcdiv::TheEmcUsesAClock
     }
 }
 #[doc = "Field `EMCDIV` writer - Selects the EMC clock rate relative to the CPU clock."]
-pub type EmcdivW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type EmcdivW<'a, REG> = crate::BitWriter<'a, REG, Emcdiv>;
 impl<'a, REG> EmcdivW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -47,12 +47,12 @@ where
     #[doc = "The EMC uses the same clock as the CPU."]
     #[inline(always)]
     pub fn the_emc_uses_the_sam(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::TheEmcUsesTheSam)
+        self.variant(Emcdiv::TheEmcUsesTheSam)
     }
     #[doc = "The EMC uses a clock at half the rate of the CPU."]
     #[inline(always)]
     pub fn the_emc_uses_a_clock(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::TheEmcUsesAClock)
+        self.variant(Emcdiv::TheEmcUsesAClock)
     }
 }
 impl R {

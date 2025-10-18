@@ -5,7 +5,7 @@ pub type W = crate::W<DaoSpec>;
 #[doc = "Selects the number of bytes in data as follows:\n\nValue on reset: 1"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
-pub enum Enum {
+pub enum Wordwidth {
     #[doc = "0: 8-bit data"]
     _8BitData = 0,
     #[doc = "1: 16-bit data"]
@@ -13,47 +13,47 @@ pub enum Enum {
     #[doc = "3: 32-bit data"]
     _32BitData = 3,
 }
-impl From<Enum> for u8 {
+impl From<Wordwidth> for u8 {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Wordwidth) -> Self {
         variant as _
     }
 }
-impl crate::FieldSpec for Enum {
+impl crate::FieldSpec for Wordwidth {
     type Ux = u8;
 }
-impl crate::IsEnum for Enum {}
+impl crate::IsEnum for Wordwidth {}
 #[doc = "Field `WORDWIDTH` reader - Selects the number of bytes in data as follows:"]
-pub type WordwidthR = crate::FieldReader<Enum>;
+pub type WordwidthR = crate::FieldReader<Wordwidth>;
 impl WordwidthR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Option<Enum> {
+    pub const fn variant(&self) -> Option<Wordwidth> {
         match self.bits {
-            0 => Some(Enum::_8BitData),
-            1 => Some(Enum::_16BitData),
-            3 => Some(Enum::_32BitData),
+            0 => Some(Wordwidth::_8BitData),
+            1 => Some(Wordwidth::_16BitData),
+            3 => Some(Wordwidth::_32BitData),
             _ => None,
         }
     }
     #[doc = "8-bit data"]
     #[inline(always)]
     pub fn is_8_bit_data(&self) -> bool {
-        *self == Enum::_8BitData
+        *self == Wordwidth::_8BitData
     }
     #[doc = "16-bit data"]
     #[inline(always)]
     pub fn is_16_bit_data(&self) -> bool {
-        *self == Enum::_16BitData
+        *self == Wordwidth::_16BitData
     }
     #[doc = "32-bit data"]
     #[inline(always)]
     pub fn is_32_bit_data(&self) -> bool {
-        *self == Enum::_32BitData
+        *self == Wordwidth::_32BitData
     }
 }
 #[doc = "Field `WORDWIDTH` writer - Selects the number of bytes in data as follows:"]
-pub type WordwidthW<'a, REG> = crate::FieldWriter<'a, REG, 2, Enum>;
+pub type WordwidthW<'a, REG> = crate::FieldWriter<'a, REG, 2, Wordwidth>;
 impl<'a, REG> WordwidthW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -62,17 +62,17 @@ where
     #[doc = "8-bit data"]
     #[inline(always)]
     pub fn _8_bit_data(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::_8BitData)
+        self.variant(Wordwidth::_8BitData)
     }
     #[doc = "16-bit data"]
     #[inline(always)]
     pub fn _16_bit_data(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::_16BitData)
+        self.variant(Wordwidth::_16BitData)
     }
     #[doc = "32-bit data"]
     #[inline(always)]
     pub fn _32_bit_data(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::_32BitData)
+        self.variant(Wordwidth::_32BitData)
     }
 }
 #[doc = "Field `MONO` reader - When 1, data is of monaural format. When 0, the data is in stereo format."]

@@ -8,42 +8,42 @@ pub type CalvalR = crate::FieldReader<u32>;
 pub type CalvalW<'a, REG> = crate::FieldWriter<'a, REG, 17, u32>;
 #[doc = "Calibration direction\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Caldir {
     #[doc = "1: Backward calibration. When CALVAL is equal to the calibration counter, the RTC timers will stop incrementing for 1 second."]
     BackwardCalibration = 1,
     #[doc = "0: Forward calibration. When CALVAL is equal to the calibration counter, the RTC timers will jump by 2 seconds."]
     ForwardCalibration_ = 0,
 }
-impl From<Enum> for bool {
+impl From<Caldir> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Caldir) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `CALDIR` reader - Calibration direction"]
-pub type CaldirR = crate::BitReader<Enum>;
+pub type CaldirR = crate::BitReader<Caldir>;
 impl CaldirR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Caldir {
         match self.bits {
-            true => Enum::BackwardCalibration,
-            false => Enum::ForwardCalibration_,
+            true => Caldir::BackwardCalibration,
+            false => Caldir::ForwardCalibration_,
         }
     }
     #[doc = "Backward calibration. When CALVAL is equal to the calibration counter, the RTC timers will stop incrementing for 1 second."]
     #[inline(always)]
     pub fn is_backward_calibration(&self) -> bool {
-        *self == Enum::BackwardCalibration
+        *self == Caldir::BackwardCalibration
     }
     #[doc = "Forward calibration. When CALVAL is equal to the calibration counter, the RTC timers will jump by 2 seconds."]
     #[inline(always)]
     pub fn is_forward_calibration_(&self) -> bool {
-        *self == Enum::ForwardCalibration_
+        *self == Caldir::ForwardCalibration_
     }
 }
 #[doc = "Field `CALDIR` writer - Calibration direction"]
-pub type CaldirW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type CaldirW<'a, REG> = crate::BitWriter<'a, REG, Caldir>;
 impl<'a, REG> CaldirW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -51,12 +51,12 @@ where
     #[doc = "Backward calibration. When CALVAL is equal to the calibration counter, the RTC timers will stop incrementing for 1 second."]
     #[inline(always)]
     pub fn backward_calibration(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::BackwardCalibration)
+        self.variant(Caldir::BackwardCalibration)
     }
     #[doc = "Forward calibration. When CALVAL is equal to the calibration counter, the RTC timers will jump by 2 seconds."]
     #[inline(always)]
     pub fn forward_calibration_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::ForwardCalibration_)
+        self.variant(Caldir::ForwardCalibration_)
     }
 }
 impl R {

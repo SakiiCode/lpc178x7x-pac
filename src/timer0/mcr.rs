@@ -4,42 +4,42 @@ pub type R = crate::R<McrSpec>;
 pub type W = crate::W<McrSpec>;
 #[doc = "Interrupt on MR0\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Mr0i {
     #[doc = "1: Interrupt is generated when MR0 matches the value in the TC."]
     InterruptIsGenerat = 1,
     #[doc = "0: Interrupt is disabled"]
     InterruptIsDisable = 0,
 }
-impl From<Enum> for bool {
+impl From<Mr0i> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Mr0i) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `MR0I` reader - Interrupt on MR0"]
-pub type Mr0iR = crate::BitReader<Enum>;
+pub type Mr0iR = crate::BitReader<Mr0i>;
 impl Mr0iR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Mr0i {
         match self.bits {
-            true => Enum::InterruptIsGenerat,
-            false => Enum::InterruptIsDisable,
+            true => Mr0i::InterruptIsGenerat,
+            false => Mr0i::InterruptIsDisable,
         }
     }
     #[doc = "Interrupt is generated when MR0 matches the value in the TC."]
     #[inline(always)]
     pub fn is_interrupt_is_generat(&self) -> bool {
-        *self == Enum::InterruptIsGenerat
+        *self == Mr0i::InterruptIsGenerat
     }
     #[doc = "Interrupt is disabled"]
     #[inline(always)]
     pub fn is_interrupt_is_disable(&self) -> bool {
-        *self == Enum::InterruptIsDisable
+        *self == Mr0i::InterruptIsDisable
     }
 }
 #[doc = "Field `MR0I` writer - Interrupt on MR0"]
-pub type Mr0iW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type Mr0iW<'a, REG> = crate::BitWriter<'a, REG, Mr0i>;
 impl<'a, REG> Mr0iW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -47,52 +47,52 @@ where
     #[doc = "Interrupt is generated when MR0 matches the value in the TC."]
     #[inline(always)]
     pub fn interrupt_is_generat(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::InterruptIsGenerat)
+        self.variant(Mr0i::InterruptIsGenerat)
     }
     #[doc = "Interrupt is disabled"]
     #[inline(always)]
     pub fn interrupt_is_disable(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::InterruptIsDisable)
+        self.variant(Mr0i::InterruptIsDisable)
     }
 }
 #[doc = "Reset on MR0\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Mr0r {
     #[doc = "1: TC will be reset if MR0 matches it."]
     TcWillBeResetIf_ = 1,
     #[doc = "0: Feature disabled."]
     FeatureDisabled_ = 0,
 }
-impl From<Enum> for bool {
+impl From<Mr0r> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Mr0r) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `MR0R` reader - Reset on MR0"]
-pub type Mr0rR = crate::BitReader<Enum>;
+pub type Mr0rR = crate::BitReader<Mr0r>;
 impl Mr0rR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Mr0r {
         match self.bits {
-            true => Enum::TcWillBeResetIf_,
-            false => Enum::FeatureDisabled_,
+            true => Mr0r::TcWillBeResetIf_,
+            false => Mr0r::FeatureDisabled_,
         }
     }
     #[doc = "TC will be reset if MR0 matches it."]
     #[inline(always)]
     pub fn is_tc_will_be_reset_if_(&self) -> bool {
-        *self == Enum::TcWillBeResetIf_
+        *self == Mr0r::TcWillBeResetIf_
     }
     #[doc = "Feature disabled."]
     #[inline(always)]
     pub fn is_feature_disabled_(&self) -> bool {
-        *self == Enum::FeatureDisabled_
+        *self == Mr0r::FeatureDisabled_
     }
 }
 #[doc = "Field `MR0R` writer - Reset on MR0"]
-pub type Mr0rW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type Mr0rW<'a, REG> = crate::BitWriter<'a, REG, Mr0r>;
 impl<'a, REG> Mr0rW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -100,52 +100,52 @@ where
     #[doc = "TC will be reset if MR0 matches it."]
     #[inline(always)]
     pub fn tc_will_be_reset_if_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::TcWillBeResetIf_)
+        self.variant(Mr0r::TcWillBeResetIf_)
     }
     #[doc = "Feature disabled."]
     #[inline(always)]
     pub fn feature_disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::FeatureDisabled_)
+        self.variant(Mr0r::FeatureDisabled_)
     }
 }
 #[doc = "Stop on MR0\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Mr0s {
     #[doc = "1: TC and PC will be stopped and TCR\\[0\\] will be set to 0 if MR0 matches the TC."]
     TcAndPcWillBeSt = 1,
     #[doc = "0: Feature disabled."]
     FeatureDisabled_ = 0,
 }
-impl From<Enum> for bool {
+impl From<Mr0s> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Mr0s) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `MR0S` reader - Stop on MR0"]
-pub type Mr0sR = crate::BitReader<Enum>;
+pub type Mr0sR = crate::BitReader<Mr0s>;
 impl Mr0sR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Mr0s {
         match self.bits {
-            true => Enum::TcAndPcWillBeSt,
-            false => Enum::FeatureDisabled_,
+            true => Mr0s::TcAndPcWillBeSt,
+            false => Mr0s::FeatureDisabled_,
         }
     }
     #[doc = "TC and PC will be stopped and TCR\\[0\\] will be set to 0 if MR0 matches the TC."]
     #[inline(always)]
     pub fn is_tc_and_pc_will_be_st(&self) -> bool {
-        *self == Enum::TcAndPcWillBeSt
+        *self == Mr0s::TcAndPcWillBeSt
     }
     #[doc = "Feature disabled."]
     #[inline(always)]
     pub fn is_feature_disabled_(&self) -> bool {
-        *self == Enum::FeatureDisabled_
+        *self == Mr0s::FeatureDisabled_
     }
 }
 #[doc = "Field `MR0S` writer - Stop on MR0"]
-pub type Mr0sW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type Mr0sW<'a, REG> = crate::BitWriter<'a, REG, Mr0s>;
 impl<'a, REG> Mr0sW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -153,52 +153,52 @@ where
     #[doc = "TC and PC will be stopped and TCR\\[0\\] will be set to 0 if MR0 matches the TC."]
     #[inline(always)]
     pub fn tc_and_pc_will_be_st(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::TcAndPcWillBeSt)
+        self.variant(Mr0s::TcAndPcWillBeSt)
     }
     #[doc = "Feature disabled."]
     #[inline(always)]
     pub fn feature_disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::FeatureDisabled_)
+        self.variant(Mr0s::FeatureDisabled_)
     }
 }
 #[doc = "Interrupt on MR1\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Mr1i {
     #[doc = "1: Interrupt is generated when MR1 matches the value in the TC."]
     InterruptIsGenerat = 1,
     #[doc = "0: Interrupt is disabled."]
     InterruptIsDisable = 0,
 }
-impl From<Enum> for bool {
+impl From<Mr1i> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Mr1i) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `MR1I` reader - Interrupt on MR1"]
-pub type Mr1iR = crate::BitReader<Enum>;
+pub type Mr1iR = crate::BitReader<Mr1i>;
 impl Mr1iR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Mr1i {
         match self.bits {
-            true => Enum::InterruptIsGenerat,
-            false => Enum::InterruptIsDisable,
+            true => Mr1i::InterruptIsGenerat,
+            false => Mr1i::InterruptIsDisable,
         }
     }
     #[doc = "Interrupt is generated when MR1 matches the value in the TC."]
     #[inline(always)]
     pub fn is_interrupt_is_generat(&self) -> bool {
-        *self == Enum::InterruptIsGenerat
+        *self == Mr1i::InterruptIsGenerat
     }
     #[doc = "Interrupt is disabled."]
     #[inline(always)]
     pub fn is_interrupt_is_disable(&self) -> bool {
-        *self == Enum::InterruptIsDisable
+        *self == Mr1i::InterruptIsDisable
     }
 }
 #[doc = "Field `MR1I` writer - Interrupt on MR1"]
-pub type Mr1iW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type Mr1iW<'a, REG> = crate::BitWriter<'a, REG, Mr1i>;
 impl<'a, REG> Mr1iW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -206,52 +206,52 @@ where
     #[doc = "Interrupt is generated when MR1 matches the value in the TC."]
     #[inline(always)]
     pub fn interrupt_is_generat(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::InterruptIsGenerat)
+        self.variant(Mr1i::InterruptIsGenerat)
     }
     #[doc = "Interrupt is disabled."]
     #[inline(always)]
     pub fn interrupt_is_disable(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::InterruptIsDisable)
+        self.variant(Mr1i::InterruptIsDisable)
     }
 }
 #[doc = "Reset on MR1\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Mr1r {
     #[doc = "1: TC will be reset if MR1 matches it."]
     TcWillBeResetIf_ = 1,
     #[doc = "0: Feature disabled."]
     FeatureDisabled_ = 0,
 }
-impl From<Enum> for bool {
+impl From<Mr1r> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Mr1r) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `MR1R` reader - Reset on MR1"]
-pub type Mr1rR = crate::BitReader<Enum>;
+pub type Mr1rR = crate::BitReader<Mr1r>;
 impl Mr1rR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Mr1r {
         match self.bits {
-            true => Enum::TcWillBeResetIf_,
-            false => Enum::FeatureDisabled_,
+            true => Mr1r::TcWillBeResetIf_,
+            false => Mr1r::FeatureDisabled_,
         }
     }
     #[doc = "TC will be reset if MR1 matches it."]
     #[inline(always)]
     pub fn is_tc_will_be_reset_if_(&self) -> bool {
-        *self == Enum::TcWillBeResetIf_
+        *self == Mr1r::TcWillBeResetIf_
     }
     #[doc = "Feature disabled."]
     #[inline(always)]
     pub fn is_feature_disabled_(&self) -> bool {
-        *self == Enum::FeatureDisabled_
+        *self == Mr1r::FeatureDisabled_
     }
 }
 #[doc = "Field `MR1R` writer - Reset on MR1"]
-pub type Mr1rW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type Mr1rW<'a, REG> = crate::BitWriter<'a, REG, Mr1r>;
 impl<'a, REG> Mr1rW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -259,52 +259,52 @@ where
     #[doc = "TC will be reset if MR1 matches it."]
     #[inline(always)]
     pub fn tc_will_be_reset_if_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::TcWillBeResetIf_)
+        self.variant(Mr1r::TcWillBeResetIf_)
     }
     #[doc = "Feature disabled."]
     #[inline(always)]
     pub fn feature_disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::FeatureDisabled_)
+        self.variant(Mr1r::FeatureDisabled_)
     }
 }
 #[doc = "Stop on MR1\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Mr1s {
     #[doc = "1: TC and PC will be stopped and TCR\\[0\\] will be set to 0 if MR1 matches the TC."]
     TcAndPcWillBeSt = 1,
     #[doc = "0: Feature disabled."]
     FeatureDisabled_ = 0,
 }
-impl From<Enum> for bool {
+impl From<Mr1s> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Mr1s) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `MR1S` reader - Stop on MR1"]
-pub type Mr1sR = crate::BitReader<Enum>;
+pub type Mr1sR = crate::BitReader<Mr1s>;
 impl Mr1sR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Mr1s {
         match self.bits {
-            true => Enum::TcAndPcWillBeSt,
-            false => Enum::FeatureDisabled_,
+            true => Mr1s::TcAndPcWillBeSt,
+            false => Mr1s::FeatureDisabled_,
         }
     }
     #[doc = "TC and PC will be stopped and TCR\\[0\\] will be set to 0 if MR1 matches the TC."]
     #[inline(always)]
     pub fn is_tc_and_pc_will_be_st(&self) -> bool {
-        *self == Enum::TcAndPcWillBeSt
+        *self == Mr1s::TcAndPcWillBeSt
     }
     #[doc = "Feature disabled."]
     #[inline(always)]
     pub fn is_feature_disabled_(&self) -> bool {
-        *self == Enum::FeatureDisabled_
+        *self == Mr1s::FeatureDisabled_
     }
 }
 #[doc = "Field `MR1S` writer - Stop on MR1"]
-pub type Mr1sW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type Mr1sW<'a, REG> = crate::BitWriter<'a, REG, Mr1s>;
 impl<'a, REG> Mr1sW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -312,52 +312,52 @@ where
     #[doc = "TC and PC will be stopped and TCR\\[0\\] will be set to 0 if MR1 matches the TC."]
     #[inline(always)]
     pub fn tc_and_pc_will_be_st(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::TcAndPcWillBeSt)
+        self.variant(Mr1s::TcAndPcWillBeSt)
     }
     #[doc = "Feature disabled."]
     #[inline(always)]
     pub fn feature_disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::FeatureDisabled_)
+        self.variant(Mr1s::FeatureDisabled_)
     }
 }
 #[doc = "Interrupt on MR2\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Mr2i {
     #[doc = "1: Interrupt is generated when MR2 matches the value in the TC."]
     InterruptIsGenerat = 1,
     #[doc = "0: Interrupt is disabled"]
     InterruptIsDisable = 0,
 }
-impl From<Enum> for bool {
+impl From<Mr2i> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Mr2i) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `MR2I` reader - Interrupt on MR2"]
-pub type Mr2iR = crate::BitReader<Enum>;
+pub type Mr2iR = crate::BitReader<Mr2i>;
 impl Mr2iR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Mr2i {
         match self.bits {
-            true => Enum::InterruptIsGenerat,
-            false => Enum::InterruptIsDisable,
+            true => Mr2i::InterruptIsGenerat,
+            false => Mr2i::InterruptIsDisable,
         }
     }
     #[doc = "Interrupt is generated when MR2 matches the value in the TC."]
     #[inline(always)]
     pub fn is_interrupt_is_generat(&self) -> bool {
-        *self == Enum::InterruptIsGenerat
+        *self == Mr2i::InterruptIsGenerat
     }
     #[doc = "Interrupt is disabled"]
     #[inline(always)]
     pub fn is_interrupt_is_disable(&self) -> bool {
-        *self == Enum::InterruptIsDisable
+        *self == Mr2i::InterruptIsDisable
     }
 }
 #[doc = "Field `MR2I` writer - Interrupt on MR2"]
-pub type Mr2iW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type Mr2iW<'a, REG> = crate::BitWriter<'a, REG, Mr2i>;
 impl<'a, REG> Mr2iW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -365,52 +365,52 @@ where
     #[doc = "Interrupt is generated when MR2 matches the value in the TC."]
     #[inline(always)]
     pub fn interrupt_is_generat(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::InterruptIsGenerat)
+        self.variant(Mr2i::InterruptIsGenerat)
     }
     #[doc = "Interrupt is disabled"]
     #[inline(always)]
     pub fn interrupt_is_disable(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::InterruptIsDisable)
+        self.variant(Mr2i::InterruptIsDisable)
     }
 }
 #[doc = "Reset on MR2\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Mr2r {
     #[doc = "1: TC will be reset if MR2 matches it."]
     TcWillBeResetIf_ = 1,
     #[doc = "0: Feature disabled."]
     FeatureDisabled_ = 0,
 }
-impl From<Enum> for bool {
+impl From<Mr2r> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Mr2r) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `MR2R` reader - Reset on MR2"]
-pub type Mr2rR = crate::BitReader<Enum>;
+pub type Mr2rR = crate::BitReader<Mr2r>;
 impl Mr2rR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Mr2r {
         match self.bits {
-            true => Enum::TcWillBeResetIf_,
-            false => Enum::FeatureDisabled_,
+            true => Mr2r::TcWillBeResetIf_,
+            false => Mr2r::FeatureDisabled_,
         }
     }
     #[doc = "TC will be reset if MR2 matches it."]
     #[inline(always)]
     pub fn is_tc_will_be_reset_if_(&self) -> bool {
-        *self == Enum::TcWillBeResetIf_
+        *self == Mr2r::TcWillBeResetIf_
     }
     #[doc = "Feature disabled."]
     #[inline(always)]
     pub fn is_feature_disabled_(&self) -> bool {
-        *self == Enum::FeatureDisabled_
+        *self == Mr2r::FeatureDisabled_
     }
 }
 #[doc = "Field `MR2R` writer - Reset on MR2"]
-pub type Mr2rW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type Mr2rW<'a, REG> = crate::BitWriter<'a, REG, Mr2r>;
 impl<'a, REG> Mr2rW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -418,52 +418,52 @@ where
     #[doc = "TC will be reset if MR2 matches it."]
     #[inline(always)]
     pub fn tc_will_be_reset_if_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::TcWillBeResetIf_)
+        self.variant(Mr2r::TcWillBeResetIf_)
     }
     #[doc = "Feature disabled."]
     #[inline(always)]
     pub fn feature_disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::FeatureDisabled_)
+        self.variant(Mr2r::FeatureDisabled_)
     }
 }
 #[doc = "Stop on MR2.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Mr2s {
     #[doc = "1: TC and PC will be stopped and TCR\\[0\\] will be set to 0 if MR2 matches the TC"]
     TcAndPcWillBeSt = 1,
     #[doc = "0: Feature disabled."]
     FeatureDisabled_ = 0,
 }
-impl From<Enum> for bool {
+impl From<Mr2s> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Mr2s) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `MR2S` reader - Stop on MR2."]
-pub type Mr2sR = crate::BitReader<Enum>;
+pub type Mr2sR = crate::BitReader<Mr2s>;
 impl Mr2sR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Mr2s {
         match self.bits {
-            true => Enum::TcAndPcWillBeSt,
-            false => Enum::FeatureDisabled_,
+            true => Mr2s::TcAndPcWillBeSt,
+            false => Mr2s::FeatureDisabled_,
         }
     }
     #[doc = "TC and PC will be stopped and TCR\\[0\\] will be set to 0 if MR2 matches the TC"]
     #[inline(always)]
     pub fn is_tc_and_pc_will_be_st(&self) -> bool {
-        *self == Enum::TcAndPcWillBeSt
+        *self == Mr2s::TcAndPcWillBeSt
     }
     #[doc = "Feature disabled."]
     #[inline(always)]
     pub fn is_feature_disabled_(&self) -> bool {
-        *self == Enum::FeatureDisabled_
+        *self == Mr2s::FeatureDisabled_
     }
 }
 #[doc = "Field `MR2S` writer - Stop on MR2."]
-pub type Mr2sW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type Mr2sW<'a, REG> = crate::BitWriter<'a, REG, Mr2s>;
 impl<'a, REG> Mr2sW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -471,52 +471,52 @@ where
     #[doc = "TC and PC will be stopped and TCR\\[0\\] will be set to 0 if MR2 matches the TC"]
     #[inline(always)]
     pub fn tc_and_pc_will_be_st(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::TcAndPcWillBeSt)
+        self.variant(Mr2s::TcAndPcWillBeSt)
     }
     #[doc = "Feature disabled."]
     #[inline(always)]
     pub fn feature_disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::FeatureDisabled_)
+        self.variant(Mr2s::FeatureDisabled_)
     }
 }
 #[doc = "Interrupt on MR3\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Mr3i {
     #[doc = "1: Interrupt is generated when MR3 matches the value in the TC."]
     InterruptIsGenerat = 1,
     #[doc = "0: This interrupt is disabled"]
     ThisInterruptIsDi = 0,
 }
-impl From<Enum> for bool {
+impl From<Mr3i> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Mr3i) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `MR3I` reader - Interrupt on MR3"]
-pub type Mr3iR = crate::BitReader<Enum>;
+pub type Mr3iR = crate::BitReader<Mr3i>;
 impl Mr3iR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Mr3i {
         match self.bits {
-            true => Enum::InterruptIsGenerat,
-            false => Enum::ThisInterruptIsDi,
+            true => Mr3i::InterruptIsGenerat,
+            false => Mr3i::ThisInterruptIsDi,
         }
     }
     #[doc = "Interrupt is generated when MR3 matches the value in the TC."]
     #[inline(always)]
     pub fn is_interrupt_is_generat(&self) -> bool {
-        *self == Enum::InterruptIsGenerat
+        *self == Mr3i::InterruptIsGenerat
     }
     #[doc = "This interrupt is disabled"]
     #[inline(always)]
     pub fn is_this_interrupt_is_di(&self) -> bool {
-        *self == Enum::ThisInterruptIsDi
+        *self == Mr3i::ThisInterruptIsDi
     }
 }
 #[doc = "Field `MR3I` writer - Interrupt on MR3"]
-pub type Mr3iW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type Mr3iW<'a, REG> = crate::BitWriter<'a, REG, Mr3i>;
 impl<'a, REG> Mr3iW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -524,52 +524,52 @@ where
     #[doc = "Interrupt is generated when MR3 matches the value in the TC."]
     #[inline(always)]
     pub fn interrupt_is_generat(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::InterruptIsGenerat)
+        self.variant(Mr3i::InterruptIsGenerat)
     }
     #[doc = "This interrupt is disabled"]
     #[inline(always)]
     pub fn this_interrupt_is_di(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::ThisInterruptIsDi)
+        self.variant(Mr3i::ThisInterruptIsDi)
     }
 }
 #[doc = "Reset on MR3\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Mr3r {
     #[doc = "1: TC will be reset if MR3 matches it."]
     TcWillBeResetIf_ = 1,
     #[doc = "0: Feature disabled."]
     FeatureDisabled_ = 0,
 }
-impl From<Enum> for bool {
+impl From<Mr3r> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Mr3r) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `MR3R` reader - Reset on MR3"]
-pub type Mr3rR = crate::BitReader<Enum>;
+pub type Mr3rR = crate::BitReader<Mr3r>;
 impl Mr3rR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Mr3r {
         match self.bits {
-            true => Enum::TcWillBeResetIf_,
-            false => Enum::FeatureDisabled_,
+            true => Mr3r::TcWillBeResetIf_,
+            false => Mr3r::FeatureDisabled_,
         }
     }
     #[doc = "TC will be reset if MR3 matches it."]
     #[inline(always)]
     pub fn is_tc_will_be_reset_if_(&self) -> bool {
-        *self == Enum::TcWillBeResetIf_
+        *self == Mr3r::TcWillBeResetIf_
     }
     #[doc = "Feature disabled."]
     #[inline(always)]
     pub fn is_feature_disabled_(&self) -> bool {
-        *self == Enum::FeatureDisabled_
+        *self == Mr3r::FeatureDisabled_
     }
 }
 #[doc = "Field `MR3R` writer - Reset on MR3"]
-pub type Mr3rW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type Mr3rW<'a, REG> = crate::BitWriter<'a, REG, Mr3r>;
 impl<'a, REG> Mr3rW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -577,52 +577,52 @@ where
     #[doc = "TC will be reset if MR3 matches it."]
     #[inline(always)]
     pub fn tc_will_be_reset_if_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::TcWillBeResetIf_)
+        self.variant(Mr3r::TcWillBeResetIf_)
     }
     #[doc = "Feature disabled."]
     #[inline(always)]
     pub fn feature_disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::FeatureDisabled_)
+        self.variant(Mr3r::FeatureDisabled_)
     }
 }
 #[doc = "Stop on MR3\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Mr3s {
     #[doc = "1: TC and PC will be stopped and TCR\\[0\\] will be set to 0 if MR3 matches the TC."]
     TcAndPcWillBeSt = 1,
     #[doc = "0: Feature disabled."]
     FeatureDisabled_ = 0,
 }
-impl From<Enum> for bool {
+impl From<Mr3s> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Mr3s) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `MR3S` reader - Stop on MR3"]
-pub type Mr3sR = crate::BitReader<Enum>;
+pub type Mr3sR = crate::BitReader<Mr3s>;
 impl Mr3sR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Mr3s {
         match self.bits {
-            true => Enum::TcAndPcWillBeSt,
-            false => Enum::FeatureDisabled_,
+            true => Mr3s::TcAndPcWillBeSt,
+            false => Mr3s::FeatureDisabled_,
         }
     }
     #[doc = "TC and PC will be stopped and TCR\\[0\\] will be set to 0 if MR3 matches the TC."]
     #[inline(always)]
     pub fn is_tc_and_pc_will_be_st(&self) -> bool {
-        *self == Enum::TcAndPcWillBeSt
+        *self == Mr3s::TcAndPcWillBeSt
     }
     #[doc = "Feature disabled."]
     #[inline(always)]
     pub fn is_feature_disabled_(&self) -> bool {
-        *self == Enum::FeatureDisabled_
+        *self == Mr3s::FeatureDisabled_
     }
 }
 #[doc = "Field `MR3S` writer - Stop on MR3"]
-pub type Mr3sW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type Mr3sW<'a, REG> = crate::BitWriter<'a, REG, Mr3s>;
 impl<'a, REG> Mr3sW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -630,12 +630,12 @@ where
     #[doc = "TC and PC will be stopped and TCR\\[0\\] will be set to 0 if MR3 matches the TC."]
     #[inline(always)]
     pub fn tc_and_pc_will_be_st(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::TcAndPcWillBeSt)
+        self.variant(Mr3s::TcAndPcWillBeSt)
     }
     #[doc = "Feature disabled."]
     #[inline(always)]
     pub fn feature_disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::FeatureDisabled_)
+        self.variant(Mr3s::FeatureDisabled_)
     }
 }
 impl R {

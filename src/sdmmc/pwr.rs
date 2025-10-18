@@ -5,7 +5,7 @@ pub type W = crate::W<PwrSpec>;
 #[doc = "Power control\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
-pub enum Enum {
+pub enum Ctrl {
     #[doc = "0: Power-off"]
     PowerOff = 0,
     #[doc = "2: Power-up"]
@@ -13,47 +13,47 @@ pub enum Enum {
     #[doc = "3: Power-on"]
     PowerOn = 3,
 }
-impl From<Enum> for u8 {
+impl From<Ctrl> for u8 {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Ctrl) -> Self {
         variant as _
     }
 }
-impl crate::FieldSpec for Enum {
+impl crate::FieldSpec for Ctrl {
     type Ux = u8;
 }
-impl crate::IsEnum for Enum {}
+impl crate::IsEnum for Ctrl {}
 #[doc = "Field `CTRL` reader - Power control"]
-pub type CtrlR = crate::FieldReader<Enum>;
+pub type CtrlR = crate::FieldReader<Ctrl>;
 impl CtrlR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Ctrl {
         match self.bits {
-            0 => Enum::PowerOff,
-            2 => Enum::PowerUp,
-            3 => Enum::PowerOn,
+            0 => Ctrl::PowerOff,
+            2 => Ctrl::PowerUp,
+            3 => Ctrl::PowerOn,
             _ => unreachable!(),
         }
     }
     #[doc = "Power-off"]
     #[inline(always)]
     pub fn is_power_off(&self) -> bool {
-        *self == Enum::PowerOff
+        *self == Ctrl::PowerOff
     }
     #[doc = "Power-up"]
     #[inline(always)]
     pub fn is_power_up(&self) -> bool {
-        *self == Enum::PowerUp
+        *self == Ctrl::PowerUp
     }
     #[doc = "Power-on"]
     #[inline(always)]
     pub fn is_power_on(&self) -> bool {
-        *self == Enum::PowerOn
+        *self == Ctrl::PowerOn
     }
 }
 #[doc = "Field `CTRL` writer - Power control"]
-pub type CtrlW<'a, REG> = crate::FieldWriter<'a, REG, 2, Enum>;
+pub type CtrlW<'a, REG> = crate::FieldWriter<'a, REG, 2, Ctrl>;
 impl<'a, REG> CtrlW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -62,17 +62,17 @@ where
     #[doc = "Power-off"]
     #[inline(always)]
     pub fn power_off(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::PowerOff)
+        self.variant(Ctrl::PowerOff)
     }
     #[doc = "Power-up"]
     #[inline(always)]
     pub fn power_up(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::PowerUp)
+        self.variant(Ctrl::PowerUp)
     }
     #[doc = "Power-on"]
     #[inline(always)]
     pub fn power_on(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::PowerOn)
+        self.variant(Ctrl::PowerOn)
     }
 }
 #[doc = "Field `OPENDRAIN` reader - SD_CMD output control."]

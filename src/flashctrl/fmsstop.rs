@@ -8,42 +8,42 @@ pub type StopR = crate::FieldReader<u32>;
 pub type StopW<'a, REG> = crate::FieldWriter<'a, REG, 17, u32>;
 #[doc = "Start control bit for signature generation.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum SigStart {
     #[doc = "0: Signature generation is stopped"]
     Stop = 0,
     #[doc = "1: Initiate signature generation"]
     Start = 1,
 }
-impl From<Enum> for bool {
+impl From<SigStart> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: SigStart) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `SIG_START` reader - Start control bit for signature generation."]
-pub type SigStartR = crate::BitReader<Enum>;
+pub type SigStartR = crate::BitReader<SigStart>;
 impl SigStartR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> SigStart {
         match self.bits {
-            false => Enum::Stop,
-            true => Enum::Start,
+            false => SigStart::Stop,
+            true => SigStart::Start,
         }
     }
     #[doc = "Signature generation is stopped"]
     #[inline(always)]
     pub fn is_stop(&self) -> bool {
-        *self == Enum::Stop
+        *self == SigStart::Stop
     }
     #[doc = "Initiate signature generation"]
     #[inline(always)]
     pub fn is_start(&self) -> bool {
-        *self == Enum::Start
+        *self == SigStart::Start
     }
 }
 #[doc = "Field `SIG_START` writer - Start control bit for signature generation."]
-pub type SigStartW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type SigStartW<'a, REG> = crate::BitWriter<'a, REG, SigStart>;
 impl<'a, REG> SigStartW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -51,12 +51,12 @@ where
     #[doc = "Signature generation is stopped"]
     #[inline(always)]
     pub fn stop(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Stop)
+        self.variant(SigStart::Stop)
     }
     #[doc = "Initiate signature generation"]
     #[inline(always)]
     pub fn start(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Start)
+        self.variant(SigStart::Start)
     }
 }
 impl R {

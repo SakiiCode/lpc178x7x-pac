@@ -5,7 +5,7 @@ pub type W = crate::W<DynamicreadconfigSpec>;
 #[doc = "Read data strategy\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
-pub enum Enum {
+pub enum Rd {
     #[doc = "0: Clock out delayed strategy, using CLKOUT (command not delayed, clock out delayed). POR reset value."]
     ClockOutDelayedSt = 0,
     #[doc = "1: Command delayed strategy, using EMCCLKDELAY (command delayed, clock out not delayed)."]
@@ -15,53 +15,53 @@ pub enum Enum {
     #[doc = "3: Command delayed strategy plus two clock cycles, using EMCCLKDELAY (command delayed, clock out not delayed)."]
     CommandDelayedStra = 3,
 }
-impl From<Enum> for u8 {
+impl From<Rd> for u8 {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Rd) -> Self {
         variant as _
     }
 }
-impl crate::FieldSpec for Enum {
+impl crate::FieldSpec for Rd {
     type Ux = u8;
 }
-impl crate::IsEnum for Enum {}
+impl crate::IsEnum for Rd {}
 #[doc = "Field `RD` reader - Read data strategy"]
-pub type RdR = crate::FieldReader<Enum>;
+pub type RdR = crate::FieldReader<Rd>;
 impl RdR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Rd {
         match self.bits {
-            0 => Enum::ClockOutDelayedSt,
-            1 => Enum::CommandDelayedStra,
-            2 => Enum::CommandDelayedStra,
-            3 => Enum::CommandDelayedStra,
+            0 => Rd::ClockOutDelayedSt,
+            1 => Rd::CommandDelayedStra,
+            2 => Rd::CommandDelayedStra,
+            3 => Rd::CommandDelayedStra,
             _ => unreachable!(),
         }
     }
     #[doc = "Clock out delayed strategy, using CLKOUT (command not delayed, clock out delayed). POR reset value."]
     #[inline(always)]
     pub fn is_clock_out_delayed_st(&self) -> bool {
-        *self == Enum::ClockOutDelayedSt
+        *self == Rd::ClockOutDelayedSt
     }
     #[doc = "Command delayed strategy, using EMCCLKDELAY (command delayed, clock out not delayed)."]
     #[inline(always)]
     pub fn is_command_delayed_stra(&self) -> bool {
-        *self == Enum::CommandDelayedStra
+        *self == Rd::CommandDelayedStra
     }
     #[doc = "Command delayed strategy plus one clock cycle, using EMCCLKDELAY (command delayed, clock out not delayed)."]
     #[inline(always)]
     pub fn is_command_delayed_stra(&self) -> bool {
-        *self == Enum::CommandDelayedStra
+        *self == Rd::CommandDelayedStra
     }
     #[doc = "Command delayed strategy plus two clock cycles, using EMCCLKDELAY (command delayed, clock out not delayed)."]
     #[inline(always)]
     pub fn is_command_delayed_stra(&self) -> bool {
-        *self == Enum::CommandDelayedStra
+        *self == Rd::CommandDelayedStra
     }
 }
 #[doc = "Field `RD` writer - Read data strategy"]
-pub type RdW<'a, REG> = crate::FieldWriter<'a, REG, 2, Enum, crate::Safe>;
+pub type RdW<'a, REG> = crate::FieldWriter<'a, REG, 2, Rd, crate::Safe>;
 impl<'a, REG> RdW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -70,22 +70,22 @@ where
     #[doc = "Clock out delayed strategy, using CLKOUT (command not delayed, clock out delayed). POR reset value."]
     #[inline(always)]
     pub fn clock_out_delayed_st(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::ClockOutDelayedSt)
+        self.variant(Rd::ClockOutDelayedSt)
     }
     #[doc = "Command delayed strategy, using EMCCLKDELAY (command delayed, clock out not delayed)."]
     #[inline(always)]
     pub fn command_delayed_stra(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::CommandDelayedStra)
+        self.variant(Rd::CommandDelayedStra)
     }
     #[doc = "Command delayed strategy plus one clock cycle, using EMCCLKDELAY (command delayed, clock out not delayed)."]
     #[inline(always)]
     pub fn command_delayed_stra(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::CommandDelayedStra)
+        self.variant(Rd::CommandDelayedStra)
     }
     #[doc = "Command delayed strategy plus two clock cycles, using EMCCLKDELAY (command delayed, clock out not delayed)."]
     #[inline(always)]
     pub fn command_delayed_stra(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::CommandDelayedStra)
+        self.variant(Rd::CommandDelayedStra)
     }
 }
 impl R {

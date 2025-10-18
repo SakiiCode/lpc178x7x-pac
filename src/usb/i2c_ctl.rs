@@ -4,42 +4,42 @@ pub type R = crate::R<I2cCtlSpec>;
 pub type W = crate::W<I2cCtlSpec>;
 #[doc = "Transmit Done Interrupt Enable. This enables the TDI interrupt signalling that this I2C issued a STOP condition.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Tdie {
     #[doc = "0: Disable the TDI interrupt."]
     DisableTheTdiInte = 0,
     #[doc = "1: Enable the TDI interrupt."]
     EnableTheTdiInter = 1,
 }
-impl From<Enum> for bool {
+impl From<Tdie> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Tdie) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `TDIE` reader - Transmit Done Interrupt Enable. This enables the TDI interrupt signalling that this I2C issued a STOP condition."]
-pub type TdieR = crate::BitReader<Enum>;
+pub type TdieR = crate::BitReader<Tdie>;
 impl TdieR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Tdie {
         match self.bits {
-            false => Enum::DisableTheTdiInte,
-            true => Enum::EnableTheTdiInter,
+            false => Tdie::DisableTheTdiInte,
+            true => Tdie::EnableTheTdiInter,
         }
     }
     #[doc = "Disable the TDI interrupt."]
     #[inline(always)]
     pub fn is_disable_the_tdi_inte(&self) -> bool {
-        *self == Enum::DisableTheTdiInte
+        *self == Tdie::DisableTheTdiInte
     }
     #[doc = "Enable the TDI interrupt."]
     #[inline(always)]
     pub fn is_enable_the_tdi_inter(&self) -> bool {
-        *self == Enum::EnableTheTdiInter
+        *self == Tdie::EnableTheTdiInter
     }
 }
 #[doc = "Field `TDIE` writer - Transmit Done Interrupt Enable. This enables the TDI interrupt signalling that this I2C issued a STOP condition."]
-pub type TdieW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type TdieW<'a, REG> = crate::BitWriter<'a, REG, Tdie>;
 impl<'a, REG> TdieW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -47,52 +47,52 @@ where
     #[doc = "Disable the TDI interrupt."]
     #[inline(always)]
     pub fn disable_the_tdi_inte(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::DisableTheTdiInte)
+        self.variant(Tdie::DisableTheTdiInte)
     }
     #[doc = "Enable the TDI interrupt."]
     #[inline(always)]
     pub fn enable_the_tdi_inter(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::EnableTheTdiInter)
+        self.variant(Tdie::EnableTheTdiInter)
     }
 }
 #[doc = "Transmitter Arbitration Failure Interrupt Enable. This enables the AFI interrupt which is asserted during transmission when trying to set SDA high, but the bus is driven low by another device.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Afie {
     #[doc = "0: Disable the AFI."]
     DisableTheAfi_ = 0,
     #[doc = "1: Enable the AFI."]
     EnableTheAfi_ = 1,
 }
-impl From<Enum> for bool {
+impl From<Afie> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Afie) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `AFIE` reader - Transmitter Arbitration Failure Interrupt Enable. This enables the AFI interrupt which is asserted during transmission when trying to set SDA high, but the bus is driven low by another device."]
-pub type AfieR = crate::BitReader<Enum>;
+pub type AfieR = crate::BitReader<Afie>;
 impl AfieR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Afie {
         match self.bits {
-            false => Enum::DisableTheAfi_,
-            true => Enum::EnableTheAfi_,
+            false => Afie::DisableTheAfi_,
+            true => Afie::EnableTheAfi_,
         }
     }
     #[doc = "Disable the AFI."]
     #[inline(always)]
     pub fn is_disable_the_afi_(&self) -> bool {
-        *self == Enum::DisableTheAfi_
+        *self == Afie::DisableTheAfi_
     }
     #[doc = "Enable the AFI."]
     #[inline(always)]
     pub fn is_enable_the_afi_(&self) -> bool {
-        *self == Enum::EnableTheAfi_
+        *self == Afie::EnableTheAfi_
     }
 }
 #[doc = "Field `AFIE` writer - Transmitter Arbitration Failure Interrupt Enable. This enables the AFI interrupt which is asserted during transmission when trying to set SDA high, but the bus is driven low by another device."]
-pub type AfieW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type AfieW<'a, REG> = crate::BitWriter<'a, REG, Afie>;
 impl<'a, REG> AfieW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -100,52 +100,52 @@ where
     #[doc = "Disable the AFI."]
     #[inline(always)]
     pub fn disable_the_afi_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::DisableTheAfi_)
+        self.variant(Afie::DisableTheAfi_)
     }
     #[doc = "Enable the AFI."]
     #[inline(always)]
     pub fn enable_the_afi_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::EnableTheAfi_)
+        self.variant(Afie::EnableTheAfi_)
     }
 }
 #[doc = "Transmitter No Acknowledge Interrupt Enable. This enables the NAI interrupt signalling that transmitted byte was not acknowledged.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Naie {
     #[doc = "0: Disable the NAI."]
     DisableTheNai_ = 0,
     #[doc = "1: Enable the NAI."]
     EnableTheNai_ = 1,
 }
-impl From<Enum> for bool {
+impl From<Naie> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Naie) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `NAIE` reader - Transmitter No Acknowledge Interrupt Enable. This enables the NAI interrupt signalling that transmitted byte was not acknowledged."]
-pub type NaieR = crate::BitReader<Enum>;
+pub type NaieR = crate::BitReader<Naie>;
 impl NaieR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Naie {
         match self.bits {
-            false => Enum::DisableTheNai_,
-            true => Enum::EnableTheNai_,
+            false => Naie::DisableTheNai_,
+            true => Naie::EnableTheNai_,
         }
     }
     #[doc = "Disable the NAI."]
     #[inline(always)]
     pub fn is_disable_the_nai_(&self) -> bool {
-        *self == Enum::DisableTheNai_
+        *self == Naie::DisableTheNai_
     }
     #[doc = "Enable the NAI."]
     #[inline(always)]
     pub fn is_enable_the_nai_(&self) -> bool {
-        *self == Enum::EnableTheNai_
+        *self == Naie::EnableTheNai_
     }
 }
 #[doc = "Field `NAIE` writer - Transmitter No Acknowledge Interrupt Enable. This enables the NAI interrupt signalling that transmitted byte was not acknowledged."]
-pub type NaieW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type NaieW<'a, REG> = crate::BitWriter<'a, REG, Naie>;
 impl<'a, REG> NaieW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -153,52 +153,52 @@ where
     #[doc = "Disable the NAI."]
     #[inline(always)]
     pub fn disable_the_nai_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::DisableTheNai_)
+        self.variant(Naie::DisableTheNai_)
     }
     #[doc = "Enable the NAI."]
     #[inline(always)]
     pub fn enable_the_nai_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::EnableTheNai_)
+        self.variant(Naie::EnableTheNai_)
     }
 }
 #[doc = "Master Transmitter Data Request Interrupt Enable. This enables the DRMI interrupt which signals that the master transmitter has run out of data, has not issued a STOP, and is holding the SCL line low.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Drmie {
     #[doc = "0: Disable the DRMI interrupt."]
     DisableTheDrmiInt = 0,
     #[doc = "1: Enable the DRMI interrupt."]
     EnableTheDrmiInte = 1,
 }
-impl From<Enum> for bool {
+impl From<Drmie> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Drmie) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `DRMIE` reader - Master Transmitter Data Request Interrupt Enable. This enables the DRMI interrupt which signals that the master transmitter has run out of data, has not issued a STOP, and is holding the SCL line low."]
-pub type DrmieR = crate::BitReader<Enum>;
+pub type DrmieR = crate::BitReader<Drmie>;
 impl DrmieR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Drmie {
         match self.bits {
-            false => Enum::DisableTheDrmiInt,
-            true => Enum::EnableTheDrmiInte,
+            false => Drmie::DisableTheDrmiInt,
+            true => Drmie::EnableTheDrmiInte,
         }
     }
     #[doc = "Disable the DRMI interrupt."]
     #[inline(always)]
     pub fn is_disable_the_drmi_int(&self) -> bool {
-        *self == Enum::DisableTheDrmiInt
+        *self == Drmie::DisableTheDrmiInt
     }
     #[doc = "Enable the DRMI interrupt."]
     #[inline(always)]
     pub fn is_enable_the_drmi_inte(&self) -> bool {
-        *self == Enum::EnableTheDrmiInte
+        *self == Drmie::EnableTheDrmiInte
     }
 }
 #[doc = "Field `DRMIE` writer - Master Transmitter Data Request Interrupt Enable. This enables the DRMI interrupt which signals that the master transmitter has run out of data, has not issued a STOP, and is holding the SCL line low."]
-pub type DrmieW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type DrmieW<'a, REG> = crate::BitWriter<'a, REG, Drmie>;
 impl<'a, REG> DrmieW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -206,52 +206,52 @@ where
     #[doc = "Disable the DRMI interrupt."]
     #[inline(always)]
     pub fn disable_the_drmi_int(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::DisableTheDrmiInt)
+        self.variant(Drmie::DisableTheDrmiInt)
     }
     #[doc = "Enable the DRMI interrupt."]
     #[inline(always)]
     pub fn enable_the_drmi_inte(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::EnableTheDrmiInte)
+        self.variant(Drmie::EnableTheDrmiInte)
     }
 }
 #[doc = "Slave Transmitter Data Request Interrupt Enable. This enables the DRSI interrupt which signals that the slave transmitter has run out of data and the last byte was acknowledged, so the SCL line is being held low.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Drsie {
     #[doc = "0: Disable the DRSI interrupt."]
     DisableTheDrsiInt = 0,
     #[doc = "1: Enable the DRSI interrupt."]
     EnableTheDrsiInte = 1,
 }
-impl From<Enum> for bool {
+impl From<Drsie> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Drsie) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `DRSIE` reader - Slave Transmitter Data Request Interrupt Enable. This enables the DRSI interrupt which signals that the slave transmitter has run out of data and the last byte was acknowledged, so the SCL line is being held low."]
-pub type DrsieR = crate::BitReader<Enum>;
+pub type DrsieR = crate::BitReader<Drsie>;
 impl DrsieR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Drsie {
         match self.bits {
-            false => Enum::DisableTheDrsiInt,
-            true => Enum::EnableTheDrsiInte,
+            false => Drsie::DisableTheDrsiInt,
+            true => Drsie::EnableTheDrsiInte,
         }
     }
     #[doc = "Disable the DRSI interrupt."]
     #[inline(always)]
     pub fn is_disable_the_drsi_int(&self) -> bool {
-        *self == Enum::DisableTheDrsiInt
+        *self == Drsie::DisableTheDrsiInt
     }
     #[doc = "Enable the DRSI interrupt."]
     #[inline(always)]
     pub fn is_enable_the_drsi_inte(&self) -> bool {
-        *self == Enum::EnableTheDrsiInte
+        *self == Drsie::EnableTheDrsiInte
     }
 }
 #[doc = "Field `DRSIE` writer - Slave Transmitter Data Request Interrupt Enable. This enables the DRSI interrupt which signals that the slave transmitter has run out of data and the last byte was acknowledged, so the SCL line is being held low."]
-pub type DrsieW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type DrsieW<'a, REG> = crate::BitWriter<'a, REG, Drsie>;
 impl<'a, REG> DrsieW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -259,52 +259,52 @@ where
     #[doc = "Disable the DRSI interrupt."]
     #[inline(always)]
     pub fn disable_the_drsi_int(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::DisableTheDrsiInt)
+        self.variant(Drsie::DisableTheDrsiInt)
     }
     #[doc = "Enable the DRSI interrupt."]
     #[inline(always)]
     pub fn enable_the_drsi_inte(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::EnableTheDrsiInte)
+        self.variant(Drsie::EnableTheDrsiInte)
     }
 }
 #[doc = "Receive FIFO Full Interrupt Enable. This enables the Receive FIFO Full interrupt to indicate that the receive FIFO cannot accept any more data.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Refie {
     #[doc = "0: Disable the RFFI."]
     DisableTheRffi_ = 0,
     #[doc = "1: Enable the RFFI."]
     EnableTheRffi_ = 1,
 }
-impl From<Enum> for bool {
+impl From<Refie> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Refie) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `REFIE` reader - Receive FIFO Full Interrupt Enable. This enables the Receive FIFO Full interrupt to indicate that the receive FIFO cannot accept any more data."]
-pub type RefieR = crate::BitReader<Enum>;
+pub type RefieR = crate::BitReader<Refie>;
 impl RefieR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Refie {
         match self.bits {
-            false => Enum::DisableTheRffi_,
-            true => Enum::EnableTheRffi_,
+            false => Refie::DisableTheRffi_,
+            true => Refie::EnableTheRffi_,
         }
     }
     #[doc = "Disable the RFFI."]
     #[inline(always)]
     pub fn is_disable_the_rffi_(&self) -> bool {
-        *self == Enum::DisableTheRffi_
+        *self == Refie::DisableTheRffi_
     }
     #[doc = "Enable the RFFI."]
     #[inline(always)]
     pub fn is_enable_the_rffi_(&self) -> bool {
-        *self == Enum::EnableTheRffi_
+        *self == Refie::EnableTheRffi_
     }
 }
 #[doc = "Field `REFIE` writer - Receive FIFO Full Interrupt Enable. This enables the Receive FIFO Full interrupt to indicate that the receive FIFO cannot accept any more data."]
-pub type RefieW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type RefieW<'a, REG> = crate::BitWriter<'a, REG, Refie>;
 impl<'a, REG> RefieW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -312,52 +312,52 @@ where
     #[doc = "Disable the RFFI."]
     #[inline(always)]
     pub fn disable_the_rffi_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::DisableTheRffi_)
+        self.variant(Refie::DisableTheRffi_)
     }
     #[doc = "Enable the RFFI."]
     #[inline(always)]
     pub fn enable_the_rffi_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::EnableTheRffi_)
+        self.variant(Refie::EnableTheRffi_)
     }
 }
 #[doc = "Receive Data Available Interrupt Enable. This enables the DAI interrupt to indicate that data is available in the receive FIFO (i.e. not empty).\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Rfdaie {
     #[doc = "0: Disable the DAI."]
     DisableTheDai_ = 0,
     #[doc = "1: Enable the DAI."]
     EnableTheDai_ = 1,
 }
-impl From<Enum> for bool {
+impl From<Rfdaie> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Rfdaie) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `RFDAIE` reader - Receive Data Available Interrupt Enable. This enables the DAI interrupt to indicate that data is available in the receive FIFO (i.e. not empty)."]
-pub type RfdaieR = crate::BitReader<Enum>;
+pub type RfdaieR = crate::BitReader<Rfdaie>;
 impl RfdaieR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Rfdaie {
         match self.bits {
-            false => Enum::DisableTheDai_,
-            true => Enum::EnableTheDai_,
+            false => Rfdaie::DisableTheDai_,
+            true => Rfdaie::EnableTheDai_,
         }
     }
     #[doc = "Disable the DAI."]
     #[inline(always)]
     pub fn is_disable_the_dai_(&self) -> bool {
-        *self == Enum::DisableTheDai_
+        *self == Rfdaie::DisableTheDai_
     }
     #[doc = "Enable the DAI."]
     #[inline(always)]
     pub fn is_enable_the_dai_(&self) -> bool {
-        *self == Enum::EnableTheDai_
+        *self == Rfdaie::EnableTheDai_
     }
 }
 #[doc = "Field `RFDAIE` writer - Receive Data Available Interrupt Enable. This enables the DAI interrupt to indicate that data is available in the receive FIFO (i.e. not empty)."]
-pub type RfdaieW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type RfdaieW<'a, REG> = crate::BitWriter<'a, REG, Rfdaie>;
 impl<'a, REG> RfdaieW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -365,52 +365,52 @@ where
     #[doc = "Disable the DAI."]
     #[inline(always)]
     pub fn disable_the_dai_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::DisableTheDai_)
+        self.variant(Rfdaie::DisableTheDai_)
     }
     #[doc = "Enable the DAI."]
     #[inline(always)]
     pub fn enable_the_dai_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::EnableTheDai_)
+        self.variant(Rfdaie::EnableTheDai_)
     }
 }
 #[doc = "Transmit FIFO Not Full Interrupt Enable. This enables the Transmit FIFO Not Full interrupt to indicate that the more data can be written to the transmit FIFO. Note that this is not full. It is intended help the CPU to write to the I2C block only when there is room in the FIFO and do this without polling the status register.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Tffie {
     #[doc = "0: Disable the TFFI."]
     DisableTheTffi_ = 0,
     #[doc = "1: Enable the TFFI."]
     EnableTheTffi_ = 1,
 }
-impl From<Enum> for bool {
+impl From<Tffie> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Tffie) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `TFFIE` reader - Transmit FIFO Not Full Interrupt Enable. This enables the Transmit FIFO Not Full interrupt to indicate that the more data can be written to the transmit FIFO. Note that this is not full. It is intended help the CPU to write to the I2C block only when there is room in the FIFO and do this without polling the status register."]
-pub type TffieR = crate::BitReader<Enum>;
+pub type TffieR = crate::BitReader<Tffie>;
 impl TffieR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Tffie {
         match self.bits {
-            false => Enum::DisableTheTffi_,
-            true => Enum::EnableTheTffi_,
+            false => Tffie::DisableTheTffi_,
+            true => Tffie::EnableTheTffi_,
         }
     }
     #[doc = "Disable the TFFI."]
     #[inline(always)]
     pub fn is_disable_the_tffi_(&self) -> bool {
-        *self == Enum::DisableTheTffi_
+        *self == Tffie::DisableTheTffi_
     }
     #[doc = "Enable the TFFI."]
     #[inline(always)]
     pub fn is_enable_the_tffi_(&self) -> bool {
-        *self == Enum::EnableTheTffi_
+        *self == Tffie::EnableTheTffi_
     }
 }
 #[doc = "Field `TFFIE` writer - Transmit FIFO Not Full Interrupt Enable. This enables the Transmit FIFO Not Full interrupt to indicate that the more data can be written to the transmit FIFO. Note that this is not full. It is intended help the CPU to write to the I2C block only when there is room in the FIFO and do this without polling the status register."]
-pub type TffieW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type TffieW<'a, REG> = crate::BitWriter<'a, REG, Tffie>;
 impl<'a, REG> TffieW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -418,52 +418,52 @@ where
     #[doc = "Disable the TFFI."]
     #[inline(always)]
     pub fn disable_the_tffi_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::DisableTheTffi_)
+        self.variant(Tffie::DisableTheTffi_)
     }
     #[doc = "Enable the TFFI."]
     #[inline(always)]
     pub fn enable_the_tffi_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::EnableTheTffi_)
+        self.variant(Tffie::EnableTheTffi_)
     }
 }
 #[doc = "Soft reset. This is only needed in unusual circumstances. If a device issues a start condition without issuing a stop condition. A system timer may be used to reset the I2C if the bus remains busy longer than the time-out period. On a soft reset, the Tx and Rx FIFOs are flushed, I2C_STS register is cleared, and all internal state machines are reset to appear idle. The I2C_CLKHI, I2C_CLKLO and I2C_CTL (except Soft Reset Bit) are NOT modified by a soft reset.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Srst {
     #[doc = "0: No reset."]
     NoReset = 0,
     #[doc = "1: Reset the I2C to idle state. Self clearing."]
     Reset = 1,
 }
-impl From<Enum> for bool {
+impl From<Srst> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Srst) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `SRST` reader - Soft reset. This is only needed in unusual circumstances. If a device issues a start condition without issuing a stop condition. A system timer may be used to reset the I2C if the bus remains busy longer than the time-out period. On a soft reset, the Tx and Rx FIFOs are flushed, I2C_STS register is cleared, and all internal state machines are reset to appear idle. The I2C_CLKHI, I2C_CLKLO and I2C_CTL (except Soft Reset Bit) are NOT modified by a soft reset."]
-pub type SrstR = crate::BitReader<Enum>;
+pub type SrstR = crate::BitReader<Srst>;
 impl SrstR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Srst {
         match self.bits {
-            false => Enum::NoReset,
-            true => Enum::Reset,
+            false => Srst::NoReset,
+            true => Srst::Reset,
         }
     }
     #[doc = "No reset."]
     #[inline(always)]
     pub fn is_no_reset(&self) -> bool {
-        *self == Enum::NoReset
+        *self == Srst::NoReset
     }
     #[doc = "Reset the I2C to idle state. Self clearing."]
     #[inline(always)]
     pub fn is_reset(&self) -> bool {
-        *self == Enum::Reset
+        *self == Srst::Reset
     }
 }
 #[doc = "Field `SRST` writer - Soft reset. This is only needed in unusual circumstances. If a device issues a start condition without issuing a stop condition. A system timer may be used to reset the I2C if the bus remains busy longer than the time-out period. On a soft reset, the Tx and Rx FIFOs are flushed, I2C_STS register is cleared, and all internal state machines are reset to appear idle. The I2C_CLKHI, I2C_CLKLO and I2C_CTL (except Soft Reset Bit) are NOT modified by a soft reset."]
-pub type SrstW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type SrstW<'a, REG> = crate::BitWriter<'a, REG, Srst>;
 impl<'a, REG> SrstW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -471,12 +471,12 @@ where
     #[doc = "No reset."]
     #[inline(always)]
     pub fn no_reset(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::NoReset)
+        self.variant(Srst::NoReset)
     }
     #[doc = "Reset the I2C to idle state. Self clearing."]
     #[inline(always)]
     pub fn reset(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Reset)
+        self.variant(Srst::Reset)
     }
 }
 impl R {

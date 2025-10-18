@@ -2,44 +2,44 @@
 pub type R = crate::R<IirSpec>;
 #[doc = "Interrupt status. Note that U4IIR\\[0\\] is active low. The pending interrupt can be determined by evaluating U4IIR\\[3:1\\].\n\nValue on reset: 1"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Intstatus {
     #[doc = "0: At least one interrupt is pending."]
     AtLeastOneInterru = 0,
     #[doc = "1: No interrupt is pending."]
     NoInterruptIsPend = 1,
 }
-impl From<Enum> for bool {
+impl From<Intstatus> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Intstatus) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `INTSTATUS` reader - Interrupt status. Note that U4IIR\\[0\\] is active low. The pending interrupt can be determined by evaluating U4IIR\\[3:1\\]."]
-pub type IntstatusR = crate::BitReader<Enum>;
+pub type IntstatusR = crate::BitReader<Intstatus>;
 impl IntstatusR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Intstatus {
         match self.bits {
-            false => Enum::AtLeastOneInterru,
-            true => Enum::NoInterruptIsPend,
+            false => Intstatus::AtLeastOneInterru,
+            true => Intstatus::NoInterruptIsPend,
         }
     }
     #[doc = "At least one interrupt is pending."]
     #[inline(always)]
     pub fn is_at_least_one_interru(&self) -> bool {
-        *self == Enum::AtLeastOneInterru
+        *self == Intstatus::AtLeastOneInterru
     }
     #[doc = "No interrupt is pending."]
     #[inline(always)]
     pub fn is_no_interrupt_is_pend(&self) -> bool {
-        *self == Enum::NoInterruptIsPend
+        *self == Intstatus::NoInterruptIsPend
     }
 }
 #[doc = "Interrupt identification. U4IER\\[3:1\\] identifies an interrupt corresponding to the UART4 Rx or TX FIFO. All other combinations of U4IER\\[3:1\\] not listed below are reserved (000,100,101,111).\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
-pub enum Enum {
+pub enum Intid {
     #[doc = "3: 1 - Receive Line Status (RLS)."]
     _1ReceiveLineS = 3,
     #[doc = "2: 2a - Receive Data Available (RDA)."]
@@ -49,49 +49,49 @@ pub enum Enum {
     #[doc = "1: 3 - THRE Interrupt"]
     _3ThreInterrupt = 1,
 }
-impl From<Enum> for u8 {
+impl From<Intid> for u8 {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Intid) -> Self {
         variant as _
     }
 }
-impl crate::FieldSpec for Enum {
+impl crate::FieldSpec for Intid {
     type Ux = u8;
 }
-impl crate::IsEnum for Enum {}
+impl crate::IsEnum for Intid {}
 #[doc = "Field `INTID` reader - Interrupt identification. U4IER\\[3:1\\] identifies an interrupt corresponding to the UART4 Rx or TX FIFO. All other combinations of U4IER\\[3:1\\] not listed below are reserved (000,100,101,111)."]
-pub type IntidR = crate::FieldReader<Enum>;
+pub type IntidR = crate::FieldReader<Intid>;
 impl IntidR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Option<Enum> {
+    pub const fn variant(&self) -> Option<Intid> {
         match self.bits {
-            3 => Some(Enum::_1ReceiveLineS),
-            2 => Some(Enum::_2a_ReceiveDataAv),
-            6 => Some(Enum::_2b_CharacterTime_),
-            1 => Some(Enum::_3ThreInterrupt),
+            3 => Some(Intid::_1ReceiveLineS),
+            2 => Some(Intid::_2a_ReceiveDataAv),
+            6 => Some(Intid::_2b_CharacterTime_),
+            1 => Some(Intid::_3ThreInterrupt),
             _ => None,
         }
     }
     #[doc = "1 - Receive Line Status (RLS)."]
     #[inline(always)]
     pub fn is_1_receive_line_s(&self) -> bool {
-        *self == Enum::_1ReceiveLineS
+        *self == Intid::_1ReceiveLineS
     }
     #[doc = "2a - Receive Data Available (RDA)."]
     #[inline(always)]
     pub fn is_2a__receive_data_av(&self) -> bool {
-        *self == Enum::_2a_ReceiveDataAv
+        *self == Intid::_2a_ReceiveDataAv
     }
     #[doc = "2b - Character Time-out Indicator (CTI)."]
     #[inline(always)]
     pub fn is_2b__character_time_(&self) -> bool {
-        *self == Enum::_2b_CharacterTime_
+        *self == Intid::_2b_CharacterTime_
     }
     #[doc = "3 - THRE Interrupt"]
     #[inline(always)]
     pub fn is_3_thre_interrupt(&self) -> bool {
-        *self == Enum::_3ThreInterrupt
+        *self == Intid::_3ThreInterrupt
     }
 }
 #[doc = "Field `FIFOENABLE` reader - Copies of U4FCR\\[0\\]."]

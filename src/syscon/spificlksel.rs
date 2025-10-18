@@ -9,7 +9,7 @@ pub type SpifidivW<'a, REG> = crate::FieldWriter<'a, REG, 5>;
 #[doc = "Selects the input clock for the USB clock divider.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
-pub enum Enum {
+pub enum Spifisel {
     #[doc = "0: Sysclk is used as the input to the SPIFI clock divider."]
     SysclkIsUsedAsTh = 0,
     #[doc = "1: The output of the Main PLL is used as the input to the SPIFI clock divider."]
@@ -17,47 +17,47 @@ pub enum Enum {
     #[doc = "2: The output of the Alt PLL is used as the input to the SPIFI clock divider."]
     TheOutputOfTheAl = 2,
 }
-impl From<Enum> for u8 {
+impl From<Spifisel> for u8 {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Spifisel) -> Self {
         variant as _
     }
 }
-impl crate::FieldSpec for Enum {
+impl crate::FieldSpec for Spifisel {
     type Ux = u8;
 }
-impl crate::IsEnum for Enum {}
+impl crate::IsEnum for Spifisel {}
 #[doc = "Field `SPIFISEL` reader - Selects the input clock for the USB clock divider."]
-pub type SpifiselR = crate::FieldReader<Enum>;
+pub type SpifiselR = crate::FieldReader<Spifisel>;
 impl SpifiselR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Option<Enum> {
+    pub const fn variant(&self) -> Option<Spifisel> {
         match self.bits {
-            0 => Some(Enum::SysclkIsUsedAsTh),
-            1 => Some(Enum::TheOutputOfTheMa),
-            2 => Some(Enum::TheOutputOfTheAl),
+            0 => Some(Spifisel::SysclkIsUsedAsTh),
+            1 => Some(Spifisel::TheOutputOfTheMa),
+            2 => Some(Spifisel::TheOutputOfTheAl),
             _ => None,
         }
     }
     #[doc = "Sysclk is used as the input to the SPIFI clock divider."]
     #[inline(always)]
     pub fn is_sysclk_is_used_as_th(&self) -> bool {
-        *self == Enum::SysclkIsUsedAsTh
+        *self == Spifisel::SysclkIsUsedAsTh
     }
     #[doc = "The output of the Main PLL is used as the input to the SPIFI clock divider."]
     #[inline(always)]
     pub fn is_the_output_of_the_ma(&self) -> bool {
-        *self == Enum::TheOutputOfTheMa
+        *self == Spifisel::TheOutputOfTheMa
     }
     #[doc = "The output of the Alt PLL is used as the input to the SPIFI clock divider."]
     #[inline(always)]
     pub fn is_the_output_of_the_al(&self) -> bool {
-        *self == Enum::TheOutputOfTheAl
+        *self == Spifisel::TheOutputOfTheAl
     }
 }
 #[doc = "Field `SPIFISEL` writer - Selects the input clock for the USB clock divider."]
-pub type SpifiselW<'a, REG> = crate::FieldWriter<'a, REG, 2, Enum>;
+pub type SpifiselW<'a, REG> = crate::FieldWriter<'a, REG, 2, Spifisel>;
 impl<'a, REG> SpifiselW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -66,17 +66,17 @@ where
     #[doc = "Sysclk is used as the input to the SPIFI clock divider."]
     #[inline(always)]
     pub fn sysclk_is_used_as_th(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::SysclkIsUsedAsTh)
+        self.variant(Spifisel::SysclkIsUsedAsTh)
     }
     #[doc = "The output of the Main PLL is used as the input to the SPIFI clock divider."]
     #[inline(always)]
     pub fn the_output_of_the_ma(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::TheOutputOfTheMa)
+        self.variant(Spifisel::TheOutputOfTheMa)
     }
     #[doc = "The output of the Alt PLL is used as the input to the SPIFI clock divider."]
     #[inline(always)]
     pub fn the_output_of_the_al(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::TheOutputOfTheAl)
+        self.variant(Spifisel::TheOutputOfTheAl)
     }
 }
 impl R {

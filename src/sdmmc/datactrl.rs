@@ -8,42 +8,42 @@ pub type EnableR = crate::BitReader;
 pub type EnableW<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Data transfer direction\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Direction {
     #[doc = "0: From controller to card."]
     FromControllerToC = 0,
     #[doc = "1: From card to controller."]
     FromCardToControl = 1,
 }
-impl From<Enum> for bool {
+impl From<Direction> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Direction) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `DIRECTION` reader - Data transfer direction"]
-pub type DirectionR = crate::BitReader<Enum>;
+pub type DirectionR = crate::BitReader<Direction>;
 impl DirectionR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Direction {
         match self.bits {
-            false => Enum::FromControllerToC,
-            true => Enum::FromCardToControl,
+            false => Direction::FromControllerToC,
+            true => Direction::FromCardToControl,
         }
     }
     #[doc = "From controller to card."]
     #[inline(always)]
     pub fn is_from_controller_to_c(&self) -> bool {
-        *self == Enum::FromControllerToC
+        *self == Direction::FromControllerToC
     }
     #[doc = "From card to controller."]
     #[inline(always)]
     pub fn is_from_card_to_control(&self) -> bool {
-        *self == Enum::FromCardToControl
+        *self == Direction::FromCardToControl
     }
 }
 #[doc = "Field `DIRECTION` writer - Data transfer direction"]
-pub type DirectionW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type DirectionW<'a, REG> = crate::BitWriter<'a, REG, Direction>;
 impl<'a, REG> DirectionW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -51,52 +51,52 @@ where
     #[doc = "From controller to card."]
     #[inline(always)]
     pub fn from_controller_to_c(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::FromControllerToC)
+        self.variant(Direction::FromControllerToC)
     }
     #[doc = "From card to controller."]
     #[inline(always)]
     pub fn from_card_to_control(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::FromCardToControl)
+        self.variant(Direction::FromCardToControl)
     }
 }
 #[doc = "Data transfer mode\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Mode {
     #[doc = "0: Block data transfer."]
     BlockDataTransfer_ = 0,
     #[doc = "1: Stream data transfer."]
     StreamDataTransfer = 1,
 }
-impl From<Enum> for bool {
+impl From<Mode> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Mode) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `MODE` reader - Data transfer mode"]
-pub type ModeR = crate::BitReader<Enum>;
+pub type ModeR = crate::BitReader<Mode>;
 impl ModeR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Mode {
         match self.bits {
-            false => Enum::BlockDataTransfer_,
-            true => Enum::StreamDataTransfer,
+            false => Mode::BlockDataTransfer_,
+            true => Mode::StreamDataTransfer,
         }
     }
     #[doc = "Block data transfer."]
     #[inline(always)]
     pub fn is_block_data_transfer_(&self) -> bool {
-        *self == Enum::BlockDataTransfer_
+        *self == Mode::BlockDataTransfer_
     }
     #[doc = "Stream data transfer."]
     #[inline(always)]
     pub fn is_stream_data_transfer(&self) -> bool {
-        *self == Enum::StreamDataTransfer
+        *self == Mode::StreamDataTransfer
     }
 }
 #[doc = "Field `MODE` writer - Data transfer mode"]
-pub type ModeW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type ModeW<'a, REG> = crate::BitWriter<'a, REG, Mode>;
 impl<'a, REG> ModeW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -104,52 +104,52 @@ where
     #[doc = "Block data transfer."]
     #[inline(always)]
     pub fn block_data_transfer_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::BlockDataTransfer_)
+        self.variant(Mode::BlockDataTransfer_)
     }
     #[doc = "Stream data transfer."]
     #[inline(always)]
     pub fn stream_data_transfer(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::StreamDataTransfer)
+        self.variant(Mode::StreamDataTransfer)
     }
 }
 #[doc = "Enable DMA\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Dmaenable {
     #[doc = "0: DMA disabled."]
     DmaDisabled_ = 0,
     #[doc = "1: DMA enabled."]
     DmaEnabled_ = 1,
 }
-impl From<Enum> for bool {
+impl From<Dmaenable> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Dmaenable) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `DMAENABLE` reader - Enable DMA"]
-pub type DmaenableR = crate::BitReader<Enum>;
+pub type DmaenableR = crate::BitReader<Dmaenable>;
 impl DmaenableR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Dmaenable {
         match self.bits {
-            false => Enum::DmaDisabled_,
-            true => Enum::DmaEnabled_,
+            false => Dmaenable::DmaDisabled_,
+            true => Dmaenable::DmaEnabled_,
         }
     }
     #[doc = "DMA disabled."]
     #[inline(always)]
     pub fn is_dma_disabled_(&self) -> bool {
-        *self == Enum::DmaDisabled_
+        *self == Dmaenable::DmaDisabled_
     }
     #[doc = "DMA enabled."]
     #[inline(always)]
     pub fn is_dma_enabled_(&self) -> bool {
-        *self == Enum::DmaEnabled_
+        *self == Dmaenable::DmaEnabled_
     }
 }
 #[doc = "Field `DMAENABLE` writer - Enable DMA"]
-pub type DmaenableW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type DmaenableW<'a, REG> = crate::BitWriter<'a, REG, Dmaenable>;
 impl<'a, REG> DmaenableW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -157,12 +157,12 @@ where
     #[doc = "DMA disabled."]
     #[inline(always)]
     pub fn dma_disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::DmaDisabled_)
+        self.variant(Dmaenable::DmaDisabled_)
     }
     #[doc = "DMA enabled."]
     #[inline(always)]
     pub fn dma_enabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::DmaEnabled_)
+        self.variant(Dmaenable::DmaEnabled_)
     }
 }
 #[doc = "Field `BLOCKSIZE` reader - Data block length"]

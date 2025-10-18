@@ -12,42 +12,42 @@ pub type AccbpR = crate::BitReader;
 pub type AccbpW<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "FullCAN mode\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Efcan {
     #[doc = "0: Software must read all messages for all enabled IDs on all enabled CAN buses, from the receiving CAN controllers."]
     SoftwareMustReadA = 0,
     #[doc = "1: The Acceptance Filter itself will take care of receiving and storing messages for selected Standard ID values on selected CAN buses. See Section 21.16 FullCAN mode on page 576."]
     TheAcceptanceFilte = 1,
 }
-impl From<Enum> for bool {
+impl From<Efcan> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Efcan) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `EFCAN` reader - FullCAN mode"]
-pub type EfcanR = crate::BitReader<Enum>;
+pub type EfcanR = crate::BitReader<Efcan>;
 impl EfcanR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Efcan {
         match self.bits {
-            false => Enum::SoftwareMustReadA,
-            true => Enum::TheAcceptanceFilte,
+            false => Efcan::SoftwareMustReadA,
+            true => Efcan::TheAcceptanceFilte,
         }
     }
     #[doc = "Software must read all messages for all enabled IDs on all enabled CAN buses, from the receiving CAN controllers."]
     #[inline(always)]
     pub fn is_software_must_read_a(&self) -> bool {
-        *self == Enum::SoftwareMustReadA
+        *self == Efcan::SoftwareMustReadA
     }
     #[doc = "The Acceptance Filter itself will take care of receiving and storing messages for selected Standard ID values on selected CAN buses. See Section 21.16 FullCAN mode on page 576."]
     #[inline(always)]
     pub fn is_the_acceptance_filte(&self) -> bool {
-        *self == Enum::TheAcceptanceFilte
+        *self == Efcan::TheAcceptanceFilte
     }
 }
 #[doc = "Field `EFCAN` writer - FullCAN mode"]
-pub type EfcanW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type EfcanW<'a, REG> = crate::BitWriter<'a, REG, Efcan>;
 impl<'a, REG> EfcanW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -55,12 +55,12 @@ where
     #[doc = "Software must read all messages for all enabled IDs on all enabled CAN buses, from the receiving CAN controllers."]
     #[inline(always)]
     pub fn software_must_read_a(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::SoftwareMustReadA)
+        self.variant(Efcan::SoftwareMustReadA)
     }
     #[doc = "The Acceptance Filter itself will take care of receiving and storing messages for selected Standard ID values on selected CAN buses. See Section 21.16 FullCAN mode on page 576."]
     #[inline(always)]
     pub fn the_acceptance_filte(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::TheAcceptanceFilte)
+        self.variant(Efcan::TheAcceptanceFilte)
     }
 }
 impl R {

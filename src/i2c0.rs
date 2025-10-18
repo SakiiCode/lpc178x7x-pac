@@ -114,8 +114,8 @@ pub mod stat;
 pub type Dat = crate::Reg<dat::DatSpec>;
 #[doc = "I2C Data Register. During master or slave transmit mode, data to be transmitted is written to this register. During master or slave receive mode, data that has been received may be read from this register."]
 pub mod dat;
-pub use Adr as Adr0;
 pub use adr as adr0;
+pub use Adr as Adr0;
 #[doc = "SCLH (rw) register accessor: SCH Duty Cycle Register High Half Word. Determines the high time of the I2C clock.\n\nYou can [`read`](crate::Reg::read) this register and get [`sclh::R`]. You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`sclh::W`]. You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@sclh`] module"]
 #[doc(alias = "SCLH")]
 pub type Sclh = crate::Reg<sclh::SclhSpec>;

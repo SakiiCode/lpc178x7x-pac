@@ -4,42 +4,42 @@ pub type R = crate::R<Cr1Spec>;
 pub type W = crate::W<Cr1Spec>;
 #[doc = "Loop Back Mode.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Lbm {
     #[doc = "0: During normal operation."]
     Normal = 0,
     #[doc = "1: Serial input is taken from the serial output (MOSI or MISO) rather than the serial input pin (MISO or MOSI respectively)."]
     Ouptu = 1,
 }
-impl From<Enum> for bool {
+impl From<Lbm> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Lbm) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `LBM` reader - Loop Back Mode."]
-pub type LbmR = crate::BitReader<Enum>;
+pub type LbmR = crate::BitReader<Lbm>;
 impl LbmR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Lbm {
         match self.bits {
-            false => Enum::Normal,
-            true => Enum::Ouptu,
+            false => Lbm::Normal,
+            true => Lbm::Ouptu,
         }
     }
     #[doc = "During normal operation."]
     #[inline(always)]
     pub fn is_normal(&self) -> bool {
-        *self == Enum::Normal
+        *self == Lbm::Normal
     }
     #[doc = "Serial input is taken from the serial output (MOSI or MISO) rather than the serial input pin (MISO or MOSI respectively)."]
     #[inline(always)]
     pub fn is_ouptu(&self) -> bool {
-        *self == Enum::Ouptu
+        *self == Lbm::Ouptu
     }
 }
 #[doc = "Field `LBM` writer - Loop Back Mode."]
-pub type LbmW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type LbmW<'a, REG> = crate::BitWriter<'a, REG, Lbm>;
 impl<'a, REG> LbmW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -47,52 +47,52 @@ where
     #[doc = "During normal operation."]
     #[inline(always)]
     pub fn normal(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Normal)
+        self.variant(Lbm::Normal)
     }
     #[doc = "Serial input is taken from the serial output (MOSI or MISO) rather than the serial input pin (MISO or MOSI respectively)."]
     #[inline(always)]
     pub fn ouptu(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Ouptu)
+        self.variant(Lbm::Ouptu)
     }
 }
 #[doc = "SSP Enable.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Sse {
     #[doc = "0: The SSP controller is disabled."]
     Disabled = 0,
     #[doc = "1: The SSP controller will interact with other devices on the serial bus. Software should write the appropriate control information to the other SSP registers and interrupt controller registers, before setting this bit."]
     Enabled = 1,
 }
-impl From<Enum> for bool {
+impl From<Sse> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Sse) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `SSE` reader - SSP Enable."]
-pub type SseR = crate::BitReader<Enum>;
+pub type SseR = crate::BitReader<Sse>;
 impl SseR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Sse {
         match self.bits {
-            false => Enum::Disabled,
-            true => Enum::Enabled,
+            false => Sse::Disabled,
+            true => Sse::Enabled,
         }
     }
     #[doc = "The SSP controller is disabled."]
     #[inline(always)]
     pub fn is_disabled(&self) -> bool {
-        *self == Enum::Disabled
+        *self == Sse::Disabled
     }
     #[doc = "The SSP controller will interact with other devices on the serial bus. Software should write the appropriate control information to the other SSP registers and interrupt controller registers, before setting this bit."]
     #[inline(always)]
     pub fn is_enabled(&self) -> bool {
-        *self == Enum::Enabled
+        *self == Sse::Enabled
     }
 }
 #[doc = "Field `SSE` writer - SSP Enable."]
-pub type SseW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type SseW<'a, REG> = crate::BitWriter<'a, REG, Sse>;
 impl<'a, REG> SseW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -100,52 +100,52 @@ where
     #[doc = "The SSP controller is disabled."]
     #[inline(always)]
     pub fn disabled(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Disabled)
+        self.variant(Sse::Disabled)
     }
     #[doc = "The SSP controller will interact with other devices on the serial bus. Software should write the appropriate control information to the other SSP registers and interrupt controller registers, before setting this bit."]
     #[inline(always)]
     pub fn enabled(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Enabled)
+        self.variant(Sse::Enabled)
     }
 }
 #[doc = "Master/Slave Mode.This bit can only be written when the SSE bit is 0.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Ms {
     #[doc = "0: The SSP controller acts as a master on the bus, driving the SCLK, MOSI, and SSEL lines and receiving the MISO line."]
     Master = 0,
     #[doc = "1: The SSP controller acts as a slave on the bus, driving MISO line and receiving SCLK, MOSI, and SSEL lines."]
     Slave = 1,
 }
-impl From<Enum> for bool {
+impl From<Ms> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Ms) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `MS` reader - Master/Slave Mode.This bit can only be written when the SSE bit is 0."]
-pub type MsR = crate::BitReader<Enum>;
+pub type MsR = crate::BitReader<Ms>;
 impl MsR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Ms {
         match self.bits {
-            false => Enum::Master,
-            true => Enum::Slave,
+            false => Ms::Master,
+            true => Ms::Slave,
         }
     }
     #[doc = "The SSP controller acts as a master on the bus, driving the SCLK, MOSI, and SSEL lines and receiving the MISO line."]
     #[inline(always)]
     pub fn is_master(&self) -> bool {
-        *self == Enum::Master
+        *self == Ms::Master
     }
     #[doc = "The SSP controller acts as a slave on the bus, driving MISO line and receiving SCLK, MOSI, and SSEL lines."]
     #[inline(always)]
     pub fn is_slave(&self) -> bool {
-        *self == Enum::Slave
+        *self == Ms::Slave
     }
 }
 #[doc = "Field `MS` writer - Master/Slave Mode.This bit can only be written when the SSE bit is 0."]
-pub type MsW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type MsW<'a, REG> = crate::BitWriter<'a, REG, Ms>;
 impl<'a, REG> MsW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -153,12 +153,12 @@ where
     #[doc = "The SSP controller acts as a master on the bus, driving the SCLK, MOSI, and SSEL lines and receiving the MISO line."]
     #[inline(always)]
     pub fn master(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Master)
+        self.variant(Ms::Master)
     }
     #[doc = "The SSP controller acts as a slave on the bus, driving MISO line and receiving SCLK, MOSI, and SSEL lines."]
     #[inline(always)]
     pub fn slave(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Slave)
+        self.variant(Ms::Slave)
     }
 }
 #[doc = "Field `SOD` reader - Slave Output Disable. This bit is relevant only in slave mode (MS = 1). If it is 1, this blocks this SSP controller from driving the transmit data line (MISO)."]

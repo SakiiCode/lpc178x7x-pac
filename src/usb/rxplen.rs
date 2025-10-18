@@ -4,38 +4,38 @@ pub type R = crate::R<RxplenSpec>;
 pub type PktLngthR = crate::FieldReader<u16>;
 #[doc = "Data valid. This bit is useful for isochronous endpoints. Non-isochronous endpoints do not raise an interrupt when an erroneous data packet is received. But invalid data packet can be produced with a bus reset. For isochronous endpoints, data transfer will happen even if an erroneous packet is received. In this case DV bit will not be set for the packet.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Dv {
     #[doc = "0: Data is invalid."]
     DataIsInvalid_ = 0,
     #[doc = "1: Data is valid."]
     DataIsValid_ = 1,
 }
-impl From<Enum> for bool {
+impl From<Dv> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Dv) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `DV` reader - Data valid. This bit is useful for isochronous endpoints. Non-isochronous endpoints do not raise an interrupt when an erroneous data packet is received. But invalid data packet can be produced with a bus reset. For isochronous endpoints, data transfer will happen even if an erroneous packet is received. In this case DV bit will not be set for the packet."]
-pub type DvR = crate::BitReader<Enum>;
+pub type DvR = crate::BitReader<Dv>;
 impl DvR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Dv {
         match self.bits {
-            false => Enum::DataIsInvalid_,
-            true => Enum::DataIsValid_,
+            false => Dv::DataIsInvalid_,
+            true => Dv::DataIsValid_,
         }
     }
     #[doc = "Data is invalid."]
     #[inline(always)]
     pub fn is_data_is_invalid_(&self) -> bool {
-        *self == Enum::DataIsInvalid_
+        *self == Dv::DataIsInvalid_
     }
     #[doc = "Data is valid."]
     #[inline(always)]
     pub fn is_data_is_valid_(&self) -> bool {
-        *self == Enum::DataIsValid_
+        *self == Dv::DataIsValid_
     }
 }
 #[doc = "Field `PKT_RDY` reader - The PKT_LNGTH field is valid and the packet is ready for reading."]

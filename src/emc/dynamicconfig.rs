@@ -5,7 +5,7 @@ pub type W = crate::W<DynamicconfigSpec>;
 #[doc = "Memory device.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
-pub enum Enum {
+pub enum Md {
     #[doc = "0: SDRAM (POR reset value)."]
     SdramPorResetVal = 0,
     #[doc = "1: Low-power SDRAM."]
@@ -15,53 +15,53 @@ pub enum Enum {
     #[doc = "3: Reserved."]
     Reserved_ = 3,
 }
-impl From<Enum> for u8 {
+impl From<Md> for u8 {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Md) -> Self {
         variant as _
     }
 }
-impl crate::FieldSpec for Enum {
+impl crate::FieldSpec for Md {
     type Ux = u8;
 }
-impl crate::IsEnum for Enum {}
+impl crate::IsEnum for Md {}
 #[doc = "Field `MD` reader - Memory device."]
-pub type MdR = crate::FieldReader<Enum>;
+pub type MdR = crate::FieldReader<Md>;
 impl MdR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Md {
         match self.bits {
-            0 => Enum::SdramPorResetVal,
-            1 => Enum::LowPowerSdram_,
-            2 => Enum::Reserved_,
-            3 => Enum::Reserved_,
+            0 => Md::SdramPorResetVal,
+            1 => Md::LowPowerSdram_,
+            2 => Md::Reserved_,
+            3 => Md::Reserved_,
             _ => unreachable!(),
         }
     }
     #[doc = "SDRAM (POR reset value)."]
     #[inline(always)]
     pub fn is_sdram_por_reset_val(&self) -> bool {
-        *self == Enum::SdramPorResetVal
+        *self == Md::SdramPorResetVal
     }
     #[doc = "Low-power SDRAM."]
     #[inline(always)]
     pub fn is_low_power_sdram_(&self) -> bool {
-        *self == Enum::LowPowerSdram_
+        *self == Md::LowPowerSdram_
     }
     #[doc = "Reserved."]
     #[inline(always)]
     pub fn is_reserved_(&self) -> bool {
-        *self == Enum::Reserved_
+        *self == Md::Reserved_
     }
     #[doc = "Reserved."]
     #[inline(always)]
     pub fn is_reserved_(&self) -> bool {
-        *self == Enum::Reserved_
+        *self == Md::Reserved_
     }
 }
 #[doc = "Field `MD` writer - Memory device."]
-pub type MdW<'a, REG> = crate::FieldWriter<'a, REG, 2, Enum, crate::Safe>;
+pub type MdW<'a, REG> = crate::FieldWriter<'a, REG, 2, Md, crate::Safe>;
 impl<'a, REG> MdW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -70,22 +70,22 @@ where
     #[doc = "SDRAM (POR reset value)."]
     #[inline(always)]
     pub fn sdram_por_reset_val(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::SdramPorResetVal)
+        self.variant(Md::SdramPorResetVal)
     }
     #[doc = "Low-power SDRAM."]
     #[inline(always)]
     pub fn low_power_sdram_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::LowPowerSdram_)
+        self.variant(Md::LowPowerSdram_)
     }
     #[doc = "Reserved."]
     #[inline(always)]
     pub fn reserved_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Reserved_)
+        self.variant(Md::Reserved_)
     }
     #[doc = "Reserved."]
     #[inline(always)]
     pub fn reserved_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Reserved_)
+        self.variant(Md::Reserved_)
     }
 }
 #[doc = "Field `AM0` reader - See Table 133. 000000 = reset value.\\[1\\]"]
@@ -98,42 +98,42 @@ pub type Am1R = crate::BitReader;
 pub type Am1W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Buffer enable.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum B {
     #[doc = "0: Buffer disabled for accesses to this chip select (POR reset value)."]
     BufferDisabledFor_ = 0,
     #[doc = "1: Buffer enabled for accesses to this chip select.\\[2\\]"]
     BufferEnabledForA = 1,
 }
-impl From<Enum> for bool {
+impl From<B> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: B) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `B` reader - Buffer enable."]
-pub type BR = crate::BitReader<Enum>;
+pub type BR = crate::BitReader<B>;
 impl BR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> B {
         match self.bits {
-            false => Enum::BufferDisabledFor_,
-            true => Enum::BufferEnabledForA,
+            false => B::BufferDisabledFor_,
+            true => B::BufferEnabledForA,
         }
     }
     #[doc = "Buffer disabled for accesses to this chip select (POR reset value)."]
     #[inline(always)]
     pub fn is_buffer_disabled_for_(&self) -> bool {
-        *self == Enum::BufferDisabledFor_
+        *self == B::BufferDisabledFor_
     }
     #[doc = "Buffer enabled for accesses to this chip select.\\[2\\]"]
     #[inline(always)]
     pub fn is_buffer_enabled_for_a(&self) -> bool {
-        *self == Enum::BufferEnabledForA
+        *self == B::BufferEnabledForA
     }
 }
 #[doc = "Field `B` writer - Buffer enable."]
-pub type BW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type BW<'a, REG> = crate::BitWriter<'a, REG, B>;
 impl<'a, REG> BW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -141,52 +141,52 @@ where
     #[doc = "Buffer disabled for accesses to this chip select (POR reset value)."]
     #[inline(always)]
     pub fn buffer_disabled_for_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::BufferDisabledFor_)
+        self.variant(B::BufferDisabledFor_)
     }
     #[doc = "Buffer enabled for accesses to this chip select.\\[2\\]"]
     #[inline(always)]
     pub fn buffer_enabled_for_a(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::BufferEnabledForA)
+        self.variant(B::BufferEnabledForA)
     }
 }
 #[doc = "Write protect.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum P {
     #[doc = "0: Writes not protected (POR reset value)."]
     WritesNotProtected = 0,
     #[doc = "1: Writes protected."]
     WritesProtected_ = 1,
 }
-impl From<Enum> for bool {
+impl From<P> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: P) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `P` reader - Write protect."]
-pub type PR = crate::BitReader<Enum>;
+pub type PR = crate::BitReader<P>;
 impl PR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> P {
         match self.bits {
-            false => Enum::WritesNotProtected,
-            true => Enum::WritesProtected_,
+            false => P::WritesNotProtected,
+            true => P::WritesProtected_,
         }
     }
     #[doc = "Writes not protected (POR reset value)."]
     #[inline(always)]
     pub fn is_writes_not_protected(&self) -> bool {
-        *self == Enum::WritesNotProtected
+        *self == P::WritesNotProtected
     }
     #[doc = "Writes protected."]
     #[inline(always)]
     pub fn is_writes_protected_(&self) -> bool {
-        *self == Enum::WritesProtected_
+        *self == P::WritesProtected_
     }
 }
 #[doc = "Field `P` writer - Write protect."]
-pub type PW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type PW<'a, REG> = crate::BitWriter<'a, REG, P>;
 impl<'a, REG> PW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -194,12 +194,12 @@ where
     #[doc = "Writes not protected (POR reset value)."]
     #[inline(always)]
     pub fn writes_not_protected(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::WritesNotProtected)
+        self.variant(P::WritesNotProtected)
     }
     #[doc = "Writes protected."]
     #[inline(always)]
     pub fn writes_protected_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::WritesProtected_)
+        self.variant(P::WritesProtected_)
     }
 }
 impl R {

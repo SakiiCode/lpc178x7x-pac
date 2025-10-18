@@ -5,7 +5,7 @@ pub type W = crate::W<P0_30Spec>;
 #[doc = "Selects pin function for pin P0\\[30\\]\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
-pub enum Enum {
+pub enum Func {
     #[doc = "0: General purpose digital input/output pin."]
     P0_30 = 0,
     #[doc = "1: USB port 1 bidirectional D- line."]
@@ -13,47 +13,47 @@ pub enum Enum {
     #[doc = "2: External interrupt 1 input."]
     Eint1 = 2,
 }
-impl From<Enum> for u8 {
+impl From<Func> for u8 {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Func) -> Self {
         variant as _
     }
 }
-impl crate::FieldSpec for Enum {
+impl crate::FieldSpec for Func {
     type Ux = u8;
 }
-impl crate::IsEnum for Enum {}
+impl crate::IsEnum for Func {}
 #[doc = "Field `FUNC` reader - Selects pin function for pin P0\\[30\\]"]
-pub type FuncR = crate::FieldReader<Enum>;
+pub type FuncR = crate::FieldReader<Func>;
 impl FuncR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Option<Enum> {
+    pub const fn variant(&self) -> Option<Func> {
         match self.bits {
-            0 => Some(Enum::P0_30),
-            1 => Some(Enum::UsbDm1),
-            2 => Some(Enum::Eint1),
+            0 => Some(Func::P0_30),
+            1 => Some(Func::UsbDm1),
+            2 => Some(Func::Eint1),
             _ => None,
         }
     }
     #[doc = "General purpose digital input/output pin."]
     #[inline(always)]
     pub fn is_p0_30(&self) -> bool {
-        *self == Enum::P0_30
+        *self == Func::P0_30
     }
     #[doc = "USB port 1 bidirectional D- line."]
     #[inline(always)]
     pub fn is_usb_dm1(&self) -> bool {
-        *self == Enum::UsbDm1
+        *self == Func::UsbDm1
     }
     #[doc = "External interrupt 1 input."]
     #[inline(always)]
     pub fn is_eint1(&self) -> bool {
-        *self == Enum::Eint1
+        *self == Func::Eint1
     }
 }
 #[doc = "Field `FUNC` writer - Selects pin function for pin P0\\[30\\]"]
-pub type FuncW<'a, REG> = crate::FieldWriter<'a, REG, 3, Enum>;
+pub type FuncW<'a, REG> = crate::FieldWriter<'a, REG, 3, Func>;
 impl<'a, REG> FuncW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -62,17 +62,17 @@ where
     #[doc = "General purpose digital input/output pin."]
     #[inline(always)]
     pub fn p0_30(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::P0_30)
+        self.variant(Func::P0_30)
     }
     #[doc = "USB port 1 bidirectional D- line."]
     #[inline(always)]
     pub fn usb_dm1(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::UsbDm1)
+        self.variant(Func::UsbDm1)
     }
     #[doc = "External interrupt 1 input."]
     #[inline(always)]
     pub fn eint1(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Eint1)
+        self.variant(Func::Eint1)
     }
 }
 impl R {

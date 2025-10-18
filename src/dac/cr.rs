@@ -8,42 +8,42 @@ pub type ValueR = crate::FieldReader<u16>;
 pub type ValueW<'a, REG> = crate::FieldWriter<'a, REG, 10, u16>;
 #[doc = "Settling time The settling times noted in the description of the BIAS bit are valid for a capacitance load on the DAC_OUT pin not exceeding 100 pF. A load impedance value greater than that value will cause settling time longer than the specified time. One or more graphs of load impedance vs. settling time will be included in the final data sheet.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Bias {
     #[doc = "0: The settling time of the DAC is 1 us max, and the maximum current is 700 uA. This allows a maximum update rate of 1 MHz."]
     Fast = 0,
     #[doc = "1: The settling time of the DAC is 2.5 us and the maximum current is 350 uA. This allows a maximum update rate of 400 kHz."]
     Slow = 1,
 }
-impl From<Enum> for bool {
+impl From<Bias> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Bias) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `BIAS` reader - Settling time The settling times noted in the description of the BIAS bit are valid for a capacitance load on the DAC_OUT pin not exceeding 100 pF. A load impedance value greater than that value will cause settling time longer than the specified time. One or more graphs of load impedance vs. settling time will be included in the final data sheet."]
-pub type BiasR = crate::BitReader<Enum>;
+pub type BiasR = crate::BitReader<Bias>;
 impl BiasR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Bias {
         match self.bits {
-            false => Enum::Fast,
-            true => Enum::Slow,
+            false => Bias::Fast,
+            true => Bias::Slow,
         }
     }
     #[doc = "The settling time of the DAC is 1 us max, and the maximum current is 700 uA. This allows a maximum update rate of 1 MHz."]
     #[inline(always)]
     pub fn is_fast(&self) -> bool {
-        *self == Enum::Fast
+        *self == Bias::Fast
     }
     #[doc = "The settling time of the DAC is 2.5 us and the maximum current is 350 uA. This allows a maximum update rate of 400 kHz."]
     #[inline(always)]
     pub fn is_slow(&self) -> bool {
-        *self == Enum::Slow
+        *self == Bias::Slow
     }
 }
 #[doc = "Field `BIAS` writer - Settling time The settling times noted in the description of the BIAS bit are valid for a capacitance load on the DAC_OUT pin not exceeding 100 pF. A load impedance value greater than that value will cause settling time longer than the specified time. One or more graphs of load impedance vs. settling time will be included in the final data sheet."]
-pub type BiasW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type BiasW<'a, REG> = crate::BitWriter<'a, REG, Bias>;
 impl<'a, REG> BiasW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -51,12 +51,12 @@ where
     #[doc = "The settling time of the DAC is 1 us max, and the maximum current is 700 uA. This allows a maximum update rate of 1 MHz."]
     #[inline(always)]
     pub fn fast(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Fast)
+        self.variant(Bias::Fast)
     }
     #[doc = "The settling time of the DAC is 2.5 us and the maximum current is 350 uA. This allows a maximum update rate of 400 kHz."]
     #[inline(always)]
     pub fn slow(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Slow)
+        self.variant(Bias::Slow)
     }
 }
 impl R {

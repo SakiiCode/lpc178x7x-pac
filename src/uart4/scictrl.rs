@@ -4,42 +4,42 @@ pub type R = crate::R<ScictrlSpec>;
 pub type W = crate::W<ScictrlSpec>;
 #[doc = "Smart Card Interface Enable.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Scien {
     #[doc = "0: Smart card interface disabled."]
     SmartCardInterface = 0,
     #[doc = "1: Asynchronous half duplex smart card interface is enabled."]
     AsynchronousHalfDu = 1,
 }
-impl From<Enum> for bool {
+impl From<Scien> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Scien) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `SCIEN` reader - Smart Card Interface Enable."]
-pub type ScienR = crate::BitReader<Enum>;
+pub type ScienR = crate::BitReader<Scien>;
 impl ScienR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Scien {
         match self.bits {
-            false => Enum::SmartCardInterface,
-            true => Enum::AsynchronousHalfDu,
+            false => Scien::SmartCardInterface,
+            true => Scien::AsynchronousHalfDu,
         }
     }
     #[doc = "Smart card interface disabled."]
     #[inline(always)]
     pub fn is_smart_card_interface(&self) -> bool {
-        *self == Enum::SmartCardInterface
+        *self == Scien::SmartCardInterface
     }
     #[doc = "Asynchronous half duplex smart card interface is enabled."]
     #[inline(always)]
     pub fn is_asynchronous_half_du(&self) -> bool {
-        *self == Enum::AsynchronousHalfDu
+        *self == Scien::AsynchronousHalfDu
     }
 }
 #[doc = "Field `SCIEN` writer - Smart Card Interface Enable."]
-pub type ScienW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type ScienW<'a, REG> = crate::BitWriter<'a, REG, Scien>;
 impl<'a, REG> ScienW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -47,52 +47,52 @@ where
     #[doc = "Smart card interface disabled."]
     #[inline(always)]
     pub fn smart_card_interface(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::SmartCardInterface)
+        self.variant(Scien::SmartCardInterface)
     }
     #[doc = "Asynchronous half duplex smart card interface is enabled."]
     #[inline(always)]
     pub fn asynchronous_half_du(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::AsynchronousHalfDu)
+        self.variant(Scien::AsynchronousHalfDu)
     }
 }
 #[doc = "NACK response disable. Only applicable in T=0.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Nackdis {
     #[doc = "0: A NACK response is enabled."]
     ANackResponseIsE = 0,
     #[doc = "1: A NACK response is inhibited."]
     ANackResponseIsI = 1,
 }
-impl From<Enum> for bool {
+impl From<Nackdis> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Nackdis) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `NACKDIS` reader - NACK response disable. Only applicable in T=0."]
-pub type NackdisR = crate::BitReader<Enum>;
+pub type NackdisR = crate::BitReader<Nackdis>;
 impl NackdisR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Nackdis {
         match self.bits {
-            false => Enum::ANackResponseIsE,
-            true => Enum::ANackResponseIsI,
+            false => Nackdis::ANackResponseIsE,
+            true => Nackdis::ANackResponseIsI,
         }
     }
     #[doc = "A NACK response is enabled."]
     #[inline(always)]
     pub fn is_a_nack_response_is_e(&self) -> bool {
-        *self == Enum::ANackResponseIsE
+        *self == Nackdis::ANackResponseIsE
     }
     #[doc = "A NACK response is inhibited."]
     #[inline(always)]
     pub fn is_a_nack_response_is_i(&self) -> bool {
-        *self == Enum::ANackResponseIsI
+        *self == Nackdis::ANackResponseIsI
     }
 }
 #[doc = "Field `NACKDIS` writer - NACK response disable. Only applicable in T=0."]
-pub type NackdisW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type NackdisW<'a, REG> = crate::BitWriter<'a, REG, Nackdis>;
 impl<'a, REG> NackdisW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -100,52 +100,52 @@ where
     #[doc = "A NACK response is enabled."]
     #[inline(always)]
     pub fn a_nack_response_is_e(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::ANackResponseIsE)
+        self.variant(Nackdis::ANackResponseIsE)
     }
     #[doc = "A NACK response is inhibited."]
     #[inline(always)]
     pub fn a_nack_response_is_i(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::ANackResponseIsI)
+        self.variant(Nackdis::ANackResponseIsI)
     }
 }
 #[doc = "Protocol selection as defined in the ISO7816-3 standard.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Protsel {
     #[doc = "0: T = 0"]
     TEq0 = 0,
     #[doc = "1: T = 1"]
     TEq1 = 1,
 }
-impl From<Enum> for bool {
+impl From<Protsel> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Protsel) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `PROTSEL` reader - Protocol selection as defined in the ISO7816-3 standard."]
-pub type ProtselR = crate::BitReader<Enum>;
+pub type ProtselR = crate::BitReader<Protsel>;
 impl ProtselR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Protsel {
         match self.bits {
-            false => Enum::TEq0,
-            true => Enum::TEq1,
+            false => Protsel::TEq0,
+            true => Protsel::TEq1,
         }
     }
     #[doc = "T = 0"]
     #[inline(always)]
     pub fn is_t_eq_0(&self) -> bool {
-        *self == Enum::TEq0
+        *self == Protsel::TEq0
     }
     #[doc = "T = 1"]
     #[inline(always)]
     pub fn is_t_eq_1(&self) -> bool {
-        *self == Enum::TEq1
+        *self == Protsel::TEq1
     }
 }
 #[doc = "Field `PROTSEL` writer - Protocol selection as defined in the ISO7816-3 standard."]
-pub type ProtselW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type ProtselW<'a, REG> = crate::BitWriter<'a, REG, Protsel>;
 impl<'a, REG> ProtselW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -153,12 +153,12 @@ where
     #[doc = "T = 0"]
     #[inline(always)]
     pub fn t_eq_0(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::TEq0)
+        self.variant(Protsel::TEq0)
     }
     #[doc = "T = 1"]
     #[inline(always)]
     pub fn t_eq_1(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::TEq1)
+        self.variant(Protsel::TEq1)
     }
 }
 #[doc = "Field `TXRETRY` reader - Maximum number of retransmissions in case of a negative acknowledge (protocol T=0). When the retry counter is exceeded, the USART will be locked until the FIFO is cleared. A TX error interrupt is generated when enabled."]

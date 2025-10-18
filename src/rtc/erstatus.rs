@@ -4,42 +4,42 @@ pub type R = crate::R<ErstatusSpec>;
 pub type W = crate::W<ErstatusSpec>;
 #[doc = "Event flag for channel 0 (RTC_EV0 pin). Set at the end of any second if there has been an event during the preceding second. This bit is cleared by writing a 1 to it. Writing 0 has no effect.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Ev0 {
     #[doc = "0: No event change on channel 0."]
     NoEventChangeOnC = 0,
     #[doc = "1: At least one event has occurred on channel 0."]
     AtLeastOneEventH = 1,
 }
-impl From<Enum> for bool {
+impl From<Ev0> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Ev0) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `EV0` reader - Event flag for channel 0 (RTC_EV0 pin). Set at the end of any second if there has been an event during the preceding second. This bit is cleared by writing a 1 to it. Writing 0 has no effect."]
-pub type Ev0R = crate::BitReader<Enum>;
+pub type Ev0R = crate::BitReader<Ev0>;
 impl Ev0R {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Ev0 {
         match self.bits {
-            false => Enum::NoEventChangeOnC,
-            true => Enum::AtLeastOneEventH,
+            false => Ev0::NoEventChangeOnC,
+            true => Ev0::AtLeastOneEventH,
         }
     }
     #[doc = "No event change on channel 0."]
     #[inline(always)]
     pub fn is_no_event_change_on_c(&self) -> bool {
-        *self == Enum::NoEventChangeOnC
+        *self == Ev0::NoEventChangeOnC
     }
     #[doc = "At least one event has occurred on channel 0."]
     #[inline(always)]
     pub fn is_at_least_one_event_h(&self) -> bool {
-        *self == Enum::AtLeastOneEventH
+        *self == Ev0::AtLeastOneEventH
     }
 }
 #[doc = "Field `EV0` writer - Event flag for channel 0 (RTC_EV0 pin). Set at the end of any second if there has been an event during the preceding second. This bit is cleared by writing a 1 to it. Writing 0 has no effect."]
-pub type Ev0W<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type Ev0W<'a, REG> = crate::BitWriter<'a, REG, Ev0>;
 impl<'a, REG> Ev0W<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -47,52 +47,52 @@ where
     #[doc = "No event change on channel 0."]
     #[inline(always)]
     pub fn no_event_change_on_c(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::NoEventChangeOnC)
+        self.variant(Ev0::NoEventChangeOnC)
     }
     #[doc = "At least one event has occurred on channel 0."]
     #[inline(always)]
     pub fn at_least_one_event_h(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::AtLeastOneEventH)
+        self.variant(Ev0::AtLeastOneEventH)
     }
 }
 #[doc = "Event flag for channel 1 (RTC_EV1 pin). Set at the end of any second if there has been an event during the preceding second. This bit is cleared by writing a 1 to it. Writing 0 has no effect.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Ev1 {
     #[doc = "0: No event change on channel 1."]
     NoEventChangeOnC = 0,
     #[doc = "1: At least one event has occurred on channel 1."]
     AtLeastOneEventH = 1,
 }
-impl From<Enum> for bool {
+impl From<Ev1> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Ev1) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `EV1` reader - Event flag for channel 1 (RTC_EV1 pin). Set at the end of any second if there has been an event during the preceding second. This bit is cleared by writing a 1 to it. Writing 0 has no effect."]
-pub type Ev1R = crate::BitReader<Enum>;
+pub type Ev1R = crate::BitReader<Ev1>;
 impl Ev1R {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Ev1 {
         match self.bits {
-            false => Enum::NoEventChangeOnC,
-            true => Enum::AtLeastOneEventH,
+            false => Ev1::NoEventChangeOnC,
+            true => Ev1::AtLeastOneEventH,
         }
     }
     #[doc = "No event change on channel 1."]
     #[inline(always)]
     pub fn is_no_event_change_on_c(&self) -> bool {
-        *self == Enum::NoEventChangeOnC
+        *self == Ev1::NoEventChangeOnC
     }
     #[doc = "At least one event has occurred on channel 1."]
     #[inline(always)]
     pub fn is_at_least_one_event_h(&self) -> bool {
-        *self == Enum::AtLeastOneEventH
+        *self == Ev1::AtLeastOneEventH
     }
 }
 #[doc = "Field `EV1` writer - Event flag for channel 1 (RTC_EV1 pin). Set at the end of any second if there has been an event during the preceding second. This bit is cleared by writing a 1 to it. Writing 0 has no effect."]
-pub type Ev1W<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type Ev1W<'a, REG> = crate::BitWriter<'a, REG, Ev1>;
 impl<'a, REG> Ev1W<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -100,52 +100,52 @@ where
     #[doc = "No event change on channel 1."]
     #[inline(always)]
     pub fn no_event_change_on_c(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::NoEventChangeOnC)
+        self.variant(Ev1::NoEventChangeOnC)
     }
     #[doc = "At least one event has occurred on channel 1."]
     #[inline(always)]
     pub fn at_least_one_event_h(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::AtLeastOneEventH)
+        self.variant(Ev1::AtLeastOneEventH)
     }
 }
 #[doc = "Event flag for channel 2 (RTC_EV2 pin). Set at the end of any second if there has been an event during the preceding second. This bit is cleared by writing a 1 to it. Writing 0 has no effect.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Ev2 {
     #[doc = "0: No event change on channel 2."]
     NoEventChangeOnC = 0,
     #[doc = "1: At least one event has occurred on channel 2."]
     AtLeastOneEventH = 1,
 }
-impl From<Enum> for bool {
+impl From<Ev2> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Ev2) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `EV2` reader - Event flag for channel 2 (RTC_EV2 pin). Set at the end of any second if there has been an event during the preceding second. This bit is cleared by writing a 1 to it. Writing 0 has no effect."]
-pub type Ev2R = crate::BitReader<Enum>;
+pub type Ev2R = crate::BitReader<Ev2>;
 impl Ev2R {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Ev2 {
         match self.bits {
-            false => Enum::NoEventChangeOnC,
-            true => Enum::AtLeastOneEventH,
+            false => Ev2::NoEventChangeOnC,
+            true => Ev2::AtLeastOneEventH,
         }
     }
     #[doc = "No event change on channel 2."]
     #[inline(always)]
     pub fn is_no_event_change_on_c(&self) -> bool {
-        *self == Enum::NoEventChangeOnC
+        *self == Ev2::NoEventChangeOnC
     }
     #[doc = "At least one event has occurred on channel 2."]
     #[inline(always)]
     pub fn is_at_least_one_event_h(&self) -> bool {
-        *self == Enum::AtLeastOneEventH
+        *self == Ev2::AtLeastOneEventH
     }
 }
 #[doc = "Field `EV2` writer - Event flag for channel 2 (RTC_EV2 pin). Set at the end of any second if there has been an event during the preceding second. This bit is cleared by writing a 1 to it. Writing 0 has no effect."]
-pub type Ev2W<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type Ev2W<'a, REG> = crate::BitWriter<'a, REG, Ev2>;
 impl<'a, REG> Ev2W<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -153,52 +153,52 @@ where
     #[doc = "No event change on channel 2."]
     #[inline(always)]
     pub fn no_event_change_on_c(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::NoEventChangeOnC)
+        self.variant(Ev2::NoEventChangeOnC)
     }
     #[doc = "At least one event has occurred on channel 2."]
     #[inline(always)]
     pub fn at_least_one_event_h(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::AtLeastOneEventH)
+        self.variant(Ev2::AtLeastOneEventH)
     }
 }
 #[doc = "General purpose register asynchronous clear flag. This bit is cleared by writing a 1 to it. Writing 0 has no effect.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum GpCleared {
     #[doc = "0: General purpose registers have not been asynchronous cleared."]
     Nogpclr = 0,
     #[doc = "1: General purpose registers have been asynchronous cleared."]
     Gpclr = 1,
 }
-impl From<Enum> for bool {
+impl From<GpCleared> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: GpCleared) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `GP_CLEARED` reader - General purpose register asynchronous clear flag. This bit is cleared by writing a 1 to it. Writing 0 has no effect."]
-pub type GpClearedR = crate::BitReader<Enum>;
+pub type GpClearedR = crate::BitReader<GpCleared>;
 impl GpClearedR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> GpCleared {
         match self.bits {
-            false => Enum::Nogpclr,
-            true => Enum::Gpclr,
+            false => GpCleared::Nogpclr,
+            true => GpCleared::Gpclr,
         }
     }
     #[doc = "General purpose registers have not been asynchronous cleared."]
     #[inline(always)]
     pub fn is_nogpclr(&self) -> bool {
-        *self == Enum::Nogpclr
+        *self == GpCleared::Nogpclr
     }
     #[doc = "General purpose registers have been asynchronous cleared."]
     #[inline(always)]
     pub fn is_gpclr(&self) -> bool {
-        *self == Enum::Gpclr
+        *self == GpCleared::Gpclr
     }
 }
 #[doc = "Field `GP_CLEARED` writer - General purpose register asynchronous clear flag. This bit is cleared by writing a 1 to it. Writing 0 has no effect."]
-pub type GpClearedW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type GpClearedW<'a, REG> = crate::BitWriter<'a, REG, GpCleared>;
 impl<'a, REG> GpClearedW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -206,52 +206,52 @@ where
     #[doc = "General purpose registers have not been asynchronous cleared."]
     #[inline(always)]
     pub fn nogpclr(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Nogpclr)
+        self.variant(GpCleared::Nogpclr)
     }
     #[doc = "General purpose registers have been asynchronous cleared."]
     #[inline(always)]
     pub fn gpclr(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Gpclr)
+        self.variant(GpCleared::Gpclr)
     }
 }
 #[doc = "Interrupt/wakeup request flag (Read-only). This bit is cleared by writing a 1 to it. Writing 0 has no effect.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Wakeup {
     #[doc = "0: No interrupt/wakeup request is pending"]
     NoInterruptwakeup_ = 0,
     #[doc = "1: An interrupt/wakeup request is pending."]
     IntwakeupPend = 1,
 }
-impl From<Enum> for bool {
+impl From<Wakeup> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Wakeup) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `WAKEUP` reader - Interrupt/wakeup request flag (Read-only). This bit is cleared by writing a 1 to it. Writing 0 has no effect."]
-pub type WakeupR = crate::BitReader<Enum>;
+pub type WakeupR = crate::BitReader<Wakeup>;
 impl WakeupR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Wakeup {
         match self.bits {
-            false => Enum::NoInterruptwakeup_,
-            true => Enum::IntwakeupPend,
+            false => Wakeup::NoInterruptwakeup_,
+            true => Wakeup::IntwakeupPend,
         }
     }
     #[doc = "No interrupt/wakeup request is pending"]
     #[inline(always)]
     pub fn is_no_interruptwakeup_(&self) -> bool {
-        *self == Enum::NoInterruptwakeup_
+        *self == Wakeup::NoInterruptwakeup_
     }
     #[doc = "An interrupt/wakeup request is pending."]
     #[inline(always)]
     pub fn is_intwakeup_pend(&self) -> bool {
-        *self == Enum::IntwakeupPend
+        *self == Wakeup::IntwakeupPend
     }
 }
 #[doc = "Field `WAKEUP` writer - Interrupt/wakeup request flag (Read-only). This bit is cleared by writing a 1 to it. Writing 0 has no effect."]
-pub type WakeupW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type WakeupW<'a, REG> = crate::BitWriter<'a, REG, Wakeup>;
 impl<'a, REG> WakeupW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -259,12 +259,12 @@ where
     #[doc = "No interrupt/wakeup request is pending"]
     #[inline(always)]
     pub fn no_interruptwakeup_(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::NoInterruptwakeup_)
+        self.variant(Wakeup::NoInterruptwakeup_)
     }
     #[doc = "An interrupt/wakeup request is pending."]
     #[inline(always)]
     pub fn intwakeup_pend(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::IntwakeupPend)
+        self.variant(Wakeup::IntwakeupPend)
     }
 }
 impl R {

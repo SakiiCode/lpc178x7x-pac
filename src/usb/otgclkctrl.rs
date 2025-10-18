@@ -4,42 +4,42 @@ pub type R = crate::R<OtgclkctrlSpec>;
 pub type W = crate::W<OtgclkctrlSpec>;
 #[doc = "Host clock enable\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum HostClkEn {
     #[doc = "0: Disable the Host clock."]
     DisableTheHostClo = 0,
     #[doc = "1: Enable the Host clock."]
     EnableTheHostCloc = 1,
 }
-impl From<Enum> for bool {
+impl From<HostClkEn> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: HostClkEn) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `HOST_CLK_EN` reader - Host clock enable"]
-pub type HostClkEnR = crate::BitReader<Enum>;
+pub type HostClkEnR = crate::BitReader<HostClkEn>;
 impl HostClkEnR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> HostClkEn {
         match self.bits {
-            false => Enum::DisableTheHostClo,
-            true => Enum::EnableTheHostCloc,
+            false => HostClkEn::DisableTheHostClo,
+            true => HostClkEn::EnableTheHostCloc,
         }
     }
     #[doc = "Disable the Host clock."]
     #[inline(always)]
     pub fn is_disable_the_host_clo(&self) -> bool {
-        *self == Enum::DisableTheHostClo
+        *self == HostClkEn::DisableTheHostClo
     }
     #[doc = "Enable the Host clock."]
     #[inline(always)]
     pub fn is_enable_the_host_cloc(&self) -> bool {
-        *self == Enum::EnableTheHostCloc
+        *self == HostClkEn::EnableTheHostCloc
     }
 }
 #[doc = "Field `HOST_CLK_EN` writer - Host clock enable"]
-pub type HostClkEnW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type HostClkEnW<'a, REG> = crate::BitWriter<'a, REG, HostClkEn>;
 impl<'a, REG> HostClkEnW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -47,52 +47,52 @@ where
     #[doc = "Disable the Host clock."]
     #[inline(always)]
     pub fn disable_the_host_clo(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::DisableTheHostClo)
+        self.variant(HostClkEn::DisableTheHostClo)
     }
     #[doc = "Enable the Host clock."]
     #[inline(always)]
     pub fn enable_the_host_cloc(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::EnableTheHostCloc)
+        self.variant(HostClkEn::EnableTheHostCloc)
     }
 }
 #[doc = "Device clock enable\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum DevClkEn {
     #[doc = "0: Disable the Device clock."]
     DisableTheDeviceC = 0,
     #[doc = "1: Enable the Device clock."]
     EnableTheDeviceCl = 1,
 }
-impl From<Enum> for bool {
+impl From<DevClkEn> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: DevClkEn) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `DEV_CLK_EN` reader - Device clock enable"]
-pub type DevClkEnR = crate::BitReader<Enum>;
+pub type DevClkEnR = crate::BitReader<DevClkEn>;
 impl DevClkEnR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> DevClkEn {
         match self.bits {
-            false => Enum::DisableTheDeviceC,
-            true => Enum::EnableTheDeviceCl,
+            false => DevClkEn::DisableTheDeviceC,
+            true => DevClkEn::EnableTheDeviceCl,
         }
     }
     #[doc = "Disable the Device clock."]
     #[inline(always)]
     pub fn is_disable_the_device_c(&self) -> bool {
-        *self == Enum::DisableTheDeviceC
+        *self == DevClkEn::DisableTheDeviceC
     }
     #[doc = "Enable the Device clock."]
     #[inline(always)]
     pub fn is_enable_the_device_cl(&self) -> bool {
-        *self == Enum::EnableTheDeviceCl
+        *self == DevClkEn::EnableTheDeviceCl
     }
 }
 #[doc = "Field `DEV_CLK_EN` writer - Device clock enable"]
-pub type DevClkEnW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type DevClkEnW<'a, REG> = crate::BitWriter<'a, REG, DevClkEn>;
 impl<'a, REG> DevClkEnW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -100,52 +100,52 @@ where
     #[doc = "Disable the Device clock."]
     #[inline(always)]
     pub fn disable_the_device_c(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::DisableTheDeviceC)
+        self.variant(DevClkEn::DisableTheDeviceC)
     }
     #[doc = "Enable the Device clock."]
     #[inline(always)]
     pub fn enable_the_device_cl(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::EnableTheDeviceCl)
+        self.variant(DevClkEn::EnableTheDeviceCl)
     }
 }
 #[doc = "I2C clock enable\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum I2cClkEn {
     #[doc = "0: Disable the I2C clock."]
     DisableTheI2cCloc = 0,
     #[doc = "1: Enable the I2C clock."]
     EnableTheI2cClock = 1,
 }
-impl From<Enum> for bool {
+impl From<I2cClkEn> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: I2cClkEn) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `I2C_CLK_EN` reader - I2C clock enable"]
-pub type I2cClkEnR = crate::BitReader<Enum>;
+pub type I2cClkEnR = crate::BitReader<I2cClkEn>;
 impl I2cClkEnR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> I2cClkEn {
         match self.bits {
-            false => Enum::DisableTheI2cCloc,
-            true => Enum::EnableTheI2cClock,
+            false => I2cClkEn::DisableTheI2cCloc,
+            true => I2cClkEn::EnableTheI2cClock,
         }
     }
     #[doc = "Disable the I2C clock."]
     #[inline(always)]
     pub fn is_disable_the_i2c_cloc(&self) -> bool {
-        *self == Enum::DisableTheI2cCloc
+        *self == I2cClkEn::DisableTheI2cCloc
     }
     #[doc = "Enable the I2C clock."]
     #[inline(always)]
     pub fn is_enable_the_i2c_clock(&self) -> bool {
-        *self == Enum::EnableTheI2cClock
+        *self == I2cClkEn::EnableTheI2cClock
     }
 }
 #[doc = "Field `I2C_CLK_EN` writer - I2C clock enable"]
-pub type I2cClkEnW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type I2cClkEnW<'a, REG> = crate::BitWriter<'a, REG, I2cClkEn>;
 impl<'a, REG> I2cClkEnW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -153,52 +153,52 @@ where
     #[doc = "Disable the I2C clock."]
     #[inline(always)]
     pub fn disable_the_i2c_cloc(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::DisableTheI2cCloc)
+        self.variant(I2cClkEn::DisableTheI2cCloc)
     }
     #[doc = "Enable the I2C clock."]
     #[inline(always)]
     pub fn enable_the_i2c_clock(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::EnableTheI2cClock)
+        self.variant(I2cClkEn::EnableTheI2cClock)
     }
 }
 #[doc = "OTG clock enable. In device-only applications, this bit enables access to the PORTSEL register.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum OtgClkEn {
     #[doc = "0: Disable the OTG clock."]
     DisableTheOtgCloc = 0,
     #[doc = "1: Enable the OTG clock."]
     EnableTheOtgClock = 1,
 }
-impl From<Enum> for bool {
+impl From<OtgClkEn> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: OtgClkEn) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `OTG_CLK_EN` reader - OTG clock enable. In device-only applications, this bit enables access to the PORTSEL register."]
-pub type OtgClkEnR = crate::BitReader<Enum>;
+pub type OtgClkEnR = crate::BitReader<OtgClkEn>;
 impl OtgClkEnR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> OtgClkEn {
         match self.bits {
-            false => Enum::DisableTheOtgCloc,
-            true => Enum::EnableTheOtgClock,
+            false => OtgClkEn::DisableTheOtgCloc,
+            true => OtgClkEn::EnableTheOtgClock,
         }
     }
     #[doc = "Disable the OTG clock."]
     #[inline(always)]
     pub fn is_disable_the_otg_cloc(&self) -> bool {
-        *self == Enum::DisableTheOtgCloc
+        *self == OtgClkEn::DisableTheOtgCloc
     }
     #[doc = "Enable the OTG clock."]
     #[inline(always)]
     pub fn is_enable_the_otg_clock(&self) -> bool {
-        *self == Enum::EnableTheOtgClock
+        *self == OtgClkEn::EnableTheOtgClock
     }
 }
 #[doc = "Field `OTG_CLK_EN` writer - OTG clock enable. In device-only applications, this bit enables access to the PORTSEL register."]
-pub type OtgClkEnW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type OtgClkEnW<'a, REG> = crate::BitWriter<'a, REG, OtgClkEn>;
 impl<'a, REG> OtgClkEnW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -206,52 +206,52 @@ where
     #[doc = "Disable the OTG clock."]
     #[inline(always)]
     pub fn disable_the_otg_cloc(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::DisableTheOtgCloc)
+        self.variant(OtgClkEn::DisableTheOtgCloc)
     }
     #[doc = "Enable the OTG clock."]
     #[inline(always)]
     pub fn enable_the_otg_clock(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::EnableTheOtgClock)
+        self.variant(OtgClkEn::EnableTheOtgClock)
     }
 }
 #[doc = "AHB master clock enable\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum AhbClkEn {
     #[doc = "0: Disable the AHB clock."]
     DisableTheAhbCloc = 0,
     #[doc = "1: Enable the AHB clock."]
     EnableTheAhbClock = 1,
 }
-impl From<Enum> for bool {
+impl From<AhbClkEn> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: AhbClkEn) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `AHB_CLK_EN` reader - AHB master clock enable"]
-pub type AhbClkEnR = crate::BitReader<Enum>;
+pub type AhbClkEnR = crate::BitReader<AhbClkEn>;
 impl AhbClkEnR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> AhbClkEn {
         match self.bits {
-            false => Enum::DisableTheAhbCloc,
-            true => Enum::EnableTheAhbClock,
+            false => AhbClkEn::DisableTheAhbCloc,
+            true => AhbClkEn::EnableTheAhbClock,
         }
     }
     #[doc = "Disable the AHB clock."]
     #[inline(always)]
     pub fn is_disable_the_ahb_cloc(&self) -> bool {
-        *self == Enum::DisableTheAhbCloc
+        *self == AhbClkEn::DisableTheAhbCloc
     }
     #[doc = "Enable the AHB clock."]
     #[inline(always)]
     pub fn is_enable_the_ahb_clock(&self) -> bool {
-        *self == Enum::EnableTheAhbClock
+        *self == AhbClkEn::EnableTheAhbClock
     }
 }
 #[doc = "Field `AHB_CLK_EN` writer - AHB master clock enable"]
-pub type AhbClkEnW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type AhbClkEnW<'a, REG> = crate::BitWriter<'a, REG, AhbClkEn>;
 impl<'a, REG> AhbClkEnW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -259,12 +259,12 @@ where
     #[doc = "Disable the AHB clock."]
     #[inline(always)]
     pub fn disable_the_ahb_cloc(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::DisableTheAhbCloc)
+        self.variant(AhbClkEn::DisableTheAhbCloc)
     }
     #[doc = "Enable the AHB clock."]
     #[inline(always)]
     pub fn enable_the_ahb_clock(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::EnableTheAhbClock)
+        self.variant(AhbClkEn::EnableTheAhbClock)
     }
 }
 impl R {

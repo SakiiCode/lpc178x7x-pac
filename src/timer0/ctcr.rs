@@ -5,7 +5,7 @@ pub type W = crate::W<CtcrSpec>;
 #[doc = "Counter/Timer Mode This field selects which rising PCLK edges can increment Timer's Prescale Counter (PC), or clear PC and increment Timer Counter (TC). Timer Mode: the TC is incremented when the Prescale Counter matches the Prescale Register.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
-pub enum Enum {
+pub enum Ctmode {
     #[doc = "0: Timer Mode: every rising PCLK edge"]
     TimerModeEveryRi = 0,
     #[doc = "1: Counter Mode: TC is incremented on rising edges on the CAP input selected by bits 3:2."]
@@ -15,53 +15,53 @@ pub enum Enum {
     #[doc = "3: Counter Mode: TC is incremented on both edges on the CAP input selected by bits 3:2."]
     Dualedge = 3,
 }
-impl From<Enum> for u8 {
+impl From<Ctmode> for u8 {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Ctmode) -> Self {
         variant as _
     }
 }
-impl crate::FieldSpec for Enum {
+impl crate::FieldSpec for Ctmode {
     type Ux = u8;
 }
-impl crate::IsEnum for Enum {}
+impl crate::IsEnum for Ctmode {}
 #[doc = "Field `CTMODE` reader - Counter/Timer Mode This field selects which rising PCLK edges can increment Timer's Prescale Counter (PC), or clear PC and increment Timer Counter (TC). Timer Mode: the TC is incremented when the Prescale Counter matches the Prescale Register."]
-pub type CtmodeR = crate::FieldReader<Enum>;
+pub type CtmodeR = crate::FieldReader<Ctmode>;
 impl CtmodeR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Ctmode {
         match self.bits {
-            0 => Enum::TimerModeEveryRi,
-            1 => Enum::Rising,
-            2 => Enum::Falling,
-            3 => Enum::Dualedge,
+            0 => Ctmode::TimerModeEveryRi,
+            1 => Ctmode::Rising,
+            2 => Ctmode::Falling,
+            3 => Ctmode::Dualedge,
             _ => unreachable!(),
         }
     }
     #[doc = "Timer Mode: every rising PCLK edge"]
     #[inline(always)]
     pub fn is_timer_mode_every_ri(&self) -> bool {
-        *self == Enum::TimerModeEveryRi
+        *self == Ctmode::TimerModeEveryRi
     }
     #[doc = "Counter Mode: TC is incremented on rising edges on the CAP input selected by bits 3:2."]
     #[inline(always)]
     pub fn is_rising(&self) -> bool {
-        *self == Enum::Rising
+        *self == Ctmode::Rising
     }
     #[doc = "Counter Mode: TC is incremented on falling edges on the CAP input selected by bits 3:2."]
     #[inline(always)]
     pub fn is_falling(&self) -> bool {
-        *self == Enum::Falling
+        *self == Ctmode::Falling
     }
     #[doc = "Counter Mode: TC is incremented on both edges on the CAP input selected by bits 3:2."]
     #[inline(always)]
     pub fn is_dualedge(&self) -> bool {
-        *self == Enum::Dualedge
+        *self == Ctmode::Dualedge
     }
 }
 #[doc = "Field `CTMODE` writer - Counter/Timer Mode This field selects which rising PCLK edges can increment Timer's Prescale Counter (PC), or clear PC and increment Timer Counter (TC). Timer Mode: the TC is incremented when the Prescale Counter matches the Prescale Register."]
-pub type CtmodeW<'a, REG> = crate::FieldWriter<'a, REG, 2, Enum, crate::Safe>;
+pub type CtmodeW<'a, REG> = crate::FieldWriter<'a, REG, 2, Ctmode, crate::Safe>;
 impl<'a, REG> CtmodeW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -70,68 +70,68 @@ where
     #[doc = "Timer Mode: every rising PCLK edge"]
     #[inline(always)]
     pub fn timer_mode_every_ri(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::TimerModeEveryRi)
+        self.variant(Ctmode::TimerModeEveryRi)
     }
     #[doc = "Counter Mode: TC is incremented on rising edges on the CAP input selected by bits 3:2."]
     #[inline(always)]
     pub fn rising(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Rising)
+        self.variant(Ctmode::Rising)
     }
     #[doc = "Counter Mode: TC is incremented on falling edges on the CAP input selected by bits 3:2."]
     #[inline(always)]
     pub fn falling(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Falling)
+        self.variant(Ctmode::Falling)
     }
     #[doc = "Counter Mode: TC is incremented on both edges on the CAP input selected by bits 3:2."]
     #[inline(always)]
     pub fn dualedge(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Dualedge)
+        self.variant(Ctmode::Dualedge)
     }
 }
 #[doc = "Count Input Select When bits 1:0 in this register are not 00, these bits select which CAP pin is sampled for clocking. Note: If Counter mode is selected for a particular CAPn input in the TnCTCR, the 3 bits for that input in the Capture Control Register (TnCCR) must be programmed as 000. However, capture and/or interrupt can be selected for the other 3 CAPn inputs in the same timer.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
-pub enum Enum {
+pub enum Cinsel {
     #[doc = "0: CAPn.0 for TIMERn"]
     Capn0ForTimern = 0,
     #[doc = "1: CAPn.1 for TIMERn"]
     Capn1ForTimern = 1,
 }
-impl From<Enum> for u8 {
+impl From<Cinsel> for u8 {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Cinsel) -> Self {
         variant as _
     }
 }
-impl crate::FieldSpec for Enum {
+impl crate::FieldSpec for Cinsel {
     type Ux = u8;
 }
-impl crate::IsEnum for Enum {}
+impl crate::IsEnum for Cinsel {}
 #[doc = "Field `CINSEL` reader - Count Input Select When bits 1:0 in this register are not 00, these bits select which CAP pin is sampled for clocking. Note: If Counter mode is selected for a particular CAPn input in the TnCTCR, the 3 bits for that input in the Capture Control Register (TnCCR) must be programmed as 000. However, capture and/or interrupt can be selected for the other 3 CAPn inputs in the same timer."]
-pub type CinselR = crate::FieldReader<Enum>;
+pub type CinselR = crate::FieldReader<Cinsel>;
 impl CinselR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Cinsel {
         match self.bits {
-            0 => Enum::Capn0ForTimern,
-            1 => Enum::Capn1ForTimern,
+            0 => Cinsel::Capn0ForTimern,
+            1 => Cinsel::Capn1ForTimern,
             _ => unreachable!(),
         }
     }
     #[doc = "CAPn.0 for TIMERn"]
     #[inline(always)]
     pub fn is_capn_0_for_timern(&self) -> bool {
-        *self == Enum::Capn0ForTimern
+        *self == Cinsel::Capn0ForTimern
     }
     #[doc = "CAPn.1 for TIMERn"]
     #[inline(always)]
     pub fn is_capn_1_for_timern(&self) -> bool {
-        *self == Enum::Capn1ForTimern
+        *self == Cinsel::Capn1ForTimern
     }
 }
 #[doc = "Field `CINSEL` writer - Count Input Select When bits 1:0 in this register are not 00, these bits select which CAP pin is sampled for clocking. Note: If Counter mode is selected for a particular CAPn input in the TnCTCR, the 3 bits for that input in the Capture Control Register (TnCCR) must be programmed as 000. However, capture and/or interrupt can be selected for the other 3 CAPn inputs in the same timer."]
-pub type CinselW<'a, REG> = crate::FieldWriter<'a, REG, 2, Enum>;
+pub type CinselW<'a, REG> = crate::FieldWriter<'a, REG, 2, Cinsel>;
 impl<'a, REG> CinselW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -140,12 +140,12 @@ where
     #[doc = "CAPn.0 for TIMERn"]
     #[inline(always)]
     pub fn capn_0_for_timern(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Capn0ForTimern)
+        self.variant(Cinsel::Capn0ForTimern)
     }
     #[doc = "CAPn.1 for TIMERn"]
     #[inline(always)]
     pub fn capn_1_for_timern(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Capn1ForTimern)
+        self.variant(Cinsel::Capn1ForTimern)
     }
 }
 impl R {

@@ -4,42 +4,42 @@ pub type R = crate::R<CcrSpec>;
 pub type W = crate::W<CcrSpec>;
 #[doc = "Capture on CAPn.0 rising edge\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Cap0re {
     #[doc = "1: A sequence of 0 then 1 on CAPn.0 will cause CR0 to be loaded with the contents of TC."]
     Enable = 1,
     #[doc = "0: This feature is disabled."]
     Disable = 0,
 }
-impl From<Enum> for bool {
+impl From<Cap0re> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Cap0re) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `CAP0RE` reader - Capture on CAPn.0 rising edge"]
-pub type Cap0reR = crate::BitReader<Enum>;
+pub type Cap0reR = crate::BitReader<Cap0re>;
 impl Cap0reR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Cap0re {
         match self.bits {
-            true => Enum::Enable,
-            false => Enum::Disable,
+            true => Cap0re::Enable,
+            false => Cap0re::Disable,
         }
     }
     #[doc = "A sequence of 0 then 1 on CAPn.0 will cause CR0 to be loaded with the contents of TC."]
     #[inline(always)]
     pub fn is_enable(&self) -> bool {
-        *self == Enum::Enable
+        *self == Cap0re::Enable
     }
     #[doc = "This feature is disabled."]
     #[inline(always)]
     pub fn is_disable(&self) -> bool {
-        *self == Enum::Disable
+        *self == Cap0re::Disable
     }
 }
 #[doc = "Field `CAP0RE` writer - Capture on CAPn.0 rising edge"]
-pub type Cap0reW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type Cap0reW<'a, REG> = crate::BitWriter<'a, REG, Cap0re>;
 impl<'a, REG> Cap0reW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -47,52 +47,52 @@ where
     #[doc = "A sequence of 0 then 1 on CAPn.0 will cause CR0 to be loaded with the contents of TC."]
     #[inline(always)]
     pub fn enable(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Enable)
+        self.variant(Cap0re::Enable)
     }
     #[doc = "This feature is disabled."]
     #[inline(always)]
     pub fn disable(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Disable)
+        self.variant(Cap0re::Disable)
     }
 }
 #[doc = "Capture on CAPn.0 falling edge\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Cap0fe {
     #[doc = "1: A sequence of 1 then 0 on CAPn.0 will cause CR0 to be loaded with the contents of TC."]
     Enable = 1,
     #[doc = "0: This feature is disabled."]
     Disable = 0,
 }
-impl From<Enum> for bool {
+impl From<Cap0fe> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Cap0fe) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `CAP0FE` reader - Capture on CAPn.0 falling edge"]
-pub type Cap0feR = crate::BitReader<Enum>;
+pub type Cap0feR = crate::BitReader<Cap0fe>;
 impl Cap0feR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Cap0fe {
         match self.bits {
-            true => Enum::Enable,
-            false => Enum::Disable,
+            true => Cap0fe::Enable,
+            false => Cap0fe::Disable,
         }
     }
     #[doc = "A sequence of 1 then 0 on CAPn.0 will cause CR0 to be loaded with the contents of TC."]
     #[inline(always)]
     pub fn is_enable(&self) -> bool {
-        *self == Enum::Enable
+        *self == Cap0fe::Enable
     }
     #[doc = "This feature is disabled."]
     #[inline(always)]
     pub fn is_disable(&self) -> bool {
-        *self == Enum::Disable
+        *self == Cap0fe::Disable
     }
 }
 #[doc = "Field `CAP0FE` writer - Capture on CAPn.0 falling edge"]
-pub type Cap0feW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type Cap0feW<'a, REG> = crate::BitWriter<'a, REG, Cap0fe>;
 impl<'a, REG> Cap0feW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -100,52 +100,52 @@ where
     #[doc = "A sequence of 1 then 0 on CAPn.0 will cause CR0 to be loaded with the contents of TC."]
     #[inline(always)]
     pub fn enable(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Enable)
+        self.variant(Cap0fe::Enable)
     }
     #[doc = "This feature is disabled."]
     #[inline(always)]
     pub fn disable(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Disable)
+        self.variant(Cap0fe::Disable)
     }
 }
 #[doc = "Interrupt on CAPn.0 event\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Cap0i {
     #[doc = "1: A CR0 load due to a CAPn.0 event will generate an interrupt."]
     Enable = 1,
     #[doc = "0: This feature is disabled."]
     Disable = 0,
 }
-impl From<Enum> for bool {
+impl From<Cap0i> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Cap0i) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `CAP0I` reader - Interrupt on CAPn.0 event"]
-pub type Cap0iR = crate::BitReader<Enum>;
+pub type Cap0iR = crate::BitReader<Cap0i>;
 impl Cap0iR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Cap0i {
         match self.bits {
-            true => Enum::Enable,
-            false => Enum::Disable,
+            true => Cap0i::Enable,
+            false => Cap0i::Disable,
         }
     }
     #[doc = "A CR0 load due to a CAPn.0 event will generate an interrupt."]
     #[inline(always)]
     pub fn is_enable(&self) -> bool {
-        *self == Enum::Enable
+        *self == Cap0i::Enable
     }
     #[doc = "This feature is disabled."]
     #[inline(always)]
     pub fn is_disable(&self) -> bool {
-        *self == Enum::Disable
+        *self == Cap0i::Disable
     }
 }
 #[doc = "Field `CAP0I` writer - Interrupt on CAPn.0 event"]
-pub type Cap0iW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type Cap0iW<'a, REG> = crate::BitWriter<'a, REG, Cap0i>;
 impl<'a, REG> Cap0iW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -153,52 +153,52 @@ where
     #[doc = "A CR0 load due to a CAPn.0 event will generate an interrupt."]
     #[inline(always)]
     pub fn enable(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Enable)
+        self.variant(Cap0i::Enable)
     }
     #[doc = "This feature is disabled."]
     #[inline(always)]
     pub fn disable(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Disable)
+        self.variant(Cap0i::Disable)
     }
 }
 #[doc = "Capture on CAPn.1 rising edge\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Cap1re {
     #[doc = "1: A sequence of 0 then 1 on CAPn.1 will cause CR1 to be loaded with the contents of TC."]
     Enable = 1,
     #[doc = "0: This feature is disabled."]
     Disable = 0,
 }
-impl From<Enum> for bool {
+impl From<Cap1re> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Cap1re) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `CAP1RE` reader - Capture on CAPn.1 rising edge"]
-pub type Cap1reR = crate::BitReader<Enum>;
+pub type Cap1reR = crate::BitReader<Cap1re>;
 impl Cap1reR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Cap1re {
         match self.bits {
-            true => Enum::Enable,
-            false => Enum::Disable,
+            true => Cap1re::Enable,
+            false => Cap1re::Disable,
         }
     }
     #[doc = "A sequence of 0 then 1 on CAPn.1 will cause CR1 to be loaded with the contents of TC."]
     #[inline(always)]
     pub fn is_enable(&self) -> bool {
-        *self == Enum::Enable
+        *self == Cap1re::Enable
     }
     #[doc = "This feature is disabled."]
     #[inline(always)]
     pub fn is_disable(&self) -> bool {
-        *self == Enum::Disable
+        *self == Cap1re::Disable
     }
 }
 #[doc = "Field `CAP1RE` writer - Capture on CAPn.1 rising edge"]
-pub type Cap1reW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type Cap1reW<'a, REG> = crate::BitWriter<'a, REG, Cap1re>;
 impl<'a, REG> Cap1reW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -206,52 +206,52 @@ where
     #[doc = "A sequence of 0 then 1 on CAPn.1 will cause CR1 to be loaded with the contents of TC."]
     #[inline(always)]
     pub fn enable(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Enable)
+        self.variant(Cap1re::Enable)
     }
     #[doc = "This feature is disabled."]
     #[inline(always)]
     pub fn disable(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Disable)
+        self.variant(Cap1re::Disable)
     }
 }
 #[doc = "Capture on CAPn.1 falling edge\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Cap1fe {
     #[doc = "1: A sequence of 1 then 0 on CAPn.1 will cause CR1 to be loaded with the contents of TC."]
     Enable = 1,
     #[doc = "0: This feature is disabled."]
     Disable = 0,
 }
-impl From<Enum> for bool {
+impl From<Cap1fe> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Cap1fe) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `CAP1FE` reader - Capture on CAPn.1 falling edge"]
-pub type Cap1feR = crate::BitReader<Enum>;
+pub type Cap1feR = crate::BitReader<Cap1fe>;
 impl Cap1feR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Cap1fe {
         match self.bits {
-            true => Enum::Enable,
-            false => Enum::Disable,
+            true => Cap1fe::Enable,
+            false => Cap1fe::Disable,
         }
     }
     #[doc = "A sequence of 1 then 0 on CAPn.1 will cause CR1 to be loaded with the contents of TC."]
     #[inline(always)]
     pub fn is_enable(&self) -> bool {
-        *self == Enum::Enable
+        *self == Cap1fe::Enable
     }
     #[doc = "This feature is disabled."]
     #[inline(always)]
     pub fn is_disable(&self) -> bool {
-        *self == Enum::Disable
+        *self == Cap1fe::Disable
     }
 }
 #[doc = "Field `CAP1FE` writer - Capture on CAPn.1 falling edge"]
-pub type Cap1feW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type Cap1feW<'a, REG> = crate::BitWriter<'a, REG, Cap1fe>;
 impl<'a, REG> Cap1feW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -259,52 +259,52 @@ where
     #[doc = "A sequence of 1 then 0 on CAPn.1 will cause CR1 to be loaded with the contents of TC."]
     #[inline(always)]
     pub fn enable(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Enable)
+        self.variant(Cap1fe::Enable)
     }
     #[doc = "This feature is disabled."]
     #[inline(always)]
     pub fn disable(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Disable)
+        self.variant(Cap1fe::Disable)
     }
 }
 #[doc = "Interrupt on CAPn.1 event\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum Cap1i {
     #[doc = "1: A CR1 load due to a CAPn.1 event will generate an interrupt."]
     Enable = 1,
     #[doc = "0: This feature is disabled."]
     Disable = 0,
 }
-impl From<Enum> for bool {
+impl From<Cap1i> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: Cap1i) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `CAP1I` reader - Interrupt on CAPn.1 event"]
-pub type Cap1iR = crate::BitReader<Enum>;
+pub type Cap1iR = crate::BitReader<Cap1i>;
 impl Cap1iR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> Cap1i {
         match self.bits {
-            true => Enum::Enable,
-            false => Enum::Disable,
+            true => Cap1i::Enable,
+            false => Cap1i::Disable,
         }
     }
     #[doc = "A CR1 load due to a CAPn.1 event will generate an interrupt."]
     #[inline(always)]
     pub fn is_enable(&self) -> bool {
-        *self == Enum::Enable
+        *self == Cap1i::Enable
     }
     #[doc = "This feature is disabled."]
     #[inline(always)]
     pub fn is_disable(&self) -> bool {
-        *self == Enum::Disable
+        *self == Cap1i::Disable
     }
 }
 #[doc = "Field `CAP1I` writer - Interrupt on CAPn.1 event"]
-pub type Cap1iW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type Cap1iW<'a, REG> = crate::BitWriter<'a, REG, Cap1i>;
 impl<'a, REG> Cap1iW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -312,12 +312,12 @@ where
     #[doc = "A CR1 load due to a CAPn.1 event will generate an interrupt."]
     #[inline(always)]
     pub fn enable(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Enable)
+        self.variant(Cap1i::Enable)
     }
     #[doc = "This feature is disabled."]
     #[inline(always)]
     pub fn disable(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Disable)
+        self.variant(Cap1i::Disable)
     }
 }
 impl R {

@@ -4,42 +4,42 @@ pub type R = crate::R<ControlSpec>;
 pub type W = crate::W<ControlSpec>;
 #[doc = "EMC Enable. Indicates if the EMC is enabled or disabled:\n\nValue on reset: 1"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum E {
     #[doc = "0: Disabled"]
     Disabled = 0,
     #[doc = "1: Enabled (POR and warm reset value)."]
     Enabled = 1,
 }
-impl From<Enum> for bool {
+impl From<E> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: E) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `E` reader - EMC Enable. Indicates if the EMC is enabled or disabled:"]
-pub type ER = crate::BitReader<Enum>;
+pub type ER = crate::BitReader<E>;
 impl ER {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> E {
         match self.bits {
-            false => Enum::Disabled,
-            true => Enum::Enabled,
+            false => E::Disabled,
+            true => E::Enabled,
         }
     }
     #[doc = "Disabled"]
     #[inline(always)]
     pub fn is_disabled(&self) -> bool {
-        *self == Enum::Disabled
+        *self == E::Disabled
     }
     #[doc = "Enabled (POR and warm reset value)."]
     #[inline(always)]
     pub fn is_enabled(&self) -> bool {
-        *self == Enum::Enabled
+        *self == E::Enabled
     }
 }
 #[doc = "Field `E` writer - EMC Enable. Indicates if the EMC is enabled or disabled:"]
-pub type EW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type EW<'a, REG> = crate::BitWriter<'a, REG, E>;
 impl<'a, REG> EW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -47,52 +47,52 @@ where
     #[doc = "Disabled"]
     #[inline(always)]
     pub fn disabled(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Disabled)
+        self.variant(E::Disabled)
     }
     #[doc = "Enabled (POR and warm reset value)."]
     #[inline(always)]
     pub fn enabled(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Enabled)
+        self.variant(E::Enabled)
     }
 }
 #[doc = "Address mirror. Indicates normal or reset memory map:\n\nValue on reset: 1"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum M {
     #[doc = "0: Normal memory map."]
     Normal = 0,
     #[doc = "1: Reset memory map. Static memory EMC_CS1 is mirrored onto EMC_CS0 and EMC_DYCS0 (POR reset value)."]
     Reset = 1,
 }
-impl From<Enum> for bool {
+impl From<M> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: M) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `M` reader - Address mirror. Indicates normal or reset memory map:"]
-pub type MR = crate::BitReader<Enum>;
+pub type MR = crate::BitReader<M>;
 impl MR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> M {
         match self.bits {
-            false => Enum::Normal,
-            true => Enum::Reset,
+            false => M::Normal,
+            true => M::Reset,
         }
     }
     #[doc = "Normal memory map."]
     #[inline(always)]
     pub fn is_normal(&self) -> bool {
-        *self == Enum::Normal
+        *self == M::Normal
     }
     #[doc = "Reset memory map. Static memory EMC_CS1 is mirrored onto EMC_CS0 and EMC_DYCS0 (POR reset value)."]
     #[inline(always)]
     pub fn is_reset(&self) -> bool {
-        *self == Enum::Reset
+        *self == M::Reset
     }
 }
 #[doc = "Field `M` writer - Address mirror. Indicates normal or reset memory map:"]
-pub type MW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type MW<'a, REG> = crate::BitWriter<'a, REG, M>;
 impl<'a, REG> MW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -100,52 +100,52 @@ where
     #[doc = "Normal memory map."]
     #[inline(always)]
     pub fn normal(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Normal)
+        self.variant(M::Normal)
     }
     #[doc = "Reset memory map. Static memory EMC_CS1 is mirrored onto EMC_CS0 and EMC_DYCS0 (POR reset value)."]
     #[inline(always)]
     pub fn reset(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Reset)
+        self.variant(M::Reset)
     }
 }
 #[doc = "Low-power mode. Indicates normal, or low-power mode:\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum Enum {
+pub enum L {
     #[doc = "0: Normal mode (warm reset value)."]
     Warmreset = 0,
     #[doc = "1: Low-power mode. Entering low-power mode reduces memory controller power consumption. Dynamic memory is refreshed as necessary. The memory controller returns to normal functional mode by clearing the low-power mode bit (L), or by POR. This bit must only be modified when the EMC is in idle state.\\[1\\]"]
     Lowpower = 1,
 }
-impl From<Enum> for bool {
+impl From<L> for bool {
     #[inline(always)]
-    fn from(variant: Enum) -> Self {
+    fn from(variant: L) -> Self {
         variant as u8 != 0
     }
 }
 #[doc = "Field `L` reader - Low-power mode. Indicates normal, or low-power mode:"]
-pub type LR = crate::BitReader<Enum>;
+pub type LR = crate::BitReader<L>;
 impl LR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub const fn variant(&self) -> Enum {
+    pub const fn variant(&self) -> L {
         match self.bits {
-            false => Enum::Warmreset,
-            true => Enum::Lowpower,
+            false => L::Warmreset,
+            true => L::Lowpower,
         }
     }
     #[doc = "Normal mode (warm reset value)."]
     #[inline(always)]
     pub fn is_warmreset(&self) -> bool {
-        *self == Enum::Warmreset
+        *self == L::Warmreset
     }
     #[doc = "Low-power mode. Entering low-power mode reduces memory controller power consumption. Dynamic memory is refreshed as necessary. The memory controller returns to normal functional mode by clearing the low-power mode bit (L), or by POR. This bit must only be modified when the EMC is in idle state.\\[1\\]"]
     #[inline(always)]
     pub fn is_lowpower(&self) -> bool {
-        *self == Enum::Lowpower
+        *self == L::Lowpower
     }
 }
 #[doc = "Field `L` writer - Low-power mode. Indicates normal, or low-power mode:"]
-pub type LW<'a, REG> = crate::BitWriter<'a, REG, Enum>;
+pub type LW<'a, REG> = crate::BitWriter<'a, REG, L>;
 impl<'a, REG> LW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -153,12 +153,12 @@ where
     #[doc = "Normal mode (warm reset value)."]
     #[inline(always)]
     pub fn warmreset(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Warmreset)
+        self.variant(L::Warmreset)
     }
     #[doc = "Low-power mode. Entering low-power mode reduces memory controller power consumption. Dynamic memory is refreshed as necessary. The memory controller returns to normal functional mode by clearing the low-power mode bit (L), or by POR. This bit must only be modified when the EMC is in idle state.\\[1\\]"]
     #[inline(always)]
     pub fn lowpower(self) -> &'a mut crate::W<REG> {
-        self.variant(Enum::Lowpower)
+        self.variant(L::Lowpower)
     }
 }
 impl R {
