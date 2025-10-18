@@ -1,1 +1,35 @@
-# [doc = "Register `PBOOST` reader"] pub type R = crate :: R < PboostSpec > ; # [doc = "Register `PBOOST` writer"] pub type W = crate :: W < PboostSpec > ; # [doc = "Field `Boost` reader - Boost control bits. 00 : Boost is off, operation must be below 100 MHz. 11 : Boost is on, operation up to 120 MHz is supported. Other values are not allowed."] pub type BoostR = crate :: FieldReader ; # [doc = "Field `Boost` writer - Boost control bits. 00 : Boost is off, operation must be below 100 MHz. 11 : Boost is on, operation up to 120 MHz is supported. Other values are not allowed."] pub type BoostW < 'a , REG > = crate :: FieldWriter < 'a , REG , 2 > ; impl R { # [doc = "Bits 0:1 - Boost control bits. 00 : Boost is off, operation must be below 100 MHz. 11 : Boost is on, operation up to 120 MHz is supported. Other values are not allowed."] # [inline (always)] pub fn boost (& self) -> BoostR { BoostR :: new ((self . bits & 3) as u8) } } impl W { # [doc = "Bits 0:1 - Boost control bits. 00 : Boost is off, operation must be below 100 MHz. 11 : Boost is on, operation up to 120 MHz is supported. Other values are not allowed."] # [inline (always)] pub fn boost (& mut self) -> BoostW < '_ , PboostSpec > { BoostW :: new (self , 0) } } # [doc = "Power boost register\n\nYou can [`read`](crate::Reg::read) this register and get [`pboost::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`pboost::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."] pub struct PboostSpec ; impl crate :: RegisterSpec for PboostSpec { type Ux = u32 ; } # [doc = "`read()` method returns [`pboost::R`](R) reader structure"] impl crate :: Readable for PboostSpec { } # [doc = "`write(|w| ..)` method takes [`pboost::W`](W) writer structure"] impl crate :: Writable for PboostSpec { type Safety = crate :: Unsafe ; } # [doc = "`reset()` method sets PBOOST to value 0"] impl crate :: Resettable for PboostSpec { }
+#[doc = "Register `PBOOST` reader"]
+pub type R = crate::R<PboostSpec>;
+#[doc = "Register `PBOOST` writer"]
+pub type W = crate::W<PboostSpec>;
+#[doc = "Field `Boost` reader - Boost control bits. 00 : Boost is off, operation must be below 100 MHz. 11 : Boost is on, operation up to 120 MHz is supported. Other values are not allowed."]
+pub type BoostR = crate::FieldReader;
+#[doc = "Field `Boost` writer - Boost control bits. 00 : Boost is off, operation must be below 100 MHz. 11 : Boost is on, operation up to 120 MHz is supported. Other values are not allowed."]
+pub type BoostW<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+impl R {
+    #[doc = "Bits 0:1 - Boost control bits. 00 : Boost is off, operation must be below 100 MHz. 11 : Boost is on, operation up to 120 MHz is supported. Other values are not allowed."]
+    #[inline(always)]
+    pub fn boost(&self) -> BoostR {
+        BoostR::new((self.bits & 3) as u8)
+    }
+}
+impl W {
+    #[doc = "Bits 0:1 - Boost control bits. 00 : Boost is off, operation must be below 100 MHz. 11 : Boost is on, operation up to 120 MHz is supported. Other values are not allowed."]
+    #[inline(always)]
+    pub fn boost(&mut self) -> BoostW<'_, PboostSpec> {
+        BoostW::new(self, 0)
+    }
+}
+#[doc = "Power boost register\n\nYou can [`read`](crate::Reg::read) this register and get [`pboost::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`pboost::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct PboostSpec;
+impl crate::RegisterSpec for PboostSpec {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [`pboost::R`](R) reader structure"]
+impl crate::Readable for PboostSpec {}
+#[doc = "`write(|w| ..)` method takes [`pboost::W`](W) writer structure"]
+impl crate::Writable for PboostSpec {
+    type Safety = crate::Unsafe;
+}
+#[doc = "`reset()` method sets PBOOST to value 0"]
+impl crate::Resettable for PboostSpec {}

@@ -1,1 +1,208 @@
-# [repr (C)] # [doc = "Register block"] pub struct RegisterBlock { _reserved0 : [u8 ; 0x20] , fmsstart : Fmsstart , fmsstop : Fmsstop , _reserved2 : [u8 ; 0x04] , fmsw0 : Fmsw0 , fmsw1 : Fmsw1 , fmsw2 : Fmsw2 , fmsw3 : Fmsw3 , _reserved6 : [u8 ; 0x44] , eecmd : Eecmd , eeaddr : Eeaddr , eewdata : Eewdata , eerdata : Eerdata , eewstate : Eewstate , eeclkdiv : Eeclkdiv , eepwrdwn : Eepwrdwn , _reserved13 : [u8 ; 0x0f3c] , enclr : Enclr , enset : Enset , stat : Stat , inten : Inten , statclr : Statclr , } impl RegisterBlock { # [doc = "0x20 - Signature start address register"] # [inline (always)] pub const fn fmsstart (& self) -> & Fmsstart { & self . fmsstart } # [doc = "0x24 - Signature stop-address register"] # [inline (always)] pub const fn fmsstop (& self) -> & Fmsstop { & self . fmsstop } # [doc = "0x2c - 128-bit signature Word 0"] # [inline (always)] pub const fn fmsw0 (& self) -> & Fmsw0 { & self . fmsw0 } # [doc = "0x30 - 128-bit signature Word 1"] # [inline (always)] pub const fn fmsw1 (& self) -> & Fmsw1 { & self . fmsw1 } # [doc = "0x34 - 128-bit signature Word 2"] # [inline (always)] pub const fn fmsw2 (& self) -> & Fmsw2 { & self . fmsw2 } # [doc = "0x38 - 128-bit signature Word 3"] # [inline (always)] pub const fn fmsw3 (& self) -> & Fmsw3 { & self . fmsw3 } # [doc = "0x80 - EEPROM command register"] # [inline (always)] pub const fn eecmd (& self) -> & Eecmd { & self . eecmd } # [doc = "0x84 - EEPROM address register"] # [inline (always)] pub const fn eeaddr (& self) -> & Eeaddr { & self . eeaddr } # [doc = "0x88 - EEPROM write data register"] # [inline (always)] pub const fn eewdata (& self) -> & Eewdata { & self . eewdata } # [doc = "0x8c - EEPROM read data register"] # [inline (always)] pub const fn eerdata (& self) -> & Eerdata { & self . eerdata } # [doc = "0x90 - EEPROM wait state register"] # [inline (always)] pub const fn eewstate (& self) -> & Eewstate { & self . eewstate } # [doc = "0x94 - EEPROM clock divider register"] # [inline (always)] pub const fn eeclkdiv (& self) -> & Eeclkdiv { & self . eeclkdiv } # [doc = "0x98 - EEPROM power-down register"] # [inline (always)] pub const fn eepwrdwn (& self) -> & Eepwrdwn { & self . eepwrdwn } # [doc = "0xfd8 - EEPROM interrupt enable clear"] # [inline (always)] pub const fn enclr (& self) -> & Enclr { & self . enclr } # [doc = "0xfdc - EEPROM interrupt enable set"] # [inline (always)] pub const fn enset (& self) -> & Enset { & self . enset } # [doc = "0xfe0 - Signature generation status register"] # [inline (always)] pub const fn stat (& self) -> & Stat { & self . stat } # [doc = "0xfe4 - EEPROM interrupt enable"] # [inline (always)] pub const fn inten (& self) -> & Inten { & self . inten } # [doc = "0xfe8 - Signature generation status clear register"] # [inline (always)] pub const fn statclr (& self) -> & Statclr { & self . statclr } } # [doc = "FMSSTART (rw) register accessor: Signature start address register\n\nYou can [`read`](crate::Reg::read) this register and get [`fmsstart::R`]. You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`fmsstart::W`]. You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@fmsstart`] module"] # [doc (alias = "FMSSTART")] pub type Fmsstart = crate :: Reg < fmsstart :: FmsstartSpec > ; # [doc = "Signature start address register"] pub mod fmsstart ; # [doc = "FMSSTOP (rw) register accessor: Signature stop-address register\n\nYou can [`read`](crate::Reg::read) this register and get [`fmsstop::R`]. You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`fmsstop::W`]. You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@fmsstop`] module"] # [doc (alias = "FMSSTOP")] pub type Fmsstop = crate :: Reg < fmsstop :: FmsstopSpec > ; # [doc = "Signature stop-address register"] pub mod fmsstop ; # [doc = "FMSW0 (r) register accessor: 128-bit signature Word 0\n\nYou can [`read`](crate::Reg::read) this register and get [`fmsw0::R`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@fmsw0`] module"] # [doc (alias = "FMSW0")] pub type Fmsw0 = crate :: Reg < fmsw0 :: Fmsw0Spec > ; # [doc = "128-bit signature Word 0"] pub mod fmsw0 ; # [doc = "FMSW1 (r) register accessor: 128-bit signature Word 1\n\nYou can [`read`](crate::Reg::read) this register and get [`fmsw1::R`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@fmsw1`] module"] # [doc (alias = "FMSW1")] pub type Fmsw1 = crate :: Reg < fmsw1 :: Fmsw1Spec > ; # [doc = "128-bit signature Word 1"] pub mod fmsw1 ; # [doc = "FMSW2 (r) register accessor: 128-bit signature Word 2\n\nYou can [`read`](crate::Reg::read) this register and get [`fmsw2::R`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@fmsw2`] module"] # [doc (alias = "FMSW2")] pub type Fmsw2 = crate :: Reg < fmsw2 :: Fmsw2Spec > ; # [doc = "128-bit signature Word 2"] pub mod fmsw2 ; # [doc = "FMSW3 (r) register accessor: 128-bit signature Word 3\n\nYou can [`read`](crate::Reg::read) this register and get [`fmsw3::R`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@fmsw3`] module"] # [doc (alias = "FMSW3")] pub type Fmsw3 = crate :: Reg < fmsw3 :: Fmsw3Spec > ; # [doc = "128-bit signature Word 3"] pub mod fmsw3 ; # [doc = "EECMD (rw) register accessor: EEPROM command register\n\nYou can [`read`](crate::Reg::read) this register and get [`eecmd::R`]. You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`eecmd::W`]. You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@eecmd`] module"] # [doc (alias = "EECMD")] pub type Eecmd = crate :: Reg < eecmd :: EecmdSpec > ; # [doc = "EEPROM command register"] pub mod eecmd ; # [doc = "EEADDR (rw) register accessor: EEPROM address register\n\nYou can [`read`](crate::Reg::read) this register and get [`eeaddr::R`]. You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`eeaddr::W`]. You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@eeaddr`] module"] # [doc (alias = "EEADDR")] pub type Eeaddr = crate :: Reg < eeaddr :: EeaddrSpec > ; # [doc = "EEPROM address register"] pub mod eeaddr ; # [doc = "EEWDATA (w) register accessor: EEPROM write data register\n\nYou can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`eewdata::W`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@eewdata`] module"] # [doc (alias = "EEWDATA")] pub type Eewdata = crate :: Reg < eewdata :: EewdataSpec > ; # [doc = "EEPROM write data register"] pub mod eewdata ; # [doc = "EERDATA (r) register accessor: EEPROM read data register\n\nYou can [`read`](crate::Reg::read) this register and get [`eerdata::R`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@eerdata`] module"] # [doc (alias = "EERDATA")] pub type Eerdata = crate :: Reg < eerdata :: EerdataSpec > ; # [doc = "EEPROM read data register"] pub mod eerdata ; # [doc = "EEWSTATE (rw) register accessor: EEPROM wait state register\n\nYou can [`read`](crate::Reg::read) this register and get [`eewstate::R`]. You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`eewstate::W`]. You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@eewstate`] module"] # [doc (alias = "EEWSTATE")] pub type Eewstate = crate :: Reg < eewstate :: EewstateSpec > ; # [doc = "EEPROM wait state register"] pub mod eewstate ; # [doc = "EECLKDIV (rw) register accessor: EEPROM clock divider register\n\nYou can [`read`](crate::Reg::read) this register and get [`eeclkdiv::R`]. You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`eeclkdiv::W`]. You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@eeclkdiv`] module"] # [doc (alias = "EECLKDIV")] pub type Eeclkdiv = crate :: Reg < eeclkdiv :: EeclkdivSpec > ; # [doc = "EEPROM clock divider register"] pub mod eeclkdiv ; # [doc = "EEPWRDWN (rw) register accessor: EEPROM power-down register\n\nYou can [`read`](crate::Reg::read) this register and get [`eepwrdwn::R`]. You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`eepwrdwn::W`]. You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@eepwrdwn`] module"] # [doc (alias = "EEPWRDWN")] pub type Eepwrdwn = crate :: Reg < eepwrdwn :: EepwrdwnSpec > ; # [doc = "EEPROM power-down register"] pub mod eepwrdwn ; # [doc = "STAT (r) register accessor: Signature generation status register\n\nYou can [`read`](crate::Reg::read) this register and get [`stat::R`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@stat`] module"] # [doc (alias = "STAT")] pub type Stat = crate :: Reg < stat :: StatSpec > ; # [doc = "Signature generation status register"] pub mod stat ; # [doc = "INTEN (r) register accessor: EEPROM interrupt enable\n\nYou can [`read`](crate::Reg::read) this register and get [`inten::R`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@inten`] module"] # [doc (alias = "INTEN")] pub type Inten = crate :: Reg < inten :: IntenSpec > ; # [doc = "EEPROM interrupt enable"] pub mod inten ; # [doc = "STATCLR (w) register accessor: Signature generation status clear register\n\nYou can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`statclr::W`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@statclr`] module"] # [doc (alias = "STATCLR")] pub type Statclr = crate :: Reg < statclr :: StatclrSpec > ; # [doc = "Signature generation status clear register"] pub mod statclr ; # [doc = "ENCLR (w) register accessor: EEPROM interrupt enable clear\n\nYou can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`enclr::W`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@enclr`] module"] # [doc (alias = "ENCLR")] pub type Enclr = crate :: Reg < enclr :: EnclrSpec > ; # [doc = "EEPROM interrupt enable clear"] pub mod enclr ; # [doc = "ENSET (w) register accessor: EEPROM interrupt enable set\n\nYou can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`enset::W`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@enset`] module"] # [doc (alias = "ENSET")] pub type Enset = crate :: Reg < enset :: EnsetSpec > ; # [doc = "EEPROM interrupt enable set"] pub mod enset ;
+#[repr(C)]
+#[doc = "Register block"]
+pub struct RegisterBlock {
+    _reserved0: [u8; 0x20],
+    fmsstart: Fmsstart,
+    fmsstop: Fmsstop,
+    _reserved2: [u8; 0x04],
+    fmsw0: Fmsw0,
+    fmsw1: Fmsw1,
+    fmsw2: Fmsw2,
+    fmsw3: Fmsw3,
+    _reserved6: [u8; 0x44],
+    eecmd: Eecmd,
+    eeaddr: Eeaddr,
+    eewdata: Eewdata,
+    eerdata: Eerdata,
+    eewstate: Eewstate,
+    eeclkdiv: Eeclkdiv,
+    eepwrdwn: Eepwrdwn,
+    _reserved13: [u8; 0x0f3c],
+    enclr: Enclr,
+    enset: Enset,
+    stat: Stat,
+    inten: Inten,
+    statclr: Statclr,
+}
+impl RegisterBlock {
+    #[doc = "0x20 - Signature start address register"]
+    #[inline(always)]
+    pub const fn fmsstart(&self) -> &Fmsstart {
+        &self.fmsstart
+    }
+    #[doc = "0x24 - Signature stop-address register"]
+    #[inline(always)]
+    pub const fn fmsstop(&self) -> &Fmsstop {
+        &self.fmsstop
+    }
+    #[doc = "0x2c - 128-bit signature Word 0"]
+    #[inline(always)]
+    pub const fn fmsw0(&self) -> &Fmsw0 {
+        &self.fmsw0
+    }
+    #[doc = "0x30 - 128-bit signature Word 1"]
+    #[inline(always)]
+    pub const fn fmsw1(&self) -> &Fmsw1 {
+        &self.fmsw1
+    }
+    #[doc = "0x34 - 128-bit signature Word 2"]
+    #[inline(always)]
+    pub const fn fmsw2(&self) -> &Fmsw2 {
+        &self.fmsw2
+    }
+    #[doc = "0x38 - 128-bit signature Word 3"]
+    #[inline(always)]
+    pub const fn fmsw3(&self) -> &Fmsw3 {
+        &self.fmsw3
+    }
+    #[doc = "0x80 - EEPROM command register"]
+    #[inline(always)]
+    pub const fn eecmd(&self) -> &Eecmd {
+        &self.eecmd
+    }
+    #[doc = "0x84 - EEPROM address register"]
+    #[inline(always)]
+    pub const fn eeaddr(&self) -> &Eeaddr {
+        &self.eeaddr
+    }
+    #[doc = "0x88 - EEPROM write data register"]
+    #[inline(always)]
+    pub const fn eewdata(&self) -> &Eewdata {
+        &self.eewdata
+    }
+    #[doc = "0x8c - EEPROM read data register"]
+    #[inline(always)]
+    pub const fn eerdata(&self) -> &Eerdata {
+        &self.eerdata
+    }
+    #[doc = "0x90 - EEPROM wait state register"]
+    #[inline(always)]
+    pub const fn eewstate(&self) -> &Eewstate {
+        &self.eewstate
+    }
+    #[doc = "0x94 - EEPROM clock divider register"]
+    #[inline(always)]
+    pub const fn eeclkdiv(&self) -> &Eeclkdiv {
+        &self.eeclkdiv
+    }
+    #[doc = "0x98 - EEPROM power-down register"]
+    #[inline(always)]
+    pub const fn eepwrdwn(&self) -> &Eepwrdwn {
+        &self.eepwrdwn
+    }
+    #[doc = "0xfd8 - EEPROM interrupt enable clear"]
+    #[inline(always)]
+    pub const fn enclr(&self) -> &Enclr {
+        &self.enclr
+    }
+    #[doc = "0xfdc - EEPROM interrupt enable set"]
+    #[inline(always)]
+    pub const fn enset(&self) -> &Enset {
+        &self.enset
+    }
+    #[doc = "0xfe0 - Signature generation status register"]
+    #[inline(always)]
+    pub const fn stat(&self) -> &Stat {
+        &self.stat
+    }
+    #[doc = "0xfe4 - EEPROM interrupt enable"]
+    #[inline(always)]
+    pub const fn inten(&self) -> &Inten {
+        &self.inten
+    }
+    #[doc = "0xfe8 - Signature generation status clear register"]
+    #[inline(always)]
+    pub const fn statclr(&self) -> &Statclr {
+        &self.statclr
+    }
+}
+#[doc = "FMSSTART (rw) register accessor: Signature start address register\n\nYou can [`read`](crate::Reg::read) this register and get [`fmsstart::R`]. You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`fmsstart::W`]. You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@fmsstart`] module"]
+#[doc(alias = "FMSSTART")]
+pub type Fmsstart = crate::Reg<fmsstart::FmsstartSpec>;
+#[doc = "Signature start address register"]
+pub mod fmsstart;
+#[doc = "FMSSTOP (rw) register accessor: Signature stop-address register\n\nYou can [`read`](crate::Reg::read) this register and get [`fmsstop::R`]. You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`fmsstop::W`]. You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@fmsstop`] module"]
+#[doc(alias = "FMSSTOP")]
+pub type Fmsstop = crate::Reg<fmsstop::FmsstopSpec>;
+#[doc = "Signature stop-address register"]
+pub mod fmsstop;
+#[doc = "FMSW0 (r) register accessor: 128-bit signature Word 0\n\nYou can [`read`](crate::Reg::read) this register and get [`fmsw0::R`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@fmsw0`] module"]
+#[doc(alias = "FMSW0")]
+pub type Fmsw0 = crate::Reg<fmsw0::Fmsw0Spec>;
+#[doc = "128-bit signature Word 0"]
+pub mod fmsw0;
+#[doc = "FMSW1 (r) register accessor: 128-bit signature Word 1\n\nYou can [`read`](crate::Reg::read) this register and get [`fmsw1::R`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@fmsw1`] module"]
+#[doc(alias = "FMSW1")]
+pub type Fmsw1 = crate::Reg<fmsw1::Fmsw1Spec>;
+#[doc = "128-bit signature Word 1"]
+pub mod fmsw1;
+#[doc = "FMSW2 (r) register accessor: 128-bit signature Word 2\n\nYou can [`read`](crate::Reg::read) this register and get [`fmsw2::R`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@fmsw2`] module"]
+#[doc(alias = "FMSW2")]
+pub type Fmsw2 = crate::Reg<fmsw2::Fmsw2Spec>;
+#[doc = "128-bit signature Word 2"]
+pub mod fmsw2;
+#[doc = "FMSW3 (r) register accessor: 128-bit signature Word 3\n\nYou can [`read`](crate::Reg::read) this register and get [`fmsw3::R`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@fmsw3`] module"]
+#[doc(alias = "FMSW3")]
+pub type Fmsw3 = crate::Reg<fmsw3::Fmsw3Spec>;
+#[doc = "128-bit signature Word 3"]
+pub mod fmsw3;
+#[doc = "EECMD (rw) register accessor: EEPROM command register\n\nYou can [`read`](crate::Reg::read) this register and get [`eecmd::R`]. You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`eecmd::W`]. You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@eecmd`] module"]
+#[doc(alias = "EECMD")]
+pub type Eecmd = crate::Reg<eecmd::EecmdSpec>;
+#[doc = "EEPROM command register"]
+pub mod eecmd;
+#[doc = "EEADDR (rw) register accessor: EEPROM address register\n\nYou can [`read`](crate::Reg::read) this register and get [`eeaddr::R`]. You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`eeaddr::W`]. You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@eeaddr`] module"]
+#[doc(alias = "EEADDR")]
+pub type Eeaddr = crate::Reg<eeaddr::EeaddrSpec>;
+#[doc = "EEPROM address register"]
+pub mod eeaddr;
+#[doc = "EEWDATA (w) register accessor: EEPROM write data register\n\nYou can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`eewdata::W`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@eewdata`] module"]
+#[doc(alias = "EEWDATA")]
+pub type Eewdata = crate::Reg<eewdata::EewdataSpec>;
+#[doc = "EEPROM write data register"]
+pub mod eewdata;
+#[doc = "EERDATA (r) register accessor: EEPROM read data register\n\nYou can [`read`](crate::Reg::read) this register and get [`eerdata::R`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@eerdata`] module"]
+#[doc(alias = "EERDATA")]
+pub type Eerdata = crate::Reg<eerdata::EerdataSpec>;
+#[doc = "EEPROM read data register"]
+pub mod eerdata;
+#[doc = "EEWSTATE (rw) register accessor: EEPROM wait state register\n\nYou can [`read`](crate::Reg::read) this register and get [`eewstate::R`]. You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`eewstate::W`]. You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@eewstate`] module"]
+#[doc(alias = "EEWSTATE")]
+pub type Eewstate = crate::Reg<eewstate::EewstateSpec>;
+#[doc = "EEPROM wait state register"]
+pub mod eewstate;
+#[doc = "EECLKDIV (rw) register accessor: EEPROM clock divider register\n\nYou can [`read`](crate::Reg::read) this register and get [`eeclkdiv::R`]. You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`eeclkdiv::W`]. You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@eeclkdiv`] module"]
+#[doc(alias = "EECLKDIV")]
+pub type Eeclkdiv = crate::Reg<eeclkdiv::EeclkdivSpec>;
+#[doc = "EEPROM clock divider register"]
+pub mod eeclkdiv;
+#[doc = "EEPWRDWN (rw) register accessor: EEPROM power-down register\n\nYou can [`read`](crate::Reg::read) this register and get [`eepwrdwn::R`]. You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`eepwrdwn::W`]. You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@eepwrdwn`] module"]
+#[doc(alias = "EEPWRDWN")]
+pub type Eepwrdwn = crate::Reg<eepwrdwn::EepwrdwnSpec>;
+#[doc = "EEPROM power-down register"]
+pub mod eepwrdwn;
+#[doc = "STAT (r) register accessor: Signature generation status register\n\nYou can [`read`](crate::Reg::read) this register and get [`stat::R`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@stat`] module"]
+#[doc(alias = "STAT")]
+pub type Stat = crate::Reg<stat::StatSpec>;
+#[doc = "Signature generation status register"]
+pub mod stat;
+#[doc = "INTEN (r) register accessor: EEPROM interrupt enable\n\nYou can [`read`](crate::Reg::read) this register and get [`inten::R`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@inten`] module"]
+#[doc(alias = "INTEN")]
+pub type Inten = crate::Reg<inten::IntenSpec>;
+#[doc = "EEPROM interrupt enable"]
+pub mod inten;
+#[doc = "STATCLR (w) register accessor: Signature generation status clear register\n\nYou can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`statclr::W`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@statclr`] module"]
+#[doc(alias = "STATCLR")]
+pub type Statclr = crate::Reg<statclr::StatclrSpec>;
+#[doc = "Signature generation status clear register"]
+pub mod statclr;
+#[doc = "ENCLR (w) register accessor: EEPROM interrupt enable clear\n\nYou can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`enclr::W`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@enclr`] module"]
+#[doc(alias = "ENCLR")]
+pub type Enclr = crate::Reg<enclr::EnclrSpec>;
+#[doc = "EEPROM interrupt enable clear"]
+pub mod enclr;
+#[doc = "ENSET (w) register accessor: EEPROM interrupt enable set\n\nYou can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`enset::W`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@enset`] module"]
+#[doc(alias = "ENSET")]
+pub type Enset = crate::Reg<enset::EnsetSpec>;
+#[doc = "EEPROM interrupt enable set"]
+pub mod enset;

@@ -1,1 +1,35 @@
-# [doc = "Register `LCD_CFG` reader"] pub type R = crate :: R < LcdCfgSpec > ; # [doc = "Register `LCD_CFG` writer"] pub type W = crate :: W < LcdCfgSpec > ; # [doc = "Field `CLKDIV` reader - LCD panel clock prescaler selection. The value in the this register plus 1 is used to divide the selected input clock (see the CLKSEL bit in the LCD_POL register), to produce the panel clock."] pub type ClkdivR = crate :: FieldReader ; # [doc = "Field `CLKDIV` writer - LCD panel clock prescaler selection. The value in the this register plus 1 is used to divide the selected input clock (see the CLKSEL bit in the LCD_POL register), to produce the panel clock."] pub type ClkdivW < 'a , REG > = crate :: FieldWriter < 'a , REG , 5 > ; impl R { # [doc = "Bits 0:4 - LCD panel clock prescaler selection. The value in the this register plus 1 is used to divide the selected input clock (see the CLKSEL bit in the LCD_POL register), to produce the panel clock."] # [inline (always)] pub fn clkdiv (& self) -> ClkdivR { ClkdivR :: new ((self . bits & 0x1f) as u8) } } impl W { # [doc = "Bits 0:4 - LCD panel clock prescaler selection. The value in the this register plus 1 is used to divide the selected input clock (see the CLKSEL bit in the LCD_POL register), to produce the panel clock."] # [inline (always)] pub fn clkdiv (& mut self) -> ClkdivW < '_ , LcdCfgSpec > { ClkdivW :: new (self , 0) } } # [doc = "LCD Clock configuration register\n\nYou can [`read`](crate::Reg::read) this register and get [`lcd_cfg::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`lcd_cfg::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."] pub struct LcdCfgSpec ; impl crate :: RegisterSpec for LcdCfgSpec { type Ux = u32 ; } # [doc = "`read()` method returns [`lcd_cfg::R`](R) reader structure"] impl crate :: Readable for LcdCfgSpec { } # [doc = "`write(|w| ..)` method takes [`lcd_cfg::W`](W) writer structure"] impl crate :: Writable for LcdCfgSpec { type Safety = crate :: Unsafe ; } # [doc = "`reset()` method sets LCD_CFG to value 0"] impl crate :: Resettable for LcdCfgSpec { }
+#[doc = "Register `LCD_CFG` reader"]
+pub type R = crate::R<LcdCfgSpec>;
+#[doc = "Register `LCD_CFG` writer"]
+pub type W = crate::W<LcdCfgSpec>;
+#[doc = "Field `CLKDIV` reader - LCD panel clock prescaler selection. The value in the this register plus 1 is used to divide the selected input clock (see the CLKSEL bit in the LCD_POL register), to produce the panel clock."]
+pub type ClkdivR = crate::FieldReader;
+#[doc = "Field `CLKDIV` writer - LCD panel clock prescaler selection. The value in the this register plus 1 is used to divide the selected input clock (see the CLKSEL bit in the LCD_POL register), to produce the panel clock."]
+pub type ClkdivW<'a, REG> = crate::FieldWriter<'a, REG, 5>;
+impl R {
+    #[doc = "Bits 0:4 - LCD panel clock prescaler selection. The value in the this register plus 1 is used to divide the selected input clock (see the CLKSEL bit in the LCD_POL register), to produce the panel clock."]
+    #[inline(always)]
+    pub fn clkdiv(&self) -> ClkdivR {
+        ClkdivR::new((self.bits & 0x1f) as u8)
+    }
+}
+impl W {
+    #[doc = "Bits 0:4 - LCD panel clock prescaler selection. The value in the this register plus 1 is used to divide the selected input clock (see the CLKSEL bit in the LCD_POL register), to produce the panel clock."]
+    #[inline(always)]
+    pub fn clkdiv(&mut self) -> ClkdivW<'_, LcdCfgSpec> {
+        ClkdivW::new(self, 0)
+    }
+}
+#[doc = "LCD Clock configuration register\n\nYou can [`read`](crate::Reg::read) this register and get [`lcd_cfg::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`lcd_cfg::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct LcdCfgSpec;
+impl crate::RegisterSpec for LcdCfgSpec {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [`lcd_cfg::R`](R) reader structure"]
+impl crate::Readable for LcdCfgSpec {}
+#[doc = "`write(|w| ..)` method takes [`lcd_cfg::W`](W) writer structure"]
+impl crate::Writable for LcdCfgSpec {
+    type Safety = crate::Unsafe;
+}
+#[doc = "`reset()` method sets LCD_CFG to value 0"]
+impl crate::Resettable for LcdCfgSpec {}

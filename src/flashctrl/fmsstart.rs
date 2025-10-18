@@ -1,1 +1,35 @@
-# [doc = "Register `FMSSTART` reader"] pub type R = crate :: R < FmsstartSpec > ; # [doc = "Register `FMSSTART` writer"] pub type W = crate :: W < FmsstartSpec > ; # [doc = "Field `START` reader - Signature generation start address (corresponds to AHB byte address bits\\[20:4\\])."] pub type StartR = crate :: FieldReader < u32 > ; # [doc = "Field `START` writer - Signature generation start address (corresponds to AHB byte address bits\\[20:4\\])."] pub type StartW < 'a , REG > = crate :: FieldWriter < 'a , REG , 17 , u32 > ; impl R { # [doc = "Bits 0:16 - Signature generation start address (corresponds to AHB byte address bits\\[20:4\\])."] # [inline (always)] pub fn start (& self) -> StartR { StartR :: new (self . bits & 0x0001_ffff) } } impl W { # [doc = "Bits 0:16 - Signature generation start address (corresponds to AHB byte address bits\\[20:4\\])."] # [inline (always)] pub fn start (& mut self) -> StartW < '_ , FmsstartSpec > { StartW :: new (self , 0) } } # [doc = "Signature start address register\n\nYou can [`read`](crate::Reg::read) this register and get [`fmsstart::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`fmsstart::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."] pub struct FmsstartSpec ; impl crate :: RegisterSpec for FmsstartSpec { type Ux = u32 ; } # [doc = "`read()` method returns [`fmsstart::R`](R) reader structure"] impl crate :: Readable for FmsstartSpec { } # [doc = "`write(|w| ..)` method takes [`fmsstart::W`](W) writer structure"] impl crate :: Writable for FmsstartSpec { type Safety = crate :: Unsafe ; } # [doc = "`reset()` method sets FMSSTART to value 0"] impl crate :: Resettable for FmsstartSpec { }
+#[doc = "Register `FMSSTART` reader"]
+pub type R = crate::R<FmsstartSpec>;
+#[doc = "Register `FMSSTART` writer"]
+pub type W = crate::W<FmsstartSpec>;
+#[doc = "Field `START` reader - Signature generation start address (corresponds to AHB byte address bits\\[20:4\\])."]
+pub type StartR = crate::FieldReader<u32>;
+#[doc = "Field `START` writer - Signature generation start address (corresponds to AHB byte address bits\\[20:4\\])."]
+pub type StartW<'a, REG> = crate::FieldWriter<'a, REG, 17, u32>;
+impl R {
+    #[doc = "Bits 0:16 - Signature generation start address (corresponds to AHB byte address bits\\[20:4\\])."]
+    #[inline(always)]
+    pub fn start(&self) -> StartR {
+        StartR::new(self.bits & 0x0001_ffff)
+    }
+}
+impl W {
+    #[doc = "Bits 0:16 - Signature generation start address (corresponds to AHB byte address bits\\[20:4\\])."]
+    #[inline(always)]
+    pub fn start(&mut self) -> StartW<'_, FmsstartSpec> {
+        StartW::new(self, 0)
+    }
+}
+#[doc = "Signature start address register\n\nYou can [`read`](crate::Reg::read) this register and get [`fmsstart::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`fmsstart::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct FmsstartSpec;
+impl crate::RegisterSpec for FmsstartSpec {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [`fmsstart::R`](R) reader structure"]
+impl crate::Readable for FmsstartSpec {}
+#[doc = "`write(|w| ..)` method takes [`fmsstart::W`](W) writer structure"]
+impl crate::Writable for FmsstartSpec {
+    type Safety = crate::Unsafe;
+}
+#[doc = "`reset()` method sets FMSSTART to value 0"]
+impl crate::Resettable for FmsstartSpec {}

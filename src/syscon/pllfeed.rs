@@ -1,1 +1,22 @@
-# [doc = "Register `PLL%sFEED` writer"] pub type W = crate :: W < PllfeedSpec > ; # [doc = "Field `PLLFEED` writer - The PLL feed sequence must be written to this register in order for the related PLL's configuration and control register changes to take effect."] pub type PllfeedW < 'a , REG > = crate :: FieldWriter < 'a , REG , 8 > ; impl W { # [doc = "Bits 0:7 - The PLL feed sequence must be written to this register in order for the related PLL's configuration and control register changes to take effect."] # [inline (always)] pub fn pllfeed (& mut self) -> PllfeedW < '_ , PllfeedSpec > { PllfeedW :: new (self , 0) } } # [doc = "PLL0 Feed register\n\nYou can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`pllfeed::W`](W). See [API](https://docs.rs/svd2rust/#read--modify--write-api)."] pub struct PllfeedSpec ; impl crate :: RegisterSpec for PllfeedSpec { type Ux = u32 ; } # [doc = "`write(|w| ..)` method takes [`pllfeed::W`](W) writer structure"] impl crate :: Writable for PllfeedSpec { type Safety = crate :: Unsafe ; } # [doc = "`reset()` method sets PLL%sFEED to value 0"] impl crate :: Resettable for PllfeedSpec { }
+#[doc = "Register `PLL%sFEED` writer"]
+pub type W = crate::W<PllfeedSpec>;
+#[doc = "Field `PLLFEED` writer - The PLL feed sequence must be written to this register in order for the related PLL's configuration and control register changes to take effect."]
+pub type PllfeedW<'a, REG> = crate::FieldWriter<'a, REG, 8>;
+impl W {
+    #[doc = "Bits 0:7 - The PLL feed sequence must be written to this register in order for the related PLL's configuration and control register changes to take effect."]
+    #[inline(always)]
+    pub fn pllfeed(&mut self) -> PllfeedW<'_, PllfeedSpec> {
+        PllfeedW::new(self, 0)
+    }
+}
+#[doc = "PLL0 Feed register\n\nYou can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`pllfeed::W`](W). See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct PllfeedSpec;
+impl crate::RegisterSpec for PllfeedSpec {
+    type Ux = u32;
+}
+#[doc = "`write(|w| ..)` method takes [`pllfeed::W`](W) writer structure"]
+impl crate::Writable for PllfeedSpec {
+    type Safety = crate::Unsafe;
+}
+#[doc = "`reset()` method sets PLL%sFEED to value 0"]
+impl crate::Resettable for PllfeedSpec {}

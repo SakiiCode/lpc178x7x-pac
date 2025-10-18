@@ -1,1 +1,34 @@
-# [doc = "Register `STAT` reader"] pub type R = crate :: R < StatSpec > ; # [doc = "Field `SIG_DONE` reader - When 1, a previously started signature generation has completed. See FMSTATCLR register description for clearing this flag."] pub type SigDoneR = crate :: BitReader ; # [doc = "Field `END_OF_RDWR` reader - EEPROM read/write operation finished interrupt status bit. Bit is: - set when this operation has finished OR when 1 is written in the corresponding bit of the EEINTSTATSET register. - cleared when 1 is written to the corresponding bit of the EEINTSTATCLR register."] pub type EndOfRdwrR = crate :: BitReader ; # [doc = "Field `END_OF_PROG1` reader - EEPROM program operation finished interrupt status bit. Bit is: - set when this operation has finished OR when 1 is written to the corresponding bit of the EEINTSTATSET register. - cleared when 1 is written to the corresponding bit of the EEINTSTATCLR register."] pub type EndOfProg1R = crate :: BitReader ; impl R { # [doc = "Bit 2 - When 1, a previously started signature generation has completed. See FMSTATCLR register description for clearing this flag."] # [inline (always)] pub fn sig_done (& self) -> SigDoneR { SigDoneR :: new (((self . bits >> 2) & 1) != 0) } # [doc = "Bit 26 - EEPROM read/write operation finished interrupt status bit. Bit is: - set when this operation has finished OR when 1 is written in the corresponding bit of the EEINTSTATSET register. - cleared when 1 is written to the corresponding bit of the EEINTSTATCLR register."] # [inline (always)] pub fn end_of_rdwr (& self) -> EndOfRdwrR { EndOfRdwrR :: new (((self . bits >> 26) & 1) != 0) } # [doc = "Bit 28 - EEPROM program operation finished interrupt status bit. Bit is: - set when this operation has finished OR when 1 is written to the corresponding bit of the EEINTSTATSET register. - cleared when 1 is written to the corresponding bit of the EEINTSTATCLR register."] # [inline (always)] pub fn end_of_prog1 (& self) -> EndOfProg1R { EndOfProg1R :: new (((self . bits >> 28) & 1) != 0) } } # [doc = "Signature generation status register\n\nYou can [`read`](crate::Reg::read) this register and get [`stat::R`](R). See [API](https://docs.rs/svd2rust/#read--modify--write-api)."] pub struct StatSpec ; impl crate :: RegisterSpec for StatSpec { type Ux = u32 ; } # [doc = "`read()` method returns [`stat::R`](R) reader structure"] impl crate :: Readable for StatSpec { } # [doc = "`reset()` method sets STAT to value 0"] impl crate :: Resettable for StatSpec { }
+#[doc = "Register `STAT` reader"]
+pub type R = crate::R<StatSpec>;
+#[doc = "Field `SIG_DONE` reader - When 1, a previously started signature generation has completed. See FMSTATCLR register description for clearing this flag."]
+pub type SigDoneR = crate::BitReader;
+#[doc = "Field `END_OF_RDWR` reader - EEPROM read/write operation finished interrupt status bit. Bit is: - set when this operation has finished OR when 1 is written in the corresponding bit of the EEINTSTATSET register. - cleared when 1 is written to the corresponding bit of the EEINTSTATCLR register."]
+pub type EndOfRdwrR = crate::BitReader;
+#[doc = "Field `END_OF_PROG1` reader - EEPROM program operation finished interrupt status bit. Bit is: - set when this operation has finished OR when 1 is written to the corresponding bit of the EEINTSTATSET register. - cleared when 1 is written to the corresponding bit of the EEINTSTATCLR register."]
+pub type EndOfProg1R = crate::BitReader;
+impl R {
+    #[doc = "Bit 2 - When 1, a previously started signature generation has completed. See FMSTATCLR register description for clearing this flag."]
+    #[inline(always)]
+    pub fn sig_done(&self) -> SigDoneR {
+        SigDoneR::new(((self.bits >> 2) & 1) != 0)
+    }
+    #[doc = "Bit 26 - EEPROM read/write operation finished interrupt status bit. Bit is: - set when this operation has finished OR when 1 is written in the corresponding bit of the EEINTSTATSET register. - cleared when 1 is written to the corresponding bit of the EEINTSTATCLR register."]
+    #[inline(always)]
+    pub fn end_of_rdwr(&self) -> EndOfRdwrR {
+        EndOfRdwrR::new(((self.bits >> 26) & 1) != 0)
+    }
+    #[doc = "Bit 28 - EEPROM program operation finished interrupt status bit. Bit is: - set when this operation has finished OR when 1 is written to the corresponding bit of the EEINTSTATSET register. - cleared when 1 is written to the corresponding bit of the EEINTSTATCLR register."]
+    #[inline(always)]
+    pub fn end_of_prog1(&self) -> EndOfProg1R {
+        EndOfProg1R::new(((self.bits >> 28) & 1) != 0)
+    }
+}
+#[doc = "Signature generation status register\n\nYou can [`read`](crate::Reg::read) this register and get [`stat::R`](R). See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct StatSpec;
+impl crate::RegisterSpec for StatSpec {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [`stat::R`](R) reader structure"]
+impl crate::Readable for StatSpec {}
+#[doc = "`reset()` method sets STAT to value 0"]
+impl crate::Resettable for StatSpec {}

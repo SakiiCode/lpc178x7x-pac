@@ -1,1 +1,37 @@
-# [doc = "Register `DYNAMICXSR` reader"] pub type R = crate :: R < DynamicxsrSpec > ; # [doc = "Register `DYNAMICXSR` writer"] pub type W = crate :: W < DynamicxsrSpec > ; # [doc = "Field `TXSR` reader - Exit self-refresh to active command time. 0x0 - 0x1E = n + 1 clock cycles. The delay is in CCLK cycles. 0x1F = 32 clock cycles (POR reset value)."] pub type TxsrR = crate :: FieldReader ; # [doc = "Field `TXSR` writer - Exit self-refresh to active command time. 0x0 - 0x1E = n + 1 clock cycles. The delay is in CCLK cycles. 0x1F = 32 clock cycles (POR reset value)."] pub type TxsrW < 'a , REG > = crate :: FieldWriter < 'a , REG , 5 > ; impl R { # [doc = "Bits 0:4 - Exit self-refresh to active command time. 0x0 - 0x1E = n + 1 clock cycles. The delay is in CCLK cycles. 0x1F = 32 clock cycles (POR reset value)."] # [inline (always)] pub fn txsr (& self) -> TxsrR { TxsrR :: new ((self . bits & 0x1f) as u8) } } impl W { # [doc = "Bits 0:4 - Exit self-refresh to active command time. 0x0 - 0x1E = n + 1 clock cycles. The delay is in CCLK cycles. 0x1F = 32 clock cycles (POR reset value)."] # [inline (always)] pub fn txsr (& mut self) -> TxsrW < '_ , DynamicxsrSpec > { TxsrW :: new (self , 0) } } # [doc = "Time for exit self-refresh to active command.\n\nYou can [`read`](crate::Reg::read) this register and get [`dynamicxsr::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`dynamicxsr::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."] pub struct DynamicxsrSpec ; impl crate :: RegisterSpec for DynamicxsrSpec { type Ux = u32 ; } # [doc = "`read()` method returns [`dynamicxsr::R`](R) reader structure"] impl crate :: Readable for DynamicxsrSpec { } # [doc = "`write(|w| ..)` method takes [`dynamicxsr::W`](W) writer structure"] impl crate :: Writable for DynamicxsrSpec { type Safety = crate :: Unsafe ; } # [doc = "`reset()` method sets DYNAMICXSR to value 0x1f"] impl crate :: Resettable for DynamicxsrSpec { const RESET_VALUE : u32 = 0x1f ; }
+#[doc = "Register `DYNAMICXSR` reader"]
+pub type R = crate::R<DynamicxsrSpec>;
+#[doc = "Register `DYNAMICXSR` writer"]
+pub type W = crate::W<DynamicxsrSpec>;
+#[doc = "Field `TXSR` reader - Exit self-refresh to active command time. 0x0 - 0x1E = n + 1 clock cycles. The delay is in CCLK cycles. 0x1F = 32 clock cycles (POR reset value)."]
+pub type TxsrR = crate::FieldReader;
+#[doc = "Field `TXSR` writer - Exit self-refresh to active command time. 0x0 - 0x1E = n + 1 clock cycles. The delay is in CCLK cycles. 0x1F = 32 clock cycles (POR reset value)."]
+pub type TxsrW<'a, REG> = crate::FieldWriter<'a, REG, 5>;
+impl R {
+    #[doc = "Bits 0:4 - Exit self-refresh to active command time. 0x0 - 0x1E = n + 1 clock cycles. The delay is in CCLK cycles. 0x1F = 32 clock cycles (POR reset value)."]
+    #[inline(always)]
+    pub fn txsr(&self) -> TxsrR {
+        TxsrR::new((self.bits & 0x1f) as u8)
+    }
+}
+impl W {
+    #[doc = "Bits 0:4 - Exit self-refresh to active command time. 0x0 - 0x1E = n + 1 clock cycles. The delay is in CCLK cycles. 0x1F = 32 clock cycles (POR reset value)."]
+    #[inline(always)]
+    pub fn txsr(&mut self) -> TxsrW<'_, DynamicxsrSpec> {
+        TxsrW::new(self, 0)
+    }
+}
+#[doc = "Time for exit self-refresh to active command.\n\nYou can [`read`](crate::Reg::read) this register and get [`dynamicxsr::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`dynamicxsr::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct DynamicxsrSpec;
+impl crate::RegisterSpec for DynamicxsrSpec {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [`dynamicxsr::R`](R) reader structure"]
+impl crate::Readable for DynamicxsrSpec {}
+#[doc = "`write(|w| ..)` method takes [`dynamicxsr::W`](W) writer structure"]
+impl crate::Writable for DynamicxsrSpec {
+    type Safety = crate::Unsafe;
+}
+#[doc = "`reset()` method sets DYNAMICXSR to value 0x1f"]
+impl crate::Resettable for DynamicxsrSpec {
+    const RESET_VALUE: u32 = 0x1f;
+}

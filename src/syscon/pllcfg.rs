@@ -1,1 +1,49 @@
-# [doc = "Register `PLL%sCFG` reader"] pub type R = crate :: R < PllcfgSpec > ; # [doc = "Register `PLL%sCFG` writer"] pub type W = crate :: W < PllcfgSpec > ; # [doc = "Field `MSEL` reader - PLL Multiplier value. Supplies the value \"M\" in the PLL frequency calculations. Note: For details on selecting the right value for MSEL see Section 3.10.4."] pub type MselR = crate :: FieldReader ; # [doc = "Field `MSEL` writer - PLL Multiplier value. Supplies the value \"M\" in the PLL frequency calculations. Note: For details on selecting the right value for MSEL see Section 3.10.4."] pub type MselW < 'a , REG > = crate :: FieldWriter < 'a , REG , 5 > ; # [doc = "Field `PSEL` reader - PLL Divider value. Supplies the value \"P\" in the PLL frequency calculations. Note: For details on selecting the right value for PSEL see Section 3.10.4."] pub type PselR = crate :: FieldReader ; # [doc = "Field `PSEL` writer - PLL Divider value. Supplies the value \"P\" in the PLL frequency calculations. Note: For details on selecting the right value for PSEL see Section 3.10.4."] pub type PselW < 'a , REG > = crate :: FieldWriter < 'a , REG , 2 > ; impl R { # [doc = "Bits 0:4 - PLL Multiplier value. Supplies the value \"M\" in the PLL frequency calculations. Note: For details on selecting the right value for MSEL see Section 3.10.4."] # [inline (always)] pub fn msel (& self) -> MselR { MselR :: new ((self . bits & 0x1f) as u8) } # [doc = "Bits 5:6 - PLL Divider value. Supplies the value \"P\" in the PLL frequency calculations. Note: For details on selecting the right value for PSEL see Section 3.10.4."] # [inline (always)] pub fn psel (& self) -> PselR { PselR :: new (((self . bits >> 5) & 3) as u8) } } impl W { # [doc = "Bits 0:4 - PLL Multiplier value. Supplies the value \"M\" in the PLL frequency calculations. Note: For details on selecting the right value for MSEL see Section 3.10.4."] # [inline (always)] pub fn msel (& mut self) -> MselW < '_ , PllcfgSpec > { MselW :: new (self , 0) } # [doc = "Bits 5:6 - PLL Divider value. Supplies the value \"P\" in the PLL frequency calculations. Note: For details on selecting the right value for PSEL see Section 3.10.4."] # [inline (always)] pub fn psel (& mut self) -> PselW < '_ , PllcfgSpec > { PselW :: new (self , 5) } } # [doc = "PLL0 Configuration register\n\nYou can [`read`](crate::Reg::read) this register and get [`pllcfg::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`pllcfg::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."] pub struct PllcfgSpec ; impl crate :: RegisterSpec for PllcfgSpec { type Ux = u32 ; } # [doc = "`read()` method returns [`pllcfg::R`](R) reader structure"] impl crate :: Readable for PllcfgSpec { } # [doc = "`write(|w| ..)` method takes [`pllcfg::W`](W) writer structure"] impl crate :: Writable for PllcfgSpec { type Safety = crate :: Unsafe ; } # [doc = "`reset()` method sets PLL%sCFG to value 0"] impl crate :: Resettable for PllcfgSpec { }
+#[doc = "Register `PLL%sCFG` reader"]
+pub type R = crate::R<PllcfgSpec>;
+#[doc = "Register `PLL%sCFG` writer"]
+pub type W = crate::W<PllcfgSpec>;
+#[doc = "Field `MSEL` reader - PLL Multiplier value. Supplies the value \"M\" in the PLL frequency calculations. Note: For details on selecting the right value for MSEL see Section 3.10.4."]
+pub type MselR = crate::FieldReader;
+#[doc = "Field `MSEL` writer - PLL Multiplier value. Supplies the value \"M\" in the PLL frequency calculations. Note: For details on selecting the right value for MSEL see Section 3.10.4."]
+pub type MselW<'a, REG> = crate::FieldWriter<'a, REG, 5>;
+#[doc = "Field `PSEL` reader - PLL Divider value. Supplies the value \"P\" in the PLL frequency calculations. Note: For details on selecting the right value for PSEL see Section 3.10.4."]
+pub type PselR = crate::FieldReader;
+#[doc = "Field `PSEL` writer - PLL Divider value. Supplies the value \"P\" in the PLL frequency calculations. Note: For details on selecting the right value for PSEL see Section 3.10.4."]
+pub type PselW<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+impl R {
+    #[doc = "Bits 0:4 - PLL Multiplier value. Supplies the value \"M\" in the PLL frequency calculations. Note: For details on selecting the right value for MSEL see Section 3.10.4."]
+    #[inline(always)]
+    pub fn msel(&self) -> MselR {
+        MselR::new((self.bits & 0x1f) as u8)
+    }
+    #[doc = "Bits 5:6 - PLL Divider value. Supplies the value \"P\" in the PLL frequency calculations. Note: For details on selecting the right value for PSEL see Section 3.10.4."]
+    #[inline(always)]
+    pub fn psel(&self) -> PselR {
+        PselR::new(((self.bits >> 5) & 3) as u8)
+    }
+}
+impl W {
+    #[doc = "Bits 0:4 - PLL Multiplier value. Supplies the value \"M\" in the PLL frequency calculations. Note: For details on selecting the right value for MSEL see Section 3.10.4."]
+    #[inline(always)]
+    pub fn msel(&mut self) -> MselW<'_, PllcfgSpec> {
+        MselW::new(self, 0)
+    }
+    #[doc = "Bits 5:6 - PLL Divider value. Supplies the value \"P\" in the PLL frequency calculations. Note: For details on selecting the right value for PSEL see Section 3.10.4."]
+    #[inline(always)]
+    pub fn psel(&mut self) -> PselW<'_, PllcfgSpec> {
+        PselW::new(self, 5)
+    }
+}
+#[doc = "PLL0 Configuration register\n\nYou can [`read`](crate::Reg::read) this register and get [`pllcfg::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`pllcfg::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct PllcfgSpec;
+impl crate::RegisterSpec for PllcfgSpec {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [`pllcfg::R`](R) reader structure"]
+impl crate::Readable for PllcfgSpec {}
+#[doc = "`write(|w| ..)` method takes [`pllcfg::W`](W) writer structure"]
+impl crate::Writable for PllcfgSpec {
+    type Safety = crate::Unsafe;
+}
+#[doc = "`reset()` method sets PLL%sCFG to value 0"]
+impl crate::Resettable for PllcfgSpec {}

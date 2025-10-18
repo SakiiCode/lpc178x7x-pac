@@ -1,1 +1,37 @@
-# [doc = "Register `STATICWAITPAGE%s` reader"] pub type R = crate :: R < StaticwaitpageSpec > ; # [doc = "Register `STATICWAITPAGE%s` writer"] pub type W = crate :: W < StaticwaitpageSpec > ; # [doc = "Field `WAITPAGE` reader - Asynchronous page mode read after the first read wait states. Number of wait states for asynchronous page mode read accesses after the first read: 0x0 - 0x1E = (n+ 1) CCLK cycle read access time. For asynchronous page mode read for sequential reads, the wait state time for page mode accesses after the first read is (WAITPAGE + 1) x tCCLK. 0x1F = 32 CCLK cycle read access time (POR reset value)."] pub type WaitpageR = crate :: FieldReader ; # [doc = "Field `WAITPAGE` writer - Asynchronous page mode read after the first read wait states. Number of wait states for asynchronous page mode read accesses after the first read: 0x0 - 0x1E = (n+ 1) CCLK cycle read access time. For asynchronous page mode read for sequential reads, the wait state time for page mode accesses after the first read is (WAITPAGE + 1) x tCCLK. 0x1F = 32 CCLK cycle read access time (POR reset value)."] pub type WaitpageW < 'a , REG > = crate :: FieldWriter < 'a , REG , 5 > ; impl R { # [doc = "Bits 0:4 - Asynchronous page mode read after the first read wait states. Number of wait states for asynchronous page mode read accesses after the first read: 0x0 - 0x1E = (n+ 1) CCLK cycle read access time. For asynchronous page mode read for sequential reads, the wait state time for page mode accesses after the first read is (WAITPAGE + 1) x tCCLK. 0x1F = 32 CCLK cycle read access time (POR reset value)."] # [inline (always)] pub fn waitpage (& self) -> WaitpageR { WaitpageR :: new ((self . bits & 0x1f) as u8) } } impl W { # [doc = "Bits 0:4 - Asynchronous page mode read after the first read wait states. Number of wait states for asynchronous page mode read accesses after the first read: 0x0 - 0x1E = (n+ 1) CCLK cycle read access time. For asynchronous page mode read for sequential reads, the wait state time for page mode accesses after the first read is (WAITPAGE + 1) x tCCLK. 0x1F = 32 CCLK cycle read access time (POR reset value)."] # [inline (always)] pub fn waitpage (& mut self) -> WaitpageW < '_ , StaticwaitpageSpec > { WaitpageW :: new (self , 0) } } # [doc = "Delay for asynchronous page mode sequential accesses for EMC_CS0.\n\nYou can [`read`](crate::Reg::read) this register and get [`staticwaitpage::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`staticwaitpage::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."] pub struct StaticwaitpageSpec ; impl crate :: RegisterSpec for StaticwaitpageSpec { type Ux = u32 ; } # [doc = "`read()` method returns [`staticwaitpage::R`](R) reader structure"] impl crate :: Readable for StaticwaitpageSpec { } # [doc = "`write(|w| ..)` method takes [`staticwaitpage::W`](W) writer structure"] impl crate :: Writable for StaticwaitpageSpec { type Safety = crate :: Unsafe ; } # [doc = "`reset()` method sets STATICWAITPAGE%s to value 0x1f"] impl crate :: Resettable for StaticwaitpageSpec { const RESET_VALUE : u32 = 0x1f ; }
+#[doc = "Register `STATICWAITPAGE%s` reader"]
+pub type R = crate::R<StaticwaitpageSpec>;
+#[doc = "Register `STATICWAITPAGE%s` writer"]
+pub type W = crate::W<StaticwaitpageSpec>;
+#[doc = "Field `WAITPAGE` reader - Asynchronous page mode read after the first read wait states. Number of wait states for asynchronous page mode read accesses after the first read: 0x0 - 0x1E = (n+ 1) CCLK cycle read access time. For asynchronous page mode read for sequential reads, the wait state time for page mode accesses after the first read is (WAITPAGE + 1) x tCCLK. 0x1F = 32 CCLK cycle read access time (POR reset value)."]
+pub type WaitpageR = crate::FieldReader;
+#[doc = "Field `WAITPAGE` writer - Asynchronous page mode read after the first read wait states. Number of wait states for asynchronous page mode read accesses after the first read: 0x0 - 0x1E = (n+ 1) CCLK cycle read access time. For asynchronous page mode read for sequential reads, the wait state time for page mode accesses after the first read is (WAITPAGE + 1) x tCCLK. 0x1F = 32 CCLK cycle read access time (POR reset value)."]
+pub type WaitpageW<'a, REG> = crate::FieldWriter<'a, REG, 5>;
+impl R {
+    #[doc = "Bits 0:4 - Asynchronous page mode read after the first read wait states. Number of wait states for asynchronous page mode read accesses after the first read: 0x0 - 0x1E = (n+ 1) CCLK cycle read access time. For asynchronous page mode read for sequential reads, the wait state time for page mode accesses after the first read is (WAITPAGE + 1) x tCCLK. 0x1F = 32 CCLK cycle read access time (POR reset value)."]
+    #[inline(always)]
+    pub fn waitpage(&self) -> WaitpageR {
+        WaitpageR::new((self.bits & 0x1f) as u8)
+    }
+}
+impl W {
+    #[doc = "Bits 0:4 - Asynchronous page mode read after the first read wait states. Number of wait states for asynchronous page mode read accesses after the first read: 0x0 - 0x1E = (n+ 1) CCLK cycle read access time. For asynchronous page mode read for sequential reads, the wait state time for page mode accesses after the first read is (WAITPAGE + 1) x tCCLK. 0x1F = 32 CCLK cycle read access time (POR reset value)."]
+    #[inline(always)]
+    pub fn waitpage(&mut self) -> WaitpageW<'_, StaticwaitpageSpec> {
+        WaitpageW::new(self, 0)
+    }
+}
+#[doc = "Delay for asynchronous page mode sequential accesses for EMC_CS0.\n\nYou can [`read`](crate::Reg::read) this register and get [`staticwaitpage::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`staticwaitpage::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct StaticwaitpageSpec;
+impl crate::RegisterSpec for StaticwaitpageSpec {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [`staticwaitpage::R`](R) reader structure"]
+impl crate::Readable for StaticwaitpageSpec {}
+#[doc = "`write(|w| ..)` method takes [`staticwaitpage::W`](W) writer structure"]
+impl crate::Writable for StaticwaitpageSpec {
+    type Safety = crate::Unsafe;
+}
+#[doc = "`reset()` method sets STATICWAITPAGE%s to value 0x1f"]
+impl crate::Resettable for StaticwaitpageSpec {
+    const RESET_VALUE: u32 = 0x1f;
+}

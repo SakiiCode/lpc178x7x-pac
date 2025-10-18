@@ -1,1 +1,237 @@
-# [doc = "Register `STATR2` reader"] pub type R = crate :: R < Statr2Spec > ; # [doc = "Field `P2_0REI` reader - Status of Rising Edge Interrupt for P2\\[0\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] pub type P2_0reiR = crate :: BitReader ; # [doc = "Field `P2_1REI` reader - Status of Rising Edge Interrupt for P2\\[1\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] pub type P2_1reiR = crate :: BitReader ; # [doc = "Field `P2_2REI` reader - Status of Rising Edge Interrupt for P2\\[2\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] pub type P2_2reiR = crate :: BitReader ; # [doc = "Field `P2_3REI` reader - Status of Rising Edge Interrupt for P2\\[3\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] pub type P2_3reiR = crate :: BitReader ; # [doc = "Field `P2_4REI` reader - Status of Rising Edge Interrupt for P2\\[4\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] pub type P2_4reiR = crate :: BitReader ; # [doc = "Field `P2_5REI` reader - Status of Rising Edge Interrupt for P2\\[5\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] pub type P2_5reiR = crate :: BitReader ; # [doc = "Field `P2_6REI` reader - Status of Rising Edge Interrupt for P2\\[6\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] pub type P2_6reiR = crate :: BitReader ; # [doc = "Field `P2_7REI` reader - Status of Rising Edge Interrupt for P2\\[7\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] pub type P2_7reiR = crate :: BitReader ; # [doc = "Field `P2_8REI` reader - Status of Rising Edge Interrupt for P2\\[8\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] pub type P2_8reiR = crate :: BitReader ; # [doc = "Field `P2_9REI` reader - Status of Rising Edge Interrupt for P2\\[9\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] pub type P2_9reiR = crate :: BitReader ; # [doc = "Field `P2_10REI` reader - Status of Rising Edge Interrupt for P2\\[10\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] pub type P2_10reiR = crate :: BitReader ; # [doc = "Field `P2_11REI` reader - Status of Rising Edge Interrupt for P2\\[11\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] pub type P2_11reiR = crate :: BitReader ; # [doc = "Field `P2_12REI` reader - Status of Rising Edge Interrupt for P2\\[12\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] pub type P2_12reiR = crate :: BitReader ; # [doc = "Field `P2_13REI` reader - Status of Rising Edge Interrupt for P2\\[13\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] pub type P2_13reiR = crate :: BitReader ; # [doc = "Field `P2_14REI` reader - Status of Rising Edge Interrupt for P2\\[14\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] pub type P2_14reiR = crate :: BitReader ; # [doc = "Field `P2_15REI` reader - Status of Rising Edge Interrupt for P2\\[15\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] pub type P2_15reiR = crate :: BitReader ; # [doc = "Field `P2_16REI` reader - Status of Rising Edge Interrupt for P2\\[16\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] pub type P2_16reiR = crate :: BitReader ; # [doc = "Field `P2_17REI` reader - Status of Rising Edge Interrupt for P2\\[17\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] pub type P2_17reiR = crate :: BitReader ; # [doc = "Field `P2_18REI` reader - Status of Rising Edge Interrupt for P2\\[18\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] pub type P2_18reiR = crate :: BitReader ; # [doc = "Field `P2_19REI` reader - Status of Rising Edge Interrupt for P2\\[19\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] pub type P2_19reiR = crate :: BitReader ; # [doc = "Field `P2_20REI` reader - Status of Rising Edge Interrupt for P2\\[20\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] pub type P2_20reiR = crate :: BitReader ; # [doc = "Field `P2_21REI` reader - Status of Rising Edge Interrupt for P2\\[21\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] pub type P2_21reiR = crate :: BitReader ; # [doc = "Field `P2_22REI` reader - Status of Rising Edge Interrupt for P2\\[22\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] pub type P2_22reiR = crate :: BitReader ; # [doc = "Field `P2_23REI` reader - Status of Rising Edge Interrupt for P2\\[23\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] pub type P2_23reiR = crate :: BitReader ; # [doc = "Field `P2_24REI` reader - Status of Rising Edge Interrupt for P2\\[24\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] pub type P2_24reiR = crate :: BitReader ; # [doc = "Field `P2_25REI` reader - Status of Rising Edge Interrupt for P2\\[25\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] pub type P2_25reiR = crate :: BitReader ; # [doc = "Field `P2_26REI` reader - Status of Rising Edge Interrupt for P2\\[26\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] pub type P2_26reiR = crate :: BitReader ; # [doc = "Field `P2_27REI` reader - Status of Rising Edge Interrupt for P2\\[27\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] pub type P2_27reiR = crate :: BitReader ; # [doc = "Field `P2_28REI` reader - Status of Rising Edge Interrupt for P2\\[28\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] pub type P2_28reiR = crate :: BitReader ; # [doc = "Field `P2_29REI` reader - Status of Rising Edge Interrupt for P2\\[29\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] pub type P2_29reiR = crate :: BitReader ; # [doc = "Field `P2_30REI` reader - Status of Rising Edge Interrupt for P2\\[30\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] pub type P2_30reiR = crate :: BitReader ; # [doc = "Field `P2_31REI` reader - Status of Rising Edge Interrupt for P2\\[31\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] pub type P2_31reiR = crate :: BitReader ; impl R { # [doc = "Bit 0 - Status of Rising Edge Interrupt for P2\\[0\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] # [inline (always)] pub fn p2_0rei (& self) -> P2_0reiR { P2_0reiR :: new ((self . bits & 1) != 0) } # [doc = "Bit 1 - Status of Rising Edge Interrupt for P2\\[1\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] # [inline (always)] pub fn p2_1rei (& self) -> P2_1reiR { P2_1reiR :: new (((self . bits >> 1) & 1) != 0) } # [doc = "Bit 2 - Status of Rising Edge Interrupt for P2\\[2\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] # [inline (always)] pub fn p2_2rei (& self) -> P2_2reiR { P2_2reiR :: new (((self . bits >> 2) & 1) != 0) } # [doc = "Bit 3 - Status of Rising Edge Interrupt for P2\\[3\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] # [inline (always)] pub fn p2_3rei (& self) -> P2_3reiR { P2_3reiR :: new (((self . bits >> 3) & 1) != 0) } # [doc = "Bit 4 - Status of Rising Edge Interrupt for P2\\[4\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] # [inline (always)] pub fn p2_4rei (& self) -> P2_4reiR { P2_4reiR :: new (((self . bits >> 4) & 1) != 0) } # [doc = "Bit 5 - Status of Rising Edge Interrupt for P2\\[5\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] # [inline (always)] pub fn p2_5rei (& self) -> P2_5reiR { P2_5reiR :: new (((self . bits >> 5) & 1) != 0) } # [doc = "Bit 6 - Status of Rising Edge Interrupt for P2\\[6\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] # [inline (always)] pub fn p2_6rei (& self) -> P2_6reiR { P2_6reiR :: new (((self . bits >> 6) & 1) != 0) } # [doc = "Bit 7 - Status of Rising Edge Interrupt for P2\\[7\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] # [inline (always)] pub fn p2_7rei (& self) -> P2_7reiR { P2_7reiR :: new (((self . bits >> 7) & 1) != 0) } # [doc = "Bit 8 - Status of Rising Edge Interrupt for P2\\[8\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] # [inline (always)] pub fn p2_8rei (& self) -> P2_8reiR { P2_8reiR :: new (((self . bits >> 8) & 1) != 0) } # [doc = "Bit 9 - Status of Rising Edge Interrupt for P2\\[9\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] # [inline (always)] pub fn p2_9rei (& self) -> P2_9reiR { P2_9reiR :: new (((self . bits >> 9) & 1) != 0) } # [doc = "Bit 10 - Status of Rising Edge Interrupt for P2\\[10\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] # [inline (always)] pub fn p2_10rei (& self) -> P2_10reiR { P2_10reiR :: new (((self . bits >> 10) & 1) != 0) } # [doc = "Bit 11 - Status of Rising Edge Interrupt for P2\\[11\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] # [inline (always)] pub fn p2_11rei (& self) -> P2_11reiR { P2_11reiR :: new (((self . bits >> 11) & 1) != 0) } # [doc = "Bit 12 - Status of Rising Edge Interrupt for P2\\[12\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] # [inline (always)] pub fn p2_12rei (& self) -> P2_12reiR { P2_12reiR :: new (((self . bits >> 12) & 1) != 0) } # [doc = "Bit 13 - Status of Rising Edge Interrupt for P2\\[13\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] # [inline (always)] pub fn p2_13rei (& self) -> P2_13reiR { P2_13reiR :: new (((self . bits >> 13) & 1) != 0) } # [doc = "Bit 14 - Status of Rising Edge Interrupt for P2\\[14\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] # [inline (always)] pub fn p2_14rei (& self) -> P2_14reiR { P2_14reiR :: new (((self . bits >> 14) & 1) != 0) } # [doc = "Bit 15 - Status of Rising Edge Interrupt for P2\\[15\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] # [inline (always)] pub fn p2_15rei (& self) -> P2_15reiR { P2_15reiR :: new (((self . bits >> 15) & 1) != 0) } # [doc = "Bit 16 - Status of Rising Edge Interrupt for P2\\[16\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] # [inline (always)] pub fn p2_16rei (& self) -> P2_16reiR { P2_16reiR :: new (((self . bits >> 16) & 1) != 0) } # [doc = "Bit 17 - Status of Rising Edge Interrupt for P2\\[17\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] # [inline (always)] pub fn p2_17rei (& self) -> P2_17reiR { P2_17reiR :: new (((self . bits >> 17) & 1) != 0) } # [doc = "Bit 18 - Status of Rising Edge Interrupt for P2\\[18\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] # [inline (always)] pub fn p2_18rei (& self) -> P2_18reiR { P2_18reiR :: new (((self . bits >> 18) & 1) != 0) } # [doc = "Bit 19 - Status of Rising Edge Interrupt for P2\\[19\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] # [inline (always)] pub fn p2_19rei (& self) -> P2_19reiR { P2_19reiR :: new (((self . bits >> 19) & 1) != 0) } # [doc = "Bit 20 - Status of Rising Edge Interrupt for P2\\[20\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] # [inline (always)] pub fn p2_20rei (& self) -> P2_20reiR { P2_20reiR :: new (((self . bits >> 20) & 1) != 0) } # [doc = "Bit 21 - Status of Rising Edge Interrupt for P2\\[21\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] # [inline (always)] pub fn p2_21rei (& self) -> P2_21reiR { P2_21reiR :: new (((self . bits >> 21) & 1) != 0) } # [doc = "Bit 22 - Status of Rising Edge Interrupt for P2\\[22\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] # [inline (always)] pub fn p2_22rei (& self) -> P2_22reiR { P2_22reiR :: new (((self . bits >> 22) & 1) != 0) } # [doc = "Bit 23 - Status of Rising Edge Interrupt for P2\\[23\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] # [inline (always)] pub fn p2_23rei (& self) -> P2_23reiR { P2_23reiR :: new (((self . bits >> 23) & 1) != 0) } # [doc = "Bit 24 - Status of Rising Edge Interrupt for P2\\[24\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] # [inline (always)] pub fn p2_24rei (& self) -> P2_24reiR { P2_24reiR :: new (((self . bits >> 24) & 1) != 0) } # [doc = "Bit 25 - Status of Rising Edge Interrupt for P2\\[25\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] # [inline (always)] pub fn p2_25rei (& self) -> P2_25reiR { P2_25reiR :: new (((self . bits >> 25) & 1) != 0) } # [doc = "Bit 26 - Status of Rising Edge Interrupt for P2\\[26\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] # [inline (always)] pub fn p2_26rei (& self) -> P2_26reiR { P2_26reiR :: new (((self . bits >> 26) & 1) != 0) } # [doc = "Bit 27 - Status of Rising Edge Interrupt for P2\\[27\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] # [inline (always)] pub fn p2_27rei (& self) -> P2_27reiR { P2_27reiR :: new (((self . bits >> 27) & 1) != 0) } # [doc = "Bit 28 - Status of Rising Edge Interrupt for P2\\[28\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] # [inline (always)] pub fn p2_28rei (& self) -> P2_28reiR { P2_28reiR :: new (((self . bits >> 28) & 1) != 0) } # [doc = "Bit 29 - Status of Rising Edge Interrupt for P2\\[29\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] # [inline (always)] pub fn p2_29rei (& self) -> P2_29reiR { P2_29reiR :: new (((self . bits >> 29) & 1) != 0) } # [doc = "Bit 30 - Status of Rising Edge Interrupt for P2\\[30\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] # [inline (always)] pub fn p2_30rei (& self) -> P2_30reiR { P2_30reiR :: new (((self . bits >> 30) & 1) != 0) } # [doc = "Bit 31 - Status of Rising Edge Interrupt for P2\\[31\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."] # [inline (always)] pub fn p2_31rei (& self) -> P2_31reiR { P2_31reiR :: new (((self . bits >> 31) & 1) != 0) } } # [doc = "GPIO Interrupt Status for Rising edge for Port 0.\n\nYou can [`read`](crate::Reg::read) this register and get [`statr2::R`](R). See [API](https://docs.rs/svd2rust/#read--modify--write-api)."] pub struct Statr2Spec ; impl crate :: RegisterSpec for Statr2Spec { type Ux = u32 ; } # [doc = "`read()` method returns [`statr2::R`](R) reader structure"] impl crate :: Readable for Statr2Spec { } # [doc = "`reset()` method sets STATR2 to value 0"] impl crate :: Resettable for Statr2Spec { }
+#[doc = "Register `STATR2` reader"]
+pub type R = crate::R<Statr2Spec>;
+#[doc = "Field `P2_0REI` reader - Status of Rising Edge Interrupt for P2\\[0\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+pub type P2_0reiR = crate::BitReader;
+#[doc = "Field `P2_1REI` reader - Status of Rising Edge Interrupt for P2\\[1\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+pub type P2_1reiR = crate::BitReader;
+#[doc = "Field `P2_2REI` reader - Status of Rising Edge Interrupt for P2\\[2\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+pub type P2_2reiR = crate::BitReader;
+#[doc = "Field `P2_3REI` reader - Status of Rising Edge Interrupt for P2\\[3\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+pub type P2_3reiR = crate::BitReader;
+#[doc = "Field `P2_4REI` reader - Status of Rising Edge Interrupt for P2\\[4\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+pub type P2_4reiR = crate::BitReader;
+#[doc = "Field `P2_5REI` reader - Status of Rising Edge Interrupt for P2\\[5\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+pub type P2_5reiR = crate::BitReader;
+#[doc = "Field `P2_6REI` reader - Status of Rising Edge Interrupt for P2\\[6\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+pub type P2_6reiR = crate::BitReader;
+#[doc = "Field `P2_7REI` reader - Status of Rising Edge Interrupt for P2\\[7\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+pub type P2_7reiR = crate::BitReader;
+#[doc = "Field `P2_8REI` reader - Status of Rising Edge Interrupt for P2\\[8\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+pub type P2_8reiR = crate::BitReader;
+#[doc = "Field `P2_9REI` reader - Status of Rising Edge Interrupt for P2\\[9\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+pub type P2_9reiR = crate::BitReader;
+#[doc = "Field `P2_10REI` reader - Status of Rising Edge Interrupt for P2\\[10\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+pub type P2_10reiR = crate::BitReader;
+#[doc = "Field `P2_11REI` reader - Status of Rising Edge Interrupt for P2\\[11\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+pub type P2_11reiR = crate::BitReader;
+#[doc = "Field `P2_12REI` reader - Status of Rising Edge Interrupt for P2\\[12\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+pub type P2_12reiR = crate::BitReader;
+#[doc = "Field `P2_13REI` reader - Status of Rising Edge Interrupt for P2\\[13\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+pub type P2_13reiR = crate::BitReader;
+#[doc = "Field `P2_14REI` reader - Status of Rising Edge Interrupt for P2\\[14\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+pub type P2_14reiR = crate::BitReader;
+#[doc = "Field `P2_15REI` reader - Status of Rising Edge Interrupt for P2\\[15\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+pub type P2_15reiR = crate::BitReader;
+#[doc = "Field `P2_16REI` reader - Status of Rising Edge Interrupt for P2\\[16\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+pub type P2_16reiR = crate::BitReader;
+#[doc = "Field `P2_17REI` reader - Status of Rising Edge Interrupt for P2\\[17\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+pub type P2_17reiR = crate::BitReader;
+#[doc = "Field `P2_18REI` reader - Status of Rising Edge Interrupt for P2\\[18\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+pub type P2_18reiR = crate::BitReader;
+#[doc = "Field `P2_19REI` reader - Status of Rising Edge Interrupt for P2\\[19\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+pub type P2_19reiR = crate::BitReader;
+#[doc = "Field `P2_20REI` reader - Status of Rising Edge Interrupt for P2\\[20\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+pub type P2_20reiR = crate::BitReader;
+#[doc = "Field `P2_21REI` reader - Status of Rising Edge Interrupt for P2\\[21\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+pub type P2_21reiR = crate::BitReader;
+#[doc = "Field `P2_22REI` reader - Status of Rising Edge Interrupt for P2\\[22\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+pub type P2_22reiR = crate::BitReader;
+#[doc = "Field `P2_23REI` reader - Status of Rising Edge Interrupt for P2\\[23\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+pub type P2_23reiR = crate::BitReader;
+#[doc = "Field `P2_24REI` reader - Status of Rising Edge Interrupt for P2\\[24\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+pub type P2_24reiR = crate::BitReader;
+#[doc = "Field `P2_25REI` reader - Status of Rising Edge Interrupt for P2\\[25\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+pub type P2_25reiR = crate::BitReader;
+#[doc = "Field `P2_26REI` reader - Status of Rising Edge Interrupt for P2\\[26\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+pub type P2_26reiR = crate::BitReader;
+#[doc = "Field `P2_27REI` reader - Status of Rising Edge Interrupt for P2\\[27\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+pub type P2_27reiR = crate::BitReader;
+#[doc = "Field `P2_28REI` reader - Status of Rising Edge Interrupt for P2\\[28\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+pub type P2_28reiR = crate::BitReader;
+#[doc = "Field `P2_29REI` reader - Status of Rising Edge Interrupt for P2\\[29\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+pub type P2_29reiR = crate::BitReader;
+#[doc = "Field `P2_30REI` reader - Status of Rising Edge Interrupt for P2\\[30\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+pub type P2_30reiR = crate::BitReader;
+#[doc = "Field `P2_31REI` reader - Status of Rising Edge Interrupt for P2\\[31\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+pub type P2_31reiR = crate::BitReader;
+impl R {
+    #[doc = "Bit 0 - Status of Rising Edge Interrupt for P2\\[0\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+    #[inline(always)]
+    pub fn p2_0rei(&self) -> P2_0reiR {
+        P2_0reiR::new((self.bits & 1) != 0)
+    }
+    #[doc = "Bit 1 - Status of Rising Edge Interrupt for P2\\[1\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+    #[inline(always)]
+    pub fn p2_1rei(&self) -> P2_1reiR {
+        P2_1reiR::new(((self.bits >> 1) & 1) != 0)
+    }
+    #[doc = "Bit 2 - Status of Rising Edge Interrupt for P2\\[2\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+    #[inline(always)]
+    pub fn p2_2rei(&self) -> P2_2reiR {
+        P2_2reiR::new(((self.bits >> 2) & 1) != 0)
+    }
+    #[doc = "Bit 3 - Status of Rising Edge Interrupt for P2\\[3\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+    #[inline(always)]
+    pub fn p2_3rei(&self) -> P2_3reiR {
+        P2_3reiR::new(((self.bits >> 3) & 1) != 0)
+    }
+    #[doc = "Bit 4 - Status of Rising Edge Interrupt for P2\\[4\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+    #[inline(always)]
+    pub fn p2_4rei(&self) -> P2_4reiR {
+        P2_4reiR::new(((self.bits >> 4) & 1) != 0)
+    }
+    #[doc = "Bit 5 - Status of Rising Edge Interrupt for P2\\[5\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+    #[inline(always)]
+    pub fn p2_5rei(&self) -> P2_5reiR {
+        P2_5reiR::new(((self.bits >> 5) & 1) != 0)
+    }
+    #[doc = "Bit 6 - Status of Rising Edge Interrupt for P2\\[6\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+    #[inline(always)]
+    pub fn p2_6rei(&self) -> P2_6reiR {
+        P2_6reiR::new(((self.bits >> 6) & 1) != 0)
+    }
+    #[doc = "Bit 7 - Status of Rising Edge Interrupt for P2\\[7\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+    #[inline(always)]
+    pub fn p2_7rei(&self) -> P2_7reiR {
+        P2_7reiR::new(((self.bits >> 7) & 1) != 0)
+    }
+    #[doc = "Bit 8 - Status of Rising Edge Interrupt for P2\\[8\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+    #[inline(always)]
+    pub fn p2_8rei(&self) -> P2_8reiR {
+        P2_8reiR::new(((self.bits >> 8) & 1) != 0)
+    }
+    #[doc = "Bit 9 - Status of Rising Edge Interrupt for P2\\[9\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+    #[inline(always)]
+    pub fn p2_9rei(&self) -> P2_9reiR {
+        P2_9reiR::new(((self.bits >> 9) & 1) != 0)
+    }
+    #[doc = "Bit 10 - Status of Rising Edge Interrupt for P2\\[10\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+    #[inline(always)]
+    pub fn p2_10rei(&self) -> P2_10reiR {
+        P2_10reiR::new(((self.bits >> 10) & 1) != 0)
+    }
+    #[doc = "Bit 11 - Status of Rising Edge Interrupt for P2\\[11\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+    #[inline(always)]
+    pub fn p2_11rei(&self) -> P2_11reiR {
+        P2_11reiR::new(((self.bits >> 11) & 1) != 0)
+    }
+    #[doc = "Bit 12 - Status of Rising Edge Interrupt for P2\\[12\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+    #[inline(always)]
+    pub fn p2_12rei(&self) -> P2_12reiR {
+        P2_12reiR::new(((self.bits >> 12) & 1) != 0)
+    }
+    #[doc = "Bit 13 - Status of Rising Edge Interrupt for P2\\[13\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+    #[inline(always)]
+    pub fn p2_13rei(&self) -> P2_13reiR {
+        P2_13reiR::new(((self.bits >> 13) & 1) != 0)
+    }
+    #[doc = "Bit 14 - Status of Rising Edge Interrupt for P2\\[14\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+    #[inline(always)]
+    pub fn p2_14rei(&self) -> P2_14reiR {
+        P2_14reiR::new(((self.bits >> 14) & 1) != 0)
+    }
+    #[doc = "Bit 15 - Status of Rising Edge Interrupt for P2\\[15\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+    #[inline(always)]
+    pub fn p2_15rei(&self) -> P2_15reiR {
+        P2_15reiR::new(((self.bits >> 15) & 1) != 0)
+    }
+    #[doc = "Bit 16 - Status of Rising Edge Interrupt for P2\\[16\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+    #[inline(always)]
+    pub fn p2_16rei(&self) -> P2_16reiR {
+        P2_16reiR::new(((self.bits >> 16) & 1) != 0)
+    }
+    #[doc = "Bit 17 - Status of Rising Edge Interrupt for P2\\[17\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+    #[inline(always)]
+    pub fn p2_17rei(&self) -> P2_17reiR {
+        P2_17reiR::new(((self.bits >> 17) & 1) != 0)
+    }
+    #[doc = "Bit 18 - Status of Rising Edge Interrupt for P2\\[18\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+    #[inline(always)]
+    pub fn p2_18rei(&self) -> P2_18reiR {
+        P2_18reiR::new(((self.bits >> 18) & 1) != 0)
+    }
+    #[doc = "Bit 19 - Status of Rising Edge Interrupt for P2\\[19\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+    #[inline(always)]
+    pub fn p2_19rei(&self) -> P2_19reiR {
+        P2_19reiR::new(((self.bits >> 19) & 1) != 0)
+    }
+    #[doc = "Bit 20 - Status of Rising Edge Interrupt for P2\\[20\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+    #[inline(always)]
+    pub fn p2_20rei(&self) -> P2_20reiR {
+        P2_20reiR::new(((self.bits >> 20) & 1) != 0)
+    }
+    #[doc = "Bit 21 - Status of Rising Edge Interrupt for P2\\[21\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+    #[inline(always)]
+    pub fn p2_21rei(&self) -> P2_21reiR {
+        P2_21reiR::new(((self.bits >> 21) & 1) != 0)
+    }
+    #[doc = "Bit 22 - Status of Rising Edge Interrupt for P2\\[22\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+    #[inline(always)]
+    pub fn p2_22rei(&self) -> P2_22reiR {
+        P2_22reiR::new(((self.bits >> 22) & 1) != 0)
+    }
+    #[doc = "Bit 23 - Status of Rising Edge Interrupt for P2\\[23\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+    #[inline(always)]
+    pub fn p2_23rei(&self) -> P2_23reiR {
+        P2_23reiR::new(((self.bits >> 23) & 1) != 0)
+    }
+    #[doc = "Bit 24 - Status of Rising Edge Interrupt for P2\\[24\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+    #[inline(always)]
+    pub fn p2_24rei(&self) -> P2_24reiR {
+        P2_24reiR::new(((self.bits >> 24) & 1) != 0)
+    }
+    #[doc = "Bit 25 - Status of Rising Edge Interrupt for P2\\[25\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+    #[inline(always)]
+    pub fn p2_25rei(&self) -> P2_25reiR {
+        P2_25reiR::new(((self.bits >> 25) & 1) != 0)
+    }
+    #[doc = "Bit 26 - Status of Rising Edge Interrupt for P2\\[26\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+    #[inline(always)]
+    pub fn p2_26rei(&self) -> P2_26reiR {
+        P2_26reiR::new(((self.bits >> 26) & 1) != 0)
+    }
+    #[doc = "Bit 27 - Status of Rising Edge Interrupt for P2\\[27\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+    #[inline(always)]
+    pub fn p2_27rei(&self) -> P2_27reiR {
+        P2_27reiR::new(((self.bits >> 27) & 1) != 0)
+    }
+    #[doc = "Bit 28 - Status of Rising Edge Interrupt for P2\\[28\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+    #[inline(always)]
+    pub fn p2_28rei(&self) -> P2_28reiR {
+        P2_28reiR::new(((self.bits >> 28) & 1) != 0)
+    }
+    #[doc = "Bit 29 - Status of Rising Edge Interrupt for P2\\[29\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+    #[inline(always)]
+    pub fn p2_29rei(&self) -> P2_29reiR {
+        P2_29reiR::new(((self.bits >> 29) & 1) != 0)
+    }
+    #[doc = "Bit 30 - Status of Rising Edge Interrupt for P2\\[30\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+    #[inline(always)]
+    pub fn p2_30rei(&self) -> P2_30reiR {
+        P2_30reiR::new(((self.bits >> 30) & 1) != 0)
+    }
+    #[doc = "Bit 31 - Status of Rising Edge Interrupt for P2\\[31\\]. 0 = No rising edge detected. 1 = Rising edge interrupt generated."]
+    #[inline(always)]
+    pub fn p2_31rei(&self) -> P2_31reiR {
+        P2_31reiR::new(((self.bits >> 31) & 1) != 0)
+    }
+}
+#[doc = "GPIO Interrupt Status for Rising edge for Port 0.\n\nYou can [`read`](crate::Reg::read) this register and get [`statr2::R`](R). See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct Statr2Spec;
+impl crate::RegisterSpec for Statr2Spec {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [`statr2::R`](R) reader structure"]
+impl crate::Readable for Statr2Spec {}
+#[doc = "`reset()` method sets STATR2 to value 0"]
+impl crate::Resettable for Statr2Spec {}

@@ -1,1 +1,115 @@
-# [doc = "Register `P0_24` reader"] pub type R = crate :: R < P0_24Spec > ; # [doc = "Register `P0_24` writer"] pub type W = crate :: W < P0_24Spec > ; # [doc = "Selects pin function for pin P0\\[24\\]"] # [derive (Clone , Copy , Debug , PartialEq , Eq)] # [repr (u8)] pub enum Enum { # [doc = "0: General purpose digital input/output pin."] P0_24 = 0 , # [doc = "1: A/D converter 0, input 1. When configured as an ADC input, the digital function of the pin must be disabled."] Adc0In1 = 1 , # [doc = "2: Receive Word Select. It is driven by the master and received by the slave. Corresponds to the signal WS in the I2S-bus specification."] I2sRxWs = 2 , # [doc = "3: Capture input for Timer 3, channel 1."] T3Cap1 = 3 , } impl From < Enum > for u8 { # [inline (always)] fn from (variant : Enum) -> Self { variant as _ } } impl crate :: FieldSpec for Enum { type Ux = u8 ; } impl crate :: IsEnum for Enum { } # [doc = "Field `FUNC` reader - Selects pin function for pin P0\\[24\\]"] pub type FuncR = crate :: FieldReader < Enum > ; impl FuncR { # [doc = "Get enumerated values variant"] # [inline (always)] pub const fn variant (& self) -> Option < Enum > { match self . bits { 0 => Some (Enum :: P0_24) , 1 => Some (Enum :: Adc0In1) , 2 => Some (Enum :: I2sRxWs) , 3 => Some (Enum :: T3Cap1) , _ => None , } } # [doc = "General purpose digital input/output pin."] # [inline (always)] pub fn is_p0_24 (& self) -> bool { * self == Enum :: P0_24 } # [doc = "A/D converter 0, input 1. When configured as an ADC input, the digital function of the pin must be disabled."] # [inline (always)] pub fn is_adc0_in_1 (& self) -> bool { * self == Enum :: Adc0In1 } # [doc = "Receive Word Select. It is driven by the master and received by the slave. Corresponds to the signal WS in the I2S-bus specification."] # [inline (always)] pub fn is_i2s_rx_ws (& self) -> bool { * self == Enum :: I2sRxWs } # [doc = "Capture input for Timer 3, channel 1."] # [inline (always)] pub fn is_t3_cap1 (& self) -> bool { * self == Enum :: T3Cap1 } } # [doc = "Field `FUNC` writer - Selects pin function for pin P0\\[24\\]"] pub type FuncW < 'a , REG > = crate :: FieldWriter < 'a , REG , 3 , Enum > ; impl < 'a , REG > FuncW < 'a , REG > where REG : crate :: Writable + crate :: RegisterSpec , REG :: Ux : From < u8 > { # [doc = "General purpose digital input/output pin."] # [inline (always)] pub fn p0_24 (self) -> & 'a mut crate :: W < REG > { self . variant (Enum :: P0_24) } # [doc = "A/D converter 0, input 1. When configured as an ADC input, the digital function of the pin must be disabled."] # [inline (always)] pub fn adc0_in_1 (self) -> & 'a mut crate :: W < REG > { self . variant (Enum :: Adc0In1) } # [doc = "Receive Word Select. It is driven by the master and received by the slave. Corresponds to the signal WS in the I2S-bus specification."] # [inline (always)] pub fn i2s_rx_ws (self) -> & 'a mut crate :: W < REG > { self . variant (Enum :: I2sRxWs) } # [doc = "Capture input for Timer 3, channel 1."] # [inline (always)] pub fn t3_cap1 (self) -> & 'a mut crate :: W < REG > { self . variant (Enum :: T3Cap1) } } impl R { # [doc = "Bits 0:2 - Selects pin function for pin P0\\[24\\]"] # [inline (always)] pub fn func (& self) -> FuncR { FuncR :: new ((self . bits & 7) as u8) } } impl W { # [doc = "Bits 0:2 - Selects pin function for pin P0\\[24\\]"] # [inline (always)] pub fn func (& mut self) -> FuncW < '_ , P0_24Spec > { FuncW :: new (self , 0) } } # [doc = "I/O configuration register for pin P0\\[24\\]\n\nYou can [`read`](crate::Reg::read) this register and get [`p0_24::R`](R). You can [`write_with_zero`](crate::Reg::write_with_zero) this register using [`p0_24::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."] pub struct P0_24Spec ; impl crate :: RegisterSpec for P0_24Spec { type Ux = u32 ; } # [doc = "`read()` method returns [`p0_24::R`](R) reader structure"] impl crate :: Readable for P0_24Spec { } # [doc = "`write(|w| ..)` method takes [`p0_24::W`](W) writer structure"] impl crate :: Writable for P0_24Spec { type Safety = crate :: Unsafe ; }
+#[doc = "Register `P0_24` reader"]
+pub type R = crate::R<P0_24Spec>;
+#[doc = "Register `P0_24` writer"]
+pub type W = crate::W<P0_24Spec>;
+#[doc = "Selects pin function for pin P0\\[24\\]"]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+#[repr(u8)]
+pub enum Enum {
+    #[doc = "0: General purpose digital input/output pin."]
+    P0_24 = 0,
+    #[doc = "1: A/D converter 0, input 1. When configured as an ADC input, the digital function of the pin must be disabled."]
+    Adc0In1 = 1,
+    #[doc = "2: Receive Word Select. It is driven by the master and received by the slave. Corresponds to the signal WS in the I2S-bus specification."]
+    I2sRxWs = 2,
+    #[doc = "3: Capture input for Timer 3, channel 1."]
+    T3Cap1 = 3,
+}
+impl From<Enum> for u8 {
+    #[inline(always)]
+    fn from(variant: Enum) -> Self {
+        variant as _
+    }
+}
+impl crate::FieldSpec for Enum {
+    type Ux = u8;
+}
+impl crate::IsEnum for Enum {}
+#[doc = "Field `FUNC` reader - Selects pin function for pin P0\\[24\\]"]
+pub type FuncR = crate::FieldReader<Enum>;
+impl FuncR {
+    #[doc = "Get enumerated values variant"]
+    #[inline(always)]
+    pub const fn variant(&self) -> Option<Enum> {
+        match self.bits {
+            0 => Some(Enum::P0_24),
+            1 => Some(Enum::Adc0In1),
+            2 => Some(Enum::I2sRxWs),
+            3 => Some(Enum::T3Cap1),
+            _ => None,
+        }
+    }
+    #[doc = "General purpose digital input/output pin."]
+    #[inline(always)]
+    pub fn is_p0_24(&self) -> bool {
+        *self == Enum::P0_24
+    }
+    #[doc = "A/D converter 0, input 1. When configured as an ADC input, the digital function of the pin must be disabled."]
+    #[inline(always)]
+    pub fn is_adc0_in_1(&self) -> bool {
+        *self == Enum::Adc0In1
+    }
+    #[doc = "Receive Word Select. It is driven by the master and received by the slave. Corresponds to the signal WS in the I2S-bus specification."]
+    #[inline(always)]
+    pub fn is_i2s_rx_ws(&self) -> bool {
+        *self == Enum::I2sRxWs
+    }
+    #[doc = "Capture input for Timer 3, channel 1."]
+    #[inline(always)]
+    pub fn is_t3_cap1(&self) -> bool {
+        *self == Enum::T3Cap1
+    }
+}
+#[doc = "Field `FUNC` writer - Selects pin function for pin P0\\[24\\]"]
+pub type FuncW<'a, REG> = crate::FieldWriter<'a, REG, 3, Enum>;
+impl<'a, REG> FuncW<'a, REG>
+where
+    REG: crate::Writable + crate::RegisterSpec,
+    REG::Ux: From<u8>,
+{
+    #[doc = "General purpose digital input/output pin."]
+    #[inline(always)]
+    pub fn p0_24(self) -> &'a mut crate::W<REG> {
+        self.variant(Enum::P0_24)
+    }
+    #[doc = "A/D converter 0, input 1. When configured as an ADC input, the digital function of the pin must be disabled."]
+    #[inline(always)]
+    pub fn adc0_in_1(self) -> &'a mut crate::W<REG> {
+        self.variant(Enum::Adc0In1)
+    }
+    #[doc = "Receive Word Select. It is driven by the master and received by the slave. Corresponds to the signal WS in the I2S-bus specification."]
+    #[inline(always)]
+    pub fn i2s_rx_ws(self) -> &'a mut crate::W<REG> {
+        self.variant(Enum::I2sRxWs)
+    }
+    #[doc = "Capture input for Timer 3, channel 1."]
+    #[inline(always)]
+    pub fn t3_cap1(self) -> &'a mut crate::W<REG> {
+        self.variant(Enum::T3Cap1)
+    }
+}
+impl R {
+    #[doc = "Bits 0:2 - Selects pin function for pin P0\\[24\\]"]
+    #[inline(always)]
+    pub fn func(&self) -> FuncR {
+        FuncR::new((self.bits & 7) as u8)
+    }
+}
+impl W {
+    #[doc = "Bits 0:2 - Selects pin function for pin P0\\[24\\]"]
+    #[inline(always)]
+    pub fn func(&mut self) -> FuncW<'_, P0_24Spec> {
+        FuncW::new(self, 0)
+    }
+}
+#[doc = "I/O configuration register for pin P0\\[24\\]\n\nYou can [`read`](crate::Reg::read) this register and get [`p0_24::R`](R). You can [`write_with_zero`](crate::Reg::write_with_zero) this register using [`p0_24::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct P0_24Spec;
+impl crate::RegisterSpec for P0_24Spec {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [`p0_24::R`](R) reader structure"]
+impl crate::Readable for P0_24Spec {}
+#[doc = "`write(|w| ..)` method takes [`p0_24::W`](W) writer structure"]
+impl crate::Writable for P0_24Spec {
+    type Safety = crate::Unsafe;
+}

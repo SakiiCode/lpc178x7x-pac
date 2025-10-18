@@ -1,1 +1,751 @@
-# [doc = "Register `CON` reader"] pub type R = crate :: R < ConSpec > ; # [doc = "Stops/starts timer channel 0.\n\nValue on reset: 0"] # [derive (Clone , Copy , Debug , PartialEq , Eq)] pub enum Enum { # [doc = "0: Stop."] Stop_ = 0 , # [doc = "1: Run."] Run_ = 1 , } impl From < Enum > for bool { # [inline (always)] fn from (variant : Enum) -> Self { variant as u8 != 0 } } # [doc = "Field `RUN0` reader - Stops/starts timer channel 0."] pub type Run0R = crate :: BitReader < Enum > ; impl Run0R { # [doc = "Get enumerated values variant"] # [inline (always)] pub const fn variant (& self) -> Enum { match self . bits { false => Enum :: Stop_ , true => Enum :: Run_ , } } # [doc = "Stop."] # [inline (always)] pub fn is_stop_ (& self) -> bool { * self == Enum :: Stop_ } # [doc = "Run."] # [inline (always)] pub fn is_run_ (& self) -> bool { * self == Enum :: Run_ } } # [doc = "Edge/center aligned operation for channel 0.\n\nValue on reset: 0"] # [derive (Clone , Copy , Debug , PartialEq , Eq)] pub enum Enum { # [doc = "0: Edge-aligned."] EdgeAligned_ = 0 , # [doc = "1: Center-aligned."] CenterAligned_ = 1 , } impl From < Enum > for bool { # [inline (always)] fn from (variant : Enum) -> Self { variant as u8 != 0 } } # [doc = "Field `CENTER0` reader - Edge/center aligned operation for channel 0."] pub type Center0R = crate :: BitReader < Enum > ; impl Center0R { # [doc = "Get enumerated values variant"] # [inline (always)] pub const fn variant (& self) -> Enum { match self . bits { false => Enum :: EdgeAligned_ , true => Enum :: CenterAligned_ , } } # [doc = "Edge-aligned."] # [inline (always)] pub fn is_edge_aligned_ (& self) -> bool { * self == Enum :: EdgeAligned_ } # [doc = "Center-aligned."] # [inline (always)] pub fn is_center_aligned_ (& self) -> bool { * self == Enum :: CenterAligned_ } } # [doc = "Selects polarity of the MCOA0 and MCOB0 pins.\n\nValue on reset: 0"] # [derive (Clone , Copy , Debug , PartialEq , Eq)] pub enum Enum { # [doc = "0: Passive state is LOW, active state is HIGH."] PassiveStateIsLow = 0 , # [doc = "1: Passive state is HIGH, active state is LOW."] PassiveStateIsHig = 1 , } impl From < Enum > for bool { # [inline (always)] fn from (variant : Enum) -> Self { variant as u8 != 0 } } # [doc = "Field `POLA0` reader - Selects polarity of the MCOA0 and MCOB0 pins."] pub type Pola0R = crate :: BitReader < Enum > ; impl Pola0R { # [doc = "Get enumerated values variant"] # [inline (always)] pub const fn variant (& self) -> Enum { match self . bits { false => Enum :: PassiveStateIsLow , true => Enum :: PassiveStateIsHig , } } # [doc = "Passive state is LOW, active state is HIGH."] # [inline (always)] pub fn is_passive_state_is_low (& self) -> bool { * self == Enum :: PassiveStateIsLow } # [doc = "Passive state is HIGH, active state is LOW."] # [inline (always)] pub fn is_passive_state_is_hig (& self) -> bool { * self == Enum :: PassiveStateIsHig } } # [doc = "Controls the dead-time feature for channel 0.\n\nValue on reset: 0"] # [derive (Clone , Copy , Debug , PartialEq , Eq)] pub enum Enum { # [doc = "0: Dead-time disabled."] DeadTimeDisabled_ = 0 , # [doc = "1: Dead-time enabled."] DeadTimeEnabled_ = 1 , } impl From < Enum > for bool { # [inline (always)] fn from (variant : Enum) -> Self { variant as u8 != 0 } } # [doc = "Field `DTE0` reader - Controls the dead-time feature for channel 0."] pub type Dte0R = crate :: BitReader < Enum > ; impl Dte0R { # [doc = "Get enumerated values variant"] # [inline (always)] pub const fn variant (& self) -> Enum { match self . bits { false => Enum :: DeadTimeDisabled_ , true => Enum :: DeadTimeEnabled_ , } } # [doc = "Dead-time disabled."] # [inline (always)] pub fn is_dead_time_disabled_ (& self) -> bool { * self == Enum :: DeadTimeDisabled_ } # [doc = "Dead-time enabled."] # [inline (always)] pub fn is_dead_time_enabled_ (& self) -> bool { * self == Enum :: DeadTimeEnabled_ } } # [doc = "Enable/disable updates of functional registers for channel 0 (see Section 24.8.2).\n\nValue on reset: 0"] # [derive (Clone , Copy , Debug , PartialEq , Eq)] pub enum Enum { # [doc = "0: Functional registers are updated from the write registers at the end of each PWM cycle."] Update = 0 , # [doc = "1: Functional registers remain the same as long as the timer is running."] Noupdate = 1 , } impl From < Enum > for bool { # [inline (always)] fn from (variant : Enum) -> Self { variant as u8 != 0 } } # [doc = "Field `DISUP0` reader - Enable/disable updates of functional registers for channel 0 (see Section 24.8.2)."] pub type Disup0R = crate :: BitReader < Enum > ; impl Disup0R { # [doc = "Get enumerated values variant"] # [inline (always)] pub const fn variant (& self) -> Enum { match self . bits { false => Enum :: Update , true => Enum :: Noupdate , } } # [doc = "Functional registers are updated from the write registers at the end of each PWM cycle."] # [inline (always)] pub fn is_update (& self) -> bool { * self == Enum :: Update } # [doc = "Functional registers remain the same as long as the timer is running."] # [inline (always)] pub fn is_noupdate (& self) -> bool { * self == Enum :: Noupdate } } # [doc = "Stops/starts timer channel 1.\n\nValue on reset: 0"] # [derive (Clone , Copy , Debug , PartialEq , Eq)] pub enum Enum { # [doc = "0: Stop."] Stop_ = 0 , # [doc = "1: Run."] Run_ = 1 , } impl From < Enum > for bool { # [inline (always)] fn from (variant : Enum) -> Self { variant as u8 != 0 } } # [doc = "Field `RUN1` reader - Stops/starts timer channel 1."] pub type Run1R = crate :: BitReader < Enum > ; impl Run1R { # [doc = "Get enumerated values variant"] # [inline (always)] pub const fn variant (& self) -> Enum { match self . bits { false => Enum :: Stop_ , true => Enum :: Run_ , } } # [doc = "Stop."] # [inline (always)] pub fn is_stop_ (& self) -> bool { * self == Enum :: Stop_ } # [doc = "Run."] # [inline (always)] pub fn is_run_ (& self) -> bool { * self == Enum :: Run_ } } # [doc = "Edge/center aligned operation for channel 1.\n\nValue on reset: 0"] # [derive (Clone , Copy , Debug , PartialEq , Eq)] pub enum Enum { # [doc = "0: Edge-aligned."] EdgeAligned_ = 0 , # [doc = "1: Center-aligned."] CenterAligned_ = 1 , } impl From < Enum > for bool { # [inline (always)] fn from (variant : Enum) -> Self { variant as u8 != 0 } } # [doc = "Field `CENTER1` reader - Edge/center aligned operation for channel 1."] pub type Center1R = crate :: BitReader < Enum > ; impl Center1R { # [doc = "Get enumerated values variant"] # [inline (always)] pub const fn variant (& self) -> Enum { match self . bits { false => Enum :: EdgeAligned_ , true => Enum :: CenterAligned_ , } } # [doc = "Edge-aligned."] # [inline (always)] pub fn is_edge_aligned_ (& self) -> bool { * self == Enum :: EdgeAligned_ } # [doc = "Center-aligned."] # [inline (always)] pub fn is_center_aligned_ (& self) -> bool { * self == Enum :: CenterAligned_ } } # [doc = "Selects polarity of the MCOA1 and MCOB1 pins.\n\nValue on reset: 0"] # [derive (Clone , Copy , Debug , PartialEq , Eq)] pub enum Enum { # [doc = "0: Passive state is LOW, active state is HIGH."] PassiveStateIsLow = 0 , # [doc = "1: Passive state is HIGH, active state is LOW."] PassiveStateIsHig = 1 , } impl From < Enum > for bool { # [inline (always)] fn from (variant : Enum) -> Self { variant as u8 != 0 } } # [doc = "Field `POLA1` reader - Selects polarity of the MCOA1 and MCOB1 pins."] pub type Pola1R = crate :: BitReader < Enum > ; impl Pola1R { # [doc = "Get enumerated values variant"] # [inline (always)] pub const fn variant (& self) -> Enum { match self . bits { false => Enum :: PassiveStateIsLow , true => Enum :: PassiveStateIsHig , } } # [doc = "Passive state is LOW, active state is HIGH."] # [inline (always)] pub fn is_passive_state_is_low (& self) -> bool { * self == Enum :: PassiveStateIsLow } # [doc = "Passive state is HIGH, active state is LOW."] # [inline (always)] pub fn is_passive_state_is_hig (& self) -> bool { * self == Enum :: PassiveStateIsHig } } # [doc = "Controls the dead-time feature for channel 1.\n\nValue on reset: 0"] # [derive (Clone , Copy , Debug , PartialEq , Eq)] pub enum Enum { # [doc = "0: Dead-time disabled."] DeadTimeDisabled_ = 0 , # [doc = "1: Dead-time enabled."] DeadTimeEnabled_ = 1 , } impl From < Enum > for bool { # [inline (always)] fn from (variant : Enum) -> Self { variant as u8 != 0 } } # [doc = "Field `DTE1` reader - Controls the dead-time feature for channel 1."] pub type Dte1R = crate :: BitReader < Enum > ; impl Dte1R { # [doc = "Get enumerated values variant"] # [inline (always)] pub const fn variant (& self) -> Enum { match self . bits { false => Enum :: DeadTimeDisabled_ , true => Enum :: DeadTimeEnabled_ , } } # [doc = "Dead-time disabled."] # [inline (always)] pub fn is_dead_time_disabled_ (& self) -> bool { * self == Enum :: DeadTimeDisabled_ } # [doc = "Dead-time enabled."] # [inline (always)] pub fn is_dead_time_enabled_ (& self) -> bool { * self == Enum :: DeadTimeEnabled_ } } # [doc = "Enable/disable updates of functional registers for channel 1 (see Section 24.8.2).\n\nValue on reset: 0"] # [derive (Clone , Copy , Debug , PartialEq , Eq)] pub enum Enum { # [doc = "0: Functional registers are updated from the write registers at the end of each PWM cycle."] Update = 0 , # [doc = "1: Functional registers remain the same as long as the timer is running."] Noupdate = 1 , } impl From < Enum > for bool { # [inline (always)] fn from (variant : Enum) -> Self { variant as u8 != 0 } } # [doc = "Field `DISUP1` reader - Enable/disable updates of functional registers for channel 1 (see Section 24.8.2)."] pub type Disup1R = crate :: BitReader < Enum > ; impl Disup1R { # [doc = "Get enumerated values variant"] # [inline (always)] pub const fn variant (& self) -> Enum { match self . bits { false => Enum :: Update , true => Enum :: Noupdate , } } # [doc = "Functional registers are updated from the write registers at the end of each PWM cycle."] # [inline (always)] pub fn is_update (& self) -> bool { * self == Enum :: Update } # [doc = "Functional registers remain the same as long as the timer is running."] # [inline (always)] pub fn is_noupdate (& self) -> bool { * self == Enum :: Noupdate } } # [doc = "Stops/starts timer channel 2.\n\nValue on reset: 0"] # [derive (Clone , Copy , Debug , PartialEq , Eq)] pub enum Enum { # [doc = "0: Stop."] Stop_ = 0 , # [doc = "1: Run."] Run_ = 1 , } impl From < Enum > for bool { # [inline (always)] fn from (variant : Enum) -> Self { variant as u8 != 0 } } # [doc = "Field `RUN2` reader - Stops/starts timer channel 2."] pub type Run2R = crate :: BitReader < Enum > ; impl Run2R { # [doc = "Get enumerated values variant"] # [inline (always)] pub const fn variant (& self) -> Enum { match self . bits { false => Enum :: Stop_ , true => Enum :: Run_ , } } # [doc = "Stop."] # [inline (always)] pub fn is_stop_ (& self) -> bool { * self == Enum :: Stop_ } # [doc = "Run."] # [inline (always)] pub fn is_run_ (& self) -> bool { * self == Enum :: Run_ } } # [doc = "Edge/center aligned operation for channel 2.\n\nValue on reset: 0"] # [derive (Clone , Copy , Debug , PartialEq , Eq)] pub enum Enum { # [doc = "0: Edge-aligned."] EdgeAligned_ = 0 , # [doc = "1: Center-aligned."] CenterAligned_ = 1 , } impl From < Enum > for bool { # [inline (always)] fn from (variant : Enum) -> Self { variant as u8 != 0 } } # [doc = "Field `CENTER2` reader - Edge/center aligned operation for channel 2."] pub type Center2R = crate :: BitReader < Enum > ; impl Center2R { # [doc = "Get enumerated values variant"] # [inline (always)] pub const fn variant (& self) -> Enum { match self . bits { false => Enum :: EdgeAligned_ , true => Enum :: CenterAligned_ , } } # [doc = "Edge-aligned."] # [inline (always)] pub fn is_edge_aligned_ (& self) -> bool { * self == Enum :: EdgeAligned_ } # [doc = "Center-aligned."] # [inline (always)] pub fn is_center_aligned_ (& self) -> bool { * self == Enum :: CenterAligned_ } } # [doc = "Selects polarity of the MCOA2 and MCOB2 pins.\n\nValue on reset: 0"] # [derive (Clone , Copy , Debug , PartialEq , Eq)] pub enum Enum { # [doc = "0: Passive state is LOW, active state is HIGH."] PassiveStateIsLow = 0 , # [doc = "1: Passive state is HIGH, active state is LOW."] PassiveStateIsHig = 1 , } impl From < Enum > for bool { # [inline (always)] fn from (variant : Enum) -> Self { variant as u8 != 0 } } # [doc = "Field `POLA2` reader - Selects polarity of the MCOA2 and MCOB2 pins."] pub type Pola2R = crate :: BitReader < Enum > ; impl Pola2R { # [doc = "Get enumerated values variant"] # [inline (always)] pub const fn variant (& self) -> Enum { match self . bits { false => Enum :: PassiveStateIsLow , true => Enum :: PassiveStateIsHig , } } # [doc = "Passive state is LOW, active state is HIGH."] # [inline (always)] pub fn is_passive_state_is_low (& self) -> bool { * self == Enum :: PassiveStateIsLow } # [doc = "Passive state is HIGH, active state is LOW."] # [inline (always)] pub fn is_passive_state_is_hig (& self) -> bool { * self == Enum :: PassiveStateIsHig } } # [doc = "Controls the dead-time feature for channel 1.\n\nValue on reset: 0"] # [derive (Clone , Copy , Debug , PartialEq , Eq)] pub enum Enum { # [doc = "0: Dead-time disabled."] DeadTimeDisabled_ = 0 , # [doc = "1: Dead-time enabled."] DeadTimeEnabled_ = 1 , } impl From < Enum > for bool { # [inline (always)] fn from (variant : Enum) -> Self { variant as u8 != 0 } } # [doc = "Field `DTE2` reader - Controls the dead-time feature for channel 1."] pub type Dte2R = crate :: BitReader < Enum > ; impl Dte2R { # [doc = "Get enumerated values variant"] # [inline (always)] pub const fn variant (& self) -> Enum { match self . bits { false => Enum :: DeadTimeDisabled_ , true => Enum :: DeadTimeEnabled_ , } } # [doc = "Dead-time disabled."] # [inline (always)] pub fn is_dead_time_disabled_ (& self) -> bool { * self == Enum :: DeadTimeDisabled_ } # [doc = "Dead-time enabled."] # [inline (always)] pub fn is_dead_time_enabled_ (& self) -> bool { * self == Enum :: DeadTimeEnabled_ } } # [doc = "Enable/disable updates of functional registers for channel 2 (see Section 24.8.2).\n\nValue on reset: 0"] # [derive (Clone , Copy , Debug , PartialEq , Eq)] pub enum Enum { # [doc = "0: Functional registers are updated from the write registers at the end of each PWM cycle."] Update = 0 , # [doc = "1: Functional registers remain the same as long as the timer is running."] Noupdate = 1 , } impl From < Enum > for bool { # [inline (always)] fn from (variant : Enum) -> Self { variant as u8 != 0 } } # [doc = "Field `DISUP2` reader - Enable/disable updates of functional registers for channel 2 (see Section 24.8.2)."] pub type Disup2R = crate :: BitReader < Enum > ; impl Disup2R { # [doc = "Get enumerated values variant"] # [inline (always)] pub const fn variant (& self) -> Enum { match self . bits { false => Enum :: Update , true => Enum :: Noupdate , } } # [doc = "Functional registers are updated from the write registers at the end of each PWM cycle."] # [inline (always)] pub fn is_update (& self) -> bool { * self == Enum :: Update } # [doc = "Functional registers remain the same as long as the timer is running."] # [inline (always)] pub fn is_noupdate (& self) -> bool { * self == Enum :: Noupdate } } # [doc = "Controls the polarity of the MCOB outputs for all 3 channels. This bit is typically set to 1 only in 3-phase DC mode.\n\nValue on reset: 0"] # [derive (Clone , Copy , Debug , PartialEq , Eq)] pub enum Enum { # [doc = "0: The MCOB outputs have opposite polarity from the MCOA outputs (aside from dead time)."] Opposite = 0 , # [doc = "1: The MCOB outputs have the same basic polarity as the MCOA outputs. (see Section 24.8.6)"] Same = 1 , } impl From < Enum > for bool { # [inline (always)] fn from (variant : Enum) -> Self { variant as u8 != 0 } } # [doc = "Field `INVBDC` reader - Controls the polarity of the MCOB outputs for all 3 channels. This bit is typically set to 1 only in 3-phase DC mode."] pub type InvbdcR = crate :: BitReader < Enum > ; impl InvbdcR { # [doc = "Get enumerated values variant"] # [inline (always)] pub const fn variant (& self) -> Enum { match self . bits { false => Enum :: Opposite , true => Enum :: Same , } } # [doc = "The MCOB outputs have opposite polarity from the MCOA outputs (aside from dead time)."] # [inline (always)] pub fn is_opposite (& self) -> bool { * self == Enum :: Opposite } # [doc = "The MCOB outputs have the same basic polarity as the MCOA outputs. (see Section 24.8.6)"] # [inline (always)] pub fn is_same (& self) -> bool { * self == Enum :: Same } } # [doc = "3-phase AC mode select (see Section 24.8.7).\n\nValue on reset: 0"] # [derive (Clone , Copy , Debug , PartialEq , Eq)] pub enum Enum { # [doc = "0: 3-phase AC-mode off: Each PWM channel uses its own timer-counter and period register."] _3PhaseAcModeOff = 0 , # [doc = "1: 3-phase AC-mode on: All PWM channels use the timer-counter and period register of channel 0."] _3PhaseAcModeOn_ = 1 , } impl From < Enum > for bool { # [inline (always)] fn from (variant : Enum) -> Self { variant as u8 != 0 } } # [doc = "Field `ACMODE` reader - 3-phase AC mode select (see Section 24.8.7)."] pub type AcmodeR = crate :: BitReader < Enum > ; impl AcmodeR { # [doc = "Get enumerated values variant"] # [inline (always)] pub const fn variant (& self) -> Enum { match self . bits { false => Enum :: _3PhaseAcModeOff , true => Enum :: _3PhaseAcModeOn_ , } } # [doc = "3-phase AC-mode off: Each PWM channel uses its own timer-counter and period register."] # [inline (always)] pub fn is_3_phase_ac_mode_off (& self) -> bool { * self == Enum :: _3PhaseAcModeOff } # [doc = "3-phase AC-mode on: All PWM channels use the timer-counter and period register of channel 0."] # [inline (always)] pub fn is_3_phase_ac_mode_on_ (& self) -> bool { * self == Enum :: _3PhaseAcModeOn_ } } # [doc = "3-phase DC mode select (see Section 24.8.6).\n\nValue on reset: 0"] # [derive (Clone , Copy , Debug , PartialEq , Eq)] pub enum Enum { # [doc = "0: 3-phase DC mode off: PWM channels are independent (unless bit ACMODE = 1)"] _3PhaseDcModeOff = 0 , # [doc = "1: 3-phase DC mode on: The internal MCOA0 output is routed through the CP register (i.e. a mask) register to all six PWM outputs."] _3PhaseDcModeOn_ = 1 , } impl From < Enum > for bool { # [inline (always)] fn from (variant : Enum) -> Self { variant as u8 != 0 } } # [doc = "Field `DCMODE` reader - 3-phase DC mode select (see Section 24.8.6)."] pub type DcmodeR = crate :: BitReader < Enum > ; impl DcmodeR { # [doc = "Get enumerated values variant"] # [inline (always)] pub const fn variant (& self) -> Enum { match self . bits { false => Enum :: _3PhaseDcModeOff , true => Enum :: _3PhaseDcModeOn_ , } } # [doc = "3-phase DC mode off: PWM channels are independent (unless bit ACMODE = 1)"] # [inline (always)] pub fn is_3_phase_dc_mode_off (& self) -> bool { * self == Enum :: _3PhaseDcModeOff } # [doc = "3-phase DC mode on: The internal MCOA0 output is routed through the CP register (i.e. a mask) register to all six PWM outputs."] # [inline (always)] pub fn is_3_phase_dc_mode_on_ (& self) -> bool { * self == Enum :: _3PhaseDcModeOn_ } } impl R { # [doc = "Bit 0 - Stops/starts timer channel 0."] # [inline (always)] pub fn run0 (& self) -> Run0R { Run0R :: new ((self . bits & 1) != 0) } # [doc = "Bit 1 - Edge/center aligned operation for channel 0."] # [inline (always)] pub fn center0 (& self) -> Center0R { Center0R :: new (((self . bits >> 1) & 1) != 0) } # [doc = "Bit 2 - Selects polarity of the MCOA0 and MCOB0 pins."] # [inline (always)] pub fn pola0 (& self) -> Pola0R { Pola0R :: new (((self . bits >> 2) & 1) != 0) } # [doc = "Bit 3 - Controls the dead-time feature for channel 0."] # [inline (always)] pub fn dte0 (& self) -> Dte0R { Dte0R :: new (((self . bits >> 3) & 1) != 0) } # [doc = "Bit 4 - Enable/disable updates of functional registers for channel 0 (see Section 24.8.2)."] # [inline (always)] pub fn disup0 (& self) -> Disup0R { Disup0R :: new (((self . bits >> 4) & 1) != 0) } # [doc = "Bit 8 - Stops/starts timer channel 1."] # [inline (always)] pub fn run1 (& self) -> Run1R { Run1R :: new (((self . bits >> 8) & 1) != 0) } # [doc = "Bit 9 - Edge/center aligned operation for channel 1."] # [inline (always)] pub fn center1 (& self) -> Center1R { Center1R :: new (((self . bits >> 9) & 1) != 0) } # [doc = "Bit 10 - Selects polarity of the MCOA1 and MCOB1 pins."] # [inline (always)] pub fn pola1 (& self) -> Pola1R { Pola1R :: new (((self . bits >> 10) & 1) != 0) } # [doc = "Bit 11 - Controls the dead-time feature for channel 1."] # [inline (always)] pub fn dte1 (& self) -> Dte1R { Dte1R :: new (((self . bits >> 11) & 1) != 0) } # [doc = "Bit 12 - Enable/disable updates of functional registers for channel 1 (see Section 24.8.2)."] # [inline (always)] pub fn disup1 (& self) -> Disup1R { Disup1R :: new (((self . bits >> 12) & 1) != 0) } # [doc = "Bit 16 - Stops/starts timer channel 2."] # [inline (always)] pub fn run2 (& self) -> Run2R { Run2R :: new (((self . bits >> 16) & 1) != 0) } # [doc = "Bit 17 - Edge/center aligned operation for channel 2."] # [inline (always)] pub fn center2 (& self) -> Center2R { Center2R :: new (((self . bits >> 17) & 1) != 0) } # [doc = "Bit 18 - Selects polarity of the MCOA2 and MCOB2 pins."] # [inline (always)] pub fn pola2 (& self) -> Pola2R { Pola2R :: new (((self . bits >> 18) & 1) != 0) } # [doc = "Bit 19 - Controls the dead-time feature for channel 1."] # [inline (always)] pub fn dte2 (& self) -> Dte2R { Dte2R :: new (((self . bits >> 19) & 1) != 0) } # [doc = "Bit 20 - Enable/disable updates of functional registers for channel 2 (see Section 24.8.2)."] # [inline (always)] pub fn disup2 (& self) -> Disup2R { Disup2R :: new (((self . bits >> 20) & 1) != 0) } # [doc = "Bit 29 - Controls the polarity of the MCOB outputs for all 3 channels. This bit is typically set to 1 only in 3-phase DC mode."] # [inline (always)] pub fn invbdc (& self) -> InvbdcR { InvbdcR :: new (((self . bits >> 29) & 1) != 0) } # [doc = "Bit 30 - 3-phase AC mode select (see Section 24.8.7)."] # [inline (always)] pub fn acmode (& self) -> AcmodeR { AcmodeR :: new (((self . bits >> 30) & 1) != 0) } # [doc = "Bit 31 - 3-phase DC mode select (see Section 24.8.6)."] # [inline (always)] pub fn dcmode (& self) -> DcmodeR { DcmodeR :: new (((self . bits >> 31) & 1) != 0) } } # [doc = "PWM Control read address\n\nYou can [`read`](crate::Reg::read) this register and get [`con::R`](R). See [API](https://docs.rs/svd2rust/#read--modify--write-api)."] pub struct ConSpec ; impl crate :: RegisterSpec for ConSpec { type Ux = u32 ; } # [doc = "`read()` method returns [`con::R`](R) reader structure"] impl crate :: Readable for ConSpec { } # [doc = "`reset()` method sets CON to value 0"] impl crate :: Resettable for ConSpec { }
+#[doc = "Register `CON` reader"]
+pub type R = crate::R<ConSpec>;
+#[doc = "Stops/starts timer channel 0.\n\nValue on reset: 0"]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+pub enum Enum {
+    #[doc = "0: Stop."]
+    Stop_ = 0,
+    #[doc = "1: Run."]
+    Run_ = 1,
+}
+impl From<Enum> for bool {
+    #[inline(always)]
+    fn from(variant: Enum) -> Self {
+        variant as u8 != 0
+    }
+}
+#[doc = "Field `RUN0` reader - Stops/starts timer channel 0."]
+pub type Run0R = crate::BitReader<Enum>;
+impl Run0R {
+    #[doc = "Get enumerated values variant"]
+    #[inline(always)]
+    pub const fn variant(&self) -> Enum {
+        match self.bits {
+            false => Enum::Stop_,
+            true => Enum::Run_,
+        }
+    }
+    #[doc = "Stop."]
+    #[inline(always)]
+    pub fn is_stop_(&self) -> bool {
+        *self == Enum::Stop_
+    }
+    #[doc = "Run."]
+    #[inline(always)]
+    pub fn is_run_(&self) -> bool {
+        *self == Enum::Run_
+    }
+}
+#[doc = "Edge/center aligned operation for channel 0.\n\nValue on reset: 0"]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+pub enum Enum {
+    #[doc = "0: Edge-aligned."]
+    EdgeAligned_ = 0,
+    #[doc = "1: Center-aligned."]
+    CenterAligned_ = 1,
+}
+impl From<Enum> for bool {
+    #[inline(always)]
+    fn from(variant: Enum) -> Self {
+        variant as u8 != 0
+    }
+}
+#[doc = "Field `CENTER0` reader - Edge/center aligned operation for channel 0."]
+pub type Center0R = crate::BitReader<Enum>;
+impl Center0R {
+    #[doc = "Get enumerated values variant"]
+    #[inline(always)]
+    pub const fn variant(&self) -> Enum {
+        match self.bits {
+            false => Enum::EdgeAligned_,
+            true => Enum::CenterAligned_,
+        }
+    }
+    #[doc = "Edge-aligned."]
+    #[inline(always)]
+    pub fn is_edge_aligned_(&self) -> bool {
+        *self == Enum::EdgeAligned_
+    }
+    #[doc = "Center-aligned."]
+    #[inline(always)]
+    pub fn is_center_aligned_(&self) -> bool {
+        *self == Enum::CenterAligned_
+    }
+}
+#[doc = "Selects polarity of the MCOA0 and MCOB0 pins.\n\nValue on reset: 0"]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+pub enum Enum {
+    #[doc = "0: Passive state is LOW, active state is HIGH."]
+    PassiveStateIsLow = 0,
+    #[doc = "1: Passive state is HIGH, active state is LOW."]
+    PassiveStateIsHig = 1,
+}
+impl From<Enum> for bool {
+    #[inline(always)]
+    fn from(variant: Enum) -> Self {
+        variant as u8 != 0
+    }
+}
+#[doc = "Field `POLA0` reader - Selects polarity of the MCOA0 and MCOB0 pins."]
+pub type Pola0R = crate::BitReader<Enum>;
+impl Pola0R {
+    #[doc = "Get enumerated values variant"]
+    #[inline(always)]
+    pub const fn variant(&self) -> Enum {
+        match self.bits {
+            false => Enum::PassiveStateIsLow,
+            true => Enum::PassiveStateIsHig,
+        }
+    }
+    #[doc = "Passive state is LOW, active state is HIGH."]
+    #[inline(always)]
+    pub fn is_passive_state_is_low(&self) -> bool {
+        *self == Enum::PassiveStateIsLow
+    }
+    #[doc = "Passive state is HIGH, active state is LOW."]
+    #[inline(always)]
+    pub fn is_passive_state_is_hig(&self) -> bool {
+        *self == Enum::PassiveStateIsHig
+    }
+}
+#[doc = "Controls the dead-time feature for channel 0.\n\nValue on reset: 0"]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+pub enum Enum {
+    #[doc = "0: Dead-time disabled."]
+    DeadTimeDisabled_ = 0,
+    #[doc = "1: Dead-time enabled."]
+    DeadTimeEnabled_ = 1,
+}
+impl From<Enum> for bool {
+    #[inline(always)]
+    fn from(variant: Enum) -> Self {
+        variant as u8 != 0
+    }
+}
+#[doc = "Field `DTE0` reader - Controls the dead-time feature for channel 0."]
+pub type Dte0R = crate::BitReader<Enum>;
+impl Dte0R {
+    #[doc = "Get enumerated values variant"]
+    #[inline(always)]
+    pub const fn variant(&self) -> Enum {
+        match self.bits {
+            false => Enum::DeadTimeDisabled_,
+            true => Enum::DeadTimeEnabled_,
+        }
+    }
+    #[doc = "Dead-time disabled."]
+    #[inline(always)]
+    pub fn is_dead_time_disabled_(&self) -> bool {
+        *self == Enum::DeadTimeDisabled_
+    }
+    #[doc = "Dead-time enabled."]
+    #[inline(always)]
+    pub fn is_dead_time_enabled_(&self) -> bool {
+        *self == Enum::DeadTimeEnabled_
+    }
+}
+#[doc = "Enable/disable updates of functional registers for channel 0 (see Section 24.8.2).\n\nValue on reset: 0"]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+pub enum Enum {
+    #[doc = "0: Functional registers are updated from the write registers at the end of each PWM cycle."]
+    Update = 0,
+    #[doc = "1: Functional registers remain the same as long as the timer is running."]
+    Noupdate = 1,
+}
+impl From<Enum> for bool {
+    #[inline(always)]
+    fn from(variant: Enum) -> Self {
+        variant as u8 != 0
+    }
+}
+#[doc = "Field `DISUP0` reader - Enable/disable updates of functional registers for channel 0 (see Section 24.8.2)."]
+pub type Disup0R = crate::BitReader<Enum>;
+impl Disup0R {
+    #[doc = "Get enumerated values variant"]
+    #[inline(always)]
+    pub const fn variant(&self) -> Enum {
+        match self.bits {
+            false => Enum::Update,
+            true => Enum::Noupdate,
+        }
+    }
+    #[doc = "Functional registers are updated from the write registers at the end of each PWM cycle."]
+    #[inline(always)]
+    pub fn is_update(&self) -> bool {
+        *self == Enum::Update
+    }
+    #[doc = "Functional registers remain the same as long as the timer is running."]
+    #[inline(always)]
+    pub fn is_noupdate(&self) -> bool {
+        *self == Enum::Noupdate
+    }
+}
+#[doc = "Stops/starts timer channel 1.\n\nValue on reset: 0"]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+pub enum Enum {
+    #[doc = "0: Stop."]
+    Stop_ = 0,
+    #[doc = "1: Run."]
+    Run_ = 1,
+}
+impl From<Enum> for bool {
+    #[inline(always)]
+    fn from(variant: Enum) -> Self {
+        variant as u8 != 0
+    }
+}
+#[doc = "Field `RUN1` reader - Stops/starts timer channel 1."]
+pub type Run1R = crate::BitReader<Enum>;
+impl Run1R {
+    #[doc = "Get enumerated values variant"]
+    #[inline(always)]
+    pub const fn variant(&self) -> Enum {
+        match self.bits {
+            false => Enum::Stop_,
+            true => Enum::Run_,
+        }
+    }
+    #[doc = "Stop."]
+    #[inline(always)]
+    pub fn is_stop_(&self) -> bool {
+        *self == Enum::Stop_
+    }
+    #[doc = "Run."]
+    #[inline(always)]
+    pub fn is_run_(&self) -> bool {
+        *self == Enum::Run_
+    }
+}
+#[doc = "Edge/center aligned operation for channel 1.\n\nValue on reset: 0"]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+pub enum Enum {
+    #[doc = "0: Edge-aligned."]
+    EdgeAligned_ = 0,
+    #[doc = "1: Center-aligned."]
+    CenterAligned_ = 1,
+}
+impl From<Enum> for bool {
+    #[inline(always)]
+    fn from(variant: Enum) -> Self {
+        variant as u8 != 0
+    }
+}
+#[doc = "Field `CENTER1` reader - Edge/center aligned operation for channel 1."]
+pub type Center1R = crate::BitReader<Enum>;
+impl Center1R {
+    #[doc = "Get enumerated values variant"]
+    #[inline(always)]
+    pub const fn variant(&self) -> Enum {
+        match self.bits {
+            false => Enum::EdgeAligned_,
+            true => Enum::CenterAligned_,
+        }
+    }
+    #[doc = "Edge-aligned."]
+    #[inline(always)]
+    pub fn is_edge_aligned_(&self) -> bool {
+        *self == Enum::EdgeAligned_
+    }
+    #[doc = "Center-aligned."]
+    #[inline(always)]
+    pub fn is_center_aligned_(&self) -> bool {
+        *self == Enum::CenterAligned_
+    }
+}
+#[doc = "Selects polarity of the MCOA1 and MCOB1 pins.\n\nValue on reset: 0"]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+pub enum Enum {
+    #[doc = "0: Passive state is LOW, active state is HIGH."]
+    PassiveStateIsLow = 0,
+    #[doc = "1: Passive state is HIGH, active state is LOW."]
+    PassiveStateIsHig = 1,
+}
+impl From<Enum> for bool {
+    #[inline(always)]
+    fn from(variant: Enum) -> Self {
+        variant as u8 != 0
+    }
+}
+#[doc = "Field `POLA1` reader - Selects polarity of the MCOA1 and MCOB1 pins."]
+pub type Pola1R = crate::BitReader<Enum>;
+impl Pola1R {
+    #[doc = "Get enumerated values variant"]
+    #[inline(always)]
+    pub const fn variant(&self) -> Enum {
+        match self.bits {
+            false => Enum::PassiveStateIsLow,
+            true => Enum::PassiveStateIsHig,
+        }
+    }
+    #[doc = "Passive state is LOW, active state is HIGH."]
+    #[inline(always)]
+    pub fn is_passive_state_is_low(&self) -> bool {
+        *self == Enum::PassiveStateIsLow
+    }
+    #[doc = "Passive state is HIGH, active state is LOW."]
+    #[inline(always)]
+    pub fn is_passive_state_is_hig(&self) -> bool {
+        *self == Enum::PassiveStateIsHig
+    }
+}
+#[doc = "Controls the dead-time feature for channel 1.\n\nValue on reset: 0"]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+pub enum Enum {
+    #[doc = "0: Dead-time disabled."]
+    DeadTimeDisabled_ = 0,
+    #[doc = "1: Dead-time enabled."]
+    DeadTimeEnabled_ = 1,
+}
+impl From<Enum> for bool {
+    #[inline(always)]
+    fn from(variant: Enum) -> Self {
+        variant as u8 != 0
+    }
+}
+#[doc = "Field `DTE1` reader - Controls the dead-time feature for channel 1."]
+pub type Dte1R = crate::BitReader<Enum>;
+impl Dte1R {
+    #[doc = "Get enumerated values variant"]
+    #[inline(always)]
+    pub const fn variant(&self) -> Enum {
+        match self.bits {
+            false => Enum::DeadTimeDisabled_,
+            true => Enum::DeadTimeEnabled_,
+        }
+    }
+    #[doc = "Dead-time disabled."]
+    #[inline(always)]
+    pub fn is_dead_time_disabled_(&self) -> bool {
+        *self == Enum::DeadTimeDisabled_
+    }
+    #[doc = "Dead-time enabled."]
+    #[inline(always)]
+    pub fn is_dead_time_enabled_(&self) -> bool {
+        *self == Enum::DeadTimeEnabled_
+    }
+}
+#[doc = "Enable/disable updates of functional registers for channel 1 (see Section 24.8.2).\n\nValue on reset: 0"]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+pub enum Enum {
+    #[doc = "0: Functional registers are updated from the write registers at the end of each PWM cycle."]
+    Update = 0,
+    #[doc = "1: Functional registers remain the same as long as the timer is running."]
+    Noupdate = 1,
+}
+impl From<Enum> for bool {
+    #[inline(always)]
+    fn from(variant: Enum) -> Self {
+        variant as u8 != 0
+    }
+}
+#[doc = "Field `DISUP1` reader - Enable/disable updates of functional registers for channel 1 (see Section 24.8.2)."]
+pub type Disup1R = crate::BitReader<Enum>;
+impl Disup1R {
+    #[doc = "Get enumerated values variant"]
+    #[inline(always)]
+    pub const fn variant(&self) -> Enum {
+        match self.bits {
+            false => Enum::Update,
+            true => Enum::Noupdate,
+        }
+    }
+    #[doc = "Functional registers are updated from the write registers at the end of each PWM cycle."]
+    #[inline(always)]
+    pub fn is_update(&self) -> bool {
+        *self == Enum::Update
+    }
+    #[doc = "Functional registers remain the same as long as the timer is running."]
+    #[inline(always)]
+    pub fn is_noupdate(&self) -> bool {
+        *self == Enum::Noupdate
+    }
+}
+#[doc = "Stops/starts timer channel 2.\n\nValue on reset: 0"]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+pub enum Enum {
+    #[doc = "0: Stop."]
+    Stop_ = 0,
+    #[doc = "1: Run."]
+    Run_ = 1,
+}
+impl From<Enum> for bool {
+    #[inline(always)]
+    fn from(variant: Enum) -> Self {
+        variant as u8 != 0
+    }
+}
+#[doc = "Field `RUN2` reader - Stops/starts timer channel 2."]
+pub type Run2R = crate::BitReader<Enum>;
+impl Run2R {
+    #[doc = "Get enumerated values variant"]
+    #[inline(always)]
+    pub const fn variant(&self) -> Enum {
+        match self.bits {
+            false => Enum::Stop_,
+            true => Enum::Run_,
+        }
+    }
+    #[doc = "Stop."]
+    #[inline(always)]
+    pub fn is_stop_(&self) -> bool {
+        *self == Enum::Stop_
+    }
+    #[doc = "Run."]
+    #[inline(always)]
+    pub fn is_run_(&self) -> bool {
+        *self == Enum::Run_
+    }
+}
+#[doc = "Edge/center aligned operation for channel 2.\n\nValue on reset: 0"]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+pub enum Enum {
+    #[doc = "0: Edge-aligned."]
+    EdgeAligned_ = 0,
+    #[doc = "1: Center-aligned."]
+    CenterAligned_ = 1,
+}
+impl From<Enum> for bool {
+    #[inline(always)]
+    fn from(variant: Enum) -> Self {
+        variant as u8 != 0
+    }
+}
+#[doc = "Field `CENTER2` reader - Edge/center aligned operation for channel 2."]
+pub type Center2R = crate::BitReader<Enum>;
+impl Center2R {
+    #[doc = "Get enumerated values variant"]
+    #[inline(always)]
+    pub const fn variant(&self) -> Enum {
+        match self.bits {
+            false => Enum::EdgeAligned_,
+            true => Enum::CenterAligned_,
+        }
+    }
+    #[doc = "Edge-aligned."]
+    #[inline(always)]
+    pub fn is_edge_aligned_(&self) -> bool {
+        *self == Enum::EdgeAligned_
+    }
+    #[doc = "Center-aligned."]
+    #[inline(always)]
+    pub fn is_center_aligned_(&self) -> bool {
+        *self == Enum::CenterAligned_
+    }
+}
+#[doc = "Selects polarity of the MCOA2 and MCOB2 pins.\n\nValue on reset: 0"]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+pub enum Enum {
+    #[doc = "0: Passive state is LOW, active state is HIGH."]
+    PassiveStateIsLow = 0,
+    #[doc = "1: Passive state is HIGH, active state is LOW."]
+    PassiveStateIsHig = 1,
+}
+impl From<Enum> for bool {
+    #[inline(always)]
+    fn from(variant: Enum) -> Self {
+        variant as u8 != 0
+    }
+}
+#[doc = "Field `POLA2` reader - Selects polarity of the MCOA2 and MCOB2 pins."]
+pub type Pola2R = crate::BitReader<Enum>;
+impl Pola2R {
+    #[doc = "Get enumerated values variant"]
+    #[inline(always)]
+    pub const fn variant(&self) -> Enum {
+        match self.bits {
+            false => Enum::PassiveStateIsLow,
+            true => Enum::PassiveStateIsHig,
+        }
+    }
+    #[doc = "Passive state is LOW, active state is HIGH."]
+    #[inline(always)]
+    pub fn is_passive_state_is_low(&self) -> bool {
+        *self == Enum::PassiveStateIsLow
+    }
+    #[doc = "Passive state is HIGH, active state is LOW."]
+    #[inline(always)]
+    pub fn is_passive_state_is_hig(&self) -> bool {
+        *self == Enum::PassiveStateIsHig
+    }
+}
+#[doc = "Controls the dead-time feature for channel 1.\n\nValue on reset: 0"]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+pub enum Enum {
+    #[doc = "0: Dead-time disabled."]
+    DeadTimeDisabled_ = 0,
+    #[doc = "1: Dead-time enabled."]
+    DeadTimeEnabled_ = 1,
+}
+impl From<Enum> for bool {
+    #[inline(always)]
+    fn from(variant: Enum) -> Self {
+        variant as u8 != 0
+    }
+}
+#[doc = "Field `DTE2` reader - Controls the dead-time feature for channel 1."]
+pub type Dte2R = crate::BitReader<Enum>;
+impl Dte2R {
+    #[doc = "Get enumerated values variant"]
+    #[inline(always)]
+    pub const fn variant(&self) -> Enum {
+        match self.bits {
+            false => Enum::DeadTimeDisabled_,
+            true => Enum::DeadTimeEnabled_,
+        }
+    }
+    #[doc = "Dead-time disabled."]
+    #[inline(always)]
+    pub fn is_dead_time_disabled_(&self) -> bool {
+        *self == Enum::DeadTimeDisabled_
+    }
+    #[doc = "Dead-time enabled."]
+    #[inline(always)]
+    pub fn is_dead_time_enabled_(&self) -> bool {
+        *self == Enum::DeadTimeEnabled_
+    }
+}
+#[doc = "Enable/disable updates of functional registers for channel 2 (see Section 24.8.2).\n\nValue on reset: 0"]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+pub enum Enum {
+    #[doc = "0: Functional registers are updated from the write registers at the end of each PWM cycle."]
+    Update = 0,
+    #[doc = "1: Functional registers remain the same as long as the timer is running."]
+    Noupdate = 1,
+}
+impl From<Enum> for bool {
+    #[inline(always)]
+    fn from(variant: Enum) -> Self {
+        variant as u8 != 0
+    }
+}
+#[doc = "Field `DISUP2` reader - Enable/disable updates of functional registers for channel 2 (see Section 24.8.2)."]
+pub type Disup2R = crate::BitReader<Enum>;
+impl Disup2R {
+    #[doc = "Get enumerated values variant"]
+    #[inline(always)]
+    pub const fn variant(&self) -> Enum {
+        match self.bits {
+            false => Enum::Update,
+            true => Enum::Noupdate,
+        }
+    }
+    #[doc = "Functional registers are updated from the write registers at the end of each PWM cycle."]
+    #[inline(always)]
+    pub fn is_update(&self) -> bool {
+        *self == Enum::Update
+    }
+    #[doc = "Functional registers remain the same as long as the timer is running."]
+    #[inline(always)]
+    pub fn is_noupdate(&self) -> bool {
+        *self == Enum::Noupdate
+    }
+}
+#[doc = "Controls the polarity of the MCOB outputs for all 3 channels. This bit is typically set to 1 only in 3-phase DC mode.\n\nValue on reset: 0"]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+pub enum Enum {
+    #[doc = "0: The MCOB outputs have opposite polarity from the MCOA outputs (aside from dead time)."]
+    Opposite = 0,
+    #[doc = "1: The MCOB outputs have the same basic polarity as the MCOA outputs. (see Section 24.8.6)"]
+    Same = 1,
+}
+impl From<Enum> for bool {
+    #[inline(always)]
+    fn from(variant: Enum) -> Self {
+        variant as u8 != 0
+    }
+}
+#[doc = "Field `INVBDC` reader - Controls the polarity of the MCOB outputs for all 3 channels. This bit is typically set to 1 only in 3-phase DC mode."]
+pub type InvbdcR = crate::BitReader<Enum>;
+impl InvbdcR {
+    #[doc = "Get enumerated values variant"]
+    #[inline(always)]
+    pub const fn variant(&self) -> Enum {
+        match self.bits {
+            false => Enum::Opposite,
+            true => Enum::Same,
+        }
+    }
+    #[doc = "The MCOB outputs have opposite polarity from the MCOA outputs (aside from dead time)."]
+    #[inline(always)]
+    pub fn is_opposite(&self) -> bool {
+        *self == Enum::Opposite
+    }
+    #[doc = "The MCOB outputs have the same basic polarity as the MCOA outputs. (see Section 24.8.6)"]
+    #[inline(always)]
+    pub fn is_same(&self) -> bool {
+        *self == Enum::Same
+    }
+}
+#[doc = "3-phase AC mode select (see Section 24.8.7).\n\nValue on reset: 0"]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+pub enum Enum {
+    #[doc = "0: 3-phase AC-mode off: Each PWM channel uses its own timer-counter and period register."]
+    _3PhaseAcModeOff = 0,
+    #[doc = "1: 3-phase AC-mode on: All PWM channels use the timer-counter and period register of channel 0."]
+    _3PhaseAcModeOn_ = 1,
+}
+impl From<Enum> for bool {
+    #[inline(always)]
+    fn from(variant: Enum) -> Self {
+        variant as u8 != 0
+    }
+}
+#[doc = "Field `ACMODE` reader - 3-phase AC mode select (see Section 24.8.7)."]
+pub type AcmodeR = crate::BitReader<Enum>;
+impl AcmodeR {
+    #[doc = "Get enumerated values variant"]
+    #[inline(always)]
+    pub const fn variant(&self) -> Enum {
+        match self.bits {
+            false => Enum::_3PhaseAcModeOff,
+            true => Enum::_3PhaseAcModeOn_,
+        }
+    }
+    #[doc = "3-phase AC-mode off: Each PWM channel uses its own timer-counter and period register."]
+    #[inline(always)]
+    pub fn is_3_phase_ac_mode_off(&self) -> bool {
+        *self == Enum::_3PhaseAcModeOff
+    }
+    #[doc = "3-phase AC-mode on: All PWM channels use the timer-counter and period register of channel 0."]
+    #[inline(always)]
+    pub fn is_3_phase_ac_mode_on_(&self) -> bool {
+        *self == Enum::_3PhaseAcModeOn_
+    }
+}
+#[doc = "3-phase DC mode select (see Section 24.8.6).\n\nValue on reset: 0"]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+pub enum Enum {
+    #[doc = "0: 3-phase DC mode off: PWM channels are independent (unless bit ACMODE = 1)"]
+    _3PhaseDcModeOff = 0,
+    #[doc = "1: 3-phase DC mode on: The internal MCOA0 output is routed through the CP register (i.e. a mask) register to all six PWM outputs."]
+    _3PhaseDcModeOn_ = 1,
+}
+impl From<Enum> for bool {
+    #[inline(always)]
+    fn from(variant: Enum) -> Self {
+        variant as u8 != 0
+    }
+}
+#[doc = "Field `DCMODE` reader - 3-phase DC mode select (see Section 24.8.6)."]
+pub type DcmodeR = crate::BitReader<Enum>;
+impl DcmodeR {
+    #[doc = "Get enumerated values variant"]
+    #[inline(always)]
+    pub const fn variant(&self) -> Enum {
+        match self.bits {
+            false => Enum::_3PhaseDcModeOff,
+            true => Enum::_3PhaseDcModeOn_,
+        }
+    }
+    #[doc = "3-phase DC mode off: PWM channels are independent (unless bit ACMODE = 1)"]
+    #[inline(always)]
+    pub fn is_3_phase_dc_mode_off(&self) -> bool {
+        *self == Enum::_3PhaseDcModeOff
+    }
+    #[doc = "3-phase DC mode on: The internal MCOA0 output is routed through the CP register (i.e. a mask) register to all six PWM outputs."]
+    #[inline(always)]
+    pub fn is_3_phase_dc_mode_on_(&self) -> bool {
+        *self == Enum::_3PhaseDcModeOn_
+    }
+}
+impl R {
+    #[doc = "Bit 0 - Stops/starts timer channel 0."]
+    #[inline(always)]
+    pub fn run0(&self) -> Run0R {
+        Run0R::new((self.bits & 1) != 0)
+    }
+    #[doc = "Bit 1 - Edge/center aligned operation for channel 0."]
+    #[inline(always)]
+    pub fn center0(&self) -> Center0R {
+        Center0R::new(((self.bits >> 1) & 1) != 0)
+    }
+    #[doc = "Bit 2 - Selects polarity of the MCOA0 and MCOB0 pins."]
+    #[inline(always)]
+    pub fn pola0(&self) -> Pola0R {
+        Pola0R::new(((self.bits >> 2) & 1) != 0)
+    }
+    #[doc = "Bit 3 - Controls the dead-time feature for channel 0."]
+    #[inline(always)]
+    pub fn dte0(&self) -> Dte0R {
+        Dte0R::new(((self.bits >> 3) & 1) != 0)
+    }
+    #[doc = "Bit 4 - Enable/disable updates of functional registers for channel 0 (see Section 24.8.2)."]
+    #[inline(always)]
+    pub fn disup0(&self) -> Disup0R {
+        Disup0R::new(((self.bits >> 4) & 1) != 0)
+    }
+    #[doc = "Bit 8 - Stops/starts timer channel 1."]
+    #[inline(always)]
+    pub fn run1(&self) -> Run1R {
+        Run1R::new(((self.bits >> 8) & 1) != 0)
+    }
+    #[doc = "Bit 9 - Edge/center aligned operation for channel 1."]
+    #[inline(always)]
+    pub fn center1(&self) -> Center1R {
+        Center1R::new(((self.bits >> 9) & 1) != 0)
+    }
+    #[doc = "Bit 10 - Selects polarity of the MCOA1 and MCOB1 pins."]
+    #[inline(always)]
+    pub fn pola1(&self) -> Pola1R {
+        Pola1R::new(((self.bits >> 10) & 1) != 0)
+    }
+    #[doc = "Bit 11 - Controls the dead-time feature for channel 1."]
+    #[inline(always)]
+    pub fn dte1(&self) -> Dte1R {
+        Dte1R::new(((self.bits >> 11) & 1) != 0)
+    }
+    #[doc = "Bit 12 - Enable/disable updates of functional registers for channel 1 (see Section 24.8.2)."]
+    #[inline(always)]
+    pub fn disup1(&self) -> Disup1R {
+        Disup1R::new(((self.bits >> 12) & 1) != 0)
+    }
+    #[doc = "Bit 16 - Stops/starts timer channel 2."]
+    #[inline(always)]
+    pub fn run2(&self) -> Run2R {
+        Run2R::new(((self.bits >> 16) & 1) != 0)
+    }
+    #[doc = "Bit 17 - Edge/center aligned operation for channel 2."]
+    #[inline(always)]
+    pub fn center2(&self) -> Center2R {
+        Center2R::new(((self.bits >> 17) & 1) != 0)
+    }
+    #[doc = "Bit 18 - Selects polarity of the MCOA2 and MCOB2 pins."]
+    #[inline(always)]
+    pub fn pola2(&self) -> Pola2R {
+        Pola2R::new(((self.bits >> 18) & 1) != 0)
+    }
+    #[doc = "Bit 19 - Controls the dead-time feature for channel 1."]
+    #[inline(always)]
+    pub fn dte2(&self) -> Dte2R {
+        Dte2R::new(((self.bits >> 19) & 1) != 0)
+    }
+    #[doc = "Bit 20 - Enable/disable updates of functional registers for channel 2 (see Section 24.8.2)."]
+    #[inline(always)]
+    pub fn disup2(&self) -> Disup2R {
+        Disup2R::new(((self.bits >> 20) & 1) != 0)
+    }
+    #[doc = "Bit 29 - Controls the polarity of the MCOB outputs for all 3 channels. This bit is typically set to 1 only in 3-phase DC mode."]
+    #[inline(always)]
+    pub fn invbdc(&self) -> InvbdcR {
+        InvbdcR::new(((self.bits >> 29) & 1) != 0)
+    }
+    #[doc = "Bit 30 - 3-phase AC mode select (see Section 24.8.7)."]
+    #[inline(always)]
+    pub fn acmode(&self) -> AcmodeR {
+        AcmodeR::new(((self.bits >> 30) & 1) != 0)
+    }
+    #[doc = "Bit 31 - 3-phase DC mode select (see Section 24.8.6)."]
+    #[inline(always)]
+    pub fn dcmode(&self) -> DcmodeR {
+        DcmodeR::new(((self.bits >> 31) & 1) != 0)
+    }
+}
+#[doc = "PWM Control read address\n\nYou can [`read`](crate::Reg::read) this register and get [`con::R`](R). See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct ConSpec;
+impl crate::RegisterSpec for ConSpec {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [`con::R`](R) reader structure"]
+impl crate::Readable for ConSpec {}
+#[doc = "`reset()` method sets CON to value 0"]
+impl crate::Resettable for ConSpec {}

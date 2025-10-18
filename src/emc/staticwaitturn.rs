@@ -1,1 +1,37 @@
-# [doc = "Register `STATICWAITTURN%s` reader"] pub type R = crate :: R < StaticwaitturnSpec > ; # [doc = "Register `STATICWAITTURN%s` writer"] pub type W = crate :: W < StaticwaitturnSpec > ; # [doc = "Field `WAITTURN` reader - Bus turn-around cycles. 0x0 - 0xE = (n + 1) CCLK turn-around cycles. Bus turn-around time is (WAITTURN + 1) x tCCLK. 0xF = 16 CCLK turn-around cycles (POR reset value)."] pub type WaitturnR = crate :: FieldReader ; # [doc = "Field `WAITTURN` writer - Bus turn-around cycles. 0x0 - 0xE = (n + 1) CCLK turn-around cycles. Bus turn-around time is (WAITTURN + 1) x tCCLK. 0xF = 16 CCLK turn-around cycles (POR reset value)."] pub type WaitturnW < 'a , REG > = crate :: FieldWriter < 'a , REG , 4 > ; impl R { # [doc = "Bits 0:3 - Bus turn-around cycles. 0x0 - 0xE = (n + 1) CCLK turn-around cycles. Bus turn-around time is (WAITTURN + 1) x tCCLK. 0xF = 16 CCLK turn-around cycles (POR reset value)."] # [inline (always)] pub fn waitturn (& self) -> WaitturnR { WaitturnR :: new ((self . bits & 0x0f) as u8) } } impl W { # [doc = "Bits 0:3 - Bus turn-around cycles. 0x0 - 0xE = (n + 1) CCLK turn-around cycles. Bus turn-around time is (WAITTURN + 1) x tCCLK. 0xF = 16 CCLK turn-around cycles (POR reset value)."] # [inline (always)] pub fn waitturn (& mut self) -> WaitturnW < '_ , StaticwaitturnSpec > { WaitturnW :: new (self , 0) } } # [doc = "Number of bus turnaround cycles EMC_CS0.\n\nYou can [`read`](crate::Reg::read) this register and get [`staticwaitturn::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`staticwaitturn::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."] pub struct StaticwaitturnSpec ; impl crate :: RegisterSpec for StaticwaitturnSpec { type Ux = u32 ; } # [doc = "`read()` method returns [`staticwaitturn::R`](R) reader structure"] impl crate :: Readable for StaticwaitturnSpec { } # [doc = "`write(|w| ..)` method takes [`staticwaitturn::W`](W) writer structure"] impl crate :: Writable for StaticwaitturnSpec { type Safety = crate :: Unsafe ; } # [doc = "`reset()` method sets STATICWAITTURN%s to value 0x0f"] impl crate :: Resettable for StaticwaitturnSpec { const RESET_VALUE : u32 = 0x0f ; }
+#[doc = "Register `STATICWAITTURN%s` reader"]
+pub type R = crate::R<StaticwaitturnSpec>;
+#[doc = "Register `STATICWAITTURN%s` writer"]
+pub type W = crate::W<StaticwaitturnSpec>;
+#[doc = "Field `WAITTURN` reader - Bus turn-around cycles. 0x0 - 0xE = (n + 1) CCLK turn-around cycles. Bus turn-around time is (WAITTURN + 1) x tCCLK. 0xF = 16 CCLK turn-around cycles (POR reset value)."]
+pub type WaitturnR = crate::FieldReader;
+#[doc = "Field `WAITTURN` writer - Bus turn-around cycles. 0x0 - 0xE = (n + 1) CCLK turn-around cycles. Bus turn-around time is (WAITTURN + 1) x tCCLK. 0xF = 16 CCLK turn-around cycles (POR reset value)."]
+pub type WaitturnW<'a, REG> = crate::FieldWriter<'a, REG, 4>;
+impl R {
+    #[doc = "Bits 0:3 - Bus turn-around cycles. 0x0 - 0xE = (n + 1) CCLK turn-around cycles. Bus turn-around time is (WAITTURN + 1) x tCCLK. 0xF = 16 CCLK turn-around cycles (POR reset value)."]
+    #[inline(always)]
+    pub fn waitturn(&self) -> WaitturnR {
+        WaitturnR::new((self.bits & 0x0f) as u8)
+    }
+}
+impl W {
+    #[doc = "Bits 0:3 - Bus turn-around cycles. 0x0 - 0xE = (n + 1) CCLK turn-around cycles. Bus turn-around time is (WAITTURN + 1) x tCCLK. 0xF = 16 CCLK turn-around cycles (POR reset value)."]
+    #[inline(always)]
+    pub fn waitturn(&mut self) -> WaitturnW<'_, StaticwaitturnSpec> {
+        WaitturnW::new(self, 0)
+    }
+}
+#[doc = "Number of bus turnaround cycles EMC_CS0.\n\nYou can [`read`](crate::Reg::read) this register and get [`staticwaitturn::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`staticwaitturn::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct StaticwaitturnSpec;
+impl crate::RegisterSpec for StaticwaitturnSpec {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [`staticwaitturn::R`](R) reader structure"]
+impl crate::Readable for StaticwaitturnSpec {}
+#[doc = "`write(|w| ..)` method takes [`staticwaitturn::W`](W) writer structure"]
+impl crate::Writable for StaticwaitturnSpec {
+    type Safety = crate::Unsafe;
+}
+#[doc = "`reset()` method sets STATICWAITTURN%s to value 0x0f"]
+impl crate::Resettable for StaticwaitturnSpec {
+    const RESET_VALUE: u32 = 0x0f;
+}

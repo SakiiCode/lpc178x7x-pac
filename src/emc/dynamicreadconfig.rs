@@ -1,1 +1,117 @@
-# [doc = "Register `DYNAMICREADCONFIG` reader"] pub type R = crate :: R < DynamicreadconfigSpec > ; # [doc = "Register `DYNAMICREADCONFIG` writer"] pub type W = crate :: W < DynamicreadconfigSpec > ; # [doc = "Read data strategy\n\nValue on reset: 0"] # [derive (Clone , Copy , Debug , PartialEq , Eq)] # [repr (u8)] pub enum Enum { # [doc = "0: Clock out delayed strategy, using CLKOUT (command not delayed, clock out delayed). POR reset value."] ClockOutDelayedSt = 0 , # [doc = "1: Command delayed strategy, using EMCCLKDELAY (command delayed, clock out not delayed)."] CommandDelayedStra = 1 , # [doc = "2: Command delayed strategy plus one clock cycle, using EMCCLKDELAY (command delayed, clock out not delayed)."] CommandDelayedStra = 2 , # [doc = "3: Command delayed strategy plus two clock cycles, using EMCCLKDELAY (command delayed, clock out not delayed)."] CommandDelayedStra = 3 , } impl From < Enum > for u8 { # [inline (always)] fn from (variant : Enum) -> Self { variant as _ } } impl crate :: FieldSpec for Enum { type Ux = u8 ; } impl crate :: IsEnum for Enum { } # [doc = "Field `RD` reader - Read data strategy"] pub type RdR = crate :: FieldReader < Enum > ; impl RdR { # [doc = "Get enumerated values variant"] # [inline (always)] pub const fn variant (& self) -> Enum { match self . bits { 0 => Enum :: ClockOutDelayedSt , 1 => Enum :: CommandDelayedStra , 2 => Enum :: CommandDelayedStra , 3 => Enum :: CommandDelayedStra , _ => unreachable ! () , } } # [doc = "Clock out delayed strategy, using CLKOUT (command not delayed, clock out delayed). POR reset value."] # [inline (always)] pub fn is_clock_out_delayed_st (& self) -> bool { * self == Enum :: ClockOutDelayedSt } # [doc = "Command delayed strategy, using EMCCLKDELAY (command delayed, clock out not delayed)."] # [inline (always)] pub fn is_command_delayed_stra (& self) -> bool { * self == Enum :: CommandDelayedStra } # [doc = "Command delayed strategy plus one clock cycle, using EMCCLKDELAY (command delayed, clock out not delayed)."] # [inline (always)] pub fn is_command_delayed_stra (& self) -> bool { * self == Enum :: CommandDelayedStra } # [doc = "Command delayed strategy plus two clock cycles, using EMCCLKDELAY (command delayed, clock out not delayed)."] # [inline (always)] pub fn is_command_delayed_stra (& self) -> bool { * self == Enum :: CommandDelayedStra } } # [doc = "Field `RD` writer - Read data strategy"] pub type RdW < 'a , REG > = crate :: FieldWriter < 'a , REG , 2 , Enum , crate :: Safe > ; impl < 'a , REG > RdW < 'a , REG > where REG : crate :: Writable + crate :: RegisterSpec , REG :: Ux : From < u8 > { # [doc = "Clock out delayed strategy, using CLKOUT (command not delayed, clock out delayed). POR reset value."] # [inline (always)] pub fn clock_out_delayed_st (self) -> & 'a mut crate :: W < REG > { self . variant (Enum :: ClockOutDelayedSt) } # [doc = "Command delayed strategy, using EMCCLKDELAY (command delayed, clock out not delayed)."] # [inline (always)] pub fn command_delayed_stra (self) -> & 'a mut crate :: W < REG > { self . variant (Enum :: CommandDelayedStra) } # [doc = "Command delayed strategy plus one clock cycle, using EMCCLKDELAY (command delayed, clock out not delayed)."] # [inline (always)] pub fn command_delayed_stra (self) -> & 'a mut crate :: W < REG > { self . variant (Enum :: CommandDelayedStra) } # [doc = "Command delayed strategy plus two clock cycles, using EMCCLKDELAY (command delayed, clock out not delayed)."] # [inline (always)] pub fn command_delayed_stra (self) -> & 'a mut crate :: W < REG > { self . variant (Enum :: CommandDelayedStra) } } impl R { # [doc = "Bits 0:1 - Read data strategy"] # [inline (always)] pub fn rd (& self) -> RdR { RdR :: new ((self . bits & 3) as u8) } } impl W { # [doc = "Bits 0:1 - Read data strategy"] # [inline (always)] pub fn rd (& mut self) -> RdW < '_ , DynamicreadconfigSpec > { RdW :: new (self , 0) } } # [doc = "Configures dynamic memory read strategy.\n\nYou can [`read`](crate::Reg::read) this register and get [`dynamicreadconfig::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`dynamicreadconfig::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."] pub struct DynamicreadconfigSpec ; impl crate :: RegisterSpec for DynamicreadconfigSpec { type Ux = u32 ; } # [doc = "`read()` method returns [`dynamicreadconfig::R`](R) reader structure"] impl crate :: Readable for DynamicreadconfigSpec { } # [doc = "`write(|w| ..)` method takes [`dynamicreadconfig::W`](W) writer structure"] impl crate :: Writable for DynamicreadconfigSpec { type Safety = crate :: Unsafe ; } # [doc = "`reset()` method sets DYNAMICREADCONFIG to value 0"] impl crate :: Resettable for DynamicreadconfigSpec { }
+#[doc = "Register `DYNAMICREADCONFIG` reader"]
+pub type R = crate::R<DynamicreadconfigSpec>;
+#[doc = "Register `DYNAMICREADCONFIG` writer"]
+pub type W = crate::W<DynamicreadconfigSpec>;
+#[doc = "Read data strategy\n\nValue on reset: 0"]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+#[repr(u8)]
+pub enum Enum {
+    #[doc = "0: Clock out delayed strategy, using CLKOUT (command not delayed, clock out delayed). POR reset value."]
+    ClockOutDelayedSt = 0,
+    #[doc = "1: Command delayed strategy, using EMCCLKDELAY (command delayed, clock out not delayed)."]
+    CommandDelayedStra = 1,
+    #[doc = "2: Command delayed strategy plus one clock cycle, using EMCCLKDELAY (command delayed, clock out not delayed)."]
+    CommandDelayedStra = 2,
+    #[doc = "3: Command delayed strategy plus two clock cycles, using EMCCLKDELAY (command delayed, clock out not delayed)."]
+    CommandDelayedStra = 3,
+}
+impl From<Enum> for u8 {
+    #[inline(always)]
+    fn from(variant: Enum) -> Self {
+        variant as _
+    }
+}
+impl crate::FieldSpec for Enum {
+    type Ux = u8;
+}
+impl crate::IsEnum for Enum {}
+#[doc = "Field `RD` reader - Read data strategy"]
+pub type RdR = crate::FieldReader<Enum>;
+impl RdR {
+    #[doc = "Get enumerated values variant"]
+    #[inline(always)]
+    pub const fn variant(&self) -> Enum {
+        match self.bits {
+            0 => Enum::ClockOutDelayedSt,
+            1 => Enum::CommandDelayedStra,
+            2 => Enum::CommandDelayedStra,
+            3 => Enum::CommandDelayedStra,
+            _ => unreachable!(),
+        }
+    }
+    #[doc = "Clock out delayed strategy, using CLKOUT (command not delayed, clock out delayed). POR reset value."]
+    #[inline(always)]
+    pub fn is_clock_out_delayed_st(&self) -> bool {
+        *self == Enum::ClockOutDelayedSt
+    }
+    #[doc = "Command delayed strategy, using EMCCLKDELAY (command delayed, clock out not delayed)."]
+    #[inline(always)]
+    pub fn is_command_delayed_stra(&self) -> bool {
+        *self == Enum::CommandDelayedStra
+    }
+    #[doc = "Command delayed strategy plus one clock cycle, using EMCCLKDELAY (command delayed, clock out not delayed)."]
+    #[inline(always)]
+    pub fn is_command_delayed_stra(&self) -> bool {
+        *self == Enum::CommandDelayedStra
+    }
+    #[doc = "Command delayed strategy plus two clock cycles, using EMCCLKDELAY (command delayed, clock out not delayed)."]
+    #[inline(always)]
+    pub fn is_command_delayed_stra(&self) -> bool {
+        *self == Enum::CommandDelayedStra
+    }
+}
+#[doc = "Field `RD` writer - Read data strategy"]
+pub type RdW<'a, REG> = crate::FieldWriter<'a, REG, 2, Enum, crate::Safe>;
+impl<'a, REG> RdW<'a, REG>
+where
+    REG: crate::Writable + crate::RegisterSpec,
+    REG::Ux: From<u8>,
+{
+    #[doc = "Clock out delayed strategy, using CLKOUT (command not delayed, clock out delayed). POR reset value."]
+    #[inline(always)]
+    pub fn clock_out_delayed_st(self) -> &'a mut crate::W<REG> {
+        self.variant(Enum::ClockOutDelayedSt)
+    }
+    #[doc = "Command delayed strategy, using EMCCLKDELAY (command delayed, clock out not delayed)."]
+    #[inline(always)]
+    pub fn command_delayed_stra(self) -> &'a mut crate::W<REG> {
+        self.variant(Enum::CommandDelayedStra)
+    }
+    #[doc = "Command delayed strategy plus one clock cycle, using EMCCLKDELAY (command delayed, clock out not delayed)."]
+    #[inline(always)]
+    pub fn command_delayed_stra(self) -> &'a mut crate::W<REG> {
+        self.variant(Enum::CommandDelayedStra)
+    }
+    #[doc = "Command delayed strategy plus two clock cycles, using EMCCLKDELAY (command delayed, clock out not delayed)."]
+    #[inline(always)]
+    pub fn command_delayed_stra(self) -> &'a mut crate::W<REG> {
+        self.variant(Enum::CommandDelayedStra)
+    }
+}
+impl R {
+    #[doc = "Bits 0:1 - Read data strategy"]
+    #[inline(always)]
+    pub fn rd(&self) -> RdR {
+        RdR::new((self.bits & 3) as u8)
+    }
+}
+impl W {
+    #[doc = "Bits 0:1 - Read data strategy"]
+    #[inline(always)]
+    pub fn rd(&mut self) -> RdW<'_, DynamicreadconfigSpec> {
+        RdW::new(self, 0)
+    }
+}
+#[doc = "Configures dynamic memory read strategy.\n\nYou can [`read`](crate::Reg::read) this register and get [`dynamicreadconfig::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`dynamicreadconfig::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct DynamicreadconfigSpec;
+impl crate::RegisterSpec for DynamicreadconfigSpec {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [`dynamicreadconfig::R`](R) reader structure"]
+impl crate::Readable for DynamicreadconfigSpec {}
+#[doc = "`write(|w| ..)` method takes [`dynamicreadconfig::W`](W) writer structure"]
+impl crate::Writable for DynamicreadconfigSpec {
+    type Safety = crate::Unsafe;
+}
+#[doc = "`reset()` method sets DYNAMICREADCONFIG to value 0"]
+impl crate::Resettable for DynamicreadconfigSpec {}

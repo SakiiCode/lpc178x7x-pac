@@ -1,1 +1,37 @@
-# [doc = "Register `INXCMP2` reader"] pub type R = crate :: R < Inxcmp2Spec > ; # [doc = "Register `INXCMP2` writer"] pub type W = crate :: W < Inxcmp2Spec > ; # [doc = "Field `ICMP2` reader - Index compare value 2."] pub type Icmp2R = crate :: FieldReader < u32 > ; # [doc = "Field `ICMP2` writer - Index compare value 2."] pub type Icmp2W < 'a , REG > = crate :: FieldWriter < 'a , REG , 32 , u32 > ; impl R { # [doc = "Bits 0:31 - Index compare value 2."] # [inline (always)] pub fn icmp2 (& self) -> Icmp2R { Icmp2R :: new (self . bits) } } impl W { # [doc = "Bits 0:31 - Index compare value 2."] # [inline (always)] pub fn icmp2 (& mut self) -> Icmp2W < '_ , Inxcmp2Spec > { Icmp2W :: new (self , 0) } } # [doc = "Index compare register 2\n\nYou can [`read`](crate::Reg::read) this register and get [`inxcmp2::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`inxcmp2::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."] pub struct Inxcmp2Spec ; impl crate :: RegisterSpec for Inxcmp2Spec { type Ux = u32 ; } # [doc = "`read()` method returns [`inxcmp2::R`](R) reader structure"] impl crate :: Readable for Inxcmp2Spec { } # [doc = "`write(|w| ..)` method takes [`inxcmp2::W`](W) writer structure"] impl crate :: Writable for Inxcmp2Spec { type Safety = crate :: Unsafe ; } # [doc = "`reset()` method sets INXCMP2 to value 0xffff_ffff"] impl crate :: Resettable for Inxcmp2Spec { const RESET_VALUE : u32 = 0xffff_ffff ; }
+#[doc = "Register `INXCMP2` reader"]
+pub type R = crate::R<Inxcmp2Spec>;
+#[doc = "Register `INXCMP2` writer"]
+pub type W = crate::W<Inxcmp2Spec>;
+#[doc = "Field `ICMP2` reader - Index compare value 2."]
+pub type Icmp2R = crate::FieldReader<u32>;
+#[doc = "Field `ICMP2` writer - Index compare value 2."]
+pub type Icmp2W<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
+impl R {
+    #[doc = "Bits 0:31 - Index compare value 2."]
+    #[inline(always)]
+    pub fn icmp2(&self) -> Icmp2R {
+        Icmp2R::new(self.bits)
+    }
+}
+impl W {
+    #[doc = "Bits 0:31 - Index compare value 2."]
+    #[inline(always)]
+    pub fn icmp2(&mut self) -> Icmp2W<'_, Inxcmp2Spec> {
+        Icmp2W::new(self, 0)
+    }
+}
+#[doc = "Index compare register 2\n\nYou can [`read`](crate::Reg::read) this register and get [`inxcmp2::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`inxcmp2::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct Inxcmp2Spec;
+impl crate::RegisterSpec for Inxcmp2Spec {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [`inxcmp2::R`](R) reader structure"]
+impl crate::Readable for Inxcmp2Spec {}
+#[doc = "`write(|w| ..)` method takes [`inxcmp2::W`](W) writer structure"]
+impl crate::Writable for Inxcmp2Spec {
+    type Safety = crate::Unsafe;
+}
+#[doc = "`reset()` method sets INXCMP2 to value 0xffff_ffff"]
+impl crate::Resettable for Inxcmp2Spec {
+    const RESET_VALUE: u32 = 0xffff_ffff;
+}

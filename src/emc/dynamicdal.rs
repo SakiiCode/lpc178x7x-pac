@@ -1,1 +1,37 @@
-# [doc = "Register `DYNAMICDAL` reader"] pub type R = crate :: R < DynamicdalSpec > ; # [doc = "Register `DYNAMICDAL` writer"] pub type W = crate :: W < DynamicdalSpec > ; # [doc = "Field `TDAL` reader - Data-in to active command. 0x0 - 0xE = n clock cycles. The delay is in CCLK cycles. 0xF = 15 clock cycles (POR reset value)."] pub type TdalR = crate :: FieldReader ; # [doc = "Field `TDAL` writer - Data-in to active command. 0x0 - 0xE = n clock cycles. The delay is in CCLK cycles. 0xF = 15 clock cycles (POR reset value)."] pub type TdalW < 'a , REG > = crate :: FieldWriter < 'a , REG , 4 > ; impl R { # [doc = "Bits 0:3 - Data-in to active command. 0x0 - 0xE = n clock cycles. The delay is in CCLK cycles. 0xF = 15 clock cycles (POR reset value)."] # [inline (always)] pub fn tdal (& self) -> TdalR { TdalR :: new ((self . bits & 0x0f) as u8) } } impl W { # [doc = "Bits 0:3 - Data-in to active command. 0x0 - 0xE = n clock cycles. The delay is in CCLK cycles. 0xF = 15 clock cycles (POR reset value)."] # [inline (always)] pub fn tdal (& mut self) -> TdalW < '_ , DynamicdalSpec > { TdalW :: new (self , 0) } } # [doc = "Data-in to active command time.\n\nYou can [`read`](crate::Reg::read) this register and get [`dynamicdal::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`dynamicdal::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."] pub struct DynamicdalSpec ; impl crate :: RegisterSpec for DynamicdalSpec { type Ux = u32 ; } # [doc = "`read()` method returns [`dynamicdal::R`](R) reader structure"] impl crate :: Readable for DynamicdalSpec { } # [doc = "`write(|w| ..)` method takes [`dynamicdal::W`](W) writer structure"] impl crate :: Writable for DynamicdalSpec { type Safety = crate :: Unsafe ; } # [doc = "`reset()` method sets DYNAMICDAL to value 0x0f"] impl crate :: Resettable for DynamicdalSpec { const RESET_VALUE : u32 = 0x0f ; }
+#[doc = "Register `DYNAMICDAL` reader"]
+pub type R = crate::R<DynamicdalSpec>;
+#[doc = "Register `DYNAMICDAL` writer"]
+pub type W = crate::W<DynamicdalSpec>;
+#[doc = "Field `TDAL` reader - Data-in to active command. 0x0 - 0xE = n clock cycles. The delay is in CCLK cycles. 0xF = 15 clock cycles (POR reset value)."]
+pub type TdalR = crate::FieldReader;
+#[doc = "Field `TDAL` writer - Data-in to active command. 0x0 - 0xE = n clock cycles. The delay is in CCLK cycles. 0xF = 15 clock cycles (POR reset value)."]
+pub type TdalW<'a, REG> = crate::FieldWriter<'a, REG, 4>;
+impl R {
+    #[doc = "Bits 0:3 - Data-in to active command. 0x0 - 0xE = n clock cycles. The delay is in CCLK cycles. 0xF = 15 clock cycles (POR reset value)."]
+    #[inline(always)]
+    pub fn tdal(&self) -> TdalR {
+        TdalR::new((self.bits & 0x0f) as u8)
+    }
+}
+impl W {
+    #[doc = "Bits 0:3 - Data-in to active command. 0x0 - 0xE = n clock cycles. The delay is in CCLK cycles. 0xF = 15 clock cycles (POR reset value)."]
+    #[inline(always)]
+    pub fn tdal(&mut self) -> TdalW<'_, DynamicdalSpec> {
+        TdalW::new(self, 0)
+    }
+}
+#[doc = "Data-in to active command time.\n\nYou can [`read`](crate::Reg::read) this register and get [`dynamicdal::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`dynamicdal::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct DynamicdalSpec;
+impl crate::RegisterSpec for DynamicdalSpec {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [`dynamicdal::R`](R) reader structure"]
+impl crate::Readable for DynamicdalSpec {}
+#[doc = "`write(|w| ..)` method takes [`dynamicdal::W`](W) writer structure"]
+impl crate::Writable for DynamicdalSpec {
+    type Safety = crate::Unsafe;
+}
+#[doc = "`reset()` method sets DYNAMICDAL to value 0x0f"]
+impl crate::Resettable for DynamicdalSpec {
+    const RESET_VALUE: u32 = 0x0f;
+}

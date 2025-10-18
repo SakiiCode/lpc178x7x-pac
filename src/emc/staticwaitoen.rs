@@ -1,1 +1,35 @@
-# [doc = "Register `STATICWAITOEN%s` reader"] pub type R = crate :: R < StaticwaitoenSpec > ; # [doc = "Register `STATICWAITOEN%s` writer"] pub type W = crate :: W < StaticwaitoenSpec > ; # [doc = "Field `WAITOEN` reader - Wait output enable. Delay from chip select assertion to output enable. 0x0 = No delay (POR reset value). 0x1 - 0xF = n cycle delay. The delay is WAITOEN x tCCLK."] pub type WaitoenR = crate :: FieldReader ; # [doc = "Field `WAITOEN` writer - Wait output enable. Delay from chip select assertion to output enable. 0x0 = No delay (POR reset value). 0x1 - 0xF = n cycle delay. The delay is WAITOEN x tCCLK."] pub type WaitoenW < 'a , REG > = crate :: FieldWriter < 'a , REG , 4 > ; impl R { # [doc = "Bits 0:3 - Wait output enable. Delay from chip select assertion to output enable. 0x0 = No delay (POR reset value). 0x1 - 0xF = n cycle delay. The delay is WAITOEN x tCCLK."] # [inline (always)] pub fn waitoen (& self) -> WaitoenR { WaitoenR :: new ((self . bits & 0x0f) as u8) } } impl W { # [doc = "Bits 0:3 - Wait output enable. Delay from chip select assertion to output enable. 0x0 = No delay (POR reset value). 0x1 - 0xF = n cycle delay. The delay is WAITOEN x tCCLK."] # [inline (always)] pub fn waitoen (& mut self) -> WaitoenW < '_ , StaticwaitoenSpec > { WaitoenW :: new (self , 0) } } # [doc = "Delay from EMC_CS0 or address change, whichever is later, to output enable.\n\nYou can [`read`](crate::Reg::read) this register and get [`staticwaitoen::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`staticwaitoen::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."] pub struct StaticwaitoenSpec ; impl crate :: RegisterSpec for StaticwaitoenSpec { type Ux = u32 ; } # [doc = "`read()` method returns [`staticwaitoen::R`](R) reader structure"] impl crate :: Readable for StaticwaitoenSpec { } # [doc = "`write(|w| ..)` method takes [`staticwaitoen::W`](W) writer structure"] impl crate :: Writable for StaticwaitoenSpec { type Safety = crate :: Unsafe ; } # [doc = "`reset()` method sets STATICWAITOEN%s to value 0"] impl crate :: Resettable for StaticwaitoenSpec { }
+#[doc = "Register `STATICWAITOEN%s` reader"]
+pub type R = crate::R<StaticwaitoenSpec>;
+#[doc = "Register `STATICWAITOEN%s` writer"]
+pub type W = crate::W<StaticwaitoenSpec>;
+#[doc = "Field `WAITOEN` reader - Wait output enable. Delay from chip select assertion to output enable. 0x0 = No delay (POR reset value). 0x1 - 0xF = n cycle delay. The delay is WAITOEN x tCCLK."]
+pub type WaitoenR = crate::FieldReader;
+#[doc = "Field `WAITOEN` writer - Wait output enable. Delay from chip select assertion to output enable. 0x0 = No delay (POR reset value). 0x1 - 0xF = n cycle delay. The delay is WAITOEN x tCCLK."]
+pub type WaitoenW<'a, REG> = crate::FieldWriter<'a, REG, 4>;
+impl R {
+    #[doc = "Bits 0:3 - Wait output enable. Delay from chip select assertion to output enable. 0x0 = No delay (POR reset value). 0x1 - 0xF = n cycle delay. The delay is WAITOEN x tCCLK."]
+    #[inline(always)]
+    pub fn waitoen(&self) -> WaitoenR {
+        WaitoenR::new((self.bits & 0x0f) as u8)
+    }
+}
+impl W {
+    #[doc = "Bits 0:3 - Wait output enable. Delay from chip select assertion to output enable. 0x0 = No delay (POR reset value). 0x1 - 0xF = n cycle delay. The delay is WAITOEN x tCCLK."]
+    #[inline(always)]
+    pub fn waitoen(&mut self) -> WaitoenW<'_, StaticwaitoenSpec> {
+        WaitoenW::new(self, 0)
+    }
+}
+#[doc = "Delay from EMC_CS0 or address change, whichever is later, to output enable.\n\nYou can [`read`](crate::Reg::read) this register and get [`staticwaitoen::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`staticwaitoen::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct StaticwaitoenSpec;
+impl crate::RegisterSpec for StaticwaitoenSpec {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [`staticwaitoen::R`](R) reader structure"]
+impl crate::Readable for StaticwaitoenSpec {}
+#[doc = "`write(|w| ..)` method takes [`staticwaitoen::W`](W) writer structure"]
+impl crate::Writable for StaticwaitoenSpec {
+    type Safety = crate::Unsafe;
+}
+#[doc = "`reset()` method sets STATICWAITOEN%s to value 0"]
+impl crate::Resettable for StaticwaitoenSpec {}

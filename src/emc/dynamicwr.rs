@@ -1,1 +1,37 @@
-# [doc = "Register `DYNAMICWR` reader"] pub type R = crate :: R < DynamicwrSpec > ; # [doc = "Register `DYNAMICWR` writer"] pub type W = crate :: W < DynamicwrSpec > ; # [doc = "Field `TWR` reader - Write recovery time. 0x0 - 0xE = n + 1 clock cycles. The delay is in CCLK cycles. 0xF = 16 clock cycles (POR reset value)."] pub type TwrR = crate :: FieldReader ; # [doc = "Field `TWR` writer - Write recovery time. 0x0 - 0xE = n + 1 clock cycles. The delay is in CCLK cycles. 0xF = 16 clock cycles (POR reset value)."] pub type TwrW < 'a , REG > = crate :: FieldWriter < 'a , REG , 4 > ; impl R { # [doc = "Bits 0:3 - Write recovery time. 0x0 - 0xE = n + 1 clock cycles. The delay is in CCLK cycles. 0xF = 16 clock cycles (POR reset value)."] # [inline (always)] pub fn twr (& self) -> TwrR { TwrR :: new ((self . bits & 0x0f) as u8) } } impl W { # [doc = "Bits 0:3 - Write recovery time. 0x0 - 0xE = n + 1 clock cycles. The delay is in CCLK cycles. 0xF = 16 clock cycles (POR reset value)."] # [inline (always)] pub fn twr (& mut self) -> TwrW < '_ , DynamicwrSpec > { TwrW :: new (self , 0) } } # [doc = "Write recovery time.\n\nYou can [`read`](crate::Reg::read) this register and get [`dynamicwr::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`dynamicwr::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."] pub struct DynamicwrSpec ; impl crate :: RegisterSpec for DynamicwrSpec { type Ux = u32 ; } # [doc = "`read()` method returns [`dynamicwr::R`](R) reader structure"] impl crate :: Readable for DynamicwrSpec { } # [doc = "`write(|w| ..)` method takes [`dynamicwr::W`](W) writer structure"] impl crate :: Writable for DynamicwrSpec { type Safety = crate :: Unsafe ; } # [doc = "`reset()` method sets DYNAMICWR to value 0x0f"] impl crate :: Resettable for DynamicwrSpec { const RESET_VALUE : u32 = 0x0f ; }
+#[doc = "Register `DYNAMICWR` reader"]
+pub type R = crate::R<DynamicwrSpec>;
+#[doc = "Register `DYNAMICWR` writer"]
+pub type W = crate::W<DynamicwrSpec>;
+#[doc = "Field `TWR` reader - Write recovery time. 0x0 - 0xE = n + 1 clock cycles. The delay is in CCLK cycles. 0xF = 16 clock cycles (POR reset value)."]
+pub type TwrR = crate::FieldReader;
+#[doc = "Field `TWR` writer - Write recovery time. 0x0 - 0xE = n + 1 clock cycles. The delay is in CCLK cycles. 0xF = 16 clock cycles (POR reset value)."]
+pub type TwrW<'a, REG> = crate::FieldWriter<'a, REG, 4>;
+impl R {
+    #[doc = "Bits 0:3 - Write recovery time. 0x0 - 0xE = n + 1 clock cycles. The delay is in CCLK cycles. 0xF = 16 clock cycles (POR reset value)."]
+    #[inline(always)]
+    pub fn twr(&self) -> TwrR {
+        TwrR::new((self.bits & 0x0f) as u8)
+    }
+}
+impl W {
+    #[doc = "Bits 0:3 - Write recovery time. 0x0 - 0xE = n + 1 clock cycles. The delay is in CCLK cycles. 0xF = 16 clock cycles (POR reset value)."]
+    #[inline(always)]
+    pub fn twr(&mut self) -> TwrW<'_, DynamicwrSpec> {
+        TwrW::new(self, 0)
+    }
+}
+#[doc = "Write recovery time.\n\nYou can [`read`](crate::Reg::read) this register and get [`dynamicwr::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`dynamicwr::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct DynamicwrSpec;
+impl crate::RegisterSpec for DynamicwrSpec {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [`dynamicwr::R`](R) reader structure"]
+impl crate::Readable for DynamicwrSpec {}
+#[doc = "`write(|w| ..)` method takes [`dynamicwr::W`](W) writer structure"]
+impl crate::Writable for DynamicwrSpec {
+    type Safety = crate::Unsafe;
+}
+#[doc = "`reset()` method sets DYNAMICWR to value 0x0f"]
+impl crate::Resettable for DynamicwrSpec {
+    const RESET_VALUE: u32 = 0x0f;
+}

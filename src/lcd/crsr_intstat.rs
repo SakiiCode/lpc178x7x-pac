@@ -1,1 +1,20 @@
-# [doc = "Register `CRSR_INTSTAT` reader"] pub type R = crate :: R < CrsrIntstatSpec > ; # [doc = "Field `CRSRMIS` reader - Cursor masked interrupt status. The cursor interrupt status is set immediately after the last data read from the cursor image for the current frame, providing that the corresponding bit in the CRSR_INTMSK register is set. The bit remains clear if the CRSR_INTMSK register is clear. This bit is cleared by writing to the CRSR_INTCLR register."] pub type CrsrmisR = crate :: BitReader ; impl R { # [doc = "Bit 0 - Cursor masked interrupt status. The cursor interrupt status is set immediately after the last data read from the cursor image for the current frame, providing that the corresponding bit in the CRSR_INTMSK register is set. The bit remains clear if the CRSR_INTMSK register is clear. This bit is cleared by writing to the CRSR_INTCLR register."] # [inline (always)] pub fn crsrmis (& self) -> CrsrmisR { CrsrmisR :: new ((self . bits & 1) != 0) } } # [doc = "Cursor Masked Interrupt Status register\n\nYou can [`read`](crate::Reg::read) this register and get [`crsr_intstat::R`](R). See [API](https://docs.rs/svd2rust/#read--modify--write-api)."] pub struct CrsrIntstatSpec ; impl crate :: RegisterSpec for CrsrIntstatSpec { type Ux = u32 ; } # [doc = "`read()` method returns [`crsr_intstat::R`](R) reader structure"] impl crate :: Readable for CrsrIntstatSpec { } # [doc = "`reset()` method sets CRSR_INTSTAT to value 0"] impl crate :: Resettable for CrsrIntstatSpec { }
+#[doc = "Register `CRSR_INTSTAT` reader"]
+pub type R = crate::R<CrsrIntstatSpec>;
+#[doc = "Field `CRSRMIS` reader - Cursor masked interrupt status. The cursor interrupt status is set immediately after the last data read from the cursor image for the current frame, providing that the corresponding bit in the CRSR_INTMSK register is set. The bit remains clear if the CRSR_INTMSK register is clear. This bit is cleared by writing to the CRSR_INTCLR register."]
+pub type CrsrmisR = crate::BitReader;
+impl R {
+    #[doc = "Bit 0 - Cursor masked interrupt status. The cursor interrupt status is set immediately after the last data read from the cursor image for the current frame, providing that the corresponding bit in the CRSR_INTMSK register is set. The bit remains clear if the CRSR_INTMSK register is clear. This bit is cleared by writing to the CRSR_INTCLR register."]
+    #[inline(always)]
+    pub fn crsrmis(&self) -> CrsrmisR {
+        CrsrmisR::new((self.bits & 1) != 0)
+    }
+}
+#[doc = "Cursor Masked Interrupt Status register\n\nYou can [`read`](crate::Reg::read) this register and get [`crsr_intstat::R`](R). See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct CrsrIntstatSpec;
+impl crate::RegisterSpec for CrsrIntstatSpec {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [`crsr_intstat::R`](R) reader structure"]
+impl crate::Readable for CrsrIntstatSpec {}
+#[doc = "`reset()` method sets CRSR_INTSTAT to value 0"]
+impl crate::Resettable for CrsrIntstatSpec {}

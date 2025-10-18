@@ -1,1 +1,35 @@
-# [doc = "Register `DATATIMER` reader"] pub type R = crate :: R < DatatimerSpec > ; # [doc = "Register `DATATIMER` writer"] pub type W = crate :: W < DatatimerSpec > ; # [doc = "Field `DATATIME` reader - Data timeout period."] pub type DatatimeR = crate :: FieldReader < u32 > ; # [doc = "Field `DATATIME` writer - Data timeout period."] pub type DatatimeW < 'a , REG > = crate :: FieldWriter < 'a , REG , 32 , u32 > ; impl R { # [doc = "Bits 0:31 - Data timeout period."] # [inline (always)] pub fn datatime (& self) -> DatatimeR { DatatimeR :: new (self . bits) } } impl W { # [doc = "Bits 0:31 - Data timeout period."] # [inline (always)] pub fn datatime (& mut self) -> DatatimeW < '_ , DatatimerSpec > { DatatimeW :: new (self , 0) } } # [doc = "Data Timer.\n\nYou can [`read`](crate::Reg::read) this register and get [`datatimer::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`datatimer::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."] pub struct DatatimerSpec ; impl crate :: RegisterSpec for DatatimerSpec { type Ux = u32 ; } # [doc = "`read()` method returns [`datatimer::R`](R) reader structure"] impl crate :: Readable for DatatimerSpec { } # [doc = "`write(|w| ..)` method takes [`datatimer::W`](W) writer structure"] impl crate :: Writable for DatatimerSpec { type Safety = crate :: Unsafe ; } # [doc = "`reset()` method sets DATATIMER to value 0"] impl crate :: Resettable for DatatimerSpec { }
+#[doc = "Register `DATATIMER` reader"]
+pub type R = crate::R<DatatimerSpec>;
+#[doc = "Register `DATATIMER` writer"]
+pub type W = crate::W<DatatimerSpec>;
+#[doc = "Field `DATATIME` reader - Data timeout period."]
+pub type DatatimeR = crate::FieldReader<u32>;
+#[doc = "Field `DATATIME` writer - Data timeout period."]
+pub type DatatimeW<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
+impl R {
+    #[doc = "Bits 0:31 - Data timeout period."]
+    #[inline(always)]
+    pub fn datatime(&self) -> DatatimeR {
+        DatatimeR::new(self.bits)
+    }
+}
+impl W {
+    #[doc = "Bits 0:31 - Data timeout period."]
+    #[inline(always)]
+    pub fn datatime(&mut self) -> DatatimeW<'_, DatatimerSpec> {
+        DatatimeW::new(self, 0)
+    }
+}
+#[doc = "Data Timer.\n\nYou can [`read`](crate::Reg::read) this register and get [`datatimer::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`datatimer::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct DatatimerSpec;
+impl crate::RegisterSpec for DatatimerSpec {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [`datatimer::R`](R) reader structure"]
+impl crate::Readable for DatatimerSpec {}
+#[doc = "`write(|w| ..)` method takes [`datatimer::W`](W) writer structure"]
+impl crate::Writable for DatatimerSpec {
+    type Safety = crate::Unsafe;
+}
+#[doc = "`reset()` method sets DATATIMER to value 0"]
+impl crate::Resettable for DatatimerSpec {}

@@ -1,1 +1,79 @@
-# [doc = "Register `EMCDLYCTL` reader"] pub type R = crate :: R < EmcdlyctlSpec > ; # [doc = "Register `EMCDLYCTL` writer"] pub type W = crate :: W < EmcdlyctlSpec > ; # [doc = "Field `CMDDLY` reader - Programmable delay value for EMC outputs in command delayed mode. See Section 10.12.6. The delay amount is roughly (CMDDLY+1) * 250 picoseconds. This field applies only when the command delayed read strategy is selected in the EMCDynamicReadConfig register. In this mode, all control outputs from the EMC are delayed, but the output clock is not. Delaying the control outputs changes dynamic characteristics defined in the device data sheet."] pub type CmddlyR = crate :: FieldReader ; # [doc = "Field `CMDDLY` writer - Programmable delay value for EMC outputs in command delayed mode. See Section 10.12.6. The delay amount is roughly (CMDDLY+1) * 250 picoseconds. This field applies only when the command delayed read strategy is selected in the EMCDynamicReadConfig register. In this mode, all control outputs from the EMC are delayed, but the output clock is not. Delaying the control outputs changes dynamic characteristics defined in the device data sheet."] pub type CmddlyW < 'a , REG > = crate :: FieldWriter < 'a , REG , 5 > ; # [doc = "Field `FBCLKDLY` reader - Programmable delay value for the feedback clock that controls input data sampling. See Section 10.5.3. The delay amount is roughly (FBCLKDLY+1) * 250 picoseconds."] pub type FbclkdlyR = crate :: FieldReader ; # [doc = "Field `FBCLKDLY` writer - Programmable delay value for the feedback clock that controls input data sampling. See Section 10.5.3. The delay amount is roughly (FBCLKDLY+1) * 250 picoseconds."] pub type FbclkdlyW < 'a , REG > = crate :: FieldWriter < 'a , REG , 5 > ; # [doc = "Field `CLKOUT0DLY` reader - Programmable delay value for the CLKOUT0 output. This would typically be used in clock delayed mode. See Section 10.12.6 The delay amount is roughly (CLKOUT0DLY+1) * 250 picoseconds. Delaying the clock output changes dynamic characteristics defined in the device data sheet."] pub type Clkout0dlyR = crate :: FieldReader ; # [doc = "Field `CLKOUT0DLY` writer - Programmable delay value for the CLKOUT0 output. This would typically be used in clock delayed mode. See Section 10.12.6 The delay amount is roughly (CLKOUT0DLY+1) * 250 picoseconds. Delaying the clock output changes dynamic characteristics defined in the device data sheet."] pub type Clkout0dlyW < 'a , REG > = crate :: FieldWriter < 'a , REG , 5 > ; # [doc = "Field `CLKOUT1DLY` reader - Programmable delay value for the CLKOUT1 output. This would typically be used in clock delayed mode. See Section 10.12.6 The delay amount is roughly (CLKOUT1DLY+1) * 250 picoseconds."] pub type Clkout1dlyR = crate :: FieldReader ; # [doc = "Field `CLKOUT1DLY` writer - Programmable delay value for the CLKOUT1 output. This would typically be used in clock delayed mode. See Section 10.12.6 The delay amount is roughly (CLKOUT1DLY+1) * 250 picoseconds."] pub type Clkout1dlyW < 'a , REG > = crate :: FieldWriter < 'a , REG , 5 > ; impl R { # [doc = "Bits 0:4 - Programmable delay value for EMC outputs in command delayed mode. See Section 10.12.6. The delay amount is roughly (CMDDLY+1) * 250 picoseconds. This field applies only when the command delayed read strategy is selected in the EMCDynamicReadConfig register. In this mode, all control outputs from the EMC are delayed, but the output clock is not. Delaying the control outputs changes dynamic characteristics defined in the device data sheet."] # [inline (always)] pub fn cmddly (& self) -> CmddlyR { CmddlyR :: new ((self . bits & 0x1f) as u8) } # [doc = "Bits 8:12 - Programmable delay value for the feedback clock that controls input data sampling. See Section 10.5.3. The delay amount is roughly (FBCLKDLY+1) * 250 picoseconds."] # [inline (always)] pub fn fbclkdly (& self) -> FbclkdlyR { FbclkdlyR :: new (((self . bits >> 8) & 0x1f) as u8) } # [doc = "Bits 16:20 - Programmable delay value for the CLKOUT0 output. This would typically be used in clock delayed mode. See Section 10.12.6 The delay amount is roughly (CLKOUT0DLY+1) * 250 picoseconds. Delaying the clock output changes dynamic characteristics defined in the device data sheet."] # [inline (always)] pub fn clkout0dly (& self) -> Clkout0dlyR { Clkout0dlyR :: new (((self . bits >> 16) & 0x1f) as u8) } # [doc = "Bits 24:28 - Programmable delay value for the CLKOUT1 output. This would typically be used in clock delayed mode. See Section 10.12.6 The delay amount is roughly (CLKOUT1DLY+1) * 250 picoseconds."] # [inline (always)] pub fn clkout1dly (& self) -> Clkout1dlyR { Clkout1dlyR :: new (((self . bits >> 24) & 0x1f) as u8) } } impl W { # [doc = "Bits 0:4 - Programmable delay value for EMC outputs in command delayed mode. See Section 10.12.6. The delay amount is roughly (CMDDLY+1) * 250 picoseconds. This field applies only when the command delayed read strategy is selected in the EMCDynamicReadConfig register. In this mode, all control outputs from the EMC are delayed, but the output clock is not. Delaying the control outputs changes dynamic characteristics defined in the device data sheet."] # [inline (always)] pub fn cmddly (& mut self) -> CmddlyW < '_ , EmcdlyctlSpec > { CmddlyW :: new (self , 0) } # [doc = "Bits 8:12 - Programmable delay value for the feedback clock that controls input data sampling. See Section 10.5.3. The delay amount is roughly (FBCLKDLY+1) * 250 picoseconds."] # [inline (always)] pub fn fbclkdly (& mut self) -> FbclkdlyW < '_ , EmcdlyctlSpec > { FbclkdlyW :: new (self , 8) } # [doc = "Bits 16:20 - Programmable delay value for the CLKOUT0 output. This would typically be used in clock delayed mode. See Section 10.12.6 The delay amount is roughly (CLKOUT0DLY+1) * 250 picoseconds. Delaying the clock output changes dynamic characteristics defined in the device data sheet."] # [inline (always)] pub fn clkout0dly (& mut self) -> Clkout0dlyW < '_ , EmcdlyctlSpec > { Clkout0dlyW :: new (self , 16) } # [doc = "Bits 24:28 - Programmable delay value for the CLKOUT1 output. This would typically be used in clock delayed mode. See Section 10.12.6 The delay amount is roughly (CLKOUT1DLY+1) * 250 picoseconds."] # [inline (always)] pub fn clkout1dly (& mut self) -> Clkout1dlyW < '_ , EmcdlyctlSpec > { Clkout1dlyW :: new (self , 24) } } # [doc = "Values for the 4 programmable delays associated with SDRAM operation.\n\nYou can [`read`](crate::Reg::read) this register and get [`emcdlyctl::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`emcdlyctl::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."] pub struct EmcdlyctlSpec ; impl crate :: RegisterSpec for EmcdlyctlSpec { type Ux = u32 ; } # [doc = "`read()` method returns [`emcdlyctl::R`](R) reader structure"] impl crate :: Readable for EmcdlyctlSpec { } # [doc = "`write(|w| ..)` method takes [`emcdlyctl::W`](W) writer structure"] impl crate :: Writable for EmcdlyctlSpec { type Safety = crate :: Unsafe ; } # [doc = "`reset()` method sets EMCDLYCTL to value 0x0210"] impl crate :: Resettable for EmcdlyctlSpec { const RESET_VALUE : u32 = 0x0210 ; }
+#[doc = "Register `EMCDLYCTL` reader"]
+pub type R = crate::R<EmcdlyctlSpec>;
+#[doc = "Register `EMCDLYCTL` writer"]
+pub type W = crate::W<EmcdlyctlSpec>;
+#[doc = "Field `CMDDLY` reader - Programmable delay value for EMC outputs in command delayed mode. See Section 10.12.6. The delay amount is roughly (CMDDLY+1) * 250 picoseconds. This field applies only when the command delayed read strategy is selected in the EMCDynamicReadConfig register. In this mode, all control outputs from the EMC are delayed, but the output clock is not. Delaying the control outputs changes dynamic characteristics defined in the device data sheet."]
+pub type CmddlyR = crate::FieldReader;
+#[doc = "Field `CMDDLY` writer - Programmable delay value for EMC outputs in command delayed mode. See Section 10.12.6. The delay amount is roughly (CMDDLY+1) * 250 picoseconds. This field applies only when the command delayed read strategy is selected in the EMCDynamicReadConfig register. In this mode, all control outputs from the EMC are delayed, but the output clock is not. Delaying the control outputs changes dynamic characteristics defined in the device data sheet."]
+pub type CmddlyW<'a, REG> = crate::FieldWriter<'a, REG, 5>;
+#[doc = "Field `FBCLKDLY` reader - Programmable delay value for the feedback clock that controls input data sampling. See Section 10.5.3. The delay amount is roughly (FBCLKDLY+1) * 250 picoseconds."]
+pub type FbclkdlyR = crate::FieldReader;
+#[doc = "Field `FBCLKDLY` writer - Programmable delay value for the feedback clock that controls input data sampling. See Section 10.5.3. The delay amount is roughly (FBCLKDLY+1) * 250 picoseconds."]
+pub type FbclkdlyW<'a, REG> = crate::FieldWriter<'a, REG, 5>;
+#[doc = "Field `CLKOUT0DLY` reader - Programmable delay value for the CLKOUT0 output. This would typically be used in clock delayed mode. See Section 10.12.6 The delay amount is roughly (CLKOUT0DLY+1) * 250 picoseconds. Delaying the clock output changes dynamic characteristics defined in the device data sheet."]
+pub type Clkout0dlyR = crate::FieldReader;
+#[doc = "Field `CLKOUT0DLY` writer - Programmable delay value for the CLKOUT0 output. This would typically be used in clock delayed mode. See Section 10.12.6 The delay amount is roughly (CLKOUT0DLY+1) * 250 picoseconds. Delaying the clock output changes dynamic characteristics defined in the device data sheet."]
+pub type Clkout0dlyW<'a, REG> = crate::FieldWriter<'a, REG, 5>;
+#[doc = "Field `CLKOUT1DLY` reader - Programmable delay value for the CLKOUT1 output. This would typically be used in clock delayed mode. See Section 10.12.6 The delay amount is roughly (CLKOUT1DLY+1) * 250 picoseconds."]
+pub type Clkout1dlyR = crate::FieldReader;
+#[doc = "Field `CLKOUT1DLY` writer - Programmable delay value for the CLKOUT1 output. This would typically be used in clock delayed mode. See Section 10.12.6 The delay amount is roughly (CLKOUT1DLY+1) * 250 picoseconds."]
+pub type Clkout1dlyW<'a, REG> = crate::FieldWriter<'a, REG, 5>;
+impl R {
+    #[doc = "Bits 0:4 - Programmable delay value for EMC outputs in command delayed mode. See Section 10.12.6. The delay amount is roughly (CMDDLY+1) * 250 picoseconds. This field applies only when the command delayed read strategy is selected in the EMCDynamicReadConfig register. In this mode, all control outputs from the EMC are delayed, but the output clock is not. Delaying the control outputs changes dynamic characteristics defined in the device data sheet."]
+    #[inline(always)]
+    pub fn cmddly(&self) -> CmddlyR {
+        CmddlyR::new((self.bits & 0x1f) as u8)
+    }
+    #[doc = "Bits 8:12 - Programmable delay value for the feedback clock that controls input data sampling. See Section 10.5.3. The delay amount is roughly (FBCLKDLY+1) * 250 picoseconds."]
+    #[inline(always)]
+    pub fn fbclkdly(&self) -> FbclkdlyR {
+        FbclkdlyR::new(((self.bits >> 8) & 0x1f) as u8)
+    }
+    #[doc = "Bits 16:20 - Programmable delay value for the CLKOUT0 output. This would typically be used in clock delayed mode. See Section 10.12.6 The delay amount is roughly (CLKOUT0DLY+1) * 250 picoseconds. Delaying the clock output changes dynamic characteristics defined in the device data sheet."]
+    #[inline(always)]
+    pub fn clkout0dly(&self) -> Clkout0dlyR {
+        Clkout0dlyR::new(((self.bits >> 16) & 0x1f) as u8)
+    }
+    #[doc = "Bits 24:28 - Programmable delay value for the CLKOUT1 output. This would typically be used in clock delayed mode. See Section 10.12.6 The delay amount is roughly (CLKOUT1DLY+1) * 250 picoseconds."]
+    #[inline(always)]
+    pub fn clkout1dly(&self) -> Clkout1dlyR {
+        Clkout1dlyR::new(((self.bits >> 24) & 0x1f) as u8)
+    }
+}
+impl W {
+    #[doc = "Bits 0:4 - Programmable delay value for EMC outputs in command delayed mode. See Section 10.12.6. The delay amount is roughly (CMDDLY+1) * 250 picoseconds. This field applies only when the command delayed read strategy is selected in the EMCDynamicReadConfig register. In this mode, all control outputs from the EMC are delayed, but the output clock is not. Delaying the control outputs changes dynamic characteristics defined in the device data sheet."]
+    #[inline(always)]
+    pub fn cmddly(&mut self) -> CmddlyW<'_, EmcdlyctlSpec> {
+        CmddlyW::new(self, 0)
+    }
+    #[doc = "Bits 8:12 - Programmable delay value for the feedback clock that controls input data sampling. See Section 10.5.3. The delay amount is roughly (FBCLKDLY+1) * 250 picoseconds."]
+    #[inline(always)]
+    pub fn fbclkdly(&mut self) -> FbclkdlyW<'_, EmcdlyctlSpec> {
+        FbclkdlyW::new(self, 8)
+    }
+    #[doc = "Bits 16:20 - Programmable delay value for the CLKOUT0 output. This would typically be used in clock delayed mode. See Section 10.12.6 The delay amount is roughly (CLKOUT0DLY+1) * 250 picoseconds. Delaying the clock output changes dynamic characteristics defined in the device data sheet."]
+    #[inline(always)]
+    pub fn clkout0dly(&mut self) -> Clkout0dlyW<'_, EmcdlyctlSpec> {
+        Clkout0dlyW::new(self, 16)
+    }
+    #[doc = "Bits 24:28 - Programmable delay value for the CLKOUT1 output. This would typically be used in clock delayed mode. See Section 10.12.6 The delay amount is roughly (CLKOUT1DLY+1) * 250 picoseconds."]
+    #[inline(always)]
+    pub fn clkout1dly(&mut self) -> Clkout1dlyW<'_, EmcdlyctlSpec> {
+        Clkout1dlyW::new(self, 24)
+    }
+}
+#[doc = "Values for the 4 programmable delays associated with SDRAM operation.\n\nYou can [`read`](crate::Reg::read) this register and get [`emcdlyctl::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`emcdlyctl::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct EmcdlyctlSpec;
+impl crate::RegisterSpec for EmcdlyctlSpec {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [`emcdlyctl::R`](R) reader structure"]
+impl crate::Readable for EmcdlyctlSpec {}
+#[doc = "`write(|w| ..)` method takes [`emcdlyctl::W`](W) writer structure"]
+impl crate::Writable for EmcdlyctlSpec {
+    type Safety = crate::Unsafe;
+}
+#[doc = "`reset()` method sets EMCDLYCTL to value 0x0210"]
+impl crate::Resettable for EmcdlyctlSpec {
+    const RESET_VALUE: u32 = 0x0210;
+}

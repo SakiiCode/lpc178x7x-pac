@@ -1,1 +1,133 @@
-# [doc = "Register `PAL[%s]` reader"] pub type R = crate :: R < PalSpec > ; # [doc = "Register `PAL[%s]` writer"] pub type W = crate :: W < PalSpec > ; # [doc = "Field `R04_0` reader - Red palette data. For STN displays, only the four MSBs, bits \\[4:1\\], are used. For monochrome displays only the red palette data is used. All of the palette registers have the same bit fields."] pub type R04_0R = crate :: FieldReader ; # [doc = "Field `R04_0` writer - Red palette data. For STN displays, only the four MSBs, bits \\[4:1\\], are used. For monochrome displays only the red palette data is used. All of the palette registers have the same bit fields."] pub type R04_0W < 'a , REG > = crate :: FieldWriter < 'a , REG , 5 > ; # [doc = "Field `G04_0` reader - Green palette data."] pub type G04_0R = crate :: FieldReader ; # [doc = "Field `G04_0` writer - Green palette data."] pub type G04_0W < 'a , REG > = crate :: FieldWriter < 'a , REG , 5 > ; # [doc = "Field `B04_0` reader - Blue palette data."] pub type B04_0R = crate :: FieldReader ; # [doc = "Field `B04_0` writer - Blue palette data."] pub type B04_0W < 'a , REG > = crate :: FieldWriter < 'a , REG , 5 > ; # [doc = "Field `I0` reader - Intensity / unused bit. Can be used as the LSB of the R, G, and B inputs to a 6:6:6 TFT display, doubling the number of colors to 64K, where each color has two different intensities."] pub type I0R = crate :: BitReader ; # [doc = "Field `I0` writer - Intensity / unused bit. Can be used as the LSB of the R, G, and B inputs to a 6:6:6 TFT display, doubling the number of colors to 64K, where each color has two different intensities."] pub type I0W < 'a , REG > = crate :: BitWriter < 'a , REG > ; # [doc = "Field `R14_0` reader - Red palette data. For STN displays, only the four MSBs, bits \\[4:1\\], are used. For monochrome displays only the red palette data is used. All of the palette registers have the same bit fields."] pub type R14_0R = crate :: FieldReader ; # [doc = "Field `R14_0` writer - Red palette data. For STN displays, only the four MSBs, bits \\[4:1\\], are used. For monochrome displays only the red palette data is used. All of the palette registers have the same bit fields."] pub type R14_0W < 'a , REG > = crate :: FieldWriter < 'a , REG , 5 > ; # [doc = "Field `G14_0` reader - Green palette data."] pub type G14_0R = crate :: FieldReader ; # [doc = "Field `G14_0` writer - Green palette data."] pub type G14_0W < 'a , REG > = crate :: FieldWriter < 'a , REG , 5 > ; # [doc = "Field `B14_0` reader - Blue palette data."] pub type B14_0R = crate :: FieldReader ; # [doc = "Field `B14_0` writer - Blue palette data."] pub type B14_0W < 'a , REG > = crate :: FieldWriter < 'a , REG , 5 > ; # [doc = "Field `I1` reader - Intensity / unused bit. Can be used as the LSB of the R, G, and B inputs to a 6:6:6 TFT display, doubling the number of colors to 64K, where each color has two different intensities."] pub type I1R = crate :: BitReader ; # [doc = "Field `I1` writer - Intensity / unused bit. Can be used as the LSB of the R, G, and B inputs to a 6:6:6 TFT display, doubling the number of colors to 64K, where each color has two different intensities."] pub type I1W < 'a , REG > = crate :: BitWriter < 'a , REG > ; impl R { # [doc = "Bits 0:4 - Red palette data. For STN displays, only the four MSBs, bits \\[4:1\\], are used. For monochrome displays only the red palette data is used. All of the palette registers have the same bit fields."] # [inline (always)] pub fn r04_0 (& self) -> R04_0R { R04_0R :: new ((self . bits & 0x1f) as u8) } # [doc = "Bits 5:9 - Green palette data."] # [inline (always)] pub fn g04_0 (& self) -> G04_0R { G04_0R :: new (((self . bits >> 5) & 0x1f) as u8) } # [doc = "Bits 10:14 - Blue palette data."] # [inline (always)] pub fn b04_0 (& self) -> B04_0R { B04_0R :: new (((self . bits >> 10) & 0x1f) as u8) } # [doc = "Bit 15 - Intensity / unused bit. Can be used as the LSB of the R, G, and B inputs to a 6:6:6 TFT display, doubling the number of colors to 64K, where each color has two different intensities."] # [inline (always)] pub fn i0 (& self) -> I0R { I0R :: new (((self . bits >> 15) & 1) != 0) } # [doc = "Bits 16:20 - Red palette data. For STN displays, only the four MSBs, bits \\[4:1\\], are used. For monochrome displays only the red palette data is used. All of the palette registers have the same bit fields."] # [inline (always)] pub fn r14_0 (& self) -> R14_0R { R14_0R :: new (((self . bits >> 16) & 0x1f) as u8) } # [doc = "Bits 21:25 - Green palette data."] # [inline (always)] pub fn g14_0 (& self) -> G14_0R { G14_0R :: new (((self . bits >> 21) & 0x1f) as u8) } # [doc = "Bits 26:30 - Blue palette data."] # [inline (always)] pub fn b14_0 (& self) -> B14_0R { B14_0R :: new (((self . bits >> 26) & 0x1f) as u8) } # [doc = "Bit 31 - Intensity / unused bit. Can be used as the LSB of the R, G, and B inputs to a 6:6:6 TFT display, doubling the number of colors to 64K, where each color has two different intensities."] # [inline (always)] pub fn i1 (& self) -> I1R { I1R :: new (((self . bits >> 31) & 1) != 0) } } impl W { # [doc = "Bits 0:4 - Red palette data. For STN displays, only the four MSBs, bits \\[4:1\\], are used. For monochrome displays only the red palette data is used. All of the palette registers have the same bit fields."] # [inline (always)] pub fn r04_0 (& mut self) -> R04_0W < '_ , PalSpec > { R04_0W :: new (self , 0) } # [doc = "Bits 5:9 - Green palette data."] # [inline (always)] pub fn g04_0 (& mut self) -> G04_0W < '_ , PalSpec > { G04_0W :: new (self , 5) } # [doc = "Bits 10:14 - Blue palette data."] # [inline (always)] pub fn b04_0 (& mut self) -> B04_0W < '_ , PalSpec > { B04_0W :: new (self , 10) } # [doc = "Bit 15 - Intensity / unused bit. Can be used as the LSB of the R, G, and B inputs to a 6:6:6 TFT display, doubling the number of colors to 64K, where each color has two different intensities."] # [inline (always)] pub fn i0 (& mut self) -> I0W < '_ , PalSpec > { I0W :: new (self , 15) } # [doc = "Bits 16:20 - Red palette data. For STN displays, only the four MSBs, bits \\[4:1\\], are used. For monochrome displays only the red palette data is used. All of the palette registers have the same bit fields."] # [inline (always)] pub fn r14_0 (& mut self) -> R14_0W < '_ , PalSpec > { R14_0W :: new (self , 16) } # [doc = "Bits 21:25 - Green palette data."] # [inline (always)] pub fn g14_0 (& mut self) -> G14_0W < '_ , PalSpec > { G14_0W :: new (self , 21) } # [doc = "Bits 26:30 - Blue palette data."] # [inline (always)] pub fn b14_0 (& mut self) -> B14_0W < '_ , PalSpec > { B14_0W :: new (self , 26) } # [doc = "Bit 31 - Intensity / unused bit. Can be used as the LSB of the R, G, and B inputs to a 6:6:6 TFT display, doubling the number of colors to 64K, where each color has two different intensities."] # [inline (always)] pub fn i1 (& mut self) -> I1W < '_ , PalSpec > { I1W :: new (self , 31) } } # [doc = "256x16-bit Color Palette registers\n\nYou can [`read`](crate::Reg::read) this register and get [`pal::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`pal::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."] pub struct PalSpec ; impl crate :: RegisterSpec for PalSpec { type Ux = u32 ; } # [doc = "`read()` method returns [`pal::R`](R) reader structure"] impl crate :: Readable for PalSpec { } # [doc = "`write(|w| ..)` method takes [`pal::W`](W) writer structure"] impl crate :: Writable for PalSpec { type Safety = crate :: Unsafe ; } # [doc = "`reset()` method sets PAL[%s] to value 0"] impl crate :: Resettable for PalSpec { }
+#[doc = "Register `PAL[%s]` reader"]
+pub type R = crate::R<PalSpec>;
+#[doc = "Register `PAL[%s]` writer"]
+pub type W = crate::W<PalSpec>;
+#[doc = "Field `R04_0` reader - Red palette data. For STN displays, only the four MSBs, bits \\[4:1\\], are used. For monochrome displays only the red palette data is used. All of the palette registers have the same bit fields."]
+pub type R04_0R = crate::FieldReader;
+#[doc = "Field `R04_0` writer - Red palette data. For STN displays, only the four MSBs, bits \\[4:1\\], are used. For monochrome displays only the red palette data is used. All of the palette registers have the same bit fields."]
+pub type R04_0W<'a, REG> = crate::FieldWriter<'a, REG, 5>;
+#[doc = "Field `G04_0` reader - Green palette data."]
+pub type G04_0R = crate::FieldReader;
+#[doc = "Field `G04_0` writer - Green palette data."]
+pub type G04_0W<'a, REG> = crate::FieldWriter<'a, REG, 5>;
+#[doc = "Field `B04_0` reader - Blue palette data."]
+pub type B04_0R = crate::FieldReader;
+#[doc = "Field `B04_0` writer - Blue palette data."]
+pub type B04_0W<'a, REG> = crate::FieldWriter<'a, REG, 5>;
+#[doc = "Field `I0` reader - Intensity / unused bit. Can be used as the LSB of the R, G, and B inputs to a 6:6:6 TFT display, doubling the number of colors to 64K, where each color has two different intensities."]
+pub type I0R = crate::BitReader;
+#[doc = "Field `I0` writer - Intensity / unused bit. Can be used as the LSB of the R, G, and B inputs to a 6:6:6 TFT display, doubling the number of colors to 64K, where each color has two different intensities."]
+pub type I0W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `R14_0` reader - Red palette data. For STN displays, only the four MSBs, bits \\[4:1\\], are used. For monochrome displays only the red palette data is used. All of the palette registers have the same bit fields."]
+pub type R14_0R = crate::FieldReader;
+#[doc = "Field `R14_0` writer - Red palette data. For STN displays, only the four MSBs, bits \\[4:1\\], are used. For monochrome displays only the red palette data is used. All of the palette registers have the same bit fields."]
+pub type R14_0W<'a, REG> = crate::FieldWriter<'a, REG, 5>;
+#[doc = "Field `G14_0` reader - Green palette data."]
+pub type G14_0R = crate::FieldReader;
+#[doc = "Field `G14_0` writer - Green palette data."]
+pub type G14_0W<'a, REG> = crate::FieldWriter<'a, REG, 5>;
+#[doc = "Field `B14_0` reader - Blue palette data."]
+pub type B14_0R = crate::FieldReader;
+#[doc = "Field `B14_0` writer - Blue palette data."]
+pub type B14_0W<'a, REG> = crate::FieldWriter<'a, REG, 5>;
+#[doc = "Field `I1` reader - Intensity / unused bit. Can be used as the LSB of the R, G, and B inputs to a 6:6:6 TFT display, doubling the number of colors to 64K, where each color has two different intensities."]
+pub type I1R = crate::BitReader;
+#[doc = "Field `I1` writer - Intensity / unused bit. Can be used as the LSB of the R, G, and B inputs to a 6:6:6 TFT display, doubling the number of colors to 64K, where each color has two different intensities."]
+pub type I1W<'a, REG> = crate::BitWriter<'a, REG>;
+impl R {
+    #[doc = "Bits 0:4 - Red palette data. For STN displays, only the four MSBs, bits \\[4:1\\], are used. For monochrome displays only the red palette data is used. All of the palette registers have the same bit fields."]
+    #[inline(always)]
+    pub fn r04_0(&self) -> R04_0R {
+        R04_0R::new((self.bits & 0x1f) as u8)
+    }
+    #[doc = "Bits 5:9 - Green palette data."]
+    #[inline(always)]
+    pub fn g04_0(&self) -> G04_0R {
+        G04_0R::new(((self.bits >> 5) & 0x1f) as u8)
+    }
+    #[doc = "Bits 10:14 - Blue palette data."]
+    #[inline(always)]
+    pub fn b04_0(&self) -> B04_0R {
+        B04_0R::new(((self.bits >> 10) & 0x1f) as u8)
+    }
+    #[doc = "Bit 15 - Intensity / unused bit. Can be used as the LSB of the R, G, and B inputs to a 6:6:6 TFT display, doubling the number of colors to 64K, where each color has two different intensities."]
+    #[inline(always)]
+    pub fn i0(&self) -> I0R {
+        I0R::new(((self.bits >> 15) & 1) != 0)
+    }
+    #[doc = "Bits 16:20 - Red palette data. For STN displays, only the four MSBs, bits \\[4:1\\], are used. For monochrome displays only the red palette data is used. All of the palette registers have the same bit fields."]
+    #[inline(always)]
+    pub fn r14_0(&self) -> R14_0R {
+        R14_0R::new(((self.bits >> 16) & 0x1f) as u8)
+    }
+    #[doc = "Bits 21:25 - Green palette data."]
+    #[inline(always)]
+    pub fn g14_0(&self) -> G14_0R {
+        G14_0R::new(((self.bits >> 21) & 0x1f) as u8)
+    }
+    #[doc = "Bits 26:30 - Blue palette data."]
+    #[inline(always)]
+    pub fn b14_0(&self) -> B14_0R {
+        B14_0R::new(((self.bits >> 26) & 0x1f) as u8)
+    }
+    #[doc = "Bit 31 - Intensity / unused bit. Can be used as the LSB of the R, G, and B inputs to a 6:6:6 TFT display, doubling the number of colors to 64K, where each color has two different intensities."]
+    #[inline(always)]
+    pub fn i1(&self) -> I1R {
+        I1R::new(((self.bits >> 31) & 1) != 0)
+    }
+}
+impl W {
+    #[doc = "Bits 0:4 - Red palette data. For STN displays, only the four MSBs, bits \\[4:1\\], are used. For monochrome displays only the red palette data is used. All of the palette registers have the same bit fields."]
+    #[inline(always)]
+    pub fn r04_0(&mut self) -> R04_0W<'_, PalSpec> {
+        R04_0W::new(self, 0)
+    }
+    #[doc = "Bits 5:9 - Green palette data."]
+    #[inline(always)]
+    pub fn g04_0(&mut self) -> G04_0W<'_, PalSpec> {
+        G04_0W::new(self, 5)
+    }
+    #[doc = "Bits 10:14 - Blue palette data."]
+    #[inline(always)]
+    pub fn b04_0(&mut self) -> B04_0W<'_, PalSpec> {
+        B04_0W::new(self, 10)
+    }
+    #[doc = "Bit 15 - Intensity / unused bit. Can be used as the LSB of the R, G, and B inputs to a 6:6:6 TFT display, doubling the number of colors to 64K, where each color has two different intensities."]
+    #[inline(always)]
+    pub fn i0(&mut self) -> I0W<'_, PalSpec> {
+        I0W::new(self, 15)
+    }
+    #[doc = "Bits 16:20 - Red palette data. For STN displays, only the four MSBs, bits \\[4:1\\], are used. For monochrome displays only the red palette data is used. All of the palette registers have the same bit fields."]
+    #[inline(always)]
+    pub fn r14_0(&mut self) -> R14_0W<'_, PalSpec> {
+        R14_0W::new(self, 16)
+    }
+    #[doc = "Bits 21:25 - Green palette data."]
+    #[inline(always)]
+    pub fn g14_0(&mut self) -> G14_0W<'_, PalSpec> {
+        G14_0W::new(self, 21)
+    }
+    #[doc = "Bits 26:30 - Blue palette data."]
+    #[inline(always)]
+    pub fn b14_0(&mut self) -> B14_0W<'_, PalSpec> {
+        B14_0W::new(self, 26)
+    }
+    #[doc = "Bit 31 - Intensity / unused bit. Can be used as the LSB of the R, G, and B inputs to a 6:6:6 TFT display, doubling the number of colors to 64K, where each color has two different intensities."]
+    #[inline(always)]
+    pub fn i1(&mut self) -> I1W<'_, PalSpec> {
+        I1W::new(self, 31)
+    }
+}
+#[doc = "256x16-bit Color Palette registers\n\nYou can [`read`](crate::Reg::read) this register and get [`pal::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`pal::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct PalSpec;
+impl crate::RegisterSpec for PalSpec {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [`pal::R`](R) reader structure"]
+impl crate::Readable for PalSpec {}
+#[doc = "`write(|w| ..)` method takes [`pal::W`](W) writer structure"]
+impl crate::Writable for PalSpec {
+    type Safety = crate::Unsafe;
+}
+#[doc = "`reset()` method sets PAL[%s] to value 0"]
+impl crate::Resettable for PalSpec {}

@@ -1,1 +1,41 @@
-# [doc = "Register `ERLASTSTAMP%s` reader"] pub type R = crate :: R < ErlaststampSpec > ; # [doc = "Field `SEC` reader - Seconds value in the range of 0 to 59."] pub type SecR = crate :: FieldReader ; # [doc = "Field `MIN` reader - Minutes value in the range of 0 to 59."] pub type MinR = crate :: FieldReader ; # [doc = "Field `HOUR` reader - Hours value in the range of 0 to 23."] pub type HourR = crate :: FieldReader ; # [doc = "Field `DOY` reader - Day of Year value in the range of 1 to 366."] pub type DoyR = crate :: FieldReader < u16 > ; impl R { # [doc = "Bits 0:5 - Seconds value in the range of 0 to 59."] # [inline (always)] pub fn sec (& self) -> SecR { SecR :: new ((self . bits & 0x3f) as u8) } # [doc = "Bits 6:11 - Minutes value in the range of 0 to 59."] # [inline (always)] pub fn min (& self) -> MinR { MinR :: new (((self . bits >> 6) & 0x3f) as u8) } # [doc = "Bits 12:16 - Hours value in the range of 0 to 23."] # [inline (always)] pub fn hour (& self) -> HourR { HourR :: new (((self . bits >> 12) & 0x1f) as u8) } # [doc = "Bits 17:25 - Day of Year value in the range of 1 to 366."] # [inline (always)] pub fn doy (& self) -> DoyR { DoyR :: new (((self . bits >> 17) & 0x01ff) as u16) } } # [doc = "Event Monitor/Recorder Last Stamp register for channel 0. Retains the time stamp for the last (i.e. most recent) event on channel 0.\n\nYou can [`read`](crate::Reg::read) this register and get [`erlaststamp::R`](R). See [API](https://docs.rs/svd2rust/#read--modify--write-api)."] pub struct ErlaststampSpec ; impl crate :: RegisterSpec for ErlaststampSpec { type Ux = u32 ; } # [doc = "`read()` method returns [`erlaststamp::R`](R) reader structure"] impl crate :: Readable for ErlaststampSpec { } # [doc = "`reset()` method sets ERLASTSTAMP%s to value 0"] impl crate :: Resettable for ErlaststampSpec { }
+#[doc = "Register `ERLASTSTAMP%s` reader"]
+pub type R = crate::R<ErlaststampSpec>;
+#[doc = "Field `SEC` reader - Seconds value in the range of 0 to 59."]
+pub type SecR = crate::FieldReader;
+#[doc = "Field `MIN` reader - Minutes value in the range of 0 to 59."]
+pub type MinR = crate::FieldReader;
+#[doc = "Field `HOUR` reader - Hours value in the range of 0 to 23."]
+pub type HourR = crate::FieldReader;
+#[doc = "Field `DOY` reader - Day of Year value in the range of 1 to 366."]
+pub type DoyR = crate::FieldReader<u16>;
+impl R {
+    #[doc = "Bits 0:5 - Seconds value in the range of 0 to 59."]
+    #[inline(always)]
+    pub fn sec(&self) -> SecR {
+        SecR::new((self.bits & 0x3f) as u8)
+    }
+    #[doc = "Bits 6:11 - Minutes value in the range of 0 to 59."]
+    #[inline(always)]
+    pub fn min(&self) -> MinR {
+        MinR::new(((self.bits >> 6) & 0x3f) as u8)
+    }
+    #[doc = "Bits 12:16 - Hours value in the range of 0 to 23."]
+    #[inline(always)]
+    pub fn hour(&self) -> HourR {
+        HourR::new(((self.bits >> 12) & 0x1f) as u8)
+    }
+    #[doc = "Bits 17:25 - Day of Year value in the range of 1 to 366."]
+    #[inline(always)]
+    pub fn doy(&self) -> DoyR {
+        DoyR::new(((self.bits >> 17) & 0x01ff) as u16)
+    }
+}
+#[doc = "Event Monitor/Recorder Last Stamp register for channel 0. Retains the time stamp for the last (i.e. most recent) event on channel 0.\n\nYou can [`read`](crate::Reg::read) this register and get [`erlaststamp::R`](R). See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct ErlaststampSpec;
+impl crate::RegisterSpec for ErlaststampSpec {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [`erlaststamp::R`](R) reader structure"]
+impl crate::Readable for ErlaststampSpec {}
+#[doc = "`reset()` method sets ERLASTSTAMP%s to value 0"]
+impl crate::Resettable for ErlaststampSpec {}

@@ -1,1 +1,35 @@
-# [doc = "Register `STATICWAITWEN%s` reader"] pub type R = crate :: R < StaticwaitwenSpec > ; # [doc = "Register `STATICWAITWEN%s` writer"] pub type W = crate :: W < StaticwaitwenSpec > ; # [doc = "Field `WAITWEN` reader - Wait write enable. Delay from chip select assertion to write enable. 0x0 = One CCLK cycle delay between assertion of chip select and write enable (POR reset value). 0x1 - 0xF = (n + 1) CCLK cycle delay. The delay is (WAITWEN +1) x tCCLK."] pub type WaitwenR = crate :: FieldReader ; # [doc = "Field `WAITWEN` writer - Wait write enable. Delay from chip select assertion to write enable. 0x0 = One CCLK cycle delay between assertion of chip select and write enable (POR reset value). 0x1 - 0xF = (n + 1) CCLK cycle delay. The delay is (WAITWEN +1) x tCCLK."] pub type WaitwenW < 'a , REG > = crate :: FieldWriter < 'a , REG , 4 > ; impl R { # [doc = "Bits 0:3 - Wait write enable. Delay from chip select assertion to write enable. 0x0 = One CCLK cycle delay between assertion of chip select and write enable (POR reset value). 0x1 - 0xF = (n + 1) CCLK cycle delay. The delay is (WAITWEN +1) x tCCLK."] # [inline (always)] pub fn waitwen (& self) -> WaitwenR { WaitwenR :: new ((self . bits & 0x0f) as u8) } } impl W { # [doc = "Bits 0:3 - Wait write enable. Delay from chip select assertion to write enable. 0x0 = One CCLK cycle delay between assertion of chip select and write enable (POR reset value). 0x1 - 0xF = (n + 1) CCLK cycle delay. The delay is (WAITWEN +1) x tCCLK."] # [inline (always)] pub fn waitwen (& mut self) -> WaitwenW < '_ , StaticwaitwenSpec > { WaitwenW :: new (self , 0) } } # [doc = "Delay from EMC_CS0 to write enable.\n\nYou can [`read`](crate::Reg::read) this register and get [`staticwaitwen::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`staticwaitwen::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."] pub struct StaticwaitwenSpec ; impl crate :: RegisterSpec for StaticwaitwenSpec { type Ux = u32 ; } # [doc = "`read()` method returns [`staticwaitwen::R`](R) reader structure"] impl crate :: Readable for StaticwaitwenSpec { } # [doc = "`write(|w| ..)` method takes [`staticwaitwen::W`](W) writer structure"] impl crate :: Writable for StaticwaitwenSpec { type Safety = crate :: Unsafe ; } # [doc = "`reset()` method sets STATICWAITWEN%s to value 0"] impl crate :: Resettable for StaticwaitwenSpec { }
+#[doc = "Register `STATICWAITWEN%s` reader"]
+pub type R = crate::R<StaticwaitwenSpec>;
+#[doc = "Register `STATICWAITWEN%s` writer"]
+pub type W = crate::W<StaticwaitwenSpec>;
+#[doc = "Field `WAITWEN` reader - Wait write enable. Delay from chip select assertion to write enable. 0x0 = One CCLK cycle delay between assertion of chip select and write enable (POR reset value). 0x1 - 0xF = (n + 1) CCLK cycle delay. The delay is (WAITWEN +1) x tCCLK."]
+pub type WaitwenR = crate::FieldReader;
+#[doc = "Field `WAITWEN` writer - Wait write enable. Delay from chip select assertion to write enable. 0x0 = One CCLK cycle delay between assertion of chip select and write enable (POR reset value). 0x1 - 0xF = (n + 1) CCLK cycle delay. The delay is (WAITWEN +1) x tCCLK."]
+pub type WaitwenW<'a, REG> = crate::FieldWriter<'a, REG, 4>;
+impl R {
+    #[doc = "Bits 0:3 - Wait write enable. Delay from chip select assertion to write enable. 0x0 = One CCLK cycle delay between assertion of chip select and write enable (POR reset value). 0x1 - 0xF = (n + 1) CCLK cycle delay. The delay is (WAITWEN +1) x tCCLK."]
+    #[inline(always)]
+    pub fn waitwen(&self) -> WaitwenR {
+        WaitwenR::new((self.bits & 0x0f) as u8)
+    }
+}
+impl W {
+    #[doc = "Bits 0:3 - Wait write enable. Delay from chip select assertion to write enable. 0x0 = One CCLK cycle delay between assertion of chip select and write enable (POR reset value). 0x1 - 0xF = (n + 1) CCLK cycle delay. The delay is (WAITWEN +1) x tCCLK."]
+    #[inline(always)]
+    pub fn waitwen(&mut self) -> WaitwenW<'_, StaticwaitwenSpec> {
+        WaitwenW::new(self, 0)
+    }
+}
+#[doc = "Delay from EMC_CS0 to write enable.\n\nYou can [`read`](crate::Reg::read) this register and get [`staticwaitwen::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`staticwaitwen::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct StaticwaitwenSpec;
+impl crate::RegisterSpec for StaticwaitwenSpec {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [`staticwaitwen::R`](R) reader structure"]
+impl crate::Readable for StaticwaitwenSpec {}
+#[doc = "`write(|w| ..)` method takes [`staticwaitwen::W`](W) writer structure"]
+impl crate::Writable for StaticwaitwenSpec {
+    type Safety = crate::Unsafe;
+}
+#[doc = "`reset()` method sets STATICWAITWEN%s to value 0"]
+impl crate::Resettable for StaticwaitwenSpec {}

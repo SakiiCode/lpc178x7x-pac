@@ -1,1 +1,20 @@
-# [doc = "Register `RESPONSE%s` reader"] pub type R = crate :: R < ResponseSpec > ; # [doc = "Field `STATUS` reader - Card status"] pub type StatusR = crate :: FieldReader < u32 > ; impl R { # [doc = "Bits 0:31 - Card status"] # [inline (always)] pub fn status (& self) -> StatusR { StatusR :: new (self . bits) } } # [doc = "Response register.\n\nYou can [`read`](crate::Reg::read) this register and get [`response::R`](R). See [API](https://docs.rs/svd2rust/#read--modify--write-api)."] pub struct ResponseSpec ; impl crate :: RegisterSpec for ResponseSpec { type Ux = u32 ; } # [doc = "`read()` method returns [`response::R`](R) reader structure"] impl crate :: Readable for ResponseSpec { } # [doc = "`reset()` method sets RESPONSE%s to value 0"] impl crate :: Resettable for ResponseSpec { }
+#[doc = "Register `RESPONSE%s` reader"]
+pub type R = crate::R<ResponseSpec>;
+#[doc = "Field `STATUS` reader - Card status"]
+pub type StatusR = crate::FieldReader<u32>;
+impl R {
+    #[doc = "Bits 0:31 - Card status"]
+    #[inline(always)]
+    pub fn status(&self) -> StatusR {
+        StatusR::new(self.bits)
+    }
+}
+#[doc = "Response register.\n\nYou can [`read`](crate::Reg::read) this register and get [`response::R`](R). See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct ResponseSpec;
+impl crate::RegisterSpec for ResponseSpec {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [`response::R`](R) reader structure"]
+impl crate::Readable for ResponseSpec {}
+#[doc = "`reset()` method sets RESPONSE%s to value 0"]
+impl crate::Resettable for ResponseSpec {}
