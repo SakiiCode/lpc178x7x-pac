@@ -112,9 +112,9 @@ where
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Fes {
     #[doc = "0: RxD is sampled on the rising edge of SCLK"]
-    RxdIsSampledOnTh = 0,
+    Rising = 0,
     #[doc = "1: RxD is sampled on the falling edge of SCLK"]
-    RxdIsSampledOnTh = 1,
+    Falling = 1,
 }
 impl From<Fes> for bool {
     #[inline(always)]
@@ -129,19 +129,19 @@ impl FesR {
     #[inline(always)]
     pub const fn variant(&self) -> Fes {
         match self.bits {
-            false => Fes::RxdIsSampledOnTh,
-            true => Fes::RxdIsSampledOnTh,
+            false => Fes::Rising,
+            true => Fes::Falling,
         }
     }
     #[doc = "RxD is sampled on the rising edge of SCLK"]
     #[inline(always)]
-    pub fn is_rxd_is_sampled_on_th(&self) -> bool {
-        *self == Fes::RxdIsSampledOnTh
+    pub fn is_rising(&self) -> bool {
+        *self == Fes::Rising
     }
     #[doc = "RxD is sampled on the falling edge of SCLK"]
     #[inline(always)]
-    pub fn is_rxd_is_sampled_on_th(&self) -> bool {
-        *self == Fes::RxdIsSampledOnTh
+    pub fn is_falling(&self) -> bool {
+        *self == Fes::Falling
     }
 }
 #[doc = "Field `FES` writer - Falling edge sampling."]
@@ -152,13 +152,13 @@ where
 {
     #[doc = "RxD is sampled on the rising edge of SCLK"]
     #[inline(always)]
-    pub fn rxd_is_sampled_on_th(self) -> &'a mut crate::W<REG> {
-        self.variant(Fes::RxdIsSampledOnTh)
+    pub fn rising(self) -> &'a mut crate::W<REG> {
+        self.variant(Fes::Rising)
     }
     #[doc = "RxD is sampled on the falling edge of SCLK"]
     #[inline(always)]
-    pub fn rxd_is_sampled_on_th(self) -> &'a mut crate::W<REG> {
-        self.variant(Fes::RxdIsSampledOnTh)
+    pub fn falling(self) -> &'a mut crate::W<REG> {
+        self.variant(Fes::Falling)
     }
 }
 #[doc = "Transmit synchronization bypass in synchronous slave mode.\n\nValue on reset: 0"]

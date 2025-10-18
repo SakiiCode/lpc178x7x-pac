@@ -11,9 +11,9 @@ pub enum Md {
     #[doc = "1: Low-power SDRAM."]
     LowPowerSdram_ = 1,
     #[doc = "2: Reserved."]
-    Reserved_ = 2,
+    Reserved0x2 = 2,
     #[doc = "3: Reserved."]
-    Reserved_ = 3,
+    Reserved0x3 = 3,
 }
 impl From<Md> for u8 {
     #[inline(always)]
@@ -34,8 +34,8 @@ impl MdR {
         match self.bits {
             0 => Md::SdramPorResetVal,
             1 => Md::LowPowerSdram_,
-            2 => Md::Reserved_,
-            3 => Md::Reserved_,
+            2 => Md::Reserved0x2,
+            3 => Md::Reserved0x3,
             _ => unreachable!(),
         }
     }
@@ -51,13 +51,13 @@ impl MdR {
     }
     #[doc = "Reserved."]
     #[inline(always)]
-    pub fn is_reserved_(&self) -> bool {
-        *self == Md::Reserved_
+    pub fn is_reserved_0x2(&self) -> bool {
+        *self == Md::Reserved0x2
     }
     #[doc = "Reserved."]
     #[inline(always)]
-    pub fn is_reserved_(&self) -> bool {
-        *self == Md::Reserved_
+    pub fn is_reserved_0x3(&self) -> bool {
+        *self == Md::Reserved0x3
     }
 }
 #[doc = "Field `MD` writer - Memory device."]
@@ -79,13 +79,13 @@ where
     }
     #[doc = "Reserved."]
     #[inline(always)]
-    pub fn reserved_(self) -> &'a mut crate::W<REG> {
-        self.variant(Md::Reserved_)
+    pub fn reserved_0x2(self) -> &'a mut crate::W<REG> {
+        self.variant(Md::Reserved0x2)
     }
     #[doc = "Reserved."]
     #[inline(always)]
-    pub fn reserved_(self) -> &'a mut crate::W<REG> {
-        self.variant(Md::Reserved_)
+    pub fn reserved_0x3(self) -> &'a mut crate::W<REG> {
+        self.variant(Md::Reserved0x3)
     }
 }
 #[doc = "Field `AM0` reader - See Table 133. 000000 = reset value.\\[1\\]"]

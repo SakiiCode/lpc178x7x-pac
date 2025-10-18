@@ -4,9 +4,9 @@ pub type R = crate::R<LsrSpec>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Rdr {
     #[doc = "0: The UARTn receiver FIFO is empty."]
-    TheUartnReceiverF = 0,
+    Empty = 0,
     #[doc = "1: The UARTn receiver FIFO is not empty."]
-    TheUartnReceiverF = 1,
+    Unread = 1,
 }
 impl From<Rdr> for bool {
     #[inline(always)]
@@ -21,28 +21,28 @@ impl RdrR {
     #[inline(always)]
     pub const fn variant(&self) -> Rdr {
         match self.bits {
-            false => Rdr::TheUartnReceiverF,
-            true => Rdr::TheUartnReceiverF,
+            false => Rdr::Empty,
+            true => Rdr::Unread,
         }
     }
     #[doc = "The UARTn receiver FIFO is empty."]
     #[inline(always)]
-    pub fn is_the_uartn_receiver_f(&self) -> bool {
-        *self == Rdr::TheUartnReceiverF
+    pub fn is_empty(&self) -> bool {
+        *self == Rdr::Empty
     }
     #[doc = "The UARTn receiver FIFO is not empty."]
     #[inline(always)]
-    pub fn is_the_uartn_receiver_f(&self) -> bool {
-        *self == Rdr::TheUartnReceiverF
+    pub fn is_unread(&self) -> bool {
+        *self == Rdr::Unread
     }
 }
 #[doc = "Overrun Error. The overrun error condition is set as soon as it occurs. An UnLSR read clears UnLSR\\[1\\]. UnLSR\\[1\\] is set when UARTn RSR has a new character assembled and the UARTn RBR FIFO is full. In this case, the UARTn RBR FIFO will not be overwritten and the character in the UARTn RSR will be lost.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Oe {
     #[doc = "0: Overrun error status is inactive."]
-    OverrunErrorStatus = 0,
+    Inactive = 0,
     #[doc = "1: Overrun error status is active."]
-    OverrunErrorStatus = 1,
+    Active = 1,
 }
 impl From<Oe> for bool {
     #[inline(always)]
@@ -57,28 +57,28 @@ impl OeR {
     #[inline(always)]
     pub const fn variant(&self) -> Oe {
         match self.bits {
-            false => Oe::OverrunErrorStatus,
-            true => Oe::OverrunErrorStatus,
+            false => Oe::Inactive,
+            true => Oe::Active,
         }
     }
     #[doc = "Overrun error status is inactive."]
     #[inline(always)]
-    pub fn is_overrun_error_status(&self) -> bool {
-        *self == Oe::OverrunErrorStatus
+    pub fn is_inactive(&self) -> bool {
+        *self == Oe::Inactive
     }
     #[doc = "Overrun error status is active."]
     #[inline(always)]
-    pub fn is_overrun_error_status(&self) -> bool {
-        *self == Oe::OverrunErrorStatus
+    pub fn is_active(&self) -> bool {
+        *self == Oe::Active
     }
 }
 #[doc = "Parity Error. When the parity bit of a received character is in the wrong state, a parity error occurs. An UnLSR read clears UnLSR\\[2\\]. Time of parity error detection is dependent on UnFCR\\[0\\]. Note: A parity error is associated with the character at the top of the UARTn RBR FIFO.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pe {
     #[doc = "0: Parity error status is inactive."]
-    ParityErrorStatus_ = 0,
+    Inactive = 0,
     #[doc = "1: Parity error status is active."]
-    ParityErrorStatus_ = 1,
+    Active = 1,
 }
 impl From<Pe> for bool {
     #[inline(always)]
@@ -93,28 +93,28 @@ impl PeR {
     #[inline(always)]
     pub const fn variant(&self) -> Pe {
         match self.bits {
-            false => Pe::ParityErrorStatus_,
-            true => Pe::ParityErrorStatus_,
+            false => Pe::Inactive,
+            true => Pe::Active,
         }
     }
     #[doc = "Parity error status is inactive."]
     #[inline(always)]
-    pub fn is_parity_error_status_(&self) -> bool {
-        *self == Pe::ParityErrorStatus_
+    pub fn is_inactive(&self) -> bool {
+        *self == Pe::Inactive
     }
     #[doc = "Parity error status is active."]
     #[inline(always)]
-    pub fn is_parity_error_status_(&self) -> bool {
-        *self == Pe::ParityErrorStatus_
+    pub fn is_active(&self) -> bool {
+        *self == Pe::Active
     }
 }
 #[doc = "Framing Error. When the stop bit of a received character is a logic 0, a framing error occurs. An UnLSR read clears UnLSR\\[3\\]. The time of the framing error detection is dependent on UnFCR\\[0\\]. Upon detection of a framing error, the Rx will attempt to resynchronize to the data and assume that the bad stop bit is actually an early start bit. However, it cannot be assumed that the next received byte will be correct even if there is no Framing Error. Note: A framing error is associated with the character at the top of the UARTn RBR FIFO.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Fe {
     #[doc = "0: Framing error status is inactive."]
-    FramingErrorStatus = 0,
+    Inactive = 0,
     #[doc = "1: Framing error status is active."]
-    FramingErrorStatus = 1,
+    Active = 1,
 }
 impl From<Fe> for bool {
     #[inline(always)]
@@ -129,28 +129,28 @@ impl FeR {
     #[inline(always)]
     pub const fn variant(&self) -> Fe {
         match self.bits {
-            false => Fe::FramingErrorStatus,
-            true => Fe::FramingErrorStatus,
+            false => Fe::Inactive,
+            true => Fe::Active,
         }
     }
     #[doc = "Framing error status is inactive."]
     #[inline(always)]
-    pub fn is_framing_error_status(&self) -> bool {
-        *self == Fe::FramingErrorStatus
+    pub fn is_inactive(&self) -> bool {
+        *self == Fe::Inactive
     }
     #[doc = "Framing error status is active."]
     #[inline(always)]
-    pub fn is_framing_error_status(&self) -> bool {
-        *self == Fe::FramingErrorStatus
+    pub fn is_active(&self) -> bool {
+        *self == Fe::Active
     }
 }
 #[doc = "Break Interrupt. When RXDn is held in the spacing state (all zeroes) for one full character transmission (start, data, parity, stop), a break interrupt occurs. Once the break condition has been detected, the receiver goes idle until RXDn goes to marking state (all ones). An UnLSR read clears this status bit. The time of break detection is dependent on UnFCR\\[0\\]. Note: The break interrupt is associated with the character at the top of the UARTn RBR FIFO.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Bi {
     #[doc = "0: Break interrupt status is inactive."]
-    BreakInterruptStat = 0,
+    Inactive = 0,
     #[doc = "1: Break interrupt status is active."]
-    BreakInterruptStat = 1,
+    Active = 1,
 }
 impl From<Bi> for bool {
     #[inline(always)]
@@ -165,19 +165,19 @@ impl BiR {
     #[inline(always)]
     pub const fn variant(&self) -> Bi {
         match self.bits {
-            false => Bi::BreakInterruptStat,
-            true => Bi::BreakInterruptStat,
+            false => Bi::Inactive,
+            true => Bi::Active,
         }
     }
     #[doc = "Break interrupt status is inactive."]
     #[inline(always)]
-    pub fn is_break_interrupt_stat(&self) -> bool {
-        *self == Bi::BreakInterruptStat
+    pub fn is_inactive(&self) -> bool {
+        *self == Bi::Inactive
     }
     #[doc = "Break interrupt status is active."]
     #[inline(always)]
-    pub fn is_break_interrupt_stat(&self) -> bool {
-        *self == Bi::BreakInterruptStat
+    pub fn is_active(&self) -> bool {
+        *self == Bi::Active
     }
 }
 #[doc = "Transmitter Holding Register Empty. THRE is set immediately upon detection of an empty UARTn THR and is cleared on a UnTHR write.\n\nValue on reset: 1"]

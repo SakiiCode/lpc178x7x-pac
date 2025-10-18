@@ -24,7 +24,7 @@ pub struct RegisterBlock {
     _reserved17: [u8; 0x04],
     control: (),
     _reserved18: [u8; 0x04],
-    config: (),
+    channel: (),
 }
 impl RegisterBlock {
     #[doc = "0x00 - DMA Interrupt Status Register"]
@@ -199,7 +199,7 @@ impl RegisterBlock {
     }
     #[doc = "0x110..0x130 - DMA Channel 0 Configuration Register\\[1\\]"]
     #[inline(always)]
-    pub const fn config(&self, n: usize) -> &Config {
+    pub const fn channel(&self, n: usize) -> &Channel {
         #[allow(clippy::no_effect)]
         [(); 8][n];
         unsafe {
@@ -213,7 +213,7 @@ impl RegisterBlock {
     #[doc = "Iterator for array of:"]
     #[doc = "0x110..0x130 - DMA Channel 0 Configuration Register\\[1\\]"]
     #[inline(always)]
-    pub fn config_iter(&self) -> impl Iterator<Item = &Config> {
+    pub fn channel_iter(&self) -> impl Iterator<Item = &Channel> {
         (0..8).map(move |n| unsafe {
             &*core::ptr::from_ref(self)
                 .cast::<u8>()
@@ -313,8 +313,8 @@ pub mod lli;
 pub type Control = crate::Reg<control::ControlSpec>;
 #[doc = "DMA Channel 0 Control Register"]
 pub mod control;
-#[doc = "CONFIG (rw) register accessor: DMA Channel 0 Configuration Register\\[1\\]\n\nYou can [`read`](crate::Reg::read) this register and get [`config::R`]. You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`config::W`]. You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@config`] module"]
-#[doc(alias = "CONFIG")]
-pub type Config = crate::Reg<config::ConfigSpec>;
+#[doc = "CHANNEL (rw) register accessor: DMA Channel 0 Configuration Register\\[1\\]\n\nYou can [`read`](crate::Reg::read) this register and get [`channel::R`]. You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`channel::W`]. You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@channel`] module"]
+#[doc(alias = "CHANNEL")]
+pub type Channel = crate::Reg<channel::ChannelSpec>;
 #[doc = "DMA Channel 0 Configuration Register\\[1\\]"]
-pub mod config;
+pub mod channel;

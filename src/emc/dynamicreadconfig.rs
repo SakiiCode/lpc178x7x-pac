@@ -7,13 +7,13 @@ pub type W = crate::W<DynamicreadconfigSpec>;
 #[repr(u8)]
 pub enum Rd {
     #[doc = "0: Clock out delayed strategy, using CLKOUT (command not delayed, clock out delayed). POR reset value."]
-    ClockOutDelayedSt = 0,
+    NoDelay = 0,
     #[doc = "1: Command delayed strategy, using EMCCLKDELAY (command delayed, clock out not delayed)."]
-    CommandDelayedStra = 1,
+    CommandDelayed = 1,
     #[doc = "2: Command delayed strategy plus one clock cycle, using EMCCLKDELAY (command delayed, clock out not delayed)."]
-    CommandDelayedStra = 2,
+    CommandDelayedPlusOne = 2,
     #[doc = "3: Command delayed strategy plus two clock cycles, using EMCCLKDELAY (command delayed, clock out not delayed)."]
-    CommandDelayedStra = 3,
+    CommandDelayedPlusTwo = 3,
 }
 impl From<Rd> for u8 {
     #[inline(always)]
@@ -32,32 +32,32 @@ impl RdR {
     #[inline(always)]
     pub const fn variant(&self) -> Rd {
         match self.bits {
-            0 => Rd::ClockOutDelayedSt,
-            1 => Rd::CommandDelayedStra,
-            2 => Rd::CommandDelayedStra,
-            3 => Rd::CommandDelayedStra,
+            0 => Rd::NoDelay,
+            1 => Rd::CommandDelayed,
+            2 => Rd::CommandDelayedPlusOne,
+            3 => Rd::CommandDelayedPlusTwo,
             _ => unreachable!(),
         }
     }
     #[doc = "Clock out delayed strategy, using CLKOUT (command not delayed, clock out delayed). POR reset value."]
     #[inline(always)]
-    pub fn is_clock_out_delayed_st(&self) -> bool {
-        *self == Rd::ClockOutDelayedSt
+    pub fn is_no_delay(&self) -> bool {
+        *self == Rd::NoDelay
     }
     #[doc = "Command delayed strategy, using EMCCLKDELAY (command delayed, clock out not delayed)."]
     #[inline(always)]
-    pub fn is_command_delayed_stra(&self) -> bool {
-        *self == Rd::CommandDelayedStra
+    pub fn is_command_delayed(&self) -> bool {
+        *self == Rd::CommandDelayed
     }
     #[doc = "Command delayed strategy plus one clock cycle, using EMCCLKDELAY (command delayed, clock out not delayed)."]
     #[inline(always)]
-    pub fn is_command_delayed_stra(&self) -> bool {
-        *self == Rd::CommandDelayedStra
+    pub fn is_command_delayed_plus_one(&self) -> bool {
+        *self == Rd::CommandDelayedPlusOne
     }
     #[doc = "Command delayed strategy plus two clock cycles, using EMCCLKDELAY (command delayed, clock out not delayed)."]
     #[inline(always)]
-    pub fn is_command_delayed_stra(&self) -> bool {
-        *self == Rd::CommandDelayedStra
+    pub fn is_command_delayed_plus_two(&self) -> bool {
+        *self == Rd::CommandDelayedPlusTwo
     }
 }
 #[doc = "Field `RD` writer - Read data strategy"]
@@ -69,23 +69,23 @@ where
 {
     #[doc = "Clock out delayed strategy, using CLKOUT (command not delayed, clock out delayed). POR reset value."]
     #[inline(always)]
-    pub fn clock_out_delayed_st(self) -> &'a mut crate::W<REG> {
-        self.variant(Rd::ClockOutDelayedSt)
+    pub fn no_delay(self) -> &'a mut crate::W<REG> {
+        self.variant(Rd::NoDelay)
     }
     #[doc = "Command delayed strategy, using EMCCLKDELAY (command delayed, clock out not delayed)."]
     #[inline(always)]
-    pub fn command_delayed_stra(self) -> &'a mut crate::W<REG> {
-        self.variant(Rd::CommandDelayedStra)
+    pub fn command_delayed(self) -> &'a mut crate::W<REG> {
+        self.variant(Rd::CommandDelayed)
     }
     #[doc = "Command delayed strategy plus one clock cycle, using EMCCLKDELAY (command delayed, clock out not delayed)."]
     #[inline(always)]
-    pub fn command_delayed_stra(self) -> &'a mut crate::W<REG> {
-        self.variant(Rd::CommandDelayedStra)
+    pub fn command_delayed_plus_one(self) -> &'a mut crate::W<REG> {
+        self.variant(Rd::CommandDelayedPlusOne)
     }
     #[doc = "Command delayed strategy plus two clock cycles, using EMCCLKDELAY (command delayed, clock out not delayed)."]
     #[inline(always)]
-    pub fn command_delayed_stra(self) -> &'a mut crate::W<REG> {
-        self.variant(Rd::CommandDelayedStra)
+    pub fn command_delayed_plus_two(self) -> &'a mut crate::W<REG> {
+        self.variant(Rd::CommandDelayedPlusTwo)
     }
 }
 impl R {

@@ -7,11 +7,11 @@ pub type W = crate::W<UsbclkselSpec>;
 #[repr(u8)]
 pub enum Usbdiv {
     #[doc = "0: The divider is turned off, no clock will be provided to the USB subsystem."]
-    TheDividerIsTurne = 0,
+    NoDiv = 0,
     #[doc = "4: PLL0 output is divided by 4. PLL0 output must be 192 MHz."]
-    Pll0OutputIsDivid = 4,
+    Div4 = 4,
     #[doc = "6: PLL0 output is divided by 6. PLL0 output must be 288 MHz."]
-    Pll0OutputIsDivid = 6,
+    Div6 = 6,
 }
 impl From<Usbdiv> for u8 {
     #[inline(always)]
@@ -30,26 +30,26 @@ impl UsbdivR {
     #[inline(always)]
     pub const fn variant(&self) -> Option<Usbdiv> {
         match self.bits {
-            0 => Some(Usbdiv::TheDividerIsTurne),
-            4 => Some(Usbdiv::Pll0OutputIsDivid),
-            6 => Some(Usbdiv::Pll0OutputIsDivid),
+            0 => Some(Usbdiv::NoDiv),
+            4 => Some(Usbdiv::Div4),
+            6 => Some(Usbdiv::Div6),
             _ => None,
         }
     }
     #[doc = "The divider is turned off, no clock will be provided to the USB subsystem."]
     #[inline(always)]
-    pub fn is_the_divider_is_turne(&self) -> bool {
-        *self == Usbdiv::TheDividerIsTurne
+    pub fn is_no_div(&self) -> bool {
+        *self == Usbdiv::NoDiv
     }
     #[doc = "PLL0 output is divided by 4. PLL0 output must be 192 MHz."]
     #[inline(always)]
-    pub fn is_pll0_output_is_divid(&self) -> bool {
-        *self == Usbdiv::Pll0OutputIsDivid
+    pub fn is_div_4(&self) -> bool {
+        *self == Usbdiv::Div4
     }
     #[doc = "PLL0 output is divided by 6. PLL0 output must be 288 MHz."]
     #[inline(always)]
-    pub fn is_pll0_output_is_divid(&self) -> bool {
-        *self == Usbdiv::Pll0OutputIsDivid
+    pub fn is_div_6(&self) -> bool {
+        *self == Usbdiv::Div6
     }
 }
 #[doc = "Field `USBDIV` writer - Selects the divide value for creating the USB clock from the selected PLL output. Only the values shown below can produce even number multiples of 48 MHz from the PLL. Warning: Improper setting of this value will result in incorrect operation of the USB interface. Only the main oscillator in conjunction with either PLL0 or PLL1 can provide a clock that meets USB accuracy and jitter specifications. Other values cannot produce the 48 MHz clock required for USB operation."]
@@ -61,18 +61,18 @@ where
 {
     #[doc = "The divider is turned off, no clock will be provided to the USB subsystem."]
     #[inline(always)]
-    pub fn the_divider_is_turne(self) -> &'a mut crate::W<REG> {
-        self.variant(Usbdiv::TheDividerIsTurne)
+    pub fn no_div(self) -> &'a mut crate::W<REG> {
+        self.variant(Usbdiv::NoDiv)
     }
     #[doc = "PLL0 output is divided by 4. PLL0 output must be 192 MHz."]
     #[inline(always)]
-    pub fn pll0_output_is_divid(self) -> &'a mut crate::W<REG> {
-        self.variant(Usbdiv::Pll0OutputIsDivid)
+    pub fn div_4(self) -> &'a mut crate::W<REG> {
+        self.variant(Usbdiv::Div4)
     }
     #[doc = "PLL0 output is divided by 6. PLL0 output must be 288 MHz."]
     #[inline(always)]
-    pub fn pll0_output_is_divid(self) -> &'a mut crate::W<REG> {
-        self.variant(Usbdiv::Pll0OutputIsDivid)
+    pub fn div_6(self) -> &'a mut crate::W<REG> {
+        self.variant(Usbdiv::Div6)
     }
 }
 #[doc = "Selects the input clock for the USB clock divider.\n\nValue on reset: 0"]

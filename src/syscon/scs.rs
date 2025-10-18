@@ -6,9 +6,9 @@ pub type W = crate::W<ScsSpec>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Emcsc {
     #[doc = "0: Static memory addresses are shifted to match the data bus width. For example, when accessing a 32-bit wide data bus, the address is shifted right 2 places such that bit 2 is the LSB. In this mode, address bit 0 for the this device is connected to address bit 0 of the memory device, thus simplifying memory connections. This also makes a larger memory address range possible, because additional upper address bits can appear on the higher address pins due to the shift."]
-    StaticMemoryAddres = 0,
+    MatchDataBus = 0,
     #[doc = "1: Static memory addresses are always output as byte addresses regardless of the data bus width. For example, when word data is accessed on a 32-bit bus, address bits 1 and 0 will always be 0. In this mode, one or both lower address bits may not be connected to memories that are part of a bus that is wider than 8 bits. This mode matches the operation of LPC23xx and LPC24xx devices."]
-    StaticMemoryAddres = 1,
+    NoShift = 1,
 }
 impl From<Emcsc> for bool {
     #[inline(always)]
@@ -23,19 +23,19 @@ impl EmcscR {
     #[inline(always)]
     pub const fn variant(&self) -> Emcsc {
         match self.bits {
-            false => Emcsc::StaticMemoryAddres,
-            true => Emcsc::StaticMemoryAddres,
+            false => Emcsc::MatchDataBus,
+            true => Emcsc::NoShift,
         }
     }
     #[doc = "Static memory addresses are shifted to match the data bus width. For example, when accessing a 32-bit wide data bus, the address is shifted right 2 places such that bit 2 is the LSB. In this mode, address bit 0 for the this device is connected to address bit 0 of the memory device, thus simplifying memory connections. This also makes a larger memory address range possible, because additional upper address bits can appear on the higher address pins due to the shift."]
     #[inline(always)]
-    pub fn is_static_memory_addres(&self) -> bool {
-        *self == Emcsc::StaticMemoryAddres
+    pub fn is_match_data_bus(&self) -> bool {
+        *self == Emcsc::MatchDataBus
     }
     #[doc = "Static memory addresses are always output as byte addresses regardless of the data bus width. For example, when word data is accessed on a 32-bit bus, address bits 1 and 0 will always be 0. In this mode, one or both lower address bits may not be connected to memories that are part of a bus that is wider than 8 bits. This mode matches the operation of LPC23xx and LPC24xx devices."]
     #[inline(always)]
-    pub fn is_static_memory_addres(&self) -> bool {
-        *self == Emcsc::StaticMemoryAddres
+    pub fn is_no_shift(&self) -> bool {
+        *self == Emcsc::NoShift
     }
 }
 #[doc = "Field `EMCSC` writer - EMC Shift Control. Controls how addresses are output on the EMC address pins for static memories. Also see Section 10.9 in the EMC chapter."]
@@ -46,13 +46,13 @@ where
 {
     #[doc = "Static memory addresses are shifted to match the data bus width. For example, when accessing a 32-bit wide data bus, the address is shifted right 2 places such that bit 2 is the LSB. In this mode, address bit 0 for the this device is connected to address bit 0 of the memory device, thus simplifying memory connections. This also makes a larger memory address range possible, because additional upper address bits can appear on the higher address pins due to the shift."]
     #[inline(always)]
-    pub fn static_memory_addres(self) -> &'a mut crate::W<REG> {
-        self.variant(Emcsc::StaticMemoryAddres)
+    pub fn match_data_bus(self) -> &'a mut crate::W<REG> {
+        self.variant(Emcsc::MatchDataBus)
     }
     #[doc = "Static memory addresses are always output as byte addresses regardless of the data bus width. For example, when word data is accessed on a 32-bit bus, address bits 1 and 0 will always be 0. In this mode, one or both lower address bits may not be connected to memories that are part of a bus that is wider than 8 bits. This mode matches the operation of LPC23xx and LPC24xx devices."]
     #[inline(always)]
-    pub fn static_memory_addres(self) -> &'a mut crate::W<REG> {
-        self.variant(Emcsc::StaticMemoryAddres)
+    pub fn no_shift(self) -> &'a mut crate::W<REG> {
+        self.variant(Emcsc::NoShift)
     }
 }
 #[doc = "EMC Reset Disable\\[1\\]. External Memory Controller Reset Disable. Also see Section 10.8 in the EMC chapter.\n\nValue on reset: 0"]
@@ -218,9 +218,9 @@ where
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Oscrs {
     #[doc = "0: The frequency range of the main oscillator is 1 MHz to 20 MHz."]
-    TheFrequencyRange_ = 0,
+    From1To20 = 0,
     #[doc = "1: The frequency range of the main oscillator is 15 MHz to 25 MHz."]
-    TheFrequencyRange_ = 1,
+    From15To25 = 1,
 }
 impl From<Oscrs> for bool {
     #[inline(always)]
@@ -235,19 +235,19 @@ impl OscrsR {
     #[inline(always)]
     pub const fn variant(&self) -> Oscrs {
         match self.bits {
-            false => Oscrs::TheFrequencyRange_,
-            true => Oscrs::TheFrequencyRange_,
+            false => Oscrs::From1To20,
+            true => Oscrs::From15To25,
         }
     }
     #[doc = "The frequency range of the main oscillator is 1 MHz to 20 MHz."]
     #[inline(always)]
-    pub fn is_the_frequency_range_(&self) -> bool {
-        *self == Oscrs::TheFrequencyRange_
+    pub fn is_from_1_to_20(&self) -> bool {
+        *self == Oscrs::From1To20
     }
     #[doc = "The frequency range of the main oscillator is 15 MHz to 25 MHz."]
     #[inline(always)]
-    pub fn is_the_frequency_range_(&self) -> bool {
-        *self == Oscrs::TheFrequencyRange_
+    pub fn is_from_15_to_25(&self) -> bool {
+        *self == Oscrs::From15To25
     }
 }
 #[doc = "Field `OSCRS` writer - Main oscillator range select."]
@@ -258,22 +258,22 @@ where
 {
     #[doc = "The frequency range of the main oscillator is 1 MHz to 20 MHz."]
     #[inline(always)]
-    pub fn the_frequency_range_(self) -> &'a mut crate::W<REG> {
-        self.variant(Oscrs::TheFrequencyRange_)
+    pub fn from_1_to_20(self) -> &'a mut crate::W<REG> {
+        self.variant(Oscrs::From1To20)
     }
     #[doc = "The frequency range of the main oscillator is 15 MHz to 25 MHz."]
     #[inline(always)]
-    pub fn the_frequency_range_(self) -> &'a mut crate::W<REG> {
-        self.variant(Oscrs::TheFrequencyRange_)
+    pub fn from_15_to_25(self) -> &'a mut crate::W<REG> {
+        self.variant(Oscrs::From15To25)
     }
 }
 #[doc = "Main oscillator enable.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Oscen {
     #[doc = "0: The main oscillator is disabled."]
-    TheMainOscillator_ = 0,
+    Disabled = 0,
     #[doc = "1: The main oscillator is enabled, and will start up if the correct external circuitry is connected to the XTAL1 and XTAL2 pins."]
-    TheMainOscillator_ = 1,
+    Enabled = 1,
 }
 impl From<Oscen> for bool {
     #[inline(always)]
@@ -288,19 +288,19 @@ impl OscenR {
     #[inline(always)]
     pub const fn variant(&self) -> Oscen {
         match self.bits {
-            false => Oscen::TheMainOscillator_,
-            true => Oscen::TheMainOscillator_,
+            false => Oscen::Disabled,
+            true => Oscen::Enabled,
         }
     }
     #[doc = "The main oscillator is disabled."]
     #[inline(always)]
-    pub fn is_the_main_oscillator_(&self) -> bool {
-        *self == Oscen::TheMainOscillator_
+    pub fn is_disabled(&self) -> bool {
+        *self == Oscen::Disabled
     }
     #[doc = "The main oscillator is enabled, and will start up if the correct external circuitry is connected to the XTAL1 and XTAL2 pins."]
     #[inline(always)]
-    pub fn is_the_main_oscillator_(&self) -> bool {
-        *self == Oscen::TheMainOscillator_
+    pub fn is_enabled(&self) -> bool {
+        *self == Oscen::Enabled
     }
 }
 #[doc = "Field `OSCEN` writer - Main oscillator enable."]
@@ -311,22 +311,22 @@ where
 {
     #[doc = "The main oscillator is disabled."]
     #[inline(always)]
-    pub fn the_main_oscillator_(self) -> &'a mut crate::W<REG> {
-        self.variant(Oscen::TheMainOscillator_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Oscen::Disabled)
     }
     #[doc = "The main oscillator is enabled, and will start up if the correct external circuitry is connected to the XTAL1 and XTAL2 pins."]
     #[inline(always)]
-    pub fn the_main_oscillator_(self) -> &'a mut crate::W<REG> {
-        self.variant(Oscen::TheMainOscillator_)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Oscen::Enabled)
     }
 }
 #[doc = "Main oscillator status.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Oscstat {
     #[doc = "0: The main oscillator is not ready to be used as a clock source."]
-    TheMainOscillator_ = 0,
+    NotReady = 0,
     #[doc = "1: The main oscillator is ready to be used as a clock source. The main oscillator must be enabled via the OSCEN bit."]
-    TheMainOscillator_ = 1,
+    Ready = 1,
 }
 impl From<Oscstat> for bool {
     #[inline(always)]
@@ -341,19 +341,19 @@ impl OscstatR {
     #[inline(always)]
     pub const fn variant(&self) -> Oscstat {
         match self.bits {
-            false => Oscstat::TheMainOscillator_,
-            true => Oscstat::TheMainOscillator_,
+            false => Oscstat::NotReady,
+            true => Oscstat::Ready,
         }
     }
     #[doc = "The main oscillator is not ready to be used as a clock source."]
     #[inline(always)]
-    pub fn is_the_main_oscillator_(&self) -> bool {
-        *self == Oscstat::TheMainOscillator_
+    pub fn is_not_ready(&self) -> bool {
+        *self == Oscstat::NotReady
     }
     #[doc = "The main oscillator is ready to be used as a clock source. The main oscillator must be enabled via the OSCEN bit."]
     #[inline(always)]
-    pub fn is_the_main_oscillator_(&self) -> bool {
-        *self == Oscstat::TheMainOscillator_
+    pub fn is_ready(&self) -> bool {
+        *self == Oscstat::Ready
     }
 }
 #[doc = "Field `OSCSTAT` writer - Main oscillator status."]
@@ -364,13 +364,13 @@ where
 {
     #[doc = "The main oscillator is not ready to be used as a clock source."]
     #[inline(always)]
-    pub fn the_main_oscillator_(self) -> &'a mut crate::W<REG> {
-        self.variant(Oscstat::TheMainOscillator_)
+    pub fn not_ready(self) -> &'a mut crate::W<REG> {
+        self.variant(Oscstat::NotReady)
     }
     #[doc = "The main oscillator is ready to be used as a clock source. The main oscillator must be enabled via the OSCEN bit."]
     #[inline(always)]
-    pub fn the_main_oscillator_(self) -> &'a mut crate::W<REG> {
-        self.variant(Oscstat::TheMainOscillator_)
+    pub fn ready(self) -> &'a mut crate::W<REG> {
+        self.variant(Oscstat::Ready)
     }
 }
 impl R {

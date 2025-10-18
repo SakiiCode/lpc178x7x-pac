@@ -6,9 +6,9 @@ pub type W = crate::W<CcrSpec>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Clken {
     #[doc = "1: The time counters are enabled."]
-    TheTimeCountersAr = 1,
+    Enabled = 1,
     #[doc = "0: The time counters are disabled so that they may be initialized."]
-    TheTimeCountersAr = 0,
+    Disabled = 0,
 }
 impl From<Clken> for bool {
     #[inline(always)]
@@ -23,19 +23,19 @@ impl ClkenR {
     #[inline(always)]
     pub const fn variant(&self) -> Clken {
         match self.bits {
-            true => Clken::TheTimeCountersAr,
-            false => Clken::TheTimeCountersAr,
+            true => Clken::Enabled,
+            false => Clken::Disabled,
         }
     }
     #[doc = "The time counters are enabled."]
     #[inline(always)]
-    pub fn is_the_time_counters_ar(&self) -> bool {
-        *self == Clken::TheTimeCountersAr
+    pub fn is_enabled(&self) -> bool {
+        *self == Clken::Enabled
     }
     #[doc = "The time counters are disabled so that they may be initialized."]
     #[inline(always)]
-    pub fn is_the_time_counters_ar(&self) -> bool {
-        *self == Clken::TheTimeCountersAr
+    pub fn is_disabled(&self) -> bool {
+        *self == Clken::Disabled
     }
 }
 #[doc = "Field `CLKEN` writer - Clock Enable."]
@@ -46,13 +46,13 @@ where
 {
     #[doc = "The time counters are enabled."]
     #[inline(always)]
-    pub fn the_time_counters_ar(self) -> &'a mut crate::W<REG> {
-        self.variant(Clken::TheTimeCountersAr)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Clken::Enabled)
     }
     #[doc = "The time counters are disabled so that they may be initialized."]
     #[inline(always)]
-    pub fn the_time_counters_ar(self) -> &'a mut crate::W<REG> {
-        self.variant(Clken::TheTimeCountersAr)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Clken::Disabled)
     }
 }
 #[doc = "CTC Reset.\n\nValue on reset: 0"]
@@ -112,9 +112,9 @@ where
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Ccalen {
     #[doc = "1: The calibration counter is disabled and reset to zero."]
-    TheCalibrationCoun = 1,
+    Disabled = 1,
     #[doc = "0: The calibration counter is enabled and counting, using the 1 Hz clock. When the calibration counter is equal to the value of the CALIBRATION register, the counter resets and repeats counting up to the value of the CALIBRATION register. See Section 30.6.4.2 and Section 30.6.5."]
-    TheCalibrationCoun = 0,
+    Enabled = 0,
 }
 impl From<Ccalen> for bool {
     #[inline(always)]
@@ -129,19 +129,19 @@ impl CcalenR {
     #[inline(always)]
     pub const fn variant(&self) -> Ccalen {
         match self.bits {
-            true => Ccalen::TheCalibrationCoun,
-            false => Ccalen::TheCalibrationCoun,
+            true => Ccalen::Disabled,
+            false => Ccalen::Enabled,
         }
     }
     #[doc = "The calibration counter is disabled and reset to zero."]
     #[inline(always)]
-    pub fn is_the_calibration_coun(&self) -> bool {
-        *self == Ccalen::TheCalibrationCoun
+    pub fn is_disabled(&self) -> bool {
+        *self == Ccalen::Disabled
     }
     #[doc = "The calibration counter is enabled and counting, using the 1 Hz clock. When the calibration counter is equal to the value of the CALIBRATION register, the counter resets and repeats counting up to the value of the CALIBRATION register. See Section 30.6.4.2 and Section 30.6.5."]
     #[inline(always)]
-    pub fn is_the_calibration_coun(&self) -> bool {
-        *self == Ccalen::TheCalibrationCoun
+    pub fn is_enabled(&self) -> bool {
+        *self == Ccalen::Enabled
     }
 }
 #[doc = "Field `CCALEN` writer - Calibration counter enable."]
@@ -152,13 +152,13 @@ where
 {
     #[doc = "The calibration counter is disabled and reset to zero."]
     #[inline(always)]
-    pub fn the_calibration_coun(self) -> &'a mut crate::W<REG> {
-        self.variant(Ccalen::TheCalibrationCoun)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Ccalen::Disabled)
     }
     #[doc = "The calibration counter is enabled and counting, using the 1 Hz clock. When the calibration counter is equal to the value of the CALIBRATION register, the counter resets and repeats counting up to the value of the CALIBRATION register. See Section 30.6.4.2 and Section 30.6.5."]
     #[inline(always)]
-    pub fn the_calibration_coun(self) -> &'a mut crate::W<REG> {
-        self.variant(Ccalen::TheCalibrationCoun)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Ccalen::Enabled)
     }
 }
 impl R {

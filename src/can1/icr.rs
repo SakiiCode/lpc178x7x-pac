@@ -402,9 +402,9 @@ pub type Errbit4_0R = crate::FieldReader;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Errdir {
     #[doc = "0: Error occurred during transmitting."]
-    ErrorOccurredDurin = 0,
+    Transmit = 0,
     #[doc = "1: Error occurred during receiving."]
-    ErrorOccurredDurin = 1,
+    Receive = 1,
 }
 impl From<Errdir> for bool {
     #[inline(always)]
@@ -419,19 +419,19 @@ impl ErrdirR {
     #[inline(always)]
     pub const fn variant(&self) -> Errdir {
         match self.bits {
-            false => Errdir::ErrorOccurredDurin,
-            true => Errdir::ErrorOccurredDurin,
+            false => Errdir::Transmit,
+            true => Errdir::Receive,
         }
     }
     #[doc = "Error occurred during transmitting."]
     #[inline(always)]
-    pub fn is_error_occurred_durin(&self) -> bool {
-        *self == Errdir::ErrorOccurredDurin
+    pub fn is_transmit(&self) -> bool {
+        *self == Errdir::Transmit
     }
     #[doc = "Error occurred during receiving."]
     #[inline(always)]
-    pub fn is_error_occurred_durin(&self) -> bool {
-        *self == Errdir::ErrorOccurredDurin
+    pub fn is_receive(&self) -> bool {
+        *self == Errdir::Receive
     }
 }
 #[doc = "When the CAN controller detects a bus error, the type of error is captured in this field:\n\nValue on reset: 0"]
