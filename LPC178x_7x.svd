@@ -24112,23 +24112,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -24276,23 +24276,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -24429,23 +24429,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -24582,23 +24582,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -24747,23 +24747,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -24912,23 +24912,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -25084,23 +25084,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -25254,23 +25254,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -25443,23 +25443,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -25632,23 +25632,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -25810,23 +25810,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -25969,23 +25969,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -26214,23 +26214,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -26367,23 +26367,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -26520,23 +26520,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -26673,23 +26673,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -26826,23 +26826,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -26985,23 +26985,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -27146,23 +27146,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -27315,23 +27315,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -27481,23 +27481,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -27778,23 +27778,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -28324,23 +28324,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -28482,23 +28482,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -28640,23 +28640,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -28798,23 +28798,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -28956,23 +28956,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -29115,23 +29115,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -29273,23 +29273,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -29431,23 +29431,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -29590,23 +29590,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -29743,23 +29743,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -29896,23 +29896,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -30054,23 +30054,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -30212,23 +30212,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -30360,23 +30360,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -30513,23 +30513,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -30668,23 +30668,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -30821,23 +30821,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -30974,23 +30974,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -31143,23 +31143,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -31317,23 +31317,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -31495,23 +31495,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -31668,23 +31668,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -31847,23 +31847,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -32025,23 +32025,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -32203,23 +32203,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -32381,23 +32381,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -32559,23 +32559,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -32733,23 +32733,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -32911,23 +32911,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -33090,23 +33090,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -33344,23 +33344,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -33502,23 +33502,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -33670,23 +33670,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -33839,23 +33839,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -34007,23 +34007,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -34178,23 +34178,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -34356,23 +34356,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -34521,23 +34521,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -34694,23 +34694,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -34869,23 +34869,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -35224,23 +35224,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -35383,23 +35383,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -35531,23 +35531,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -35679,23 +35679,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -35827,23 +35827,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -35990,23 +35990,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -36153,23 +36153,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -36301,23 +36301,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -36459,23 +36459,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -36617,23 +36617,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -36765,23 +36765,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -36913,23 +36913,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -37071,23 +37071,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -37229,23 +37229,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -37377,23 +37377,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -37525,23 +37525,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -37684,23 +37684,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -37843,23 +37843,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -37991,23 +37991,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -38139,23 +38139,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -38287,23 +38287,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -38435,23 +38435,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -38583,23 +38583,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -38731,23 +38731,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -38879,23 +38879,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -39027,23 +39027,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -39175,23 +39175,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -39323,23 +39323,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -39471,23 +39471,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -39619,23 +39619,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -39767,23 +39767,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -39915,23 +39915,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -40063,23 +40063,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -40211,23 +40211,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -40369,23 +40369,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -40527,23 +40527,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -40685,23 +40685,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -40843,23 +40843,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -41001,23 +41001,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -41161,23 +41161,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -41319,23 +41319,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -41477,23 +41477,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -41635,23 +41635,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -41793,23 +41793,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -41956,23 +41956,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -42114,23 +42114,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -42272,23 +42272,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -42430,23 +42430,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -42590,23 +42590,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -42743,23 +42743,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -42891,23 +42891,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -43039,23 +43039,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -43187,23 +43187,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -43335,23 +43335,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -43483,23 +43483,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -43631,23 +43631,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -43779,23 +43779,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -43927,23 +43927,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -44075,23 +44075,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -44223,23 +44223,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -44371,23 +44371,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -44519,23 +44519,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -44667,23 +44667,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -44815,23 +44815,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -44963,23 +44963,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -45111,23 +45111,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -45259,23 +45259,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -45407,23 +45407,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -45555,23 +45555,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -45703,23 +45703,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -45862,23 +45862,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -46021,23 +46021,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -46179,23 +46179,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -46337,23 +46337,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -46485,23 +46485,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -46633,23 +46633,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -46781,23 +46781,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -46929,23 +46929,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -47102,23 +47102,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -47281,23 +47281,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -47429,23 +47429,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -47577,23 +47577,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -47735,23 +47735,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -47893,23 +47893,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -48288,23 +48288,23 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>INACTIVE_NO_PULL_DO</name>
+									<name>INACTIVE</name>
 									<description>Inactive (no pull-down/pull-up resistor
 										enabled).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_DOWN_RESISTOR_E</name>
+									<name>PDR</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PULL_UP_RESISTOR_ENA</name>
+									<name>PUR</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>REPEATER_MODE_</name>
+									<name>REPEATER</name>
 									<description>Repeater mode.</description>
 									<value>0x3</value>
 								</enumeratedValue>
