@@ -6143,12 +6143,12 @@
 							<enumeratedValues>
 								<name>RD_EN</name>
 								<enumeratedValue>
-									<name>DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLED_</name>
+									<name>ENABLED</name>
 									<description>Enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -6164,12 +6164,12 @@
 							<enumeratedValues>
 								<name>WR_EN</name>
 								<enumeratedValue>
-									<name>DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLED_</name>
+									<name>ENABLED</name>
 									<description>Enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -8802,12 +8802,12 @@
 							<enumeratedValues>
 								<name>EOT</name>
 								<enumeratedValue>
-									<name>DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLED_</name>
+									<name>ENABLED</name>
 									<description>Enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -8820,12 +8820,12 @@
 							<enumeratedValues>
 								<name>NDDR</name>
 								<enumeratedValue>
-									<name>DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLED_</name>
+									<name>ENABLED</name>
 									<description>Enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -8838,12 +8838,12 @@
 							<enumeratedValues>
 								<name>ERR</name>
 								<enumeratedValue>
-									<name>DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLED_</name>
+									<name>ENABLED</name>
 									<description>Enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -14509,7 +14509,7 @@
 							<enumeratedValues>
 								<name>RAS</name>
 								<enumeratedValue>
-									<name>RESERVED_</name>
+									<name>RESERVED</name>
 									<description>Reserved.</description>
 									<value>0x0</value>
 								</enumeratedValue>
@@ -14544,7 +14544,7 @@
 							<enumeratedValues>
 								<name>CAS</name>
 								<enumeratedValue>
-									<name>RESERVED_</name>
+									<name>RESERVED</name>
 									<description>Reserved.</description>
 									<value>0x0</value>
 								</enumeratedValue>
@@ -14608,7 +14608,7 @@
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>RESERVED_</name>
+									<name>RESERVED</name>
 									<description>Reserved.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -18491,7 +18491,7 @@
 							<enumeratedValues>
 								<name>NMMEN</name>
 								<enumeratedValue>
-									<name>DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -18511,12 +18511,12 @@
 							<enumeratedValues>
 								<name>RXDIS</name>
 								<enumeratedValue>
-									<name>ENABLED_</name>
+									<name>ENABLED</name>
 									<description>Enabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Disabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -18529,12 +18529,12 @@
 							<enumeratedValues>
 								<name>AADEN</name>
 								<enumeratedValue>
-									<name>DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLED_</name>
+									<name>ENABLED</name>
 									<description>Enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -18923,7 +18923,7 @@
 							<enumeratedValues>
 								<name>PWMMR0I</name>
 								<enumeratedValue>
-									<name>DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -18942,7 +18942,7 @@
 							<enumeratedValues>
 								<name>PWMMR0R</name>
 								<enumeratedValue>
-									<name>DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -18981,7 +18981,7 @@
 							<enumeratedValues>
 								<name>PWMMR1I</name>
 								<enumeratedValue>
-									<name>DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -19000,7 +19000,7 @@
 							<enumeratedValues>
 								<name>PWMMR1R</name>
 								<enumeratedValue>
-									<name>DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -19039,7 +19039,7 @@
 							<enumeratedValues>
 								<name>PWMMR2I</name>
 								<enumeratedValue>
-									<name>DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -19058,7 +19058,7 @@
 							<enumeratedValues>
 								<name>PWMMR2R</name>
 								<enumeratedValue>
-									<name>DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -19097,7 +19097,7 @@
 							<enumeratedValues>
 								<name>PWMMR3I</name>
 								<enumeratedValue>
-									<name>DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -19116,7 +19116,7 @@
 							<enumeratedValues>
 								<name>PWMMR3R</name>
 								<enumeratedValue>
-									<name>DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -19155,7 +19155,7 @@
 							<enumeratedValues>
 								<name>PWMMR4I</name>
 								<enumeratedValue>
-									<name>DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -19174,7 +19174,7 @@
 							<enumeratedValues>
 								<name>PWMMR4R</name>
 								<enumeratedValue>
-									<name>DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -19213,7 +19213,7 @@
 							<enumeratedValues>
 								<name>PWMMR5I</name>
 								<enumeratedValue>
-									<name>DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -19232,7 +19232,7 @@
 							<enumeratedValues>
 								<name>PWMMR5R</name>
 								<enumeratedValue>
-									<name>DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -19271,7 +19271,7 @@
 							<enumeratedValues>
 								<name>PWMMR6I</name>
 								<enumeratedValue>
-									<name>DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -19290,7 +19290,7 @@
 							<enumeratedValues>
 								<name>PWMMR6R</name>
 								<enumeratedValue>
-									<name>DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -53727,12 +53727,12 @@
 							<enumeratedValues>
 								<name>FIXPULSEEN</name>
 								<enumeratedValue>
-									<name>DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLED_</name>
+									<name>ENABLED</name>
 									<description>Enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -54003,12 +54003,12 @@
 							<enumeratedValues>
 								<name>RXDIS</name>
 								<enumeratedValue>
-									<name>ENABLED_</name>
+									<name>ENABLED</name>
 									<description>Enabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Disabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -54021,12 +54021,12 @@
 							<enumeratedValues>
 								<name>AADEN</name>
 								<enumeratedValue>
-									<name>DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLED_</name>
+									<name>ENABLED</name>
 									<description>Enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
