@@ -24159,17 +24159,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -24325,17 +24323,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -24480,17 +24476,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -24635,17 +24629,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -24802,17 +24794,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -24969,17 +24959,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -25143,17 +25131,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -25315,17 +25301,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -25506,17 +25490,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -25697,17 +25679,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -25877,17 +25857,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -26038,17 +26016,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -26285,17 +26261,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -26440,17 +26414,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -26595,17 +26567,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -26750,17 +26720,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -26905,17 +26873,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -27066,17 +27032,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -27229,17 +27193,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -27400,17 +27362,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -27568,17 +27528,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -27867,17 +27825,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -28019,17 +27975,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -28140,17 +28094,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -28419,17 +28371,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -28579,17 +28529,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -28739,17 +28687,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -28899,17 +28845,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -29059,17 +29003,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -29220,17 +29162,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -29380,17 +29320,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -29540,17 +29478,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -29701,17 +29637,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -29856,17 +29790,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -30011,17 +29943,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -30171,17 +30101,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -30331,17 +30259,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -30481,17 +30407,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -30636,17 +30560,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -30793,17 +30715,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -30948,17 +30868,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -31103,17 +31021,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -31274,17 +31190,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -31450,17 +31364,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -31630,17 +31542,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -31805,17 +31715,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -31986,17 +31894,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -32166,17 +32072,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -32346,17 +32250,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -32526,17 +32428,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -32706,17 +32606,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -32882,17 +32780,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -33062,17 +32958,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -33243,17 +33137,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -33499,17 +33391,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -33659,17 +33549,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -33829,17 +33717,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -34000,17 +33886,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -34170,17 +34054,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -34343,17 +34225,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -34523,17 +34403,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -34690,17 +34568,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -34865,17 +34741,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -35042,17 +34916,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -35399,17 +35271,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -35560,17 +35430,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -35710,17 +35578,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -35860,17 +35726,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -36010,17 +35874,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -36175,17 +36037,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -36340,17 +36200,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -36490,17 +36348,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -36650,17 +36506,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -36810,17 +36664,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -36960,17 +36812,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -37110,17 +36960,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -37270,17 +37118,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -37430,17 +37276,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -37580,17 +37424,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -37730,17 +37572,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -37891,17 +37731,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -38052,17 +37890,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -38202,17 +38038,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -38352,17 +38186,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -38502,17 +38334,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -38652,17 +38482,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -38802,17 +38630,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -38952,17 +38778,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -39102,17 +38926,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -39252,17 +39074,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -39402,17 +39222,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -39552,17 +39370,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -39702,17 +39518,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -39852,17 +39666,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -40002,17 +39814,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -40152,17 +39962,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -40302,17 +40110,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -40452,17 +40258,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -40612,17 +40416,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -40772,17 +40574,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -40932,17 +40732,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -41092,17 +40890,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -41252,17 +41048,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -41414,17 +41208,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -41574,17 +41366,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -41734,17 +41524,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -41894,17 +41682,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -42054,17 +41840,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -42219,17 +42003,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -42379,17 +42161,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -42539,17 +42319,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -42699,17 +42477,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -42861,17 +42637,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -43016,17 +42790,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -43166,17 +42938,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -43316,17 +43086,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -43466,17 +43234,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -43616,17 +43382,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -43766,17 +43530,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -43916,17 +43678,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -44066,17 +43826,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -44216,17 +43974,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -44366,17 +44122,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -44516,17 +44270,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -44666,17 +44418,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -44816,17 +44566,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -44966,17 +44714,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -45116,17 +44862,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -45266,17 +45010,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -45416,17 +45158,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -45566,17 +45306,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -45716,17 +45454,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -45866,17 +45602,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -46016,17 +45750,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -46177,17 +45909,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -46338,17 +46068,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -46498,17 +46226,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -46658,17 +46384,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -46808,17 +46532,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -46958,17 +46680,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -47108,17 +46828,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -47258,17 +46976,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -47433,17 +47149,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -47614,17 +47328,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -47764,17 +47476,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -47914,17 +47624,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -48074,17 +47782,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -48234,17 +47940,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -48347,17 +48051,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -48467,17 +48169,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -48635,17 +48335,15 @@
 							<enumeratedValues>
 								<name>INV</name>
 								<enumeratedValue>
-									<name>INPUT_NOT_INVERTED_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Input not inverted (HIGH on pin reads as 1, LOW on
-										pin
-										reads as 0).</description>
+										pin reads as 0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INPUT_INVERTED_HIGH</name>
+									<name>ACTIVE_LOW</name>
 									<description>Input inverted (HIGH on pin reads as 0, LOW on pin
-										reads as
-										1).</description>
+										reads as 1).</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
