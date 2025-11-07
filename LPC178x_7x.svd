@@ -1872,13 +1872,13 @@
 					<resetMask>0xFFFFFFFF</resetMask>
 					<fields>
 						<field>
-							<name>E</name>
+							<name>ENABLED</name>
 							<description>DMA Controller enable: 0 = disabled (default). Disabling
 								the DMA Controller reduces power consumption. 1 = enabled.</description>
 							<bitRange>[0:0]</bitRange>
 						</field>
 						<field>
-							<name>M</name>
+							<name>MODE</name>
 							<description>AHB Master endianness configuration: 0 = little-endian mode
 								(default). 1 = big-endian mode.</description>
 							<bitRange>[1:1]</bitRange>
@@ -2244,7 +2244,7 @@
 					<resetMask>0xFFFFFFFF</resetMask>
 					<fields>
 						<field>
-							<name>E</name>
+							<name>ENABLED</name>
 							<description>Channel enable. Reading this bit indicates whether a
 								channel is currently enabled or disabled: 0 = channel disabled. 1 =
 								channel enabled. The Channel Enable bit status can also be found by
@@ -2290,25 +2290,25 @@
 							<bitRange>[13:11]</bitRange>
 						</field>
 						<field>
-							<name>IE</name>
+							<name>INTERROR</name>
 							<description>Interrupt error mask. When cleared, this bit masks out the
 								error interrupt of the relevant channel.</description>
 							<bitRange>[14:14]</bitRange>
 						</field>
 						<field>
-							<name>ITC</name>
+							<name>INTTERMC</name>
 							<description>Terminal count interrupt mask. When cleared, this bit masks
 								out the terminal count interrupt of the relevant channel.</description>
 							<bitRange>[15:15]</bitRange>
 						</field>
 						<field>
-							<name>L</name>
+							<name>LOCK</name>
 							<description>Lock. When set, this bit enables locked transfers. This
 								information is not used in the LPC178x/177x.</description>
 							<bitRange>[16:16]</bitRange>
 						</field>
 						<field>
-							<name>A</name>
+							<name>ACTIVE</name>
 							<description>Active: 0 = there is no data in the FIFO of the channel. 1
 								= the channel FIFO has data. This value can be used with the Halt
 								and Channel Enable bits to cleanly disable a DMA channel. This is a
@@ -2316,7 +2316,7 @@
 							<bitRange>[17:17]</bitRange>
 						</field>
 						<field>
-							<name>H</name>
+							<name>HALT</name>
 							<description>Halt: 0 = enable DMA requests. 1 = ignore further source
 								DMA requests. The contents of the channel FIFO are drained. This
 								value can be used with the Active and Channel Enable bits to cleanly
@@ -8731,12 +8731,12 @@
 							<enumeratedValues>
 								<name>EOT</name>
 								<enumeratedValue>
-									<name>ALL_BITS_IN_THE_USBE</name>
+									<name>EMPTY</name>
 									<description>All bits in the USBEoTIntSt register are 0.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>AT_LEAST_ONE_BIT_IN_</name>
+									<name>HAS_VALUE</name>
 									<description>At least one bit in the USBEoTIntSt is set.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -8749,12 +8749,12 @@
 							<enumeratedValues>
 								<name>NDDR</name>
 								<enumeratedValue>
-									<name>ALL_BITS_IN_THE_USBN</name>
+									<name>EMPTY</name>
 									<description>All bits in the USBNDDRIntSt register are 0.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>AT_LEAST_ONE_BIT_IN_</name>
+									<name>HAS_VALUE</name>
 									<description>At least one bit in the USBNDDRIntSt is set.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -8767,12 +8767,12 @@
 							<enumeratedValues>
 								<name>ERR</name>
 								<enumeratedValue>
-									<name>ALL_BITS_IN_THE_USBS</name>
+									<name>EMPTY</name>
 									<description>All bits in the USBSysErrIntSt register are 0.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>AT_LEAST_ONE_BIT_IN_</name>
+									<name>HAS_VALUE</name>
 									<description>At least one bit in the USBSysErrIntSt is set.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -11342,12 +11342,12 @@
 							<enumeratedValues>
 								<name>AFI</name>
 								<enumeratedValue>
-									<name>NO_ARBITRATION_FAILU</name>
+									<name>NO_ARBITRATION_FAILURE</name>
 									<description>No arbitration failure on last transmission.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ARBITRATION_FAILURE_</name>
+									<name>ARBITRATION_FAILURE</name>
 									<description>Arbitration failure occurred on last transmission.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -11455,12 +11455,12 @@
 							<enumeratedValues>
 								<name>RFF</name>
 								<enumeratedValue>
-									<name>RX_FIFO_IS_NOT_FULL</name>
+									<name>NOT_FULL</name>
 									<description>RX FIFO is not full</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>RX_FIFO_IS_FULL</name>
+									<name>FULL</name>
 									<description>RX FIFO is full</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -11493,12 +11493,12 @@
 							<enumeratedValues>
 								<name>TFF</name>
 								<enumeratedValue>
-									<name>TX_FIFO_IS_NOT_FULL_</name>
+									<name>NOT_FULL</name>
 									<description>TX FIFO is not full.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>TX_FIFO_IS_FULL</name>
+									<name>FULL</name>
 									<description>TX FIFO is full</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -11548,12 +11548,12 @@
 							<enumeratedValues>
 								<name>TDIE</name>
 								<enumeratedValue>
-									<name>DISABLE_THE_TDI_INTE</name>
+									<name>DISABLED</name>
 									<description>Disable the TDI interrupt.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_THE_TDI_INTER</name>
+									<name>ENABLED</name>
 									<description>Enable the TDI interrupt.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -11568,12 +11568,12 @@
 							<enumeratedValues>
 								<name>AFIE</name>
 								<enumeratedValue>
-									<name>DISABLE_THE_AFI_</name>
+									<name>DISABLED</name>
 									<description>Disable the AFI.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_THE_AFI_</name>
+									<name>ENABLED</name>
 									<description>Enable the AFI.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -11588,12 +11588,12 @@
 							<enumeratedValues>
 								<name>NAIE</name>
 								<enumeratedValue>
-									<name>DISABLE_THE_NAI_</name>
+									<name>DISABLED</name>
 									<description>Disable the NAI.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_THE_NAI_</name>
+									<name>ENABLED</name>
 									<description>Enable the NAI.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -11609,12 +11609,12 @@
 							<enumeratedValues>
 								<name>DRMIE</name>
 								<enumeratedValue>
-									<name>DISABLE_THE_DRMI_INT</name>
+									<name>DISABLED</name>
 									<description>Disable the DRMI interrupt.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_THE_DRMI_INTE</name>
+									<name>ENABLED</name>
 									<description>Enable the DRMI interrupt.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -11630,12 +11630,12 @@
 							<enumeratedValues>
 								<name>DRSIE</name>
 								<enumeratedValue>
-									<name>DISABLE_THE_DRSI_INT</name>
+									<name>DISABLED</name>
 									<description>Disable the DRSI interrupt.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_THE_DRSI_INTE</name>
+									<name>ENABLED</name>
 									<description>Enable the DRSI interrupt.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -11650,12 +11650,12 @@
 							<enumeratedValues>
 								<name>REFIE</name>
 								<enumeratedValue>
-									<name>DISABLE_THE_RFFI_</name>
+									<name>DISABLED</name>
 									<description>Disable the RFFI.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_THE_RFFI_</name>
+									<name>ENABLED</name>
 									<description>Enable the RFFI.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -11670,12 +11670,12 @@
 							<enumeratedValues>
 								<name>RFDAIE</name>
 								<enumeratedValue>
-									<name>DISABLE_THE_DAI_</name>
+									<name>DISABLED</name>
 									<description>Disable the DAI.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_THE_DAI_</name>
+									<name>ENABLED</name>
 									<description>Enable the DAI.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -11692,12 +11692,12 @@
 							<enumeratedValues>
 								<name>TFFIE</name>
 								<enumeratedValue>
-									<name>DISABLE_THE_TFFI_</name>
+									<name>DISABLED</name>
 									<description>Disable the TFFI.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_THE_TFFI_</name>
+									<name>ENABLED</name>
 									<description>Enable the TFFI.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -11842,12 +11842,12 @@
 							<enumeratedValues>
 								<name>HOST_CLK_EN</name>
 								<enumeratedValue>
-									<name>DISABLE_THE_HOST_CLO</name>
+									<name>DISABLED</name>
 									<description>Disable the Host clock.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_THE_HOST_CLOC</name>
+									<name>ENABLED</name>
 									<description>Enable the Host clock.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -11860,12 +11860,12 @@
 							<enumeratedValues>
 								<name>DEV_CLK_EN</name>
 								<enumeratedValue>
-									<name>DISABLE_THE_DEVICE_C</name>
+									<name>DISABLED</name>
 									<description>Disable the Device clock.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_THE_DEVICE_CL</name>
+									<name>ENABLED</name>
 									<description>Enable the Device clock.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -11878,12 +11878,12 @@
 							<enumeratedValues>
 								<name>I2C_CLK_EN</name>
 								<enumeratedValue>
-									<name>DISABLE_THE_I2C_CLOC</name>
+									<name>DISABLED</name>
 									<description>Disable the I2C clock.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_THE_I2C_CLOCK</name>
+									<name>ENABLED</name>
 									<description>Enable the I2C clock.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -11897,12 +11897,12 @@
 							<enumeratedValues>
 								<name>OTG_CLK_EN</name>
 								<enumeratedValue>
-									<name>DISABLE_THE_OTG_CLOC</name>
+									<name>DISABLED</name>
 									<description>Disable the OTG clock.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_THE_OTG_CLOCK</name>
+									<name>ENABLED</name>
 									<description>Enable the OTG clock.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -11915,12 +11915,12 @@
 							<enumeratedValues>
 								<name>AHB_CLK_EN</name>
 								<enumeratedValue>
-									<name>DISABLE_THE_AHB_CLOC</name>
+									<name>DISABLED</name>
 									<description>Disable the AHB clock.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_THE_AHB_CLOCK</name>
+									<name>ENABLED</name>
 									<description>Enable the AHB clock.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -11996,12 +11996,12 @@
 							<enumeratedValues>
 								<name>HOST_CLK_ON</name>
 								<enumeratedValue>
-									<name>HOST_CLOCK_IS_NOT_AV</name>
+									<name>NOT_AVAILABLE</name>
 									<description>Host clock is not available.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>HOST_CLOCK_IS_AVAILA</name>
+									<name>AVAILABLE</name>
 									<description>Host clock is available.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -12014,12 +12014,12 @@
 							<enumeratedValues>
 								<name>DEV_CLK_ON</name>
 								<enumeratedValue>
-									<name>DEVICE_CLOCK_IS_NOT_</name>
+									<name>NOT_AVAILABLE</name>
 									<description>Device clock is not available.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>DEVICE_CLOCK_IS_AVAI</name>
+									<name>AVAILABLE</name>
 									<description>Device clock is available.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -12032,12 +12032,12 @@
 							<enumeratedValues>
 								<name>I2C_CLK_ON</name>
 								<enumeratedValue>
-									<name>I2C_CLOCK_IS_NOT_AVA</name>
+									<name>NOT_AVAILABLE</name>
 									<description>I2C clock is not available.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>I2C_CLOCK_IS_AVAILAB</name>
+									<name>AVAILABLE</name>
 									<description>I2C clock is available.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -12050,12 +12050,12 @@
 							<enumeratedValues>
 								<name>OTG_CLK_ON</name>
 								<enumeratedValue>
-									<name>OTG_CLOCK_IS_NOT_AVA</name>
+									<name>NOT_AVAILABLE</name>
 									<description>OTG clock is not available.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OTG_CLOCK_IS_AVAILAB</name>
+									<name>AVAILABLE</name>
 									<description>OTG clock is available.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -12068,12 +12068,12 @@
 							<enumeratedValues>
 								<name>AHB_CLK_ON</name>
 								<enumeratedValue>
-									<name>AHB_CLOCK_IS_NOT_AVA</name>
+									<name>NOT_AVAILABLE</name>
 									<description>AHB clock is not available.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>AHB_CLOCK_IS_AVAILAB</name>
+									<name>AVAILABLE</name>
 									<description>AHB clock is available.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -12119,17 +12119,17 @@
 							<enumeratedValues>
 								<name>CRC_POLY</name>
 								<enumeratedValue>
-									<name>CRC_CCITT_POLYNOMIAL</name>
+									<name>CRC_CCITT</name>
 									<description>CRC-CCITT polynomial</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>CRC_16_POLYNOMIAL</name>
+									<name>CRC_16</name>
 									<description>CRC-16 polynomial</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>CRC_32_POLYNOMIAL</name>
+									<name>CRC_32</name>
 									<description>CRC-32 polynomial</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -12142,12 +12142,12 @@
 							<enumeratedValues>
 								<name>BIT_RVS_WR</name>
 								<enumeratedValue>
-									<name>NO_BIT_ORDER_REVERSE</name>
+									<name>NO_REVERSE</name>
 									<description>No bit order reverse for CRC_WR_DATA (per byte)</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>BIT_ORDER_REVERSE_FO</name>
+									<name>REVERSE</name>
 									<description>Bit order reverse for CRC_WR_DATA (per byte)</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -12160,12 +12160,12 @@
 							<enumeratedValues>
 								<name>CMPL_WR</name>
 								<enumeratedValue>
-									<name>NO_ONES_COMPLEMENT_</name>
+									<name>DISABLED</name>
 									<description>No one's complement for CRC_WR_DATA</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ONES_COMPLEMENT_FOR</name>
+									<name>ENABLED</name>
 									<description>One's complement for CRC_WR_DATA</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -12178,12 +12178,12 @@
 							<enumeratedValues>
 								<name>BIT_RVS_SUM</name>
 								<enumeratedValue>
-									<name>NO_BIT_ORDER_REVERSE</name>
+									<name>NO_REVERSE</name>
 									<description>No bit order reverse for CRC_SUM</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>BIT_ORDER_REVERSE_FO</name>
+									<name>REVERSE</name>
 									<description>Bit order reverse for CRC_SUM</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -12196,12 +12196,12 @@
 							<enumeratedValues>
 								<name>CMPL_SUM</name>
 								<enumeratedValue>
-									<name>NO_ONES_COMPLEMENT_</name>
+									<name>DISABLED</name>
 									<description>No one's complement for CRC_SUM</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ONES_COMPLEMENT_FOR</name>
+									<name>ENABLED</name>
 									<description>One's complement for CRC_SUM</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -13694,30 +13694,25 @@
 								<name>L</name>
 								<enumeratedValue>
 									<name>WARMRESET</name>
-									<description>Normal mode (warm
-										reset value).</description>
+									<description>Normal mode (warm reset value).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
 									<name>LOWPOWER</name>
-									<description>Low-power
-										mode. Entering low-power mode reduces memory controller
-										power consumption.
-										Dynamic memory is refreshed as necessary. The memory
-										controller
-										returns to normal functional mode by clearing the low-power
-										mode
-										bit (L), or by POR. This bit must only be modified when the
-										EMC
-										is in idle state.[1]</description>
+									<description>Low-power mode. Entering low-power mode reduces memory
+										controller power consumption. Dynamic memory is refreshed
+										as necessary. The memory controller returns to normal
+										functional mode by clearing the low-power mode bit (L), or by POR.
+										This bit must only be modified when the EMC is in idle
+										state.[1]</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
 						</field>
 						<field>
 							<name>RESERVED</name>
-							<description>Reserved. Read value is undefined, only zero should be
-								written.</description>
+							<description>Reserved. Read value is undefined,
+								only zero should be written.</description>
 							<bitRange>[31:3]</bitRange>
 
 						</field>
@@ -13764,14 +13759,12 @@
 								<name>S</name>
 								<enumeratedValue>
 									<name>EMPTY</name>
-									<description>Write buffers
-										empty (POR reset value)</description>
+									<description>Write buffers empty (POR reset value)</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
 									<name>DATA</name>
-									<description>Write
-										buffers contain data.</description>
+									<description>Write buffers contain data.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -13929,12 +13922,12 @@
 							<enumeratedValues>
 								<name>SR</name>
 								<enumeratedValue>
-									<name>NORMAL_MODE_</name>
+									<name>NORMAL_MODE</name>
 									<description>Normal mode.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENTER_SELF_REFRESH_M</name>
+									<name>SELF_REFRESH_MODE</name>
 									<description>Enter self-refresh mode (POR reset value).</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -13954,12 +13947,12 @@
 							<enumeratedValues>
 								<name>MMC</name>
 								<enumeratedValue>
-									<name>CLKOUT_ENABLED_POR_</name>
+									<name>ENABLED</name>
 									<description>CLKOUT enabled (POR reset value).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>CLKOUT_DISABLED</name>
+									<name>DISABLED</name>
 									<description>CLKOUT disabled.[3]</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -14390,12 +14383,12 @@
 							<enumeratedValues>
 								<name>MD</name>
 								<enumeratedValue>
-									<name>SDRAM_POR_RESET_VAL</name>
+									<name>SDRAM</name>
 									<description>SDRAM (POR reset value).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>LOW_POWER_SDRAM_</name>
+									<name>LOW_POWER_SDRAM</name>
 									<description>Low-power SDRAM.</description>
 									<value>0x1</value>
 								</enumeratedValue>
@@ -14451,13 +14444,13 @@
 							<enumeratedValues>
 								<name>B</name>
 								<enumeratedValue>
-									<name>BUFFER_DISABLED_FOR_</name>
+									<name>DISABLED</name>
 									<description>Buffer disabled for accesses to this chip select
 										(POR reset value).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>BUFFER_ENABLED_FOR_A</name>
+									<name>ENABLED</name>
 									<description>Buffer enabled for accesses to this chip select.[2]</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -14470,12 +14463,12 @@
 							<enumeratedValues>
 								<name>P</name>
 								<enumeratedValue>
-									<name>WRITES_NOT_PROTECTED</name>
+									<name>DISABLED</name>
 									<description>Writes not protected (POR reset value).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>WRITES_PROTECTED_</name>
+									<name>ENABLED</name>
 									<description>Writes protected.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -14514,17 +14507,17 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ONE_CCLK_CYCLE_</name>
+									<name>ONE_CCLK</name>
 									<description>One CCLK cycle.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>TWO_CCLK_CYCLES_</name>
+									<name>TWO_CCLK</name>
 									<description>Two CCLK cycles.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>THREE_CCLK_CYCLES_P</name>
+									<name>THREE_CCLK</name>
 									<description>Three CCLK cycles (POR reset value).</description>
 									<value>0x3</value>
 								</enumeratedValue>
