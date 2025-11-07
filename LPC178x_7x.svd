@@ -24141,12 +24141,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -24305,12 +24305,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -24458,12 +24458,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -24611,12 +24611,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -24776,12 +24776,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -24941,12 +24941,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -25113,12 +25113,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -25283,12 +25283,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -25472,12 +25472,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -25661,12 +25661,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -25839,12 +25839,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -25998,12 +25998,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -26243,12 +26243,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -26396,12 +26396,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -26549,12 +26549,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -26702,12 +26702,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -26855,12 +26855,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -27014,12 +27014,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -27175,12 +27175,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -27344,12 +27344,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -27510,12 +27510,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -27807,12 +27807,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -28353,12 +28353,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -28511,12 +28511,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -28669,12 +28669,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -28827,12 +28827,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -28985,12 +28985,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -29144,12 +29144,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -29302,12 +29302,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -29460,12 +29460,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -29619,12 +29619,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -29772,12 +29772,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -29925,12 +29925,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -30083,12 +30083,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -30241,12 +30241,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -30389,12 +30389,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -30542,12 +30542,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -30697,12 +30697,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -30850,12 +30850,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -31003,12 +31003,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -31172,12 +31172,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -31346,12 +31346,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -31524,12 +31524,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -31697,12 +31697,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -31876,12 +31876,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -32054,12 +32054,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -32232,12 +32232,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -32410,12 +32410,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -32588,12 +32588,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -32762,12 +32762,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -32940,12 +32940,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -33119,12 +33119,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -33373,12 +33373,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -33531,12 +33531,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -33699,12 +33699,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -33868,12 +33868,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -34036,12 +34036,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -34207,12 +34207,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -34385,12 +34385,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -34550,12 +34550,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -34723,12 +34723,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -34898,12 +34898,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -35253,12 +35253,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -35412,12 +35412,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -35560,12 +35560,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -35708,12 +35708,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -35856,12 +35856,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -36019,12 +36019,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -36182,12 +36182,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -36330,12 +36330,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -36488,12 +36488,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -36646,12 +36646,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -36794,12 +36794,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -36942,12 +36942,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -37100,12 +37100,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -37258,12 +37258,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -37406,12 +37406,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -37554,12 +37554,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -37713,12 +37713,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -37872,12 +37872,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -38020,12 +38020,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -38168,12 +38168,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -38316,12 +38316,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -38464,12 +38464,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -38612,12 +38612,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -38760,12 +38760,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -38908,12 +38908,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -39056,12 +39056,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -39204,12 +39204,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -39352,12 +39352,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -39500,12 +39500,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -39648,12 +39648,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -39796,12 +39796,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -39944,12 +39944,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -40092,12 +40092,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -40240,12 +40240,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -40398,12 +40398,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -40556,12 +40556,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -40714,12 +40714,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -40872,12 +40872,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -41030,12 +41030,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -41190,12 +41190,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -41348,12 +41348,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -41506,12 +41506,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -41664,12 +41664,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -41822,12 +41822,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -41985,12 +41985,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -42143,12 +42143,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -42301,12 +42301,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -42459,12 +42459,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -42619,12 +42619,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -42772,12 +42772,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -42920,12 +42920,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -43068,12 +43068,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -43216,12 +43216,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -43364,12 +43364,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -43512,12 +43512,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -43660,12 +43660,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -43808,12 +43808,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -43956,12 +43956,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -44104,12 +44104,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -44252,12 +44252,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -44400,12 +44400,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -44548,12 +44548,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -44696,12 +44696,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -44844,12 +44844,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -44992,12 +44992,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -45140,12 +45140,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -45288,12 +45288,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -45436,12 +45436,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -45584,12 +45584,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -45732,12 +45732,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -45891,12 +45891,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -46050,12 +46050,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -46208,12 +46208,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -46366,12 +46366,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -46514,12 +46514,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -46662,12 +46662,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -46810,12 +46810,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -46958,12 +46958,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -47131,12 +47131,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -47310,12 +47310,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -47458,12 +47458,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -47606,12 +47606,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -47764,12 +47764,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -47922,12 +47922,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -48317,12 +48317,12 @@
 							<enumeratedValues>
 								<name>HYS</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_</name>
+									<name>ENABLED</name>
 									<description>Enable.</description>
 									<value>1</value>
 								</enumeratedValue>
