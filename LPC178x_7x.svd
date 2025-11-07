@@ -24208,15 +24208,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -24375,15 +24374,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -24531,15 +24529,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -24687,15 +24684,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -24855,15 +24851,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -25023,15 +25018,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -25198,15 +25192,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -25390,15 +25383,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -25582,15 +25574,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -25774,15 +25765,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -25936,15 +25926,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -26098,15 +26087,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -26346,15 +26334,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -26502,15 +26489,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -26658,15 +26644,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -26814,15 +26799,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -26970,15 +26954,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -27132,15 +27115,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -27296,15 +27278,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -27468,15 +27449,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -28488,15 +28468,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -28649,15 +28628,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -28810,15 +28788,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -28971,15 +28948,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -29132,15 +29108,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -29294,15 +29269,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -29455,15 +29429,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -29616,15 +29589,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -29778,15 +29750,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -29934,15 +29905,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -30090,15 +30060,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -30251,15 +30220,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -30412,15 +30380,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -30563,15 +30530,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -30719,15 +30685,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -30877,15 +30842,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -31033,15 +30997,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -31189,15 +31152,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -31361,15 +31323,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -31538,15 +31499,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -31719,15 +31679,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -31895,15 +31854,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -32077,15 +32035,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -32258,15 +32215,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -32439,15 +32395,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -32620,15 +32575,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -32801,15 +32755,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -32978,15 +32931,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -33159,15 +33111,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -33341,15 +33292,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -33598,15 +33548,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -33759,15 +33708,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -33930,15 +33878,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -34102,15 +34049,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -34273,15 +34219,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -34447,15 +34392,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -34628,15 +34572,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -34796,15 +34739,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -34972,15 +34914,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -35150,15 +35091,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -35508,15 +35448,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -35670,15 +35609,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -35821,15 +35759,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -35972,15 +35909,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -36453,15 +36389,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -36604,15 +36539,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -36765,15 +36699,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -36926,15 +36859,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -37077,15 +37009,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -37228,15 +37159,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -37389,15 +37319,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -37550,15 +37479,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -37701,15 +37629,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -37852,15 +37779,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -38014,15 +37940,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -38176,15 +38101,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -38327,15 +38251,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -38478,15 +38401,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -38629,15 +38551,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -38780,15 +38701,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -38931,15 +38851,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -39082,15 +39001,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -39233,15 +39151,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -39384,15 +39301,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -39535,15 +39451,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -39686,15 +39601,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -39837,15 +39751,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -39988,15 +39901,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -40139,15 +40051,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -40290,15 +40201,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -40441,15 +40351,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -40592,15 +40501,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -40753,15 +40661,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -40914,15 +40821,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -41075,15 +40981,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -41236,15 +41141,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -41397,15 +41301,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -41560,15 +41463,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -41721,15 +41623,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -41882,15 +41783,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -42043,15 +41943,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -42204,15 +42103,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -42370,15 +42268,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -42531,15 +42428,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -42692,15 +42588,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -42853,15 +42748,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -43016,15 +42910,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -43172,15 +43065,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -43323,15 +43215,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -43474,15 +43365,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -43625,15 +43515,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -43776,15 +43665,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -43927,15 +43815,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -44078,15 +43965,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -44229,15 +44115,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -44380,15 +44265,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -44531,15 +44415,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -44682,15 +44565,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -44833,15 +44715,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -44984,15 +44865,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -45135,15 +45015,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -45286,15 +45165,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -45437,15 +45315,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -45588,15 +45465,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -45739,15 +45615,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -45890,15 +45765,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -46041,15 +45915,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -46192,15 +46065,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -46354,15 +46226,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -46516,15 +46387,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -46677,15 +46547,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -46838,15 +46707,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -46989,15 +46857,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -47140,15 +47007,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -47291,15 +47157,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -47442,15 +47307,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -47618,15 +47482,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -47800,15 +47663,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -47951,15 +47813,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -48102,15 +47963,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -48263,15 +48123,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -48424,15 +48283,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -48826,15 +48684,14 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
-										open-drain
-										mode. Input cannot be pulled up above VDD.</description>
+										open-drain mode. Input cannot be pulled up above VDD.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
