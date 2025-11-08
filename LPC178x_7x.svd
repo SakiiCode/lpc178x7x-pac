@@ -24111,12 +24111,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -24275,12 +24275,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -24428,12 +24428,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -24581,12 +24581,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -24746,12 +24746,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -24911,12 +24911,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -25083,12 +25083,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -25253,12 +25253,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -25442,12 +25442,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -25631,12 +25631,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -25809,12 +25809,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -25968,12 +25968,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -26213,12 +26213,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -26366,12 +26366,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -26519,12 +26519,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -26672,12 +26672,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -26825,12 +26825,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -26984,12 +26984,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -27145,12 +27145,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -27314,12 +27314,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -27480,12 +27480,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -27777,12 +27777,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -28323,12 +28323,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -28481,12 +28481,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -28639,12 +28639,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -28797,12 +28797,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -28955,12 +28955,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -29114,12 +29114,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -29272,12 +29272,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -29430,12 +29430,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -29589,12 +29589,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -29742,12 +29742,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -29895,12 +29895,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -30053,12 +30053,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -30211,12 +30211,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -30359,12 +30359,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -30512,12 +30512,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -30667,12 +30667,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -30820,12 +30820,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -30973,12 +30973,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -31142,12 +31142,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -31316,12 +31316,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -31494,12 +31494,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -31667,12 +31667,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -31846,12 +31846,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -32024,12 +32024,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -32202,12 +32202,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -32380,12 +32380,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -32558,12 +32558,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -32732,12 +32732,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -32910,12 +32910,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -33089,12 +33089,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -33343,12 +33343,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -33501,12 +33501,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -33669,12 +33669,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -33838,12 +33838,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -34006,12 +34006,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -34177,12 +34177,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -34355,12 +34355,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -34520,12 +34520,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -34693,12 +34693,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -34868,12 +34868,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -35223,12 +35223,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -35382,12 +35382,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -35530,12 +35530,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -35678,12 +35678,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -35826,12 +35826,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -35989,12 +35989,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -36152,12 +36152,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -36300,12 +36300,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -36458,12 +36458,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -36616,12 +36616,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -36764,12 +36764,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -36912,12 +36912,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -37070,12 +37070,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -37228,12 +37228,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -37376,12 +37376,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -37524,12 +37524,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -37683,12 +37683,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -37842,12 +37842,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -37990,12 +37990,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -38138,12 +38138,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -38286,12 +38286,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -38434,12 +38434,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -38582,12 +38582,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -38730,12 +38730,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -38878,12 +38878,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -39026,12 +39026,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -39174,12 +39174,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -39322,12 +39322,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -39470,12 +39470,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -39618,12 +39618,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -39766,12 +39766,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -39914,12 +39914,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -40062,12 +40062,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -40210,12 +40210,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -40368,12 +40368,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -40526,12 +40526,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -40684,12 +40684,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -40842,12 +40842,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -41000,12 +41000,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -41160,12 +41160,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -41318,12 +41318,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -41476,12 +41476,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -41634,12 +41634,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -41792,12 +41792,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -41955,12 +41955,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -42113,12 +42113,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -42271,12 +42271,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -42429,12 +42429,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -42589,12 +42589,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -42742,12 +42742,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -42890,12 +42890,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -43038,12 +43038,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -43186,12 +43186,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -43334,12 +43334,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -43482,12 +43482,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -43630,12 +43630,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -43778,12 +43778,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -43926,12 +43926,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -44074,12 +44074,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -44222,12 +44222,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -44370,12 +44370,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -44518,12 +44518,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -44666,12 +44666,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -44814,12 +44814,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -44962,12 +44962,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -45110,12 +45110,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -45258,12 +45258,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -45406,12 +45406,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -45554,12 +45554,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -45702,12 +45702,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -45861,12 +45861,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -46020,12 +46020,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -46178,12 +46178,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -46336,12 +46336,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -46484,12 +46484,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -46632,12 +46632,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -46780,12 +46780,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -46928,12 +46928,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -47101,12 +47101,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -47280,12 +47280,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -47428,12 +47428,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -47576,12 +47576,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -47734,12 +47734,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -47892,12 +47892,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -48287,12 +48287,12 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PDR</name>
+									<name>PULLDOWN</name>
 									<description>Pull-down resistor enabled.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PUR</name>
+									<name>PULLUP</name>
 									<description>Pull-up resistor enabled.</description>
 									<value>0x2</value>
 								</enumeratedValue>
