@@ -14050,7 +14050,7 @@
 							<enumeratedValues>
 								<name>RD</name>
 								<enumeratedValue>
-									<name>NO_DELAY</name>
+									<name>CLOCK_OUT_DELAYED</name>
 									<description>Clock out delayed strategy, using CLKOUT (command
 										not delayed, clock out delayed). POR reset value.</description>
 									<value>0x0</value>
@@ -16130,12 +16130,12 @@
 							<enumeratedValues>
 								<name>RBRIE</name>
 								<enumeratedValue>
-									<name>DISABLE_THE_RDA_INTE</name>
+									<name>DISABLED</name>
 									<description>Disable the RDA interrupts.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_THE_RDA_INTER</name>
+									<name>ENABLED</name>
 									<description>Enable the RDA interrupts.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -16149,12 +16149,12 @@
 							<enumeratedValues>
 								<name>THREIE</name>
 								<enumeratedValue>
-									<name>DISABLE_THE_THRE_INT</name>
+									<name>DISABLED</name>
 									<description>Disable the THRE interrupts.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_THE_THRE_INTE</name>
+									<name>ENABLED</name>
 									<description>Enable the THRE interrupts.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -20372,13 +20372,13 @@
 							<enumeratedValues>
 								<name>MM_ENA</name>
 								<enumeratedValue>
-									<name>MONITOR_MODE_DISABLE</name>
+									<name>DISABLED</name>
 									<description>Monitor mode disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>THE_I_2C_MODULE_WILL</name>
-									<description>The I 2C module will enter monitor mode. In this
+									<name>ENABLED</name>
+									<description>The I2C module will enter monitor mode. In this
 										mode the SDA output will be forced high. This will prevent
 										the I2C module from outputting data of any kind (including
 										ACK) onto the I2C data bus. Depending on the state of the
@@ -20395,7 +20395,7 @@
 							<enumeratedValues>
 								<name>ENA_SCL</name>
 								<enumeratedValue>
-									<name>WHEN_THIS_BIT_IS_CLE</name>
+									<name>DISABLED</name>
 									<description>When this bit is cleared to 0, the SCL output will
 										be forced high when the module is in monitor mode. As
 										described above, this will prevent the module from having
@@ -20403,7 +20403,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>WHEN_THIS_BIT_IS_SET</name>
+									<name>ENABLED</name>
 									<description>When this bit is set, the I2C module may exercise
 										the same control over the clock line that it would in normal
 										operation. This means that, acting as a slave peripheral,
@@ -20420,7 +20420,7 @@
 							<enumeratedValues>
 								<name>MATCH_ALL</name>
 								<enumeratedValue>
-									<name>WHEN_THIS_BIT_IS_CLE</name>
+									<name>DISABLED</name>
 									<description>When this bit is cleared, an interrupt will only be
 										generated when a match occurs to one of the (up-to) four
 										address registers described above. That is, the module will
@@ -20429,7 +20429,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>WHEN_THIS_BIT_IS_SET</name>
+									<name>ENABLED</name>
 									<description>When this bit is set to 1 and the I2C is in monitor
 										mode, an interrupt will be generated on ANY address
 										received. This will enable the part to monitor all traffic
@@ -52867,12 +52867,12 @@
 							<enumeratedValues>
 								<name>DLAB</name>
 								<enumeratedValue>
-									<name>DISABLE_ACCESS_TO_DI</name>
+									<name>DISABLED</name>
 									<description>Disable access to Divisor Latches.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_ACCESS_TO_DIV</name>
+									<name>ENABLED</name>
 									<description>Enable access to Divisor Latches.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -53018,12 +53018,12 @@
 							<enumeratedValues>
 								<name>THRE</name>
 								<enumeratedValue>
-									<name>UNTHR_CONTAINS_VALID</name>
+									<name>HAS_DATA</name>
 									<description>UnTHR contains valid data.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>UNTHR_IS_EMPTY_</name>
+									<name>EMPTY</name>
 									<description>UnTHR is empty.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -53059,12 +53059,12 @@
 							<enumeratedValues>
 								<name>RXFE</name>
 								<enumeratedValue>
-									<name>UNRBR_CONTAINS_NO_UA</name>
+									<name>NO_ERROR</name>
 									<description>UnRBR contains no UARTn RX errors or UnFCR[0]=0.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>UARTN_RBR_CONTAINS_A</name>
+									<name>ERROR</name>
 									<description>UARTn RBR contains at least one UARTn RX error.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -53117,12 +53117,12 @@
 							<enumeratedValues>
 								<name>START</name>
 								<enumeratedValue>
-									<name>AUTO_BAUD_STOP_AUTO</name>
+									<name>STOPPED</name>
 									<description>Auto-baud stop (auto-baud is not running).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>AUTO_BAUD_START_AUT</name>
+									<name>STARTED</name>
 									<description>Auto-baud start (auto-baud is running). Auto-baud
 										run bit. This bit is automatically cleared after auto-baud
 										completion.</description>
@@ -53137,12 +53137,12 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>MODE_0_</name>
+									<name>MODE_0</name>
 									<description>Mode 0.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>MODE_1_</name>
+									<name>MODE_1</name>
 									<description>Mode 1.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -53155,12 +53155,12 @@
 							<enumeratedValues>
 								<name>AUTORESTART</name>
 								<enumeratedValue>
-									<name>NO_RESTART_</name>
+									<name>NO_RESTART</name>
 									<description>No restart.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>RESTART_IN_CASE_OF_T</name>
+									<name>RESTART_ON_TIMEOUT</name>
 									<description>Restart in case of time-out (counter restarts at
 										next UARTn Rx falling edge)</description>
 									<value>1</value>
@@ -53203,12 +53203,12 @@
 							<enumeratedValues>
 								<name>ABTOINTCLR</name>
 								<enumeratedValue>
-									<name>NO_IMPACT_</name>
+									<name>NO_CLEAR</name>
 									<description>No impact.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>CLEAR_THE_CORRESPOND</name>
+									<name>CLEAR</name>
 									<description>Clear the corresponding interrupt in the IIR.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -53238,13 +53238,13 @@
 							<enumeratedValues>
 								<name>IRDAEN</name>
 								<enumeratedValue>
-									<name>DISABLED_IRDA_MODE_</name>
+									<name>DISABLED</name>
 									<description>Disabled. IrDA mode on UART4 is disabled, UART4
 										acts as a standard UART.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLED_IRDA_MODE_O</name>
+									<name>ENABLED</name>
 									<description>Enabled. IrDA mode on UART4 is enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -53257,12 +53257,12 @@
 							<enumeratedValues>
 								<name>IRDAINV</name>
 								<enumeratedValue>
-									<name>NOT_INVERTED_</name>
+									<name>NOT_INVERTED</name>
 									<description>Not inverted.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INVERTED_THIS_HAS_N</name>
+									<name>INVERTED</name>
 									<description>Inverted. This has no effect on the serial output.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -53437,12 +53437,12 @@
 							<enumeratedValues>
 								<name>SCIEN</name>
 								<enumeratedValue>
-									<name>SMART_CARD_INTERFACE</name>
+									<name>DISABLED</name>
 									<description>Smart card interface disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ASYNCHRONOUS_HALF_DU</name>
+									<name>ENABLED</name>
 									<description>Asynchronous half duplex smart card interface is
 										enabled.</description>
 									<value>1</value>
@@ -53456,12 +53456,12 @@
 							<enumeratedValues>
 								<name>NACKDIS</name>
 								<enumeratedValue>
-									<name>A_NACK_RESPONSE_IS_E</name>
+									<name>ENABLED</name>
 									<description>A NACK response is enabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>A_NACK_RESPONSE_IS_I</name>
+									<name>DISABLED</name>
 									<description>A NACK response is inhibited.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -53593,12 +53593,12 @@
 							<enumeratedValues>
 								<name>DCTRL</name>
 								<enumeratedValue>
-									<name>DISABLE_AUTO_DIRECTI</name>
+									<name>DISABLED</name>
 									<description>Disable Auto Direction Control.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_AUTO_DIRECTIO</name>
+									<name>ENABLED</name>
 									<description>Enable Auto Direction Control.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -53612,7 +53612,7 @@
 							<enumeratedValues>
 								<name>OINV</name>
 								<enumeratedValue>
-									<name>LOW_THE_DIRECTION_C</name>
+									<name>LOW</name>
 									<description>Low. The direction control pin will be driven to
 										logic 0 when the transmitter has data to be sent. It will be
 										driven to logic 1 after the last bit of data has been
@@ -53620,7 +53620,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>HIGH_THE_DIRECTION_</name>
+									<name>HIGH</name>
 									<description>High. The direction control pin will be driven to
 										logic 1 when the transmitter has data to be sent. It will be
 										driven to logic 0 after the last bit of data has been
@@ -53715,12 +53715,12 @@
 							<enumeratedValues>
 								<name>CSRC</name>
 								<enumeratedValue>
-									<name>SYNCHRONOUS_SLAVE_MO</name>
+									<name>SLAVE</name>
 									<description>Synchronous slave mode (SCLK in)</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>SYNCHRONOUS_MASTER_M</name>
+									<name>MASTER</name>
 									<description>Synchronous master mode (SCLK out)</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -53751,13 +53751,13 @@
 							<enumeratedValues>
 								<name>TSBYPASS</name>
 								<enumeratedValue>
-									<name>THE_INPUT_CLOCK_IS_S</name>
+									<name>NO_BYPASS</name>
 									<description>The input clock is synchronized prior to being used
 										in clock edge detection logic.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>THE_INPUT_CLOCK_IS_N</name>
+									<name>BYPASS</name>
 									<description>The input clock is not synchronized prior to being
 										used in clock edge detection logic. This allows for a high
 										er input clock rate at the expense of potential
@@ -53773,13 +53773,13 @@
 							<enumeratedValues>
 								<name>CSCEN</name>
 								<enumeratedValue>
-									<name>SCLK_CYCLES_ONLY_WHE</name>
+									<name>SEND_ONLY</name>
 									<description>SCLK cycles only when characters are being sent on
 										TxD</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>SCLK_RUNS_CONTINUOUS</name>
+									<name>CONTINUOUS</name>
 									<description>SCLK runs continuously (characters can be received
 										on RxD independently from transmission on TxD)</description>
 									<value>1</value>
@@ -53793,12 +53793,12 @@
 							<enumeratedValues>
 								<name>SSSDIS</name>
 								<enumeratedValue>
-									<name>SEND_START_AND_STOP_</name>
+									<name>SEND</name>
 									<description>Send start and stop bits as in other modes.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>NOSTARTSTOPBIT</name>
+									<name>NO_SEND</name>
 									<description>Do not send start/stop bits.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -53811,12 +53811,12 @@
 							<enumeratedValues>
 								<name>CCCLR</name>
 								<enumeratedValue>
-									<name>CSCEN_IS_UNDER_SOFTW</name>
+									<name>DISABLED</name>
 									<description>CSCEN is under software control.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>HARDWARE_CLEARS_CSCE</name>
+									<name>ENABLED</name>
 									<description>Hardware clears CSCEN after each character is
 										received.</description>
 									<value>1</value>
@@ -54441,24 +54441,24 @@
 							<enumeratedValues>
 								<name>RXCLKSEL</name>
 								<enumeratedValue>
-									<name>SELECT_THE_RX_FRACTI</name>
+									<name>RX_FRD</name>
 									<description>Select the RX fractional rate divider clock output
 										as the source</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>RESERVED</name>
+									<name>RESERVED_0X1</name>
 									<description>Reserved</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>SELECT_THE_TX_MCLK_S</name>
+									<name>TX_MCLK</name>
 									<description>Select the TX_MCLK signal as the RX_MCLK clock
 										source</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>RESERVED</name>
+									<name>RESERVED_0X3</name>
 									<description>Reserved</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -54528,12 +54528,12 @@
 							<enumeratedValues>
 								<name>RUN0</name>
 								<enumeratedValue>
-									<name>STOP_</name>
+									<name>STOP</name>
 									<description>Stop.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>RUN_</name>
+									<name>START</name>
 									<description>Run.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -54546,12 +54546,12 @@
 							<enumeratedValues>
 								<name>CENTER0</name>
 								<enumeratedValue>
-									<name>EDGE_ALIGNED_</name>
+									<name>EDGE</name>
 									<description>Edge-aligned.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>CENTER_ALIGNED_</name>
+									<name>CENTER</name>
 									<description>Center-aligned.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -54564,12 +54564,12 @@
 							<enumeratedValues>
 								<name>POLA0</name>
 								<enumeratedValue>
-									<name>PASSIVE_STATE_IS_LOW</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Passive state is LOW, active state is HIGH.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PASSIVE_STATE_IS_HIG</name>
+									<name>ACTIVE_LOW</name>
 									<description>Passive state is HIGH, active state is LOW.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -54582,12 +54582,12 @@
 							<enumeratedValues>
 								<name>DTE0</name>
 								<enumeratedValue>
-									<name>DEAD_TIME_DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Dead-time disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>DEAD_TIME_ENABLED_</name>
+									<name>ENABLED</name>
 									<description>Dead-time enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -54627,12 +54627,12 @@
 							<enumeratedValues>
 								<name>RUN1</name>
 								<enumeratedValue>
-									<name>STOP_</name>
+									<name>STOP</name>
 									<description>Stop.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>RUN_</name>
+									<name>START</name>
 									<description>Run.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -54645,12 +54645,12 @@
 							<enumeratedValues>
 								<name>CENTER1</name>
 								<enumeratedValue>
-									<name>EDGE_ALIGNED_</name>
+									<name>EDGE</name>
 									<description>Edge-aligned.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>CENTER_ALIGNED_</name>
+									<name>CENTER</name>
 									<description>Center-aligned.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -54663,12 +54663,12 @@
 							<enumeratedValues>
 								<name>POLA1</name>
 								<enumeratedValue>
-									<name>PASSIVE_STATE_IS_LOW</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Passive state is LOW, active state is HIGH.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PASSIVE_STATE_IS_HIG</name>
+									<name>ACTIVE_LOW</name>
 									<description>Passive state is HIGH, active state is LOW.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -54681,12 +54681,12 @@
 							<enumeratedValues>
 								<name>DTE1</name>
 								<enumeratedValue>
-									<name>DEAD_TIME_DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Dead-time disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>DEAD_TIME_ENABLED_</name>
+									<name>ENABLED</name>
 									<description>Dead-time enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -54726,12 +54726,12 @@
 							<enumeratedValues>
 								<name>RUN2</name>
 								<enumeratedValue>
-									<name>STOP_</name>
+									<name>STOP</name>
 									<description>Stop.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>RUN_</name>
+									<name>START</name>
 									<description>Run.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -54744,12 +54744,12 @@
 							<enumeratedValues>
 								<name>CENTER2</name>
 								<enumeratedValue>
-									<name>EDGE_ALIGNED_</name>
+									<name>EDGE</name>
 									<description>Edge-aligned.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>CENTER_ALIGNED_</name>
+									<name>CENTER</name>
 									<description>Center-aligned.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -54762,12 +54762,12 @@
 							<enumeratedValues>
 								<name>POLA2</name>
 								<enumeratedValue>
-									<name>PASSIVE_STATE_IS_LOW</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Passive state is LOW, active state is HIGH.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PASSIVE_STATE_IS_HIG</name>
+									<name>ACTIVE_LOW</name>
 									<description>Passive state is HIGH, active state is LOW.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -54780,12 +54780,12 @@
 							<enumeratedValues>
 								<name>DTE2</name>
 								<enumeratedValue>
-									<name>DEAD_TIME_DISABLED_</name>
+									<name>Disabled</name>
 									<description>Dead-time disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>DEAD_TIME_ENABLED_</name>
+									<name>Enabled</name>
 									<description>Dead-time enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -54846,13 +54846,13 @@
 							<enumeratedValues>
 								<name>ACMODE</name>
 								<enumeratedValue>
-									<name>3_PHASE_AC_MODE_OFF</name>
+									<name>DISABLED</name>
 									<description>3-phase AC-mode off: Each PWM channel uses its own
 										timer-counter and period register.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>3_PHASE_AC_MODE_ON_</name>
+									<name>ENABLED</name>
 									<description>3-phase AC-mode on: All PWM channels use the
 										timer-counter and period register of channel 0.</description>
 									<value>1</value>
@@ -54866,13 +54866,13 @@
 							<enumeratedValues>
 								<name>DCMODE</name>
 								<enumeratedValue>
-									<name>3_PHASE_DC_MODE_OFF</name>
+									<name>DISABLED</name>
 									<description>3-phase DC mode off: PWM channels are independent
 										(unless bit ACMODE = 1)</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>3_PHASE_DC_MODE_ON_</name>
+									<name>ENABLED</name>
 									<description>3-phase DC mode on: The internal MCOA0 output is
 										routed through the CP register (i.e. a mask) register to all
 										six PWM outputs.</description>
@@ -55685,12 +55685,12 @@
 							<enumeratedValues>
 								<name>CCPA0</name>
 								<enumeratedValue>
-									<name>MCOA0_PASSIVE_</name>
+									<name>PASSIVE</name>
 									<description>MCOA0 passive.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INTERNAL_MCOA0_</name>
+									<name>FOLLOW</name>
 									<description>internal MCOA0.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -55703,12 +55703,12 @@
 							<enumeratedValues>
 								<name>CCPB0</name>
 								<enumeratedValue>
-									<name>MCOB0_PASSIVE_</name>
+									<name>PASSIVE</name>
 									<description>MCOB0 passive.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>MCOB0_TRACKS_INTERNA</name>
+									<name>FOLLOW</name>
 									<description>MCOB0 tracks internal MCOA0.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -55721,12 +55721,12 @@
 							<enumeratedValues>
 								<name>CCPA1</name>
 								<enumeratedValue>
-									<name>MCOA1_PASSIVE_</name>
+									<name>PASSIVE</name>
 									<description>MCOA1 passive.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>MCOA1_TRACKS_INTERNA</name>
+									<name>FOLLOW</name>
 									<description>MCOA1 tracks internal MCOA0.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -55739,12 +55739,12 @@
 							<enumeratedValues>
 								<name>CCPB1</name>
 								<enumeratedValue>
-									<name>MCOB1_PASSIVE_</name>
+									<name>PASSIVE</name>
 									<description>MCOB1 passive.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>MCOB1_TRACKS_INTERNA</name>
+									<name>FOLLOW</name>
 									<description>MCOB1 tracks internal MCOA0.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -55757,12 +55757,12 @@
 							<enumeratedValues>
 								<name>CCPA2</name>
 								<enumeratedValue>
-									<name>MCOA2_PASSIVE_</name>
+									<name>PASSIVE</name>
 									<description>MCOA2 passive.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>MCOA2_TRACKS_INTERNA</name>
+									<name>FOLLOW</name>
 									<description>MCOA2 tracks internal MCOA0.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -55775,12 +55775,12 @@
 							<enumeratedValues>
 								<name>CCPB2</name>
 								<enumeratedValue>
-									<name>MCOB2_PASSIVE_</name>
+									<name>PASSIVE</name>
 									<description>MCOB2 passive.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>MCOB2_TRACKS_INTERNA</name>
+									<name>FOLLOW</name>
 									<description>MCOB2 tracks internal MCOA0.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -55828,12 +55828,12 @@
 							<enumeratedValues>
 								<name>ILIM0</name>
 								<enumeratedValue>
-									<name>INTERRUPT_DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Interrupt disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INTERRUPT_ENABLED_</name>
+									<name>ENABLED</name>
 									<description>Interrupt enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -55846,12 +55846,12 @@
 							<enumeratedValues>
 								<name>IMAT0</name>
 								<enumeratedValue>
-									<name>INTERRUPT_DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Interrupt disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INTERRUPT_ENABLED_</name>
+									<name>ENABLED</name>
 									<description>Interrupt enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -55864,12 +55864,12 @@
 							<enumeratedValues>
 								<name>ICAP0</name>
 								<enumeratedValue>
-									<name>INTERRUPT_DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Interrupt disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INTERRUPT_ENABLED_</name>
+									<name>ENABLED</name>
 									<description>Interrupt enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -55888,12 +55888,12 @@
 							<enumeratedValues>
 								<name>ILIM1</name>
 								<enumeratedValue>
-									<name>INTERRUPT_DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Interrupt disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INTERRUPT_ENABLED_</name>
+									<name>ENABLED</name>
 									<description>Interrupt enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -55906,12 +55906,12 @@
 							<enumeratedValues>
 								<name>IMAT1</name>
 								<enumeratedValue>
-									<name>INTERRUPT_DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Interrupt disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INTERRUPT_ENABLED_</name>
+									<name>ENABLED</name>
 									<description>Interrupt enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -55924,12 +55924,12 @@
 							<enumeratedValues>
 								<name>ICAP1</name>
 								<enumeratedValue>
-									<name>INTERRUPT_DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Interrupt disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INTERRUPT_ENABLED_</name>
+									<name>ENABLED</name>
 									<description>Interrupt enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -55948,12 +55948,12 @@
 							<enumeratedValues>
 								<name>ILIM2</name>
 								<enumeratedValue>
-									<name>INTERRUPT_DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Interrupt disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INTERRUPT_ENABLED_</name>
+									<name>ENABLED</name>
 									<description>Interrupt enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -55966,12 +55966,12 @@
 							<enumeratedValues>
 								<name>IMAT2</name>
 								<enumeratedValue>
-									<name>INTERRUPT_DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Interrupt disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INTERRUPT_ENABLED_</name>
+									<name>ENABLED</name>
 									<description>Interrupt enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -55984,12 +55984,12 @@
 							<enumeratedValues>
 								<name>ICAP2</name>
 								<enumeratedValue>
-									<name>INTERRUPT_DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Interrupt disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INTERRUPT_ENABLED_</name>
+									<name>ENABLED</name>
 									<description>Interrupt enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -56008,12 +56008,12 @@
 							<enumeratedValues>
 								<name>ABORT</name>
 								<enumeratedValue>
-									<name>INTERRUPT_DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Interrupt disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INTERRUPT_ENABLED_</name>
+									<name>ENABLED</name>
 									<description>Interrupt enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -56995,12 +56995,12 @@
 							<enumeratedValues>
 								<name>CNTR0</name>
 								<enumeratedValue>
-									<name>CHANNEL_0_IS_IN_TIME</name>
+									<name>TIMER</name>
 									<description>Channel 0 is in timer mode.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>CHANNEL_0_IS_IN_COUN</name>
+									<name>COUNTER</name>
 									<description>Channel 0 is in counter mode.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -57013,12 +57013,12 @@
 							<enumeratedValues>
 								<name>CNTR1</name>
 								<enumeratedValue>
-									<name>CHANNEL_1_IS_IN_TIME</name>
+									<name>TIMER</name>
 									<description>Channel 1 is in timer mode.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>CHANNEL_1_IS_IN_COUN</name>
+									<name>COUNTER</name>
 									<description>Channel 1 is in counter mode.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -57031,12 +57031,12 @@
 							<enumeratedValues>
 								<name>CNTR2</name>
 								<enumeratedValue>
-									<name>CHANNEL_2_IS_IN_TIME</name>
+									<name>TIMER</name>
 									<description>Channel 2 is in timer mode.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>CHANNEL_2_IS_IN_COUN</name>
+									<name>COUNTER</name>
 									<description>Channel 2 is in counter mode.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -58730,12 +58730,12 @@
 							<enumeratedValues>
 								<name>DIRECTION</name>
 								<enumeratedValue>
-									<name>FROM_CONTROLLER_TO_C</name>
+									<name>TO_CARD</name>
 									<description>From controller to card.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>FROM_CARD_TO_CONTROL</name>
+									<name>TO_CONTROLLER</name>
 									<description>From card to controller.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -58748,12 +58748,12 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>BLOCK_DATA_TRANSFER_</name>
+									<name>BLOCK</name>
 									<description>Block data transfer.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>STREAM_DATA_TRANSFER</name>
+									<name>STREAM</name>
 									<description>Stream data transfer.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -58766,12 +58766,12 @@
 							<enumeratedValues>
 								<name>DMAENABLE</name>
 								<enumeratedValue>
-									<name>DMA_DISABLED_</name>
+									<name>DISABLED</name>
 									<description>DMA disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>DMA_ENABLED_</name>
+									<name>ENABLED</name>
 									<description>DMA enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -59803,7 +59803,7 @@
 							<enumeratedValues>
 								<name>USBDIV</name>
 								<enumeratedValue>
-									<name>NO_DIV</name>
+									<name>DISABLED</name>
 									<description>The divider is turned off, no clock will be
 										provided to the USB subsystem.</description>
 									<value>0x0</value>
@@ -59836,20 +59836,20 @@
 							<enumeratedValues>
 								<name>USBSEL</name>
 								<enumeratedValue>
-									<name>SYSCLK_IS_USED_AS_TH</name>
+									<name>SYSCLK</name>
 									<description>Sysclk is used as the input to the USB clock
 										divider. When this clock is selected, the USB can be
 										accessed by software but cannot perform USB functions.</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>THE_OUTPUT_OF_THE_MA</name>
+									<name>MAIN_PLL</name>
 									<description>The output of the Main PLL is used as the input to
 										the USB clock divider.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>THE_OUTPUT_OF_THE_AL</name>
+									<name>ALT_PLL</name>
 									<description>The output of the Alt PLL is used as the input to
 										the USB clock divider.</description>
 									<value>0x2</value>
@@ -59881,13 +59881,13 @@
 							<enumeratedValues>
 								<name>CLKSRC</name>
 								<enumeratedValue>
-									<name>SELECTS_THE_INTERNAL</name>
+									<name>IRC</name>
 									<description>Selects the Internal RC oscillator as the sysclk
 										and PLL0 clock source (default).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>SELECTS_THE_MAIN_OSC</name>
+									<name>MAIN</name>
 									<description>Selects the main oscillator as the sysclk and PLL0
 										clock source.</description>
 									<value>1</value>
@@ -60404,7 +60404,7 @@
 							<enumeratedValues>
 								<name>EMCRD</name>
 								<enumeratedValue>
-									<name>BOTH_EMC_RESETS_ARE_</name>
+									<name>ANY_RESET</name>
 									<description>Both EMC resets are asserted when any type of chip
 										reset event occurs. In this mode, all registers and
 										functions of the EMC are initialized upon any reset
@@ -60412,7 +60412,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>MANY_PORTIONS_OF_THE</name>
+									<name>PWR_ONLY</name>
 									<description>Many portions of the EMC are only reset by a
 										power-on or brown-out event, in order to allow the EMC to
 										retain its state through a warm reset (external reset or
@@ -60430,12 +60430,12 @@
 							<enumeratedValues>
 								<name>EMCBC</name>
 								<enumeratedValue>
-									<name>BURST_ENABLED_</name>
+									<name>ENABLED</name>
 									<description>Burst enabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>BURST_DISABLED_THIS</name>
+									<name>DISABLED</name>
 									<description>Burst disabled. This mode can be used to prevent
 										multiple sequential accesses to memory mapped I/O devices
 										connected to EMC static memory chip selects. These
@@ -60452,13 +60452,13 @@
 							<enumeratedValues>
 								<name>MCIPWRAL</name>
 								<enumeratedValue>
-									<name>SD_PWR_IS_ACTIVE_LOW</name>
+									<name>ACTIVE_LOW</name>
 									<description>SD_PWR is active low (inverted output of the SD
 										Card interface block).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>SD_PWR_IS_ACTIVE_HIG</name>
+									<name>ACTIVE_HIGH</name>
 									<description>SD_PWR is active high (follows the output of the SD
 										Card interface block).</description>
 									<value>1</value>
