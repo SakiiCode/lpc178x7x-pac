@@ -11342,12 +11342,12 @@
 							<enumeratedValues>
 								<name>AFI</name>
 								<enumeratedValue>
-									<name>NO_ARBITRATION_FAILURE</name>
+									<name>NO_ARB_FAILURE</name>
 									<description>No arbitration failure on last transmission.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ARBITRATION_FAILURE</name>
+									<name>ARB_FAILURE</name>
 									<description>Arbitration failure occurred on last transmission.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -11363,12 +11363,12 @@
 							<enumeratedValues>
 								<name>NAI</name>
 								<enumeratedValue>
-									<name>ACKNOWLEDGE_RCVD</name>
+									<name>ACK_RCVD</name>
 									<description>Last transmission received an acknowledge.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>NO_ACKNOWLEDGE_RCVD</name>
+									<name>NO_ACK_RCVD</name>
 									<description>Last transmission did not receive an acknowledge.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -16830,12 +16830,12 @@
 							<enumeratedValues>
 								<name>START</name>
 								<enumeratedValue>
-									<name>AUTO_BAUD_STOP_AUTO</name>
+									<name>STOPPED</name>
 									<description>Auto-baud stop (auto-baud is not running).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>AUTO_BAUD_START_AUT</name>
+									<name>STARTED</name>
 									<description>Auto-baud start (auto-baud is running). Auto-baud
 										run bit. This bit is automatically cleared after auto-baud
 										completion.</description>
@@ -18489,7 +18489,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLED_IN_THIS_MOD</name>
+									<name>ENABLED</name>
 									<description>Enabled. In this mode, an address is detected when
 										a received byte causes the UART to set the parity error and
 										generate an interrupt.</description>
@@ -18540,13 +18540,13 @@
 							<enumeratedValues>
 								<name>SEL</name>
 								<enumeratedValue>
-									<name>RTS_IF_DIRECTION_CO</name>
+									<name>RTS</name>
 									<description>RTS. If direction control is enabled (bit DCTRL =
 										1), pin RTS is used for direction control.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>DTR_IF_DIRECTION_CO</name>
+									<name>DTR</name>
 									<description>DTR. If direction control is enabled (bit DCTRL =
 										1), pin DTR is used for direction control.</description>
 									<value>1</value>
@@ -21798,12 +21798,12 @@
 							<enumeratedValues>
 								<name>WAKEUP</name>
 								<enumeratedValue>
-									<name>NO_INTERRUPTWAKEUP_</name>
+									<name>EMPTY</name>
 									<description>No interrupt/wakeup request is pending</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INTWAKEUP_PEND</name>
+									<name>PENDING</name>
 									<description>An interrupt/wakeup request is pending.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -51384,7 +51384,7 @@
 							<enumeratedValues>
 								<name>TBS1_1</name>
 								<enumeratedValue>
-									<name>LOCKED_SOFTWARE_CAN</name>
+									<name>LOCKED</name>
 									<description>Locked. Software cannot access the Tx Buffer 1 nor
 										write to the corresponding CANxTFI, CANxTID, CANxTDA, and
 										CANxTDB registers because a message is either waiting for
@@ -51392,7 +51392,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>RELEASED_SOFTWARE_M</name>
+									<name>RELEASED</name>
 									<description>Released. Software may write a message into the
 										Transmit Buffer 1 and its CANxTFI, CANxTID, CANxTDA, and
 										CANxTDB registers.</description>
@@ -51407,13 +51407,13 @@
 							<enumeratedValues>
 								<name>TCS1_1</name>
 								<enumeratedValue>
-									<name>INCOMPLETE_THE_PREV</name>
+									<name>INCOMPLETE</name>
 									<description>Incomplete. The previously requested transmission
 										for Tx Buffer 1 is not complete.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>COMPLETE_THE_PREVIO</name>
+									<name>COMPLETE</name>
 									<description>Complete. The previously requested transmission for
 										Tx Buffer 1 has been successfully completed.</description>
 									<value>1</value>
@@ -51434,12 +51434,12 @@
 							<enumeratedValues>
 								<name>TS1_1</name>
 								<enumeratedValue>
-									<name>IDLE_THERE_IS_NO_TR</name>
+									<name>IDLE</name>
 									<description>Idle. There is no transmission from Tx Buffer 1.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>TRANSMIT_THE_CAN_CO</name>
+									<name>TRANSMIT</name>
 									<description>Transmit. The CAN Controller is transmitting a
 										message from Tx Buffer 1.</description>
 									<value>1</value>
@@ -51481,7 +51481,7 @@
 							<enumeratedValues>
 								<name>TBS2_2</name>
 								<enumeratedValue>
-									<name>LOCKED_SOFTWARE_CAN</name>
+									<name>LOCKED</name>
 									<description>Locked. Software cannot access the Tx Buffer 2 nor
 										write to the corresponding CANxTFI, CANxTID, CANxTDA, and
 										CANxTDB registers because a message is either waiting for
@@ -51489,7 +51489,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>RELEASED_SOFTWARE_M</name>
+									<name>RELEASED</name>
 									<description>Released. Software may write a message into the
 										Transmit Buffer 2 and its CANxTFI, CANxTID, CANxTDA, and
 										CANxTDB registers.</description>
@@ -51504,13 +51504,13 @@
 							<enumeratedValues>
 								<name>TCS2_2</name>
 								<enumeratedValue>
-									<name>INCOMPLETE_THE_PREV</name>
+									<name>INCOMPLETE</name>
 									<description>Incomplete. The previously requested transmission
 										for Tx Buffer 2 is not complete.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>COMPLETE_THE_PREVIO</name>
+									<name>COMPLETE</name>
 									<description>Complete. The previously requested transmission for
 										Tx Buffer 2 has been successfully completed.</description>
 									<value>1</value>
@@ -51531,12 +51531,12 @@
 							<enumeratedValues>
 								<name>TS2_2</name>
 								<enumeratedValue>
-									<name>IDLE_THERE_IS_NO_TR</name>
+									<name>IDLE</name>
 									<description>Idle. There is no transmission from Tx Buffer 2.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>TRANSMIT_THE_CAN_CO</name>
+									<name>TRANSMIT</name>
 									<description>Transmit. The CAN Controller is transmitting a
 										message from Tx Buffer 2.</description>
 									<value>1</value>
@@ -51578,7 +51578,7 @@
 							<enumeratedValues>
 								<name>TBS3_3</name>
 								<enumeratedValue>
-									<name>LOCKED_SOFTWARE_CAN</name>
+									<name>LOCKED</name>
 									<description>Locked. Software cannot access the Tx Buffer 3 nor
 										write to the corresponding CANxTFI, CANxTID, CANxTDA, and
 										CANxTDB registers because a message is either waiting for
@@ -51586,7 +51586,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>RELEASED_SOFTWARE_M</name>
+									<name>RELEASED</name>
 									<description>Released. Software may write a message into the
 										Transmit Buffer 3 and its CANxTFI, CANxTID, CANxTDA, and
 										CANxTDB registers.</description>
@@ -51601,13 +51601,13 @@
 							<enumeratedValues>
 								<name>TCS3_3</name>
 								<enumeratedValue>
-									<name>INCOMPLETE_THE_PREV</name>
+									<name>INCOMPLETE</name>
 									<description>Incomplete. The previously requested transmission
 										for Tx Buffer 3 is not complete.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>COMPLETE_THE_PREVIO</name>
+									<name>COMPLETE</name>
 									<description>Complete. The previously requested transmission for
 										Tx Buffer 3 has been successfully completed.</description>
 									<value>1</value>
@@ -51628,12 +51628,12 @@
 							<enumeratedValues>
 								<name>TS3_3</name>
 								<enumeratedValue>
-									<name>IDLE_THERE_IS_NO_TR</name>
+									<name>IDLE</name>
 									<description>Idle. There is no transmission from Tx Buffer 3.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>TRANSMIT_THE_CAN_CO</name>
+									<name>TRANSMIT</name>
 									<description>Transmit. The CAN Controller is transmitting a
 										message from Tx Buffer 3.</description>
 									<value>1</value>
