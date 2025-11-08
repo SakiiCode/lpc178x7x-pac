@@ -8731,12 +8731,12 @@
 							<enumeratedValues>
 								<name>EOT</name>
 								<enumeratedValue>
-									<name>EMPTY</name>
+									<name>NONE</name>
 									<description>All bits in the USBEoTIntSt register are 0.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>HAS_VALUE</name>
+									<name>SOME</name>
 									<description>At least one bit in the USBEoTIntSt is set.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -8749,12 +8749,12 @@
 							<enumeratedValues>
 								<name>NDDR</name>
 								<enumeratedValue>
-									<name>EMPTY</name>
+									<name>NONE</name>
 									<description>All bits in the USBNDDRIntSt register are 0.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>HAS_VALUE</name>
+									<name>SOME</name>
 									<description>At least one bit in the USBNDDRIntSt is set.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -8767,12 +8767,12 @@
 							<enumeratedValues>
 								<name>ERR</name>
 								<enumeratedValue>
-									<name>EMPTY</name>
+									<name>NONE</name>
 									<description>All bits in the USBSysErrIntSt register are 0.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>HAS_VALUE</name>
+									<name>SOME</name>
 									<description>At least one bit in the USBSysErrIntSt is set.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -11474,7 +11474,7 @@
 							<enumeratedValues>
 								<name>RFE</name>
 								<enumeratedValue>
-									<name>DATA</name>
+									<name>VALID_DATA</name>
 									<description>RX FIFO contains data.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -13899,13 +13899,13 @@
 							<enumeratedValues>
 								<name>CS</name>
 								<enumeratedValue>
-									<name>STOP</name>
+									<name>STOP_ON_IDLE</name>
 									<description>CLKOUT stops when all SDRAMs are idle and during
 										self-refresh mode.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>RUN</name>
+									<name>CONTINUOUS</name>
 									<description>CLKOUT runs continuously (POR reset value).</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -14974,12 +14974,12 @@
 							<enumeratedValues>
 								<name>WDEN</name>
 								<enumeratedValue>
-									<name>STOP</name>
+									<name>STOPPED</name>
 									<description>The watchdog timer is stopped.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>RUN</name>
+									<name>STARTED</name>
 									<description>The watchdog timer is running.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -14993,7 +14993,7 @@
 							<enumeratedValues>
 								<name>WDRESET</name>
 								<enumeratedValue>
-									<name>NORESET</name>
+									<name>NO_RESET</name>
 									<description>A watchdog timeout will not cause a chip reset.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -16364,12 +16364,12 @@
 							<enumeratedValues>
 								<name>RXFIFORES</name>
 								<enumeratedValue>
-									<name>DISABLED</name>
+									<name>DO_NOTHING</name>
 									<description>No impact on either of UARTn FIFOs.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLED</name>
+									<name>CLEAR</name>
 									<description>Writing a logic 1 to UnFCR[1] will clear all bytes
 										in UARTn Rx FIFO, reset the pointer logic. This bit is
 										self-clearing.</description>
@@ -16384,12 +16384,12 @@
 							<enumeratedValues>
 								<name>TXFIFORES</name>
 								<enumeratedValue>
-									<name>DISABLED</name>
+									<name>DO_NOTHING</name>
 									<description>No impact on either of UARTn FIFOs.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLED</name>
+									<name>CLEAR</name>
 									<description>Writing a logic 1 to UnFCR[2] will clear all bytes
 										in UARTn TX FIFO, reset the pointer logic. This bit is
 										self-clearing.</description>
@@ -16622,7 +16622,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>NOTEMPTY</name>
+									<name>UNREAD</name>
 									<description>The UARTn receiver FIFO is not empty.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -16731,7 +16731,7 @@
 							<enumeratedValues>
 								<name>THRE</name>
 								<enumeratedValue>
-									<name>VALIDDATA</name>
+									<name>VALID_DATA</name>
 									<description>UnTHR contains valid data.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -16751,7 +16751,7 @@
 							<enumeratedValues>
 								<name>TEMT</name>
 								<enumeratedValue>
-									<name>VALIDDATA</name>
+									<name>VALID_DATA</name>
 									<description>UnTHR and/or the UnTSR contains valid data.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -16772,7 +16772,7 @@
 							<enumeratedValues>
 								<name>RXFE</name>
 								<enumeratedValue>
-									<name>NOERROR</name>
+									<name>NO_ERROR</name>
 									<description>UnRBR contains no UARTn RX errors or UnFCR[0]=0.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -16896,12 +16896,12 @@
 							<enumeratedValues>
 								<name>ABEOINTCLR</name>
 								<enumeratedValue>
-									<name>DISABLED</name>
+									<name>DO_NOTHING</name>
 									<description>No impact.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLED</name>
+									<name>CLEAR</name>
 									<description>Clear the corresponding interrupt in the IIR.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -16916,12 +16916,12 @@
 							<enumeratedValues>
 								<name>ABTOINTCLR</name>
 								<enumeratedValue>
-									<name>DISABLED</name>
+									<name>DO_NOTHING</name>
 									<description>No impact.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLED</name>
+									<name>CLEAR</name>
 									<description>Clear the corresponding interrupt in the IIR.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -17594,12 +17594,12 @@
 							<enumeratedValues>
 								<name>RXFIFORES</name>
 								<enumeratedValue>
-									<name>DISABLED</name>
+									<name>DO_NOTHING</name>
 									<description>No impact on either of UART1 FIFOs.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLED</name>
+									<name>RESET</name>
 									<description>Writing a logic 1 to FCR[1] will clear all bytes in
 										UART1 Rx FIFO, reset the pointer logic. This bit is
 										self-clearing.</description>
@@ -17614,12 +17614,12 @@
 							<enumeratedValues>
 								<name>TXFIFORES</name>
 								<enumeratedValue>
-									<name>DISABLED</name>
+									<name>DO_NOTHING</name>
 									<description>No impact on either of UART1 FIFOs.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLED</name>
+									<name>RESET</name>
 									<description>Writing a logic 1 to FCR[2] will clear all bytes in
 										UART1 TX FIFO, reset the pointer logic. This bit is
 										self-clearing.</description>
@@ -17963,7 +17963,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>NOTEMPTY</name>
+									<name>UNREAD</name>
 									<description>The UART1 receiver FIFO is not empty.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -18071,7 +18071,7 @@
 							<enumeratedValues>
 								<name>THRE</name>
 								<enumeratedValue>
-									<name>VALID</name>
+									<name>VALID_DATA</name>
 									<description>THR contains valid data.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -18091,7 +18091,7 @@
 							<enumeratedValues>
 								<name>TEMT</name>
 								<enumeratedValue>
-									<name>VALID</name>
+									<name>VALID_DATA</name>
 									<description>THR and/or the TSR contains valid data.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -18112,7 +18112,7 @@
 							<enumeratedValues>
 								<name>RXFE</name>
 								<enumeratedValue>
-									<name>NOERROR</name>
+									<name>NO_ERROR</name>
 									<description>RBR contains no UART1 RX errors or FCR[0]=0.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -18291,12 +18291,12 @@
 							<enumeratedValues>
 								<name>START</name>
 								<enumeratedValue>
-									<name>STOP</name>
+									<name>STOPPED</name>
 									<description>Auto-baud stop (auto-baud is not running).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>START</name>
+									<name>STARTED</name>
 									<description>Auto-baud start (auto-baud is running). Auto-baud
 										run bit. This bit is automatically cleared after auto-baud
 										completion.</description>
@@ -21716,7 +21716,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>HAS_EVENT</name>
+									<name>EVENTS</name>
 									<description>At least one event has occurred on channel 0.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -21736,7 +21736,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>HAS_EVENT</name>
+									<name>EVENTS</name>
 									<description>At least one event has occurred on channel 1.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -21756,7 +21756,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>HAS_EVENT</name>
+									<name>EVENTS</name>
 									<description>At least one event has occurred on channel 2.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -52651,12 +52651,12 @@
 							<enumeratedValues>
 								<name>RXFIFORES</name>
 								<enumeratedValue>
-									<name>DISABLED</name>
+									<name>DO_NOTHING</name>
 									<description>No impact on either of UARTn FIFOs.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLED</name>
+									<name>RESET</name>
 									<description>Writing a logic 1 to UnFCR[1] will clear all bytes
 										in UARTn Rx FIFO, reset the pointer logic. This bit is
 										self-clearing.</description>
@@ -52671,12 +52671,12 @@
 							<enumeratedValues>
 								<name>TXFIFORES</name>
 								<enumeratedValue>
-									<name>DISABLED</name>
+									<name>DO_NOTHING</name>
 									<description>No impact on either of UARTn FIFOs.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLED</name>
+									<name>RESET</name>
 									<description>Writing a logic 1 to UnFCR[2] will clear all bytes
 										in UARTn TX FIFO, reset the pointer logic. This bit is
 										self-clearing.</description>
@@ -53018,7 +53018,7 @@
 							<enumeratedValues>
 								<name>THRE</name>
 								<enumeratedValue>
-									<name>HAS_DATA</name>
+									<name>VALID_DATA</name>
 									<description>UnTHR contains valid data.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -53064,7 +53064,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ERROR</name>
+									<name>ERRORS</name>
 									<description>UARTn RBR contains at least one UARTn RX error.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -53183,7 +53183,7 @@
 							<enumeratedValues>
 								<name>ABEOINTCLR</name>
 								<enumeratedValue>
-									<name>NO_CLEAR</name>
+									<name>DO_NOTHING</name>
 									<description>No impact.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -53203,7 +53203,7 @@
 							<enumeratedValues>
 								<name>ABTOINTCLR</name>
 								<enumeratedValue>
-									<name>NO_CLEAR</name>
+									<name>DO_NOTHING</name>
 									<description>No impact.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -60371,7 +60371,7 @@
 							<enumeratedValues>
 								<name>EMCSC</name>
 								<enumeratedValue>
-									<name>MATCH_DATA_BUS</name>
+									<name>ACTIVE</name>
 									<description>Static memory addresses are shifted to match the
 										data bus width. For example, when accessing a 32-bit wide
 										data bus, the address is shifted right 2 places such that
@@ -60384,7 +60384,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>NO_SHIFT</name>
+									<name>INACTIVE</name>
 									<description>Static memory addresses are always output as byte
 										addresses regardless of the data bus width. For example,
 										when word data is accessed on a 32-bit bus, address bits 1
