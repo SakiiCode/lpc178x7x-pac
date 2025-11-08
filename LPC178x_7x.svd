@@ -60047,12 +60047,12 @@
 							<enumeratedValues>
 								<name>EXTMODE0</name>
 								<enumeratedValue>
-									<name>LEVEL_SENSITIVE_</name>
+									<name>LEVEL_SENSITIVE</name>
 									<description>Level sensitive.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>EDGE_SENSITIVE_</name>
+									<name>EDGE_SENSITIVE</name>
 									<description>Edge sensitive.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -60065,12 +60065,12 @@
 							<enumeratedValues>
 								<name>EXTMODE1</name>
 								<enumeratedValue>
-									<name>LEVEL_SENSITIVE_</name>
+									<name>LEVEL_SENSITIVE</name>
 									<description>Level sensitive.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>EDGE_SENSITIVE_</name>
+									<name>EDGE_SENSITIVE</name>
 									<description>Edge sensitive.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -60083,12 +60083,12 @@
 							<enumeratedValues>
 								<name>EXTMODE2</name>
 								<enumeratedValue>
-									<name>LEVEL_SENSITIVE_</name>
+									<name>LEVEL_SENSITIVE</name>
 									<description>Level sensitive.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>EDGE_SENSITIVE_</name>
+									<name>EDGE_SENSITIVE</name>
 									<description>Edge sensitive.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -60101,12 +60101,12 @@
 							<enumeratedValues>
 								<name>EXTMODE3</name>
 								<enumeratedValue>
-									<name>LEVEL_SENSITIVE_</name>
+									<name>LEVEL_SENSITIVE</name>
 									<description>Level sensitive.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>EDGE_SENSITIVE_</name>
+									<name>EDGE_SENSITIVE</name>
 									<description>Edge sensitive.</description>
 									<value>1</value>
 								</enumeratedValue>
