@@ -6074,12 +6074,12 @@
 							<enumeratedValues>
 								<name>DV</name>
 								<enumeratedValue>
-									<name>DATA_IS_INVALID_</name>
+									<name>INVALID</name>
 									<description>Data is invalid.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>DATA_IS_VALID_</name>
+									<name>VALID</name>
 									<description>Data is valid.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -14542,17 +14542,17 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ONE_CCLK_CYCLE_</name>
+									<name>ONE_CYCLE</name>
 									<description>One CCLK cycle.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>TWO_CCLK_CYCLES_</name>
+									<name>TWO_CYCLES</name>
 									<description>Two CCLK cycles.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>THREE_CCLK_CYCLES_P</name>
+									<name>THREE_CYCLES</name>
 									<description>Three CCLK cycles (POR reset value).</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -14586,17 +14586,17 @@
 							<enumeratedValues>
 								<name>MW</name>
 								<enumeratedValue>
-									<name>8_BIT_POR_RESET_VAL</name>
+									<name>8_BIT</name>
 									<description>8 bit (POR reset value).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>16_BIT_</name>
+									<name>16_BIT</name>
 									<description>16 bit.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>32_BIT_</name>
+									<name>32_BIT</name>
 									<description>32 bit.</description>
 									<value>0x2</value>
 								</enumeratedValue>
@@ -14624,12 +14624,12 @@
 							<enumeratedValues>
 								<name>PM</name>
 								<enumeratedValue>
-									<name>DISABLED_POR_RESET_</name>
+									<name>DISABLED</name>
 									<description>Disabled (POR reset value).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ASYNCHRONOUS_PAGE_MO</name>
+									<name>ENABLED</name>
 									<description>Asynchronous page mode enabled (page length four).</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -14650,12 +14650,12 @@
 							<enumeratedValues>
 								<name>PC</name>
 								<enumeratedValue>
-									<name>ACTIVE_LOW_CHIP_SELE</name>
+									<name>ACTIVE_LOW</name>
 									<description>Active LOW chip select.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ACTIVE_HIGH_CHIP_SEL</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Active HIGH chip select.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -14703,12 +14703,12 @@
 							<enumeratedValues>
 								<name>EW</name>
 								<enumeratedValue>
-									<name>EXTENDED_WAIT_DISABL</name>
+									<name>DISABLED</name>
 									<description>Extended wait disabled (POR reset value).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>EXTENDED_WAIT_ENABLE</name>
+									<name>ENABLED</name>
 									<description>Extended wait enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -14728,12 +14728,12 @@
 							<enumeratedValues>
 								<name>B</name>
 								<enumeratedValue>
-									<name>BUFFER_DISABLED_POR</name>
+									<name>DISABLED</name>
 									<description>Buffer disabled (POR reset value).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>BUFFER_ENABLED_</name>
+									<name>ENABLED</name>
 									<description>Buffer enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -14746,12 +14746,12 @@
 							<enumeratedValues>
 								<name>P</name>
 								<enumeratedValue>
-									<name>WRITES_NOT_PROTECTED</name>
+									<name>NOT_PROTECTED</name>
 									<description>Writes not protected (POR reset value).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>WRITE_PROTECTED_</name>
+									<name>PROTECTED</name>
 									<description>Write protected.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -15318,13 +15318,13 @@
 							<enumeratedValues>
 								<name>MR0I</name>
 								<enumeratedValue>
-									<name>INTERRUPT_IS_GENERAT</name>
+									<name>ENABLED</name>
 									<description>Interrupt is generated when MR0 matches the value
 										in the TC.</description>
 									<value>1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INTERRUPT_IS_DISABLE</name>
+									<name>DISABLED</name>
 									<description>Interrupt is disabled</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -15337,12 +15337,12 @@
 							<enumeratedValues>
 								<name>MR0R</name>
 								<enumeratedValue>
-									<name>TC_WILL_BE_RESET_IF_</name>
+									<name>ENABLED</name>
 									<description>TC will be reset if MR0 matches it.</description>
 									<value>1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>FEATURE_DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Feature disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -15355,13 +15355,13 @@
 							<enumeratedValues>
 								<name>MR0S</name>
 								<enumeratedValue>
-									<name>TC_AND_PC_WILL_BE_ST</name>
+									<name>ENABLED</name>
 									<description>TC and PC will be stopped and TCR[0] will be set to
 										0 if MR0 matches the TC.</description>
 									<value>1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>FEATURE_DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Feature disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -15374,13 +15374,13 @@
 							<enumeratedValues>
 								<name>MR1I</name>
 								<enumeratedValue>
-									<name>INTERRUPT_IS_GENERAT</name>
+									<name>ENABLED</name>
 									<description>Interrupt is generated when MR1 matches the value
 										in the TC.</description>
 									<value>1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INTERRUPT_IS_DISABLE</name>
+									<name>DISABLED</name>
 									<description>Interrupt is disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -15393,12 +15393,12 @@
 							<enumeratedValues>
 								<name>MR1R</name>
 								<enumeratedValue>
-									<name>TC_WILL_BE_RESET_IF_</name>
+									<name>ENABLED</name>
 									<description>TC will be reset if MR1 matches it.</description>
 									<value>1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>FEATURE_DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Feature disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -15411,13 +15411,13 @@
 							<enumeratedValues>
 								<name>MR1S</name>
 								<enumeratedValue>
-									<name>TC_AND_PC_WILL_BE_ST</name>
+									<name>ENABLED</name>
 									<description>TC and PC will be stopped and TCR[0] will be set to
 										0 if MR1 matches the TC.</description>
 									<value>1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>FEATURE_DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Feature disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -15430,13 +15430,13 @@
 							<enumeratedValues>
 								<name>MR2I</name>
 								<enumeratedValue>
-									<name>INTERRUPT_IS_GENERAT</name>
+									<name>ENABLED</name>
 									<description>Interrupt is generated when MR2 matches the value
 										in the TC.</description>
 									<value>1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INTERRUPT_IS_DISABLE</name>
+									<name>DISABLED</name>
 									<description>Interrupt is disabled</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -15449,12 +15449,12 @@
 							<enumeratedValues>
 								<name>MR2R</name>
 								<enumeratedValue>
-									<name>TC_WILL_BE_RESET_IF_</name>
+									<name>ENABLED</name>
 									<description>TC will be reset if MR2 matches it.</description>
 									<value>1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>FEATURE_DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Feature disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -15467,13 +15467,13 @@
 							<enumeratedValues>
 								<name>MR2S</name>
 								<enumeratedValue>
-									<name>TC_AND_PC_WILL_BE_ST</name>
+									<name>ENABLED</name>
 									<description>TC and PC will be stopped and TCR[0] will be set to
 										0 if MR2 matches the TC</description>
 									<value>1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>FEATURE_DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Feature disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -15486,13 +15486,13 @@
 							<enumeratedValues>
 								<name>MR3I</name>
 								<enumeratedValue>
-									<name>INTERRUPT_IS_GENERAT</name>
+									<name>ENABLED</name>
 									<description>Interrupt is generated when MR3 matches the value
 										in the TC.</description>
 									<value>1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>THIS_INTERRUPT_IS_DI</name>
+									<name>DISABLED</name>
 									<description>This interrupt is disabled</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -15505,12 +15505,12 @@
 							<enumeratedValues>
 								<name>MR3R</name>
 								<enumeratedValue>
-									<name>TC_WILL_BE_RESET_IF_</name>
+									<name>ENABLED</name>
 									<description>TC will be reset if MR3 matches it.</description>
 									<value>1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>FEATURE_DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Feature disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -15523,13 +15523,13 @@
 							<enumeratedValues>
 								<name>MR3S</name>
 								<enumeratedValue>
-									<name>TC_AND_PC_WILL_BE_ST</name>
+									<name>ENABLED</name>
 									<description>TC and PC will be stopped and TCR[0] will be set to
 										0 if MR3 matches the TC.</description>
 									<value>1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>FEATURE_DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Feature disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -15770,24 +15770,24 @@
 							<enumeratedValues>
 								<name>EMC0</name>
 								<enumeratedValue>
-									<name>DO_NOTHING_</name>
+									<name>DO_NOTHING</name>
 									<description>Do Nothing.</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>CLEAR_THE_CORRESPOND</name>
+									<name>CLEAR</name>
 									<description>Clear the corresponding External Match bit/output
 										to 0 (MATn.m pin is LOW if pinned out).</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>SET_THE_CORRESPONDIN</name>
+									<name>SET</name>
 									<description>Set the corresponding External Match bit/output to
 										1 (MATn.m pin is HIGH if pinned out).</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>TOGGLE_THE_CORRESPON</name>
+									<name>TOGGLE</name>
 									<description>Toggle the corresponding External Match bit/output.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -15801,24 +15801,24 @@
 							<enumeratedValues>
 								<name>EMC1</name>
 								<enumeratedValue>
-									<name>DO_NOTHING_</name>
+									<name>DO_NOTHING</name>
 									<description>Do Nothing.</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>CLEAR_THE_CORRESPOND</name>
+									<name>CLEAR</name>
 									<description>Clear the corresponding External Match bit/output
 										to 0 (MATn.m pin is LOW if pinned out).</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>SET_THE_CORRESPONDIN</name>
+									<name>SET</name>
 									<description>Set the corresponding External Match bit/output to
 										1 (MATn.m pin is HIGH if pinned out).</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>TOGGLE_THE_CORRESPON</name>
+									<name>TOGGLE</name>
 									<description>Toggle the corresponding External Match bit/output.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -15832,24 +15832,24 @@
 							<enumeratedValues>
 								<name>EMC2</name>
 								<enumeratedValue>
-									<name>DO_NOTHING_</name>
+									<name>DO_NOTHING</name>
 									<description>Do Nothing.</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>CLEAR_THE_CORRESPOND</name>
+									<name>CLEAR</name>
 									<description>Clear the corresponding External Match bit/output
 										to 0 (MATn.m pin is LOW if pinned out).</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>SET_THE_CORRESPONDIN</name>
+									<name>SET</name>
 									<description>Set the corresponding External Match bit/output to
 										1 (MATn.m pin is HIGH if pinned out).</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>TOGGLE_THE_CORRESPON</name>
+									<name>TOGGLE</name>
 									<description>Toggle the corresponding External Match bit/output.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -15863,24 +15863,24 @@
 							<enumeratedValues>
 								<name>EMC3</name>
 								<enumeratedValue>
-									<name>DO_NOTHING_</name>
+									<name>DO_NOTHING</name>
 									<description>Do Nothing.</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>CLEAR_THE_CORRESPOND</name>
+									<name>CLEAR</name>
 									<description>Clear the corresponding External Match bit/output
 										to 0 (MATn.m pin is LOW if pinned out).</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>SET_THE_CORRESPONDIN</name>
+									<name>SET</name>
 									<description>Set the corresponding External Match bit/output to
 										1 (MATn.m pin is HIGH if pinned out).</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>TOGGLE_THE_CORRESPON</name>
+									<name>TOGGLE</name>
 									<description>Toggle the corresponding External Match bit/output.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -15914,24 +15914,24 @@
 							<enumeratedValues>
 								<name>CTMODE</name>
 								<enumeratedValue>
-									<name>TIMER_MODE_EVERY_RI</name>
+									<name>TRISING</name>
 									<description>Timer Mode: every rising PCLK edge</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>RISING</name>
+									<name>CRISING</name>
 									<description>Counter Mode: TC is incremented on rising edges on
 										the CAP input selected by bits 3:2.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>FALLING</name>
+									<name>CFALLING</name>
 									<description>Counter Mode: TC is incremented on falling edges on
 										the CAP input selected by bits 3:2.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>DUALEDGE</name>
+									<name>CDUALEDGE</name>
 									<description>Counter Mode: TC is incremented on both edges on
 										the CAP input selected by bits 3:2.</description>
 									<value>0x3</value>
@@ -15950,12 +15950,12 @@
 							<enumeratedValues>
 								<name>CINSEL</name>
 								<enumeratedValue>
-									<name>CAPN_0_FOR_TIMERN</name>
+									<name>CAPN_0</name>
 									<description>CAPn.0 for TIMERn</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>CAPN_1_FOR_TIMERN</name>
+									<name>CAPN_1</name>
 									<description>CAPn.1 for TIMERn</description>
 									<value>0x1</value>
 								</enumeratedValue>
@@ -16169,12 +16169,12 @@
 							<enumeratedValues>
 								<name>RXIE</name>
 								<enumeratedValue>
-									<name>DISABLE_THE_RX_LINE_</name>
+									<name>DISABLED</name>
 									<description>Disable the RX line status interrupts.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_THE_RX_LINE_S</name>
+									<name>ENABLED</name>
 									<description>Enable the RX line status interrupts.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -16194,12 +16194,12 @@
 							<enumeratedValues>
 								<name>ABEOINTEN</name>
 								<enumeratedValue>
-									<name>DISABLE_END_OF_AUTO_</name>
+									<name>DISABLED</name>
 									<description>Disable end of auto-baud Interrupt.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_END_OF_AUTO_B</name>
+									<name>ENABLED</name>
 									<description>Enable end of auto-baud Interrupt.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -16212,12 +16212,12 @@
 							<enumeratedValues>
 								<name>ABTOINTEN</name>
 								<enumeratedValue>
-									<name>DISABLE_AUTO_BAUD_TI</name>
+									<name>DISABLED</name>
 									<description>Disable auto-baud time-out Interrupt.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_AUTO_BAUD_TIM</name>
+									<name>ENABLED</name>
 									<description>Enable auto-baud time-out Interrupt.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -16248,12 +16248,12 @@
 							<enumeratedValues>
 								<name>INTSTATUS</name>
 								<enumeratedValue>
-									<name>AT_LEAST_ONE_INTERRU</name>
+									<name>PENDING</name>
 									<description>At least one interrupt is pending.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>NO_INTERRUPT_IS_PEND</name>
+									<name>EMPTY</name>
 									<description>No interrupt is pending.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -16269,22 +16269,22 @@
 							<enumeratedValues>
 								<name>INTID</name>
 								<enumeratedValue>
-									<name>1_RECEIVE_LINE_S</name>
+									<name>RLS</name>
 									<description>1 - Receive Line Status (RLS).</description>
 									<value>0x3</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>2A__RECEIVE_DATA_AV</name>
+									<name>RDA</name>
 									<description>2a - Receive Data Available (RDA).</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>2B__CHARACTER_TIME_</name>
+									<name>CTI</name>
 									<description>2b - Character Time-out Indicator (CTI).</description>
 									<value>0x6</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>3_THRE_INTERRUPT</name>
+									<name>THRE</name>
 									<description>3 - THRE Interrupt</description>
 									<value>0x1</value>
 								</enumeratedValue>
@@ -16342,13 +16342,13 @@
 							<enumeratedValues>
 								<name>FIFOEN</name>
 								<enumeratedValue>
-									<name>UARTN_FIFOS_ARE_DISA</name>
+									<name>DONOTUSE</name>
 									<description>UARTn FIFOs are disabled. Must not be used in the
 										application.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ACTIVE_HIGH_ENABLE_F</name>
+									<name>ENABLED</name>
 									<description>Active high enable for both UARTn Rx and TX FIFOs
 										and UnFCR[7:1] access. This bit must be set for proper UART
 										operation. Any transition on this bit will automatically
@@ -16364,12 +16364,12 @@
 							<enumeratedValues>
 								<name>RXFIFORES</name>
 								<enumeratedValue>
-									<name>NO_IMPACT_ON_EITHER_</name>
+									<name>DISABLED</name>
 									<description>No impact on either of UARTn FIFOs.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>WRITING_A_LOGIC_1_TO</name>
+									<name>ENABLED</name>
 									<description>Writing a logic 1 to UnFCR[1] will clear all bytes
 										in UARTn Rx FIFO, reset the pointer logic. This bit is
 										self-clearing.</description>
@@ -16384,12 +16384,12 @@
 							<enumeratedValues>
 								<name>TXFIFORES</name>
 								<enumeratedValue>
-									<name>NO_IMPACT_ON_EITHER_</name>
+									<name>DISABLED</name>
 									<description>No impact on either of UARTn FIFOs.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>WRITING_A_LOGIC_1_TO</name>
+									<name>ENABLED</name>
 									<description>Writing a logic 1 to UnFCR[2] will clear all bytes
 										in UARTn TX FIFO, reset the pointer logic. This bit is
 										self-clearing.</description>
@@ -16421,22 +16421,22 @@
 							<enumeratedValues>
 								<name>RXTRIGLVL</name>
 								<enumeratedValue>
-									<name>TRIGGER_LEVEL_0_1_C</name>
+									<name>LEVEL_0</name>
 									<description>Trigger level 0 (1 character or 0x01).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>TRIGGER_LEVEL_1_4_C</name>
+									<name>LEVEL_1</name>
 									<description>Trigger level 1 (4 characters or 0x04).</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>TRIGGER_LEVEL_2_8_C</name>
+									<name>LEVEL_2</name>
 									<description>Trigger level 2 (8 characters or 0x08).</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>TRIGGER_LEVEL_3_14_</name>
+									<name>LEVEL_3</name>
 									<description>Trigger level 3 (14 characters or 0x0E).</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -16467,22 +16467,22 @@
 							<enumeratedValues>
 								<name>WLS</name>
 								<enumeratedValue>
-									<name>5_BIT_CHARACTER_LENG</name>
+									<name>5_BIT</name>
 									<description>5-bit character length</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>6_BIT_CHARACTER_LENG</name>
+									<name>6_BIT</name>
 									<description>6-bit character length</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>7_BIT_CHARACTER_LENG</name>
+									<name>7_BIT</name>
 									<description>7-bit character length</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>8_BIT_CHARACTER_LENG</name>
+									<name>8_BIT</name>
 									<description>8-bit character length</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -16495,12 +16495,12 @@
 							<enumeratedValues>
 								<name>SBS</name>
 								<enumeratedValue>
-									<name>1_STOP_BIT_</name>
+									<name>1_BIT</name>
 									<description>1 stop bit.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>2_STOP_BITS_1_5_IF_</name>
+									<name>2_BITS</name>
 									<description>2 stop bits (1.5 if UnLCR[1:0]=00).</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -16513,12 +16513,12 @@
 							<enumeratedValues>
 								<name>PE</name>
 								<enumeratedValue>
-									<name>DISABLE_PARITY_GENER</name>
+									<name>DISABLED</name>
 									<description>Disable parity generation and checking.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_PARITY_GENERA</name>
+									<name>ENABLED</name>
 									<description>Enable parity generation and checking.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -16531,24 +16531,24 @@
 							<enumeratedValues>
 								<name>PS</name>
 								<enumeratedValue>
-									<name>ODD_PARITY_NUMBER_O</name>
+									<name>ODD</name>
 									<description>Odd parity. Number of 1s in the transmitted
 										character and the attached parity bit will be odd.</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>EVEN_PARITY_NUMBER_</name>
+									<name>EVEN</name>
 									<description>Even Parity. Number of 1s in the transmitted
 										character and the attached parity bit will be even.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>FORCED_1_STICK_PARIT</name>
+									<name>FORCED_1_STICK</name>
 									<description>Forced 1 stick parity.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>FORCED_0_STICK_PARIT</name>
+									<name>FORCED_0_STICK</name>
 									<description>Forced 0 stick parity.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -16561,12 +16561,12 @@
 							<enumeratedValues>
 								<name>BC</name>
 								<enumeratedValue>
-									<name>DISABLE_BREAK_TRANSM</name>
+									<name>DISABLED</name>
 									<description>Disable break transmission.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_BREAK_TRANSMI</name>
+									<name>ENABLED</name>
 									<description>Enable break transmission. Output pin UARTn TXD is
 										forced to logic 0 when UnLCR[6] is active high.</description>
 									<value>1</value>
@@ -16580,12 +16580,12 @@
 							<enumeratedValues>
 								<name>DLAB</name>
 								<enumeratedValue>
-									<name>DISABLE_ACCESS_TO_DI</name>
+									<name>DISABLED</name>
 									<description>Disable access to Divisor Latches.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_ACCESS_TO_DIV</name>
+									<name>ENABLED</name>
 									<description>Enable access to Divisor Latches.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -16850,12 +16850,12 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>MODE_0_</name>
+									<name>MODE_0</name>
 									<description>Mode 0.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>MODE_1_</name>
+									<name>MODE_1</name>
 									<description>Mode 1.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -16868,12 +16868,12 @@
 							<enumeratedValues>
 								<name>AUTORESTART</name>
 								<enumeratedValue>
-									<name>NO_RESTART_</name>
+									<name>DISABLED</name>
 									<description>No restart.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>RESTART_IN_CASE_OF_T</name>
+									<name>ENABLED</name>
 									<description>Restart in case of time-out (counter restarts at
 										next UARTn Rx falling edge)</description>
 									<value>1</value>
@@ -16896,12 +16896,12 @@
 							<enumeratedValues>
 								<name>ABEOINTCLR</name>
 								<enumeratedValue>
-									<name>NO_IMPACT_</name>
+									<name>DISABLED</name>
 									<description>No impact.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>CLEAR_THE_CORRESPOND</name>
+									<name>ENABLED</name>
 									<description>Clear the corresponding interrupt in the IIR.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -16916,12 +16916,12 @@
 							<enumeratedValues>
 								<name>ABTOINTCLR</name>
 								<enumeratedValue>
-									<name>NO_IMPACT_</name>
+									<name>DISABLED</name>
 									<description>No impact.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>CLEAR_THE_CORRESPOND</name>
+									<name>ENABLED</name>
 									<description>Clear the corresponding interrupt in the IIR.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -17089,12 +17089,12 @@
 							<enumeratedValues>
 								<name>DCTRL</name>
 								<enumeratedValue>
-									<name>DISABLE_AUTO_DIRECTI</name>
+									<name>DISABLED</name>
 									<description>Disable Auto Direction Control.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_AUTO_DIRECTIO</name>
+									<name>ENABLED</name>
 									<description>Enable Auto Direction Control.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -17313,12 +17313,12 @@
 							<enumeratedValues>
 								<name>RBRIE</name>
 								<enumeratedValue>
-									<name>DISABLE_THE_RDA_INTE</name>
+									<name>DISABLED</name>
 									<description>Disable the RDA interrupts.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_THE_RDA_INTER</name>
+									<name>ENABLED</name>
 									<description>Enable the RDA interrupts.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -17332,12 +17332,12 @@
 							<enumeratedValues>
 								<name>THREIE</name>
 								<enumeratedValue>
-									<name>DISABLE_THE_THRE_INT</name>
+									<name>DISABLED</name>
 									<description>Disable the THRE interrupts.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_THE_THRE_INTE</name>
+									<name>ENABLED</name>
 									<description>Enable the THRE interrupts.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -17351,12 +17351,12 @@
 							<enumeratedValues>
 								<name>RXIE</name>
 								<enumeratedValue>
-									<name>DISABLE_THE_RX_LINE_</name>
+									<name>DISABLED</name>
 									<description>Disable the RX line status interrupts.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_THE_RX_LINE_S</name>
+									<name>ENABLED</name>
 									<description>Enable the RX line status interrupts.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -17370,12 +17370,12 @@
 							<enumeratedValues>
 								<name>MSIE</name>
 								<enumeratedValue>
-									<name>DISABLE_THE_MODEM_IN</name>
+									<name>DISABLED</name>
 									<description>Disable the modem interrupt.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_THE_MODEM_INT</name>
+									<name>ENABLED</name>
 									<description>Enable the modem interrupt.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -17403,12 +17403,12 @@
 							<enumeratedValues>
 								<name>CTSIE</name>
 								<enumeratedValue>
-									<name>DISABLE_THE_CTS_INTE</name>
+									<name>DISABLED</name>
 									<description>Disable the CTS interrupt.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_THE_CTS_INTER</name>
+									<name>ENABLED</name>
 									<description>Enable the CTS interrupt.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -17421,12 +17421,12 @@
 							<enumeratedValues>
 								<name>ABEOIE</name>
 								<enumeratedValue>
-									<name>DISABLE_END_OF_AUTO_</name>
+									<name>DISABLED</name>
 									<description>Disable end of auto-baud Interrupt.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_END_OF_AUTO_B</name>
+									<name>ENABLED</name>
 									<description>Enable end of auto-baud Interrupt.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -17439,12 +17439,12 @@
 							<enumeratedValues>
 								<name>ABTOIE</name>
 								<enumeratedValue>
-									<name>DISABLE_AUTO_BAUD_TI</name>
+									<name>DISABLED</name>
 									<description>Disable auto-baud time-out Interrupt.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_AUTO_BAUD_TIM</name>
+									<name>ENABLED</name>
 									<description>Enable auto-baud time-out Interrupt.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -17475,12 +17475,12 @@
 							<enumeratedValues>
 								<name>INTSTATUS</name>
 								<enumeratedValue>
-									<name>AT_LEAST_ONE_INTERRU</name>
+									<name>PENDING</name>
 									<description>At least one interrupt is pending.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>NO_INTERRUPT_IS_PEND</name>
+									<name>EMPTY</name>
 									<description>No interrupt is pending.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -17573,12 +17573,12 @@
 							<enumeratedValues>
 								<name>FIFOEN</name>
 								<enumeratedValue>
-									<name>MUST_NOT_BE_USED_IN_</name>
+									<name>DONOTUSE</name>
 									<description>Must not be used in the application.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ACTIVE_HIGH_ENABLE_F</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Active high enable for both UART1 Rx and TX FIFOs
 										and FCR[7:1] access. This bit must be set for proper UART1
 										operation. Any transition on this bit will automatically
@@ -17594,12 +17594,12 @@
 							<enumeratedValues>
 								<name>RXFIFORES</name>
 								<enumeratedValue>
-									<name>NO_IMPACT_ON_EITHER_</name>
+									<name>DISABLED</name>
 									<description>No impact on either of UART1 FIFOs.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>WRITING_A_LOGIC_1_TO</name>
+									<name>ENABLED</name>
 									<description>Writing a logic 1 to FCR[1] will clear all bytes in
 										UART1 Rx FIFO, reset the pointer logic. This bit is
 										self-clearing.</description>
@@ -17614,12 +17614,12 @@
 							<enumeratedValues>
 								<name>TXFIFORES</name>
 								<enumeratedValue>
-									<name>NO_IMPACT_ON_EITHER_</name>
+									<name>DISABLED</name>
 									<description>No impact on either of UART1 FIFOs.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>WRITING_A_LOGIC_1_TO</name>
+									<name>ENABLED</name>
 									<description>Writing a logic 1 to FCR[2] will clear all bytes in
 										UART1 TX FIFO, reset the pointer logic. This bit is
 										self-clearing.</description>
@@ -17651,22 +17651,22 @@
 							<enumeratedValues>
 								<name>RXTRIGLVL</name>
 								<enumeratedValue>
-									<name>TRIGGER_LEVEL_0_1_C</name>
+									<name>LEVEL_0</name>
 									<description>Trigger level 0 (1 character or 0x01).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>TRIGGER_LEVEL_1_4_C</name>
+									<name>LEVEL_1</name>
 									<description>Trigger level 1 (4 characters or 0x04).</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>TRIGGER_LEVEL_2_8_C</name>
+									<name>LEVEL_2</name>
 									<description>Trigger level 2 (8 characters or 0x08).</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>TRIGGER_LEVEL_3_14_</name>
+									<name>LEVEL_3</name>
 									<description>Trigger level 3 (14 characters or 0x0E).</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -17697,22 +17697,22 @@
 							<enumeratedValues>
 								<name>WLS</name>
 								<enumeratedValue>
-									<name>5_BIT_CHARACTER_LENG</name>
+									<name>5_BIT</name>
 									<description>5-bit character length.</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>6_BIT_CHARACTER_LENG</name>
+									<name>6_BIT</name>
 									<description>6-bit character length.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>7_BIT_CHARACTER_LENG</name>
+									<name>7_BIT</name>
 									<description>7-bit character length.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>8_BIT_CHARACTER_LENG</name>
+									<name>8_BIT</name>
 									<description>8-bit character length.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -17725,12 +17725,12 @@
 							<enumeratedValues>
 								<name>SBS</name>
 								<enumeratedValue>
-									<name>1_STOP_BIT_</name>
+									<name>1_BIT</name>
 									<description>1 stop bit.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>2_STOP_BITS_1_5_IF_</name>
+									<name>2_BITS</name>
 									<description>2 stop bits (1.5 if LCR[1:0]=00).</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -17743,12 +17743,12 @@
 							<enumeratedValues>
 								<name>PE</name>
 								<enumeratedValue>
-									<name>DISABLE_PARITY_GENER</name>
+									<name>DISABLED</name>
 									<description>Disable parity generation and checking.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_PARITY_GENERA</name>
+									<name>ENABLED</name>
 									<description>Enable parity generation and checking.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -17761,24 +17761,24 @@
 							<enumeratedValues>
 								<name>PS</name>
 								<enumeratedValue>
-									<name>ODD_PARITY_NUMBER_O</name>
+									<name>ODD</name>
 									<description>Odd parity. Number of 1s in the transmitted
 										character and the attached parity bit will be odd.</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>EVEN_PARITY_NUMBER_</name>
+									<name>EVEN</name>
 									<description>Even Parity. Number of 1s in the transmitted
 										character and the attached parity bit will be even.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>FORCED1STICK_PAR</name>
+									<name>FORCED_1_STICK</name>
 									<description>Forced 1 stick parity.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>FORCED0STICK_PAR</name>
+									<name>FORCED_0_STICK</name>
 									<description>Forced 0 stick parity.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -17791,12 +17791,12 @@
 							<enumeratedValues>
 								<name>BC</name>
 								<enumeratedValue>
-									<name>DISABLE_BREAK_TRANSM</name>
+									<name>DISABLED</name>
 									<description>Disable break transmission.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_BREAK_TRANSMI</name>
+									<name>ENABLED</name>
 									<description>Enable break transmission. Output pin UART1 TXD is
 										forced to logic 0 when LCR[6] is active high.</description>
 									<value>1</value>
@@ -17810,12 +17810,12 @@
 							<enumeratedValues>
 								<name>DLAB</name>
 								<enumeratedValue>
-									<name>DISABLE_ACCESS_TO_DI</name>
+									<name>DISABLED</name>
 									<description>Disable access to Divisor Latches.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_ACCESS_TO_DIV</name>
+									<name>ENABLED</name>
 									<description>Enable access to Divisor Latches.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -17878,12 +17878,12 @@
 							<enumeratedValues>
 								<name>LMS</name>
 								<enumeratedValue>
-									<name>DISABLE_MODEM_LOOPBA</name>
+									<name>DISABLED</name>
 									<description>Disable modem loopback mode.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_MODEM_LOOPBAC</name>
+									<name>ENABLED</name>
 									<description>Enable modem loopback mode.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -17903,12 +17903,12 @@
 							<enumeratedValues>
 								<name>RTSEN</name>
 								<enumeratedValue>
-									<name>DISABLE_AUTO_RTS_FLO</name>
+									<name>DISABLED</name>
 									<description>Disable auto-rts flow control.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_AUTO_RTS_FLOW</name>
+									<name>ENABLED</name>
 									<description>Enable auto-rts flow control.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -17921,12 +17921,12 @@
 							<enumeratedValues>
 								<name>CTSEN</name>
 								<enumeratedValue>
-									<name>DISABLE_AUTO_CTS_FLO</name>
+									<name>DISABLED</name>
 									<description>Disable auto-cts flow control.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_AUTO_CTS_FLOW</name>
+									<name>ENABLED</name>
 									<description>Enable auto-cts flow control.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -18076,7 +18076,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>THR_IS_EMPTY_</name>
+									<name>EMPTY</name>
 									<description>THR is empty.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -18148,12 +18148,12 @@
 							<enumeratedValues>
 								<name>DCTS</name>
 								<enumeratedValue>
-									<name>NO_CHANGE_DETECTED_O</name>
+									<name>INACTIVE</name>
 									<description>No change detected on modem input, CTS.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>STATE_CHANGE_DETECTE</name>
+									<name>ACTIVE</name>
 									<description>State change detected on modem input, CTS.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -18167,12 +18167,12 @@
 							<enumeratedValues>
 								<name>DDSR</name>
 								<enumeratedValue>
-									<name>NO_CHANGE_DETECTED_O</name>
+									<name>INACTIVE</name>
 									<description>No change detected on modem input, DSR.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>STATE_CHANGE_DETECTE</name>
+									<name>ACTIVE</name>
 									<description>State change detected on modem input, DSR.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -18186,12 +18186,12 @@
 							<enumeratedValues>
 								<name>TERI</name>
 								<enumeratedValue>
-									<name>NO_CHANGE_DETECTED_O</name>
+									<name>INACTIVE</name>
 									<description>No change detected on modem input, RI.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>LOW_TO_HIGH_TRANSITI</name>
+									<name>ACTIVE</name>
 									<description>Low-to-high transition detected on RI.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -18205,12 +18205,12 @@
 							<enumeratedValues>
 								<name>DDCD</name>
 								<enumeratedValue>
-									<name>NO_CHANGE_DETECTED_O</name>
+									<name>INACTIVE</name>
 									<description>No change detected on modem input, DCD.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>STATE_CHANGE_DETECTE</name>
+									<name>ACTIVE</name>
 									<description>State change detected on modem input, DCD.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -18311,12 +18311,12 @@
 							<enumeratedValues>
 								<name>MODE</name>
 								<enumeratedValue>
-									<name>MODE_0_</name>
+									<name>MODE_0</name>
 									<description>Mode 0.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>MODE_1_</name>
+									<name>MODE_1</name>
 									<description>Mode 1.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -18334,7 +18334,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>RESTART_IN_CASE_OF_T</name>
+									<name>RESTART</name>
 									<description>Restart in case of time-out (counter restarts at
 										next UART1 Rx falling edge)</description>
 									<value>1</value>
@@ -18355,12 +18355,12 @@
 							<enumeratedValues>
 								<name>ABEOINTCLR</name>
 								<enumeratedValue>
-									<name>WRITING_A_0_HAS_NO_I</name>
+									<name>DISABLED</name>
 									<description>Writing a 0 has no impact.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>WRITING_A_1_WILL_CLE</name>
+									<name>ENABLED</name>
 									<description>Writing a 1 will clear the corresponding interrupt
 										in the IIR.</description>
 									<value>1</value>
@@ -18374,12 +18374,12 @@
 							<enumeratedValues>
 								<name>ABTOINTCLR</name>
 								<enumeratedValue>
-									<name>WRITING_A_0_HAS_NO_I</name>
+									<name>DISABLED</name>
 									<description>Writing a 0 has no impact.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>WRITING_A_1_WILL_CLE</name>
+									<name>ENABLED</name>
 									<description>Writing a 1 will clear the corresponding interrupt
 										in the IIR.</description>
 									<value>1</value>
@@ -18560,12 +18560,12 @@
 							<enumeratedValues>
 								<name>DCTRL</name>
 								<enumeratedValue>
-									<name>DISABLE_AUTO_DIRECTI</name>
+									<name>DISABLED</name>
 									<description>Disable Auto Direction Control.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_AUTO_DIRECTIO</name>
+									<name>ENABLED</name>
 									<description>Enable Auto Direction Control.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -18579,7 +18579,7 @@
 							<enumeratedValues>
 								<name>OINV</name>
 								<enumeratedValue>
-									<name>LOW_THE_DIRECTION_C</name>
+									<name>ACTIVE_LOW</name>
 									<description>LOW. The direction control pin will be driven to
 										logic 0 when the transmitter has data to be sent. It will be
 										driven to logic 1 after the last bit of data has been
@@ -18587,7 +18587,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>HIGH_THE_DIRECTION_</name>
+									<name>ACTIVE_HIGH</name>
 									<description>HIGH. The direction control pin will be driven to
 										logic 1 when the transmitter has data to be sent. It will be
 										driven to logic 0 after the last bit of data has been
@@ -18752,13 +18752,13 @@
 							<enumeratedValues>
 								<name>CE</name>
 								<enumeratedValue>
-									<name>THE_PWM_TIMER_COUNTE</name>
+									<name>ENABLED</name>
 									<description>The PWM Timer Counter and PWM Prescale Counter are
 										enabled for counting.</description>
 									<value>1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>THE_COUNTERS_ARE_DIS</name>
+									<name>DISABLED</name>
 									<description>The counters are disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -18771,7 +18771,7 @@
 							<enumeratedValues>
 								<name>CR</name>
 								<enumeratedValue>
-									<name>THE_PWM_TIMER_COUNTE</name>
+									<name>ENABLED</name>
 									<description>The PWM Timer Counter and the PWM Prescale Counter
 										are synchronously reset on the next positive edge of PCLK.
 										The counters remain reset until this bit is returned to
@@ -18779,7 +18779,7 @@
 									<value>1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>CLEAR_RESET_</name>
+									<name>DISABLED</name>
 									<description>Clear reset.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -18799,7 +18799,7 @@
 							<enumeratedValues>
 								<name>PWMEN</name>
 								<enumeratedValue>
-									<name>PWM_MODE_IS_ENABLED_</name>
+									<name>PWM_MODE</name>
 									<description>PWM mode is enabled (counter resets to 1). PWM mode
 										causes the shadow registers to operate in connection with
 										the Match registers. A program write to a Match register
@@ -18813,7 +18813,7 @@
 									<value>1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>TIMER_MODE_IS_ENABLE</name>
+									<name>TIMER_MODE</name>
 									<description>Timer mode is enabled (counter resets to 0).</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -18830,13 +18830,13 @@
 							<enumeratedValues>
 								<name>MDIS</name>
 								<enumeratedValue>
-									<name>MASTER_USE_PWM0_IS_</name>
+									<name>MASTER</name>
 									<description>Master use. PWM0 is the master, and both PWMs are
 										enabled for counting.</description>
 									<value>1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INDIVIDUAL_USE_THE_</name>
+									<name>INDIVIDUAL</name>
 									<description>Individual use. The PWMs are used independently,
 										and the individual Counter Enable bits are used to control
 										the PWMs.</description>
@@ -19508,12 +19508,12 @@
 							<enumeratedValues>
 								<name>PWMSEL2</name>
 								<enumeratedValue>
-									<name>SINGLE_EDGE_CONTROLL</name>
+									<name>SINGLE_EDGE</name>
 									<description>Single edge controlled mode is selected.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>DOUBLE_EDGE_CONTROLL</name>
+									<name>DOUBLE_EDGE</name>
 									<description>Double edge controlled mode is selected.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -19526,12 +19526,12 @@
 							<enumeratedValues>
 								<name>PWMSEL3</name>
 								<enumeratedValue>
-									<name>SINGLE_EDGE_CONTROLL</name>
+									<name>SINGLE_EDGE</name>
 									<description>Single edge controlled mode is selected.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>DOUBLE_EDGE_CONTROLL</name>
+									<name>DOUBLE_EDGE</name>
 									<description>Double edge controlled mode is selected.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -19544,12 +19544,12 @@
 							<enumeratedValues>
 								<name>PWMSEL4</name>
 								<enumeratedValue>
-									<name>SINGLE_EDGE_CONTROLL</name>
+									<name>SINGLE_EDGE</name>
 									<description>Single edge controlled mode is selected.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>DOUBLE_EDGE_CONTROLL</name>
+									<name>DOUBLE_EDGE</name>
 									<description>Double edge controlled mode is selected.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -19562,12 +19562,12 @@
 							<enumeratedValues>
 								<name>PWMSEL5</name>
 								<enumeratedValue>
-									<name>SINGLE_EDGE_CONTROLL</name>
+									<name>SINGLE_EDGE</name>
 									<description>Single edge controlled mode is selected.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>DOUBLE_EDGE_CONTROLL</name>
+									<name>DOUBLE_EDGE</name>
 									<description>Double edge controlled mode is selected.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -19580,12 +19580,12 @@
 							<enumeratedValues>
 								<name>PWMSEL6</name>
 								<enumeratedValue>
-									<name>SINGLE_EDGE_CONTROLL</name>
+									<name>SINGLE_EDGE</name>
 									<description>Single edge controlled mode is selected.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>DOUBLE_EDGE_CONTROLL</name>
+									<name>DOUBLE_EDGE</name>
 									<description>Double edge controlled mode is selected.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -19605,12 +19605,12 @@
 							<enumeratedValues>
 								<name>PWMENA1</name>
 								<enumeratedValue>
-									<name>THE_PWM_OUTPUT_IS_DI</name>
+									<name>DISABLED</name>
 									<description>The PWM output is disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>THE_PWM_OUTPUT_IS_EN</name>
+									<name>ENABLED</name>
 									<description>The PWM output is enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -19623,12 +19623,12 @@
 							<enumeratedValues>
 								<name>PWMENA2</name>
 								<enumeratedValue>
-									<name>THE_PWM_OUTPUT_IS_DI</name>
+									<name>DISABLED</name>
 									<description>The PWM output is disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>THE_PWM_OUTPUT_IS_EN</name>
+									<name>ENABLED</name>
 									<description>The PWM output is enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -19641,12 +19641,12 @@
 							<enumeratedValues>
 								<name>PWMENA3</name>
 								<enumeratedValue>
-									<name>THE_PWM_OUTPUT_IS_DI</name>
+									<name>DISABLED</name>
 									<description>The PWM output is disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>THE_PWM_OUTPUT_IS_EN</name>
+									<name>ENABLED</name>
 									<description>The PWM output is enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -19659,12 +19659,12 @@
 							<enumeratedValues>
 								<name>PWMENA4</name>
 								<enumeratedValue>
-									<name>THE_PWM_OUTPUT_IS_DI</name>
+									<name>DISABLED</name>
 									<description>The PWM output is disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>THE_PWM_OUTPUT_IS_EN</name>
+									<name>ENABLED</name>
 									<description>The PWM output is enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -19677,12 +19677,12 @@
 							<enumeratedValues>
 								<name>PWMENA5</name>
 								<enumeratedValue>
-									<name>THE_PWM_OUTPUT_IS_DI</name>
+									<name>DISABLED</name>
 									<description>The PWM output is disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>THE_PWM_OUTPUT_IS_EN</name>
+									<name>ENABLED</name>
 									<description>The PWM output is enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -19695,12 +19695,12 @@
 							<enumeratedValues>
 								<name>PWMENA6</name>
 								<enumeratedValue>
-									<name>THE_PWM_OUTPUT_IS_DI</name>
+									<name>DISABLED</name>
 									<description>The PWM output is disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>THE_PWM_OUTPUT_IS_EN</name>
+									<name>ENABLED</name>
 									<description>The PWM output is enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -19757,12 +19757,12 @@
 							<enumeratedValues>
 								<name>PWMSEL2</name>
 								<enumeratedValue>
-									<name>SINGLE_EDGE_CONTROLL</name>
+									<name>SINGLE_EDGE</name>
 									<description>Single edge controlled mode is selected.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>DOUBLE_EDGE_CONTROLL</name>
+									<name>DOUBLE_EDGE</name>
 									<description>Double edge controlled mode is selected.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -19775,12 +19775,12 @@
 							<enumeratedValues>
 								<name>PWMSEL3</name>
 								<enumeratedValue>
-									<name>SINGLE_EDGE_CONTROLL</name>
+									<name>SINGLE_EDGE</name>
 									<description>Single edge controlled mode is selected.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>DOUBLE_EDGE_CONTROLL</name>
+									<name>DOUBLE_EDGE</name>
 									<description>Double edge controlled mode is selected.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -19793,12 +19793,12 @@
 							<enumeratedValues>
 								<name>PWMSEL4</name>
 								<enumeratedValue>
-									<name>SINGLE_EDGE_CONTROLL</name>
+									<name>SINGLE_EDGE</name>
 									<description>Single edge controlled mode is selected.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>DOUBLE_EDGE_CONTROLL</name>
+									<name>DOUBLE_EDGE</name>
 									<description>Double edge controlled mode is selected.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -19811,12 +19811,12 @@
 							<enumeratedValues>
 								<name>PWMSEL5</name>
 								<enumeratedValue>
-									<name>SINGLE_EDGE_CONTROLL</name>
+									<name>SINGLE_EDGE</name>
 									<description>Single edge controlled mode is selected.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>DOUBLE_EDGE_CONTROLL</name>
+									<name>DOUBLE_EDGE</name>
 									<description>Double edge controlled mode is selected.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -19829,12 +19829,12 @@
 							<enumeratedValues>
 								<name>PWMSEL6</name>
 								<enumeratedValue>
-									<name>SINGLE_EDGE_CONTROLL</name>
+									<name>SINGLE_EDGE</name>
 									<description>Single edge controlled mode is selected.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>DOUBLE_EDGE_CONTROLL</name>
+									<name>DOUBLE_EDGE</name>
 									<description>Double edge controlled mode is selected.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -19854,12 +19854,12 @@
 							<enumeratedValues>
 								<name>PWMENA1</name>
 								<enumeratedValue>
-									<name>THE_PWM_OUTPUT_IS_DI</name>
+									<name>DISABLED</name>
 									<description>The PWM output is disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>THE_PWM_OUTPUT_IS_EN</name>
+									<name>ENABLED</name>
 									<description>The PWM output is enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -19872,12 +19872,12 @@
 							<enumeratedValues>
 								<name>PWMENA2</name>
 								<enumeratedValue>
-									<name>THE_PWM_OUTPUT_IS_DI</name>
+									<name>DISABLED</name>
 									<description>The PWM output is disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>THE_PWM_OUTPUT_IS_EN</name>
+									<name>ENABLED</name>
 									<description>The PWM output is enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -19890,12 +19890,12 @@
 							<enumeratedValues>
 								<name>PWMENA3</name>
 								<enumeratedValue>
-									<name>THE_PWM_OUTPUT_IS_DI</name>
+									<name>DISABLED</name>
 									<description>The PWM output is disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>THE_PWM_OUTPUT_IS_EN</name>
+									<name>ENABLED</name>
 									<description>The PWM output is enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -19908,12 +19908,12 @@
 							<enumeratedValues>
 								<name>PWMENA4</name>
 								<enumeratedValue>
-									<name>THE_PWM_OUTPUT_IS_DI</name>
+									<name>DISABLED</name>
 									<description>The PWM output is disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>THE_PWM_OUTPUT_IS_EN</name>
+									<name>ENABLED</name>
 									<description>The PWM output is enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -19926,12 +19926,12 @@
 							<enumeratedValues>
 								<name>PWMENA5</name>
 								<enumeratedValue>
-									<name>THE_PWM_OUTPUT_IS_DI</name>
+									<name>DISABLED</name>
 									<description>The PWM output is disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>THE_PWM_OUTPUT_IS_EN</name>
+									<name>ENABLED</name>
 									<description>The PWM output is enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -19944,12 +19944,12 @@
 							<enumeratedValues>
 								<name>PWMENA6</name>
 								<enumeratedValue>
-									<name>THE_PWM_OUTPUT_IS_DI</name>
+									<name>DISABLED</name>
 									<description>The PWM output is disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>THE_PWM_OUTPUT_IS_EN</name>
+									<name>ENABLED</name>
 									<description>The PWM output is enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -20041,25 +20041,25 @@
 							<enumeratedValues>
 								<name>MOD</name>
 								<enumeratedValue>
-									<name>TIMER_MODE_THE_TC_I</name>
+									<name>TIMER</name>
 									<description>Timer Mode: the TC is incremented when the Prescale
 										Counter matches the Prescale register.</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>RISING_EDGE_COUNTER_</name>
+									<name>COUNTER_RISING</name>
 									<description>Rising edge counter Mode: the TC is incremented on
 										rising edges of the PWM_CAP input selected by bits 3:2.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>FALLING_EDGE_COUNTER</name>
+									<name>COUNTER_FALLING</name>
 									<description>Falling edge counter Mode: the TC is incremented on
 										falling edges of the PWM_CAP input selected by bits 3:2.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>DUAL_EDGE_COUNTER_MO</name>
+									<name>COUNTER_DUAL</name>
 									<description>Dual edge counter Mode: the TC is incremented on
 										both edges of the PWM_CAP input selected by bits 3:2.</description>
 									<value>0x3</value>
@@ -20075,7 +20075,7 @@
 							<enumeratedValues>
 								<name>CIS</name>
 								<enumeratedValue>
-									<name>FOR_PWM0_00_EQ_PWM0_</name>
+									<name>CAP0</name>
 									<description>For PWM0: 00 = PWM0_CAP0 (Other combinations are
 										reserved) For PWM1: 00 = PWM1_CAP0, 01 = PWM1_CAP1 (Other
 										combinations are reserved)</description>
@@ -21105,14 +21105,14 @@
 							<enumeratedValues>
 								<name>CALDIR</name>
 								<enumeratedValue>
-									<name>BACKWARD_CALIBRATION</name>
+									<name>BACKWARD</name>
 									<description>Backward calibration. When CALVAL is equal to the
 										calibration counter, the RTC timers will stop incrementing
 										for 1 second.</description>
 									<value>1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>FORWARD_CALIBRATION_</name>
+									<name>FORWARD</name>
 									<description>Forward calibration. When CALVAL is equal to the
 										calibration counter, the RTC timers will jump by 2 seconds.</description>
 									<value>0</value>
@@ -21397,13 +21397,13 @@
 							<enumeratedValues>
 								<name>INTWAKE_EN0</name>
 								<enumeratedValue>
-									<name>NO_INTERRUPT_OR_WAKE</name>
+									<name>DISABLED</name>
 									<description>No interrupt or wakeup will be generated by event
 										channel 0.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>AN_EVENT_IN_CHANNEL_</name>
+									<name>ENABLED</name>
 									<description>An event in channel 0 will trigger an (RTC)
 										interrupt and a wake-up request.</description>
 									<value>1</value>
@@ -21484,7 +21484,7 @@
 							<enumeratedValues>
 								<name>INTWAKE_EN1</name>
 								<enumeratedValue>
-									<name>NO_INTERRUPT_OR_WAKE</name>
+									<name>DISABLED</name>
 									<description>No interrupt or wakeup will be generated by event
 										channel 1.</description>
 									<value>0</value>
@@ -21571,7 +21571,7 @@
 							<enumeratedValues>
 								<name>INTWAKE_EN2</name>
 								<enumeratedValue>
-									<name>NO_INTERRUPT_OR_WAKE</name>
+									<name>DISABLED</name>
 									<description>No interrupt or wakeup will be generated by event
 										channel 2.</description>
 									<value>0</value>
@@ -21711,12 +21711,12 @@
 							<enumeratedValues>
 								<name>EV0</name>
 								<enumeratedValue>
-									<name>NO_EVENT_CHANGE_ON_C</name>
+									<name>NO_EVENT</name>
 									<description>No event change on channel 0.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>AT_LEAST_ONE_EVENT_H</name>
+									<name>HAS_EVENT</name>
 									<description>At least one event has occurred on channel 0.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -21731,12 +21731,12 @@
 							<enumeratedValues>
 								<name>EV1</name>
 								<enumeratedValue>
-									<name>NO_EVENT_CHANGE_ON_C</name>
+									<name>NO_EVENT</name>
 									<description>No event change on channel 1.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>AT_LEAST_ONE_EVENT_H</name>
+									<name>HAS_EVENT</name>
 									<description>At least one event has occurred on channel 1.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -21751,12 +21751,12 @@
 							<enumeratedValues>
 								<name>EV2</name>
 								<enumeratedValue>
-									<name>NO_EVENT_CHANGE_ON_C</name>
+									<name>NO_EVENT</name>
 									<description>No event change on channel 2.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>AT_LEAST_ONE_EVENT_H</name>
+									<name>HAS_EVENT</name>
 									<description>At least one event has occurred on channel 2.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -21975,12 +21975,12 @@
 							<enumeratedValues>
 								<name>P0Int</name>
 								<enumeratedValue>
-									<name>NO_PENDING_INTERRUPT</name>
+									<name>EMPTY</name>
 									<description>No pending interrupts on Port 0.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>AT_LEAST_ONE_PENDING</name>
+									<name>PENDING</name>
 									<description>At least one pending interrupt on Port 0.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -22000,12 +22000,12 @@
 							<enumeratedValues>
 								<name>P2Int</name>
 								<enumeratedValue>
-									<name>NO_PENDING_INTERRUPT</name>
+									<name>EMPTY</name>
 									<description>No pending interrupts on Port 2.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>AT_LEAST_ONE_PENDING</name>
+									<name>PENDING</name>
 									<description>At least one pending interrupt on Port 2.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -27541,12 +27541,12 @@
 							<enumeratedValues>
 								<name>ADMODE</name>
 								<enumeratedValue>
-									<name>ANALOG_INPUT_MODE_</name>
+									<name>ANALOG</name>
 									<description>Analog input mode.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>DIGITAL_FUNCTIONAL_M</name>
+									<name>DIGITAL</name>
 									<description>Digital functional mode.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -27559,12 +27559,12 @@
 							<enumeratedValues>
 								<name>FILTR</name>
 								<enumeratedValue>
-									<name>FILTER_DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Filter disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>FILTER_ENABLED_</name>
+									<name>ENABLED</name>
 									<description>Filter enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -27582,12 +27582,12 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
 										open-drain
 										mode.</description>
@@ -27838,12 +27838,12 @@
 							<enumeratedValues>
 								<name>ADMODE</name>
 								<enumeratedValue>
-									<name>ANALOG_INPUT_MODE_</name>
+									<name>ANALOG</name>
 									<description>Analog input mode.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>DIGITAL_FUNCTIONAL_M</name>
+									<name>DIGITAL</name>
 									<description>Digital functional mode.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -27856,12 +27856,12 @@
 							<enumeratedValues>
 								<name>FILTR</name>
 								<enumeratedValue>
-									<name>FILTER_DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Filter disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>FILTER_ENABLED_</name>
+									<name>ENABLED</name>
 									<description>Filter enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -27879,12 +27879,12 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
 										open-drain
 										mode.</description>
@@ -27904,12 +27904,12 @@
 							<enumeratedValues>
 								<name>DACEN</name>
 								<enumeratedValue>
-									<name>DISABLE</name>
+									<name>DISABLED</name>
 									<description>DAC disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE</name>
+									<name>ENABLED</name>
 									<description>DAC enable.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -35887,12 +35887,12 @@
 							<enumeratedValues>
 								<name>ADMODE</name>
 								<enumeratedValue>
-									<name>ANALOG_INPUT_MODE_</name>
+									<name>ANALOG</name>
 									<description>Analog input mode.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>DIGITAL_FUNCTIONAL_M</name>
+									<name>DIGITAL</name>
 									<description>Digital functional mode.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -35905,12 +35905,12 @@
 							<enumeratedValues>
 								<name>FILTR</name>
 								<enumeratedValue>
-									<name>FILTER_DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Filter disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>FILTER_ENABLED_</name>
+									<name>ENABLED</name>
 									<description>Filter enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -35928,12 +35928,12 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
 										open-drain
 										mode.</description>
@@ -36050,12 +36050,12 @@
 							<enumeratedValues>
 								<name>ADMODE</name>
 								<enumeratedValue>
-									<name>ANALOG_INPUT_MODE_</name>
+									<name>ANALOG</name>
 									<description>Analog input mode.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>DIGITAL_FUNCTIONAL_M</name>
+									<name>DIGITAL</name>
 									<description>Digital functional mode.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -36068,12 +36068,12 @@
 							<enumeratedValues>
 								<name>FILTR</name>
 								<enumeratedValue>
-									<name>FILTER_DISABLED_</name>
+									<name>DISABLED</name>
 									<description>Filter disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>FILTER_ENABLED_</name>
+									<name>ENABLED</name>
 									<description>Filter enabled.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -36091,12 +36091,12 @@
 							<enumeratedValues>
 								<name>OD</name>
 								<enumeratedValue>
-									<name>DISABLE_</name>
+									<name>DISABLED</name>
 									<description>Disable.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OPEN_DRAIN_MODE_ENAB</name>
+									<name>ENABLED</name>
 									<description>Open-drain mode enabled. This is not a true
 										open-drain
 										mode.</description>
@@ -48519,7 +48519,7 @@
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>THIS_COMBINATION_IS_</name>
+									<name>DONOTUSE</name>
 									<description>This combination is not supported and should not be
 										used.</description>
 									<value>0x3</value>
@@ -49081,13 +49081,13 @@
 							<enumeratedValues>
 								<name>START</name>
 								<enumeratedValue>
-									<name>NO_START_THIS_VALUE</name>
+									<name>NO_START</name>
 									<description>No start (this value should be used when clearing
 										PDN to 0).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>START_CONVERSION_NOW</name>
+									<name>START_NOW</name>
 									<description>Start conversion now.</description>
 									<value>0x1</value>
 								</enumeratedValue>
@@ -49712,14 +49712,14 @@
 							<enumeratedValues>
 								<name>EFCAN</name>
 								<enumeratedValue>
-									<name>SOFTWARE_MUST_READ_A</name>
+									<name>SOFTWARE</name>
 									<description>Software must read all messages for all enabled IDs
 										on all enabled CAN buses, from the receiving CAN
 										controllers.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>THE_ACCEPTANCE_FILTE</name>
+									<name>ACFILTER</name>
 									<description>The Acceptance Filter itself will take care of
 										receiving and storing messages for selected Standard ID
 										values on selected CAN buses. See Section 21.16 FullCAN mode
@@ -50245,13 +50245,13 @@
 							<enumeratedValues>
 								<name>RM</name>
 								<enumeratedValue>
-									<name>NORMAL_THE_CAN_CONTR</name>
+									<name>OPERATING</name>
 									<description>Normal.The CAN Controller is in the Operating Mode,
 										and certain registers can not be written.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>RESET_CAN_OPERATION</name>
+									<name>RESET</name>
 									<description>Reset. CAN operation is disabled, writable
 										registers can be written and the current
 										transmission/reception of a message is aborted.</description>
@@ -50266,14 +50266,14 @@
 							<enumeratedValues>
 								<name>LOM</name>
 								<enumeratedValue>
-									<name>NORMAL_THE_CAN_CONT</name>
+									<name>DISABLED</name>
 									<description>Normal. The CAN controller acknowledges a
 										successfully received message on the CAN bus. The error
 										counters are stopped at the current value.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>LISTEN_ONLY_THE_CON</name>
+									<name>ENABLED</name>
 									<description>Listen only. The controller gives no
 										acknowledgment, even if a message is successfully received.
 										Messages cannot be sent, and the controller operates in
@@ -50290,13 +50290,13 @@
 							<enumeratedValues>
 								<name>STM</name>
 								<enumeratedValue>
-									<name>NORMAL_A_TRANSMITTE</name>
+									<name>DISABLED</name>
 									<description>Normal. A transmitted message must be acknowledged
 										to be considered successful.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>SELF_TEST_THE_CONTR</name>
+									<name>ENABLED</name>
 									<description>Self test. The controller will consider a Tx
 										message successful even if there is no acknowledgment
 										received. In this mode a full node test is possible without
@@ -50313,13 +50313,13 @@
 							<enumeratedValues>
 								<name>TPM</name>
 								<enumeratedValue>
-									<name>CAN_ID_THE_TRANSMIT</name>
+									<name>CAN_ID</name>
 									<description>CAN ID. The transmit priority for 3 Transmit
 										Buffers depends on the CAN Identifier.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>LOCAL_PRIORITY_THE_</name>
+									<name>LOCAL</name>
 									<description>Local priority. The transmit priority for 3
 										Transmit Buffers depends on the contents of the Tx Priority
 										register within the Transmit Buffer.</description>
@@ -50334,12 +50334,12 @@
 							<enumeratedValues>
 								<name>SM</name>
 								<enumeratedValue>
-									<name>WAKE_UP_NORMAL_OPER</name>
+									<name>DISABLED</name>
 									<description>Wake-up. Normal operation.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>SLEEP_THE_CAN_CONTR</name>
+									<name>ENABLED</name>
 									<description>Sleep. The CAN controller enters Sleep Mode if no
 										CAN interrupt is pending and there is no bus activity. See
 										the Sleep Mode description Section 21.8.2 on page 565.</description>
@@ -50354,13 +50354,13 @@
 							<enumeratedValues>
 								<name>RPM</name>
 								<enumeratedValue>
-									<name>LOW_ACTIVE_RD_INPUT</name>
+									<name>ACTIVE_LOW</name>
 									<description>Low active. RD input is active Low (dominant bit =
 										0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>HIGH_ACTIVE_RD_INPU</name>
+									<name>ACTIVE_HIGH</name>
 									<description>High active. RD input is active High (dominant bit
 										= 1) -- reverse polarity.</description>
 									<value>1</value>
@@ -50381,12 +50381,12 @@
 							<enumeratedValues>
 								<name>TM</name>
 								<enumeratedValue>
-									<name>DISABLED_NORMAL_OPE</name>
+									<name>DISABLED</name>
 									<description>Disabled. Normal operation.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLED_THE_TD_PIN_</name>
+									<name>ENABLED</name>
 									<description>Enabled. The TD pin will reflect the bit, detected
 										on RD pin, with the next positive edge of the system clock.</description>
 									<value>1</value>
@@ -50417,12 +50417,12 @@
 							<enumeratedValues>
 								<name>TR</name>
 								<enumeratedValue>
-									<name>ABSENT_NO_TRANSMISSI</name>
+									<name>ABSENT</name>
 									<description>Absent.No transmission request.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PRESENT_THE_MESSAGE</name>
+									<name>PRESENT</name>
 									<description>Present. The message, previously written to the
 										CANxTFI, CANxTID, and optionally the CANxTDA and CANxTDB
 										registers, is queued for transmission from the selected
@@ -50441,12 +50441,12 @@
 							<enumeratedValues>
 								<name>AT</name>
 								<enumeratedValue>
-									<name>NO_ACTION_DO_NOT_AB</name>
+									<name>NO_ACTION</name>
 									<description>No action. Do not abort the transmission.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PRESENT_IF_NOT_ALRE</name>
+									<name>PRESENT</name>
 									<description>Present. if not already in progress, a pending
 										Transmission Request for the selected Transmit Buffer is
 										cancelled.</description>
@@ -50461,12 +50461,12 @@
 							<enumeratedValues>
 								<name>RRB</name>
 								<enumeratedValue>
-									<name>NO_ACTION_DO_NOT_RE</name>
+									<name>NO_ACTION</name>
 									<description>No action. Do not release the receive buffer.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>RELEASED_THE_INFORM</name>
+									<name>RELEASED</name>
 									<description>Released. The information in the Receive Buffer
 										(consisting of CANxRFS, CANxRID, and if applicable the
 										CANxRDA and CANxRDB registers) is released, and becomes
@@ -50484,12 +50484,12 @@
 							<enumeratedValues>
 								<name>CDO</name>
 								<enumeratedValue>
-									<name>NO_ACTION_DO_NOT_CL</name>
+									<name>NO_ACTION</name>
 									<description>No action. Do not clear the data overrun bit.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>CLEAR_THE_DATA_OVER</name>
+									<name>CLEAR</name>
 									<description>Clear. The Data Overrun bit in Status Register(s)
 										is cleared.</description>
 									<value>1</value>
@@ -50503,12 +50503,12 @@
 							<enumeratedValues>
 								<name>SRR</name>
 								<enumeratedValue>
-									<name>ABSENT_NO_SELF_RECE</name>
+									<name>ABSENT</name>
 									<description>Absent. No self reception request.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>PRESENT_THE_MESSAGE</name>
+									<name>PRESENT</name>
 									<description>Present. The message, previously written to the
 										CANxTFS, CANxTID, and optionally the CANxTDA and CANxTDB
 										registers, is queued for transmission from the selected
@@ -50527,13 +50527,13 @@
 							<enumeratedValues>
 								<name>STB1</name>
 								<enumeratedValue>
-									<name>NOT_SELECTED_TX_BUF</name>
+									<name>NOT_SELECTED</name>
 									<description>Not selected. Tx Buffer 1 is not selected for
 										transmission.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>SELECTED_TX_BUFFER_</name>
+									<name>SELECTED</name>
 									<description>Selected. Tx Buffer 1 is selected for transmission.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -50546,14 +50546,14 @@
 							<enumeratedValues>
 								<name>STB2</name>
 								<enumeratedValue>
-									<name>NOT_SELECTED_TX_BUF</name>
+									<name>NOT_SELECTED</name>
 									<description>Not selected. Tx Buffer 2 is not selected for
 										transmission.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>SELECTED_TX_BUFFER_</name>
-									<description>Selected. Tx Buffer 2 is selected for transmission.</description>
+									<name>SELECTED</name>
+									<description>SELECTED. Tx Buffer 2 is selected for transmission.</description>
 									<value>1</value>
 								</enumeratedValue>
 							</enumeratedValues>
@@ -50565,13 +50565,13 @@
 							<enumeratedValues>
 								<name>STB3</name>
 								<enumeratedValue>
-									<name>NOT_SELECTED_TX_BUF</name>
+									<name>NOT_SELECTED</name>
 									<description>Not selected. Tx Buffer 3 is not selected for
 										transmission.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>SELECTED_TX_BUFFER_</name>
+									<name>SELECTED</name>
 									<description>Selected. Tx Buffer 3 is selected for transmission.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -50604,12 +50604,12 @@
 							<enumeratedValues>
 								<name>RBS</name>
 								<enumeratedValue>
-									<name>EMPTY_NO_MESSAGE_IS</name>
+									<name>EMPTY</name>
 									<description>Empty. No message is available.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>FULL_AT_LEAST_ONE_C</name>
+									<name>FULL</name>
 									<description>Full. At least one complete message is received by
 										the Double Receive Buffer and available in the CANxRFS,
 										CANxRID, and if applicable the CANxRDA and CANxRDB
@@ -50632,14 +50632,14 @@
 							<enumeratedValues>
 								<name>DOS</name>
 								<enumeratedValue>
-									<name>ABSENT_NO_DATA_OVER</name>
+									<name>ABSENT</name>
 									<description>Absent. No data overrun has occurred since the last
 										Clear Data Overrun command was given/written to CANxCMR (or
 										since Reset).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>OVERRUN_A_MESSAGE_W</name>
+									<name>OVERRUN</name>
 									<description>Overrun. A message was lost because the preceding
 										message to this CAN controller was not read and released
 										quickly enough (there was not enough space for a new message
@@ -50655,7 +50655,7 @@
 							<enumeratedValues>
 								<name>TBS</name>
 								<enumeratedValue>
-									<name>LOCKED_AT_LEAST_ONE</name>
+									<name>LOCKED</name>
 									<description>Locked. At least one of the Transmit Buffers is not
 										available for the CPU, i.e. at least one previously queued
 										message for this CAN controller has not yet been sent, and
@@ -50664,7 +50664,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>RELEASED_ALL_THREE_</name>
+									<name>RELEASED</name>
 									<description>Released. All three Transmit Buffers are available
 										for the CPU. No transmit message is pending for this CAN
 										controller (in any of the 3 Tx buffers), and software may
@@ -50685,13 +50685,13 @@
 							<enumeratedValues>
 								<name>TCS</name>
 								<enumeratedValue>
-									<name>INCOMPLETE_AT_LEAST</name>
+									<name>INCOMPLETE</name>
 									<description>Incomplete. At least one requested transmission has
 										not been successfully completed yet.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>COMPLETE_ALL_REQUES</name>
+									<name>COMPLETE</name>
 									<description>Complete. All requested transmission(s) has (have)
 										been successfully completed.</description>
 									<value>1</value>
@@ -50710,12 +50710,12 @@
 							<enumeratedValues>
 								<name>RS</name>
 								<enumeratedValue>
-									<name>IDLE_THE_CAN_CONTRO</name>
+									<name>IDLE</name>
 									<description>Idle. The CAN controller is idle.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>RECEIVE_THE_CAN_CON</name>
+									<name>RECEIVE</name>
 									<description>Receive. The CAN controller is receiving a message.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -50733,12 +50733,12 @@
 							<enumeratedValues>
 								<name>TS</name>
 								<enumeratedValue>
-									<name>IDLE_THE_CAN_CONTRO</name>
+									<name>IDLE</name>
 									<description>Idle. The CAN controller is idle.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>TRANSMIT_THE_CAN_CO</name>
+									<name>TRANSMIT</name>
 									<description>Transmit. The CAN controller is sending a message.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -50758,13 +50758,13 @@
 							<enumeratedValues>
 								<name>ES</name>
 								<enumeratedValue>
-									<name>OK_BOTH_ERROR_COUNT</name>
+									<name>OK</name>
 									<description>OK. Both error counters are below the Error Warning
 										Limit.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ERROR_ONE_OR_BOTH_O</name>
+									<name>ERROR</name>
 									<description>Error. One or both of the Transmit and Receive
 										Error Counters has reached the limit set in the Error
 										Warning Limit register.</description>
@@ -50789,13 +50789,13 @@
 							<enumeratedValues>
 								<name>BS</name>
 								<enumeratedValue>
-									<name>BUS_ON_THE_CAN_CONT</name>
+									<name>BUS_ON</name>
 									<description>Bus-on. The CAN Controller is involved in bus
 										activities</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>BUS_OFF_THE_CAN_CON</name>
+									<name>BUS_OFF</name>
 									<description>Bus-off. The CAN controller is currently not
 										involved/prohibited from bus activity because the Transmit
 										Error Counter reached its limiting value of 255.</description>
@@ -51310,13 +51310,13 @@
 							<enumeratedValues>
 								<name>SAM</name>
 								<enumeratedValue>
-									<name>THE_BUS_IS_SAMPLED_O</name>
+									<name>ONCE</name>
 									<description>The bus is sampled once (recommended for high speed
 										buses)</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>THE_BUS_IS_SAMPLED_3</name>
+									<name>3_TIMES</name>
 									<description>The bus is sampled 3 times (recommended for low to
 										medium speed buses to filter spikes on the bus-line)</description>
 									<value>1</value>
@@ -52118,12 +52118,12 @@
 							<enumeratedValues>
 								<name>INT_DMA_REQ</name>
 								<enumeratedValue>
-									<name>CLEAR_ON_ANY_WRITE_T</name>
+									<name>CLEAR_ON_WRITE</name>
 									<description>Clear on any write to the DACR register.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>SET_BY_HARDWARE_WHEN</name>
+									<name>SET_BY_HARDWARE</name>
 									<description>Set by hardware when the timer times out.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -52141,7 +52141,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_WHEN_THIS_BI</name>
+									<name>ENABLE</name>
 									<description>Enable. When this bit and the CNT_ENA bit are both
 										set, the double-buffering feature in the DACR register will
 										be enabled. Writes to the DACR register are written to a
@@ -52181,7 +52181,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_DMA_BURST_RE</name>
+									<name>ENABLE</name>
 									<description>Enable. DMA Burst Request Input 7 is enabled for
 										the DAC (see Table 672).</description>
 									<value>1</value>
@@ -52417,12 +52417,12 @@
 							<enumeratedValues>
 								<name>RBRIE</name>
 								<enumeratedValue>
-									<name>DISABLE_THE_RDA_INTE</name>
+									<name>DISABLED</name>
 									<description>Disable the RDA interrupts.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_THE_RDA_INTER</name>
+									<name>ENABLED</name>
 									<description>Enable the RDA interrupts.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -52436,12 +52436,12 @@
 							<enumeratedValues>
 								<name>THREIE</name>
 								<enumeratedValue>
-									<name>DISABLE_THE_THRE_INT</name>
+									<name>DISABLED</name>
 									<description>Disable the THRE interrupts.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_THE_THRE_INTE</name>
+									<name>ENABLED</name>
 									<description>Enable the THRE interrupts.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -52456,12 +52456,12 @@
 							<enumeratedValues>
 								<name>RXIE</name>
 								<enumeratedValue>
-									<name>DISABLE_THE_RX_LINE_</name>
+									<name>DISABLED</name>
 									<description>Disable the RX line status interrupts.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_THE_RX_LINE_S</name>
+									<name>ENABLED</name>
 									<description>Enable the RX line status interrupts.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -52481,12 +52481,12 @@
 							<enumeratedValues>
 								<name>ABEOINTEN</name>
 								<enumeratedValue>
-									<name>DISABLE_END_OF_AUTO_</name>
+									<name>DISABLED</name>
 									<description>Disable end of auto-baud Interrupt.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_END_OF_AUTO_B</name>
+									<name>ENABLED</name>
 									<description>Enable end of auto-baud Interrupt.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -52499,12 +52499,12 @@
 							<enumeratedValues>
 								<name>ABTOINTEN</name>
 								<enumeratedValue>
-									<name>DISABLE_AUTO_BAUD_TI</name>
+									<name>DISABLED</name>
 									<description>Disable auto-baud time-out Interrupt.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_AUTO_BAUD_TIM</name>
+									<name>ENABLED</name>
 									<description>Enable auto-baud time-out Interrupt.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -52535,12 +52535,12 @@
 							<enumeratedValues>
 								<name>INTSTATUS</name>
 								<enumeratedValue>
-									<name>AT_LEAST_ONE_INTERRU</name>
+									<name>PENDING</name>
 									<description>At least one interrupt is pending.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>NO_INTERRUPT_IS_PEND</name>
+									<name>EMPTY</name>
 									<description>No interrupt is pending.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -52556,22 +52556,22 @@
 							<enumeratedValues>
 								<name>INTID</name>
 								<enumeratedValue>
-									<name>1_RECEIVE_LINE_S</name>
+									<name>RLS</name>
 									<description>1 - Receive Line Status (RLS).</description>
 									<value>0x3</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>2A__RECEIVE_DATA_AV</name>
+									<name>RDA</name>
 									<description>2a - Receive Data Available (RDA).</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>2B__CHARACTER_TIME_</name>
+									<name>CTI</name>
 									<description>2b - Character Time-out Indicator (CTI).</description>
 									<value>0x6</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>3_THRE_INTERRUPT</name>
+									<name>THRE</name>
 									<description>3 - THRE Interrupt</description>
 									<value>0x1</value>
 								</enumeratedValue>
@@ -52629,13 +52629,13 @@
 							<enumeratedValues>
 								<name>FIFOEN</name>
 								<enumeratedValue>
-									<name>UARTN_FIFOS_ARE_DISA</name>
+									<name>DONOTUSE</name>
 									<description>UARTn FIFOs are disabled. Must not be used in the
 										application.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ACTIVE_HIGH_ENABLE_F</name>
+									<name>ACTIVE_HIGH</name>
 									<description>Active high enable for both UARTn Rx and TX FIFOs
 										and UnFCR[7:1] access. This bit must be set for proper UART
 										operation. Any transition on this bit will automatically
@@ -52651,12 +52651,12 @@
 							<enumeratedValues>
 								<name>RXFIFORES</name>
 								<enumeratedValue>
-									<name>NO_IMPACT_ON_EITHER_</name>
+									<name>DISABLED</name>
 									<description>No impact on either of UARTn FIFOs.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>WRITING_A_LOGIC_1_TO</name>
+									<name>ENABLED</name>
 									<description>Writing a logic 1 to UnFCR[1] will clear all bytes
 										in UARTn Rx FIFO, reset the pointer logic. This bit is
 										self-clearing.</description>
@@ -52671,12 +52671,12 @@
 							<enumeratedValues>
 								<name>TXFIFORES</name>
 								<enumeratedValue>
-									<name>NO_IMPACT_ON_EITHER_</name>
+									<name>DISABLED</name>
 									<description>No impact on either of UARTn FIFOs.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>WRITING_A_LOGIC_1_TO</name>
+									<name>ENABLED</name>
 									<description>Writing a logic 1 to UnFCR[2] will clear all bytes
 										in UARTn TX FIFO, reset the pointer logic. This bit is
 										self-clearing.</description>
@@ -52708,22 +52708,22 @@
 							<enumeratedValues>
 								<name>RXTRIGLVL</name>
 								<enumeratedValue>
-									<name>TRIGGER_LEVEL_0_1_C</name>
+									<name>LEVEL_0</name>
 									<description>Trigger level 0 (1 character or 0x01).</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>TRIGGER_LEVEL_1_4_C</name>
+									<name>LEVEL_1</name>
 									<description>Trigger level 1 (4 characters or 0x04).</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>TRIGGER_LEVEL_2_8_C</name>
+									<name>LEVEL_2</name>
 									<description>Trigger level 2 (8 characters or 0x08).</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>TRIGGER_LEVEL_3_14_</name>
+									<name>LEVEL_3</name>
 									<description>Trigger level 3 (14 characters or 0x0E).</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -52754,22 +52754,22 @@
 							<enumeratedValues>
 								<name>WLS</name>
 								<enumeratedValue>
-									<name>5_BIT_CHARACTER_LENG</name>
+									<name>5_BIT</name>
 									<description>5-bit character length</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>6_BIT_CHARACTER_LENG</name>
+									<name>6_BIT</name>
 									<description>6-bit character length</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>7_BIT_CHARACTER_LENG</name>
+									<name>7_BIT</name>
 									<description>7-bit character length</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>8_BIT_CHARACTER_LENG</name>
+									<name>8_BIT</name>
 									<description>8-bit character length</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -52782,12 +52782,12 @@
 							<enumeratedValues>
 								<name>SBS</name>
 								<enumeratedValue>
-									<name>1_STOP_BIT_</name>
+									<name>1_BIT</name>
 									<description>1 stop bit.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>2_STOP_BITS_1_5_IF_</name>
+									<name>2_BITS</name>
 									<description>2 stop bits (1.5 if UnLCR[1:0]=00).</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -52800,12 +52800,12 @@
 							<enumeratedValues>
 								<name>PE</name>
 								<enumeratedValue>
-									<name>DISABLE_PARITY_GENER</name>
+									<name>DISABLED</name>
 									<description>Disable parity generation and checking.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_PARITY_GENERA</name>
+									<name>ENABLED</name>
 									<description>Enable parity generation and checking.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -52818,24 +52818,24 @@
 							<enumeratedValues>
 								<name>PS</name>
 								<enumeratedValue>
-									<name>ODD_PARITY_NUMBER_O</name>
+									<name>ODD</name>
 									<description>Odd parity. Number of 1s in the transmitted
 										character and the attached parity bit will be odd.</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>EVEN_PARITY_NUMBER_</name>
+									<name>EVEN</name>
 									<description>Even Parity. Number of 1s in the transmitted
 										character and the attached parity bit will be even.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>FORCED_1_STICK_PARIT</name>
+									<name>FORCED_1_STICK</name>
 									<description>Forced 1 stick parity.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>FORCED_0_STICK_PARIT</name>
+									<name>FORCED_0_STICK</name>
 									<description>Forced 0 stick parity.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -52848,12 +52848,12 @@
 							<enumeratedValues>
 								<name>BC</name>
 								<enumeratedValue>
-									<name>DISABLE_BREAK_TRANSM</name>
+									<name>DISABLED</name>
 									<description>Disable break transmission.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_BREAK_TRANSMI</name>
+									<name>ENABLED</name>
 									<description>Enable break transmission. Output pin UARTn TXD is
 										forced to logic 0 when UnLCR[6] is active high.</description>
 									<value>1</value>
@@ -53183,12 +53183,12 @@
 							<enumeratedValues>
 								<name>ABEOINTCLR</name>
 								<enumeratedValue>
-									<name>NO_IMPACT_</name>
+									<name>NO_CLEAR</name>
 									<description>No impact.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>CLEAR_THE_CORRESPOND</name>
+									<name>CLEAR</name>
 									<description>Clear the corresponding interrupt in the IIR.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -54381,7 +54381,7 @@
 							<enumeratedValues>
 								<name>TXCLKSEL</name>
 								<enumeratedValue>
-									<name>SELECT_THE_TX_FRACTI</name>
+									<name>TX_FRD</name>
 									<description>Select the TX fractional rate divider clock output
 										as the source</description>
 									<value>0x0</value>
@@ -54392,7 +54392,7 @@
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>SELECT_THE_RX_MCLK_S</name>
+									<name>RX_MCLK</name>
 									<description>Select the RX_MCLK signal as the TX_MCLK clock
 										source</description>
 									<value>0x2</value>
@@ -56222,13 +56222,13 @@
 							<enumeratedValues>
 								<name>ILIM0_F</name>
 								<enumeratedValue>
-									<name>THIS_INTERRUPT_SOURC</name>
+									<name>DISABLED</name>
 									<description>This interrupt source is not contributing to the
 										MCPWM interrupt request.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>IF_THE_CORRESPONDING</name>
+									<name>ENABLED</name>
 									<description>If the corresponding bit in INTEN is 1, the MCPWM
 										module is asserting its interrupt request to the Interrupt
 										Controller.</description>
@@ -56243,13 +56243,13 @@
 							<enumeratedValues>
 								<name>IMAT0_F</name>
 								<enumeratedValue>
-									<name>THIS_INTERRUPT_SOURC</name>
+									<name>DISABLED</name>
 									<description>This interrupt source is not contributing to the
 										MCPWM interrupt request.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>IF_THE_CORRESPONDING</name>
+									<name>ENABLED</name>
 									<description>If the corresponding bit in INTEN is 1, the MCPWM
 										module is asserting its interrupt request to the Interrupt
 										Controller.</description>
@@ -56264,13 +56264,13 @@
 							<enumeratedValues>
 								<name>ICAP0_F</name>
 								<enumeratedValue>
-									<name>THIS_INTERRUPT_SOURC</name>
+									<name>DISABLED</name>
 									<description>This interrupt source is not contributing to the
 										MCPWM interrupt request.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>IF_THE_CORRESPONDING</name>
+									<name>ENABLED</name>
 									<description>If the corresponding bit in INTEN is 1, the MCPWM
 										module is asserting its interrupt request to the Interrupt
 										Controller.</description>
@@ -56291,13 +56291,13 @@
 							<enumeratedValues>
 								<name>ILIM1_F</name>
 								<enumeratedValue>
-									<name>THIS_INTERRUPT_SOURC</name>
+									<name>DISABLED</name>
 									<description>This interrupt source is not contributing to the
 										MCPWM interrupt request.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>IF_THE_CORRESPONDING</name>
+									<name>ENABLED</name>
 									<description>If the corresponding bit in INTEN is 1, the MCPWM
 										module is asserting its interrupt request to the Interrupt
 										Controller.</description>
@@ -56312,13 +56312,13 @@
 							<enumeratedValues>
 								<name>IMAT1_F</name>
 								<enumeratedValue>
-									<name>THIS_INTERRUPT_SOURC</name>
+									<name>DISABLED</name>
 									<description>This interrupt source is not contributing to the
 										MCPWM interrupt request.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>IF_THE_CORRESPONDING</name>
+									<name>ENABLED</name>
 									<description>If the corresponding bit in INTEN is 1, the MCPWM
 										module is asserting its interrupt request to the Interrupt
 										Controller.</description>
@@ -56333,13 +56333,13 @@
 							<enumeratedValues>
 								<name>ICAP1_F</name>
 								<enumeratedValue>
-									<name>THIS_INTERRUPT_SOURC</name>
+									<name>DISABLED</name>
 									<description>This interrupt source is not contributing to the
 										MCPWM interrupt request.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>IF_THE_CORRESPONDING</name>
+									<name>ENABLED</name>
 									<description>If the corresponding bit in INTEN is 1, the MCPWM
 										module is asserting its interrupt request to the Interrupt
 										Controller.</description>
@@ -56360,13 +56360,13 @@
 							<enumeratedValues>
 								<name>ILIM2_F</name>
 								<enumeratedValue>
-									<name>THIS_INTERRUPT_SOURC</name>
+									<name>DISABLED</name>
 									<description>This interrupt source is not contributing to the
 										MCPWM interrupt request.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>IF_THE_CORRESPONDING</name>
+									<name>ENABLED</name>
 									<description>If the corresponding bit in INTEN is 1, the MCPWM
 										module is asserting its interrupt request to the Interrupt
 										Controller.</description>
@@ -56381,13 +56381,13 @@
 							<enumeratedValues>
 								<name>IMAT2_F</name>
 								<enumeratedValue>
-									<name>THIS_INTERRUPT_SOURC</name>
+									<name>DISABLED</name>
 									<description>This interrupt source is not contributing to the
 										MCPWM interrupt request.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>IF_THE_CORRESPONDING</name>
+									<name>ENABLED</name>
 									<description>If the corresponding bit in INTEN is 1, the MCPWM
 										module is asserting its interrupt request to the Interrupt
 										Controller.</description>
@@ -56402,13 +56402,13 @@
 							<enumeratedValues>
 								<name>ICAP2_F</name>
 								<enumeratedValue>
-									<name>THIS_INTERRUPT_SOURC</name>
+									<name>DISABLED</name>
 									<description>This interrupt source is not contributing to the
 										MCPWM interrupt request.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>IF_THE_CORRESPONDING</name>
+									<name>ENABLED</name>
 									<description>If the corresponding bit in INTEN is 1, the MCPWM
 										module is asserting its interrupt request to the Interrupt
 										Controller.</description>
@@ -56429,13 +56429,13 @@
 							<enumeratedValues>
 								<name>ABORT_F</name>
 								<enumeratedValue>
-									<name>THIS_INTERRUPT_SOURC</name>
+									<name>DISABLED</name>
 									<description>This interrupt source is not contributing to the
 										MCPWM interrupt request.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>IF_THE_CORRESPONDING</name>
+									<name>ENABLED</name>
 									<description>If the corresponding bit in INTEN is 1, the MCPWM
 										module is asserting its interrupt request to the Interrupt
 										Controller.</description>
@@ -56647,7 +56647,7 @@
 							<enumeratedValues>
 								<name>TC0MCI0_RE</name>
 								<enumeratedValue>
-									<name>A_RISING_EDGE_ON_MCI</name>
+									<name>DISABLED</name>
 									<description>A rising edge on MCI0 does not affect counter 0.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -56666,7 +56666,7 @@
 							<enumeratedValues>
 								<name>TC0MCI0_FE</name>
 								<enumeratedValue>
-									<name>A_FALLING_EDGE_ON_MC</name>
+									<name>DISABLED</name>
 									<description>A falling edge on MCI0 does not affect counter 0.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -56685,7 +56685,7 @@
 							<enumeratedValues>
 								<name>TC0MCI1_RE</name>
 								<enumeratedValue>
-									<name>A_RISING_EDGE_ON_MCI</name>
+									<name>DISABLED</name>
 									<description>A rising edge on MCI1 does not affect counter 0.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -56704,7 +56704,7 @@
 							<enumeratedValues>
 								<name>TC0MCI1_FE</name>
 								<enumeratedValue>
-									<name>A_FALLING_EDGE_ON_MC</name>
+									<name>DISABLED</name>
 									<description>A falling edge on MCI1 does not affect counter 0.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -56723,7 +56723,7 @@
 							<enumeratedValues>
 								<name>TC0MCI2_RE</name>
 								<enumeratedValue>
-									<name>A_RISING_EDGE_ON_MCI</name>
+									<name>DISABLED</name>
 									<description>A rising edge on MCI0 does not affect counter 0.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -56742,7 +56742,7 @@
 							<enumeratedValues>
 								<name>TC0MCI2_FE</name>
 								<enumeratedValue>
-									<name>A_FALLING_EDGE_ON_MC</name>
+									<name>DISABLED</name>
 									<description>A falling edge on MCI0 does not affect counter 0.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -56761,7 +56761,7 @@
 							<enumeratedValues>
 								<name>TC1MCI0_RE</name>
 								<enumeratedValue>
-									<name>A_RISING_EDGE_ON_MCI</name>
+									<name>DISABLED</name>
 									<description>A rising edge on MCI0 does not affect counter 1.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -56780,7 +56780,7 @@
 							<enumeratedValues>
 								<name>TC1MCI0_FE</name>
 								<enumeratedValue>
-									<name>A_FALLING_EDGE_ON_MC</name>
+									<name>DISABLED</name>
 									<description>A falling edge on MCI0 does not affect counter 1.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -56799,7 +56799,7 @@
 							<enumeratedValues>
 								<name>TC1MCI1_RE</name>
 								<enumeratedValue>
-									<name>A_RISING_EDGE_ON_MCI</name>
+									<name>DISABLED</name>
 									<description>A rising edge on MCI1 does not affect counter 1.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -56818,7 +56818,7 @@
 							<enumeratedValues>
 								<name>TC1MCI1_FE</name>
 								<enumeratedValue>
-									<name>A_FALLING_EDGE_ON_MC</name>
+									<name>DISABLED</name>
 									<description>A falling edge on MCI0 does not affect counter 1.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -56837,7 +56837,7 @@
 							<enumeratedValues>
 								<name>TC1MCI2_RE</name>
 								<enumeratedValue>
-									<name>A_RISING_EDGE_ON_MCI</name>
+									<name>DISABLED</name>
 									<description>A rising edge on MCI2 does not affect counter 1.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -56856,7 +56856,7 @@
 							<enumeratedValues>
 								<name>TC1MCI2_FE</name>
 								<enumeratedValue>
-									<name>A_FALLING_EDGE_ON_MC</name>
+									<name>DISABLED</name>
 									<description>A falling edge on MCI2 does not affect counter 1.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -56875,7 +56875,7 @@
 							<enumeratedValues>
 								<name>TC2MCI0_RE</name>
 								<enumeratedValue>
-									<name>A_RISING_EDGE_ON_MCI</name>
+									<name>DISABLED</name>
 									<description>A rising edge on MCI0 does not affect counter 2.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -56894,7 +56894,7 @@
 							<enumeratedValues>
 								<name>TC2MCI0_FE</name>
 								<enumeratedValue>
-									<name>A_FALLING_EDGE_ON_MC</name>
+									<name>DISABLED</name>
 									<description>A falling edge on MCI0 does not affect counter 2.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -56913,7 +56913,7 @@
 							<enumeratedValues>
 								<name>TC2MCI1_RE</name>
 								<enumeratedValue>
-									<name>A_RISING_EDGE_ON_MCI</name>
+									<name>DISABLED</name>
 									<description>A rising edge on MCI1 does not affect counter 2.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -56932,7 +56932,7 @@
 							<enumeratedValues>
 								<name>TC2MCI1_FE</name>
 								<enumeratedValue>
-									<name>A_FALLING_EDGE_ON_MC</name>
+									<name>DISABLED</name>
 									<description>A falling edge on MCI1 does not affect counter 2.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -56951,7 +56951,7 @@
 							<enumeratedValues>
 								<name>TC2MCI2_RE</name>
 								<enumeratedValue>
-									<name>A_RISING_EDGE_ON_MCI</name>
+									<name>DISABLED</name>
 									<description>A rising edge on MCI2 does not affect counter 2.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -56970,7 +56970,7 @@
 							<enumeratedValues>
 								<name>TC2MCI2_FE</name>
 								<enumeratedValue>
-									<name>A_FALLING_EDGE_ON_MC</name>
+									<name>DISABLED</name>
 									<description>A falling edge on MCI2 does not affect counter 2.</description>
 									<value>0</value>
 								</enumeratedValue>
@@ -58514,12 +58514,12 @@
 							<enumeratedValues>
 								<name>PWRSAVE</name>
 								<enumeratedValue>
-									<name>ALWAYS_ENABLED_</name>
+									<name>ALWAYS_ENABLED</name>
 									<description>Always enabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>CLOCK_ENABLED_WHEN_B</name>
+									<name>ACTIVE_BUS_ONLY</name>
 									<description>Clock enabled when bus is active.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -58532,12 +58532,12 @@
 							<enumeratedValues>
 								<name>BYPASS</name>
 								<enumeratedValue>
-									<name>DISABLE_BYPASS_</name>
+									<name>DISABLED</name>
 									<description>Disable bypass.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ENABLE_BYPASS_MCLK_</name>
+									<name>ENABLED</name>
 									<description>Enable bypass. MCLK driven to card bus output
 										(SD_CLK).</description>
 									<value>1</value>
@@ -58551,12 +58551,12 @@
 							<enumeratedValues>
 								<name>WIDEBUS</name>
 								<enumeratedValue>
-									<name>STANDARD_BUS_MODE_O</name>
+									<name>STANDARD</name>
 									<description>Standard bus mode (only SD_DAT[0] used).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>WIDE_BUS_MODE_SD_DA</name>
+									<name>WIDE</name>
 									<description>Wide bus mode (SD_DAT[3:0] used)</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -59237,38 +59237,38 @@
 							<enumeratedValues>
 								<name>FLASHTIM</name>
 								<enumeratedValue>
-									<name>FLASH_ACCESSES_USE_1</name>
+									<name>1_CLOCK</name>
 									<description>Flash accesses use 1 CPU clock. Use for up to 20
 										MHz CPU clock with power boost off.</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>FLASH_ACCESSES_USE_2</name>
+									<name>2_CLOCKS</name>
 									<description>Flash accesses use 2 CPU clocks. Use for up to 40
 										MHz CPU clock with power boost off.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>FLASH_ACCESSES_USE_3</name>
+									<name>3_CLOCKS</name>
 									<description>Flash accesses use 3 CPU clocks. Use for up to 60
 										MHz CPU clock with power boost off.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>FLASH_ACCESSES_USE_4</name>
+									<name>4_CLOCKS</name>
 									<description>Flash accesses use 4 CPU clocks. Use for up to 80
 										MHz CPU clock with power boost off. Use this setting for
 										operation from 100 to 120 MHz operation with power boost on.</description>
 									<value>0x3</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>FLASH_ACCESSES_USE_5</name>
+									<name>5_CLOCKS</name>
 									<description>Flash accesses use 5 CPU clocks. Use for up to 100
 										MHz CPU clock with power boost off.</description>
 									<value>0x4</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>FLASH_ACCESSES_USE_6</name>
+									<name>6_CLOCKS</name>
 									<description>Flash accesses use 6 CPU clocks. Safe setting for
 										any allowed conditions.</description>
 									<value>0x5</value>
@@ -59703,12 +59703,12 @@
 							<enumeratedValues>
 								<name>EMCDIV</name>
 								<enumeratedValue>
-									<name>THE_EMC_USES_THE_SAM</name>
+									<name>FULL_RATE</name>
 									<description>The EMC uses the same clock as the CPU.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>THE_EMC_USES_A_CLOCK</name>
+									<name>HALF_RATE</name>
 									<description>The EMC uses a clock at half the rate of the CPU.</description>
 									<value>1</value>
 								</enumeratedValue>
@@ -59759,13 +59759,13 @@
 							<enumeratedValues>
 								<name>CCLKSEL</name>
 								<enumeratedValue>
-									<name>SYSCLK_IS_USED_AS_TH</name>
+									<name>SYSCLK</name>
 									<description>Sysclk is used as the input to the CPU clock
 										divider.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>THE_OUTPUT_OF_THE_MA</name>
+									<name>MAIN_PLL</name>
 									<description>The output of the Main PLL is used as the input to
 										the CPU clock divider.</description>
 									<value>1</value>
@@ -60136,13 +60136,13 @@
 							<enumeratedValues>
 								<name>EXTPOLAR0</name>
 								<enumeratedValue>
-									<name>LOW_ACTIVE_OR_FALLIN</name>
+									<name>ACTIVE_LOW</name>
 									<description>Low-active or falling-edge sensitive (depending on
 										EXTMODE0).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>HIGH_ACTIVE_OR_RISIN</name>
+									<name>ACTIVE_HIGH</name>
 									<description>High-active or rising-edge sensitive (depending on
 										EXTMODE0).</description>
 									<value>1</value>
@@ -60156,13 +60156,13 @@
 							<enumeratedValues>
 								<name>EXTPOLAR1</name>
 								<enumeratedValue>
-									<name>LOW_ACTIVE_OR_FALLIN</name>
+									<name>ACTIVE_LOW</name>
 									<description>Low-active or falling-edge sensitive (depending on
 										EXTMODE1).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>HIGH_ACTIVE_OR_RISIN</name>
+									<name>ACTIVE_HIGH</name>
 									<description>High-active or rising-edge sensitive (depending on
 										EXTMODE1).</description>
 									<value>1</value>
@@ -60176,13 +60176,13 @@
 							<enumeratedValues>
 								<name>EXTPOLAR2</name>
 								<enumeratedValue>
-									<name>LOW_ACTIVE_OR_FALLIN</name>
+									<name>ACTIVE_LOW</name>
 									<description>Low-active or falling-edge sensitive (depending on
 										EXTMODE2).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>HIGH_ACTIVE_OR_RISIN</name>
+									<name>ACTIVE_HIGH</name>
 									<description>High-active or rising-edge sensitive (depending on
 										EXTMODE2).</description>
 									<value>1</value>
@@ -60196,13 +60196,13 @@
 							<enumeratedValues>
 								<name>EXTPOLAR3</name>
 								<enumeratedValue>
-									<name>LOW_ACTIVE_OR_FALLIN</name>
+									<name>ACTIVE_LOW</name>
 									<description>Low-active or falling-edge sensitive (depending on
 										EXTMODE3).</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>HIGH_ACTIVE_OR_RISIN</name>
+									<name>ACTIVE_HIGH</name>
 									<description>High-active or rising-edge sensitive (depending on
 										EXTMODE3).</description>
 									<value>1</value>
@@ -60619,19 +60619,19 @@
 							<enumeratedValues>
 								<name>SPIFISEL</name>
 								<enumeratedValue>
-									<name>SYSCLK_IS_USED_AS_TH</name>
+									<name>SYSCLK</name>
 									<description>Sysclk is used as the input to the SPIFI clock
 										divider.</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>THE_OUTPUT_OF_THE_MA</name>
+									<name>MAIN_PLL</name>
 									<description>The output of the Main PLL is used as the input to
 										the SPIFI clock divider.</description>
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>THE_OUTPUT_OF_THE_AL</name>
+									<name>ALT_PLL</name>
 									<description>The output of the Alt PLL is used as the input to
 										the SPIFI clock divider.</description>
 									<value>0x2</value>
