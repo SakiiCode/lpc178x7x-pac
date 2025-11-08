@@ -14393,12 +14393,12 @@
 									<value>0x1</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>RESERVED_0X2</name>
+									<name>RESERVED</name>
 									<description>Reserved.</description>
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>RESERVED_0X3</name>
+									<name>RESERVED</name>
 									<description>Reserved.</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -18921,7 +18921,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INTERRUPT_ON_PWMMR0</name>
+									<name>ENABLED</name>
 									<description>Interrupt on PWMMR0: an interrupt is generated when
 										PWMMR0 matches the value in the PWMTC.</description>
 									<value>1</value>
@@ -18940,7 +18940,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>RESET_ON_PWMMR0_THE</name>
+									<name>ENABLED</name>
 									<description>Reset on PWMMR0: the PWMTC will be reset if PWMMR0
 										matches it.</description>
 									<value>1</value>
@@ -18959,7 +18959,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>STOP_ON_PWMMR0_THE_</name>
+									<name>ENABLED</name>
 									<description>Stop on PWMMR0: the PWMTC and PWMPC will be stopped
 										and PWMTCR bit 0 will be set to 0 if PWMMR0 matches the
 										PWMTC.</description>
@@ -18979,7 +18979,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INTERRUPT_ON_PWMMR1</name>
+									<name>ENABLED</name>
 									<description>Interrupt on PWMMR1: an interrupt is generated when
 										PWMMR1 matches the value in the PWMTC.</description>
 									<value>1</value>
@@ -18998,7 +18998,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>RESET_ON_PWMMR1_THE</name>
+									<name>ENABLED</name>
 									<description>Reset on PWMMR1: the PWMTC will be reset if PWMMR1
 										matches it.</description>
 									<value>1</value>
@@ -19017,7 +19017,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>STOP_ON_PWMMR1_THE_</name>
+									<name>ENABLED</name>
 									<description>Stop on PWMMR1: the PWMTC and PWMPC will be stopped
 										and PWMTCR bit 0 will be set to 0 if PWMMR1 matches the
 										PWMTC.</description>
@@ -19037,7 +19037,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INTERRUPT_ON_PWMMR2</name>
+									<name>ENABLED</name>
 									<description>Interrupt on PWMMR2: an interrupt is generated when
 										PWMMR2 matches the value in the PWMTC.</description>
 									<value>1</value>
@@ -19056,7 +19056,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>RESET_ON_PWMMR2_THE</name>
+									<name>ENABLED</name>
 									<description>Reset on PWMMR2: the PWMTC will be reset if PWMMR2
 										matches it.</description>
 									<value>1</value>
@@ -19075,7 +19075,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>STOP_ON_PWMMR2_THE_</name>
+									<name>ENABLED</name>
 									<description>Stop on PWMMR2: the PWMTC and PWMPC will be stopped
 										and PWMTCR bit 0 will be set to 0 if PWMMR0 matches the
 										PWMTC.</description>
@@ -19095,7 +19095,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INTERRUPT_ON_PWMMR3</name>
+									<name>ENABLED</name>
 									<description>Interrupt on PWMMR3: an interrupt is generated when
 										PWMMR3 matches the value in the PWMTC.</description>
 									<value>1</value>
@@ -19114,7 +19114,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>RESET_ON_PWMMR3_THE</name>
+									<name>ENABLED</name>
 									<description>Reset on PWMMR3: the PWMTC will be reset if PWMMR3
 										matches it.</description>
 									<value>1</value>
@@ -19133,7 +19133,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>STOP_ON_PWMMR3_THE_</name>
+									<name>ENABLED</name>
 									<description>Stop on PWMMR3: the PWMTC and PWMPC will be stopped
 										and PWMTCR bit 0 will be set to 0 if PWMMR0 matches the
 										PWMTC.</description>
@@ -19153,7 +19153,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INTERRUPT_ON_PWMMR4</name>
+									<name>ENABLED</name>
 									<description>Interrupt on PWMMR4: an interrupt is generated when
 										PWMMR4 matches the value in the PWMTC.</description>
 									<value>1</value>
@@ -19172,7 +19172,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>RESET_ON_PWMMR4_THE</name>
+									<name>ENABLED</name>
 									<description>Reset on PWMMR4: the PWMTC will be reset if PWMMR4
 										matches it.</description>
 									<value>1</value>
@@ -19191,7 +19191,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>STOP_ON_PWMMR4_THE_</name>
+									<name>ENABLED</name>
 									<description>Stop on PWMMR4: the PWMTC and PWMPC will be stopped
 										and PWMTCR bit 0 will be set to 0 if PWMMR4 matches the
 										PWMTC.</description>
@@ -19211,7 +19211,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INTERRUPT_ON_PWMMR5</name>
+									<name>ENABLED</name>
 									<description>Interrupt on PWMMR5: an interrupt is generated when
 										PWMMR5 matches the value in the PWMTC.</description>
 									<value>1</value>
@@ -19230,7 +19230,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>RESET_ON_PWMMR5_THE</name>
+									<name>ENABLED</name>
 									<description>Reset on PWMMR5: the PWMTC will be reset if PWMMR5
 										matches it.</description>
 									<value>1</value>
@@ -19249,7 +19249,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>STOP_ON_PWMMR5_THE_</name>
+									<name>ENABLED</name>
 									<description>Stop on PWMMR5: the PWMTC and PWMPC will be stopped
 										and PWMTCR bit 0 will be set to 0 if PWMMR5 matches the
 										PWMTC.</description>
@@ -19269,7 +19269,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INTERRUPT_ON_PWMMR6</name>
+									<name>ENABLED</name>
 									<description>Interrupt on PWMMR6: an interrupt is generated when
 										PWMMR6 matches the value in the PWMTC.</description>
 									<value>1</value>
@@ -19288,7 +19288,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>RESET_ON_PWMMR6_THE</name>
+									<name>ENABLED</name>
 									<description>Reset on PWMMR6: the PWMTC will be reset if PWMMR6
 										matches it.</description>
 									<value>1</value>
@@ -19307,7 +19307,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>STOP_ON_PWMMR6_THE_</name>
+									<name>ENABLED</name>
 									<description>Stop on PWMMR6: the PWMTC and PWMPC will be stopped
 										and PWMTCR bit 0 will be set to 0 if PWMMR6 matches the
 										PWMTC.</description>
@@ -19362,12 +19362,12 @@
 							<enumeratedValues>
 								<name>CAP0_R</name>
 								<enumeratedValue>
-									<name>DISABLED_THIS_FEATU</name>
+									<name>DISABLED</name>
 									<description>Disabled. This feature is disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>RISING_EDGE_A_SYNCH</name>
+									<name>ENABLED</name>
 									<description>Rising edge. A synchronously sampled rising edge on
 										PWMn_CAP0 will cause CR0 to be loaded with the contents of
 										the TC.</description>
@@ -19382,12 +19382,12 @@
 							<enumeratedValues>
 								<name>CAP0_F</name>
 								<enumeratedValue>
-									<name>DISABLED_THIS_FEATU</name>
+									<name>DISABLED</name>
 									<description>Disabled. This feature is disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>FALLING_EDGE_A_SYNC</name>
+									<name>ENABLED</name>
 									<description>Falling edge. A synchronously sampled falling edge
 										on PWMn_CAP0 will cause CR0 to be loaded with the contents
 										of TC.</description>
@@ -19402,12 +19402,12 @@
 							<enumeratedValues>
 								<name>CAP0_I</name>
 								<enumeratedValue>
-									<name>DISABLED_THIS_FEATU</name>
+									<name>DISABLED</name>
 									<description>Disabled. This feature is disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INTERRUPT_A_CR0_LOA</name>
+									<name>ENABLED</name>
 									<description>Interrupt. A CR0 load due to a PWMn_CAP0 event will
 										generate an interrupt.</description>
 									<value>1</value>
@@ -19421,12 +19421,12 @@
 							<enumeratedValues>
 								<name>CAP1_R</name>
 								<enumeratedValue>
-									<name>DISABLED_THIS_FEATU</name>
+									<name>DISABLED</name>
 									<description>Disabled. This feature is disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>RISING_EDGE_A_SYNCH</name>
+									<name>ENABLED</name>
 									<description>Rising edge. A synchronously sampled rising edge on
 										PWMn_CAP1 will cause CR1 to be loaded with the contents of
 										the TC.</description>
@@ -19441,12 +19441,12 @@
 							<enumeratedValues>
 								<name>CAP1_F</name>
 								<enumeratedValue>
-									<name>DISABLED_THIS_FEATU</name>
+									<name>DISABLED</name>
 									<description>Disabled. This feature is disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>FALLING_EDGE_A_SYNC</name>
+									<name>ENABLED</name>
 									<description>Falling edge. A synchronously sampled falling edge
 										on PWMn_CAP1 will cause CR1 to be loaded with the contents
 										of TC.</description>
@@ -19461,12 +19461,12 @@
 							<enumeratedValues>
 								<name>CAP1_I</name>
 								<enumeratedValue>
-									<name>DISABLED_THIS_FEATU</name>
+									<name>DISABLED</name>
 									<description>Disabled. This feature is disabled.</description>
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>INTERRUPT_A_CR1_LOA</name>
+									<name>ENABLED</name>
 									<description>Interrupt. A CR1 load due to a PWMn_CAP1 event will
 										generate an interrupt.</description>
 									<value>1</value>
@@ -48431,67 +48431,67 @@
 							<enumeratedValues>
 								<name>DSS</name>
 								<enumeratedValue>
-									<name>4_BIT_TRANSFER</name>
+									<name>4_BIT</name>
 									<description>4-bit transfer</description>
 									<value>0x3</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>5_BIT_TRANSFER</name>
+									<name>5_BIT</name>
 									<description>5-bit transfer</description>
 									<value>0x4</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>6_BIT_TRANSFER</name>
+									<name>6_BIT</name>
 									<description>6-bit transfer</description>
 									<value>0x5</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>7_BIT_TRANSFER</name>
+									<name>7_BIT</name>
 									<description>7-bit transfer</description>
 									<value>0x6</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>8_BIT_TRANSFER</name>
+									<name>8_BIT</name>
 									<description>8-bit transfer</description>
 									<value>0x7</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>9_BIT_TRANSFER</name>
+									<name>9_BIT</name>
 									<description>9-bit transfer</description>
 									<value>0x8</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>10_BIT_TRANSFER</name>
+									<name>10_BIT</name>
 									<description>10-bit transfer</description>
 									<value>0x9</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>11_BIT_TRANSFER</name>
+									<name>11_BIT</name>
 									<description>11-bit transfer</description>
 									<value>0xA</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>12_BIT_TRANSFER</name>
+									<name>12_BIT</name>
 									<description>12-bit transfer</description>
 									<value>0xB</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>13_BIT_TRANSFER</name>
+									<name>13_BIT</name>
 									<description>13-bit transfer</description>
 									<value>0xC</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>14_BIT_TRANSFER</name>
+									<name>14_BIT</name>
 									<description>14-bit transfer</description>
 									<value>0xD</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>15_BIT_TRANSFER</name>
+									<name>15_BIT</name>
 									<description>15-bit transfer</description>
 									<value>0xE</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>16_BIT_TRANSFER</name>
+									<name>16_BIT</name>
 									<description>16-bit transfer</description>
 									<value>0xF</value>
 								</enumeratedValue>
@@ -49719,7 +49719,7 @@
 									<value>0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>ACFILTER</name>
+									<name>AC_FILTER</name>
 									<description>The Acceptance Filter itself will take care of
 										receiving and storing messages for selected Standard ID
 										values on selected CAN buses. See Section 21.16 FullCAN mode
@@ -53867,18 +53867,18 @@
 							<enumeratedValues>
 								<name>WORDWIDTH</name>
 								<enumeratedValue>
-									<name>8_BIT_DATA</name>
+									<name>8_BIT</name>
 									<description>8-bit data</description>
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>16_BIT_DATA</name>
+									<name>16_BIT</name>
 									<description>16-bit data</description>
 									<value>0x1</value>
 								</enumeratedValue>
 
 								<enumeratedValue>
-									<name>32_BIT_DATA</name>
+									<name>32_BIT</name>
 									<description>32-bit data</description>
 									<value>0x3</value>
 								</enumeratedValue>
@@ -54447,7 +54447,7 @@
 									<value>0x0</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>RESERVED_0X1</name>
+									<name>RESERVED</name>
 									<description>Reserved</description>
 									<value>0x1</value>
 								</enumeratedValue>
@@ -54458,7 +54458,7 @@
 									<value>0x2</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>RESERVED_0X3</name>
+									<name>RESERVED</name>
 									<description>Reserved</description>
 									<value>0x3</value>
 								</enumeratedValue>
