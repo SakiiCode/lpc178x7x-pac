@@ -1872,13 +1872,13 @@
 					<resetMask>0xFFFFFFFF</resetMask>
 					<fields>
 						<field>
-							<name>ENABLED</name>
+							<name>E</name>
 							<description>DMA Controller enable: 0 = disabled (default). Disabling
 								the DMA Controller reduces power consumption. 1 = enabled.</description>
 							<bitRange>[0:0]</bitRange>
 						</field>
 						<field>
-							<name>MODE</name>
+							<name>M</name>
 							<description>AHB Master endianness configuration: 0 = little-endian mode
 								(default). 1 = big-endian mode.</description>
 							<bitRange>[1:1]</bitRange>
@@ -2244,7 +2244,7 @@
 					<resetMask>0xFFFFFFFF</resetMask>
 					<fields>
 						<field>
-							<name>ENABLED</name>
+							<name>E</name>
 							<description>Channel enable. Reading this bit indicates whether a
 								channel is currently enabled or disabled: 0 = channel disabled. 1 =
 								channel enabled. The Channel Enable bit status can also be found by
@@ -2290,25 +2290,25 @@
 							<bitRange>[13:11]</bitRange>
 						</field>
 						<field>
-							<name>INTERROR</name>
+							<name>IE</name>
 							<description>Interrupt error mask. When cleared, this bit masks out the
 								error interrupt of the relevant channel.</description>
 							<bitRange>[14:14]</bitRange>
 						</field>
 						<field>
-							<name>INTTERMC</name>
+							<name>ITC</name>
 							<description>Terminal count interrupt mask. When cleared, this bit masks
 								out the terminal count interrupt of the relevant channel.</description>
 							<bitRange>[15:15]</bitRange>
 						</field>
 						<field>
-							<name>LOCK</name>
+							<name>L</name>
 							<description>Lock. When set, this bit enables locked transfers. This
 								information is not used in the LPC178x/177x.</description>
 							<bitRange>[16:16]</bitRange>
 						</field>
 						<field>
-							<name>ACTIVE</name>
+							<name>A</name>
 							<description>Active: 0 = there is no data in the FIFO of the channel. 1
 								= the channel FIFO has data. This value can be used with the Halt
 								and Channel Enable bits to cleanly disable a DMA channel. This is a
@@ -2316,7 +2316,7 @@
 							<bitRange>[17:17]</bitRange>
 						</field>
 						<field>
-							<name>HALT</name>
+							<name>H</name>
 							<description>Halt: 0 = enable DMA requests. 1 = ignore further source
 								DMA requests. The contents of the channel FIFO are drained. This
 								value can be used with the Active and Channel Enable bits to cleanly
