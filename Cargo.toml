@@ -1,5 +1,5 @@
 [package]
-name = "lpc178x_7x-pac"
+name = "lpc178x7x-pac"
 version = "0.1.0"
 edition = "2021"
 

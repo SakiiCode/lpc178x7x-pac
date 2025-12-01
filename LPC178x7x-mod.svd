@@ -2,9 +2,9 @@
 
 <device schemaVersion="1.1" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
 	xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
-	<name>NeoM3</name>
-	<version>0.8-mod</version>
-	<description>Neo M3</description>
+	<name>LPC178x7x</name>
+	<version>0.9-mod</version>
+	<description>LPC178x/LPC177x M3</description>
 	<cpu>
 		<name>CM3</name>
 		<revision>r0p0</revision>
@@ -34,8 +34,10 @@
 		
 	-->
 
-	<!--
+<!--
 	v0.8 - EEADDR register added in FLASHCTRL
+
+	v0.9 - added <readaction>modify</readaction> tags to uart rbr, lsr, msr, i2s rxfifo,  and ssp dr registers.
 	-->
 
 
@@ -16021,6 +16023,7 @@
 					<access>read-only</access>
 					<resetValue>0</resetValue>
 					<resetMask>0x00000000</resetMask>
+					<readAction>modify</readAction>
 					<fields>
 						<field>
 							<name>RBR</name>
@@ -16608,6 +16611,7 @@
 					<access>read-only</access>
 					<resetValue>0x60</resetValue>
 					<resetMask>0xFFFFFFFF</resetMask>
+					<readAction>modify</readAction>
 					<fields>
 						<field>
 							<name>RDR</name>
@@ -17204,6 +17208,7 @@
 					<access>read-only</access>
 					<resetValue>0</resetValue>
 					<resetMask>0x00000000</resetMask>
+					<readAction>modify</readAction>
 					<fields>
 						<field>
 							<name>RBR</name>
@@ -17949,6 +17954,7 @@
 					<access>read-only</access>
 					<resetValue>0x60</resetValue>
 					<resetMask>0xFFFFFFFF</resetMask>
+					<readAction>modify</readAction>
 					<fields>
 						<field>
 							<name>RDR</name>
@@ -18139,6 +18145,7 @@
 					<access>read-only</access>
 					<resetValue>0</resetValue>
 					<resetMask>0xFFFFFFFF</resetMask>
+					<readAction>modify</readAction>
 					<fields>
 						<field>
 							<name>DCTS</name>
@@ -48682,6 +48689,7 @@
 					<access>read-write</access>
 					<resetValue>0</resetValue>
 					<resetMask>0xFFFFFFFF</resetMask>
+					<readAction>modify</readAction>
 					<fields>
 						<field>
 							<name>DATA</name>
@@ -52308,6 +52316,7 @@
 					<access>read-only</access>
 					<resetValue>0</resetValue>
 					<resetMask>0x00000000</resetMask>
+					<readAction>modify</readAction>
 					<fields>
 						<field>
 							<name>RBR</name>
@@ -52895,6 +52904,7 @@
 					<access>read-only</access>
 					<resetValue>0x60</resetValue>
 					<resetMask>0xFFFFFFFF</resetMask>
+					<readAction>modify</readAction>
 					<fields>
 						<field>
 							<name>RDR</name>
@@ -54035,6 +54045,7 @@
 					<access>read-only</access>
 					<resetValue>0</resetValue>
 					<resetMask>0xFFFFFFFF</resetMask>
+					<readAction>modify</readAction>
 					<fields>
 						<field>
 							<name>I2SRXFIFO</name>
