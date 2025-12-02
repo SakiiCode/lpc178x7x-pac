@@ -74,7 +74,7 @@ pub mod cr0;
 pub type Cr1 = crate::Reg<cr1::Cr1Spec>;
 #[doc = "Control Register 1. Selects master/slave and other modes."]
 pub mod cr1;
-#[doc = "DR (rw) register accessor: Data Register. Writes fill the transmit FIFO, and reads empty the receive FIFO.\n\nYou can [`read`](crate::Reg::read) this register and get [`dr::R`]. You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`dr::W`]. You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@dr`] module"]
+#[doc = "DR (rw) register accessor: Data Register. Writes fill the transmit FIFO, and reads empty the receive FIFO.\n\nYou can [`read`](crate::Reg::read) this register and get [`dr::R`]. You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`dr::W`]. You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\n<div class=\"warning\">The register is <b>modified</b> in some way after a read operation.</div>\n\nFor information about available fields see [`mod@dr`] module"]
 #[doc(alias = "DR")]
 pub type Dr = crate::Reg<dr::DrSpec>;
 #[doc = "Data Register. Writes fill the transmit FIFO, and reads empty the receive FIFO."]

@@ -11,11 +11,11 @@ pub type SpifidivW<'a, REG> = crate::FieldWriter<'a, REG, 5>;
 #[repr(u8)]
 pub enum Spifisel {
     #[doc = "0: Sysclk is used as the input to the SPIFI clock divider."]
-    SysclkIsUsedAsTh = 0,
+    Sysclk = 0,
     #[doc = "1: The output of the Main PLL is used as the input to the SPIFI clock divider."]
-    TheOutputOfTheMa = 1,
+    MainPll = 1,
     #[doc = "2: The output of the Alt PLL is used as the input to the SPIFI clock divider."]
-    TheOutputOfTheAl = 2,
+    AltPll = 2,
 }
 impl From<Spifisel> for u8 {
     #[inline(always)]
@@ -34,26 +34,26 @@ impl SpifiselR {
     #[inline(always)]
     pub const fn variant(&self) -> Option<Spifisel> {
         match self.bits {
-            0 => Some(Spifisel::SysclkIsUsedAsTh),
-            1 => Some(Spifisel::TheOutputOfTheMa),
-            2 => Some(Spifisel::TheOutputOfTheAl),
+            0 => Some(Spifisel::Sysclk),
+            1 => Some(Spifisel::MainPll),
+            2 => Some(Spifisel::AltPll),
             _ => None,
         }
     }
     #[doc = "Sysclk is used as the input to the SPIFI clock divider."]
     #[inline(always)]
-    pub fn is_sysclk_is_used_as_th(&self) -> bool {
-        *self == Spifisel::SysclkIsUsedAsTh
+    pub fn is_sysclk(&self) -> bool {
+        *self == Spifisel::Sysclk
     }
     #[doc = "The output of the Main PLL is used as the input to the SPIFI clock divider."]
     #[inline(always)]
-    pub fn is_the_output_of_the_ma(&self) -> bool {
-        *self == Spifisel::TheOutputOfTheMa
+    pub fn is_main_pll(&self) -> bool {
+        *self == Spifisel::MainPll
     }
     #[doc = "The output of the Alt PLL is used as the input to the SPIFI clock divider."]
     #[inline(always)]
-    pub fn is_the_output_of_the_al(&self) -> bool {
-        *self == Spifisel::TheOutputOfTheAl
+    pub fn is_alt_pll(&self) -> bool {
+        *self == Spifisel::AltPll
     }
 }
 #[doc = "Field `SPIFISEL` writer - Selects the input clock for the USB clock divider."]
@@ -65,18 +65,18 @@ where
 {
     #[doc = "Sysclk is used as the input to the SPIFI clock divider."]
     #[inline(always)]
-    pub fn sysclk_is_used_as_th(self) -> &'a mut crate::W<REG> {
-        self.variant(Spifisel::SysclkIsUsedAsTh)
+    pub fn sysclk(self) -> &'a mut crate::W<REG> {
+        self.variant(Spifisel::Sysclk)
     }
     #[doc = "The output of the Main PLL is used as the input to the SPIFI clock divider."]
     #[inline(always)]
-    pub fn the_output_of_the_ma(self) -> &'a mut crate::W<REG> {
-        self.variant(Spifisel::TheOutputOfTheMa)
+    pub fn main_pll(self) -> &'a mut crate::W<REG> {
+        self.variant(Spifisel::MainPll)
     }
     #[doc = "The output of the Alt PLL is used as the input to the SPIFI clock divider."]
     #[inline(always)]
-    pub fn the_output_of_the_al(self) -> &'a mut crate::W<REG> {
-        self.variant(Spifisel::TheOutputOfTheAl)
+    pub fn alt_pll(self) -> &'a mut crate::W<REG> {
+        self.variant(Spifisel::AltPll)
     }
 }
 impl R {

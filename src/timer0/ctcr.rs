@@ -7,13 +7,13 @@ pub type W = crate::W<CtcrSpec>;
 #[repr(u8)]
 pub enum Ctmode {
     #[doc = "0: Timer Mode: every rising PCLK edge"]
-    TimerModeEveryRi = 0,
+    Trising = 0,
     #[doc = "1: Counter Mode: TC is incremented on rising edges on the CAP input selected by bits 3:2."]
-    Rising = 1,
+    Crising = 1,
     #[doc = "2: Counter Mode: TC is incremented on falling edges on the CAP input selected by bits 3:2."]
-    Falling = 2,
+    Cfalling = 2,
     #[doc = "3: Counter Mode: TC is incremented on both edges on the CAP input selected by bits 3:2."]
-    Dualedge = 3,
+    Cdualedge = 3,
 }
 impl From<Ctmode> for u8 {
     #[inline(always)]
@@ -32,32 +32,32 @@ impl CtmodeR {
     #[inline(always)]
     pub const fn variant(&self) -> Ctmode {
         match self.bits {
-            0 => Ctmode::TimerModeEveryRi,
-            1 => Ctmode::Rising,
-            2 => Ctmode::Falling,
-            3 => Ctmode::Dualedge,
+            0 => Ctmode::Trising,
+            1 => Ctmode::Crising,
+            2 => Ctmode::Cfalling,
+            3 => Ctmode::Cdualedge,
             _ => unreachable!(),
         }
     }
     #[doc = "Timer Mode: every rising PCLK edge"]
     #[inline(always)]
-    pub fn is_timer_mode_every_ri(&self) -> bool {
-        *self == Ctmode::TimerModeEveryRi
+    pub fn is_trising(&self) -> bool {
+        *self == Ctmode::Trising
     }
     #[doc = "Counter Mode: TC is incremented on rising edges on the CAP input selected by bits 3:2."]
     #[inline(always)]
-    pub fn is_rising(&self) -> bool {
-        *self == Ctmode::Rising
+    pub fn is_crising(&self) -> bool {
+        *self == Ctmode::Crising
     }
     #[doc = "Counter Mode: TC is incremented on falling edges on the CAP input selected by bits 3:2."]
     #[inline(always)]
-    pub fn is_falling(&self) -> bool {
-        *self == Ctmode::Falling
+    pub fn is_cfalling(&self) -> bool {
+        *self == Ctmode::Cfalling
     }
     #[doc = "Counter Mode: TC is incremented on both edges on the CAP input selected by bits 3:2."]
     #[inline(always)]
-    pub fn is_dualedge(&self) -> bool {
-        *self == Ctmode::Dualedge
+    pub fn is_cdualedge(&self) -> bool {
+        *self == Ctmode::Cdualedge
     }
 }
 #[doc = "Field `CTMODE` writer - Counter/Timer Mode This field selects which rising PCLK edges can increment Timer's Prescale Counter (PC), or clear PC and increment Timer Counter (TC). Timer Mode: the TC is incremented when the Prescale Counter matches the Prescale Register."]
@@ -69,23 +69,23 @@ where
 {
     #[doc = "Timer Mode: every rising PCLK edge"]
     #[inline(always)]
-    pub fn timer_mode_every_ri(self) -> &'a mut crate::W<REG> {
-        self.variant(Ctmode::TimerModeEveryRi)
+    pub fn trising(self) -> &'a mut crate::W<REG> {
+        self.variant(Ctmode::Trising)
     }
     #[doc = "Counter Mode: TC is incremented on rising edges on the CAP input selected by bits 3:2."]
     #[inline(always)]
-    pub fn rising(self) -> &'a mut crate::W<REG> {
-        self.variant(Ctmode::Rising)
+    pub fn crising(self) -> &'a mut crate::W<REG> {
+        self.variant(Ctmode::Crising)
     }
     #[doc = "Counter Mode: TC is incremented on falling edges on the CAP input selected by bits 3:2."]
     #[inline(always)]
-    pub fn falling(self) -> &'a mut crate::W<REG> {
-        self.variant(Ctmode::Falling)
+    pub fn cfalling(self) -> &'a mut crate::W<REG> {
+        self.variant(Ctmode::Cfalling)
     }
     #[doc = "Counter Mode: TC is incremented on both edges on the CAP input selected by bits 3:2."]
     #[inline(always)]
-    pub fn dualedge(self) -> &'a mut crate::W<REG> {
-        self.variant(Ctmode::Dualedge)
+    pub fn cdualedge(self) -> &'a mut crate::W<REG> {
+        self.variant(Ctmode::Cdualedge)
     }
 }
 #[doc = "Count Input Select When bits 1:0 in this register are not 00, these bits select which CAP pin is sampled for clocking. Note: If Counter mode is selected for a particular CAPn input in the TnCTCR, the 3 bits for that input in the Capture Control Register (TnCCR) must be programmed as 000. However, capture and/or interrupt can be selected for the other 3 CAPn inputs in the same timer.\n\nValue on reset: 0"]
@@ -93,9 +93,9 @@ where
 #[repr(u8)]
 pub enum Cinsel {
     #[doc = "0: CAPn.0 for TIMERn"]
-    Capn0ForTimern = 0,
+    Capn0 = 0,
     #[doc = "1: CAPn.1 for TIMERn"]
-    Capn1ForTimern = 1,
+    Capn1 = 1,
 }
 impl From<Cinsel> for u8 {
     #[inline(always)]
@@ -114,20 +114,20 @@ impl CinselR {
     #[inline(always)]
     pub const fn variant(&self) -> Cinsel {
         match self.bits {
-            0 => Cinsel::Capn0ForTimern,
-            1 => Cinsel::Capn1ForTimern,
+            0 => Cinsel::Capn0,
+            1 => Cinsel::Capn1,
             _ => unreachable!(),
         }
     }
     #[doc = "CAPn.0 for TIMERn"]
     #[inline(always)]
-    pub fn is_capn_0_for_timern(&self) -> bool {
-        *self == Cinsel::Capn0ForTimern
+    pub fn is_capn_0(&self) -> bool {
+        *self == Cinsel::Capn0
     }
     #[doc = "CAPn.1 for TIMERn"]
     #[inline(always)]
-    pub fn is_capn_1_for_timern(&self) -> bool {
-        *self == Cinsel::Capn1ForTimern
+    pub fn is_capn_1(&self) -> bool {
+        *self == Cinsel::Capn1
     }
 }
 #[doc = "Field `CINSEL` writer - Count Input Select When bits 1:0 in this register are not 00, these bits select which CAP pin is sampled for clocking. Note: If Counter mode is selected for a particular CAPn input in the TnCTCR, the 3 bits for that input in the Capture Control Register (TnCCR) must be programmed as 000. However, capture and/or interrupt can be selected for the other 3 CAPn inputs in the same timer."]
@@ -139,13 +139,13 @@ where
 {
     #[doc = "CAPn.0 for TIMERn"]
     #[inline(always)]
-    pub fn capn_0_for_timern(self) -> &'a mut crate::W<REG> {
-        self.variant(Cinsel::Capn0ForTimern)
+    pub fn capn_0(self) -> &'a mut crate::W<REG> {
+        self.variant(Cinsel::Capn0)
     }
     #[doc = "CAPn.1 for TIMERn"]
     #[inline(always)]
-    pub fn capn_1_for_timern(self) -> &'a mut crate::W<REG> {
-        self.variant(Cinsel::Capn1ForTimern)
+    pub fn capn_1(self) -> &'a mut crate::W<REG> {
+        self.variant(Cinsel::Capn1)
     }
 }
 impl R {

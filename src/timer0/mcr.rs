@@ -6,9 +6,9 @@ pub type W = crate::W<McrSpec>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Mr0i {
     #[doc = "1: Interrupt is generated when MR0 matches the value in the TC."]
-    InterruptIsGenerat = 1,
+    Enabled = 1,
     #[doc = "0: Interrupt is disabled"]
-    InterruptIsDisable = 0,
+    Disabled = 0,
 }
 impl From<Mr0i> for bool {
     #[inline(always)]
@@ -23,19 +23,19 @@ impl Mr0iR {
     #[inline(always)]
     pub const fn variant(&self) -> Mr0i {
         match self.bits {
-            true => Mr0i::InterruptIsGenerat,
-            false => Mr0i::InterruptIsDisable,
+            true => Mr0i::Enabled,
+            false => Mr0i::Disabled,
         }
     }
     #[doc = "Interrupt is generated when MR0 matches the value in the TC."]
     #[inline(always)]
-    pub fn is_interrupt_is_generat(&self) -> bool {
-        *self == Mr0i::InterruptIsGenerat
+    pub fn is_enabled(&self) -> bool {
+        *self == Mr0i::Enabled
     }
     #[doc = "Interrupt is disabled"]
     #[inline(always)]
-    pub fn is_interrupt_is_disable(&self) -> bool {
-        *self == Mr0i::InterruptIsDisable
+    pub fn is_disabled(&self) -> bool {
+        *self == Mr0i::Disabled
     }
 }
 #[doc = "Field `MR0I` writer - Interrupt on MR0"]
@@ -46,22 +46,22 @@ where
 {
     #[doc = "Interrupt is generated when MR0 matches the value in the TC."]
     #[inline(always)]
-    pub fn interrupt_is_generat(self) -> &'a mut crate::W<REG> {
-        self.variant(Mr0i::InterruptIsGenerat)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Mr0i::Enabled)
     }
     #[doc = "Interrupt is disabled"]
     #[inline(always)]
-    pub fn interrupt_is_disable(self) -> &'a mut crate::W<REG> {
-        self.variant(Mr0i::InterruptIsDisable)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Mr0i::Disabled)
     }
 }
 #[doc = "Reset on MR0\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Mr0r {
     #[doc = "1: TC will be reset if MR0 matches it."]
-    TcWillBeResetIf_ = 1,
+    Enabled = 1,
     #[doc = "0: Feature disabled."]
-    FeatureDisabled_ = 0,
+    Disabled = 0,
 }
 impl From<Mr0r> for bool {
     #[inline(always)]
@@ -76,19 +76,19 @@ impl Mr0rR {
     #[inline(always)]
     pub const fn variant(&self) -> Mr0r {
         match self.bits {
-            true => Mr0r::TcWillBeResetIf_,
-            false => Mr0r::FeatureDisabled_,
+            true => Mr0r::Enabled,
+            false => Mr0r::Disabled,
         }
     }
     #[doc = "TC will be reset if MR0 matches it."]
     #[inline(always)]
-    pub fn is_tc_will_be_reset_if_(&self) -> bool {
-        *self == Mr0r::TcWillBeResetIf_
+    pub fn is_enabled(&self) -> bool {
+        *self == Mr0r::Enabled
     }
     #[doc = "Feature disabled."]
     #[inline(always)]
-    pub fn is_feature_disabled_(&self) -> bool {
-        *self == Mr0r::FeatureDisabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Mr0r::Disabled
     }
 }
 #[doc = "Field `MR0R` writer - Reset on MR0"]
@@ -99,22 +99,22 @@ where
 {
     #[doc = "TC will be reset if MR0 matches it."]
     #[inline(always)]
-    pub fn tc_will_be_reset_if_(self) -> &'a mut crate::W<REG> {
-        self.variant(Mr0r::TcWillBeResetIf_)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Mr0r::Enabled)
     }
     #[doc = "Feature disabled."]
     #[inline(always)]
-    pub fn feature_disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Mr0r::FeatureDisabled_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Mr0r::Disabled)
     }
 }
 #[doc = "Stop on MR0\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Mr0s {
     #[doc = "1: TC and PC will be stopped and TCR\\[0\\] will be set to 0 if MR0 matches the TC."]
-    TcAndPcWillBeSt = 1,
+    Enabled = 1,
     #[doc = "0: Feature disabled."]
-    FeatureDisabled_ = 0,
+    Disabled = 0,
 }
 impl From<Mr0s> for bool {
     #[inline(always)]
@@ -129,19 +129,19 @@ impl Mr0sR {
     #[inline(always)]
     pub const fn variant(&self) -> Mr0s {
         match self.bits {
-            true => Mr0s::TcAndPcWillBeSt,
-            false => Mr0s::FeatureDisabled_,
+            true => Mr0s::Enabled,
+            false => Mr0s::Disabled,
         }
     }
     #[doc = "TC and PC will be stopped and TCR\\[0\\] will be set to 0 if MR0 matches the TC."]
     #[inline(always)]
-    pub fn is_tc_and_pc_will_be_st(&self) -> bool {
-        *self == Mr0s::TcAndPcWillBeSt
+    pub fn is_enabled(&self) -> bool {
+        *self == Mr0s::Enabled
     }
     #[doc = "Feature disabled."]
     #[inline(always)]
-    pub fn is_feature_disabled_(&self) -> bool {
-        *self == Mr0s::FeatureDisabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Mr0s::Disabled
     }
 }
 #[doc = "Field `MR0S` writer - Stop on MR0"]
@@ -152,22 +152,22 @@ where
 {
     #[doc = "TC and PC will be stopped and TCR\\[0\\] will be set to 0 if MR0 matches the TC."]
     #[inline(always)]
-    pub fn tc_and_pc_will_be_st(self) -> &'a mut crate::W<REG> {
-        self.variant(Mr0s::TcAndPcWillBeSt)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Mr0s::Enabled)
     }
     #[doc = "Feature disabled."]
     #[inline(always)]
-    pub fn feature_disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Mr0s::FeatureDisabled_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Mr0s::Disabled)
     }
 }
 #[doc = "Interrupt on MR1\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Mr1i {
     #[doc = "1: Interrupt is generated when MR1 matches the value in the TC."]
-    InterruptIsGenerat = 1,
+    Enabled = 1,
     #[doc = "0: Interrupt is disabled."]
-    InterruptIsDisable = 0,
+    Disabled = 0,
 }
 impl From<Mr1i> for bool {
     #[inline(always)]
@@ -182,19 +182,19 @@ impl Mr1iR {
     #[inline(always)]
     pub const fn variant(&self) -> Mr1i {
         match self.bits {
-            true => Mr1i::InterruptIsGenerat,
-            false => Mr1i::InterruptIsDisable,
+            true => Mr1i::Enabled,
+            false => Mr1i::Disabled,
         }
     }
     #[doc = "Interrupt is generated when MR1 matches the value in the TC."]
     #[inline(always)]
-    pub fn is_interrupt_is_generat(&self) -> bool {
-        *self == Mr1i::InterruptIsGenerat
+    pub fn is_enabled(&self) -> bool {
+        *self == Mr1i::Enabled
     }
     #[doc = "Interrupt is disabled."]
     #[inline(always)]
-    pub fn is_interrupt_is_disable(&self) -> bool {
-        *self == Mr1i::InterruptIsDisable
+    pub fn is_disabled(&self) -> bool {
+        *self == Mr1i::Disabled
     }
 }
 #[doc = "Field `MR1I` writer - Interrupt on MR1"]
@@ -205,22 +205,22 @@ where
 {
     #[doc = "Interrupt is generated when MR1 matches the value in the TC."]
     #[inline(always)]
-    pub fn interrupt_is_generat(self) -> &'a mut crate::W<REG> {
-        self.variant(Mr1i::InterruptIsGenerat)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Mr1i::Enabled)
     }
     #[doc = "Interrupt is disabled."]
     #[inline(always)]
-    pub fn interrupt_is_disable(self) -> &'a mut crate::W<REG> {
-        self.variant(Mr1i::InterruptIsDisable)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Mr1i::Disabled)
     }
 }
 #[doc = "Reset on MR1\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Mr1r {
     #[doc = "1: TC will be reset if MR1 matches it."]
-    TcWillBeResetIf_ = 1,
+    Enabled = 1,
     #[doc = "0: Feature disabled."]
-    FeatureDisabled_ = 0,
+    Disabled = 0,
 }
 impl From<Mr1r> for bool {
     #[inline(always)]
@@ -235,19 +235,19 @@ impl Mr1rR {
     #[inline(always)]
     pub const fn variant(&self) -> Mr1r {
         match self.bits {
-            true => Mr1r::TcWillBeResetIf_,
-            false => Mr1r::FeatureDisabled_,
+            true => Mr1r::Enabled,
+            false => Mr1r::Disabled,
         }
     }
     #[doc = "TC will be reset if MR1 matches it."]
     #[inline(always)]
-    pub fn is_tc_will_be_reset_if_(&self) -> bool {
-        *self == Mr1r::TcWillBeResetIf_
+    pub fn is_enabled(&self) -> bool {
+        *self == Mr1r::Enabled
     }
     #[doc = "Feature disabled."]
     #[inline(always)]
-    pub fn is_feature_disabled_(&self) -> bool {
-        *self == Mr1r::FeatureDisabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Mr1r::Disabled
     }
 }
 #[doc = "Field `MR1R` writer - Reset on MR1"]
@@ -258,22 +258,22 @@ where
 {
     #[doc = "TC will be reset if MR1 matches it."]
     #[inline(always)]
-    pub fn tc_will_be_reset_if_(self) -> &'a mut crate::W<REG> {
-        self.variant(Mr1r::TcWillBeResetIf_)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Mr1r::Enabled)
     }
     #[doc = "Feature disabled."]
     #[inline(always)]
-    pub fn feature_disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Mr1r::FeatureDisabled_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Mr1r::Disabled)
     }
 }
 #[doc = "Stop on MR1\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Mr1s {
     #[doc = "1: TC and PC will be stopped and TCR\\[0\\] will be set to 0 if MR1 matches the TC."]
-    TcAndPcWillBeSt = 1,
+    Enabled = 1,
     #[doc = "0: Feature disabled."]
-    FeatureDisabled_ = 0,
+    Disabled = 0,
 }
 impl From<Mr1s> for bool {
     #[inline(always)]
@@ -288,19 +288,19 @@ impl Mr1sR {
     #[inline(always)]
     pub const fn variant(&self) -> Mr1s {
         match self.bits {
-            true => Mr1s::TcAndPcWillBeSt,
-            false => Mr1s::FeatureDisabled_,
+            true => Mr1s::Enabled,
+            false => Mr1s::Disabled,
         }
     }
     #[doc = "TC and PC will be stopped and TCR\\[0\\] will be set to 0 if MR1 matches the TC."]
     #[inline(always)]
-    pub fn is_tc_and_pc_will_be_st(&self) -> bool {
-        *self == Mr1s::TcAndPcWillBeSt
+    pub fn is_enabled(&self) -> bool {
+        *self == Mr1s::Enabled
     }
     #[doc = "Feature disabled."]
     #[inline(always)]
-    pub fn is_feature_disabled_(&self) -> bool {
-        *self == Mr1s::FeatureDisabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Mr1s::Disabled
     }
 }
 #[doc = "Field `MR1S` writer - Stop on MR1"]
@@ -311,22 +311,22 @@ where
 {
     #[doc = "TC and PC will be stopped and TCR\\[0\\] will be set to 0 if MR1 matches the TC."]
     #[inline(always)]
-    pub fn tc_and_pc_will_be_st(self) -> &'a mut crate::W<REG> {
-        self.variant(Mr1s::TcAndPcWillBeSt)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Mr1s::Enabled)
     }
     #[doc = "Feature disabled."]
     #[inline(always)]
-    pub fn feature_disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Mr1s::FeatureDisabled_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Mr1s::Disabled)
     }
 }
 #[doc = "Interrupt on MR2\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Mr2i {
     #[doc = "1: Interrupt is generated when MR2 matches the value in the TC."]
-    InterruptIsGenerat = 1,
+    Enabled = 1,
     #[doc = "0: Interrupt is disabled"]
-    InterruptIsDisable = 0,
+    Disabled = 0,
 }
 impl From<Mr2i> for bool {
     #[inline(always)]
@@ -341,19 +341,19 @@ impl Mr2iR {
     #[inline(always)]
     pub const fn variant(&self) -> Mr2i {
         match self.bits {
-            true => Mr2i::InterruptIsGenerat,
-            false => Mr2i::InterruptIsDisable,
+            true => Mr2i::Enabled,
+            false => Mr2i::Disabled,
         }
     }
     #[doc = "Interrupt is generated when MR2 matches the value in the TC."]
     #[inline(always)]
-    pub fn is_interrupt_is_generat(&self) -> bool {
-        *self == Mr2i::InterruptIsGenerat
+    pub fn is_enabled(&self) -> bool {
+        *self == Mr2i::Enabled
     }
     #[doc = "Interrupt is disabled"]
     #[inline(always)]
-    pub fn is_interrupt_is_disable(&self) -> bool {
-        *self == Mr2i::InterruptIsDisable
+    pub fn is_disabled(&self) -> bool {
+        *self == Mr2i::Disabled
     }
 }
 #[doc = "Field `MR2I` writer - Interrupt on MR2"]
@@ -364,22 +364,22 @@ where
 {
     #[doc = "Interrupt is generated when MR2 matches the value in the TC."]
     #[inline(always)]
-    pub fn interrupt_is_generat(self) -> &'a mut crate::W<REG> {
-        self.variant(Mr2i::InterruptIsGenerat)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Mr2i::Enabled)
     }
     #[doc = "Interrupt is disabled"]
     #[inline(always)]
-    pub fn interrupt_is_disable(self) -> &'a mut crate::W<REG> {
-        self.variant(Mr2i::InterruptIsDisable)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Mr2i::Disabled)
     }
 }
 #[doc = "Reset on MR2\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Mr2r {
     #[doc = "1: TC will be reset if MR2 matches it."]
-    TcWillBeResetIf_ = 1,
+    Enabled = 1,
     #[doc = "0: Feature disabled."]
-    FeatureDisabled_ = 0,
+    Disabled = 0,
 }
 impl From<Mr2r> for bool {
     #[inline(always)]
@@ -394,19 +394,19 @@ impl Mr2rR {
     #[inline(always)]
     pub const fn variant(&self) -> Mr2r {
         match self.bits {
-            true => Mr2r::TcWillBeResetIf_,
-            false => Mr2r::FeatureDisabled_,
+            true => Mr2r::Enabled,
+            false => Mr2r::Disabled,
         }
     }
     #[doc = "TC will be reset if MR2 matches it."]
     #[inline(always)]
-    pub fn is_tc_will_be_reset_if_(&self) -> bool {
-        *self == Mr2r::TcWillBeResetIf_
+    pub fn is_enabled(&self) -> bool {
+        *self == Mr2r::Enabled
     }
     #[doc = "Feature disabled."]
     #[inline(always)]
-    pub fn is_feature_disabled_(&self) -> bool {
-        *self == Mr2r::FeatureDisabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Mr2r::Disabled
     }
 }
 #[doc = "Field `MR2R` writer - Reset on MR2"]
@@ -417,22 +417,22 @@ where
 {
     #[doc = "TC will be reset if MR2 matches it."]
     #[inline(always)]
-    pub fn tc_will_be_reset_if_(self) -> &'a mut crate::W<REG> {
-        self.variant(Mr2r::TcWillBeResetIf_)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Mr2r::Enabled)
     }
     #[doc = "Feature disabled."]
     #[inline(always)]
-    pub fn feature_disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Mr2r::FeatureDisabled_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Mr2r::Disabled)
     }
 }
 #[doc = "Stop on MR2.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Mr2s {
     #[doc = "1: TC and PC will be stopped and TCR\\[0\\] will be set to 0 if MR2 matches the TC"]
-    TcAndPcWillBeSt = 1,
+    Enabled = 1,
     #[doc = "0: Feature disabled."]
-    FeatureDisabled_ = 0,
+    Disabled = 0,
 }
 impl From<Mr2s> for bool {
     #[inline(always)]
@@ -447,19 +447,19 @@ impl Mr2sR {
     #[inline(always)]
     pub const fn variant(&self) -> Mr2s {
         match self.bits {
-            true => Mr2s::TcAndPcWillBeSt,
-            false => Mr2s::FeatureDisabled_,
+            true => Mr2s::Enabled,
+            false => Mr2s::Disabled,
         }
     }
     #[doc = "TC and PC will be stopped and TCR\\[0\\] will be set to 0 if MR2 matches the TC"]
     #[inline(always)]
-    pub fn is_tc_and_pc_will_be_st(&self) -> bool {
-        *self == Mr2s::TcAndPcWillBeSt
+    pub fn is_enabled(&self) -> bool {
+        *self == Mr2s::Enabled
     }
     #[doc = "Feature disabled."]
     #[inline(always)]
-    pub fn is_feature_disabled_(&self) -> bool {
-        *self == Mr2s::FeatureDisabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Mr2s::Disabled
     }
 }
 #[doc = "Field `MR2S` writer - Stop on MR2."]
@@ -470,22 +470,22 @@ where
 {
     #[doc = "TC and PC will be stopped and TCR\\[0\\] will be set to 0 if MR2 matches the TC"]
     #[inline(always)]
-    pub fn tc_and_pc_will_be_st(self) -> &'a mut crate::W<REG> {
-        self.variant(Mr2s::TcAndPcWillBeSt)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Mr2s::Enabled)
     }
     #[doc = "Feature disabled."]
     #[inline(always)]
-    pub fn feature_disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Mr2s::FeatureDisabled_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Mr2s::Disabled)
     }
 }
 #[doc = "Interrupt on MR3\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Mr3i {
     #[doc = "1: Interrupt is generated when MR3 matches the value in the TC."]
-    InterruptIsGenerat = 1,
+    Enabled = 1,
     #[doc = "0: This interrupt is disabled"]
-    ThisInterruptIsDi = 0,
+    Disabled = 0,
 }
 impl From<Mr3i> for bool {
     #[inline(always)]
@@ -500,19 +500,19 @@ impl Mr3iR {
     #[inline(always)]
     pub const fn variant(&self) -> Mr3i {
         match self.bits {
-            true => Mr3i::InterruptIsGenerat,
-            false => Mr3i::ThisInterruptIsDi,
+            true => Mr3i::Enabled,
+            false => Mr3i::Disabled,
         }
     }
     #[doc = "Interrupt is generated when MR3 matches the value in the TC."]
     #[inline(always)]
-    pub fn is_interrupt_is_generat(&self) -> bool {
-        *self == Mr3i::InterruptIsGenerat
+    pub fn is_enabled(&self) -> bool {
+        *self == Mr3i::Enabled
     }
     #[doc = "This interrupt is disabled"]
     #[inline(always)]
-    pub fn is_this_interrupt_is_di(&self) -> bool {
-        *self == Mr3i::ThisInterruptIsDi
+    pub fn is_disabled(&self) -> bool {
+        *self == Mr3i::Disabled
     }
 }
 #[doc = "Field `MR3I` writer - Interrupt on MR3"]
@@ -523,22 +523,22 @@ where
 {
     #[doc = "Interrupt is generated when MR3 matches the value in the TC."]
     #[inline(always)]
-    pub fn interrupt_is_generat(self) -> &'a mut crate::W<REG> {
-        self.variant(Mr3i::InterruptIsGenerat)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Mr3i::Enabled)
     }
     #[doc = "This interrupt is disabled"]
     #[inline(always)]
-    pub fn this_interrupt_is_di(self) -> &'a mut crate::W<REG> {
-        self.variant(Mr3i::ThisInterruptIsDi)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Mr3i::Disabled)
     }
 }
 #[doc = "Reset on MR3\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Mr3r {
     #[doc = "1: TC will be reset if MR3 matches it."]
-    TcWillBeResetIf_ = 1,
+    Enabled = 1,
     #[doc = "0: Feature disabled."]
-    FeatureDisabled_ = 0,
+    Disabled = 0,
 }
 impl From<Mr3r> for bool {
     #[inline(always)]
@@ -553,19 +553,19 @@ impl Mr3rR {
     #[inline(always)]
     pub const fn variant(&self) -> Mr3r {
         match self.bits {
-            true => Mr3r::TcWillBeResetIf_,
-            false => Mr3r::FeatureDisabled_,
+            true => Mr3r::Enabled,
+            false => Mr3r::Disabled,
         }
     }
     #[doc = "TC will be reset if MR3 matches it."]
     #[inline(always)]
-    pub fn is_tc_will_be_reset_if_(&self) -> bool {
-        *self == Mr3r::TcWillBeResetIf_
+    pub fn is_enabled(&self) -> bool {
+        *self == Mr3r::Enabled
     }
     #[doc = "Feature disabled."]
     #[inline(always)]
-    pub fn is_feature_disabled_(&self) -> bool {
-        *self == Mr3r::FeatureDisabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Mr3r::Disabled
     }
 }
 #[doc = "Field `MR3R` writer - Reset on MR3"]
@@ -576,22 +576,22 @@ where
 {
     #[doc = "TC will be reset if MR3 matches it."]
     #[inline(always)]
-    pub fn tc_will_be_reset_if_(self) -> &'a mut crate::W<REG> {
-        self.variant(Mr3r::TcWillBeResetIf_)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Mr3r::Enabled)
     }
     #[doc = "Feature disabled."]
     #[inline(always)]
-    pub fn feature_disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Mr3r::FeatureDisabled_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Mr3r::Disabled)
     }
 }
 #[doc = "Stop on MR3\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Mr3s {
     #[doc = "1: TC and PC will be stopped and TCR\\[0\\] will be set to 0 if MR3 matches the TC."]
-    TcAndPcWillBeSt = 1,
+    Enabled = 1,
     #[doc = "0: Feature disabled."]
-    FeatureDisabled_ = 0,
+    Disabled = 0,
 }
 impl From<Mr3s> for bool {
     #[inline(always)]
@@ -606,19 +606,19 @@ impl Mr3sR {
     #[inline(always)]
     pub const fn variant(&self) -> Mr3s {
         match self.bits {
-            true => Mr3s::TcAndPcWillBeSt,
-            false => Mr3s::FeatureDisabled_,
+            true => Mr3s::Enabled,
+            false => Mr3s::Disabled,
         }
     }
     #[doc = "TC and PC will be stopped and TCR\\[0\\] will be set to 0 if MR3 matches the TC."]
     #[inline(always)]
-    pub fn is_tc_and_pc_will_be_st(&self) -> bool {
-        *self == Mr3s::TcAndPcWillBeSt
+    pub fn is_enabled(&self) -> bool {
+        *self == Mr3s::Enabled
     }
     #[doc = "Feature disabled."]
     #[inline(always)]
-    pub fn is_feature_disabled_(&self) -> bool {
-        *self == Mr3s::FeatureDisabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Mr3s::Disabled
     }
 }
 #[doc = "Field `MR3S` writer - Stop on MR3"]
@@ -629,13 +629,13 @@ where
 {
     #[doc = "TC and PC will be stopped and TCR\\[0\\] will be set to 0 if MR3 matches the TC."]
     #[inline(always)]
-    pub fn tc_and_pc_will_be_st(self) -> &'a mut crate::W<REG> {
-        self.variant(Mr3s::TcAndPcWillBeSt)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Mr3s::Enabled)
     }
     #[doc = "Feature disabled."]
     #[inline(always)]
-    pub fn feature_disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Mr3s::FeatureDisabled_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Mr3s::Disabled)
     }
 }
 impl R {

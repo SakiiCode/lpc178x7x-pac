@@ -6,9 +6,9 @@ pub type W = crate::W<EmcclkselSpec>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Emcdiv {
     #[doc = "0: The EMC uses the same clock as the CPU."]
-    TheEmcUsesTheSam = 0,
+    FullRate = 0,
     #[doc = "1: The EMC uses a clock at half the rate of the CPU."]
-    TheEmcUsesAClock = 1,
+    HalfRate = 1,
 }
 impl From<Emcdiv> for bool {
     #[inline(always)]
@@ -23,19 +23,19 @@ impl EmcdivR {
     #[inline(always)]
     pub const fn variant(&self) -> Emcdiv {
         match self.bits {
-            false => Emcdiv::TheEmcUsesTheSam,
-            true => Emcdiv::TheEmcUsesAClock,
+            false => Emcdiv::FullRate,
+            true => Emcdiv::HalfRate,
         }
     }
     #[doc = "The EMC uses the same clock as the CPU."]
     #[inline(always)]
-    pub fn is_the_emc_uses_the_sam(&self) -> bool {
-        *self == Emcdiv::TheEmcUsesTheSam
+    pub fn is_full_rate(&self) -> bool {
+        *self == Emcdiv::FullRate
     }
     #[doc = "The EMC uses a clock at half the rate of the CPU."]
     #[inline(always)]
-    pub fn is_the_emc_uses_a_clock(&self) -> bool {
-        *self == Emcdiv::TheEmcUsesAClock
+    pub fn is_half_rate(&self) -> bool {
+        *self == Emcdiv::HalfRate
     }
 }
 #[doc = "Field `EMCDIV` writer - Selects the EMC clock rate relative to the CPU clock."]
@@ -46,13 +46,13 @@ where
 {
     #[doc = "The EMC uses the same clock as the CPU."]
     #[inline(always)]
-    pub fn the_emc_uses_the_sam(self) -> &'a mut crate::W<REG> {
-        self.variant(Emcdiv::TheEmcUsesTheSam)
+    pub fn full_rate(self) -> &'a mut crate::W<REG> {
+        self.variant(Emcdiv::FullRate)
     }
     #[doc = "The EMC uses a clock at half the rate of the CPU."]
     #[inline(always)]
-    pub fn the_emc_uses_a_clock(self) -> &'a mut crate::W<REG> {
-        self.variant(Emcdiv::TheEmcUsesAClock)
+    pub fn half_rate(self) -> &'a mut crate::W<REG> {
+        self.variant(Emcdiv::HalfRate)
     }
 }
 impl R {

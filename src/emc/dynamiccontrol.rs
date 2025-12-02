@@ -59,9 +59,9 @@ where
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Cs {
     #[doc = "0: CLKOUT stops when all SDRAMs are idle and during self-refresh mode."]
-    Stop = 0,
+    StopOnIdle = 0,
     #[doc = "1: CLKOUT runs continuously (POR reset value)."]
-    Run = 1,
+    Continuous = 1,
 }
 impl From<Cs> for bool {
     #[inline(always)]
@@ -76,19 +76,19 @@ impl CsR {
     #[inline(always)]
     pub const fn variant(&self) -> Cs {
         match self.bits {
-            false => Cs::Stop,
-            true => Cs::Run,
+            false => Cs::StopOnIdle,
+            true => Cs::Continuous,
         }
     }
     #[doc = "CLKOUT stops when all SDRAMs are idle and during self-refresh mode."]
     #[inline(always)]
-    pub fn is_stop(&self) -> bool {
-        *self == Cs::Stop
+    pub fn is_stop_on_idle(&self) -> bool {
+        *self == Cs::StopOnIdle
     }
     #[doc = "CLKOUT runs continuously (POR reset value)."]
     #[inline(always)]
-    pub fn is_run(&self) -> bool {
-        *self == Cs::Run
+    pub fn is_continuous(&self) -> bool {
+        *self == Cs::Continuous
     }
 }
 #[doc = "Field `CS` writer - Dynamic memory clock control. When clock control is LOW the output clock CLKOUT is stopped when there are no SDRAM transactions. The clock is also stopped during self-refresh mode."]
@@ -99,22 +99,22 @@ where
 {
     #[doc = "CLKOUT stops when all SDRAMs are idle and during self-refresh mode."]
     #[inline(always)]
-    pub fn stop(self) -> &'a mut crate::W<REG> {
-        self.variant(Cs::Stop)
+    pub fn stop_on_idle(self) -> &'a mut crate::W<REG> {
+        self.variant(Cs::StopOnIdle)
     }
     #[doc = "CLKOUT runs continuously (POR reset value)."]
     #[inline(always)]
-    pub fn run(self) -> &'a mut crate::W<REG> {
-        self.variant(Cs::Run)
+    pub fn continuous(self) -> &'a mut crate::W<REG> {
+        self.variant(Cs::Continuous)
     }
 }
 #[doc = "Self-refresh request, EMCSREFREQ. By writing 1 to this bit self-refresh can be entered under software control. Writing 0 to this bit returns the EMC to normal mode. The self-refresh acknowledge bit in the Status register must be polled to discover the current operating mode of the EMC.\\[2\\]\n\nValue on reset: 1"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Sr {
     #[doc = "0: Normal mode."]
-    NormalMode_ = 0,
+    NormalMode = 0,
     #[doc = "1: Enter self-refresh mode (POR reset value)."]
-    EnterSelfRefreshM = 1,
+    SelfRefreshMode = 1,
 }
 impl From<Sr> for bool {
     #[inline(always)]
@@ -129,19 +129,19 @@ impl SrR {
     #[inline(always)]
     pub const fn variant(&self) -> Sr {
         match self.bits {
-            false => Sr::NormalMode_,
-            true => Sr::EnterSelfRefreshM,
+            false => Sr::NormalMode,
+            true => Sr::SelfRefreshMode,
         }
     }
     #[doc = "Normal mode."]
     #[inline(always)]
-    pub fn is_normal_mode_(&self) -> bool {
-        *self == Sr::NormalMode_
+    pub fn is_normal_mode(&self) -> bool {
+        *self == Sr::NormalMode
     }
     #[doc = "Enter self-refresh mode (POR reset value)."]
     #[inline(always)]
-    pub fn is_enter_self_refresh_m(&self) -> bool {
-        *self == Sr::EnterSelfRefreshM
+    pub fn is_self_refresh_mode(&self) -> bool {
+        *self == Sr::SelfRefreshMode
     }
 }
 #[doc = "Field `SR` writer - Self-refresh request, EMCSREFREQ. By writing 1 to this bit self-refresh can be entered under software control. Writing 0 to this bit returns the EMC to normal mode. The self-refresh acknowledge bit in the Status register must be polled to discover the current operating mode of the EMC.\\[2\\]"]
@@ -152,22 +152,22 @@ where
 {
     #[doc = "Normal mode."]
     #[inline(always)]
-    pub fn normal_mode_(self) -> &'a mut crate::W<REG> {
-        self.variant(Sr::NormalMode_)
+    pub fn normal_mode(self) -> &'a mut crate::W<REG> {
+        self.variant(Sr::NormalMode)
     }
     #[doc = "Enter self-refresh mode (POR reset value)."]
     #[inline(always)]
-    pub fn enter_self_refresh_m(self) -> &'a mut crate::W<REG> {
-        self.variant(Sr::EnterSelfRefreshM)
+    pub fn self_refresh_mode(self) -> &'a mut crate::W<REG> {
+        self.variant(Sr::SelfRefreshMode)
     }
 }
 #[doc = "Memory clock control.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Mmc {
     #[doc = "0: CLKOUT enabled (POR reset value)."]
-    ClkoutEnabledPor_ = 0,
+    Enabled = 0,
     #[doc = "1: CLKOUT disabled.\\[3\\]"]
-    ClkoutDisabled = 1,
+    Disabled = 1,
 }
 impl From<Mmc> for bool {
     #[inline(always)]
@@ -182,19 +182,19 @@ impl MmcR {
     #[inline(always)]
     pub const fn variant(&self) -> Mmc {
         match self.bits {
-            false => Mmc::ClkoutEnabledPor_,
-            true => Mmc::ClkoutDisabled,
+            false => Mmc::Enabled,
+            true => Mmc::Disabled,
         }
     }
     #[doc = "CLKOUT enabled (POR reset value)."]
     #[inline(always)]
-    pub fn is_clkout_enabled_por_(&self) -> bool {
-        *self == Mmc::ClkoutEnabledPor_
+    pub fn is_enabled(&self) -> bool {
+        *self == Mmc::Enabled
     }
     #[doc = "CLKOUT disabled.\\[3\\]"]
     #[inline(always)]
-    pub fn is_clkout_disabled(&self) -> bool {
-        *self == Mmc::ClkoutDisabled
+    pub fn is_disabled(&self) -> bool {
+        *self == Mmc::Disabled
     }
 }
 #[doc = "Field `MMC` writer - Memory clock control."]
@@ -205,13 +205,13 @@ where
 {
     #[doc = "CLKOUT enabled (POR reset value)."]
     #[inline(always)]
-    pub fn clkout_enabled_por_(self) -> &'a mut crate::W<REG> {
-        self.variant(Mmc::ClkoutEnabledPor_)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Mmc::Enabled)
     }
     #[doc = "CLKOUT disabled.\\[3\\]"]
     #[inline(always)]
-    pub fn clkout_disabled(self) -> &'a mut crate::W<REG> {
-        self.variant(Mmc::ClkoutDisabled)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Mmc::Disabled)
     }
 }
 #[doc = "SDRAM initialization.\n\nValue on reset: 0"]

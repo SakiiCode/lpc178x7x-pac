@@ -6,9 +6,9 @@ pub type W = crate::W<MmctrlSpec>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum MmEna {
     #[doc = "0: Monitor mode disabled."]
-    MonitorModeDisable = 0,
-    #[doc = "1: The I 2C module will enter monitor mode. In this mode the SDA output will be forced high. This will prevent the I2C module from outputting data of any kind (including ACK) onto the I2C data bus. Depending on the state of the ENA_SCL bit, the output may be also forced high, preventing the module from having control over the I2C clock line."]
-    TheI2cModuleWill = 1,
+    Disabled = 0,
+    #[doc = "1: The I2C module will enter monitor mode. In this mode the SDA output will be forced high. This will prevent the I2C module from outputting data of any kind (including ACK) onto the I2C data bus. Depending on the state of the ENA_SCL bit, the output may be also forced high, preventing the module from having control over the I2C clock line."]
+    Enabled = 1,
 }
 impl From<MmEna> for bool {
     #[inline(always)]
@@ -23,19 +23,19 @@ impl MmEnaR {
     #[inline(always)]
     pub const fn variant(&self) -> MmEna {
         match self.bits {
-            false => MmEna::MonitorModeDisable,
-            true => MmEna::TheI2cModuleWill,
+            false => MmEna::Disabled,
+            true => MmEna::Enabled,
         }
     }
     #[doc = "Monitor mode disabled."]
     #[inline(always)]
-    pub fn is_monitor_mode_disable(&self) -> bool {
-        *self == MmEna::MonitorModeDisable
+    pub fn is_disabled(&self) -> bool {
+        *self == MmEna::Disabled
     }
-    #[doc = "The I 2C module will enter monitor mode. In this mode the SDA output will be forced high. This will prevent the I2C module from outputting data of any kind (including ACK) onto the I2C data bus. Depending on the state of the ENA_SCL bit, the output may be also forced high, preventing the module from having control over the I2C clock line."]
+    #[doc = "The I2C module will enter monitor mode. In this mode the SDA output will be forced high. This will prevent the I2C module from outputting data of any kind (including ACK) onto the I2C data bus. Depending on the state of the ENA_SCL bit, the output may be also forced high, preventing the module from having control over the I2C clock line."]
     #[inline(always)]
-    pub fn is_the_i_2c_module_will(&self) -> bool {
-        *self == MmEna::TheI2cModuleWill
+    pub fn is_enabled(&self) -> bool {
+        *self == MmEna::Enabled
     }
 }
 #[doc = "Field `MM_ENA` writer - Monitor mode enable."]
@@ -46,22 +46,22 @@ where
 {
     #[doc = "Monitor mode disabled."]
     #[inline(always)]
-    pub fn monitor_mode_disable(self) -> &'a mut crate::W<REG> {
-        self.variant(MmEna::MonitorModeDisable)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(MmEna::Disabled)
     }
-    #[doc = "The I 2C module will enter monitor mode. In this mode the SDA output will be forced high. This will prevent the I2C module from outputting data of any kind (including ACK) onto the I2C data bus. Depending on the state of the ENA_SCL bit, the output may be also forced high, preventing the module from having control over the I2C clock line."]
+    #[doc = "The I2C module will enter monitor mode. In this mode the SDA output will be forced high. This will prevent the I2C module from outputting data of any kind (including ACK) onto the I2C data bus. Depending on the state of the ENA_SCL bit, the output may be also forced high, preventing the module from having control over the I2C clock line."]
     #[inline(always)]
-    pub fn the_i_2c_module_will(self) -> &'a mut crate::W<REG> {
-        self.variant(MmEna::TheI2cModuleWill)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(MmEna::Enabled)
     }
 }
 #[doc = "SCL output enable.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum EnaScl {
     #[doc = "0: When this bit is cleared to 0, the SCL output will be forced high when the module is in monitor mode. As described above, this will prevent the module from having any control over the I2C clock line."]
-    WhenThisBitIsCle = 0,
+    Disabled = 0,
     #[doc = "1: When this bit is set, the I2C module may exercise the same control over the clock line that it would in normal operation. This means that, acting as a slave peripheral, the I2C module can stretch the clock line (hold it low) until it has had time to respond to an I2C interrupt.\\[1\\]"]
-    WhenThisBitIsSet = 1,
+    Enabled = 1,
 }
 impl From<EnaScl> for bool {
     #[inline(always)]
@@ -76,19 +76,19 @@ impl EnaSclR {
     #[inline(always)]
     pub const fn variant(&self) -> EnaScl {
         match self.bits {
-            false => EnaScl::WhenThisBitIsCle,
-            true => EnaScl::WhenThisBitIsSet,
+            false => EnaScl::Disabled,
+            true => EnaScl::Enabled,
         }
     }
     #[doc = "When this bit is cleared to 0, the SCL output will be forced high when the module is in monitor mode. As described above, this will prevent the module from having any control over the I2C clock line."]
     #[inline(always)]
-    pub fn is_when_this_bit_is_cle(&self) -> bool {
-        *self == EnaScl::WhenThisBitIsCle
+    pub fn is_disabled(&self) -> bool {
+        *self == EnaScl::Disabled
     }
     #[doc = "When this bit is set, the I2C module may exercise the same control over the clock line that it would in normal operation. This means that, acting as a slave peripheral, the I2C module can stretch the clock line (hold it low) until it has had time to respond to an I2C interrupt.\\[1\\]"]
     #[inline(always)]
-    pub fn is_when_this_bit_is_set(&self) -> bool {
-        *self == EnaScl::WhenThisBitIsSet
+    pub fn is_enabled(&self) -> bool {
+        *self == EnaScl::Enabled
     }
 }
 #[doc = "Field `ENA_SCL` writer - SCL output enable."]
@@ -99,22 +99,22 @@ where
 {
     #[doc = "When this bit is cleared to 0, the SCL output will be forced high when the module is in monitor mode. As described above, this will prevent the module from having any control over the I2C clock line."]
     #[inline(always)]
-    pub fn when_this_bit_is_cle(self) -> &'a mut crate::W<REG> {
-        self.variant(EnaScl::WhenThisBitIsCle)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(EnaScl::Disabled)
     }
     #[doc = "When this bit is set, the I2C module may exercise the same control over the clock line that it would in normal operation. This means that, acting as a slave peripheral, the I2C module can stretch the clock line (hold it low) until it has had time to respond to an I2C interrupt.\\[1\\]"]
     #[inline(always)]
-    pub fn when_this_bit_is_set(self) -> &'a mut crate::W<REG> {
-        self.variant(EnaScl::WhenThisBitIsSet)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(EnaScl::Enabled)
     }
 }
 #[doc = "Select interrupt register match.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum MatchAll {
     #[doc = "0: When this bit is cleared, an interrupt will only be generated when a match occurs to one of the (up-to) four address registers described above. That is, the module will respond as a normal slave as far as address-recognition is concerned."]
-    WhenThisBitIsCle = 0,
+    Disabled = 0,
     #[doc = "1: When this bit is set to 1 and the I2C is in monitor mode, an interrupt will be generated on ANY address received. This will enable the part to monitor all traffic on the bus."]
-    WhenThisBitIsSet = 1,
+    Enabled = 1,
 }
 impl From<MatchAll> for bool {
     #[inline(always)]
@@ -129,19 +129,19 @@ impl MatchAllR {
     #[inline(always)]
     pub const fn variant(&self) -> MatchAll {
         match self.bits {
-            false => MatchAll::WhenThisBitIsCle,
-            true => MatchAll::WhenThisBitIsSet,
+            false => MatchAll::Disabled,
+            true => MatchAll::Enabled,
         }
     }
     #[doc = "When this bit is cleared, an interrupt will only be generated when a match occurs to one of the (up-to) four address registers described above. That is, the module will respond as a normal slave as far as address-recognition is concerned."]
     #[inline(always)]
-    pub fn is_when_this_bit_is_cle(&self) -> bool {
-        *self == MatchAll::WhenThisBitIsCle
+    pub fn is_disabled(&self) -> bool {
+        *self == MatchAll::Disabled
     }
     #[doc = "When this bit is set to 1 and the I2C is in monitor mode, an interrupt will be generated on ANY address received. This will enable the part to monitor all traffic on the bus."]
     #[inline(always)]
-    pub fn is_when_this_bit_is_set(&self) -> bool {
-        *self == MatchAll::WhenThisBitIsSet
+    pub fn is_enabled(&self) -> bool {
+        *self == MatchAll::Enabled
     }
 }
 #[doc = "Field `MATCH_ALL` writer - Select interrupt register match."]
@@ -152,13 +152,13 @@ where
 {
     #[doc = "When this bit is cleared, an interrupt will only be generated when a match occurs to one of the (up-to) four address registers described above. That is, the module will respond as a normal slave as far as address-recognition is concerned."]
     #[inline(always)]
-    pub fn when_this_bit_is_cle(self) -> &'a mut crate::W<REG> {
-        self.variant(MatchAll::WhenThisBitIsCle)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(MatchAll::Disabled)
     }
     #[doc = "When this bit is set to 1 and the I2C is in monitor mode, an interrupt will be generated on ANY address received. This will enable the part to monitor all traffic on the bus."]
     #[inline(always)]
-    pub fn when_this_bit_is_set(self) -> &'a mut crate::W<REG> {
-        self.variant(MatchAll::WhenThisBitIsSet)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(MatchAll::Enabled)
     }
 }
 impl R {

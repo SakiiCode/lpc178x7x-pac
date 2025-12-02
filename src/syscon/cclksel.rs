@@ -10,9 +10,9 @@ pub type CclkdivW<'a, REG> = crate::FieldWriter<'a, REG, 5>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Cclksel {
     #[doc = "0: Sysclk is used as the input to the CPU clock divider."]
-    SysclkIsUsedAsTh = 0,
+    Sysclk = 0,
     #[doc = "1: The output of the Main PLL is used as the input to the CPU clock divider."]
-    TheOutputOfTheMa = 1,
+    MainPll = 1,
 }
 impl From<Cclksel> for bool {
     #[inline(always)]
@@ -27,19 +27,19 @@ impl CclkselR {
     #[inline(always)]
     pub const fn variant(&self) -> Cclksel {
         match self.bits {
-            false => Cclksel::SysclkIsUsedAsTh,
-            true => Cclksel::TheOutputOfTheMa,
+            false => Cclksel::Sysclk,
+            true => Cclksel::MainPll,
         }
     }
     #[doc = "Sysclk is used as the input to the CPU clock divider."]
     #[inline(always)]
-    pub fn is_sysclk_is_used_as_th(&self) -> bool {
-        *self == Cclksel::SysclkIsUsedAsTh
+    pub fn is_sysclk(&self) -> bool {
+        *self == Cclksel::Sysclk
     }
     #[doc = "The output of the Main PLL is used as the input to the CPU clock divider."]
     #[inline(always)]
-    pub fn is_the_output_of_the_ma(&self) -> bool {
-        *self == Cclksel::TheOutputOfTheMa
+    pub fn is_main_pll(&self) -> bool {
+        *self == Cclksel::MainPll
     }
 }
 #[doc = "Field `CCLKSEL` writer - Selects the input clock for the CPU clock divider."]
@@ -50,13 +50,13 @@ where
 {
     #[doc = "Sysclk is used as the input to the CPU clock divider."]
     #[inline(always)]
-    pub fn sysclk_is_used_as_th(self) -> &'a mut crate::W<REG> {
-        self.variant(Cclksel::SysclkIsUsedAsTh)
+    pub fn sysclk(self) -> &'a mut crate::W<REG> {
+        self.variant(Cclksel::Sysclk)
     }
     #[doc = "The output of the Main PLL is used as the input to the CPU clock divider."]
     #[inline(always)]
-    pub fn the_output_of_the_ma(self) -> &'a mut crate::W<REG> {
-        self.variant(Cclksel::TheOutputOfTheMa)
+    pub fn main_pll(self) -> &'a mut crate::W<REG> {
+        self.variant(Cclksel::MainPll)
     }
 }
 impl R {

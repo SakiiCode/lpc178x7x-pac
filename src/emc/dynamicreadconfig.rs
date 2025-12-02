@@ -7,7 +7,7 @@ pub type W = crate::W<DynamicreadconfigSpec>;
 #[repr(u8)]
 pub enum Rd {
     #[doc = "0: Clock out delayed strategy, using CLKOUT (command not delayed, clock out delayed). POR reset value."]
-    NoDelay = 0,
+    ClockOutDelayed = 0,
     #[doc = "1: Command delayed strategy, using EMCCLKDELAY (command delayed, clock out not delayed)."]
     CommandDelayed = 1,
     #[doc = "2: Command delayed strategy plus one clock cycle, using EMCCLKDELAY (command delayed, clock out not delayed)."]
@@ -32,7 +32,7 @@ impl RdR {
     #[inline(always)]
     pub const fn variant(&self) -> Rd {
         match self.bits {
-            0 => Rd::NoDelay,
+            0 => Rd::ClockOutDelayed,
             1 => Rd::CommandDelayed,
             2 => Rd::CommandDelayedPlusOne,
             3 => Rd::CommandDelayedPlusTwo,
@@ -41,8 +41,8 @@ impl RdR {
     }
     #[doc = "Clock out delayed strategy, using CLKOUT (command not delayed, clock out delayed). POR reset value."]
     #[inline(always)]
-    pub fn is_no_delay(&self) -> bool {
-        *self == Rd::NoDelay
+    pub fn is_clock_out_delayed(&self) -> bool {
+        *self == Rd::ClockOutDelayed
     }
     #[doc = "Command delayed strategy, using EMCCLKDELAY (command delayed, clock out not delayed)."]
     #[inline(always)]
@@ -69,8 +69,8 @@ where
 {
     #[doc = "Clock out delayed strategy, using CLKOUT (command not delayed, clock out delayed). POR reset value."]
     #[inline(always)]
-    pub fn no_delay(self) -> &'a mut crate::W<REG> {
-        self.variant(Rd::NoDelay)
+    pub fn clock_out_delayed(self) -> &'a mut crate::W<REG> {
+        self.variant(Rd::ClockOutDelayed)
     }
     #[doc = "Command delayed strategy, using EMCCLKDELAY (command delayed, clock out not delayed)."]
     #[inline(always)]

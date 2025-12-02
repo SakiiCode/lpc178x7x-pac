@@ -6,9 +6,9 @@ pub type W = crate::W<ScictrlSpec>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Scien {
     #[doc = "0: Smart card interface disabled."]
-    SmartCardInterface = 0,
+    Disabled = 0,
     #[doc = "1: Asynchronous half duplex smart card interface is enabled."]
-    AsynchronousHalfDu = 1,
+    Enabled = 1,
 }
 impl From<Scien> for bool {
     #[inline(always)]
@@ -23,19 +23,19 @@ impl ScienR {
     #[inline(always)]
     pub const fn variant(&self) -> Scien {
         match self.bits {
-            false => Scien::SmartCardInterface,
-            true => Scien::AsynchronousHalfDu,
+            false => Scien::Disabled,
+            true => Scien::Enabled,
         }
     }
     #[doc = "Smart card interface disabled."]
     #[inline(always)]
-    pub fn is_smart_card_interface(&self) -> bool {
-        *self == Scien::SmartCardInterface
+    pub fn is_disabled(&self) -> bool {
+        *self == Scien::Disabled
     }
     #[doc = "Asynchronous half duplex smart card interface is enabled."]
     #[inline(always)]
-    pub fn is_asynchronous_half_du(&self) -> bool {
-        *self == Scien::AsynchronousHalfDu
+    pub fn is_enabled(&self) -> bool {
+        *self == Scien::Enabled
     }
 }
 #[doc = "Field `SCIEN` writer - Smart Card Interface Enable."]
@@ -46,22 +46,22 @@ where
 {
     #[doc = "Smart card interface disabled."]
     #[inline(always)]
-    pub fn smart_card_interface(self) -> &'a mut crate::W<REG> {
-        self.variant(Scien::SmartCardInterface)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Scien::Disabled)
     }
     #[doc = "Asynchronous half duplex smart card interface is enabled."]
     #[inline(always)]
-    pub fn asynchronous_half_du(self) -> &'a mut crate::W<REG> {
-        self.variant(Scien::AsynchronousHalfDu)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Scien::Enabled)
     }
 }
 #[doc = "NACK response disable. Only applicable in T=0.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Nackdis {
     #[doc = "0: A NACK response is enabled."]
-    ANackResponseIsE = 0,
+    Enabled = 0,
     #[doc = "1: A NACK response is inhibited."]
-    ANackResponseIsI = 1,
+    Disabled = 1,
 }
 impl From<Nackdis> for bool {
     #[inline(always)]
@@ -76,19 +76,19 @@ impl NackdisR {
     #[inline(always)]
     pub const fn variant(&self) -> Nackdis {
         match self.bits {
-            false => Nackdis::ANackResponseIsE,
-            true => Nackdis::ANackResponseIsI,
+            false => Nackdis::Enabled,
+            true => Nackdis::Disabled,
         }
     }
     #[doc = "A NACK response is enabled."]
     #[inline(always)]
-    pub fn is_a_nack_response_is_e(&self) -> bool {
-        *self == Nackdis::ANackResponseIsE
+    pub fn is_enabled(&self) -> bool {
+        *self == Nackdis::Enabled
     }
     #[doc = "A NACK response is inhibited."]
     #[inline(always)]
-    pub fn is_a_nack_response_is_i(&self) -> bool {
-        *self == Nackdis::ANackResponseIsI
+    pub fn is_disabled(&self) -> bool {
+        *self == Nackdis::Disabled
     }
 }
 #[doc = "Field `NACKDIS` writer - NACK response disable. Only applicable in T=0."]
@@ -99,13 +99,13 @@ where
 {
     #[doc = "A NACK response is enabled."]
     #[inline(always)]
-    pub fn a_nack_response_is_e(self) -> &'a mut crate::W<REG> {
-        self.variant(Nackdis::ANackResponseIsE)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Nackdis::Enabled)
     }
     #[doc = "A NACK response is inhibited."]
     #[inline(always)]
-    pub fn a_nack_response_is_i(self) -> &'a mut crate::W<REG> {
-        self.variant(Nackdis::ANackResponseIsI)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Nackdis::Disabled)
     }
 }
 #[doc = "Protocol selection as defined in the ISO7816-3 standard.\n\nValue on reset: 0"]

@@ -6,9 +6,9 @@ pub type W = crate::W<ExtpolarSpec>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Extpolar0 {
     #[doc = "0: Low-active or falling-edge sensitive (depending on EXTMODE0)."]
-    LowActiveOrFallin = 0,
+    ActiveLow = 0,
     #[doc = "1: High-active or rising-edge sensitive (depending on EXTMODE0)."]
-    HighActiveOrRisin = 1,
+    ActiveHigh = 1,
 }
 impl From<Extpolar0> for bool {
     #[inline(always)]
@@ -23,19 +23,19 @@ impl Extpolar0R {
     #[inline(always)]
     pub const fn variant(&self) -> Extpolar0 {
         match self.bits {
-            false => Extpolar0::LowActiveOrFallin,
-            true => Extpolar0::HighActiveOrRisin,
+            false => Extpolar0::ActiveLow,
+            true => Extpolar0::ActiveHigh,
         }
     }
     #[doc = "Low-active or falling-edge sensitive (depending on EXTMODE0)."]
     #[inline(always)]
-    pub fn is_low_active_or_fallin(&self) -> bool {
-        *self == Extpolar0::LowActiveOrFallin
+    pub fn is_active_low(&self) -> bool {
+        *self == Extpolar0::ActiveLow
     }
     #[doc = "High-active or rising-edge sensitive (depending on EXTMODE0)."]
     #[inline(always)]
-    pub fn is_high_active_or_risin(&self) -> bool {
-        *self == Extpolar0::HighActiveOrRisin
+    pub fn is_active_high(&self) -> bool {
+        *self == Extpolar0::ActiveHigh
     }
 }
 #[doc = "Field `EXTPOLAR0` writer - External interrupt polarity for EINT0."]
@@ -46,22 +46,22 @@ where
 {
     #[doc = "Low-active or falling-edge sensitive (depending on EXTMODE0)."]
     #[inline(always)]
-    pub fn low_active_or_fallin(self) -> &'a mut crate::W<REG> {
-        self.variant(Extpolar0::LowActiveOrFallin)
+    pub fn active_low(self) -> &'a mut crate::W<REG> {
+        self.variant(Extpolar0::ActiveLow)
     }
     #[doc = "High-active or rising-edge sensitive (depending on EXTMODE0)."]
     #[inline(always)]
-    pub fn high_active_or_risin(self) -> &'a mut crate::W<REG> {
-        self.variant(Extpolar0::HighActiveOrRisin)
+    pub fn active_high(self) -> &'a mut crate::W<REG> {
+        self.variant(Extpolar0::ActiveHigh)
     }
 }
 #[doc = "External interrupt polarity for EINT1.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Extpolar1 {
     #[doc = "0: Low-active or falling-edge sensitive (depending on EXTMODE1)."]
-    LowActiveOrFallin = 0,
+    ActiveLow = 0,
     #[doc = "1: High-active or rising-edge sensitive (depending on EXTMODE1)."]
-    HighActiveOrRisin = 1,
+    ActiveHigh = 1,
 }
 impl From<Extpolar1> for bool {
     #[inline(always)]
@@ -76,19 +76,19 @@ impl Extpolar1R {
     #[inline(always)]
     pub const fn variant(&self) -> Extpolar1 {
         match self.bits {
-            false => Extpolar1::LowActiveOrFallin,
-            true => Extpolar1::HighActiveOrRisin,
+            false => Extpolar1::ActiveLow,
+            true => Extpolar1::ActiveHigh,
         }
     }
     #[doc = "Low-active or falling-edge sensitive (depending on EXTMODE1)."]
     #[inline(always)]
-    pub fn is_low_active_or_fallin(&self) -> bool {
-        *self == Extpolar1::LowActiveOrFallin
+    pub fn is_active_low(&self) -> bool {
+        *self == Extpolar1::ActiveLow
     }
     #[doc = "High-active or rising-edge sensitive (depending on EXTMODE1)."]
     #[inline(always)]
-    pub fn is_high_active_or_risin(&self) -> bool {
-        *self == Extpolar1::HighActiveOrRisin
+    pub fn is_active_high(&self) -> bool {
+        *self == Extpolar1::ActiveHigh
     }
 }
 #[doc = "Field `EXTPOLAR1` writer - External interrupt polarity for EINT1."]
@@ -99,22 +99,22 @@ where
 {
     #[doc = "Low-active or falling-edge sensitive (depending on EXTMODE1)."]
     #[inline(always)]
-    pub fn low_active_or_fallin(self) -> &'a mut crate::W<REG> {
-        self.variant(Extpolar1::LowActiveOrFallin)
+    pub fn active_low(self) -> &'a mut crate::W<REG> {
+        self.variant(Extpolar1::ActiveLow)
     }
     #[doc = "High-active or rising-edge sensitive (depending on EXTMODE1)."]
     #[inline(always)]
-    pub fn high_active_or_risin(self) -> &'a mut crate::W<REG> {
-        self.variant(Extpolar1::HighActiveOrRisin)
+    pub fn active_high(self) -> &'a mut crate::W<REG> {
+        self.variant(Extpolar1::ActiveHigh)
     }
 }
 #[doc = "External interrupt polarity for EINT2.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Extpolar2 {
     #[doc = "0: Low-active or falling-edge sensitive (depending on EXTMODE2)."]
-    LowActiveOrFallin = 0,
+    ActiveLow = 0,
     #[doc = "1: High-active or rising-edge sensitive (depending on EXTMODE2)."]
-    HighActiveOrRisin = 1,
+    ActiveHigh = 1,
 }
 impl From<Extpolar2> for bool {
     #[inline(always)]
@@ -129,19 +129,19 @@ impl Extpolar2R {
     #[inline(always)]
     pub const fn variant(&self) -> Extpolar2 {
         match self.bits {
-            false => Extpolar2::LowActiveOrFallin,
-            true => Extpolar2::HighActiveOrRisin,
+            false => Extpolar2::ActiveLow,
+            true => Extpolar2::ActiveHigh,
         }
     }
     #[doc = "Low-active or falling-edge sensitive (depending on EXTMODE2)."]
     #[inline(always)]
-    pub fn is_low_active_or_fallin(&self) -> bool {
-        *self == Extpolar2::LowActiveOrFallin
+    pub fn is_active_low(&self) -> bool {
+        *self == Extpolar2::ActiveLow
     }
     #[doc = "High-active or rising-edge sensitive (depending on EXTMODE2)."]
     #[inline(always)]
-    pub fn is_high_active_or_risin(&self) -> bool {
-        *self == Extpolar2::HighActiveOrRisin
+    pub fn is_active_high(&self) -> bool {
+        *self == Extpolar2::ActiveHigh
     }
 }
 #[doc = "Field `EXTPOLAR2` writer - External interrupt polarity for EINT2."]
@@ -152,22 +152,22 @@ where
 {
     #[doc = "Low-active or falling-edge sensitive (depending on EXTMODE2)."]
     #[inline(always)]
-    pub fn low_active_or_fallin(self) -> &'a mut crate::W<REG> {
-        self.variant(Extpolar2::LowActiveOrFallin)
+    pub fn active_low(self) -> &'a mut crate::W<REG> {
+        self.variant(Extpolar2::ActiveLow)
     }
     #[doc = "High-active or rising-edge sensitive (depending on EXTMODE2)."]
     #[inline(always)]
-    pub fn high_active_or_risin(self) -> &'a mut crate::W<REG> {
-        self.variant(Extpolar2::HighActiveOrRisin)
+    pub fn active_high(self) -> &'a mut crate::W<REG> {
+        self.variant(Extpolar2::ActiveHigh)
     }
 }
 #[doc = "External interrupt polarity for EINT3.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Extpolar3 {
     #[doc = "0: Low-active or falling-edge sensitive (depending on EXTMODE3)."]
-    LowActiveOrFallin = 0,
+    ActiveLow = 0,
     #[doc = "1: High-active or rising-edge sensitive (depending on EXTMODE3)."]
-    HighActiveOrRisin = 1,
+    ActiveHigh = 1,
 }
 impl From<Extpolar3> for bool {
     #[inline(always)]
@@ -182,19 +182,19 @@ impl Extpolar3R {
     #[inline(always)]
     pub const fn variant(&self) -> Extpolar3 {
         match self.bits {
-            false => Extpolar3::LowActiveOrFallin,
-            true => Extpolar3::HighActiveOrRisin,
+            false => Extpolar3::ActiveLow,
+            true => Extpolar3::ActiveHigh,
         }
     }
     #[doc = "Low-active or falling-edge sensitive (depending on EXTMODE3)."]
     #[inline(always)]
-    pub fn is_low_active_or_fallin(&self) -> bool {
-        *self == Extpolar3::LowActiveOrFallin
+    pub fn is_active_low(&self) -> bool {
+        *self == Extpolar3::ActiveLow
     }
     #[doc = "High-active or rising-edge sensitive (depending on EXTMODE3)."]
     #[inline(always)]
-    pub fn is_high_active_or_risin(&self) -> bool {
-        *self == Extpolar3::HighActiveOrRisin
+    pub fn is_active_high(&self) -> bool {
+        *self == Extpolar3::ActiveHigh
     }
 }
 #[doc = "Field `EXTPOLAR3` writer - External interrupt polarity for EINT3."]
@@ -205,13 +205,13 @@ where
 {
     #[doc = "Low-active or falling-edge sensitive (depending on EXTMODE3)."]
     #[inline(always)]
-    pub fn low_active_or_fallin(self) -> &'a mut crate::W<REG> {
-        self.variant(Extpolar3::LowActiveOrFallin)
+    pub fn active_low(self) -> &'a mut crate::W<REG> {
+        self.variant(Extpolar3::ActiveLow)
     }
     #[doc = "High-active or rising-edge sensitive (depending on EXTMODE3)."]
     #[inline(always)]
-    pub fn high_active_or_risin(self) -> &'a mut crate::W<REG> {
-        self.variant(Extpolar3::HighActiveOrRisin)
+    pub fn active_high(self) -> &'a mut crate::W<REG> {
+        self.variant(Extpolar3::ActiveHigh)
     }
 }
 impl R {

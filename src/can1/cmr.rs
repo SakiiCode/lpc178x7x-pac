@@ -4,9 +4,9 @@ pub type W = crate::W<CmrSpec>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Tr {
     #[doc = "0: Absent.No transmission request."]
-    AbsentNoTransmissi = 0,
+    Absent = 0,
     #[doc = "1: Present. The message, previously written to the CANxTFI, CANxTID, and optionally the CANxTDA and CANxTDB registers, is queued for transmission from the selected Transmit Buffer. If at two or all three of STB1, STB2 and STB3 bits are selected when TR=1 is written, Transmit Buffer will be selected based on the chosen priority scheme (for details see Section 21.5.3 Transmit Buffers (TXB))"]
-    PresentTheMessage = 1,
+    Present = 1,
 }
 impl From<Tr> for bool {
     #[inline(always)]
@@ -22,22 +22,22 @@ where
 {
     #[doc = "Absent.No transmission request."]
     #[inline(always)]
-    pub fn absent_no_transmissi(self) -> &'a mut crate::W<REG> {
-        self.variant(Tr::AbsentNoTransmissi)
+    pub fn absent(self) -> &'a mut crate::W<REG> {
+        self.variant(Tr::Absent)
     }
     #[doc = "Present. The message, previously written to the CANxTFI, CANxTID, and optionally the CANxTDA and CANxTDB registers, is queued for transmission from the selected Transmit Buffer. If at two or all three of STB1, STB2 and STB3 bits are selected when TR=1 is written, Transmit Buffer will be selected based on the chosen priority scheme (for details see Section 21.5.3 Transmit Buffers (TXB))"]
     #[inline(always)]
-    pub fn present_the_message(self) -> &'a mut crate::W<REG> {
-        self.variant(Tr::PresentTheMessage)
+    pub fn present(self) -> &'a mut crate::W<REG> {
+        self.variant(Tr::Present)
     }
 }
 #[doc = "Abort Transmission.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum At {
     #[doc = "0: No action. Do not abort the transmission."]
-    NoActionDoNotAb = 0,
+    NoAction = 0,
     #[doc = "1: Present. if not already in progress, a pending Transmission Request for the selected Transmit Buffer is cancelled."]
-    PresentIfNotAlre = 1,
+    Present = 1,
 }
 impl From<At> for bool {
     #[inline(always)]
@@ -53,22 +53,22 @@ where
 {
     #[doc = "No action. Do not abort the transmission."]
     #[inline(always)]
-    pub fn no_action_do_not_ab(self) -> &'a mut crate::W<REG> {
-        self.variant(At::NoActionDoNotAb)
+    pub fn no_action(self) -> &'a mut crate::W<REG> {
+        self.variant(At::NoAction)
     }
     #[doc = "Present. if not already in progress, a pending Transmission Request for the selected Transmit Buffer is cancelled."]
     #[inline(always)]
-    pub fn present_if_not_alre(self) -> &'a mut crate::W<REG> {
-        self.variant(At::PresentIfNotAlre)
+    pub fn present(self) -> &'a mut crate::W<REG> {
+        self.variant(At::Present)
     }
 }
 #[doc = "Release Receive Buffer.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Rrb {
     #[doc = "0: No action. Do not release the receive buffer."]
-    NoActionDoNotRe = 0,
+    NoAction = 0,
     #[doc = "1: Released. The information in the Receive Buffer (consisting of CANxRFS, CANxRID, and if applicable the CANxRDA and CANxRDB registers) is released, and becomes eligible for replacement by the next received frame. If the next received frame is not available, writing this command clears the RBS bit in the Status Register(s)."]
-    ReleasedTheInform = 1,
+    Released = 1,
 }
 impl From<Rrb> for bool {
     #[inline(always)]
@@ -84,22 +84,22 @@ where
 {
     #[doc = "No action. Do not release the receive buffer."]
     #[inline(always)]
-    pub fn no_action_do_not_re(self) -> &'a mut crate::W<REG> {
-        self.variant(Rrb::NoActionDoNotRe)
+    pub fn no_action(self) -> &'a mut crate::W<REG> {
+        self.variant(Rrb::NoAction)
     }
     #[doc = "Released. The information in the Receive Buffer (consisting of CANxRFS, CANxRID, and if applicable the CANxRDA and CANxRDB registers) is released, and becomes eligible for replacement by the next received frame. If the next received frame is not available, writing this command clears the RBS bit in the Status Register(s)."]
     #[inline(always)]
-    pub fn released_the_inform(self) -> &'a mut crate::W<REG> {
-        self.variant(Rrb::ReleasedTheInform)
+    pub fn released(self) -> &'a mut crate::W<REG> {
+        self.variant(Rrb::Released)
     }
 }
 #[doc = "Clear Data Overrun.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Cdo {
     #[doc = "0: No action. Do not clear the data overrun bit."]
-    NoActionDoNotCl = 0,
+    NoAction = 0,
     #[doc = "1: Clear. The Data Overrun bit in Status Register(s) is cleared."]
-    ClearTheDataOver = 1,
+    Clear = 1,
 }
 impl From<Cdo> for bool {
     #[inline(always)]
@@ -115,22 +115,22 @@ where
 {
     #[doc = "No action. Do not clear the data overrun bit."]
     #[inline(always)]
-    pub fn no_action_do_not_cl(self) -> &'a mut crate::W<REG> {
-        self.variant(Cdo::NoActionDoNotCl)
+    pub fn no_action(self) -> &'a mut crate::W<REG> {
+        self.variant(Cdo::NoAction)
     }
     #[doc = "Clear. The Data Overrun bit in Status Register(s) is cleared."]
     #[inline(always)]
-    pub fn clear_the_data_over(self) -> &'a mut crate::W<REG> {
-        self.variant(Cdo::ClearTheDataOver)
+    pub fn clear(self) -> &'a mut crate::W<REG> {
+        self.variant(Cdo::Clear)
     }
 }
 #[doc = "Self Reception Request.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Srr {
     #[doc = "0: Absent. No self reception request."]
-    AbsentNoSelfRece = 0,
+    Absent = 0,
     #[doc = "1: Present. The message, previously written to the CANxTFS, CANxTID, and optionally the CANxTDA and CANxTDB registers, is queued for transmission from the selected Transmit Buffer and received simultaneously. This differs from the TR bit above in that the receiver is not disabled during the transmission, so that it receives the message if its Identifier is recognized by the Acceptance Filter."]
-    PresentTheMessage = 1,
+    Present = 1,
 }
 impl From<Srr> for bool {
     #[inline(always)]
@@ -146,22 +146,22 @@ where
 {
     #[doc = "Absent. No self reception request."]
     #[inline(always)]
-    pub fn absent_no_self_rece(self) -> &'a mut crate::W<REG> {
-        self.variant(Srr::AbsentNoSelfRece)
+    pub fn absent(self) -> &'a mut crate::W<REG> {
+        self.variant(Srr::Absent)
     }
     #[doc = "Present. The message, previously written to the CANxTFS, CANxTID, and optionally the CANxTDA and CANxTDB registers, is queued for transmission from the selected Transmit Buffer and received simultaneously. This differs from the TR bit above in that the receiver is not disabled during the transmission, so that it receives the message if its Identifier is recognized by the Acceptance Filter."]
     #[inline(always)]
-    pub fn present_the_message(self) -> &'a mut crate::W<REG> {
-        self.variant(Srr::PresentTheMessage)
+    pub fn present(self) -> &'a mut crate::W<REG> {
+        self.variant(Srr::Present)
     }
 }
 #[doc = "Select Tx Buffer 1.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Stb1 {
     #[doc = "0: Not selected. Tx Buffer 1 is not selected for transmission."]
-    NotSelectedTxBuf = 0,
+    NotSelected = 0,
     #[doc = "1: Selected. Tx Buffer 1 is selected for transmission."]
-    SelectedTxBuffer_ = 1,
+    Selected = 1,
 }
 impl From<Stb1> for bool {
     #[inline(always)]
@@ -177,22 +177,22 @@ where
 {
     #[doc = "Not selected. Tx Buffer 1 is not selected for transmission."]
     #[inline(always)]
-    pub fn not_selected_tx_buf(self) -> &'a mut crate::W<REG> {
-        self.variant(Stb1::NotSelectedTxBuf)
+    pub fn not_selected(self) -> &'a mut crate::W<REG> {
+        self.variant(Stb1::NotSelected)
     }
     #[doc = "Selected. Tx Buffer 1 is selected for transmission."]
     #[inline(always)]
-    pub fn selected_tx_buffer_(self) -> &'a mut crate::W<REG> {
-        self.variant(Stb1::SelectedTxBuffer_)
+    pub fn selected(self) -> &'a mut crate::W<REG> {
+        self.variant(Stb1::Selected)
     }
 }
 #[doc = "Select Tx Buffer 2.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Stb2 {
     #[doc = "0: Not selected. Tx Buffer 2 is not selected for transmission."]
-    NotSelectedTxBuf = 0,
-    #[doc = "1: Selected. Tx Buffer 2 is selected for transmission."]
-    SelectedTxBuffer_ = 1,
+    NotSelected = 0,
+    #[doc = "1: SELECTED. Tx Buffer 2 is selected for transmission."]
+    Selected = 1,
 }
 impl From<Stb2> for bool {
     #[inline(always)]
@@ -208,22 +208,22 @@ where
 {
     #[doc = "Not selected. Tx Buffer 2 is not selected for transmission."]
     #[inline(always)]
-    pub fn not_selected_tx_buf(self) -> &'a mut crate::W<REG> {
-        self.variant(Stb2::NotSelectedTxBuf)
+    pub fn not_selected(self) -> &'a mut crate::W<REG> {
+        self.variant(Stb2::NotSelected)
     }
-    #[doc = "Selected. Tx Buffer 2 is selected for transmission."]
+    #[doc = "SELECTED. Tx Buffer 2 is selected for transmission."]
     #[inline(always)]
-    pub fn selected_tx_buffer_(self) -> &'a mut crate::W<REG> {
-        self.variant(Stb2::SelectedTxBuffer_)
+    pub fn selected(self) -> &'a mut crate::W<REG> {
+        self.variant(Stb2::Selected)
     }
 }
 #[doc = "Select Tx Buffer 3.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Stb3 {
     #[doc = "0: Not selected. Tx Buffer 3 is not selected for transmission."]
-    NotSelectedTxBuf = 0,
+    NotSelected = 0,
     #[doc = "1: Selected. Tx Buffer 3 is selected for transmission."]
-    SelectedTxBuffer_ = 1,
+    Selected = 1,
 }
 impl From<Stb3> for bool {
     #[inline(always)]
@@ -239,13 +239,13 @@ where
 {
     #[doc = "Not selected. Tx Buffer 3 is not selected for transmission."]
     #[inline(always)]
-    pub fn not_selected_tx_buf(self) -> &'a mut crate::W<REG> {
-        self.variant(Stb3::NotSelectedTxBuf)
+    pub fn not_selected(self) -> &'a mut crate::W<REG> {
+        self.variant(Stb3::NotSelected)
     }
     #[doc = "Selected. Tx Buffer 3 is selected for transmission."]
     #[inline(always)]
-    pub fn selected_tx_buffer_(self) -> &'a mut crate::W<REG> {
-        self.variant(Stb3::SelectedTxBuffer_)
+    pub fn selected(self) -> &'a mut crate::W<REG> {
+        self.variant(Stb3::Selected)
     }
 }
 impl W {

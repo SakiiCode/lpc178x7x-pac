@@ -6,14 +6,12 @@ pub type W = crate::W<DynamicrascasSpec>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum Ras {
-    #[doc = "0: Reserved."]
-    Reserved_ = 0,
     #[doc = "1: One CCLK cycle."]
-    OneCclkCycle_ = 1,
+    OneCclk = 1,
     #[doc = "2: Two CCLK cycles."]
-    TwoCclkCycles_ = 2,
+    TwoCclk = 2,
     #[doc = "3: Three CCLK cycles (POR reset value)."]
-    ThreeCclkCyclesP = 3,
+    ThreeCclk = 3,
 }
 impl From<Ras> for u8 {
     #[inline(always)]
@@ -32,74 +30,61 @@ impl RasR {
     #[inline(always)]
     pub const fn variant(&self) -> Ras {
         match self.bits {
-            0 => Ras::Reserved_,
-            1 => Ras::OneCclkCycle_,
-            2 => Ras::TwoCclkCycles_,
-            3 => Ras::ThreeCclkCyclesP,
+            1 => Ras::OneCclk,
+            2 => Ras::TwoCclk,
+            3 => Ras::ThreeCclk,
             _ => unreachable!(),
         }
     }
-    #[doc = "Reserved."]
-    #[inline(always)]
-    pub fn is_reserved_(&self) -> bool {
-        *self == Ras::Reserved_
-    }
     #[doc = "One CCLK cycle."]
     #[inline(always)]
-    pub fn is_one_cclk_cycle_(&self) -> bool {
-        *self == Ras::OneCclkCycle_
+    pub fn is_one_cclk(&self) -> bool {
+        *self == Ras::OneCclk
     }
     #[doc = "Two CCLK cycles."]
     #[inline(always)]
-    pub fn is_two_cclk_cycles_(&self) -> bool {
-        *self == Ras::TwoCclkCycles_
+    pub fn is_two_cclk(&self) -> bool {
+        *self == Ras::TwoCclk
     }
     #[doc = "Three CCLK cycles (POR reset value)."]
     #[inline(always)]
-    pub fn is_three_cclk_cycles_p(&self) -> bool {
-        *self == Ras::ThreeCclkCyclesP
+    pub fn is_three_cclk(&self) -> bool {
+        *self == Ras::ThreeCclk
     }
 }
 #[doc = "Field `RAS` writer - RAS latency (active to read/write delay)."]
-pub type RasW<'a, REG> = crate::FieldWriter<'a, REG, 2, Ras, crate::Safe>;
+pub type RasW<'a, REG> = crate::FieldWriter<'a, REG, 2, Ras>;
 impl<'a, REG> RasW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
     REG::Ux: From<u8>,
 {
-    #[doc = "Reserved."]
-    #[inline(always)]
-    pub fn reserved_(self) -> &'a mut crate::W<REG> {
-        self.variant(Ras::Reserved_)
-    }
     #[doc = "One CCLK cycle."]
     #[inline(always)]
-    pub fn one_cclk_cycle_(self) -> &'a mut crate::W<REG> {
-        self.variant(Ras::OneCclkCycle_)
+    pub fn one_cclk(self) -> &'a mut crate::W<REG> {
+        self.variant(Ras::OneCclk)
     }
     #[doc = "Two CCLK cycles."]
     #[inline(always)]
-    pub fn two_cclk_cycles_(self) -> &'a mut crate::W<REG> {
-        self.variant(Ras::TwoCclkCycles_)
+    pub fn two_cclk(self) -> &'a mut crate::W<REG> {
+        self.variant(Ras::TwoCclk)
     }
     #[doc = "Three CCLK cycles (POR reset value)."]
     #[inline(always)]
-    pub fn three_cclk_cycles_p(self) -> &'a mut crate::W<REG> {
-        self.variant(Ras::ThreeCclkCyclesP)
+    pub fn three_cclk(self) -> &'a mut crate::W<REG> {
+        self.variant(Ras::ThreeCclk)
     }
 }
 #[doc = "CAS latency.\n\nValue on reset: 3"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum Cas {
-    #[doc = "0: Reserved."]
-    Reserved_ = 0,
     #[doc = "1: One CCLK cycle."]
-    OneCclkCycle_ = 1,
+    OneCycle = 1,
     #[doc = "2: Two CCLK cycles."]
-    TwoCclkCycles_ = 2,
+    TwoCycles = 2,
     #[doc = "3: Three CCLK cycles (POR reset value)."]
-    ThreeCclkCyclesP = 3,
+    ThreeCycles = 3,
 }
 impl From<Cas> for u8 {
     #[inline(always)]
@@ -118,60 +103,49 @@ impl CasR {
     #[inline(always)]
     pub const fn variant(&self) -> Cas {
         match self.bits {
-            0 => Cas::Reserved_,
-            1 => Cas::OneCclkCycle_,
-            2 => Cas::TwoCclkCycles_,
-            3 => Cas::ThreeCclkCyclesP,
+            1 => Cas::OneCycle,
+            2 => Cas::TwoCycles,
+            3 => Cas::ThreeCycles,
             _ => unreachable!(),
         }
     }
-    #[doc = "Reserved."]
-    #[inline(always)]
-    pub fn is_reserved_(&self) -> bool {
-        *self == Cas::Reserved_
-    }
     #[doc = "One CCLK cycle."]
     #[inline(always)]
-    pub fn is_one_cclk_cycle_(&self) -> bool {
-        *self == Cas::OneCclkCycle_
+    pub fn is_one_cycle(&self) -> bool {
+        *self == Cas::OneCycle
     }
     #[doc = "Two CCLK cycles."]
     #[inline(always)]
-    pub fn is_two_cclk_cycles_(&self) -> bool {
-        *self == Cas::TwoCclkCycles_
+    pub fn is_two_cycles(&self) -> bool {
+        *self == Cas::TwoCycles
     }
     #[doc = "Three CCLK cycles (POR reset value)."]
     #[inline(always)]
-    pub fn is_three_cclk_cycles_p(&self) -> bool {
-        *self == Cas::ThreeCclkCyclesP
+    pub fn is_three_cycles(&self) -> bool {
+        *self == Cas::ThreeCycles
     }
 }
 #[doc = "Field `CAS` writer - CAS latency."]
-pub type CasW<'a, REG> = crate::FieldWriter<'a, REG, 2, Cas, crate::Safe>;
+pub type CasW<'a, REG> = crate::FieldWriter<'a, REG, 2, Cas>;
 impl<'a, REG> CasW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
     REG::Ux: From<u8>,
 {
-    #[doc = "Reserved."]
-    #[inline(always)]
-    pub fn reserved_(self) -> &'a mut crate::W<REG> {
-        self.variant(Cas::Reserved_)
-    }
     #[doc = "One CCLK cycle."]
     #[inline(always)]
-    pub fn one_cclk_cycle_(self) -> &'a mut crate::W<REG> {
-        self.variant(Cas::OneCclkCycle_)
+    pub fn one_cycle(self) -> &'a mut crate::W<REG> {
+        self.variant(Cas::OneCycle)
     }
     #[doc = "Two CCLK cycles."]
     #[inline(always)]
-    pub fn two_cclk_cycles_(self) -> &'a mut crate::W<REG> {
-        self.variant(Cas::TwoCclkCycles_)
+    pub fn two_cycles(self) -> &'a mut crate::W<REG> {
+        self.variant(Cas::TwoCycles)
     }
     #[doc = "Three CCLK cycles (POR reset value)."]
     #[inline(always)]
-    pub fn three_cclk_cycles_p(self) -> &'a mut crate::W<REG> {
-        self.variant(Cas::ThreeCclkCyclesP)
+    pub fn three_cycles(self) -> &'a mut crate::W<REG> {
+        self.variant(Cas::ThreeCycles)
     }
 }
 impl R {

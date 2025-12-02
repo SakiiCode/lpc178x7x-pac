@@ -6,9 +6,9 @@ pub type W = crate::W<I2cCtlSpec>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Tdie {
     #[doc = "0: Disable the TDI interrupt."]
-    DisableTheTdiInte = 0,
+    Disabled = 0,
     #[doc = "1: Enable the TDI interrupt."]
-    EnableTheTdiInter = 1,
+    Enabled = 1,
 }
 impl From<Tdie> for bool {
     #[inline(always)]
@@ -23,19 +23,19 @@ impl TdieR {
     #[inline(always)]
     pub const fn variant(&self) -> Tdie {
         match self.bits {
-            false => Tdie::DisableTheTdiInte,
-            true => Tdie::EnableTheTdiInter,
+            false => Tdie::Disabled,
+            true => Tdie::Enabled,
         }
     }
     #[doc = "Disable the TDI interrupt."]
     #[inline(always)]
-    pub fn is_disable_the_tdi_inte(&self) -> bool {
-        *self == Tdie::DisableTheTdiInte
+    pub fn is_disabled(&self) -> bool {
+        *self == Tdie::Disabled
     }
     #[doc = "Enable the TDI interrupt."]
     #[inline(always)]
-    pub fn is_enable_the_tdi_inter(&self) -> bool {
-        *self == Tdie::EnableTheTdiInter
+    pub fn is_enabled(&self) -> bool {
+        *self == Tdie::Enabled
     }
 }
 #[doc = "Field `TDIE` writer - Transmit Done Interrupt Enable. This enables the TDI interrupt signalling that this I2C issued a STOP condition."]
@@ -46,22 +46,22 @@ where
 {
     #[doc = "Disable the TDI interrupt."]
     #[inline(always)]
-    pub fn disable_the_tdi_inte(self) -> &'a mut crate::W<REG> {
-        self.variant(Tdie::DisableTheTdiInte)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Tdie::Disabled)
     }
     #[doc = "Enable the TDI interrupt."]
     #[inline(always)]
-    pub fn enable_the_tdi_inter(self) -> &'a mut crate::W<REG> {
-        self.variant(Tdie::EnableTheTdiInter)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Tdie::Enabled)
     }
 }
 #[doc = "Transmitter Arbitration Failure Interrupt Enable. This enables the AFI interrupt which is asserted during transmission when trying to set SDA high, but the bus is driven low by another device.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Afie {
     #[doc = "0: Disable the AFI."]
-    DisableTheAfi_ = 0,
+    Disabled = 0,
     #[doc = "1: Enable the AFI."]
-    EnableTheAfi_ = 1,
+    Enabled = 1,
 }
 impl From<Afie> for bool {
     #[inline(always)]
@@ -76,19 +76,19 @@ impl AfieR {
     #[inline(always)]
     pub const fn variant(&self) -> Afie {
         match self.bits {
-            false => Afie::DisableTheAfi_,
-            true => Afie::EnableTheAfi_,
+            false => Afie::Disabled,
+            true => Afie::Enabled,
         }
     }
     #[doc = "Disable the AFI."]
     #[inline(always)]
-    pub fn is_disable_the_afi_(&self) -> bool {
-        *self == Afie::DisableTheAfi_
+    pub fn is_disabled(&self) -> bool {
+        *self == Afie::Disabled
     }
     #[doc = "Enable the AFI."]
     #[inline(always)]
-    pub fn is_enable_the_afi_(&self) -> bool {
-        *self == Afie::EnableTheAfi_
+    pub fn is_enabled(&self) -> bool {
+        *self == Afie::Enabled
     }
 }
 #[doc = "Field `AFIE` writer - Transmitter Arbitration Failure Interrupt Enable. This enables the AFI interrupt which is asserted during transmission when trying to set SDA high, but the bus is driven low by another device."]
@@ -99,22 +99,22 @@ where
 {
     #[doc = "Disable the AFI."]
     #[inline(always)]
-    pub fn disable_the_afi_(self) -> &'a mut crate::W<REG> {
-        self.variant(Afie::DisableTheAfi_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Afie::Disabled)
     }
     #[doc = "Enable the AFI."]
     #[inline(always)]
-    pub fn enable_the_afi_(self) -> &'a mut crate::W<REG> {
-        self.variant(Afie::EnableTheAfi_)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Afie::Enabled)
     }
 }
 #[doc = "Transmitter No Acknowledge Interrupt Enable. This enables the NAI interrupt signalling that transmitted byte was not acknowledged.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Naie {
     #[doc = "0: Disable the NAI."]
-    DisableTheNai_ = 0,
+    Disabled = 0,
     #[doc = "1: Enable the NAI."]
-    EnableTheNai_ = 1,
+    Enabled = 1,
 }
 impl From<Naie> for bool {
     #[inline(always)]
@@ -129,19 +129,19 @@ impl NaieR {
     #[inline(always)]
     pub const fn variant(&self) -> Naie {
         match self.bits {
-            false => Naie::DisableTheNai_,
-            true => Naie::EnableTheNai_,
+            false => Naie::Disabled,
+            true => Naie::Enabled,
         }
     }
     #[doc = "Disable the NAI."]
     #[inline(always)]
-    pub fn is_disable_the_nai_(&self) -> bool {
-        *self == Naie::DisableTheNai_
+    pub fn is_disabled(&self) -> bool {
+        *self == Naie::Disabled
     }
     #[doc = "Enable the NAI."]
     #[inline(always)]
-    pub fn is_enable_the_nai_(&self) -> bool {
-        *self == Naie::EnableTheNai_
+    pub fn is_enabled(&self) -> bool {
+        *self == Naie::Enabled
     }
 }
 #[doc = "Field `NAIE` writer - Transmitter No Acknowledge Interrupt Enable. This enables the NAI interrupt signalling that transmitted byte was not acknowledged."]
@@ -152,22 +152,22 @@ where
 {
     #[doc = "Disable the NAI."]
     #[inline(always)]
-    pub fn disable_the_nai_(self) -> &'a mut crate::W<REG> {
-        self.variant(Naie::DisableTheNai_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Naie::Disabled)
     }
     #[doc = "Enable the NAI."]
     #[inline(always)]
-    pub fn enable_the_nai_(self) -> &'a mut crate::W<REG> {
-        self.variant(Naie::EnableTheNai_)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Naie::Enabled)
     }
 }
 #[doc = "Master Transmitter Data Request Interrupt Enable. This enables the DRMI interrupt which signals that the master transmitter has run out of data, has not issued a STOP, and is holding the SCL line low.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Drmie {
     #[doc = "0: Disable the DRMI interrupt."]
-    DisableTheDrmiInt = 0,
+    Disabled = 0,
     #[doc = "1: Enable the DRMI interrupt."]
-    EnableTheDrmiInte = 1,
+    Enabled = 1,
 }
 impl From<Drmie> for bool {
     #[inline(always)]
@@ -182,19 +182,19 @@ impl DrmieR {
     #[inline(always)]
     pub const fn variant(&self) -> Drmie {
         match self.bits {
-            false => Drmie::DisableTheDrmiInt,
-            true => Drmie::EnableTheDrmiInte,
+            false => Drmie::Disabled,
+            true => Drmie::Enabled,
         }
     }
     #[doc = "Disable the DRMI interrupt."]
     #[inline(always)]
-    pub fn is_disable_the_drmi_int(&self) -> bool {
-        *self == Drmie::DisableTheDrmiInt
+    pub fn is_disabled(&self) -> bool {
+        *self == Drmie::Disabled
     }
     #[doc = "Enable the DRMI interrupt."]
     #[inline(always)]
-    pub fn is_enable_the_drmi_inte(&self) -> bool {
-        *self == Drmie::EnableTheDrmiInte
+    pub fn is_enabled(&self) -> bool {
+        *self == Drmie::Enabled
     }
 }
 #[doc = "Field `DRMIE` writer - Master Transmitter Data Request Interrupt Enable. This enables the DRMI interrupt which signals that the master transmitter has run out of data, has not issued a STOP, and is holding the SCL line low."]
@@ -205,22 +205,22 @@ where
 {
     #[doc = "Disable the DRMI interrupt."]
     #[inline(always)]
-    pub fn disable_the_drmi_int(self) -> &'a mut crate::W<REG> {
-        self.variant(Drmie::DisableTheDrmiInt)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Drmie::Disabled)
     }
     #[doc = "Enable the DRMI interrupt."]
     #[inline(always)]
-    pub fn enable_the_drmi_inte(self) -> &'a mut crate::W<REG> {
-        self.variant(Drmie::EnableTheDrmiInte)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Drmie::Enabled)
     }
 }
 #[doc = "Slave Transmitter Data Request Interrupt Enable. This enables the DRSI interrupt which signals that the slave transmitter has run out of data and the last byte was acknowledged, so the SCL line is being held low.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Drsie {
     #[doc = "0: Disable the DRSI interrupt."]
-    DisableTheDrsiInt = 0,
+    Disabled = 0,
     #[doc = "1: Enable the DRSI interrupt."]
-    EnableTheDrsiInte = 1,
+    Enabled = 1,
 }
 impl From<Drsie> for bool {
     #[inline(always)]
@@ -235,19 +235,19 @@ impl DrsieR {
     #[inline(always)]
     pub const fn variant(&self) -> Drsie {
         match self.bits {
-            false => Drsie::DisableTheDrsiInt,
-            true => Drsie::EnableTheDrsiInte,
+            false => Drsie::Disabled,
+            true => Drsie::Enabled,
         }
     }
     #[doc = "Disable the DRSI interrupt."]
     #[inline(always)]
-    pub fn is_disable_the_drsi_int(&self) -> bool {
-        *self == Drsie::DisableTheDrsiInt
+    pub fn is_disabled(&self) -> bool {
+        *self == Drsie::Disabled
     }
     #[doc = "Enable the DRSI interrupt."]
     #[inline(always)]
-    pub fn is_enable_the_drsi_inte(&self) -> bool {
-        *self == Drsie::EnableTheDrsiInte
+    pub fn is_enabled(&self) -> bool {
+        *self == Drsie::Enabled
     }
 }
 #[doc = "Field `DRSIE` writer - Slave Transmitter Data Request Interrupt Enable. This enables the DRSI interrupt which signals that the slave transmitter has run out of data and the last byte was acknowledged, so the SCL line is being held low."]
@@ -258,22 +258,22 @@ where
 {
     #[doc = "Disable the DRSI interrupt."]
     #[inline(always)]
-    pub fn disable_the_drsi_int(self) -> &'a mut crate::W<REG> {
-        self.variant(Drsie::DisableTheDrsiInt)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Drsie::Disabled)
     }
     #[doc = "Enable the DRSI interrupt."]
     #[inline(always)]
-    pub fn enable_the_drsi_inte(self) -> &'a mut crate::W<REG> {
-        self.variant(Drsie::EnableTheDrsiInte)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Drsie::Enabled)
     }
 }
 #[doc = "Receive FIFO Full Interrupt Enable. This enables the Receive FIFO Full interrupt to indicate that the receive FIFO cannot accept any more data.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Refie {
     #[doc = "0: Disable the RFFI."]
-    DisableTheRffi_ = 0,
+    Disabled = 0,
     #[doc = "1: Enable the RFFI."]
-    EnableTheRffi_ = 1,
+    Enabled = 1,
 }
 impl From<Refie> for bool {
     #[inline(always)]
@@ -288,19 +288,19 @@ impl RefieR {
     #[inline(always)]
     pub const fn variant(&self) -> Refie {
         match self.bits {
-            false => Refie::DisableTheRffi_,
-            true => Refie::EnableTheRffi_,
+            false => Refie::Disabled,
+            true => Refie::Enabled,
         }
     }
     #[doc = "Disable the RFFI."]
     #[inline(always)]
-    pub fn is_disable_the_rffi_(&self) -> bool {
-        *self == Refie::DisableTheRffi_
+    pub fn is_disabled(&self) -> bool {
+        *self == Refie::Disabled
     }
     #[doc = "Enable the RFFI."]
     #[inline(always)]
-    pub fn is_enable_the_rffi_(&self) -> bool {
-        *self == Refie::EnableTheRffi_
+    pub fn is_enabled(&self) -> bool {
+        *self == Refie::Enabled
     }
 }
 #[doc = "Field `REFIE` writer - Receive FIFO Full Interrupt Enable. This enables the Receive FIFO Full interrupt to indicate that the receive FIFO cannot accept any more data."]
@@ -311,22 +311,22 @@ where
 {
     #[doc = "Disable the RFFI."]
     #[inline(always)]
-    pub fn disable_the_rffi_(self) -> &'a mut crate::W<REG> {
-        self.variant(Refie::DisableTheRffi_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Refie::Disabled)
     }
     #[doc = "Enable the RFFI."]
     #[inline(always)]
-    pub fn enable_the_rffi_(self) -> &'a mut crate::W<REG> {
-        self.variant(Refie::EnableTheRffi_)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Refie::Enabled)
     }
 }
 #[doc = "Receive Data Available Interrupt Enable. This enables the DAI interrupt to indicate that data is available in the receive FIFO (i.e. not empty).\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Rfdaie {
     #[doc = "0: Disable the DAI."]
-    DisableTheDai_ = 0,
+    Disabled = 0,
     #[doc = "1: Enable the DAI."]
-    EnableTheDai_ = 1,
+    Enabled = 1,
 }
 impl From<Rfdaie> for bool {
     #[inline(always)]
@@ -341,19 +341,19 @@ impl RfdaieR {
     #[inline(always)]
     pub const fn variant(&self) -> Rfdaie {
         match self.bits {
-            false => Rfdaie::DisableTheDai_,
-            true => Rfdaie::EnableTheDai_,
+            false => Rfdaie::Disabled,
+            true => Rfdaie::Enabled,
         }
     }
     #[doc = "Disable the DAI."]
     #[inline(always)]
-    pub fn is_disable_the_dai_(&self) -> bool {
-        *self == Rfdaie::DisableTheDai_
+    pub fn is_disabled(&self) -> bool {
+        *self == Rfdaie::Disabled
     }
     #[doc = "Enable the DAI."]
     #[inline(always)]
-    pub fn is_enable_the_dai_(&self) -> bool {
-        *self == Rfdaie::EnableTheDai_
+    pub fn is_enabled(&self) -> bool {
+        *self == Rfdaie::Enabled
     }
 }
 #[doc = "Field `RFDAIE` writer - Receive Data Available Interrupt Enable. This enables the DAI interrupt to indicate that data is available in the receive FIFO (i.e. not empty)."]
@@ -364,22 +364,22 @@ where
 {
     #[doc = "Disable the DAI."]
     #[inline(always)]
-    pub fn disable_the_dai_(self) -> &'a mut crate::W<REG> {
-        self.variant(Rfdaie::DisableTheDai_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Rfdaie::Disabled)
     }
     #[doc = "Enable the DAI."]
     #[inline(always)]
-    pub fn enable_the_dai_(self) -> &'a mut crate::W<REG> {
-        self.variant(Rfdaie::EnableTheDai_)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Rfdaie::Enabled)
     }
 }
 #[doc = "Transmit FIFO Not Full Interrupt Enable. This enables the Transmit FIFO Not Full interrupt to indicate that the more data can be written to the transmit FIFO. Note that this is not full. It is intended help the CPU to write to the I2C block only when there is room in the FIFO and do this without polling the status register.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Tffie {
     #[doc = "0: Disable the TFFI."]
-    DisableTheTffi_ = 0,
+    Disabled = 0,
     #[doc = "1: Enable the TFFI."]
-    EnableTheTffi_ = 1,
+    Enabled = 1,
 }
 impl From<Tffie> for bool {
     #[inline(always)]
@@ -394,19 +394,19 @@ impl TffieR {
     #[inline(always)]
     pub const fn variant(&self) -> Tffie {
         match self.bits {
-            false => Tffie::DisableTheTffi_,
-            true => Tffie::EnableTheTffi_,
+            false => Tffie::Disabled,
+            true => Tffie::Enabled,
         }
     }
     #[doc = "Disable the TFFI."]
     #[inline(always)]
-    pub fn is_disable_the_tffi_(&self) -> bool {
-        *self == Tffie::DisableTheTffi_
+    pub fn is_disabled(&self) -> bool {
+        *self == Tffie::Disabled
     }
     #[doc = "Enable the TFFI."]
     #[inline(always)]
-    pub fn is_enable_the_tffi_(&self) -> bool {
-        *self == Tffie::EnableTheTffi_
+    pub fn is_enabled(&self) -> bool {
+        *self == Tffie::Enabled
     }
 }
 #[doc = "Field `TFFIE` writer - Transmit FIFO Not Full Interrupt Enable. This enables the Transmit FIFO Not Full interrupt to indicate that the more data can be written to the transmit FIFO. Note that this is not full. It is intended help the CPU to write to the I2C block only when there is room in the FIFO and do this without polling the status register."]
@@ -417,13 +417,13 @@ where
 {
     #[doc = "Disable the TFFI."]
     #[inline(always)]
-    pub fn disable_the_tffi_(self) -> &'a mut crate::W<REG> {
-        self.variant(Tffie::DisableTheTffi_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Tffie::Disabled)
     }
     #[doc = "Enable the TFFI."]
     #[inline(always)]
-    pub fn enable_the_tffi_(self) -> &'a mut crate::W<REG> {
-        self.variant(Tffie::EnableTheTffi_)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Tffie::Enabled)
     }
 }
 #[doc = "Soft reset. This is only needed in unusual circumstances. If a device issues a start condition without issuing a stop condition. A system timer may be used to reset the I2C if the bus remains busy longer than the time-out period. On a soft reset, the Tx and Rx FIFOs are flushed, I2C_STS register is cleared, and all internal state machines are reset to appear idle. The I2C_CLKHI, I2C_CLKLO and I2C_CTL (except Soft Reset Bit) are NOT modified by a soft reset.\n\nValue on reset: 0"]

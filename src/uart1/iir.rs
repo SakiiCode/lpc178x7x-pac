@@ -4,9 +4,9 @@ pub type R = crate::R<IirSpec>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Intstatus {
     #[doc = "0: At least one interrupt is pending."]
-    AtLeastOneInterru = 0,
+    Pending = 0,
     #[doc = "1: No interrupt is pending."]
-    NoInterruptIsPend = 1,
+    Empty = 1,
 }
 impl From<Intstatus> for bool {
     #[inline(always)]
@@ -21,19 +21,19 @@ impl IntstatusR {
     #[inline(always)]
     pub const fn variant(&self) -> Intstatus {
         match self.bits {
-            false => Intstatus::AtLeastOneInterru,
-            true => Intstatus::NoInterruptIsPend,
+            false => Intstatus::Pending,
+            true => Intstatus::Empty,
         }
     }
     #[doc = "At least one interrupt is pending."]
     #[inline(always)]
-    pub fn is_at_least_one_interru(&self) -> bool {
-        *self == Intstatus::AtLeastOneInterru
+    pub fn is_pending(&self) -> bool {
+        *self == Intstatus::Pending
     }
     #[doc = "No interrupt is pending."]
     #[inline(always)]
-    pub fn is_no_interrupt_is_pend(&self) -> bool {
-        *self == Intstatus::NoInterruptIsPend
+    pub fn is_empty(&self) -> bool {
+        *self == Intstatus::Empty
     }
 }
 #[doc = "Interrupt identification. IER\\[3:1\\] identifies an interrupt corresponding to the UART1 Rx or TX FIFO. All other combinations of IER\\[3:1\\] not listed below are reserved (100,101,111).\n\nValue on reset: 0"]

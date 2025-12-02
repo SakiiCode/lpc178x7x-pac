@@ -7,17 +7,17 @@ pub type W = crate::W<FlashcfgSpec>;
 #[repr(u8)]
 pub enum Flashtim {
     #[doc = "0: Flash accesses use 1 CPU clock. Use for up to 20 MHz CPU clock with power boost off."]
-    FlashAccessesUse1 = 0,
+    _1Clock = 0,
     #[doc = "1: Flash accesses use 2 CPU clocks. Use for up to 40 MHz CPU clock with power boost off."]
-    FlashAccessesUse2 = 1,
+    _2Clocks = 1,
     #[doc = "2: Flash accesses use 3 CPU clocks. Use for up to 60 MHz CPU clock with power boost off."]
-    FlashAccessesUse3 = 2,
+    _3Clocks = 2,
     #[doc = "3: Flash accesses use 4 CPU clocks. Use for up to 80 MHz CPU clock with power boost off. Use this setting for operation from 100 to 120 MHz operation with power boost on."]
-    FlashAccessesUse4 = 3,
+    _4Clocks = 3,
     #[doc = "4: Flash accesses use 5 CPU clocks. Use for up to 100 MHz CPU clock with power boost off."]
-    FlashAccessesUse5 = 4,
+    _5Clocks = 4,
     #[doc = "5: Flash accesses use 6 CPU clocks. Safe setting for any allowed conditions."]
-    FlashAccessesUse6 = 5,
+    _6Clocks = 5,
 }
 impl From<Flashtim> for u8 {
     #[inline(always)]
@@ -36,44 +36,44 @@ impl FlashtimR {
     #[inline(always)]
     pub const fn variant(&self) -> Option<Flashtim> {
         match self.bits {
-            0 => Some(Flashtim::FlashAccessesUse1),
-            1 => Some(Flashtim::FlashAccessesUse2),
-            2 => Some(Flashtim::FlashAccessesUse3),
-            3 => Some(Flashtim::FlashAccessesUse4),
-            4 => Some(Flashtim::FlashAccessesUse5),
-            5 => Some(Flashtim::FlashAccessesUse6),
+            0 => Some(Flashtim::_1Clock),
+            1 => Some(Flashtim::_2Clocks),
+            2 => Some(Flashtim::_3Clocks),
+            3 => Some(Flashtim::_4Clocks),
+            4 => Some(Flashtim::_5Clocks),
+            5 => Some(Flashtim::_6Clocks),
             _ => None,
         }
     }
     #[doc = "Flash accesses use 1 CPU clock. Use for up to 20 MHz CPU clock with power boost off."]
     #[inline(always)]
-    pub fn is_flash_accesses_use_1(&self) -> bool {
-        *self == Flashtim::FlashAccessesUse1
+    pub fn is_1_clock(&self) -> bool {
+        *self == Flashtim::_1Clock
     }
     #[doc = "Flash accesses use 2 CPU clocks. Use for up to 40 MHz CPU clock with power boost off."]
     #[inline(always)]
-    pub fn is_flash_accesses_use_2(&self) -> bool {
-        *self == Flashtim::FlashAccessesUse2
+    pub fn is_2_clocks(&self) -> bool {
+        *self == Flashtim::_2Clocks
     }
     #[doc = "Flash accesses use 3 CPU clocks. Use for up to 60 MHz CPU clock with power boost off."]
     #[inline(always)]
-    pub fn is_flash_accesses_use_3(&self) -> bool {
-        *self == Flashtim::FlashAccessesUse3
+    pub fn is_3_clocks(&self) -> bool {
+        *self == Flashtim::_3Clocks
     }
     #[doc = "Flash accesses use 4 CPU clocks. Use for up to 80 MHz CPU clock with power boost off. Use this setting for operation from 100 to 120 MHz operation with power boost on."]
     #[inline(always)]
-    pub fn is_flash_accesses_use_4(&self) -> bool {
-        *self == Flashtim::FlashAccessesUse4
+    pub fn is_4_clocks(&self) -> bool {
+        *self == Flashtim::_4Clocks
     }
     #[doc = "Flash accesses use 5 CPU clocks. Use for up to 100 MHz CPU clock with power boost off."]
     #[inline(always)]
-    pub fn is_flash_accesses_use_5(&self) -> bool {
-        *self == Flashtim::FlashAccessesUse5
+    pub fn is_5_clocks(&self) -> bool {
+        *self == Flashtim::_5Clocks
     }
     #[doc = "Flash accesses use 6 CPU clocks. Safe setting for any allowed conditions."]
     #[inline(always)]
-    pub fn is_flash_accesses_use_6(&self) -> bool {
-        *self == Flashtim::FlashAccessesUse6
+    pub fn is_6_clocks(&self) -> bool {
+        *self == Flashtim::_6Clocks
     }
 }
 #[doc = "Field `FLASHTIM` writer - Flash access time. The value of this field plus 1 gives the number of CPU clocks used for a flash access. Warning: improper setting of this value may result in incorrect operation of the device. All other values are reserved."]
@@ -85,33 +85,33 @@ where
 {
     #[doc = "Flash accesses use 1 CPU clock. Use for up to 20 MHz CPU clock with power boost off."]
     #[inline(always)]
-    pub fn flash_accesses_use_1(self) -> &'a mut crate::W<REG> {
-        self.variant(Flashtim::FlashAccessesUse1)
+    pub fn _1_clock(self) -> &'a mut crate::W<REG> {
+        self.variant(Flashtim::_1Clock)
     }
     #[doc = "Flash accesses use 2 CPU clocks. Use for up to 40 MHz CPU clock with power boost off."]
     #[inline(always)]
-    pub fn flash_accesses_use_2(self) -> &'a mut crate::W<REG> {
-        self.variant(Flashtim::FlashAccessesUse2)
+    pub fn _2_clocks(self) -> &'a mut crate::W<REG> {
+        self.variant(Flashtim::_2Clocks)
     }
     #[doc = "Flash accesses use 3 CPU clocks. Use for up to 60 MHz CPU clock with power boost off."]
     #[inline(always)]
-    pub fn flash_accesses_use_3(self) -> &'a mut crate::W<REG> {
-        self.variant(Flashtim::FlashAccessesUse3)
+    pub fn _3_clocks(self) -> &'a mut crate::W<REG> {
+        self.variant(Flashtim::_3Clocks)
     }
     #[doc = "Flash accesses use 4 CPU clocks. Use for up to 80 MHz CPU clock with power boost off. Use this setting for operation from 100 to 120 MHz operation with power boost on."]
     #[inline(always)]
-    pub fn flash_accesses_use_4(self) -> &'a mut crate::W<REG> {
-        self.variant(Flashtim::FlashAccessesUse4)
+    pub fn _4_clocks(self) -> &'a mut crate::W<REG> {
+        self.variant(Flashtim::_4Clocks)
     }
     #[doc = "Flash accesses use 5 CPU clocks. Use for up to 100 MHz CPU clock with power boost off."]
     #[inline(always)]
-    pub fn flash_accesses_use_5(self) -> &'a mut crate::W<REG> {
-        self.variant(Flashtim::FlashAccessesUse5)
+    pub fn _5_clocks(self) -> &'a mut crate::W<REG> {
+        self.variant(Flashtim::_5Clocks)
     }
     #[doc = "Flash accesses use 6 CPU clocks. Safe setting for any allowed conditions."]
     #[inline(always)]
-    pub fn flash_accesses_use_6(self) -> &'a mut crate::W<REG> {
-        self.variant(Flashtim::FlashAccessesUse6)
+    pub fn _6_clocks(self) -> &'a mut crate::W<REG> {
+        self.variant(Flashtim::_6Clocks)
     }
 }
 impl R {

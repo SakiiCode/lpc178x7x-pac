@@ -6,9 +6,9 @@ pub type W = crate::W<CtrlSpec>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum IntDmaReq {
     #[doc = "0: Clear on any write to the DACR register."]
-    ClearOnAnyWriteT = 0,
+    ClearOnWrite = 0,
     #[doc = "1: Set by hardware when the timer times out."]
-    SetByHardwareWhen = 1,
+    SetByHardware = 1,
 }
 impl From<IntDmaReq> for bool {
     #[inline(always)]
@@ -23,19 +23,19 @@ impl IntDmaReqR {
     #[inline(always)]
     pub const fn variant(&self) -> IntDmaReq {
         match self.bits {
-            false => IntDmaReq::ClearOnAnyWriteT,
-            true => IntDmaReq::SetByHardwareWhen,
+            false => IntDmaReq::ClearOnWrite,
+            true => IntDmaReq::SetByHardware,
         }
     }
     #[doc = "Clear on any write to the DACR register."]
     #[inline(always)]
-    pub fn is_clear_on_any_write_t(&self) -> bool {
-        *self == IntDmaReq::ClearOnAnyWriteT
+    pub fn is_clear_on_write(&self) -> bool {
+        *self == IntDmaReq::ClearOnWrite
     }
     #[doc = "Set by hardware when the timer times out."]
     #[inline(always)]
-    pub fn is_set_by_hardware_when(&self) -> bool {
-        *self == IntDmaReq::SetByHardwareWhen
+    pub fn is_set_by_hardware(&self) -> bool {
+        *self == IntDmaReq::SetByHardware
     }
 }
 #[doc = "Field `INT_DMA_REQ` writer - DMA interrupt request"]
@@ -46,13 +46,13 @@ where
 {
     #[doc = "Clear on any write to the DACR register."]
     #[inline(always)]
-    pub fn clear_on_any_write_t(self) -> &'a mut crate::W<REG> {
-        self.variant(IntDmaReq::ClearOnAnyWriteT)
+    pub fn clear_on_write(self) -> &'a mut crate::W<REG> {
+        self.variant(IntDmaReq::ClearOnWrite)
     }
     #[doc = "Set by hardware when the timer times out."]
     #[inline(always)]
-    pub fn set_by_hardware_when(self) -> &'a mut crate::W<REG> {
-        self.variant(IntDmaReq::SetByHardwareWhen)
+    pub fn set_by_hardware(self) -> &'a mut crate::W<REG> {
+        self.variant(IntDmaReq::SetByHardware)
     }
 }
 #[doc = "Double buffering\n\nValue on reset: 0"]
@@ -61,7 +61,7 @@ pub enum DblbufEna {
     #[doc = "0: Disable"]
     Disable = 0,
     #[doc = "1: Enable. When this bit and the CNT_ENA bit are both set, the double-buffering feature in the DACR register will be enabled. Writes to the DACR register are written to a pre-buffer and then transferred to the DACR on the next time-out of the counter."]
-    EnableWhenThisBi = 1,
+    Enable = 1,
 }
 impl From<DblbufEna> for bool {
     #[inline(always)]
@@ -77,7 +77,7 @@ impl DblbufEnaR {
     pub const fn variant(&self) -> DblbufEna {
         match self.bits {
             false => DblbufEna::Disable,
-            true => DblbufEna::EnableWhenThisBi,
+            true => DblbufEna::Enable,
         }
     }
     #[doc = "Disable"]
@@ -87,8 +87,8 @@ impl DblbufEnaR {
     }
     #[doc = "Enable. When this bit and the CNT_ENA bit are both set, the double-buffering feature in the DACR register will be enabled. Writes to the DACR register are written to a pre-buffer and then transferred to the DACR on the next time-out of the counter."]
     #[inline(always)]
-    pub fn is_enable_when_this_bi(&self) -> bool {
-        *self == DblbufEna::EnableWhenThisBi
+    pub fn is_enable(&self) -> bool {
+        *self == DblbufEna::Enable
     }
 }
 #[doc = "Field `DBLBUF_ENA` writer - Double buffering"]
@@ -104,8 +104,8 @@ where
     }
     #[doc = "Enable. When this bit and the CNT_ENA bit are both set, the double-buffering feature in the DACR register will be enabled. Writes to the DACR register are written to a pre-buffer and then transferred to the DACR on the next time-out of the counter."]
     #[inline(always)]
-    pub fn enable_when_this_bi(self) -> &'a mut crate::W<REG> {
-        self.variant(DblbufEna::EnableWhenThisBi)
+    pub fn enable(self) -> &'a mut crate::W<REG> {
+        self.variant(DblbufEna::Enable)
     }
 }
 #[doc = "Time-out counter operation\n\nValue on reset: 0"]
@@ -167,7 +167,7 @@ pub enum DmaEna {
     #[doc = "0: Disable"]
     Disable = 0,
     #[doc = "1: Enable. DMA Burst Request Input 7 is enabled for the DAC (see Table 672)."]
-    EnableDmaBurstRe = 1,
+    Enable = 1,
 }
 impl From<DmaEna> for bool {
     #[inline(always)]
@@ -183,7 +183,7 @@ impl DmaEnaR {
     pub const fn variant(&self) -> DmaEna {
         match self.bits {
             false => DmaEna::Disable,
-            true => DmaEna::EnableDmaBurstRe,
+            true => DmaEna::Enable,
         }
     }
     #[doc = "Disable"]
@@ -193,8 +193,8 @@ impl DmaEnaR {
     }
     #[doc = "Enable. DMA Burst Request Input 7 is enabled for the DAC (see Table 672)."]
     #[inline(always)]
-    pub fn is_enable_dma_burst_re(&self) -> bool {
-        *self == DmaEna::EnableDmaBurstRe
+    pub fn is_enable(&self) -> bool {
+        *self == DmaEna::Enable
     }
 }
 #[doc = "Field `DMA_ENA` writer - DMA access"]
@@ -210,8 +210,8 @@ where
     }
     #[doc = "Enable. DMA Burst Request Input 7 is enabled for the DAC (see Table 672)."]
     #[inline(always)]
-    pub fn enable_dma_burst_re(self) -> &'a mut crate::W<REG> {
-        self.variant(DmaEna::EnableDmaBurstRe)
+    pub fn enable(self) -> &'a mut crate::W<REG> {
+        self.variant(DmaEna::Enable)
     }
 }
 impl R {

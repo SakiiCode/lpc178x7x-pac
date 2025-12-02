@@ -7,9 +7,9 @@ pub type W = crate::W<RxmodeSpec>;
 #[repr(u8)]
 pub enum Rxclksel {
     #[doc = "0: Select the RX fractional rate divider clock output as the source"]
-    SelectTheRxFracti = 0,
+    RxFrd = 0,
     #[doc = "2: Select the TX_MCLK signal as the RX_MCLK clock source"]
-    SelectTheTxMclkS = 2,
+    TxMclk = 2,
 }
 impl From<Rxclksel> for u8 {
     #[inline(always)]
@@ -28,20 +28,20 @@ impl RxclkselR {
     #[inline(always)]
     pub const fn variant(&self) -> Rxclksel {
         match self.bits {
-            0 => Rxclksel::SelectTheRxFracti,
-            2 => Rxclksel::SelectTheTxMclkS,
+            0 => Rxclksel::RxFrd,
+            2 => Rxclksel::TxMclk,
             _ => unreachable!(),
         }
     }
     #[doc = "Select the RX fractional rate divider clock output as the source"]
     #[inline(always)]
-    pub fn is_select_the_rx_fracti(&self) -> bool {
-        *self == Rxclksel::SelectTheRxFracti
+    pub fn is_rx_frd(&self) -> bool {
+        *self == Rxclksel::RxFrd
     }
     #[doc = "Select the TX_MCLK signal as the RX_MCLK clock source"]
     #[inline(always)]
-    pub fn is_select_the_tx_mclk_s(&self) -> bool {
-        *self == Rxclksel::SelectTheTxMclkS
+    pub fn is_tx_mclk(&self) -> bool {
+        *self == Rxclksel::TxMclk
     }
 }
 #[doc = "Field `RXCLKSEL` writer - Clock source selection for the receive bit clock divider."]
@@ -53,13 +53,13 @@ where
 {
     #[doc = "Select the RX fractional rate divider clock output as the source"]
     #[inline(always)]
-    pub fn select_the_rx_fracti(self) -> &'a mut crate::W<REG> {
-        self.variant(Rxclksel::SelectTheRxFracti)
+    pub fn rx_frd(self) -> &'a mut crate::W<REG> {
+        self.variant(Rxclksel::RxFrd)
     }
     #[doc = "Select the TX_MCLK signal as the RX_MCLK clock source"]
     #[inline(always)]
-    pub fn select_the_tx_mclk_s(self) -> &'a mut crate::W<REG> {
-        self.variant(Rxclksel::SelectTheTxMclkS)
+    pub fn tx_mclk(self) -> &'a mut crate::W<REG> {
+        self.variant(Rxclksel::TxMclk)
     }
 }
 #[doc = "Field `RX4PIN` reader - Receive 4-pin mode selection. When 1, enables 4-pin mode."]

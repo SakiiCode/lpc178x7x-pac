@@ -6,9 +6,9 @@ pub type W = crate::W<ScsSpec>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Emcsc {
     #[doc = "0: Static memory addresses are shifted to match the data bus width. For example, when accessing a 32-bit wide data bus, the address is shifted right 2 places such that bit 2 is the LSB. In this mode, address bit 0 for the this device is connected to address bit 0 of the memory device, thus simplifying memory connections. This also makes a larger memory address range possible, because additional upper address bits can appear on the higher address pins due to the shift."]
-    MatchDataBus = 0,
+    Active = 0,
     #[doc = "1: Static memory addresses are always output as byte addresses regardless of the data bus width. For example, when word data is accessed on a 32-bit bus, address bits 1 and 0 will always be 0. In this mode, one or both lower address bits may not be connected to memories that are part of a bus that is wider than 8 bits. This mode matches the operation of LPC23xx and LPC24xx devices."]
-    NoShift = 1,
+    Inactive = 1,
 }
 impl From<Emcsc> for bool {
     #[inline(always)]
@@ -23,19 +23,19 @@ impl EmcscR {
     #[inline(always)]
     pub const fn variant(&self) -> Emcsc {
         match self.bits {
-            false => Emcsc::MatchDataBus,
-            true => Emcsc::NoShift,
+            false => Emcsc::Active,
+            true => Emcsc::Inactive,
         }
     }
     #[doc = "Static memory addresses are shifted to match the data bus width. For example, when accessing a 32-bit wide data bus, the address is shifted right 2 places such that bit 2 is the LSB. In this mode, address bit 0 for the this device is connected to address bit 0 of the memory device, thus simplifying memory connections. This also makes a larger memory address range possible, because additional upper address bits can appear on the higher address pins due to the shift."]
     #[inline(always)]
-    pub fn is_match_data_bus(&self) -> bool {
-        *self == Emcsc::MatchDataBus
+    pub fn is_active(&self) -> bool {
+        *self == Emcsc::Active
     }
     #[doc = "Static memory addresses are always output as byte addresses regardless of the data bus width. For example, when word data is accessed on a 32-bit bus, address bits 1 and 0 will always be 0. In this mode, one or both lower address bits may not be connected to memories that are part of a bus that is wider than 8 bits. This mode matches the operation of LPC23xx and LPC24xx devices."]
     #[inline(always)]
-    pub fn is_no_shift(&self) -> bool {
-        *self == Emcsc::NoShift
+    pub fn is_inactive(&self) -> bool {
+        *self == Emcsc::Inactive
     }
 }
 #[doc = "Field `EMCSC` writer - EMC Shift Control. Controls how addresses are output on the EMC address pins for static memories. Also see Section 10.9 in the EMC chapter."]
@@ -46,22 +46,22 @@ where
 {
     #[doc = "Static memory addresses are shifted to match the data bus width. For example, when accessing a 32-bit wide data bus, the address is shifted right 2 places such that bit 2 is the LSB. In this mode, address bit 0 for the this device is connected to address bit 0 of the memory device, thus simplifying memory connections. This also makes a larger memory address range possible, because additional upper address bits can appear on the higher address pins due to the shift."]
     #[inline(always)]
-    pub fn match_data_bus(self) -> &'a mut crate::W<REG> {
-        self.variant(Emcsc::MatchDataBus)
+    pub fn active(self) -> &'a mut crate::W<REG> {
+        self.variant(Emcsc::Active)
     }
     #[doc = "Static memory addresses are always output as byte addresses regardless of the data bus width. For example, when word data is accessed on a 32-bit bus, address bits 1 and 0 will always be 0. In this mode, one or both lower address bits may not be connected to memories that are part of a bus that is wider than 8 bits. This mode matches the operation of LPC23xx and LPC24xx devices."]
     #[inline(always)]
-    pub fn no_shift(self) -> &'a mut crate::W<REG> {
-        self.variant(Emcsc::NoShift)
+    pub fn inactive(self) -> &'a mut crate::W<REG> {
+        self.variant(Emcsc::Inactive)
     }
 }
 #[doc = "EMC Reset Disable\\[1\\]. External Memory Controller Reset Disable. Also see Section 10.8 in the EMC chapter.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Emcrd {
     #[doc = "0: Both EMC resets are asserted when any type of chip reset event occurs. In this mode, all registers and functions of the EMC are initialized upon any reset condition."]
-    BothEmcResetsAre_ = 0,
+    AnyReset = 0,
     #[doc = "1: Many portions of the EMC are only reset by a power-on or brown-out event, in order to allow the EMC to retain its state through a warm reset (external reset or watchdog reset). If the EMC is configured correctly, auto-refresh can be maintained through a warm reset."]
-    ManyPortionsOfThe = 1,
+    PwrOnly = 1,
 }
 impl From<Emcrd> for bool {
     #[inline(always)]
@@ -76,19 +76,19 @@ impl EmcrdR {
     #[inline(always)]
     pub const fn variant(&self) -> Emcrd {
         match self.bits {
-            false => Emcrd::BothEmcResetsAre_,
-            true => Emcrd::ManyPortionsOfThe,
+            false => Emcrd::AnyReset,
+            true => Emcrd::PwrOnly,
         }
     }
     #[doc = "Both EMC resets are asserted when any type of chip reset event occurs. In this mode, all registers and functions of the EMC are initialized upon any reset condition."]
     #[inline(always)]
-    pub fn is_both_emc_resets_are_(&self) -> bool {
-        *self == Emcrd::BothEmcResetsAre_
+    pub fn is_any_reset(&self) -> bool {
+        *self == Emcrd::AnyReset
     }
     #[doc = "Many portions of the EMC are only reset by a power-on or brown-out event, in order to allow the EMC to retain its state through a warm reset (external reset or watchdog reset). If the EMC is configured correctly, auto-refresh can be maintained through a warm reset."]
     #[inline(always)]
-    pub fn is_many_portions_of_the(&self) -> bool {
-        *self == Emcrd::ManyPortionsOfThe
+    pub fn is_pwr_only(&self) -> bool {
+        *self == Emcrd::PwrOnly
     }
 }
 #[doc = "Field `EMCRD` writer - EMC Reset Disable\\[1\\]. External Memory Controller Reset Disable. Also see Section 10.8 in the EMC chapter."]
@@ -99,22 +99,22 @@ where
 {
     #[doc = "Both EMC resets are asserted when any type of chip reset event occurs. In this mode, all registers and functions of the EMC are initialized upon any reset condition."]
     #[inline(always)]
-    pub fn both_emc_resets_are_(self) -> &'a mut crate::W<REG> {
-        self.variant(Emcrd::BothEmcResetsAre_)
+    pub fn any_reset(self) -> &'a mut crate::W<REG> {
+        self.variant(Emcrd::AnyReset)
     }
     #[doc = "Many portions of the EMC are only reset by a power-on or brown-out event, in order to allow the EMC to retain its state through a warm reset (external reset or watchdog reset). If the EMC is configured correctly, auto-refresh can be maintained through a warm reset."]
     #[inline(always)]
-    pub fn many_portions_of_the(self) -> &'a mut crate::W<REG> {
-        self.variant(Emcrd::ManyPortionsOfThe)
+    pub fn pwr_only(self) -> &'a mut crate::W<REG> {
+        self.variant(Emcrd::PwrOnly)
     }
 }
 #[doc = "External Memory Controller burst control. Also see Section 10.10 in the EMC chapter.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Emcbc {
     #[doc = "0: Burst enabled."]
-    BurstEnabled_ = 0,
+    Enabled = 0,
     #[doc = "1: Burst disabled. This mode can be used to prevent multiple sequential accesses to memory mapped I/O devices connected to EMC static memory chip selects. These unrequested accesses can cause issues with some I/O devices."]
-    BurstDisabledThis = 1,
+    Disabled = 1,
 }
 impl From<Emcbc> for bool {
     #[inline(always)]
@@ -129,19 +129,19 @@ impl EmcbcR {
     #[inline(always)]
     pub const fn variant(&self) -> Emcbc {
         match self.bits {
-            false => Emcbc::BurstEnabled_,
-            true => Emcbc::BurstDisabledThis,
+            false => Emcbc::Enabled,
+            true => Emcbc::Disabled,
         }
     }
     #[doc = "Burst enabled."]
     #[inline(always)]
-    pub fn is_burst_enabled_(&self) -> bool {
-        *self == Emcbc::BurstEnabled_
+    pub fn is_enabled(&self) -> bool {
+        *self == Emcbc::Enabled
     }
     #[doc = "Burst disabled. This mode can be used to prevent multiple sequential accesses to memory mapped I/O devices connected to EMC static memory chip selects. These unrequested accesses can cause issues with some I/O devices."]
     #[inline(always)]
-    pub fn is_burst_disabled_this(&self) -> bool {
-        *self == Emcbc::BurstDisabledThis
+    pub fn is_disabled(&self) -> bool {
+        *self == Emcbc::Disabled
     }
 }
 #[doc = "Field `EMCBC` writer - External Memory Controller burst control. Also see Section 10.10 in the EMC chapter."]
@@ -152,22 +152,22 @@ where
 {
     #[doc = "Burst enabled."]
     #[inline(always)]
-    pub fn burst_enabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Emcbc::BurstEnabled_)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Emcbc::Enabled)
     }
     #[doc = "Burst disabled. This mode can be used to prevent multiple sequential accesses to memory mapped I/O devices connected to EMC static memory chip selects. These unrequested accesses can cause issues with some I/O devices."]
     #[inline(always)]
-    pub fn burst_disabled_this(self) -> &'a mut crate::W<REG> {
-        self.variant(Emcbc::BurstDisabledThis)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Emcbc::Disabled)
     }
 }
 #[doc = "MCIPWR Active Level\\[1\\]. Selects the active level of the SD card interface signal SD_PWR.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Mcipwral {
     #[doc = "0: SD_PWR is active low (inverted output of the SD Card interface block)."]
-    SdPwrIsActiveLow = 0,
+    ActiveLow = 0,
     #[doc = "1: SD_PWR is active high (follows the output of the SD Card interface block)."]
-    SdPwrIsActiveHig = 1,
+    ActiveHigh = 1,
 }
 impl From<Mcipwral> for bool {
     #[inline(always)]
@@ -182,19 +182,19 @@ impl McipwralR {
     #[inline(always)]
     pub const fn variant(&self) -> Mcipwral {
         match self.bits {
-            false => Mcipwral::SdPwrIsActiveLow,
-            true => Mcipwral::SdPwrIsActiveHig,
+            false => Mcipwral::ActiveLow,
+            true => Mcipwral::ActiveHigh,
         }
     }
     #[doc = "SD_PWR is active low (inverted output of the SD Card interface block)."]
     #[inline(always)]
-    pub fn is_sd_pwr_is_active_low(&self) -> bool {
-        *self == Mcipwral::SdPwrIsActiveLow
+    pub fn is_active_low(&self) -> bool {
+        *self == Mcipwral::ActiveLow
     }
     #[doc = "SD_PWR is active high (follows the output of the SD Card interface block)."]
     #[inline(always)]
-    pub fn is_sd_pwr_is_active_hig(&self) -> bool {
-        *self == Mcipwral::SdPwrIsActiveHig
+    pub fn is_active_high(&self) -> bool {
+        *self == Mcipwral::ActiveHigh
     }
 }
 #[doc = "Field `MCIPWRAL` writer - MCIPWR Active Level\\[1\\]. Selects the active level of the SD card interface signal SD_PWR."]
@@ -205,13 +205,13 @@ where
 {
     #[doc = "SD_PWR is active low (inverted output of the SD Card interface block)."]
     #[inline(always)]
-    pub fn sd_pwr_is_active_low(self) -> &'a mut crate::W<REG> {
-        self.variant(Mcipwral::SdPwrIsActiveLow)
+    pub fn active_low(self) -> &'a mut crate::W<REG> {
+        self.variant(Mcipwral::ActiveLow)
     }
     #[doc = "SD_PWR is active high (follows the output of the SD Card interface block)."]
     #[inline(always)]
-    pub fn sd_pwr_is_active_hig(self) -> &'a mut crate::W<REG> {
-        self.variant(Mcipwral::SdPwrIsActiveHig)
+    pub fn active_high(self) -> &'a mut crate::W<REG> {
+        self.variant(Mcipwral::ActiveHigh)
     }
 }
 #[doc = "Main oscillator range select.\n\nValue on reset: 0"]

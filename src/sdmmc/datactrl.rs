@@ -10,9 +10,9 @@ pub type EnableW<'a, REG> = crate::BitWriter<'a, REG>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Direction {
     #[doc = "0: From controller to card."]
-    FromControllerToC = 0,
+    ToCard = 0,
     #[doc = "1: From card to controller."]
-    FromCardToControl = 1,
+    ToController = 1,
 }
 impl From<Direction> for bool {
     #[inline(always)]
@@ -27,19 +27,19 @@ impl DirectionR {
     #[inline(always)]
     pub const fn variant(&self) -> Direction {
         match self.bits {
-            false => Direction::FromControllerToC,
-            true => Direction::FromCardToControl,
+            false => Direction::ToCard,
+            true => Direction::ToController,
         }
     }
     #[doc = "From controller to card."]
     #[inline(always)]
-    pub fn is_from_controller_to_c(&self) -> bool {
-        *self == Direction::FromControllerToC
+    pub fn is_to_card(&self) -> bool {
+        *self == Direction::ToCard
     }
     #[doc = "From card to controller."]
     #[inline(always)]
-    pub fn is_from_card_to_control(&self) -> bool {
-        *self == Direction::FromCardToControl
+    pub fn is_to_controller(&self) -> bool {
+        *self == Direction::ToController
     }
 }
 #[doc = "Field `DIRECTION` writer - Data transfer direction"]
@@ -50,22 +50,22 @@ where
 {
     #[doc = "From controller to card."]
     #[inline(always)]
-    pub fn from_controller_to_c(self) -> &'a mut crate::W<REG> {
-        self.variant(Direction::FromControllerToC)
+    pub fn to_card(self) -> &'a mut crate::W<REG> {
+        self.variant(Direction::ToCard)
     }
     #[doc = "From card to controller."]
     #[inline(always)]
-    pub fn from_card_to_control(self) -> &'a mut crate::W<REG> {
-        self.variant(Direction::FromCardToControl)
+    pub fn to_controller(self) -> &'a mut crate::W<REG> {
+        self.variant(Direction::ToController)
     }
 }
 #[doc = "Data transfer mode\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Mode {
     #[doc = "0: Block data transfer."]
-    BlockDataTransfer_ = 0,
+    Block = 0,
     #[doc = "1: Stream data transfer."]
-    StreamDataTransfer = 1,
+    Stream = 1,
 }
 impl From<Mode> for bool {
     #[inline(always)]
@@ -80,19 +80,19 @@ impl ModeR {
     #[inline(always)]
     pub const fn variant(&self) -> Mode {
         match self.bits {
-            false => Mode::BlockDataTransfer_,
-            true => Mode::StreamDataTransfer,
+            false => Mode::Block,
+            true => Mode::Stream,
         }
     }
     #[doc = "Block data transfer."]
     #[inline(always)]
-    pub fn is_block_data_transfer_(&self) -> bool {
-        *self == Mode::BlockDataTransfer_
+    pub fn is_block(&self) -> bool {
+        *self == Mode::Block
     }
     #[doc = "Stream data transfer."]
     #[inline(always)]
-    pub fn is_stream_data_transfer(&self) -> bool {
-        *self == Mode::StreamDataTransfer
+    pub fn is_stream(&self) -> bool {
+        *self == Mode::Stream
     }
 }
 #[doc = "Field `MODE` writer - Data transfer mode"]
@@ -103,22 +103,22 @@ where
 {
     #[doc = "Block data transfer."]
     #[inline(always)]
-    pub fn block_data_transfer_(self) -> &'a mut crate::W<REG> {
-        self.variant(Mode::BlockDataTransfer_)
+    pub fn block(self) -> &'a mut crate::W<REG> {
+        self.variant(Mode::Block)
     }
     #[doc = "Stream data transfer."]
     #[inline(always)]
-    pub fn stream_data_transfer(self) -> &'a mut crate::W<REG> {
-        self.variant(Mode::StreamDataTransfer)
+    pub fn stream(self) -> &'a mut crate::W<REG> {
+        self.variant(Mode::Stream)
     }
 }
 #[doc = "Enable DMA\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Dmaenable {
     #[doc = "0: DMA disabled."]
-    DmaDisabled_ = 0,
+    Disabled = 0,
     #[doc = "1: DMA enabled."]
-    DmaEnabled_ = 1,
+    Enabled = 1,
 }
 impl From<Dmaenable> for bool {
     #[inline(always)]
@@ -133,19 +133,19 @@ impl DmaenableR {
     #[inline(always)]
     pub const fn variant(&self) -> Dmaenable {
         match self.bits {
-            false => Dmaenable::DmaDisabled_,
-            true => Dmaenable::DmaEnabled_,
+            false => Dmaenable::Disabled,
+            true => Dmaenable::Enabled,
         }
     }
     #[doc = "DMA disabled."]
     #[inline(always)]
-    pub fn is_dma_disabled_(&self) -> bool {
-        *self == Dmaenable::DmaDisabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Dmaenable::Disabled
     }
     #[doc = "DMA enabled."]
     #[inline(always)]
-    pub fn is_dma_enabled_(&self) -> bool {
-        *self == Dmaenable::DmaEnabled_
+    pub fn is_enabled(&self) -> bool {
+        *self == Dmaenable::Enabled
     }
 }
 #[doc = "Field `DMAENABLE` writer - Enable DMA"]
@@ -156,13 +156,13 @@ where
 {
     #[doc = "DMA disabled."]
     #[inline(always)]
-    pub fn dma_disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Dmaenable::DmaDisabled_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Dmaenable::Disabled)
     }
     #[doc = "DMA enabled."]
     #[inline(always)]
-    pub fn dma_enabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Dmaenable::DmaEnabled_)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Dmaenable::Enabled)
     }
 }
 #[doc = "Field `BLOCKSIZE` reader - Data block length"]

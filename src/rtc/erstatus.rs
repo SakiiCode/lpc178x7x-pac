@@ -6,9 +6,9 @@ pub type W = crate::W<ErstatusSpec>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Ev0 {
     #[doc = "0: No event change on channel 0."]
-    NoEventChangeOnC = 0,
+    NoEvent = 0,
     #[doc = "1: At least one event has occurred on channel 0."]
-    AtLeastOneEventH = 1,
+    Events = 1,
 }
 impl From<Ev0> for bool {
     #[inline(always)]
@@ -23,19 +23,19 @@ impl Ev0R {
     #[inline(always)]
     pub const fn variant(&self) -> Ev0 {
         match self.bits {
-            false => Ev0::NoEventChangeOnC,
-            true => Ev0::AtLeastOneEventH,
+            false => Ev0::NoEvent,
+            true => Ev0::Events,
         }
     }
     #[doc = "No event change on channel 0."]
     #[inline(always)]
-    pub fn is_no_event_change_on_c(&self) -> bool {
-        *self == Ev0::NoEventChangeOnC
+    pub fn is_no_event(&self) -> bool {
+        *self == Ev0::NoEvent
     }
     #[doc = "At least one event has occurred on channel 0."]
     #[inline(always)]
-    pub fn is_at_least_one_event_h(&self) -> bool {
-        *self == Ev0::AtLeastOneEventH
+    pub fn is_events(&self) -> bool {
+        *self == Ev0::Events
     }
 }
 #[doc = "Field `EV0` writer - Event flag for channel 0 (RTC_EV0 pin). Set at the end of any second if there has been an event during the preceding second. This bit is cleared by writing a 1 to it. Writing 0 has no effect."]
@@ -46,22 +46,22 @@ where
 {
     #[doc = "No event change on channel 0."]
     #[inline(always)]
-    pub fn no_event_change_on_c(self) -> &'a mut crate::W<REG> {
-        self.variant(Ev0::NoEventChangeOnC)
+    pub fn no_event(self) -> &'a mut crate::W<REG> {
+        self.variant(Ev0::NoEvent)
     }
     #[doc = "At least one event has occurred on channel 0."]
     #[inline(always)]
-    pub fn at_least_one_event_h(self) -> &'a mut crate::W<REG> {
-        self.variant(Ev0::AtLeastOneEventH)
+    pub fn events(self) -> &'a mut crate::W<REG> {
+        self.variant(Ev0::Events)
     }
 }
 #[doc = "Event flag for channel 1 (RTC_EV1 pin). Set at the end of any second if there has been an event during the preceding second. This bit is cleared by writing a 1 to it. Writing 0 has no effect.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Ev1 {
     #[doc = "0: No event change on channel 1."]
-    NoEventChangeOnC = 0,
+    NoEvent = 0,
     #[doc = "1: At least one event has occurred on channel 1."]
-    AtLeastOneEventH = 1,
+    Events = 1,
 }
 impl From<Ev1> for bool {
     #[inline(always)]
@@ -76,19 +76,19 @@ impl Ev1R {
     #[inline(always)]
     pub const fn variant(&self) -> Ev1 {
         match self.bits {
-            false => Ev1::NoEventChangeOnC,
-            true => Ev1::AtLeastOneEventH,
+            false => Ev1::NoEvent,
+            true => Ev1::Events,
         }
     }
     #[doc = "No event change on channel 1."]
     #[inline(always)]
-    pub fn is_no_event_change_on_c(&self) -> bool {
-        *self == Ev1::NoEventChangeOnC
+    pub fn is_no_event(&self) -> bool {
+        *self == Ev1::NoEvent
     }
     #[doc = "At least one event has occurred on channel 1."]
     #[inline(always)]
-    pub fn is_at_least_one_event_h(&self) -> bool {
-        *self == Ev1::AtLeastOneEventH
+    pub fn is_events(&self) -> bool {
+        *self == Ev1::Events
     }
 }
 #[doc = "Field `EV1` writer - Event flag for channel 1 (RTC_EV1 pin). Set at the end of any second if there has been an event during the preceding second. This bit is cleared by writing a 1 to it. Writing 0 has no effect."]
@@ -99,22 +99,22 @@ where
 {
     #[doc = "No event change on channel 1."]
     #[inline(always)]
-    pub fn no_event_change_on_c(self) -> &'a mut crate::W<REG> {
-        self.variant(Ev1::NoEventChangeOnC)
+    pub fn no_event(self) -> &'a mut crate::W<REG> {
+        self.variant(Ev1::NoEvent)
     }
     #[doc = "At least one event has occurred on channel 1."]
     #[inline(always)]
-    pub fn at_least_one_event_h(self) -> &'a mut crate::W<REG> {
-        self.variant(Ev1::AtLeastOneEventH)
+    pub fn events(self) -> &'a mut crate::W<REG> {
+        self.variant(Ev1::Events)
     }
 }
 #[doc = "Event flag for channel 2 (RTC_EV2 pin). Set at the end of any second if there has been an event during the preceding second. This bit is cleared by writing a 1 to it. Writing 0 has no effect.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Ev2 {
     #[doc = "0: No event change on channel 2."]
-    NoEventChangeOnC = 0,
+    NoEvent = 0,
     #[doc = "1: At least one event has occurred on channel 2."]
-    AtLeastOneEventH = 1,
+    Events = 1,
 }
 impl From<Ev2> for bool {
     #[inline(always)]
@@ -129,19 +129,19 @@ impl Ev2R {
     #[inline(always)]
     pub const fn variant(&self) -> Ev2 {
         match self.bits {
-            false => Ev2::NoEventChangeOnC,
-            true => Ev2::AtLeastOneEventH,
+            false => Ev2::NoEvent,
+            true => Ev2::Events,
         }
     }
     #[doc = "No event change on channel 2."]
     #[inline(always)]
-    pub fn is_no_event_change_on_c(&self) -> bool {
-        *self == Ev2::NoEventChangeOnC
+    pub fn is_no_event(&self) -> bool {
+        *self == Ev2::NoEvent
     }
     #[doc = "At least one event has occurred on channel 2."]
     #[inline(always)]
-    pub fn is_at_least_one_event_h(&self) -> bool {
-        *self == Ev2::AtLeastOneEventH
+    pub fn is_events(&self) -> bool {
+        *self == Ev2::Events
     }
 }
 #[doc = "Field `EV2` writer - Event flag for channel 2 (RTC_EV2 pin). Set at the end of any second if there has been an event during the preceding second. This bit is cleared by writing a 1 to it. Writing 0 has no effect."]
@@ -152,13 +152,13 @@ where
 {
     #[doc = "No event change on channel 2."]
     #[inline(always)]
-    pub fn no_event_change_on_c(self) -> &'a mut crate::W<REG> {
-        self.variant(Ev2::NoEventChangeOnC)
+    pub fn no_event(self) -> &'a mut crate::W<REG> {
+        self.variant(Ev2::NoEvent)
     }
     #[doc = "At least one event has occurred on channel 2."]
     #[inline(always)]
-    pub fn at_least_one_event_h(self) -> &'a mut crate::W<REG> {
-        self.variant(Ev2::AtLeastOneEventH)
+    pub fn events(self) -> &'a mut crate::W<REG> {
+        self.variant(Ev2::Events)
     }
 }
 #[doc = "General purpose register asynchronous clear flag. This bit is cleared by writing a 1 to it. Writing 0 has no effect.\n\nValue on reset: 0"]
@@ -218,9 +218,9 @@ where
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Wakeup {
     #[doc = "0: No interrupt/wakeup request is pending"]
-    NoInterruptwakeup_ = 0,
+    Empty = 0,
     #[doc = "1: An interrupt/wakeup request is pending."]
-    IntwakeupPend = 1,
+    Pending = 1,
 }
 impl From<Wakeup> for bool {
     #[inline(always)]
@@ -235,19 +235,19 @@ impl WakeupR {
     #[inline(always)]
     pub const fn variant(&self) -> Wakeup {
         match self.bits {
-            false => Wakeup::NoInterruptwakeup_,
-            true => Wakeup::IntwakeupPend,
+            false => Wakeup::Empty,
+            true => Wakeup::Pending,
         }
     }
     #[doc = "No interrupt/wakeup request is pending"]
     #[inline(always)]
-    pub fn is_no_interruptwakeup_(&self) -> bool {
-        *self == Wakeup::NoInterruptwakeup_
+    pub fn is_empty(&self) -> bool {
+        *self == Wakeup::Empty
     }
     #[doc = "An interrupt/wakeup request is pending."]
     #[inline(always)]
-    pub fn is_intwakeup_pend(&self) -> bool {
-        *self == Wakeup::IntwakeupPend
+    pub fn is_pending(&self) -> bool {
+        *self == Wakeup::Pending
     }
 }
 #[doc = "Field `WAKEUP` writer - Interrupt/wakeup request flag (Read-only). This bit is cleared by writing a 1 to it. Writing 0 has no effect."]
@@ -258,13 +258,13 @@ where
 {
     #[doc = "No interrupt/wakeup request is pending"]
     #[inline(always)]
-    pub fn no_interruptwakeup_(self) -> &'a mut crate::W<REG> {
-        self.variant(Wakeup::NoInterruptwakeup_)
+    pub fn empty(self) -> &'a mut crate::W<REG> {
+        self.variant(Wakeup::Empty)
     }
     #[doc = "An interrupt/wakeup request is pending."]
     #[inline(always)]
-    pub fn intwakeup_pend(self) -> &'a mut crate::W<REG> {
-        self.variant(Wakeup::IntwakeupPend)
+    pub fn pending(self) -> &'a mut crate::W<REG> {
+        self.variant(Wakeup::Pending)
     }
 }
 impl R {

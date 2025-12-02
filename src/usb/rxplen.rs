@@ -6,9 +6,9 @@ pub type PktLngthR = crate::FieldReader<u16>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Dv {
     #[doc = "0: Data is invalid."]
-    DataIsInvalid_ = 0,
+    Invalid = 0,
     #[doc = "1: Data is valid."]
-    DataIsValid_ = 1,
+    Valid = 1,
 }
 impl From<Dv> for bool {
     #[inline(always)]
@@ -23,19 +23,19 @@ impl DvR {
     #[inline(always)]
     pub const fn variant(&self) -> Dv {
         match self.bits {
-            false => Dv::DataIsInvalid_,
-            true => Dv::DataIsValid_,
+            false => Dv::Invalid,
+            true => Dv::Valid,
         }
     }
     #[doc = "Data is invalid."]
     #[inline(always)]
-    pub fn is_data_is_invalid_(&self) -> bool {
-        *self == Dv::DataIsInvalid_
+    pub fn is_invalid(&self) -> bool {
+        *self == Dv::Invalid
     }
     #[doc = "Data is valid."]
     #[inline(always)]
-    pub fn is_data_is_valid_(&self) -> bool {
-        *self == Dv::DataIsValid_
+    pub fn is_valid(&self) -> bool {
+        *self == Dv::Valid
     }
 }
 #[doc = "Field `PKT_RDY` reader - The PKT_LNGTH field is valid and the packet is ready for reading."]

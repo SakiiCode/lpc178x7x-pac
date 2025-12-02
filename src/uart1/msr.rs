@@ -4,9 +4,9 @@ pub type R = crate::R<MsrSpec>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Dcts {
     #[doc = "0: No change detected on modem input, CTS."]
-    NoChangeDetectedO = 0,
+    Inactive = 0,
     #[doc = "1: State change detected on modem input, CTS."]
-    StateChangeDetecte = 1,
+    Active = 1,
 }
 impl From<Dcts> for bool {
     #[inline(always)]
@@ -21,28 +21,28 @@ impl DctsR {
     #[inline(always)]
     pub const fn variant(&self) -> Dcts {
         match self.bits {
-            false => Dcts::NoChangeDetectedO,
-            true => Dcts::StateChangeDetecte,
+            false => Dcts::Inactive,
+            true => Dcts::Active,
         }
     }
     #[doc = "No change detected on modem input, CTS."]
     #[inline(always)]
-    pub fn is_no_change_detected_o(&self) -> bool {
-        *self == Dcts::NoChangeDetectedO
+    pub fn is_inactive(&self) -> bool {
+        *self == Dcts::Inactive
     }
     #[doc = "State change detected on modem input, CTS."]
     #[inline(always)]
-    pub fn is_state_change_detecte(&self) -> bool {
-        *self == Dcts::StateChangeDetecte
+    pub fn is_active(&self) -> bool {
+        *self == Dcts::Active
     }
 }
 #[doc = "Delta DSR. Set upon state change of input DSR. Cleared on an MSR read.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Ddsr {
     #[doc = "0: No change detected on modem input, DSR."]
-    NoChangeDetectedO = 0,
+    Inactive = 0,
     #[doc = "1: State change detected on modem input, DSR."]
-    StateChangeDetecte = 1,
+    Active = 1,
 }
 impl From<Ddsr> for bool {
     #[inline(always)]
@@ -57,28 +57,28 @@ impl DdsrR {
     #[inline(always)]
     pub const fn variant(&self) -> Ddsr {
         match self.bits {
-            false => Ddsr::NoChangeDetectedO,
-            true => Ddsr::StateChangeDetecte,
+            false => Ddsr::Inactive,
+            true => Ddsr::Active,
         }
     }
     #[doc = "No change detected on modem input, DSR."]
     #[inline(always)]
-    pub fn is_no_change_detected_o(&self) -> bool {
-        *self == Ddsr::NoChangeDetectedO
+    pub fn is_inactive(&self) -> bool {
+        *self == Ddsr::Inactive
     }
     #[doc = "State change detected on modem input, DSR."]
     #[inline(always)]
-    pub fn is_state_change_detecte(&self) -> bool {
-        *self == Ddsr::StateChangeDetecte
+    pub fn is_active(&self) -> bool {
+        *self == Ddsr::Active
     }
 }
 #[doc = "Trailing Edge RI. Set upon low to high transition of input RI. Cleared on an MSR read.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Teri {
     #[doc = "0: No change detected on modem input, RI."]
-    NoChangeDetectedO = 0,
+    Inactive = 0,
     #[doc = "1: Low-to-high transition detected on RI."]
-    LowToHighTransiti = 1,
+    Active = 1,
 }
 impl From<Teri> for bool {
     #[inline(always)]
@@ -93,28 +93,28 @@ impl TeriR {
     #[inline(always)]
     pub const fn variant(&self) -> Teri {
         match self.bits {
-            false => Teri::NoChangeDetectedO,
-            true => Teri::LowToHighTransiti,
+            false => Teri::Inactive,
+            true => Teri::Active,
         }
     }
     #[doc = "No change detected on modem input, RI."]
     #[inline(always)]
-    pub fn is_no_change_detected_o(&self) -> bool {
-        *self == Teri::NoChangeDetectedO
+    pub fn is_inactive(&self) -> bool {
+        *self == Teri::Inactive
     }
     #[doc = "Low-to-high transition detected on RI."]
     #[inline(always)]
-    pub fn is_low_to_high_transiti(&self) -> bool {
-        *self == Teri::LowToHighTransiti
+    pub fn is_active(&self) -> bool {
+        *self == Teri::Active
     }
 }
 #[doc = "Delta DCD. Set upon state change of input DCD. Cleared on an MSR read.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Ddcd {
     #[doc = "0: No change detected on modem input, DCD."]
-    NoChangeDetectedO = 0,
+    Inactive = 0,
     #[doc = "1: State change detected on modem input, DCD."]
-    StateChangeDetecte = 1,
+    Active = 1,
 }
 impl From<Ddcd> for bool {
     #[inline(always)]
@@ -129,19 +129,19 @@ impl DdcdR {
     #[inline(always)]
     pub const fn variant(&self) -> Ddcd {
         match self.bits {
-            false => Ddcd::NoChangeDetectedO,
-            true => Ddcd::StateChangeDetecte,
+            false => Ddcd::Inactive,
+            true => Ddcd::Active,
         }
     }
     #[doc = "No change detected on modem input, DCD."]
     #[inline(always)]
-    pub fn is_no_change_detected_o(&self) -> bool {
-        *self == Ddcd::NoChangeDetectedO
+    pub fn is_inactive(&self) -> bool {
+        *self == Ddcd::Inactive
     }
     #[doc = "State change detected on modem input, DCD."]
     #[inline(always)]
-    pub fn is_state_change_detecte(&self) -> bool {
-        *self == Ddcd::StateChangeDetecte
+    pub fn is_active(&self) -> bool {
+        *self == Ddcd::Active
     }
 }
 #[doc = "Field `CTS` reader - Clear To Send State. Complement of input signal CTS. This bit is connected to MCR\\[1\\] in modem loopback mode."]
@@ -194,7 +194,7 @@ impl R {
         DcdR::new(((self.bits >> 7) & 1) != 0)
     }
 }
-#[doc = "Modem Status Register. Contains handshake signal status flags.\n\nYou can [`read`](crate::Reg::read) this register and get [`msr::R`](R). See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+#[doc = "Modem Status Register. Contains handshake signal status flags.\n\nYou can [`read`](crate::Reg::read) this register and get [`msr::R`](R). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\n<div class=\"warning\">The register is <b>modified</b> in some way after a read operation.</div>"]
 pub struct MsrSpec;
 impl crate::RegisterSpec for MsrSpec {
     type Ux = u32;

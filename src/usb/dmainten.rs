@@ -6,9 +6,9 @@ pub type W = crate::W<DmaintenSpec>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Eot {
     #[doc = "0: Disabled."]
-    Disabled_ = 0,
+    Disabled = 0,
     #[doc = "1: Enabled."]
-    Enabled_ = 1,
+    Enabled = 1,
 }
 impl From<Eot> for bool {
     #[inline(always)]
@@ -23,19 +23,19 @@ impl EotR {
     #[inline(always)]
     pub const fn variant(&self) -> Eot {
         match self.bits {
-            false => Eot::Disabled_,
-            true => Eot::Enabled_,
+            false => Eot::Disabled,
+            true => Eot::Enabled,
         }
     }
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn is_disabled_(&self) -> bool {
-        *self == Eot::Disabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Eot::Disabled
     }
     #[doc = "Enabled."]
     #[inline(always)]
-    pub fn is_enabled_(&self) -> bool {
-        *self == Eot::Enabled_
+    pub fn is_enabled(&self) -> bool {
+        *self == Eot::Enabled
     }
 }
 #[doc = "Field `EOT` writer - End of Transfer Interrupt enable bit."]
@@ -46,22 +46,22 @@ where
 {
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Eot::Disabled_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Eot::Disabled)
     }
     #[doc = "Enabled."]
     #[inline(always)]
-    pub fn enabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Eot::Enabled_)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Eot::Enabled)
     }
 }
 #[doc = "New DD Request Interrupt enable bit.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Nddr {
     #[doc = "0: Disabled."]
-    Disabled_ = 0,
+    Disabled = 0,
     #[doc = "1: Enabled."]
-    Enabled_ = 1,
+    Enabled = 1,
 }
 impl From<Nddr> for bool {
     #[inline(always)]
@@ -76,19 +76,19 @@ impl NddrR {
     #[inline(always)]
     pub const fn variant(&self) -> Nddr {
         match self.bits {
-            false => Nddr::Disabled_,
-            true => Nddr::Enabled_,
+            false => Nddr::Disabled,
+            true => Nddr::Enabled,
         }
     }
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn is_disabled_(&self) -> bool {
-        *self == Nddr::Disabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Nddr::Disabled
     }
     #[doc = "Enabled."]
     #[inline(always)]
-    pub fn is_enabled_(&self) -> bool {
-        *self == Nddr::Enabled_
+    pub fn is_enabled(&self) -> bool {
+        *self == Nddr::Enabled
     }
 }
 #[doc = "Field `NDDR` writer - New DD Request Interrupt enable bit."]
@@ -99,22 +99,22 @@ where
 {
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Nddr::Disabled_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Nddr::Disabled)
     }
     #[doc = "Enabled."]
     #[inline(always)]
-    pub fn enabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Nddr::Enabled_)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Nddr::Enabled)
     }
 }
 #[doc = "System Error Interrupt enable bit.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Err {
     #[doc = "0: Disabled."]
-    Disabled_ = 0,
+    Disabled = 0,
     #[doc = "1: Enabled."]
-    Enabled_ = 1,
+    Enabled = 1,
 }
 impl From<Err> for bool {
     #[inline(always)]
@@ -129,19 +129,19 @@ impl ErrR {
     #[inline(always)]
     pub const fn variant(&self) -> Err {
         match self.bits {
-            false => Err::Disabled_,
-            true => Err::Enabled_,
+            false => Err::Disabled,
+            true => Err::Enabled,
         }
     }
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn is_disabled_(&self) -> bool {
-        *self == Err::Disabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Err::Disabled
     }
     #[doc = "Enabled."]
     #[inline(always)]
-    pub fn is_enabled_(&self) -> bool {
-        *self == Err::Enabled_
+    pub fn is_enabled(&self) -> bool {
+        *self == Err::Enabled
     }
 }
 #[doc = "Field `ERR` writer - System Error Interrupt enable bit."]
@@ -152,13 +152,13 @@ where
 {
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Err::Disabled_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Err::Disabled)
     }
     #[doc = "Enabled."]
     #[inline(always)]
-    pub fn enabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Err::Enabled_)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Err::Enabled)
     }
 }
 impl R {

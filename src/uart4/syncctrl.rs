@@ -59,9 +59,9 @@ where
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Csrc {
     #[doc = "0: Synchronous slave mode (SCLK in)"]
-    SynchronousSlaveMo = 0,
+    Slave = 0,
     #[doc = "1: Synchronous master mode (SCLK out)"]
-    SynchronousMasterM = 1,
+    Master = 1,
 }
 impl From<Csrc> for bool {
     #[inline(always)]
@@ -76,19 +76,19 @@ impl CsrcR {
     #[inline(always)]
     pub const fn variant(&self) -> Csrc {
         match self.bits {
-            false => Csrc::SynchronousSlaveMo,
-            true => Csrc::SynchronousMasterM,
+            false => Csrc::Slave,
+            true => Csrc::Master,
         }
     }
     #[doc = "Synchronous slave mode (SCLK in)"]
     #[inline(always)]
-    pub fn is_synchronous_slave_mo(&self) -> bool {
-        *self == Csrc::SynchronousSlaveMo
+    pub fn is_slave(&self) -> bool {
+        *self == Csrc::Slave
     }
     #[doc = "Synchronous master mode (SCLK out)"]
     #[inline(always)]
-    pub fn is_synchronous_master_m(&self) -> bool {
-        *self == Csrc::SynchronousMasterM
+    pub fn is_master(&self) -> bool {
+        *self == Csrc::Master
     }
 }
 #[doc = "Field `CSRC` writer - Clock source select."]
@@ -99,13 +99,13 @@ where
 {
     #[doc = "Synchronous slave mode (SCLK in)"]
     #[inline(always)]
-    pub fn synchronous_slave_mo(self) -> &'a mut crate::W<REG> {
-        self.variant(Csrc::SynchronousSlaveMo)
+    pub fn slave(self) -> &'a mut crate::W<REG> {
+        self.variant(Csrc::Slave)
     }
     #[doc = "Synchronous master mode (SCLK out)"]
     #[inline(always)]
-    pub fn synchronous_master_m(self) -> &'a mut crate::W<REG> {
-        self.variant(Csrc::SynchronousMasterM)
+    pub fn master(self) -> &'a mut crate::W<REG> {
+        self.variant(Csrc::Master)
     }
 }
 #[doc = "Falling edge sampling.\n\nValue on reset: 0"]
@@ -165,9 +165,9 @@ where
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Tsbypass {
     #[doc = "0: The input clock is synchronized prior to being used in clock edge detection logic."]
-    TheInputClockIsS = 0,
+    NoBypass = 0,
     #[doc = "1: The input clock is not synchronized prior to being used in clock edge detection logic. This allows for a high er input clock rate at the expense of potential metastability."]
-    TheInputClockIsN = 1,
+    Bypass = 1,
 }
 impl From<Tsbypass> for bool {
     #[inline(always)]
@@ -182,19 +182,19 @@ impl TsbypassR {
     #[inline(always)]
     pub const fn variant(&self) -> Tsbypass {
         match self.bits {
-            false => Tsbypass::TheInputClockIsS,
-            true => Tsbypass::TheInputClockIsN,
+            false => Tsbypass::NoBypass,
+            true => Tsbypass::Bypass,
         }
     }
     #[doc = "The input clock is synchronized prior to being used in clock edge detection logic."]
     #[inline(always)]
-    pub fn is_the_input_clock_is_s(&self) -> bool {
-        *self == Tsbypass::TheInputClockIsS
+    pub fn is_no_bypass(&self) -> bool {
+        *self == Tsbypass::NoBypass
     }
     #[doc = "The input clock is not synchronized prior to being used in clock edge detection logic. This allows for a high er input clock rate at the expense of potential metastability."]
     #[inline(always)]
-    pub fn is_the_input_clock_is_n(&self) -> bool {
-        *self == Tsbypass::TheInputClockIsN
+    pub fn is_bypass(&self) -> bool {
+        *self == Tsbypass::Bypass
     }
 }
 #[doc = "Field `TSBYPASS` writer - Transmit synchronization bypass in synchronous slave mode."]
@@ -205,22 +205,22 @@ where
 {
     #[doc = "The input clock is synchronized prior to being used in clock edge detection logic."]
     #[inline(always)]
-    pub fn the_input_clock_is_s(self) -> &'a mut crate::W<REG> {
-        self.variant(Tsbypass::TheInputClockIsS)
+    pub fn no_bypass(self) -> &'a mut crate::W<REG> {
+        self.variant(Tsbypass::NoBypass)
     }
     #[doc = "The input clock is not synchronized prior to being used in clock edge detection logic. This allows for a high er input clock rate at the expense of potential metastability."]
     #[inline(always)]
-    pub fn the_input_clock_is_n(self) -> &'a mut crate::W<REG> {
-        self.variant(Tsbypass::TheInputClockIsN)
+    pub fn bypass(self) -> &'a mut crate::W<REG> {
+        self.variant(Tsbypass::Bypass)
     }
 }
 #[doc = "Continuous master clock enable (used only when CSRC is 1)\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Cscen {
     #[doc = "0: SCLK cycles only when characters are being sent on TxD"]
-    SclkCyclesOnlyWhe = 0,
+    SendOnly = 0,
     #[doc = "1: SCLK runs continuously (characters can be received on RxD independently from transmission on TxD)"]
-    SclkRunsContinuous = 1,
+    Continuous = 1,
 }
 impl From<Cscen> for bool {
     #[inline(always)]
@@ -235,19 +235,19 @@ impl CscenR {
     #[inline(always)]
     pub const fn variant(&self) -> Cscen {
         match self.bits {
-            false => Cscen::SclkCyclesOnlyWhe,
-            true => Cscen::SclkRunsContinuous,
+            false => Cscen::SendOnly,
+            true => Cscen::Continuous,
         }
     }
     #[doc = "SCLK cycles only when characters are being sent on TxD"]
     #[inline(always)]
-    pub fn is_sclk_cycles_only_whe(&self) -> bool {
-        *self == Cscen::SclkCyclesOnlyWhe
+    pub fn is_send_only(&self) -> bool {
+        *self == Cscen::SendOnly
     }
     #[doc = "SCLK runs continuously (characters can be received on RxD independently from transmission on TxD)"]
     #[inline(always)]
-    pub fn is_sclk_runs_continuous(&self) -> bool {
-        *self == Cscen::SclkRunsContinuous
+    pub fn is_continuous(&self) -> bool {
+        *self == Cscen::Continuous
     }
 }
 #[doc = "Field `CSCEN` writer - Continuous master clock enable (used only when CSRC is 1)"]
@@ -258,22 +258,22 @@ where
 {
     #[doc = "SCLK cycles only when characters are being sent on TxD"]
     #[inline(always)]
-    pub fn sclk_cycles_only_whe(self) -> &'a mut crate::W<REG> {
-        self.variant(Cscen::SclkCyclesOnlyWhe)
+    pub fn send_only(self) -> &'a mut crate::W<REG> {
+        self.variant(Cscen::SendOnly)
     }
     #[doc = "SCLK runs continuously (characters can be received on RxD independently from transmission on TxD)"]
     #[inline(always)]
-    pub fn sclk_runs_continuous(self) -> &'a mut crate::W<REG> {
-        self.variant(Cscen::SclkRunsContinuous)
+    pub fn continuous(self) -> &'a mut crate::W<REG> {
+        self.variant(Cscen::Continuous)
     }
 }
 #[doc = "Start/stop bits\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Sssdis {
     #[doc = "0: Send start and stop bits as in other modes."]
-    SendStartAndStop_ = 0,
+    Send = 0,
     #[doc = "1: Do not send start/stop bits."]
-    Nostartstopbit = 1,
+    NoSend = 1,
 }
 impl From<Sssdis> for bool {
     #[inline(always)]
@@ -288,19 +288,19 @@ impl SssdisR {
     #[inline(always)]
     pub const fn variant(&self) -> Sssdis {
         match self.bits {
-            false => Sssdis::SendStartAndStop_,
-            true => Sssdis::Nostartstopbit,
+            false => Sssdis::Send,
+            true => Sssdis::NoSend,
         }
     }
     #[doc = "Send start and stop bits as in other modes."]
     #[inline(always)]
-    pub fn is_send_start_and_stop_(&self) -> bool {
-        *self == Sssdis::SendStartAndStop_
+    pub fn is_send(&self) -> bool {
+        *self == Sssdis::Send
     }
     #[doc = "Do not send start/stop bits."]
     #[inline(always)]
-    pub fn is_nostartstopbit(&self) -> bool {
-        *self == Sssdis::Nostartstopbit
+    pub fn is_no_send(&self) -> bool {
+        *self == Sssdis::NoSend
     }
 }
 #[doc = "Field `SSSDIS` writer - Start/stop bits"]
@@ -311,22 +311,22 @@ where
 {
     #[doc = "Send start and stop bits as in other modes."]
     #[inline(always)]
-    pub fn send_start_and_stop_(self) -> &'a mut crate::W<REG> {
-        self.variant(Sssdis::SendStartAndStop_)
+    pub fn send(self) -> &'a mut crate::W<REG> {
+        self.variant(Sssdis::Send)
     }
     #[doc = "Do not send start/stop bits."]
     #[inline(always)]
-    pub fn nostartstopbit(self) -> &'a mut crate::W<REG> {
-        self.variant(Sssdis::Nostartstopbit)
+    pub fn no_send(self) -> &'a mut crate::W<REG> {
+        self.variant(Sssdis::NoSend)
     }
 }
 #[doc = "Continuous clock clear\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Ccclr {
     #[doc = "0: CSCEN is under software control."]
-    CscenIsUnderSoftw = 0,
+    Disabled = 0,
     #[doc = "1: Hardware clears CSCEN after each character is received."]
-    HardwareClearsCsce = 1,
+    Enabled = 1,
 }
 impl From<Ccclr> for bool {
     #[inline(always)]
@@ -341,19 +341,19 @@ impl CcclrR {
     #[inline(always)]
     pub const fn variant(&self) -> Ccclr {
         match self.bits {
-            false => Ccclr::CscenIsUnderSoftw,
-            true => Ccclr::HardwareClearsCsce,
+            false => Ccclr::Disabled,
+            true => Ccclr::Enabled,
         }
     }
     #[doc = "CSCEN is under software control."]
     #[inline(always)]
-    pub fn is_cscen_is_under_softw(&self) -> bool {
-        *self == Ccclr::CscenIsUnderSoftw
+    pub fn is_disabled(&self) -> bool {
+        *self == Ccclr::Disabled
     }
     #[doc = "Hardware clears CSCEN after each character is received."]
     #[inline(always)]
-    pub fn is_hardware_clears_csce(&self) -> bool {
-        *self == Ccclr::HardwareClearsCsce
+    pub fn is_enabled(&self) -> bool {
+        *self == Ccclr::Enabled
     }
 }
 #[doc = "Field `CCCLR` writer - Continuous clock clear"]
@@ -364,13 +364,13 @@ where
 {
     #[doc = "CSCEN is under software control."]
     #[inline(always)]
-    pub fn cscen_is_under_softw(self) -> &'a mut crate::W<REG> {
-        self.variant(Ccclr::CscenIsUnderSoftw)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Ccclr::Disabled)
     }
     #[doc = "Hardware clears CSCEN after each character is received."]
     #[inline(always)]
-    pub fn hardware_clears_csce(self) -> &'a mut crate::W<REG> {
-        self.variant(Ccclr::HardwareClearsCsce)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Ccclr::Enabled)
     }
 }
 impl R {

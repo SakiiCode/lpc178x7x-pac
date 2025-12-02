@@ -4,9 +4,9 @@ pub type R = crate::R<IntenSpec>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Ilim0 {
     #[doc = "0: Interrupt disabled."]
-    InterruptDisabled_ = 0,
+    Disabled = 0,
     #[doc = "1: Interrupt enabled."]
-    InterruptEnabled_ = 1,
+    Enabled = 1,
 }
 impl From<Ilim0> for bool {
     #[inline(always)]
@@ -21,28 +21,28 @@ impl Ilim0R {
     #[inline(always)]
     pub const fn variant(&self) -> Ilim0 {
         match self.bits {
-            false => Ilim0::InterruptDisabled_,
-            true => Ilim0::InterruptEnabled_,
+            false => Ilim0::Disabled,
+            true => Ilim0::Enabled,
         }
     }
     #[doc = "Interrupt disabled."]
     #[inline(always)]
-    pub fn is_interrupt_disabled_(&self) -> bool {
-        *self == Ilim0::InterruptDisabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Ilim0::Disabled
     }
     #[doc = "Interrupt enabled."]
     #[inline(always)]
-    pub fn is_interrupt_enabled_(&self) -> bool {
-        *self == Ilim0::InterruptEnabled_
+    pub fn is_enabled(&self) -> bool {
+        *self == Ilim0::Enabled
     }
 }
 #[doc = "Match interrupt for channel 0.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Imat0 {
     #[doc = "0: Interrupt disabled."]
-    InterruptDisabled_ = 0,
+    Disabled = 0,
     #[doc = "1: Interrupt enabled."]
-    InterruptEnabled_ = 1,
+    Enabled = 1,
 }
 impl From<Imat0> for bool {
     #[inline(always)]
@@ -57,28 +57,28 @@ impl Imat0R {
     #[inline(always)]
     pub const fn variant(&self) -> Imat0 {
         match self.bits {
-            false => Imat0::InterruptDisabled_,
-            true => Imat0::InterruptEnabled_,
+            false => Imat0::Disabled,
+            true => Imat0::Enabled,
         }
     }
     #[doc = "Interrupt disabled."]
     #[inline(always)]
-    pub fn is_interrupt_disabled_(&self) -> bool {
-        *self == Imat0::InterruptDisabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Imat0::Disabled
     }
     #[doc = "Interrupt enabled."]
     #[inline(always)]
-    pub fn is_interrupt_enabled_(&self) -> bool {
-        *self == Imat0::InterruptEnabled_
+    pub fn is_enabled(&self) -> bool {
+        *self == Imat0::Enabled
     }
 }
 #[doc = "Capture interrupt for channel 0.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Icap0 {
     #[doc = "0: Interrupt disabled."]
-    InterruptDisabled_ = 0,
+    Disabled = 0,
     #[doc = "1: Interrupt enabled."]
-    InterruptEnabled_ = 1,
+    Enabled = 1,
 }
 impl From<Icap0> for bool {
     #[inline(always)]
@@ -93,28 +93,28 @@ impl Icap0R {
     #[inline(always)]
     pub const fn variant(&self) -> Icap0 {
         match self.bits {
-            false => Icap0::InterruptDisabled_,
-            true => Icap0::InterruptEnabled_,
+            false => Icap0::Disabled,
+            true => Icap0::Enabled,
         }
     }
     #[doc = "Interrupt disabled."]
     #[inline(always)]
-    pub fn is_interrupt_disabled_(&self) -> bool {
-        *self == Icap0::InterruptDisabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Icap0::Disabled
     }
     #[doc = "Interrupt enabled."]
     #[inline(always)]
-    pub fn is_interrupt_enabled_(&self) -> bool {
-        *self == Icap0::InterruptEnabled_
+    pub fn is_enabled(&self) -> bool {
+        *self == Icap0::Enabled
     }
 }
 #[doc = "Limit interrupt for channel 1.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Ilim1 {
     #[doc = "0: Interrupt disabled."]
-    InterruptDisabled_ = 0,
+    Disabled = 0,
     #[doc = "1: Interrupt enabled."]
-    InterruptEnabled_ = 1,
+    Enabled = 1,
 }
 impl From<Ilim1> for bool {
     #[inline(always)]
@@ -129,28 +129,28 @@ impl Ilim1R {
     #[inline(always)]
     pub const fn variant(&self) -> Ilim1 {
         match self.bits {
-            false => Ilim1::InterruptDisabled_,
-            true => Ilim1::InterruptEnabled_,
+            false => Ilim1::Disabled,
+            true => Ilim1::Enabled,
         }
     }
     #[doc = "Interrupt disabled."]
     #[inline(always)]
-    pub fn is_interrupt_disabled_(&self) -> bool {
-        *self == Ilim1::InterruptDisabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Ilim1::Disabled
     }
     #[doc = "Interrupt enabled."]
     #[inline(always)]
-    pub fn is_interrupt_enabled_(&self) -> bool {
-        *self == Ilim1::InterruptEnabled_
+    pub fn is_enabled(&self) -> bool {
+        *self == Ilim1::Enabled
     }
 }
 #[doc = "Match interrupt for channel 1.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Imat1 {
     #[doc = "0: Interrupt disabled."]
-    InterruptDisabled_ = 0,
+    Disabled = 0,
     #[doc = "1: Interrupt enabled."]
-    InterruptEnabled_ = 1,
+    Enabled = 1,
 }
 impl From<Imat1> for bool {
     #[inline(always)]
@@ -165,28 +165,28 @@ impl Imat1R {
     #[inline(always)]
     pub const fn variant(&self) -> Imat1 {
         match self.bits {
-            false => Imat1::InterruptDisabled_,
-            true => Imat1::InterruptEnabled_,
+            false => Imat1::Disabled,
+            true => Imat1::Enabled,
         }
     }
     #[doc = "Interrupt disabled."]
     #[inline(always)]
-    pub fn is_interrupt_disabled_(&self) -> bool {
-        *self == Imat1::InterruptDisabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Imat1::Disabled
     }
     #[doc = "Interrupt enabled."]
     #[inline(always)]
-    pub fn is_interrupt_enabled_(&self) -> bool {
-        *self == Imat1::InterruptEnabled_
+    pub fn is_enabled(&self) -> bool {
+        *self == Imat1::Enabled
     }
 }
 #[doc = "Capture interrupt for channel 1.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Icap1 {
     #[doc = "0: Interrupt disabled."]
-    InterruptDisabled_ = 0,
+    Disabled = 0,
     #[doc = "1: Interrupt enabled."]
-    InterruptEnabled_ = 1,
+    Enabled = 1,
 }
 impl From<Icap1> for bool {
     #[inline(always)]
@@ -201,28 +201,28 @@ impl Icap1R {
     #[inline(always)]
     pub const fn variant(&self) -> Icap1 {
         match self.bits {
-            false => Icap1::InterruptDisabled_,
-            true => Icap1::InterruptEnabled_,
+            false => Icap1::Disabled,
+            true => Icap1::Enabled,
         }
     }
     #[doc = "Interrupt disabled."]
     #[inline(always)]
-    pub fn is_interrupt_disabled_(&self) -> bool {
-        *self == Icap1::InterruptDisabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Icap1::Disabled
     }
     #[doc = "Interrupt enabled."]
     #[inline(always)]
-    pub fn is_interrupt_enabled_(&self) -> bool {
-        *self == Icap1::InterruptEnabled_
+    pub fn is_enabled(&self) -> bool {
+        *self == Icap1::Enabled
     }
 }
 #[doc = "Limit interrupt for channel 2.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Ilim2 {
     #[doc = "0: Interrupt disabled."]
-    InterruptDisabled_ = 0,
+    Disabled = 0,
     #[doc = "1: Interrupt enabled."]
-    InterruptEnabled_ = 1,
+    Enabled = 1,
 }
 impl From<Ilim2> for bool {
     #[inline(always)]
@@ -237,28 +237,28 @@ impl Ilim2R {
     #[inline(always)]
     pub const fn variant(&self) -> Ilim2 {
         match self.bits {
-            false => Ilim2::InterruptDisabled_,
-            true => Ilim2::InterruptEnabled_,
+            false => Ilim2::Disabled,
+            true => Ilim2::Enabled,
         }
     }
     #[doc = "Interrupt disabled."]
     #[inline(always)]
-    pub fn is_interrupt_disabled_(&self) -> bool {
-        *self == Ilim2::InterruptDisabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Ilim2::Disabled
     }
     #[doc = "Interrupt enabled."]
     #[inline(always)]
-    pub fn is_interrupt_enabled_(&self) -> bool {
-        *self == Ilim2::InterruptEnabled_
+    pub fn is_enabled(&self) -> bool {
+        *self == Ilim2::Enabled
     }
 }
 #[doc = "Match interrupt for channel 2.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Imat2 {
     #[doc = "0: Interrupt disabled."]
-    InterruptDisabled_ = 0,
+    Disabled = 0,
     #[doc = "1: Interrupt enabled."]
-    InterruptEnabled_ = 1,
+    Enabled = 1,
 }
 impl From<Imat2> for bool {
     #[inline(always)]
@@ -273,28 +273,28 @@ impl Imat2R {
     #[inline(always)]
     pub const fn variant(&self) -> Imat2 {
         match self.bits {
-            false => Imat2::InterruptDisabled_,
-            true => Imat2::InterruptEnabled_,
+            false => Imat2::Disabled,
+            true => Imat2::Enabled,
         }
     }
     #[doc = "Interrupt disabled."]
     #[inline(always)]
-    pub fn is_interrupt_disabled_(&self) -> bool {
-        *self == Imat2::InterruptDisabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Imat2::Disabled
     }
     #[doc = "Interrupt enabled."]
     #[inline(always)]
-    pub fn is_interrupt_enabled_(&self) -> bool {
-        *self == Imat2::InterruptEnabled_
+    pub fn is_enabled(&self) -> bool {
+        *self == Imat2::Enabled
     }
 }
 #[doc = "Capture interrupt for channel 2.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Icap2 {
     #[doc = "0: Interrupt disabled."]
-    InterruptDisabled_ = 0,
+    Disabled = 0,
     #[doc = "1: Interrupt enabled."]
-    InterruptEnabled_ = 1,
+    Enabled = 1,
 }
 impl From<Icap2> for bool {
     #[inline(always)]
@@ -309,28 +309,28 @@ impl Icap2R {
     #[inline(always)]
     pub const fn variant(&self) -> Icap2 {
         match self.bits {
-            false => Icap2::InterruptDisabled_,
-            true => Icap2::InterruptEnabled_,
+            false => Icap2::Disabled,
+            true => Icap2::Enabled,
         }
     }
     #[doc = "Interrupt disabled."]
     #[inline(always)]
-    pub fn is_interrupt_disabled_(&self) -> bool {
-        *self == Icap2::InterruptDisabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Icap2::Disabled
     }
     #[doc = "Interrupt enabled."]
     #[inline(always)]
-    pub fn is_interrupt_enabled_(&self) -> bool {
-        *self == Icap2::InterruptEnabled_
+    pub fn is_enabled(&self) -> bool {
+        *self == Icap2::Enabled
     }
 }
 #[doc = "Fast abort interrupt.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Abort {
     #[doc = "0: Interrupt disabled."]
-    InterruptDisabled_ = 0,
+    Disabled = 0,
     #[doc = "1: Interrupt enabled."]
-    InterruptEnabled_ = 1,
+    Enabled = 1,
 }
 impl From<Abort> for bool {
     #[inline(always)]
@@ -345,19 +345,19 @@ impl AbortR {
     #[inline(always)]
     pub const fn variant(&self) -> Abort {
         match self.bits {
-            false => Abort::InterruptDisabled_,
-            true => Abort::InterruptEnabled_,
+            false => Abort::Disabled,
+            true => Abort::Enabled,
         }
     }
     #[doc = "Interrupt disabled."]
     #[inline(always)]
-    pub fn is_interrupt_disabled_(&self) -> bool {
-        *self == Abort::InterruptDisabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Abort::Disabled
     }
     #[doc = "Interrupt enabled."]
     #[inline(always)]
-    pub fn is_interrupt_enabled_(&self) -> bool {
-        *self == Abort::InterruptEnabled_
+    pub fn is_enabled(&self) -> bool {
+        *self == Abort::Enabled
     }
 }
 impl R {

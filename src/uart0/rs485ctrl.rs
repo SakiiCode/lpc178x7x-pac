@@ -165,9 +165,9 @@ where
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Dctrl {
     #[doc = "0: Disable Auto Direction Control."]
-    DisableAutoDirecti = 0,
+    Disabled = 0,
     #[doc = "1: Enable Auto Direction Control."]
-    EnableAutoDirectio = 1,
+    Enabled = 1,
 }
 impl From<Dctrl> for bool {
     #[inline(always)]
@@ -182,19 +182,19 @@ impl DctrlR {
     #[inline(always)]
     pub const fn variant(&self) -> Dctrl {
         match self.bits {
-            false => Dctrl::DisableAutoDirecti,
-            true => Dctrl::EnableAutoDirectio,
+            false => Dctrl::Disabled,
+            true => Dctrl::Enabled,
         }
     }
     #[doc = "Disable Auto Direction Control."]
     #[inline(always)]
-    pub fn is_disable_auto_directi(&self) -> bool {
-        *self == Dctrl::DisableAutoDirecti
+    pub fn is_disabled(&self) -> bool {
+        *self == Dctrl::Disabled
     }
     #[doc = "Enable Auto Direction Control."]
     #[inline(always)]
-    pub fn is_enable_auto_directio(&self) -> bool {
-        *self == Dctrl::EnableAutoDirectio
+    pub fn is_enabled(&self) -> bool {
+        *self == Dctrl::Enabled
     }
 }
 #[doc = "Field `DCTRL` writer - Direction control enable."]
@@ -205,13 +205,13 @@ where
 {
     #[doc = "Disable Auto Direction Control."]
     #[inline(always)]
-    pub fn disable_auto_directi(self) -> &'a mut crate::W<REG> {
-        self.variant(Dctrl::DisableAutoDirecti)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Dctrl::Disabled)
     }
     #[doc = "Enable Auto Direction Control."]
     #[inline(always)]
-    pub fn enable_auto_directio(self) -> &'a mut crate::W<REG> {
-        self.variant(Dctrl::EnableAutoDirectio)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Dctrl::Enabled)
     }
 }
 #[doc = "Direction control pin polarity. This bit reverses the polarity of the direction control signal on the Un_OE pin.\n\nValue on reset: 0"]

@@ -9,7 +9,7 @@ impl R {
         I2srxfifoR::new(self.bits)
     }
 }
-#[doc = "I2S Receive FIFO. Access register for the 8 x 32-bit receiver FIFO.\n\nYou can [`read`](crate::Reg::read) this register and get [`rxfifo::R`](R). See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+#[doc = "I2S Receive FIFO. Access register for the 8 x 32-bit receiver FIFO.\n\nYou can [`read`](crate::Reg::read) this register and get [`rxfifo::R`](R). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\n<div class=\"warning\">The register is <b>modified</b> in some way after a read operation.</div>"]
 pub struct RxfifoSpec;
 impl crate::RegisterSpec for RxfifoSpec {
     type Ux = u32;

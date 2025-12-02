@@ -6,9 +6,9 @@ pub type W = crate::W<AcrSpec>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Start {
     #[doc = "0: Auto-baud stop (auto-baud is not running)."]
-    AutoBaudStopAuto = 0,
+    Stopped = 0,
     #[doc = "1: Auto-baud start (auto-baud is running). Auto-baud run bit. This bit is automatically cleared after auto-baud completion."]
-    AutoBaudStartAut = 1,
+    Started = 1,
 }
 impl From<Start> for bool {
     #[inline(always)]
@@ -23,19 +23,19 @@ impl StartR {
     #[inline(always)]
     pub const fn variant(&self) -> Start {
         match self.bits {
-            false => Start::AutoBaudStopAuto,
-            true => Start::AutoBaudStartAut,
+            false => Start::Stopped,
+            true => Start::Started,
         }
     }
     #[doc = "Auto-baud stop (auto-baud is not running)."]
     #[inline(always)]
-    pub fn is_auto_baud_stop_auto(&self) -> bool {
-        *self == Start::AutoBaudStopAuto
+    pub fn is_stopped(&self) -> bool {
+        *self == Start::Stopped
     }
     #[doc = "Auto-baud start (auto-baud is running). Auto-baud run bit. This bit is automatically cleared after auto-baud completion."]
     #[inline(always)]
-    pub fn is_auto_baud_start_aut(&self) -> bool {
-        *self == Start::AutoBaudStartAut
+    pub fn is_started(&self) -> bool {
+        *self == Start::Started
     }
 }
 #[doc = "Field `START` writer - Start bit. This bit is automatically cleared after auto-baud completion."]
@@ -46,22 +46,22 @@ where
 {
     #[doc = "Auto-baud stop (auto-baud is not running)."]
     #[inline(always)]
-    pub fn auto_baud_stop_auto(self) -> &'a mut crate::W<REG> {
-        self.variant(Start::AutoBaudStopAuto)
+    pub fn stopped(self) -> &'a mut crate::W<REG> {
+        self.variant(Start::Stopped)
     }
     #[doc = "Auto-baud start (auto-baud is running). Auto-baud run bit. This bit is automatically cleared after auto-baud completion."]
     #[inline(always)]
-    pub fn auto_baud_start_aut(self) -> &'a mut crate::W<REG> {
-        self.variant(Start::AutoBaudStartAut)
+    pub fn started(self) -> &'a mut crate::W<REG> {
+        self.variant(Start::Started)
     }
 }
 #[doc = "Auto-baud mode select bit.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Mode {
     #[doc = "0: Mode 0."]
-    Mode0_ = 0,
+    Mode0 = 0,
     #[doc = "1: Mode 1."]
-    Mode1_ = 1,
+    Mode1 = 1,
 }
 impl From<Mode> for bool {
     #[inline(always)]
@@ -76,19 +76,19 @@ impl ModeR {
     #[inline(always)]
     pub const fn variant(&self) -> Mode {
         match self.bits {
-            false => Mode::Mode0_,
-            true => Mode::Mode1_,
+            false => Mode::Mode0,
+            true => Mode::Mode1,
         }
     }
     #[doc = "Mode 0."]
     #[inline(always)]
-    pub fn is_mode_0_(&self) -> bool {
-        *self == Mode::Mode0_
+    pub fn is_mode_0(&self) -> bool {
+        *self == Mode::Mode0
     }
     #[doc = "Mode 1."]
     #[inline(always)]
-    pub fn is_mode_1_(&self) -> bool {
-        *self == Mode::Mode1_
+    pub fn is_mode_1(&self) -> bool {
+        *self == Mode::Mode1
     }
 }
 #[doc = "Field `MODE` writer - Auto-baud mode select bit."]
@@ -99,22 +99,22 @@ where
 {
     #[doc = "Mode 0."]
     #[inline(always)]
-    pub fn mode_0_(self) -> &'a mut crate::W<REG> {
-        self.variant(Mode::Mode0_)
+    pub fn mode_0(self) -> &'a mut crate::W<REG> {
+        self.variant(Mode::Mode0)
     }
     #[doc = "Mode 1."]
     #[inline(always)]
-    pub fn mode_1_(self) -> &'a mut crate::W<REG> {
-        self.variant(Mode::Mode1_)
+    pub fn mode_1(self) -> &'a mut crate::W<REG> {
+        self.variant(Mode::Mode1)
     }
 }
 #[doc = "Restart bit.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Autorestart {
     #[doc = "0: No restart."]
-    NoRestart_ = 0,
+    NoRestart = 0,
     #[doc = "1: Restart in case of time-out (counter restarts at next UARTn Rx falling edge)"]
-    RestartInCaseOfT = 1,
+    RestartOnTimeout = 1,
 }
 impl From<Autorestart> for bool {
     #[inline(always)]
@@ -129,19 +129,19 @@ impl AutorestartR {
     #[inline(always)]
     pub const fn variant(&self) -> Autorestart {
         match self.bits {
-            false => Autorestart::NoRestart_,
-            true => Autorestart::RestartInCaseOfT,
+            false => Autorestart::NoRestart,
+            true => Autorestart::RestartOnTimeout,
         }
     }
     #[doc = "No restart."]
     #[inline(always)]
-    pub fn is_no_restart_(&self) -> bool {
-        *self == Autorestart::NoRestart_
+    pub fn is_no_restart(&self) -> bool {
+        *self == Autorestart::NoRestart
     }
     #[doc = "Restart in case of time-out (counter restarts at next UARTn Rx falling edge)"]
     #[inline(always)]
-    pub fn is_restart_in_case_of_t(&self) -> bool {
-        *self == Autorestart::RestartInCaseOfT
+    pub fn is_restart_on_timeout(&self) -> bool {
+        *self == Autorestart::RestartOnTimeout
     }
 }
 #[doc = "Field `AUTORESTART` writer - Restart bit."]
@@ -152,22 +152,22 @@ where
 {
     #[doc = "No restart."]
     #[inline(always)]
-    pub fn no_restart_(self) -> &'a mut crate::W<REG> {
-        self.variant(Autorestart::NoRestart_)
+    pub fn no_restart(self) -> &'a mut crate::W<REG> {
+        self.variant(Autorestart::NoRestart)
     }
     #[doc = "Restart in case of time-out (counter restarts at next UARTn Rx falling edge)"]
     #[inline(always)]
-    pub fn restart_in_case_of_t(self) -> &'a mut crate::W<REG> {
-        self.variant(Autorestart::RestartInCaseOfT)
+    pub fn restart_on_timeout(self) -> &'a mut crate::W<REG> {
+        self.variant(Autorestart::RestartOnTimeout)
     }
 }
 #[doc = "End of auto-baud interrupt clear bit (write-only accessible). Writing a 1 will clear the corresponding interrupt in the UnIIR. Writing a 0 has no impact.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Abeointclr {
     #[doc = "0: No impact."]
-    NoImpact_ = 0,
+    DoNothing = 0,
     #[doc = "1: Clear the corresponding interrupt in the IIR."]
-    ClearTheCorrespond = 1,
+    Clear = 1,
 }
 impl From<Abeointclr> for bool {
     #[inline(always)]
@@ -182,19 +182,19 @@ impl AbeointclrR {
     #[inline(always)]
     pub const fn variant(&self) -> Abeointclr {
         match self.bits {
-            false => Abeointclr::NoImpact_,
-            true => Abeointclr::ClearTheCorrespond,
+            false => Abeointclr::DoNothing,
+            true => Abeointclr::Clear,
         }
     }
     #[doc = "No impact."]
     #[inline(always)]
-    pub fn is_no_impact_(&self) -> bool {
-        *self == Abeointclr::NoImpact_
+    pub fn is_do_nothing(&self) -> bool {
+        *self == Abeointclr::DoNothing
     }
     #[doc = "Clear the corresponding interrupt in the IIR."]
     #[inline(always)]
-    pub fn is_clear_the_correspond(&self) -> bool {
-        *self == Abeointclr::ClearTheCorrespond
+    pub fn is_clear(&self) -> bool {
+        *self == Abeointclr::Clear
     }
 }
 #[doc = "Field `ABEOINTCLR` writer - End of auto-baud interrupt clear bit (write-only accessible). Writing a 1 will clear the corresponding interrupt in the UnIIR. Writing a 0 has no impact."]
@@ -205,22 +205,22 @@ where
 {
     #[doc = "No impact."]
     #[inline(always)]
-    pub fn no_impact_(self) -> &'a mut crate::W<REG> {
-        self.variant(Abeointclr::NoImpact_)
+    pub fn do_nothing(self) -> &'a mut crate::W<REG> {
+        self.variant(Abeointclr::DoNothing)
     }
     #[doc = "Clear the corresponding interrupt in the IIR."]
     #[inline(always)]
-    pub fn clear_the_correspond(self) -> &'a mut crate::W<REG> {
-        self.variant(Abeointclr::ClearTheCorrespond)
+    pub fn clear(self) -> &'a mut crate::W<REG> {
+        self.variant(Abeointclr::Clear)
     }
 }
 #[doc = "Auto-baud time-out interrupt clear bit (write-only accessible). Writing a 1 will clear the corresponding interrupt in the UnIIR. Writing a 0 has no impact.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Abtointclr {
     #[doc = "0: No impact."]
-    NoImpact_ = 0,
+    DoNothing = 0,
     #[doc = "1: Clear the corresponding interrupt in the IIR."]
-    ClearTheCorrespond = 1,
+    Clear = 1,
 }
 impl From<Abtointclr> for bool {
     #[inline(always)]
@@ -235,19 +235,19 @@ impl AbtointclrR {
     #[inline(always)]
     pub const fn variant(&self) -> Abtointclr {
         match self.bits {
-            false => Abtointclr::NoImpact_,
-            true => Abtointclr::ClearTheCorrespond,
+            false => Abtointclr::DoNothing,
+            true => Abtointclr::Clear,
         }
     }
     #[doc = "No impact."]
     #[inline(always)]
-    pub fn is_no_impact_(&self) -> bool {
-        *self == Abtointclr::NoImpact_
+    pub fn is_do_nothing(&self) -> bool {
+        *self == Abtointclr::DoNothing
     }
     #[doc = "Clear the corresponding interrupt in the IIR."]
     #[inline(always)]
-    pub fn is_clear_the_correspond(&self) -> bool {
-        *self == Abtointclr::ClearTheCorrespond
+    pub fn is_clear(&self) -> bool {
+        *self == Abtointclr::Clear
     }
 }
 #[doc = "Field `ABTOINTCLR` writer - Auto-baud time-out interrupt clear bit (write-only accessible). Writing a 1 will clear the corresponding interrupt in the UnIIR. Writing a 0 has no impact."]
@@ -258,13 +258,13 @@ where
 {
     #[doc = "No impact."]
     #[inline(always)]
-    pub fn no_impact_(self) -> &'a mut crate::W<REG> {
-        self.variant(Abtointclr::NoImpact_)
+    pub fn do_nothing(self) -> &'a mut crate::W<REG> {
+        self.variant(Abtointclr::DoNothing)
     }
     #[doc = "Clear the corresponding interrupt in the IIR."]
     #[inline(always)]
-    pub fn clear_the_correspond(self) -> &'a mut crate::W<REG> {
-        self.variant(Abtointclr::ClearTheCorrespond)
+    pub fn clear(self) -> &'a mut crate::W<REG> {
+        self.variant(Abtointclr::Clear)
     }
 }
 impl R {

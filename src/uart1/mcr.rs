@@ -14,9 +14,9 @@ pub type RtsctrlW<'a, REG> = crate::BitWriter<'a, REG>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Lms {
     #[doc = "0: Disable modem loopback mode."]
-    DisableModemLoopba = 0,
+    Disabled = 0,
     #[doc = "1: Enable modem loopback mode."]
-    EnableModemLoopbac = 1,
+    Enabled = 1,
 }
 impl From<Lms> for bool {
     #[inline(always)]
@@ -31,19 +31,19 @@ impl LmsR {
     #[inline(always)]
     pub const fn variant(&self) -> Lms {
         match self.bits {
-            false => Lms::DisableModemLoopba,
-            true => Lms::EnableModemLoopbac,
+            false => Lms::Disabled,
+            true => Lms::Enabled,
         }
     }
     #[doc = "Disable modem loopback mode."]
     #[inline(always)]
-    pub fn is_disable_modem_loopba(&self) -> bool {
-        *self == Lms::DisableModemLoopba
+    pub fn is_disabled(&self) -> bool {
+        *self == Lms::Disabled
     }
     #[doc = "Enable modem loopback mode."]
     #[inline(always)]
-    pub fn is_enable_modem_loopbac(&self) -> bool {
-        *self == Lms::EnableModemLoopbac
+    pub fn is_enabled(&self) -> bool {
+        *self == Lms::Enabled
     }
 }
 #[doc = "Field `LMS` writer - Loopback Mode Select. The modem loopback mode provides a mechanism to perform diagnostic loopback testing. Serial data from the transmitter is connected internally to serial input of the receiver. Input pin, RXD1, has no effect on loopback and output pin, TXD1 is held in marking state. The 4 modem inputs (CTS, DSR, RI and DCD) are disconnected externally. Externally, the modem outputs (RTS, DTR) are set inactive. Internally, the 4 modem outputs are connected to the 4 modem inputs. As a result of these connections, the upper 4 bits of the MSR will be driven by the lower 4 bits of the MCR rather than the 4 modem inputs in normal mode. This permits modem status interrupts to be generated in loopback mode by writing the lower 4 bits of MCR."]
@@ -54,22 +54,22 @@ where
 {
     #[doc = "Disable modem loopback mode."]
     #[inline(always)]
-    pub fn disable_modem_loopba(self) -> &'a mut crate::W<REG> {
-        self.variant(Lms::DisableModemLoopba)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Lms::Disabled)
     }
     #[doc = "Enable modem loopback mode."]
     #[inline(always)]
-    pub fn enable_modem_loopbac(self) -> &'a mut crate::W<REG> {
-        self.variant(Lms::EnableModemLoopbac)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Lms::Enabled)
     }
 }
 #[doc = "RTS enable.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Rtsen {
     #[doc = "0: Disable auto-rts flow control."]
-    DisableAutoRtsFlo = 0,
+    Disabled = 0,
     #[doc = "1: Enable auto-rts flow control."]
-    EnableAutoRtsFlow = 1,
+    Enabled = 1,
 }
 impl From<Rtsen> for bool {
     #[inline(always)]
@@ -84,19 +84,19 @@ impl RtsenR {
     #[inline(always)]
     pub const fn variant(&self) -> Rtsen {
         match self.bits {
-            false => Rtsen::DisableAutoRtsFlo,
-            true => Rtsen::EnableAutoRtsFlow,
+            false => Rtsen::Disabled,
+            true => Rtsen::Enabled,
         }
     }
     #[doc = "Disable auto-rts flow control."]
     #[inline(always)]
-    pub fn is_disable_auto_rts_flo(&self) -> bool {
-        *self == Rtsen::DisableAutoRtsFlo
+    pub fn is_disabled(&self) -> bool {
+        *self == Rtsen::Disabled
     }
     #[doc = "Enable auto-rts flow control."]
     #[inline(always)]
-    pub fn is_enable_auto_rts_flow(&self) -> bool {
-        *self == Rtsen::EnableAutoRtsFlow
+    pub fn is_enabled(&self) -> bool {
+        *self == Rtsen::Enabled
     }
 }
 #[doc = "Field `RTSEN` writer - RTS enable."]
@@ -107,22 +107,22 @@ where
 {
     #[doc = "Disable auto-rts flow control."]
     #[inline(always)]
-    pub fn disable_auto_rts_flo(self) -> &'a mut crate::W<REG> {
-        self.variant(Rtsen::DisableAutoRtsFlo)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Rtsen::Disabled)
     }
     #[doc = "Enable auto-rts flow control."]
     #[inline(always)]
-    pub fn enable_auto_rts_flow(self) -> &'a mut crate::W<REG> {
-        self.variant(Rtsen::EnableAutoRtsFlow)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Rtsen::Enabled)
     }
 }
 #[doc = "CTS enable.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Ctsen {
     #[doc = "0: Disable auto-cts flow control."]
-    DisableAutoCtsFlo = 0,
+    Disabled = 0,
     #[doc = "1: Enable auto-cts flow control."]
-    EnableAutoCtsFlow = 1,
+    Enabled = 1,
 }
 impl From<Ctsen> for bool {
     #[inline(always)]
@@ -137,19 +137,19 @@ impl CtsenR {
     #[inline(always)]
     pub const fn variant(&self) -> Ctsen {
         match self.bits {
-            false => Ctsen::DisableAutoCtsFlo,
-            true => Ctsen::EnableAutoCtsFlow,
+            false => Ctsen::Disabled,
+            true => Ctsen::Enabled,
         }
     }
     #[doc = "Disable auto-cts flow control."]
     #[inline(always)]
-    pub fn is_disable_auto_cts_flo(&self) -> bool {
-        *self == Ctsen::DisableAutoCtsFlo
+    pub fn is_disabled(&self) -> bool {
+        *self == Ctsen::Disabled
     }
     #[doc = "Enable auto-cts flow control."]
     #[inline(always)]
-    pub fn is_enable_auto_cts_flow(&self) -> bool {
-        *self == Ctsen::EnableAutoCtsFlow
+    pub fn is_enabled(&self) -> bool {
+        *self == Ctsen::Enabled
     }
 }
 #[doc = "Field `CTSEN` writer - CTS enable."]
@@ -160,13 +160,13 @@ where
 {
     #[doc = "Disable auto-cts flow control."]
     #[inline(always)]
-    pub fn disable_auto_cts_flo(self) -> &'a mut crate::W<REG> {
-        self.variant(Ctsen::DisableAutoCtsFlo)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Ctsen::Disabled)
     }
     #[doc = "Enable auto-cts flow control."]
     #[inline(always)]
-    pub fn enable_auto_cts_flow(self) -> &'a mut crate::W<REG> {
-        self.variant(Ctsen::EnableAutoCtsFlow)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Ctsen::Enabled)
     }
 }
 impl R {

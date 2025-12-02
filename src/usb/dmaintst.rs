@@ -4,9 +4,9 @@ pub type R = crate::R<DmaintstSpec>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Eot {
     #[doc = "0: All bits in the USBEoTIntSt register are 0."]
-    AllBitsInTheUsbe = 0,
+    None = 0,
     #[doc = "1: At least one bit in the USBEoTIntSt is set."]
-    AtLeastOneBitIn_ = 1,
+    Some = 1,
 }
 impl From<Eot> for bool {
     #[inline(always)]
@@ -21,28 +21,28 @@ impl EotR {
     #[inline(always)]
     pub const fn variant(&self) -> Eot {
         match self.bits {
-            false => Eot::AllBitsInTheUsbe,
-            true => Eot::AtLeastOneBitIn_,
+            false => Eot::None,
+            true => Eot::Some,
         }
     }
     #[doc = "All bits in the USBEoTIntSt register are 0."]
     #[inline(always)]
-    pub fn is_all_bits_in_the_usbe(&self) -> bool {
-        *self == Eot::AllBitsInTheUsbe
+    pub fn is_none(&self) -> bool {
+        *self == Eot::None
     }
     #[doc = "At least one bit in the USBEoTIntSt is set."]
     #[inline(always)]
-    pub fn is_at_least_one_bit_in_(&self) -> bool {
-        *self == Eot::AtLeastOneBitIn_
+    pub fn is_some(&self) -> bool {
+        *self == Eot::Some
     }
 }
 #[doc = "New DD Request Interrupt bit.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Nddr {
     #[doc = "0: All bits in the USBNDDRIntSt register are 0."]
-    AllBitsInTheUsbn = 0,
+    None = 0,
     #[doc = "1: At least one bit in the USBNDDRIntSt is set."]
-    AtLeastOneBitIn_ = 1,
+    Some = 1,
 }
 impl From<Nddr> for bool {
     #[inline(always)]
@@ -57,28 +57,28 @@ impl NddrR {
     #[inline(always)]
     pub const fn variant(&self) -> Nddr {
         match self.bits {
-            false => Nddr::AllBitsInTheUsbn,
-            true => Nddr::AtLeastOneBitIn_,
+            false => Nddr::None,
+            true => Nddr::Some,
         }
     }
     #[doc = "All bits in the USBNDDRIntSt register are 0."]
     #[inline(always)]
-    pub fn is_all_bits_in_the_usbn(&self) -> bool {
-        *self == Nddr::AllBitsInTheUsbn
+    pub fn is_none(&self) -> bool {
+        *self == Nddr::None
     }
     #[doc = "At least one bit in the USBNDDRIntSt is set."]
     #[inline(always)]
-    pub fn is_at_least_one_bit_in_(&self) -> bool {
-        *self == Nddr::AtLeastOneBitIn_
+    pub fn is_some(&self) -> bool {
+        *self == Nddr::Some
     }
 }
 #[doc = "System Error Interrupt bit.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Err {
     #[doc = "0: All bits in the USBSysErrIntSt register are 0."]
-    AllBitsInTheUsbs = 0,
+    None = 0,
     #[doc = "1: At least one bit in the USBSysErrIntSt is set."]
-    AtLeastOneBitIn_ = 1,
+    Some = 1,
 }
 impl From<Err> for bool {
     #[inline(always)]
@@ -93,19 +93,19 @@ impl ErrR {
     #[inline(always)]
     pub const fn variant(&self) -> Err {
         match self.bits {
-            false => Err::AllBitsInTheUsbs,
-            true => Err::AtLeastOneBitIn_,
+            false => Err::None,
+            true => Err::Some,
         }
     }
     #[doc = "All bits in the USBSysErrIntSt register are 0."]
     #[inline(always)]
-    pub fn is_all_bits_in_the_usbs(&self) -> bool {
-        *self == Err::AllBitsInTheUsbs
+    pub fn is_none(&self) -> bool {
+        *self == Err::None
     }
     #[doc = "At least one bit in the USBSysErrIntSt is set."]
     #[inline(always)]
-    pub fn is_at_least_one_bit_in_(&self) -> bool {
-        *self == Err::AtLeastOneBitIn_
+    pub fn is_some(&self) -> bool {
+        *self == Err::Some
     }
 }
 impl R {

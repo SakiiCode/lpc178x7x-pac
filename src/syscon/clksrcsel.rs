@@ -6,9 +6,9 @@ pub type W = crate::W<ClksrcselSpec>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Clksrc {
     #[doc = "0: Selects the Internal RC oscillator as the sysclk and PLL0 clock source (default)."]
-    SelectsTheInternal = 0,
+    Irc = 0,
     #[doc = "1: Selects the main oscillator as the sysclk and PLL0 clock source."]
-    SelectsTheMainOsc = 1,
+    Main = 1,
 }
 impl From<Clksrc> for bool {
     #[inline(always)]
@@ -23,19 +23,19 @@ impl ClksrcR {
     #[inline(always)]
     pub const fn variant(&self) -> Clksrc {
         match self.bits {
-            false => Clksrc::SelectsTheInternal,
-            true => Clksrc::SelectsTheMainOsc,
+            false => Clksrc::Irc,
+            true => Clksrc::Main,
         }
     }
     #[doc = "Selects the Internal RC oscillator as the sysclk and PLL0 clock source (default)."]
     #[inline(always)]
-    pub fn is_selects_the_internal(&self) -> bool {
-        *self == Clksrc::SelectsTheInternal
+    pub fn is_irc(&self) -> bool {
+        *self == Clksrc::Irc
     }
     #[doc = "Selects the main oscillator as the sysclk and PLL0 clock source."]
     #[inline(always)]
-    pub fn is_selects_the_main_osc(&self) -> bool {
-        *self == Clksrc::SelectsTheMainOsc
+    pub fn is_main(&self) -> bool {
+        *self == Clksrc::Main
     }
 }
 #[doc = "Field `CLKSRC` writer - Selects the clock source for sysclk and PLL0 as follows:"]
@@ -46,13 +46,13 @@ where
 {
     #[doc = "Selects the Internal RC oscillator as the sysclk and PLL0 clock source (default)."]
     #[inline(always)]
-    pub fn selects_the_internal(self) -> &'a mut crate::W<REG> {
-        self.variant(Clksrc::SelectsTheInternal)
+    pub fn irc(self) -> &'a mut crate::W<REG> {
+        self.variant(Clksrc::Irc)
     }
     #[doc = "Selects the main oscillator as the sysclk and PLL0 clock source."]
     #[inline(always)]
-    pub fn selects_the_main_osc(self) -> &'a mut crate::W<REG> {
-        self.variant(Clksrc::SelectsTheMainOsc)
+    pub fn main(self) -> &'a mut crate::W<REG> {
+        self.variant(Clksrc::Main)
     }
 }
 impl R {

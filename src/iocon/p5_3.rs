@@ -79,9 +79,9 @@ where
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Inv {
     #[doc = "0: Input not inverted (HIGH on pin reads as 1, LOW on pin reads as 0)."]
-    InputNotInverted_ = 0,
+    ActiveHigh = 0,
     #[doc = "1: Input inverted (HIGH on pin reads as 0, LOW on pin reads as 1)."]
-    InputInvertedHigh = 1,
+    ActiveLow = 1,
 }
 impl From<Inv> for bool {
     #[inline(always)]
@@ -96,19 +96,19 @@ impl InvR {
     #[inline(always)]
     pub const fn variant(&self) -> Inv {
         match self.bits {
-            false => Inv::InputNotInverted_,
-            true => Inv::InputInvertedHigh,
+            false => Inv::ActiveHigh,
+            true => Inv::ActiveLow,
         }
     }
     #[doc = "Input not inverted (HIGH on pin reads as 1, LOW on pin reads as 0)."]
     #[inline(always)]
-    pub fn is_input_not_inverted_(&self) -> bool {
-        *self == Inv::InputNotInverted_
+    pub fn is_active_high(&self) -> bool {
+        *self == Inv::ActiveHigh
     }
     #[doc = "Input inverted (HIGH on pin reads as 0, LOW on pin reads as 1)."]
     #[inline(always)]
-    pub fn is_input_inverted_high(&self) -> bool {
-        *self == Inv::InputInvertedHigh
+    pub fn is_active_low(&self) -> bool {
+        *self == Inv::ActiveLow
     }
 }
 #[doc = "Field `INV` writer - Invert input"]
@@ -119,13 +119,13 @@ where
 {
     #[doc = "Input not inverted (HIGH on pin reads as 1, LOW on pin reads as 0)."]
     #[inline(always)]
-    pub fn input_not_inverted_(self) -> &'a mut crate::W<REG> {
-        self.variant(Inv::InputNotInverted_)
+    pub fn active_high(self) -> &'a mut crate::W<REG> {
+        self.variant(Inv::ActiveHigh)
     }
     #[doc = "Input inverted (HIGH on pin reads as 0, LOW on pin reads as 1)."]
     #[inline(always)]
-    pub fn input_inverted_high(self) -> &'a mut crate::W<REG> {
-        self.variant(Inv::InputInvertedHigh)
+    pub fn active_low(self) -> &'a mut crate::W<REG> {
+        self.variant(Inv::ActiveLow)
     }
 }
 #[doc = "Configures I2C features for standard mode, fast mode, and Fast Mode Plus operation.\n\nValue on reset: 0"]

@@ -6,9 +6,9 @@ pub type W = crate::W<IcrSpec>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Irdaen {
     #[doc = "0: Disabled. IrDA mode on UART4 is disabled, UART4 acts as a standard UART."]
-    DisabledIrdaMode_ = 0,
+    Disabled = 0,
     #[doc = "1: Enabled. IrDA mode on UART4 is enabled."]
-    EnabledIrdaModeO = 1,
+    Enabled = 1,
 }
 impl From<Irdaen> for bool {
     #[inline(always)]
@@ -23,19 +23,19 @@ impl IrdaenR {
     #[inline(always)]
     pub const fn variant(&self) -> Irdaen {
         match self.bits {
-            false => Irdaen::DisabledIrdaMode_,
-            true => Irdaen::EnabledIrdaModeO,
+            false => Irdaen::Disabled,
+            true => Irdaen::Enabled,
         }
     }
     #[doc = "Disabled. IrDA mode on UART4 is disabled, UART4 acts as a standard UART."]
     #[inline(always)]
-    pub fn is_disabled_irda_mode_(&self) -> bool {
-        *self == Irdaen::DisabledIrdaMode_
+    pub fn is_disabled(&self) -> bool {
+        *self == Irdaen::Disabled
     }
     #[doc = "Enabled. IrDA mode on UART4 is enabled."]
     #[inline(always)]
-    pub fn is_enabled_irda_mode_o(&self) -> bool {
-        *self == Irdaen::EnabledIrdaModeO
+    pub fn is_enabled(&self) -> bool {
+        *self == Irdaen::Enabled
     }
 }
 #[doc = "Field `IRDAEN` writer - IrDA mode"]
@@ -46,22 +46,22 @@ where
 {
     #[doc = "Disabled. IrDA mode on UART4 is disabled, UART4 acts as a standard UART."]
     #[inline(always)]
-    pub fn disabled_irda_mode_(self) -> &'a mut crate::W<REG> {
-        self.variant(Irdaen::DisabledIrdaMode_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Irdaen::Disabled)
     }
     #[doc = "Enabled. IrDA mode on UART4 is enabled."]
     #[inline(always)]
-    pub fn enabled_irda_mode_o(self) -> &'a mut crate::W<REG> {
-        self.variant(Irdaen::EnabledIrdaModeO)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Irdaen::Enabled)
     }
 }
 #[doc = "Serial input direction.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Irdainv {
     #[doc = "0: Not inverted."]
-    NotInverted_ = 0,
+    NotInverted = 0,
     #[doc = "1: Inverted. This has no effect on the serial output."]
-    InvertedThisHasN = 1,
+    Inverted = 1,
 }
 impl From<Irdainv> for bool {
     #[inline(always)]
@@ -76,19 +76,19 @@ impl IrdainvR {
     #[inline(always)]
     pub const fn variant(&self) -> Irdainv {
         match self.bits {
-            false => Irdainv::NotInverted_,
-            true => Irdainv::InvertedThisHasN,
+            false => Irdainv::NotInverted,
+            true => Irdainv::Inverted,
         }
     }
     #[doc = "Not inverted."]
     #[inline(always)]
-    pub fn is_not_inverted_(&self) -> bool {
-        *self == Irdainv::NotInverted_
+    pub fn is_not_inverted(&self) -> bool {
+        *self == Irdainv::NotInverted
     }
     #[doc = "Inverted. This has no effect on the serial output."]
     #[inline(always)]
-    pub fn is_inverted_this_has_n(&self) -> bool {
-        *self == Irdainv::InvertedThisHasN
+    pub fn is_inverted(&self) -> bool {
+        *self == Irdainv::Inverted
     }
 }
 #[doc = "Field `IRDAINV` writer - Serial input direction."]
@@ -99,22 +99,22 @@ where
 {
     #[doc = "Not inverted."]
     #[inline(always)]
-    pub fn not_inverted_(self) -> &'a mut crate::W<REG> {
-        self.variant(Irdainv::NotInverted_)
+    pub fn not_inverted(self) -> &'a mut crate::W<REG> {
+        self.variant(Irdainv::NotInverted)
     }
     #[doc = "Inverted. This has no effect on the serial output."]
     #[inline(always)]
-    pub fn inverted_this_has_n(self) -> &'a mut crate::W<REG> {
-        self.variant(Irdainv::InvertedThisHasN)
+    pub fn inverted(self) -> &'a mut crate::W<REG> {
+        self.variant(Irdainv::Inverted)
     }
 }
 #[doc = "IrDA fixed pulse width mode.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Fixpulseen {
     #[doc = "0: Disabled."]
-    Disabled_ = 0,
+    Disabled = 0,
     #[doc = "1: Enabled."]
-    Enabled_ = 1,
+    Enabled = 1,
 }
 impl From<Fixpulseen> for bool {
     #[inline(always)]
@@ -129,19 +129,19 @@ impl FixpulseenR {
     #[inline(always)]
     pub const fn variant(&self) -> Fixpulseen {
         match self.bits {
-            false => Fixpulseen::Disabled_,
-            true => Fixpulseen::Enabled_,
+            false => Fixpulseen::Disabled,
+            true => Fixpulseen::Enabled,
         }
     }
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn is_disabled_(&self) -> bool {
-        *self == Fixpulseen::Disabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Fixpulseen::Disabled
     }
     #[doc = "Enabled."]
     #[inline(always)]
-    pub fn is_enabled_(&self) -> bool {
-        *self == Fixpulseen::Enabled_
+    pub fn is_enabled(&self) -> bool {
+        *self == Fixpulseen::Enabled
     }
 }
 #[doc = "Field `FIXPULSEEN` writer - IrDA fixed pulse width mode."]
@@ -152,13 +152,13 @@ where
 {
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Fixpulseen::Disabled_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Fixpulseen::Disabled)
     }
     #[doc = "Enabled."]
     #[inline(always)]
-    pub fn enabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Fixpulseen::Enabled_)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Fixpulseen::Enabled)
     }
 }
 #[doc = "Configures the pulse when FixPulseEn = 1.\n\nValue on reset: 0"]

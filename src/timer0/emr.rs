@@ -23,13 +23,13 @@ pub type Em3W<'a, REG> = crate::BitWriter<'a, REG>;
 #[repr(u8)]
 pub enum Emc0 {
     #[doc = "0: Do Nothing."]
-    DoNothing_ = 0,
+    DoNothing = 0,
     #[doc = "1: Clear the corresponding External Match bit/output to 0 (MATn.m pin is LOW if pinned out)."]
-    ClearTheCorrespond = 1,
+    Clear = 1,
     #[doc = "2: Set the corresponding External Match bit/output to 1 (MATn.m pin is HIGH if pinned out)."]
-    SetTheCorrespondin = 2,
+    Set = 2,
     #[doc = "3: Toggle the corresponding External Match bit/output."]
-    ToggleTheCorrespon = 3,
+    Toggle = 3,
 }
 impl From<Emc0> for u8 {
     #[inline(always)]
@@ -48,32 +48,32 @@ impl Emc0R {
     #[inline(always)]
     pub const fn variant(&self) -> Emc0 {
         match self.bits {
-            0 => Emc0::DoNothing_,
-            1 => Emc0::ClearTheCorrespond,
-            2 => Emc0::SetTheCorrespondin,
-            3 => Emc0::ToggleTheCorrespon,
+            0 => Emc0::DoNothing,
+            1 => Emc0::Clear,
+            2 => Emc0::Set,
+            3 => Emc0::Toggle,
             _ => unreachable!(),
         }
     }
     #[doc = "Do Nothing."]
     #[inline(always)]
-    pub fn is_do_nothing_(&self) -> bool {
-        *self == Emc0::DoNothing_
+    pub fn is_do_nothing(&self) -> bool {
+        *self == Emc0::DoNothing
     }
     #[doc = "Clear the corresponding External Match bit/output to 0 (MATn.m pin is LOW if pinned out)."]
     #[inline(always)]
-    pub fn is_clear_the_correspond(&self) -> bool {
-        *self == Emc0::ClearTheCorrespond
+    pub fn is_clear(&self) -> bool {
+        *self == Emc0::Clear
     }
     #[doc = "Set the corresponding External Match bit/output to 1 (MATn.m pin is HIGH if pinned out)."]
     #[inline(always)]
-    pub fn is_set_the_correspondin(&self) -> bool {
-        *self == Emc0::SetTheCorrespondin
+    pub fn is_set(&self) -> bool {
+        *self == Emc0::Set
     }
     #[doc = "Toggle the corresponding External Match bit/output."]
     #[inline(always)]
-    pub fn is_toggle_the_correspon(&self) -> bool {
-        *self == Emc0::ToggleTheCorrespon
+    pub fn is_toggle(&self) -> bool {
+        *self == Emc0::Toggle
     }
 }
 #[doc = "Field `EMC0` writer - External Match Control 0. Determines the functionality of External Match 0."]
@@ -85,23 +85,23 @@ where
 {
     #[doc = "Do Nothing."]
     #[inline(always)]
-    pub fn do_nothing_(self) -> &'a mut crate::W<REG> {
-        self.variant(Emc0::DoNothing_)
+    pub fn do_nothing(self) -> &'a mut crate::W<REG> {
+        self.variant(Emc0::DoNothing)
     }
     #[doc = "Clear the corresponding External Match bit/output to 0 (MATn.m pin is LOW if pinned out)."]
     #[inline(always)]
-    pub fn clear_the_correspond(self) -> &'a mut crate::W<REG> {
-        self.variant(Emc0::ClearTheCorrespond)
+    pub fn clear(self) -> &'a mut crate::W<REG> {
+        self.variant(Emc0::Clear)
     }
     #[doc = "Set the corresponding External Match bit/output to 1 (MATn.m pin is HIGH if pinned out)."]
     #[inline(always)]
-    pub fn set_the_correspondin(self) -> &'a mut crate::W<REG> {
-        self.variant(Emc0::SetTheCorrespondin)
+    pub fn set_(self) -> &'a mut crate::W<REG> {
+        self.variant(Emc0::Set)
     }
     #[doc = "Toggle the corresponding External Match bit/output."]
     #[inline(always)]
-    pub fn toggle_the_correspon(self) -> &'a mut crate::W<REG> {
-        self.variant(Emc0::ToggleTheCorrespon)
+    pub fn toggle(self) -> &'a mut crate::W<REG> {
+        self.variant(Emc0::Toggle)
     }
 }
 #[doc = "External Match Control 1. Determines the functionality of External Match 1.\n\nValue on reset: 0"]
@@ -109,13 +109,13 @@ where
 #[repr(u8)]
 pub enum Emc1 {
     #[doc = "0: Do Nothing."]
-    DoNothing_ = 0,
+    DoNothing = 0,
     #[doc = "1: Clear the corresponding External Match bit/output to 0 (MATn.m pin is LOW if pinned out)."]
-    ClearTheCorrespond = 1,
+    Clear = 1,
     #[doc = "2: Set the corresponding External Match bit/output to 1 (MATn.m pin is HIGH if pinned out)."]
-    SetTheCorrespondin = 2,
+    Set = 2,
     #[doc = "3: Toggle the corresponding External Match bit/output."]
-    ToggleTheCorrespon = 3,
+    Toggle = 3,
 }
 impl From<Emc1> for u8 {
     #[inline(always)]
@@ -134,32 +134,32 @@ impl Emc1R {
     #[inline(always)]
     pub const fn variant(&self) -> Emc1 {
         match self.bits {
-            0 => Emc1::DoNothing_,
-            1 => Emc1::ClearTheCorrespond,
-            2 => Emc1::SetTheCorrespondin,
-            3 => Emc1::ToggleTheCorrespon,
+            0 => Emc1::DoNothing,
+            1 => Emc1::Clear,
+            2 => Emc1::Set,
+            3 => Emc1::Toggle,
             _ => unreachable!(),
         }
     }
     #[doc = "Do Nothing."]
     #[inline(always)]
-    pub fn is_do_nothing_(&self) -> bool {
-        *self == Emc1::DoNothing_
+    pub fn is_do_nothing(&self) -> bool {
+        *self == Emc1::DoNothing
     }
     #[doc = "Clear the corresponding External Match bit/output to 0 (MATn.m pin is LOW if pinned out)."]
     #[inline(always)]
-    pub fn is_clear_the_correspond(&self) -> bool {
-        *self == Emc1::ClearTheCorrespond
+    pub fn is_clear(&self) -> bool {
+        *self == Emc1::Clear
     }
     #[doc = "Set the corresponding External Match bit/output to 1 (MATn.m pin is HIGH if pinned out)."]
     #[inline(always)]
-    pub fn is_set_the_correspondin(&self) -> bool {
-        *self == Emc1::SetTheCorrespondin
+    pub fn is_set(&self) -> bool {
+        *self == Emc1::Set
     }
     #[doc = "Toggle the corresponding External Match bit/output."]
     #[inline(always)]
-    pub fn is_toggle_the_correspon(&self) -> bool {
-        *self == Emc1::ToggleTheCorrespon
+    pub fn is_toggle(&self) -> bool {
+        *self == Emc1::Toggle
     }
 }
 #[doc = "Field `EMC1` writer - External Match Control 1. Determines the functionality of External Match 1."]
@@ -171,23 +171,23 @@ where
 {
     #[doc = "Do Nothing."]
     #[inline(always)]
-    pub fn do_nothing_(self) -> &'a mut crate::W<REG> {
-        self.variant(Emc1::DoNothing_)
+    pub fn do_nothing(self) -> &'a mut crate::W<REG> {
+        self.variant(Emc1::DoNothing)
     }
     #[doc = "Clear the corresponding External Match bit/output to 0 (MATn.m pin is LOW if pinned out)."]
     #[inline(always)]
-    pub fn clear_the_correspond(self) -> &'a mut crate::W<REG> {
-        self.variant(Emc1::ClearTheCorrespond)
+    pub fn clear(self) -> &'a mut crate::W<REG> {
+        self.variant(Emc1::Clear)
     }
     #[doc = "Set the corresponding External Match bit/output to 1 (MATn.m pin is HIGH if pinned out)."]
     #[inline(always)]
-    pub fn set_the_correspondin(self) -> &'a mut crate::W<REG> {
-        self.variant(Emc1::SetTheCorrespondin)
+    pub fn set_(self) -> &'a mut crate::W<REG> {
+        self.variant(Emc1::Set)
     }
     #[doc = "Toggle the corresponding External Match bit/output."]
     #[inline(always)]
-    pub fn toggle_the_correspon(self) -> &'a mut crate::W<REG> {
-        self.variant(Emc1::ToggleTheCorrespon)
+    pub fn toggle(self) -> &'a mut crate::W<REG> {
+        self.variant(Emc1::Toggle)
     }
 }
 #[doc = "External Match Control 2. Determines the functionality of External Match 2.\n\nValue on reset: 0"]
@@ -195,13 +195,13 @@ where
 #[repr(u8)]
 pub enum Emc2 {
     #[doc = "0: Do Nothing."]
-    DoNothing_ = 0,
+    DoNothing = 0,
     #[doc = "1: Clear the corresponding External Match bit/output to 0 (MATn.m pin is LOW if pinned out)."]
-    ClearTheCorrespond = 1,
+    Clear = 1,
     #[doc = "2: Set the corresponding External Match bit/output to 1 (MATn.m pin is HIGH if pinned out)."]
-    SetTheCorrespondin = 2,
+    Set = 2,
     #[doc = "3: Toggle the corresponding External Match bit/output."]
-    ToggleTheCorrespon = 3,
+    Toggle = 3,
 }
 impl From<Emc2> for u8 {
     #[inline(always)]
@@ -220,32 +220,32 @@ impl Emc2R {
     #[inline(always)]
     pub const fn variant(&self) -> Emc2 {
         match self.bits {
-            0 => Emc2::DoNothing_,
-            1 => Emc2::ClearTheCorrespond,
-            2 => Emc2::SetTheCorrespondin,
-            3 => Emc2::ToggleTheCorrespon,
+            0 => Emc2::DoNothing,
+            1 => Emc2::Clear,
+            2 => Emc2::Set,
+            3 => Emc2::Toggle,
             _ => unreachable!(),
         }
     }
     #[doc = "Do Nothing."]
     #[inline(always)]
-    pub fn is_do_nothing_(&self) -> bool {
-        *self == Emc2::DoNothing_
+    pub fn is_do_nothing(&self) -> bool {
+        *self == Emc2::DoNothing
     }
     #[doc = "Clear the corresponding External Match bit/output to 0 (MATn.m pin is LOW if pinned out)."]
     #[inline(always)]
-    pub fn is_clear_the_correspond(&self) -> bool {
-        *self == Emc2::ClearTheCorrespond
+    pub fn is_clear(&self) -> bool {
+        *self == Emc2::Clear
     }
     #[doc = "Set the corresponding External Match bit/output to 1 (MATn.m pin is HIGH if pinned out)."]
     #[inline(always)]
-    pub fn is_set_the_correspondin(&self) -> bool {
-        *self == Emc2::SetTheCorrespondin
+    pub fn is_set(&self) -> bool {
+        *self == Emc2::Set
     }
     #[doc = "Toggle the corresponding External Match bit/output."]
     #[inline(always)]
-    pub fn is_toggle_the_correspon(&self) -> bool {
-        *self == Emc2::ToggleTheCorrespon
+    pub fn is_toggle(&self) -> bool {
+        *self == Emc2::Toggle
     }
 }
 #[doc = "Field `EMC2` writer - External Match Control 2. Determines the functionality of External Match 2."]
@@ -257,23 +257,23 @@ where
 {
     #[doc = "Do Nothing."]
     #[inline(always)]
-    pub fn do_nothing_(self) -> &'a mut crate::W<REG> {
-        self.variant(Emc2::DoNothing_)
+    pub fn do_nothing(self) -> &'a mut crate::W<REG> {
+        self.variant(Emc2::DoNothing)
     }
     #[doc = "Clear the corresponding External Match bit/output to 0 (MATn.m pin is LOW if pinned out)."]
     #[inline(always)]
-    pub fn clear_the_correspond(self) -> &'a mut crate::W<REG> {
-        self.variant(Emc2::ClearTheCorrespond)
+    pub fn clear(self) -> &'a mut crate::W<REG> {
+        self.variant(Emc2::Clear)
     }
     #[doc = "Set the corresponding External Match bit/output to 1 (MATn.m pin is HIGH if pinned out)."]
     #[inline(always)]
-    pub fn set_the_correspondin(self) -> &'a mut crate::W<REG> {
-        self.variant(Emc2::SetTheCorrespondin)
+    pub fn set_(self) -> &'a mut crate::W<REG> {
+        self.variant(Emc2::Set)
     }
     #[doc = "Toggle the corresponding External Match bit/output."]
     #[inline(always)]
-    pub fn toggle_the_correspon(self) -> &'a mut crate::W<REG> {
-        self.variant(Emc2::ToggleTheCorrespon)
+    pub fn toggle(self) -> &'a mut crate::W<REG> {
+        self.variant(Emc2::Toggle)
     }
 }
 #[doc = "External Match Control 3. Determines the functionality of External Match 3.\n\nValue on reset: 0"]
@@ -281,13 +281,13 @@ where
 #[repr(u8)]
 pub enum Emc3 {
     #[doc = "0: Do Nothing."]
-    DoNothing_ = 0,
+    DoNothing = 0,
     #[doc = "1: Clear the corresponding External Match bit/output to 0 (MATn.m pin is LOW if pinned out)."]
-    ClearTheCorrespond = 1,
+    Clear = 1,
     #[doc = "2: Set the corresponding External Match bit/output to 1 (MATn.m pin is HIGH if pinned out)."]
-    SetTheCorrespondin = 2,
+    Set = 2,
     #[doc = "3: Toggle the corresponding External Match bit/output."]
-    ToggleTheCorrespon = 3,
+    Toggle = 3,
 }
 impl From<Emc3> for u8 {
     #[inline(always)]
@@ -306,32 +306,32 @@ impl Emc3R {
     #[inline(always)]
     pub const fn variant(&self) -> Emc3 {
         match self.bits {
-            0 => Emc3::DoNothing_,
-            1 => Emc3::ClearTheCorrespond,
-            2 => Emc3::SetTheCorrespondin,
-            3 => Emc3::ToggleTheCorrespon,
+            0 => Emc3::DoNothing,
+            1 => Emc3::Clear,
+            2 => Emc3::Set,
+            3 => Emc3::Toggle,
             _ => unreachable!(),
         }
     }
     #[doc = "Do Nothing."]
     #[inline(always)]
-    pub fn is_do_nothing_(&self) -> bool {
-        *self == Emc3::DoNothing_
+    pub fn is_do_nothing(&self) -> bool {
+        *self == Emc3::DoNothing
     }
     #[doc = "Clear the corresponding External Match bit/output to 0 (MATn.m pin is LOW if pinned out)."]
     #[inline(always)]
-    pub fn is_clear_the_correspond(&self) -> bool {
-        *self == Emc3::ClearTheCorrespond
+    pub fn is_clear(&self) -> bool {
+        *self == Emc3::Clear
     }
     #[doc = "Set the corresponding External Match bit/output to 1 (MATn.m pin is HIGH if pinned out)."]
     #[inline(always)]
-    pub fn is_set_the_correspondin(&self) -> bool {
-        *self == Emc3::SetTheCorrespondin
+    pub fn is_set(&self) -> bool {
+        *self == Emc3::Set
     }
     #[doc = "Toggle the corresponding External Match bit/output."]
     #[inline(always)]
-    pub fn is_toggle_the_correspon(&self) -> bool {
-        *self == Emc3::ToggleTheCorrespon
+    pub fn is_toggle(&self) -> bool {
+        *self == Emc3::Toggle
     }
 }
 #[doc = "Field `EMC3` writer - External Match Control 3. Determines the functionality of External Match 3."]
@@ -343,23 +343,23 @@ where
 {
     #[doc = "Do Nothing."]
     #[inline(always)]
-    pub fn do_nothing_(self) -> &'a mut crate::W<REG> {
-        self.variant(Emc3::DoNothing_)
+    pub fn do_nothing(self) -> &'a mut crate::W<REG> {
+        self.variant(Emc3::DoNothing)
     }
     #[doc = "Clear the corresponding External Match bit/output to 0 (MATn.m pin is LOW if pinned out)."]
     #[inline(always)]
-    pub fn clear_the_correspond(self) -> &'a mut crate::W<REG> {
-        self.variant(Emc3::ClearTheCorrespond)
+    pub fn clear(self) -> &'a mut crate::W<REG> {
+        self.variant(Emc3::Clear)
     }
     #[doc = "Set the corresponding External Match bit/output to 1 (MATn.m pin is HIGH if pinned out)."]
     #[inline(always)]
-    pub fn set_the_correspondin(self) -> &'a mut crate::W<REG> {
-        self.variant(Emc3::SetTheCorrespondin)
+    pub fn set_(self) -> &'a mut crate::W<REG> {
+        self.variant(Emc3::Set)
     }
     #[doc = "Toggle the corresponding External Match bit/output."]
     #[inline(always)]
-    pub fn toggle_the_correspon(self) -> &'a mut crate::W<REG> {
-        self.variant(Emc3::ToggleTheCorrespon)
+    pub fn toggle(self) -> &'a mut crate::W<REG> {
+        self.variant(Emc3::Toggle)
     }
 }
 impl R {

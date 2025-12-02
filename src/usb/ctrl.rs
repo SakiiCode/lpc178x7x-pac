@@ -6,9 +6,9 @@ pub type W = crate::W<CtrlSpec>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum RdEn {
     #[doc = "0: Disabled."]
-    Disabled_ = 0,
+    Disabled = 0,
     #[doc = "1: Enabled."]
-    Enabled_ = 1,
+    Enabled = 1,
 }
 impl From<RdEn> for bool {
     #[inline(always)]
@@ -23,19 +23,19 @@ impl RdEnR {
     #[inline(always)]
     pub const fn variant(&self) -> RdEn {
         match self.bits {
-            false => RdEn::Disabled_,
-            true => RdEn::Enabled_,
+            false => RdEn::Disabled,
+            true => RdEn::Enabled,
         }
     }
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn is_disabled_(&self) -> bool {
-        *self == RdEn::Disabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == RdEn::Disabled
     }
     #[doc = "Enabled."]
     #[inline(always)]
-    pub fn is_enabled_(&self) -> bool {
-        *self == RdEn::Enabled_
+    pub fn is_enabled(&self) -> bool {
+        *self == RdEn::Enabled
     }
 }
 #[doc = "Field `RD_EN` writer - Read mode control. Enables reading data from the OUT endpoint buffer for the endpoint specified in the LOG_ENDPOINT field using the USBRxData register. This bit is cleared by hardware when the last word of the current packet is read from USBRxData."]
@@ -46,22 +46,22 @@ where
 {
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(RdEn::Disabled_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(RdEn::Disabled)
     }
     #[doc = "Enabled."]
     #[inline(always)]
-    pub fn enabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(RdEn::Enabled_)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(RdEn::Enabled)
     }
 }
 #[doc = "Write mode control. Enables writing data to the IN endpoint buffer for the endpoint specified in the LOG_ENDPOINT field using the USBTxData register. This bit is cleared by hardware when the number of bytes in USBTxLen have been sent.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum WrEn {
     #[doc = "0: Disabled."]
-    Disabled_ = 0,
+    Disabled = 0,
     #[doc = "1: Enabled."]
-    Enabled_ = 1,
+    Enabled = 1,
 }
 impl From<WrEn> for bool {
     #[inline(always)]
@@ -76,19 +76,19 @@ impl WrEnR {
     #[inline(always)]
     pub const fn variant(&self) -> WrEn {
         match self.bits {
-            false => WrEn::Disabled_,
-            true => WrEn::Enabled_,
+            false => WrEn::Disabled,
+            true => WrEn::Enabled,
         }
     }
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn is_disabled_(&self) -> bool {
-        *self == WrEn::Disabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == WrEn::Disabled
     }
     #[doc = "Enabled."]
     #[inline(always)]
-    pub fn is_enabled_(&self) -> bool {
-        *self == WrEn::Enabled_
+    pub fn is_enabled(&self) -> bool {
+        *self == WrEn::Enabled
     }
 }
 #[doc = "Field `WR_EN` writer - Write mode control. Enables writing data to the IN endpoint buffer for the endpoint specified in the LOG_ENDPOINT field using the USBTxData register. This bit is cleared by hardware when the number of bytes in USBTxLen have been sent."]
@@ -99,13 +99,13 @@ where
 {
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(WrEn::Disabled_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(WrEn::Disabled)
     }
     #[doc = "Enabled."]
     #[inline(always)]
-    pub fn enabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(WrEn::Enabled_)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(WrEn::Enabled)
     }
 }
 #[doc = "Field `LOG_ENDPOINT` reader - Logical Endpoint number."]

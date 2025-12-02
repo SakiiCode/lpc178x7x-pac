@@ -7,13 +7,9 @@ pub type W = crate::W<DynamicconfigSpec>;
 #[repr(u8)]
 pub enum Md {
     #[doc = "0: SDRAM (POR reset value)."]
-    SdramPorResetVal = 0,
+    Sdram = 0,
     #[doc = "1: Low-power SDRAM."]
-    LowPowerSdram_ = 1,
-    #[doc = "2: Reserved."]
-    Reserved0x2 = 2,
-    #[doc = "3: Reserved."]
-    Reserved0x3 = 3,
+    LowPowerSdram = 1,
 }
 impl From<Md> for u8 {
     #[inline(always)]
@@ -32,36 +28,24 @@ impl MdR {
     #[inline(always)]
     pub const fn variant(&self) -> Md {
         match self.bits {
-            0 => Md::SdramPorResetVal,
-            1 => Md::LowPowerSdram_,
-            2 => Md::Reserved0x2,
-            3 => Md::Reserved0x3,
+            0 => Md::Sdram,
+            1 => Md::LowPowerSdram,
             _ => unreachable!(),
         }
     }
     #[doc = "SDRAM (POR reset value)."]
     #[inline(always)]
-    pub fn is_sdram_por_reset_val(&self) -> bool {
-        *self == Md::SdramPorResetVal
+    pub fn is_sdram(&self) -> bool {
+        *self == Md::Sdram
     }
     #[doc = "Low-power SDRAM."]
     #[inline(always)]
-    pub fn is_low_power_sdram_(&self) -> bool {
-        *self == Md::LowPowerSdram_
-    }
-    #[doc = "Reserved."]
-    #[inline(always)]
-    pub fn is_reserved_0x2(&self) -> bool {
-        *self == Md::Reserved0x2
-    }
-    #[doc = "Reserved."]
-    #[inline(always)]
-    pub fn is_reserved_0x3(&self) -> bool {
-        *self == Md::Reserved0x3
+    pub fn is_low_power_sdram(&self) -> bool {
+        *self == Md::LowPowerSdram
     }
 }
 #[doc = "Field `MD` writer - Memory device."]
-pub type MdW<'a, REG> = crate::FieldWriter<'a, REG, 2, Md, crate::Safe>;
+pub type MdW<'a, REG> = crate::FieldWriter<'a, REG, 2, Md>;
 impl<'a, REG> MdW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -69,23 +53,13 @@ where
 {
     #[doc = "SDRAM (POR reset value)."]
     #[inline(always)]
-    pub fn sdram_por_reset_val(self) -> &'a mut crate::W<REG> {
-        self.variant(Md::SdramPorResetVal)
+    pub fn sdram(self) -> &'a mut crate::W<REG> {
+        self.variant(Md::Sdram)
     }
     #[doc = "Low-power SDRAM."]
     #[inline(always)]
-    pub fn low_power_sdram_(self) -> &'a mut crate::W<REG> {
-        self.variant(Md::LowPowerSdram_)
-    }
-    #[doc = "Reserved."]
-    #[inline(always)]
-    pub fn reserved_0x2(self) -> &'a mut crate::W<REG> {
-        self.variant(Md::Reserved0x2)
-    }
-    #[doc = "Reserved."]
-    #[inline(always)]
-    pub fn reserved_0x3(self) -> &'a mut crate::W<REG> {
-        self.variant(Md::Reserved0x3)
+    pub fn low_power_sdram(self) -> &'a mut crate::W<REG> {
+        self.variant(Md::LowPowerSdram)
     }
 }
 #[doc = "Field `AM0` reader - See Table 133. 000000 = reset value.\\[1\\]"]
@@ -100,9 +74,9 @@ pub type Am1W<'a, REG> = crate::BitWriter<'a, REG>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum B {
     #[doc = "0: Buffer disabled for accesses to this chip select (POR reset value)."]
-    BufferDisabledFor_ = 0,
+    Disabled = 0,
     #[doc = "1: Buffer enabled for accesses to this chip select.\\[2\\]"]
-    BufferEnabledForA = 1,
+    Enabled = 1,
 }
 impl From<B> for bool {
     #[inline(always)]
@@ -117,19 +91,19 @@ impl BR {
     #[inline(always)]
     pub const fn variant(&self) -> B {
         match self.bits {
-            false => B::BufferDisabledFor_,
-            true => B::BufferEnabledForA,
+            false => B::Disabled,
+            true => B::Enabled,
         }
     }
     #[doc = "Buffer disabled for accesses to this chip select (POR reset value)."]
     #[inline(always)]
-    pub fn is_buffer_disabled_for_(&self) -> bool {
-        *self == B::BufferDisabledFor_
+    pub fn is_disabled(&self) -> bool {
+        *self == B::Disabled
     }
     #[doc = "Buffer enabled for accesses to this chip select.\\[2\\]"]
     #[inline(always)]
-    pub fn is_buffer_enabled_for_a(&self) -> bool {
-        *self == B::BufferEnabledForA
+    pub fn is_enabled(&self) -> bool {
+        *self == B::Enabled
     }
 }
 #[doc = "Field `B` writer - Buffer enable."]
@@ -140,22 +114,22 @@ where
 {
     #[doc = "Buffer disabled for accesses to this chip select (POR reset value)."]
     #[inline(always)]
-    pub fn buffer_disabled_for_(self) -> &'a mut crate::W<REG> {
-        self.variant(B::BufferDisabledFor_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(B::Disabled)
     }
     #[doc = "Buffer enabled for accesses to this chip select.\\[2\\]"]
     #[inline(always)]
-    pub fn buffer_enabled_for_a(self) -> &'a mut crate::W<REG> {
-        self.variant(B::BufferEnabledForA)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(B::Enabled)
     }
 }
 #[doc = "Write protect.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum P {
     #[doc = "0: Writes not protected (POR reset value)."]
-    WritesNotProtected = 0,
+    Disabled = 0,
     #[doc = "1: Writes protected."]
-    WritesProtected_ = 1,
+    Enabled = 1,
 }
 impl From<P> for bool {
     #[inline(always)]
@@ -170,19 +144,19 @@ impl PR {
     #[inline(always)]
     pub const fn variant(&self) -> P {
         match self.bits {
-            false => P::WritesNotProtected,
-            true => P::WritesProtected_,
+            false => P::Disabled,
+            true => P::Enabled,
         }
     }
     #[doc = "Writes not protected (POR reset value)."]
     #[inline(always)]
-    pub fn is_writes_not_protected(&self) -> bool {
-        *self == P::WritesNotProtected
+    pub fn is_disabled(&self) -> bool {
+        *self == P::Disabled
     }
     #[doc = "Writes protected."]
     #[inline(always)]
-    pub fn is_writes_protected_(&self) -> bool {
-        *self == P::WritesProtected_
+    pub fn is_enabled(&self) -> bool {
+        *self == P::Enabled
     }
 }
 #[doc = "Field `P` writer - Write protect."]
@@ -193,13 +167,13 @@ where
 {
     #[doc = "Writes not protected (POR reset value)."]
     #[inline(always)]
-    pub fn writes_not_protected(self) -> &'a mut crate::W<REG> {
-        self.variant(P::WritesNotProtected)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(P::Disabled)
     }
     #[doc = "Writes protected."]
     #[inline(always)]
-    pub fn writes_protected_(self) -> &'a mut crate::W<REG> {
-        self.variant(P::WritesProtected_)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(P::Enabled)
     }
 }
 impl R {

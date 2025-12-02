@@ -7,11 +7,11 @@ pub type W = crate::W<ModeSpec>;
 #[repr(u8)]
 pub enum CrcPoly {
     #[doc = "0: CRC-CCITT polynomial"]
-    CrcCcittPolynomial = 0,
+    CrcCcitt = 0,
     #[doc = "1: CRC-16 polynomial"]
-    Crc16Polynomial = 1,
+    Crc16 = 1,
     #[doc = "2: CRC-32 polynomial"]
-    Crc32Polynomial = 2,
+    Crc32 = 2,
 }
 impl From<CrcPoly> for u8 {
     #[inline(always)]
@@ -30,26 +30,26 @@ impl CrcPolyR {
     #[inline(always)]
     pub const fn variant(&self) -> Option<CrcPoly> {
         match self.bits {
-            0 => Some(CrcPoly::CrcCcittPolynomial),
-            1 => Some(CrcPoly::Crc16Polynomial),
-            2 => Some(CrcPoly::Crc32Polynomial),
+            0 => Some(CrcPoly::CrcCcitt),
+            1 => Some(CrcPoly::Crc16),
+            2 => Some(CrcPoly::Crc32),
             _ => None,
         }
     }
     #[doc = "CRC-CCITT polynomial"]
     #[inline(always)]
-    pub fn is_crc_ccitt_polynomial(&self) -> bool {
-        *self == CrcPoly::CrcCcittPolynomial
+    pub fn is_crc_ccitt(&self) -> bool {
+        *self == CrcPoly::CrcCcitt
     }
     #[doc = "CRC-16 polynomial"]
     #[inline(always)]
-    pub fn is_crc_16_polynomial(&self) -> bool {
-        *self == CrcPoly::Crc16Polynomial
+    pub fn is_crc_16(&self) -> bool {
+        *self == CrcPoly::Crc16
     }
     #[doc = "CRC-32 polynomial"]
     #[inline(always)]
-    pub fn is_crc_32_polynomial(&self) -> bool {
-        *self == CrcPoly::Crc32Polynomial
+    pub fn is_crc_32(&self) -> bool {
+        *self == CrcPoly::Crc32
     }
 }
 #[doc = "Field `CRC_POLY` writer - Select CRC polynomial"]
@@ -61,27 +61,27 @@ where
 {
     #[doc = "CRC-CCITT polynomial"]
     #[inline(always)]
-    pub fn crc_ccitt_polynomial(self) -> &'a mut crate::W<REG> {
-        self.variant(CrcPoly::CrcCcittPolynomial)
+    pub fn crc_ccitt(self) -> &'a mut crate::W<REG> {
+        self.variant(CrcPoly::CrcCcitt)
     }
     #[doc = "CRC-16 polynomial"]
     #[inline(always)]
-    pub fn crc_16_polynomial(self) -> &'a mut crate::W<REG> {
-        self.variant(CrcPoly::Crc16Polynomial)
+    pub fn crc_16(self) -> &'a mut crate::W<REG> {
+        self.variant(CrcPoly::Crc16)
     }
     #[doc = "CRC-32 polynomial"]
     #[inline(always)]
-    pub fn crc_32_polynomial(self) -> &'a mut crate::W<REG> {
-        self.variant(CrcPoly::Crc32Polynomial)
+    pub fn crc_32(self) -> &'a mut crate::W<REG> {
+        self.variant(CrcPoly::Crc32)
     }
 }
 #[doc = "Select bit order for CRC_WR_DATA\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum BitRvsWr {
     #[doc = "0: No bit order reverse for CRC_WR_DATA (per byte)"]
-    NoBitOrderReverse = 0,
+    NoReverse = 0,
     #[doc = "1: Bit order reverse for CRC_WR_DATA (per byte)"]
-    BitOrderReverseFo = 1,
+    Reverse = 1,
 }
 impl From<BitRvsWr> for bool {
     #[inline(always)]
@@ -96,19 +96,19 @@ impl BitRvsWrR {
     #[inline(always)]
     pub const fn variant(&self) -> BitRvsWr {
         match self.bits {
-            false => BitRvsWr::NoBitOrderReverse,
-            true => BitRvsWr::BitOrderReverseFo,
+            false => BitRvsWr::NoReverse,
+            true => BitRvsWr::Reverse,
         }
     }
     #[doc = "No bit order reverse for CRC_WR_DATA (per byte)"]
     #[inline(always)]
-    pub fn is_no_bit_order_reverse(&self) -> bool {
-        *self == BitRvsWr::NoBitOrderReverse
+    pub fn is_no_reverse(&self) -> bool {
+        *self == BitRvsWr::NoReverse
     }
     #[doc = "Bit order reverse for CRC_WR_DATA (per byte)"]
     #[inline(always)]
-    pub fn is_bit_order_reverse_fo(&self) -> bool {
-        *self == BitRvsWr::BitOrderReverseFo
+    pub fn is_reverse(&self) -> bool {
+        *self == BitRvsWr::Reverse
     }
 }
 #[doc = "Field `BIT_RVS_WR` writer - Select bit order for CRC_WR_DATA"]
@@ -119,22 +119,22 @@ where
 {
     #[doc = "No bit order reverse for CRC_WR_DATA (per byte)"]
     #[inline(always)]
-    pub fn no_bit_order_reverse(self) -> &'a mut crate::W<REG> {
-        self.variant(BitRvsWr::NoBitOrderReverse)
+    pub fn no_reverse(self) -> &'a mut crate::W<REG> {
+        self.variant(BitRvsWr::NoReverse)
     }
     #[doc = "Bit order reverse for CRC_WR_DATA (per byte)"]
     #[inline(always)]
-    pub fn bit_order_reverse_fo(self) -> &'a mut crate::W<REG> {
-        self.variant(BitRvsWr::BitOrderReverseFo)
+    pub fn reverse(self) -> &'a mut crate::W<REG> {
+        self.variant(BitRvsWr::Reverse)
     }
 }
 #[doc = "Select one's complement for CRC_WR_DATA\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum CmplWr {
     #[doc = "0: No one's complement for CRC_WR_DATA"]
-    NoOnesComplement_ = 0,
+    Disabled = 0,
     #[doc = "1: One's complement for CRC_WR_DATA"]
-    OnesComplementFor = 1,
+    Enabled = 1,
 }
 impl From<CmplWr> for bool {
     #[inline(always)]
@@ -149,19 +149,19 @@ impl CmplWrR {
     #[inline(always)]
     pub const fn variant(&self) -> CmplWr {
         match self.bits {
-            false => CmplWr::NoOnesComplement_,
-            true => CmplWr::OnesComplementFor,
+            false => CmplWr::Disabled,
+            true => CmplWr::Enabled,
         }
     }
     #[doc = "No one's complement for CRC_WR_DATA"]
     #[inline(always)]
-    pub fn is_no_ones_complement_(&self) -> bool {
-        *self == CmplWr::NoOnesComplement_
+    pub fn is_disabled(&self) -> bool {
+        *self == CmplWr::Disabled
     }
     #[doc = "One's complement for CRC_WR_DATA"]
     #[inline(always)]
-    pub fn is_ones_complement_for(&self) -> bool {
-        *self == CmplWr::OnesComplementFor
+    pub fn is_enabled(&self) -> bool {
+        *self == CmplWr::Enabled
     }
 }
 #[doc = "Field `CMPL_WR` writer - Select one's complement for CRC_WR_DATA"]
@@ -172,22 +172,22 @@ where
 {
     #[doc = "No one's complement for CRC_WR_DATA"]
     #[inline(always)]
-    pub fn no_ones_complement_(self) -> &'a mut crate::W<REG> {
-        self.variant(CmplWr::NoOnesComplement_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(CmplWr::Disabled)
     }
     #[doc = "One's complement for CRC_WR_DATA"]
     #[inline(always)]
-    pub fn ones_complement_for(self) -> &'a mut crate::W<REG> {
-        self.variant(CmplWr::OnesComplementFor)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(CmplWr::Enabled)
     }
 }
 #[doc = "Select bit order revers for CRC_SUM\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum BitRvsSum {
     #[doc = "0: No bit order reverse for CRC_SUM"]
-    NoBitOrderReverse = 0,
+    NoReverse = 0,
     #[doc = "1: Bit order reverse for CRC_SUM"]
-    BitOrderReverseFo = 1,
+    Reverse = 1,
 }
 impl From<BitRvsSum> for bool {
     #[inline(always)]
@@ -202,19 +202,19 @@ impl BitRvsSumR {
     #[inline(always)]
     pub const fn variant(&self) -> BitRvsSum {
         match self.bits {
-            false => BitRvsSum::NoBitOrderReverse,
-            true => BitRvsSum::BitOrderReverseFo,
+            false => BitRvsSum::NoReverse,
+            true => BitRvsSum::Reverse,
         }
     }
     #[doc = "No bit order reverse for CRC_SUM"]
     #[inline(always)]
-    pub fn is_no_bit_order_reverse(&self) -> bool {
-        *self == BitRvsSum::NoBitOrderReverse
+    pub fn is_no_reverse(&self) -> bool {
+        *self == BitRvsSum::NoReverse
     }
     #[doc = "Bit order reverse for CRC_SUM"]
     #[inline(always)]
-    pub fn is_bit_order_reverse_fo(&self) -> bool {
-        *self == BitRvsSum::BitOrderReverseFo
+    pub fn is_reverse(&self) -> bool {
+        *self == BitRvsSum::Reverse
     }
 }
 #[doc = "Field `BIT_RVS_SUM` writer - Select bit order revers for CRC_SUM"]
@@ -225,22 +225,22 @@ where
 {
     #[doc = "No bit order reverse for CRC_SUM"]
     #[inline(always)]
-    pub fn no_bit_order_reverse(self) -> &'a mut crate::W<REG> {
-        self.variant(BitRvsSum::NoBitOrderReverse)
+    pub fn no_reverse(self) -> &'a mut crate::W<REG> {
+        self.variant(BitRvsSum::NoReverse)
     }
     #[doc = "Bit order reverse for CRC_SUM"]
     #[inline(always)]
-    pub fn bit_order_reverse_fo(self) -> &'a mut crate::W<REG> {
-        self.variant(BitRvsSum::BitOrderReverseFo)
+    pub fn reverse(self) -> &'a mut crate::W<REG> {
+        self.variant(BitRvsSum::Reverse)
     }
 }
 #[doc = "Select one's complement for CRC_SUM\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum CmplSum {
     #[doc = "0: No one's complement for CRC_SUM"]
-    NoOnesComplement_ = 0,
+    Disabled = 0,
     #[doc = "1: One's complement for CRC_SUM"]
-    OnesComplementFor = 1,
+    Enabled = 1,
 }
 impl From<CmplSum> for bool {
     #[inline(always)]
@@ -255,19 +255,19 @@ impl CmplSumR {
     #[inline(always)]
     pub const fn variant(&self) -> CmplSum {
         match self.bits {
-            false => CmplSum::NoOnesComplement_,
-            true => CmplSum::OnesComplementFor,
+            false => CmplSum::Disabled,
+            true => CmplSum::Enabled,
         }
     }
     #[doc = "No one's complement for CRC_SUM"]
     #[inline(always)]
-    pub fn is_no_ones_complement_(&self) -> bool {
-        *self == CmplSum::NoOnesComplement_
+    pub fn is_disabled(&self) -> bool {
+        *self == CmplSum::Disabled
     }
     #[doc = "One's complement for CRC_SUM"]
     #[inline(always)]
-    pub fn is_ones_complement_for(&self) -> bool {
-        *self == CmplSum::OnesComplementFor
+    pub fn is_enabled(&self) -> bool {
+        *self == CmplSum::Enabled
     }
 }
 #[doc = "Field `CMPL_SUM` writer - Select one's complement for CRC_SUM"]
@@ -278,13 +278,13 @@ where
 {
     #[doc = "No one's complement for CRC_SUM"]
     #[inline(always)]
-    pub fn no_ones_complement_(self) -> &'a mut crate::W<REG> {
-        self.variant(CmplSum::NoOnesComplement_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(CmplSum::Disabled)
     }
     #[doc = "One's complement for CRC_SUM"]
     #[inline(always)]
-    pub fn ones_complement_for(self) -> &'a mut crate::W<REG> {
-        self.variant(CmplSum::OnesComplementFor)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(CmplSum::Enabled)
     }
 }
 impl R {

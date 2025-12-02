@@ -6,9 +6,9 @@ pub type W = crate::W<IerSpec>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Rbrie {
     #[doc = "0: Disable the RDA interrupts."]
-    DisableTheRdaInte = 0,
+    Disabled = 0,
     #[doc = "1: Enable the RDA interrupts."]
-    EnableTheRdaInter = 1,
+    Enabled = 1,
 }
 impl From<Rbrie> for bool {
     #[inline(always)]
@@ -23,19 +23,19 @@ impl RbrieR {
     #[inline(always)]
     pub const fn variant(&self) -> Rbrie {
         match self.bits {
-            false => Rbrie::DisableTheRdaInte,
-            true => Rbrie::EnableTheRdaInter,
+            false => Rbrie::Disabled,
+            true => Rbrie::Enabled,
         }
     }
     #[doc = "Disable the RDA interrupts."]
     #[inline(always)]
-    pub fn is_disable_the_rda_inte(&self) -> bool {
-        *self == Rbrie::DisableTheRdaInte
+    pub fn is_disabled(&self) -> bool {
+        *self == Rbrie::Disabled
     }
     #[doc = "Enable the RDA interrupts."]
     #[inline(always)]
-    pub fn is_enable_the_rda_inter(&self) -> bool {
-        *self == Rbrie::EnableTheRdaInter
+    pub fn is_enabled(&self) -> bool {
+        *self == Rbrie::Enabled
     }
 }
 #[doc = "Field `RBRIE` writer - RBR Interrupt Enable. Enables the Receive Data Available interrupt for UART1. It also controls the Character Receive Time-out interrupt."]
@@ -46,22 +46,22 @@ where
 {
     #[doc = "Disable the RDA interrupts."]
     #[inline(always)]
-    pub fn disable_the_rda_inte(self) -> &'a mut crate::W<REG> {
-        self.variant(Rbrie::DisableTheRdaInte)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Rbrie::Disabled)
     }
     #[doc = "Enable the RDA interrupts."]
     #[inline(always)]
-    pub fn enable_the_rda_inter(self) -> &'a mut crate::W<REG> {
-        self.variant(Rbrie::EnableTheRdaInter)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Rbrie::Enabled)
     }
 }
 #[doc = "THRE Interrupt Enable. Enables the THRE interrupt for UART1. The status of this interrupt can be read from LSR\\[5\\].\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Threie {
     #[doc = "0: Disable the THRE interrupts."]
-    DisableTheThreInt = 0,
+    Disabled = 0,
     #[doc = "1: Enable the THRE interrupts."]
-    EnableTheThreInte = 1,
+    Enabled = 1,
 }
 impl From<Threie> for bool {
     #[inline(always)]
@@ -76,19 +76,19 @@ impl ThreieR {
     #[inline(always)]
     pub const fn variant(&self) -> Threie {
         match self.bits {
-            false => Threie::DisableTheThreInt,
-            true => Threie::EnableTheThreInte,
+            false => Threie::Disabled,
+            true => Threie::Enabled,
         }
     }
     #[doc = "Disable the THRE interrupts."]
     #[inline(always)]
-    pub fn is_disable_the_thre_int(&self) -> bool {
-        *self == Threie::DisableTheThreInt
+    pub fn is_disabled(&self) -> bool {
+        *self == Threie::Disabled
     }
     #[doc = "Enable the THRE interrupts."]
     #[inline(always)]
-    pub fn is_enable_the_thre_inte(&self) -> bool {
-        *self == Threie::EnableTheThreInte
+    pub fn is_enabled(&self) -> bool {
+        *self == Threie::Enabled
     }
 }
 #[doc = "Field `THREIE` writer - THRE Interrupt Enable. Enables the THRE interrupt for UART1. The status of this interrupt can be read from LSR\\[5\\]."]
@@ -99,22 +99,22 @@ where
 {
     #[doc = "Disable the THRE interrupts."]
     #[inline(always)]
-    pub fn disable_the_thre_int(self) -> &'a mut crate::W<REG> {
-        self.variant(Threie::DisableTheThreInt)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Threie::Disabled)
     }
     #[doc = "Enable the THRE interrupts."]
     #[inline(always)]
-    pub fn enable_the_thre_inte(self) -> &'a mut crate::W<REG> {
-        self.variant(Threie::EnableTheThreInte)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Threie::Enabled)
     }
 }
 #[doc = "RX Line Interrupt Enable. Enables the UART1 RX line status interrupts. The status of this interrupt can be read from LSR\\[4:1\\].\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Rxie {
     #[doc = "0: Disable the RX line status interrupts."]
-    DisableTheRxLine_ = 0,
+    Disabled = 0,
     #[doc = "1: Enable the RX line status interrupts."]
-    EnableTheRxLineS = 1,
+    Enabled = 1,
 }
 impl From<Rxie> for bool {
     #[inline(always)]
@@ -129,19 +129,19 @@ impl RxieR {
     #[inline(always)]
     pub const fn variant(&self) -> Rxie {
         match self.bits {
-            false => Rxie::DisableTheRxLine_,
-            true => Rxie::EnableTheRxLineS,
+            false => Rxie::Disabled,
+            true => Rxie::Enabled,
         }
     }
     #[doc = "Disable the RX line status interrupts."]
     #[inline(always)]
-    pub fn is_disable_the_rx_line_(&self) -> bool {
-        *self == Rxie::DisableTheRxLine_
+    pub fn is_disabled(&self) -> bool {
+        *self == Rxie::Disabled
     }
     #[doc = "Enable the RX line status interrupts."]
     #[inline(always)]
-    pub fn is_enable_the_rx_line_s(&self) -> bool {
-        *self == Rxie::EnableTheRxLineS
+    pub fn is_enabled(&self) -> bool {
+        *self == Rxie::Enabled
     }
 }
 #[doc = "Field `RXIE` writer - RX Line Interrupt Enable. Enables the UART1 RX line status interrupts. The status of this interrupt can be read from LSR\\[4:1\\]."]
@@ -152,22 +152,22 @@ where
 {
     #[doc = "Disable the RX line status interrupts."]
     #[inline(always)]
-    pub fn disable_the_rx_line_(self) -> &'a mut crate::W<REG> {
-        self.variant(Rxie::DisableTheRxLine_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Rxie::Disabled)
     }
     #[doc = "Enable the RX line status interrupts."]
     #[inline(always)]
-    pub fn enable_the_rx_line_s(self) -> &'a mut crate::W<REG> {
-        self.variant(Rxie::EnableTheRxLineS)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Rxie::Enabled)
     }
 }
 #[doc = "Modem Status Interrupt Enable. Enables the modem interrupt. The status of this interrupt can be read from MSR\\[3:0\\].\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Msie {
     #[doc = "0: Disable the modem interrupt."]
-    DisableTheModemIn = 0,
+    Disabled = 0,
     #[doc = "1: Enable the modem interrupt."]
-    EnableTheModemInt = 1,
+    Enabled = 1,
 }
 impl From<Msie> for bool {
     #[inline(always)]
@@ -182,19 +182,19 @@ impl MsieR {
     #[inline(always)]
     pub const fn variant(&self) -> Msie {
         match self.bits {
-            false => Msie::DisableTheModemIn,
-            true => Msie::EnableTheModemInt,
+            false => Msie::Disabled,
+            true => Msie::Enabled,
         }
     }
     #[doc = "Disable the modem interrupt."]
     #[inline(always)]
-    pub fn is_disable_the_modem_in(&self) -> bool {
-        *self == Msie::DisableTheModemIn
+    pub fn is_disabled(&self) -> bool {
+        *self == Msie::Disabled
     }
     #[doc = "Enable the modem interrupt."]
     #[inline(always)]
-    pub fn is_enable_the_modem_int(&self) -> bool {
-        *self == Msie::EnableTheModemInt
+    pub fn is_enabled(&self) -> bool {
+        *self == Msie::Enabled
     }
 }
 #[doc = "Field `MSIE` writer - Modem Status Interrupt Enable. Enables the modem interrupt. The status of this interrupt can be read from MSR\\[3:0\\]."]
@@ -205,22 +205,22 @@ where
 {
     #[doc = "Disable the modem interrupt."]
     #[inline(always)]
-    pub fn disable_the_modem_in(self) -> &'a mut crate::W<REG> {
-        self.variant(Msie::DisableTheModemIn)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Msie::Disabled)
     }
     #[doc = "Enable the modem interrupt."]
     #[inline(always)]
-    pub fn enable_the_modem_int(self) -> &'a mut crate::W<REG> {
-        self.variant(Msie::EnableTheModemInt)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Msie::Enabled)
     }
 }
 #[doc = "CTS Interrupt Enable. If auto-cts mode is enabled this bit enables/disables the modem status interrupt generation on a CTS1 signal transition. If auto-cts mode is disabled a CTS1 transition will generate an interrupt if Modem Status Interrupt Enable (IER\\[3\\]) is set. In normal operation a CTS1 signal transition will generate a Modem Status Interrupt unless the interrupt has been disabled by clearing the IER\\[3\\] bit in the IER register. In auto-cts mode a transition on the CTS1 bit will trigger an interrupt only if both the IER\\[3\\] and IER\\[7\\] bits are set.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Ctsie {
     #[doc = "0: Disable the CTS interrupt."]
-    DisableTheCtsInte = 0,
+    Disabled = 0,
     #[doc = "1: Enable the CTS interrupt."]
-    EnableTheCtsInter = 1,
+    Enabled = 1,
 }
 impl From<Ctsie> for bool {
     #[inline(always)]
@@ -235,19 +235,19 @@ impl CtsieR {
     #[inline(always)]
     pub const fn variant(&self) -> Ctsie {
         match self.bits {
-            false => Ctsie::DisableTheCtsInte,
-            true => Ctsie::EnableTheCtsInter,
+            false => Ctsie::Disabled,
+            true => Ctsie::Enabled,
         }
     }
     #[doc = "Disable the CTS interrupt."]
     #[inline(always)]
-    pub fn is_disable_the_cts_inte(&self) -> bool {
-        *self == Ctsie::DisableTheCtsInte
+    pub fn is_disabled(&self) -> bool {
+        *self == Ctsie::Disabled
     }
     #[doc = "Enable the CTS interrupt."]
     #[inline(always)]
-    pub fn is_enable_the_cts_inter(&self) -> bool {
-        *self == Ctsie::EnableTheCtsInter
+    pub fn is_enabled(&self) -> bool {
+        *self == Ctsie::Enabled
     }
 }
 #[doc = "Field `CTSIE` writer - CTS Interrupt Enable. If auto-cts mode is enabled this bit enables/disables the modem status interrupt generation on a CTS1 signal transition. If auto-cts mode is disabled a CTS1 transition will generate an interrupt if Modem Status Interrupt Enable (IER\\[3\\]) is set. In normal operation a CTS1 signal transition will generate a Modem Status Interrupt unless the interrupt has been disabled by clearing the IER\\[3\\] bit in the IER register. In auto-cts mode a transition on the CTS1 bit will trigger an interrupt only if both the IER\\[3\\] and IER\\[7\\] bits are set."]
@@ -258,22 +258,22 @@ where
 {
     #[doc = "Disable the CTS interrupt."]
     #[inline(always)]
-    pub fn disable_the_cts_inte(self) -> &'a mut crate::W<REG> {
-        self.variant(Ctsie::DisableTheCtsInte)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Ctsie::Disabled)
     }
     #[doc = "Enable the CTS interrupt."]
     #[inline(always)]
-    pub fn enable_the_cts_inter(self) -> &'a mut crate::W<REG> {
-        self.variant(Ctsie::EnableTheCtsInter)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Ctsie::Enabled)
     }
 }
 #[doc = "Enables the end of auto-baud interrupt.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Abeoie {
     #[doc = "0: Disable end of auto-baud Interrupt."]
-    DisableEndOfAuto_ = 0,
+    Disabled = 0,
     #[doc = "1: Enable end of auto-baud Interrupt."]
-    EnableEndOfAutoB = 1,
+    Enabled = 1,
 }
 impl From<Abeoie> for bool {
     #[inline(always)]
@@ -288,19 +288,19 @@ impl AbeoieR {
     #[inline(always)]
     pub const fn variant(&self) -> Abeoie {
         match self.bits {
-            false => Abeoie::DisableEndOfAuto_,
-            true => Abeoie::EnableEndOfAutoB,
+            false => Abeoie::Disabled,
+            true => Abeoie::Enabled,
         }
     }
     #[doc = "Disable end of auto-baud Interrupt."]
     #[inline(always)]
-    pub fn is_disable_end_of_auto_(&self) -> bool {
-        *self == Abeoie::DisableEndOfAuto_
+    pub fn is_disabled(&self) -> bool {
+        *self == Abeoie::Disabled
     }
     #[doc = "Enable end of auto-baud Interrupt."]
     #[inline(always)]
-    pub fn is_enable_end_of_auto_b(&self) -> bool {
-        *self == Abeoie::EnableEndOfAutoB
+    pub fn is_enabled(&self) -> bool {
+        *self == Abeoie::Enabled
     }
 }
 #[doc = "Field `ABEOIE` writer - Enables the end of auto-baud interrupt."]
@@ -311,22 +311,22 @@ where
 {
     #[doc = "Disable end of auto-baud Interrupt."]
     #[inline(always)]
-    pub fn disable_end_of_auto_(self) -> &'a mut crate::W<REG> {
-        self.variant(Abeoie::DisableEndOfAuto_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Abeoie::Disabled)
     }
     #[doc = "Enable end of auto-baud Interrupt."]
     #[inline(always)]
-    pub fn enable_end_of_auto_b(self) -> &'a mut crate::W<REG> {
-        self.variant(Abeoie::EnableEndOfAutoB)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Abeoie::Enabled)
     }
 }
 #[doc = "Enables the auto-baud time-out interrupt.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Abtoie {
     #[doc = "0: Disable auto-baud time-out Interrupt."]
-    DisableAutoBaudTi = 0,
+    Disabled = 0,
     #[doc = "1: Enable auto-baud time-out Interrupt."]
-    EnableAutoBaudTim = 1,
+    Enabled = 1,
 }
 impl From<Abtoie> for bool {
     #[inline(always)]
@@ -341,19 +341,19 @@ impl AbtoieR {
     #[inline(always)]
     pub const fn variant(&self) -> Abtoie {
         match self.bits {
-            false => Abtoie::DisableAutoBaudTi,
-            true => Abtoie::EnableAutoBaudTim,
+            false => Abtoie::Disabled,
+            true => Abtoie::Enabled,
         }
     }
     #[doc = "Disable auto-baud time-out Interrupt."]
     #[inline(always)]
-    pub fn is_disable_auto_baud_ti(&self) -> bool {
-        *self == Abtoie::DisableAutoBaudTi
+    pub fn is_disabled(&self) -> bool {
+        *self == Abtoie::Disabled
     }
     #[doc = "Enable auto-baud time-out Interrupt."]
     #[inline(always)]
-    pub fn is_enable_auto_baud_tim(&self) -> bool {
-        *self == Abtoie::EnableAutoBaudTim
+    pub fn is_enabled(&self) -> bool {
+        *self == Abtoie::Enabled
     }
 }
 #[doc = "Field `ABTOIE` writer - Enables the auto-baud time-out interrupt."]
@@ -364,13 +364,13 @@ where
 {
     #[doc = "Disable auto-baud time-out Interrupt."]
     #[inline(always)]
-    pub fn disable_auto_baud_ti(self) -> &'a mut crate::W<REG> {
-        self.variant(Abtoie::DisableAutoBaudTi)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Abtoie::Disabled)
     }
     #[doc = "Enable auto-baud time-out Interrupt."]
     #[inline(always)]
-    pub fn enable_auto_baud_tim(self) -> &'a mut crate::W<REG> {
-        self.variant(Abtoie::EnableAutoBaudTim)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Abtoie::Enabled)
     }
 }
 impl R {

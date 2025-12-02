@@ -4,9 +4,9 @@ pub type R = crate::R<IirSpec>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Intstatus {
     #[doc = "0: At least one interrupt is pending."]
-    AtLeastOneInterru = 0,
+    Pending = 0,
     #[doc = "1: No interrupt is pending."]
-    NoInterruptIsPend = 1,
+    Empty = 1,
 }
 impl From<Intstatus> for bool {
     #[inline(always)]
@@ -21,19 +21,19 @@ impl IntstatusR {
     #[inline(always)]
     pub const fn variant(&self) -> Intstatus {
         match self.bits {
-            false => Intstatus::AtLeastOneInterru,
-            true => Intstatus::NoInterruptIsPend,
+            false => Intstatus::Pending,
+            true => Intstatus::Empty,
         }
     }
     #[doc = "At least one interrupt is pending."]
     #[inline(always)]
-    pub fn is_at_least_one_interru(&self) -> bool {
-        *self == Intstatus::AtLeastOneInterru
+    pub fn is_pending(&self) -> bool {
+        *self == Intstatus::Pending
     }
     #[doc = "No interrupt is pending."]
     #[inline(always)]
-    pub fn is_no_interrupt_is_pend(&self) -> bool {
-        *self == Intstatus::NoInterruptIsPend
+    pub fn is_empty(&self) -> bool {
+        *self == Intstatus::Empty
     }
 }
 #[doc = "Interrupt identification. UnIER\\[3:1\\] identifies an interrupt corresponding to the UARTn Rx or TX FIFO. All other combinations of UnIER\\[3:1\\] not listed below are reserved (000,100,101,111).\n\nValue on reset: 0"]
@@ -41,13 +41,13 @@ impl IntstatusR {
 #[repr(u8)]
 pub enum Intid {
     #[doc = "3: 1 - Receive Line Status (RLS)."]
-    _1ReceiveLineS = 3,
+    Rls = 3,
     #[doc = "2: 2a - Receive Data Available (RDA)."]
-    _2a_ReceiveDataAv = 2,
+    Rda = 2,
     #[doc = "6: 2b - Character Time-out Indicator (CTI)."]
-    _2b_CharacterTime_ = 6,
+    Cti = 6,
     #[doc = "1: 3 - THRE Interrupt"]
-    _3ThreInterrupt = 1,
+    Thre = 1,
 }
 impl From<Intid> for u8 {
     #[inline(always)]
@@ -66,32 +66,32 @@ impl IntidR {
     #[inline(always)]
     pub const fn variant(&self) -> Option<Intid> {
         match self.bits {
-            3 => Some(Intid::_1ReceiveLineS),
-            2 => Some(Intid::_2a_ReceiveDataAv),
-            6 => Some(Intid::_2b_CharacterTime_),
-            1 => Some(Intid::_3ThreInterrupt),
+            3 => Some(Intid::Rls),
+            2 => Some(Intid::Rda),
+            6 => Some(Intid::Cti),
+            1 => Some(Intid::Thre),
             _ => None,
         }
     }
     #[doc = "1 - Receive Line Status (RLS)."]
     #[inline(always)]
-    pub fn is_1_receive_line_s(&self) -> bool {
-        *self == Intid::_1ReceiveLineS
+    pub fn is_rls(&self) -> bool {
+        *self == Intid::Rls
     }
     #[doc = "2a - Receive Data Available (RDA)."]
     #[inline(always)]
-    pub fn is_2a__receive_data_av(&self) -> bool {
-        *self == Intid::_2a_ReceiveDataAv
+    pub fn is_rda(&self) -> bool {
+        *self == Intid::Rda
     }
     #[doc = "2b - Character Time-out Indicator (CTI)."]
     #[inline(always)]
-    pub fn is_2b__character_time_(&self) -> bool {
-        *self == Intid::_2b_CharacterTime_
+    pub fn is_cti(&self) -> bool {
+        *self == Intid::Cti
     }
     #[doc = "3 - THRE Interrupt"]
     #[inline(always)]
-    pub fn is_3_thre_interrupt(&self) -> bool {
-        *self == Intid::_3ThreInterrupt
+    pub fn is_thre(&self) -> bool {
+        *self == Intid::Thre
     }
 }
 #[doc = "Field `FIFOENABLE` reader - Copies of UnFCR\\[0\\]."]

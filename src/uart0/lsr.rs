@@ -6,7 +6,7 @@ pub enum Rdr {
     #[doc = "0: The UARTn receiver FIFO is empty."]
     Empty = 0,
     #[doc = "1: The UARTn receiver FIFO is not empty."]
-    Notempty = 1,
+    Unread = 1,
 }
 impl From<Rdr> for bool {
     #[inline(always)]
@@ -22,7 +22,7 @@ impl RdrR {
     pub const fn variant(&self) -> Rdr {
         match self.bits {
             false => Rdr::Empty,
-            true => Rdr::Notempty,
+            true => Rdr::Unread,
         }
     }
     #[doc = "The UARTn receiver FIFO is empty."]
@@ -32,8 +32,8 @@ impl RdrR {
     }
     #[doc = "The UARTn receiver FIFO is not empty."]
     #[inline(always)]
-    pub fn is_notempty(&self) -> bool {
-        *self == Rdr::Notempty
+    pub fn is_unread(&self) -> bool {
+        *self == Rdr::Unread
     }
 }
 #[doc = "Overrun Error. The overrun error condition is set as soon as it occurs. An UnLSR read clears UnLSR\\[1\\]. UnLSR\\[1\\] is set when UARTn RSR has a new character assembled and the UARTn RBR FIFO is full. In this case, the UARTn RBR FIFO will not be overwritten and the character in the UARTn RSR will be lost.\n\nValue on reset: 0"]
@@ -184,7 +184,7 @@ impl BiR {
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Thre {
     #[doc = "0: UnTHR contains valid data."]
-    Validdata = 0,
+    ValidData = 0,
     #[doc = "1: UnTHR is empty."]
     Empty = 1,
 }
@@ -201,14 +201,14 @@ impl ThreR {
     #[inline(always)]
     pub const fn variant(&self) -> Thre {
         match self.bits {
-            false => Thre::Validdata,
+            false => Thre::ValidData,
             true => Thre::Empty,
         }
     }
     #[doc = "UnTHR contains valid data."]
     #[inline(always)]
-    pub fn is_validdata(&self) -> bool {
-        *self == Thre::Validdata
+    pub fn is_valid_data(&self) -> bool {
+        *self == Thre::ValidData
     }
     #[doc = "UnTHR is empty."]
     #[inline(always)]
@@ -220,7 +220,7 @@ impl ThreR {
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Temt {
     #[doc = "0: UnTHR and/or the UnTSR contains valid data."]
-    Validdata = 0,
+    ValidData = 0,
     #[doc = "1: UnTHR and the UnTSR are empty."]
     Empty = 1,
 }
@@ -237,14 +237,14 @@ impl TemtR {
     #[inline(always)]
     pub const fn variant(&self) -> Temt {
         match self.bits {
-            false => Temt::Validdata,
+            false => Temt::ValidData,
             true => Temt::Empty,
         }
     }
     #[doc = "UnTHR and/or the UnTSR contains valid data."]
     #[inline(always)]
-    pub fn is_validdata(&self) -> bool {
-        *self == Temt::Validdata
+    pub fn is_valid_data(&self) -> bool {
+        *self == Temt::ValidData
     }
     #[doc = "UnTHR and the UnTSR are empty."]
     #[inline(always)]
@@ -256,7 +256,7 @@ impl TemtR {
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Rxfe {
     #[doc = "0: UnRBR contains no UARTn RX errors or UnFCR\\[0\\]=0."]
-    Noerror = 0,
+    NoError = 0,
     #[doc = "1: UARTn RBR contains at least one UARTn RX error."]
     Errors = 1,
 }
@@ -273,14 +273,14 @@ impl RxfeR {
     #[inline(always)]
     pub const fn variant(&self) -> Rxfe {
         match self.bits {
-            false => Rxfe::Noerror,
+            false => Rxfe::NoError,
             true => Rxfe::Errors,
         }
     }
     #[doc = "UnRBR contains no UARTn RX errors or UnFCR\\[0\\]=0."]
     #[inline(always)]
-    pub fn is_noerror(&self) -> bool {
-        *self == Rxfe::Noerror
+    pub fn is_no_error(&self) -> bool {
+        *self == Rxfe::NoError
     }
     #[doc = "UARTn RBR contains at least one UARTn RX error."]
     #[inline(always)]
@@ -330,7 +330,7 @@ impl R {
         RxfeR::new(((self.bits >> 7) & 1) != 0)
     }
 }
-#[doc = "Line Status Register. Contains flags for transmit and receive status, including line errors.\n\nYou can [`read`](crate::Reg::read) this register and get [`lsr::R`](R). See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+#[doc = "Line Status Register. Contains flags for transmit and receive status, including line errors.\n\nYou can [`read`](crate::Reg::read) this register and get [`lsr::R`](R). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\n<div class=\"warning\">The register is <b>modified</b> in some way after a read operation.</div>"]
 pub struct LsrSpec;
 impl crate::RegisterSpec for LsrSpec {
     type Ux = u32;

@@ -7,13 +7,11 @@ pub type W = crate::W<StaticconfigSpec>;
 #[repr(u8)]
 pub enum Mw {
     #[doc = "0: 8 bit (POR reset value)."]
-    _8BitPorResetVal = 0,
+    _8Bit = 0,
     #[doc = "1: 16 bit."]
-    _16Bit_ = 1,
+    _16Bit = 1,
     #[doc = "2: 32 bit."]
-    _32Bit_ = 2,
-    #[doc = "3: Reserved."]
-    Reserved_ = 3,
+    _32Bit = 2,
 }
 impl From<Mw> for u8 {
     #[inline(always)]
@@ -32,36 +30,30 @@ impl MwR {
     #[inline(always)]
     pub const fn variant(&self) -> Mw {
         match self.bits {
-            0 => Mw::_8BitPorResetVal,
-            1 => Mw::_16Bit_,
-            2 => Mw::_32Bit_,
-            3 => Mw::Reserved_,
+            0 => Mw::_8Bit,
+            1 => Mw::_16Bit,
+            2 => Mw::_32Bit,
             _ => unreachable!(),
         }
     }
     #[doc = "8 bit (POR reset value)."]
     #[inline(always)]
-    pub fn is_8_bit_por_reset_val(&self) -> bool {
-        *self == Mw::_8BitPorResetVal
+    pub fn is_8_bit(&self) -> bool {
+        *self == Mw::_8Bit
     }
     #[doc = "16 bit."]
     #[inline(always)]
-    pub fn is_16_bit_(&self) -> bool {
-        *self == Mw::_16Bit_
+    pub fn is_16_bit(&self) -> bool {
+        *self == Mw::_16Bit
     }
     #[doc = "32 bit."]
     #[inline(always)]
-    pub fn is_32_bit_(&self) -> bool {
-        *self == Mw::_32Bit_
-    }
-    #[doc = "Reserved."]
-    #[inline(always)]
-    pub fn is_reserved_(&self) -> bool {
-        *self == Mw::Reserved_
+    pub fn is_32_bit(&self) -> bool {
+        *self == Mw::_32Bit
     }
 }
 #[doc = "Field `MW` writer - Memory width."]
-pub type MwW<'a, REG> = crate::FieldWriter<'a, REG, 2, Mw, crate::Safe>;
+pub type MwW<'a, REG> = crate::FieldWriter<'a, REG, 2, Mw>;
 impl<'a, REG> MwW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -69,32 +61,27 @@ where
 {
     #[doc = "8 bit (POR reset value)."]
     #[inline(always)]
-    pub fn _8_bit_por_reset_val(self) -> &'a mut crate::W<REG> {
-        self.variant(Mw::_8BitPorResetVal)
+    pub fn _8_bit(self) -> &'a mut crate::W<REG> {
+        self.variant(Mw::_8Bit)
     }
     #[doc = "16 bit."]
     #[inline(always)]
-    pub fn _16_bit_(self) -> &'a mut crate::W<REG> {
-        self.variant(Mw::_16Bit_)
+    pub fn _16_bit(self) -> &'a mut crate::W<REG> {
+        self.variant(Mw::_16Bit)
     }
     #[doc = "32 bit."]
     #[inline(always)]
-    pub fn _32_bit_(self) -> &'a mut crate::W<REG> {
-        self.variant(Mw::_32Bit_)
-    }
-    #[doc = "Reserved."]
-    #[inline(always)]
-    pub fn reserved_(self) -> &'a mut crate::W<REG> {
-        self.variant(Mw::Reserved_)
+    pub fn _32_bit(self) -> &'a mut crate::W<REG> {
+        self.variant(Mw::_32Bit)
     }
 }
 #[doc = "Page mode. In page mode the EMC can burst up to four external accesses. Therefore devices with asynchronous page mode burst four or higher devices are supported. Asynchronous page mode burst two devices are not supported and must be accessed normally.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pm {
     #[doc = "0: Disabled (POR reset value)."]
-    DisabledPorReset_ = 0,
+    Disabled = 0,
     #[doc = "1: Asynchronous page mode enabled (page length four)."]
-    AsynchronousPageMo = 1,
+    Enabled = 1,
 }
 impl From<Pm> for bool {
     #[inline(always)]
@@ -109,19 +96,19 @@ impl PmR {
     #[inline(always)]
     pub const fn variant(&self) -> Pm {
         match self.bits {
-            false => Pm::DisabledPorReset_,
-            true => Pm::AsynchronousPageMo,
+            false => Pm::Disabled,
+            true => Pm::Enabled,
         }
     }
     #[doc = "Disabled (POR reset value)."]
     #[inline(always)]
-    pub fn is_disabled_por_reset_(&self) -> bool {
-        *self == Pm::DisabledPorReset_
+    pub fn is_disabled(&self) -> bool {
+        *self == Pm::Disabled
     }
     #[doc = "Asynchronous page mode enabled (page length four)."]
     #[inline(always)]
-    pub fn is_asynchronous_page_mo(&self) -> bool {
-        *self == Pm::AsynchronousPageMo
+    pub fn is_enabled(&self) -> bool {
+        *self == Pm::Enabled
     }
 }
 #[doc = "Field `PM` writer - Page mode. In page mode the EMC can burst up to four external accesses. Therefore devices with asynchronous page mode burst four or higher devices are supported. Asynchronous page mode burst two devices are not supported and must be accessed normally."]
@@ -132,22 +119,22 @@ where
 {
     #[doc = "Disabled (POR reset value)."]
     #[inline(always)]
-    pub fn disabled_por_reset_(self) -> &'a mut crate::W<REG> {
-        self.variant(Pm::DisabledPorReset_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pm::Disabled)
     }
     #[doc = "Asynchronous page mode enabled (page length four)."]
     #[inline(always)]
-    pub fn asynchronous_page_mo(self) -> &'a mut crate::W<REG> {
-        self.variant(Pm::AsynchronousPageMo)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pm::Enabled)
     }
 }
 #[doc = "Chip select polarity. The value of the chip select polarity on power-on reset is 0.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pc {
     #[doc = "0: Active LOW chip select."]
-    ActiveLowChipSele = 0,
+    ActiveLow = 0,
     #[doc = "1: Active HIGH chip select."]
-    ActiveHighChipSel = 1,
+    ActiveHigh = 1,
 }
 impl From<Pc> for bool {
     #[inline(always)]
@@ -162,19 +149,19 @@ impl PcR {
     #[inline(always)]
     pub const fn variant(&self) -> Pc {
         match self.bits {
-            false => Pc::ActiveLowChipSele,
-            true => Pc::ActiveHighChipSel,
+            false => Pc::ActiveLow,
+            true => Pc::ActiveHigh,
         }
     }
     #[doc = "Active LOW chip select."]
     #[inline(always)]
-    pub fn is_active_low_chip_sele(&self) -> bool {
-        *self == Pc::ActiveLowChipSele
+    pub fn is_active_low(&self) -> bool {
+        *self == Pc::ActiveLow
     }
     #[doc = "Active HIGH chip select."]
     #[inline(always)]
-    pub fn is_active_high_chip_sel(&self) -> bool {
-        *self == Pc::ActiveHighChipSel
+    pub fn is_active_high(&self) -> bool {
+        *self == Pc::ActiveHigh
     }
 }
 #[doc = "Field `PC` writer - Chip select polarity. The value of the chip select polarity on power-on reset is 0."]
@@ -185,13 +172,13 @@ where
 {
     #[doc = "Active LOW chip select."]
     #[inline(always)]
-    pub fn active_low_chip_sele(self) -> &'a mut crate::W<REG> {
-        self.variant(Pc::ActiveLowChipSele)
+    pub fn active_low(self) -> &'a mut crate::W<REG> {
+        self.variant(Pc::ActiveLow)
     }
     #[doc = "Active HIGH chip select."]
     #[inline(always)]
-    pub fn active_high_chip_sel(self) -> &'a mut crate::W<REG> {
-        self.variant(Pc::ActiveHighChipSel)
+    pub fn active_high(self) -> &'a mut crate::W<REG> {
+        self.variant(Pc::ActiveHigh)
     }
 }
 #[doc = "Byte lane state. The byte lane state bit, PB, enables different types of memory to be connected. For byte-wide static memories the BLS3:0 signal from the EMC is usually connected to WE (write enable). In this case for reads all the BLS3:0 bits must be HIGH. This means that the byte lane state (PB) bit must be LOW. 16 bit wide static memory devices usually have the BLS3:0 signals connected to the UBn and LBn (upper byte and lower byte) signals in the static memory. In this case a write to a particular byte must assert the appropriate UBn or LBn signal LOW. For reads, all the UB and LB signals must be asserted LOW so that the bus is driven. In this case the byte lane state (PB) bit must be HIGH.\n\nValue on reset: 0"]
@@ -251,9 +238,9 @@ where
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Ew {
     #[doc = "0: Extended wait disabled (POR reset value)."]
-    ExtendedWaitDisabl = 0,
+    Disabled = 0,
     #[doc = "1: Extended wait enabled."]
-    ExtendedWaitEnable = 1,
+    Enabled = 1,
 }
 impl From<Ew> for bool {
     #[inline(always)]
@@ -268,19 +255,19 @@ impl EwR {
     #[inline(always)]
     pub const fn variant(&self) -> Ew {
         match self.bits {
-            false => Ew::ExtendedWaitDisabl,
-            true => Ew::ExtendedWaitEnable,
+            false => Ew::Disabled,
+            true => Ew::Enabled,
         }
     }
     #[doc = "Extended wait disabled (POR reset value)."]
     #[inline(always)]
-    pub fn is_extended_wait_disabl(&self) -> bool {
-        *self == Ew::ExtendedWaitDisabl
+    pub fn is_disabled(&self) -> bool {
+        *self == Ew::Disabled
     }
     #[doc = "Extended wait enabled."]
     #[inline(always)]
-    pub fn is_extended_wait_enable(&self) -> bool {
-        *self == Ew::ExtendedWaitEnable
+    pub fn is_enabled(&self) -> bool {
+        *self == Ew::Enabled
     }
 }
 #[doc = "Field `EW` writer - Extended wait (EW) uses the EMCStaticExtendedWait register to time both the read and write transfers rather than the EMCStaticWaitRd and EMCStaticWaitWr registers. This enables much longer transactions. \\[1\\]"]
@@ -291,22 +278,22 @@ where
 {
     #[doc = "Extended wait disabled (POR reset value)."]
     #[inline(always)]
-    pub fn extended_wait_disabl(self) -> &'a mut crate::W<REG> {
-        self.variant(Ew::ExtendedWaitDisabl)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Ew::Disabled)
     }
     #[doc = "Extended wait enabled."]
     #[inline(always)]
-    pub fn extended_wait_enable(self) -> &'a mut crate::W<REG> {
-        self.variant(Ew::ExtendedWaitEnable)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Ew::Enabled)
     }
 }
 #[doc = "Buffer enable \\[2\\]\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum B {
     #[doc = "0: Buffer disabled (POR reset value)."]
-    BufferDisabledPor = 0,
+    Disabled = 0,
     #[doc = "1: Buffer enabled."]
-    BufferEnabled_ = 1,
+    Enabled = 1,
 }
 impl From<B> for bool {
     #[inline(always)]
@@ -321,19 +308,19 @@ impl BR {
     #[inline(always)]
     pub const fn variant(&self) -> B {
         match self.bits {
-            false => B::BufferDisabledPor,
-            true => B::BufferEnabled_,
+            false => B::Disabled,
+            true => B::Enabled,
         }
     }
     #[doc = "Buffer disabled (POR reset value)."]
     #[inline(always)]
-    pub fn is_buffer_disabled_por(&self) -> bool {
-        *self == B::BufferDisabledPor
+    pub fn is_disabled(&self) -> bool {
+        *self == B::Disabled
     }
     #[doc = "Buffer enabled."]
     #[inline(always)]
-    pub fn is_buffer_enabled_(&self) -> bool {
-        *self == B::BufferEnabled_
+    pub fn is_enabled(&self) -> bool {
+        *self == B::Enabled
     }
 }
 #[doc = "Field `B` writer - Buffer enable \\[2\\]"]
@@ -344,22 +331,22 @@ where
 {
     #[doc = "Buffer disabled (POR reset value)."]
     #[inline(always)]
-    pub fn buffer_disabled_por(self) -> &'a mut crate::W<REG> {
-        self.variant(B::BufferDisabledPor)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(B::Disabled)
     }
     #[doc = "Buffer enabled."]
     #[inline(always)]
-    pub fn buffer_enabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(B::BufferEnabled_)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(B::Enabled)
     }
 }
 #[doc = "Write protect\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum P {
     #[doc = "0: Writes not protected (POR reset value)."]
-    WritesNotProtected = 0,
+    NotProtected = 0,
     #[doc = "1: Write protected."]
-    WriteProtected_ = 1,
+    Protected = 1,
 }
 impl From<P> for bool {
     #[inline(always)]
@@ -374,19 +361,19 @@ impl PR {
     #[inline(always)]
     pub const fn variant(&self) -> P {
         match self.bits {
-            false => P::WritesNotProtected,
-            true => P::WriteProtected_,
+            false => P::NotProtected,
+            true => P::Protected,
         }
     }
     #[doc = "Writes not protected (POR reset value)."]
     #[inline(always)]
-    pub fn is_writes_not_protected(&self) -> bool {
-        *self == P::WritesNotProtected
+    pub fn is_not_protected(&self) -> bool {
+        *self == P::NotProtected
     }
     #[doc = "Write protected."]
     #[inline(always)]
-    pub fn is_write_protected_(&self) -> bool {
-        *self == P::WriteProtected_
+    pub fn is_protected(&self) -> bool {
+        *self == P::Protected
     }
 }
 #[doc = "Field `P` writer - Write protect"]
@@ -397,13 +384,13 @@ where
 {
     #[doc = "Writes not protected (POR reset value)."]
     #[inline(always)]
-    pub fn writes_not_protected(self) -> &'a mut crate::W<REG> {
-        self.variant(P::WritesNotProtected)
+    pub fn not_protected(self) -> &'a mut crate::W<REG> {
+        self.variant(P::NotProtected)
     }
     #[doc = "Write protected."]
     #[inline(always)]
-    pub fn write_protected_(self) -> &'a mut crate::W<REG> {
-        self.variant(P::WriteProtected_)
+    pub fn protected(self) -> &'a mut crate::W<REG> {
+        self.variant(P::Protected)
     }
 }
 impl R {

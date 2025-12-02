@@ -6,9 +6,9 @@ pub type W = crate::W<ModSpec>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Wden {
     #[doc = "0: The watchdog timer is stopped."]
-    Stop = 0,
+    Stopped = 0,
     #[doc = "1: The watchdog timer is running."]
-    Run = 1,
+    Started = 1,
 }
 impl From<Wden> for bool {
     #[inline(always)]
@@ -23,19 +23,19 @@ impl WdenR {
     #[inline(always)]
     pub const fn variant(&self) -> Wden {
         match self.bits {
-            false => Wden::Stop,
-            true => Wden::Run,
+            false => Wden::Stopped,
+            true => Wden::Started,
         }
     }
     #[doc = "The watchdog timer is stopped."]
     #[inline(always)]
-    pub fn is_stop(&self) -> bool {
-        *self == Wden::Stop
+    pub fn is_stopped(&self) -> bool {
+        *self == Wden::Stopped
     }
     #[doc = "The watchdog timer is running."]
     #[inline(always)]
-    pub fn is_run(&self) -> bool {
-        *self == Wden::Run
+    pub fn is_started(&self) -> bool {
+        *self == Wden::Started
     }
 }
 #[doc = "Field `WDEN` writer - Watchdog enable bit. This bit is Set Only. See Table 652."]
@@ -46,20 +46,20 @@ where
 {
     #[doc = "The watchdog timer is stopped."]
     #[inline(always)]
-    pub fn stop(self) -> &'a mut crate::W<REG> {
-        self.variant(Wden::Stop)
+    pub fn stopped(self) -> &'a mut crate::W<REG> {
+        self.variant(Wden::Stopped)
     }
     #[doc = "The watchdog timer is running."]
     #[inline(always)]
-    pub fn run(self) -> &'a mut crate::W<REG> {
-        self.variant(Wden::Run)
+    pub fn started(self) -> &'a mut crate::W<REG> {
+        self.variant(Wden::Started)
     }
 }
 #[doc = "Watchdog reset enable bit. This bit is Set Only. See Table 652.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Wdreset {
     #[doc = "0: A watchdog timeout will not cause a chip reset."]
-    Noreset = 0,
+    NoReset = 0,
     #[doc = "1: A watchdog timeout will cause a chip reset."]
     Reset = 1,
 }
@@ -76,14 +76,14 @@ impl WdresetR {
     #[inline(always)]
     pub const fn variant(&self) -> Wdreset {
         match self.bits {
-            false => Wdreset::Noreset,
+            false => Wdreset::NoReset,
             true => Wdreset::Reset,
         }
     }
     #[doc = "A watchdog timeout will not cause a chip reset."]
     #[inline(always)]
-    pub fn is_noreset(&self) -> bool {
-        *self == Wdreset::Noreset
+    pub fn is_no_reset(&self) -> bool {
+        *self == Wdreset::NoReset
     }
     #[doc = "A watchdog timeout will cause a chip reset."]
     #[inline(always)]
@@ -99,8 +99,8 @@ where
 {
     #[doc = "A watchdog timeout will not cause a chip reset."]
     #[inline(always)]
-    pub fn noreset(self) -> &'a mut crate::W<REG> {
-        self.variant(Wdreset::Noreset)
+    pub fn no_reset(self) -> &'a mut crate::W<REG> {
+        self.variant(Wdreset::NoReset)
     }
     #[doc = "A watchdog timeout will cause a chip reset."]
     #[inline(always)]

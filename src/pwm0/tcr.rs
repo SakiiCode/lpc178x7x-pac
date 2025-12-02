@@ -6,9 +6,9 @@ pub type W = crate::W<TcrSpec>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Ce {
     #[doc = "1: The PWM Timer Counter and PWM Prescale Counter are enabled for counting."]
-    ThePwmTimerCounte = 1,
+    Enabled = 1,
     #[doc = "0: The counters are disabled."]
-    TheCountersAreDis = 0,
+    Disabled = 0,
 }
 impl From<Ce> for bool {
     #[inline(always)]
@@ -23,19 +23,19 @@ impl CeR {
     #[inline(always)]
     pub const fn variant(&self) -> Ce {
         match self.bits {
-            true => Ce::ThePwmTimerCounte,
-            false => Ce::TheCountersAreDis,
+            true => Ce::Enabled,
+            false => Ce::Disabled,
         }
     }
     #[doc = "The PWM Timer Counter and PWM Prescale Counter are enabled for counting."]
     #[inline(always)]
-    pub fn is_the_pwm_timer_counte(&self) -> bool {
-        *self == Ce::ThePwmTimerCounte
+    pub fn is_enabled(&self) -> bool {
+        *self == Ce::Enabled
     }
     #[doc = "The counters are disabled."]
     #[inline(always)]
-    pub fn is_the_counters_are_dis(&self) -> bool {
-        *self == Ce::TheCountersAreDis
+    pub fn is_disabled(&self) -> bool {
+        *self == Ce::Disabled
     }
 }
 #[doc = "Field `CE` writer - Counter Enable"]
@@ -46,22 +46,22 @@ where
 {
     #[doc = "The PWM Timer Counter and PWM Prescale Counter are enabled for counting."]
     #[inline(always)]
-    pub fn the_pwm_timer_counte(self) -> &'a mut crate::W<REG> {
-        self.variant(Ce::ThePwmTimerCounte)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Ce::Enabled)
     }
     #[doc = "The counters are disabled."]
     #[inline(always)]
-    pub fn the_counters_are_dis(self) -> &'a mut crate::W<REG> {
-        self.variant(Ce::TheCountersAreDis)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Ce::Disabled)
     }
 }
 #[doc = "Counter Reset\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Cr {
     #[doc = "1: The PWM Timer Counter and the PWM Prescale Counter are synchronously reset on the next positive edge of PCLK. The counters remain reset until this bit is returned to zero."]
-    ThePwmTimerCounte = 1,
+    Enabled = 1,
     #[doc = "0: Clear reset."]
-    ClearReset_ = 0,
+    Disabled = 0,
 }
 impl From<Cr> for bool {
     #[inline(always)]
@@ -76,19 +76,19 @@ impl CrR {
     #[inline(always)]
     pub const fn variant(&self) -> Cr {
         match self.bits {
-            true => Cr::ThePwmTimerCounte,
-            false => Cr::ClearReset_,
+            true => Cr::Enabled,
+            false => Cr::Disabled,
         }
     }
     #[doc = "The PWM Timer Counter and the PWM Prescale Counter are synchronously reset on the next positive edge of PCLK. The counters remain reset until this bit is returned to zero."]
     #[inline(always)]
-    pub fn is_the_pwm_timer_counte(&self) -> bool {
-        *self == Cr::ThePwmTimerCounte
+    pub fn is_enabled(&self) -> bool {
+        *self == Cr::Enabled
     }
     #[doc = "Clear reset."]
     #[inline(always)]
-    pub fn is_clear_reset_(&self) -> bool {
-        *self == Cr::ClearReset_
+    pub fn is_disabled(&self) -> bool {
+        *self == Cr::Disabled
     }
 }
 #[doc = "Field `CR` writer - Counter Reset"]
@@ -99,22 +99,22 @@ where
 {
     #[doc = "The PWM Timer Counter and the PWM Prescale Counter are synchronously reset on the next positive edge of PCLK. The counters remain reset until this bit is returned to zero."]
     #[inline(always)]
-    pub fn the_pwm_timer_counte(self) -> &'a mut crate::W<REG> {
-        self.variant(Cr::ThePwmTimerCounte)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Cr::Enabled)
     }
     #[doc = "Clear reset."]
     #[inline(always)]
-    pub fn clear_reset_(self) -> &'a mut crate::W<REG> {
-        self.variant(Cr::ClearReset_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Cr::Disabled)
     }
 }
 #[doc = "PWM Enable\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pwmen {
     #[doc = "1: PWM mode is enabled (counter resets to 1). PWM mode causes the shadow registers to operate in connection with the Match registers. A program write to a Match register will not have an effect on the Match result until the corresponding bit in PWMLER has been set, followed by the occurrence of a PWM Match 0 event. Note that the PWM Match register that determines the PWM rate (PWM Match Register 0 - MR0) must be set up prior to the PWM being enabled. Otherwise a Match event will not occur to cause shadow register contents to become effective."]
-    PwmModeIsEnabled_ = 1,
+    PwmMode = 1,
     #[doc = "0: Timer mode is enabled (counter resets to 0)."]
-    TimerModeIsEnable = 0,
+    TimerMode = 0,
 }
 impl From<Pwmen> for bool {
     #[inline(always)]
@@ -129,19 +129,19 @@ impl PwmenR {
     #[inline(always)]
     pub const fn variant(&self) -> Pwmen {
         match self.bits {
-            true => Pwmen::PwmModeIsEnabled_,
-            false => Pwmen::TimerModeIsEnable,
+            true => Pwmen::PwmMode,
+            false => Pwmen::TimerMode,
         }
     }
     #[doc = "PWM mode is enabled (counter resets to 1). PWM mode causes the shadow registers to operate in connection with the Match registers. A program write to a Match register will not have an effect on the Match result until the corresponding bit in PWMLER has been set, followed by the occurrence of a PWM Match 0 event. Note that the PWM Match register that determines the PWM rate (PWM Match Register 0 - MR0) must be set up prior to the PWM being enabled. Otherwise a Match event will not occur to cause shadow register contents to become effective."]
     #[inline(always)]
-    pub fn is_pwm_mode_is_enabled_(&self) -> bool {
-        *self == Pwmen::PwmModeIsEnabled_
+    pub fn is_pwm_mode(&self) -> bool {
+        *self == Pwmen::PwmMode
     }
     #[doc = "Timer mode is enabled (counter resets to 0)."]
     #[inline(always)]
-    pub fn is_timer_mode_is_enable(&self) -> bool {
-        *self == Pwmen::TimerModeIsEnable
+    pub fn is_timer_mode(&self) -> bool {
+        *self == Pwmen::TimerMode
     }
 }
 #[doc = "Field `PWMEN` writer - PWM Enable"]
@@ -152,22 +152,22 @@ where
 {
     #[doc = "PWM mode is enabled (counter resets to 1). PWM mode causes the shadow registers to operate in connection with the Match registers. A program write to a Match register will not have an effect on the Match result until the corresponding bit in PWMLER has been set, followed by the occurrence of a PWM Match 0 event. Note that the PWM Match register that determines the PWM rate (PWM Match Register 0 - MR0) must be set up prior to the PWM being enabled. Otherwise a Match event will not occur to cause shadow register contents to become effective."]
     #[inline(always)]
-    pub fn pwm_mode_is_enabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmen::PwmModeIsEnabled_)
+    pub fn pwm_mode(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmen::PwmMode)
     }
     #[doc = "Timer mode is enabled (counter resets to 0)."]
     #[inline(always)]
-    pub fn timer_mode_is_enable(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmen::TimerModeIsEnable)
+    pub fn timer_mode(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmen::TimerMode)
     }
 }
 #[doc = "Master Disable (PWM0 only). The two PWMs may be synchronized using the Master Disable control bit. The Master disable bit of the Master PWM (PWM0 module) controls a secondary enable input to both PWMs, as shown in Figure 141. This bit has no function in the Slave PWM (PWM1).\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Mdis {
     #[doc = "1: Master use. PWM0 is the master, and both PWMs are enabled for counting."]
-    MasterUsePwm0Is_ = 1,
+    Master = 1,
     #[doc = "0: Individual use. The PWMs are used independently, and the individual Counter Enable bits are used to control the PWMs."]
-    IndividualUseThe_ = 0,
+    Individual = 0,
 }
 impl From<Mdis> for bool {
     #[inline(always)]
@@ -182,19 +182,19 @@ impl MdisR {
     #[inline(always)]
     pub const fn variant(&self) -> Mdis {
         match self.bits {
-            true => Mdis::MasterUsePwm0Is_,
-            false => Mdis::IndividualUseThe_,
+            true => Mdis::Master,
+            false => Mdis::Individual,
         }
     }
     #[doc = "Master use. PWM0 is the master, and both PWMs are enabled for counting."]
     #[inline(always)]
-    pub fn is_master_use_pwm0_is_(&self) -> bool {
-        *self == Mdis::MasterUsePwm0Is_
+    pub fn is_master(&self) -> bool {
+        *self == Mdis::Master
     }
     #[doc = "Individual use. The PWMs are used independently, and the individual Counter Enable bits are used to control the PWMs."]
     #[inline(always)]
-    pub fn is_individual_use_the_(&self) -> bool {
-        *self == Mdis::IndividualUseThe_
+    pub fn is_individual(&self) -> bool {
+        *self == Mdis::Individual
     }
 }
 #[doc = "Field `MDIS` writer - Master Disable (PWM0 only). The two PWMs may be synchronized using the Master Disable control bit. The Master disable bit of the Master PWM (PWM0 module) controls a secondary enable input to both PWMs, as shown in Figure 141. This bit has no function in the Slave PWM (PWM1)."]
@@ -205,13 +205,13 @@ where
 {
     #[doc = "Master use. PWM0 is the master, and both PWMs are enabled for counting."]
     #[inline(always)]
-    pub fn master_use_pwm0_is_(self) -> &'a mut crate::W<REG> {
-        self.variant(Mdis::MasterUsePwm0Is_)
+    pub fn master(self) -> &'a mut crate::W<REG> {
+        self.variant(Mdis::Master)
     }
     #[doc = "Individual use. The PWMs are used independently, and the individual Counter Enable bits are used to control the PWMs."]
     #[inline(always)]
-    pub fn individual_use_the_(self) -> &'a mut crate::W<REG> {
-        self.variant(Mdis::IndividualUseThe_)
+    pub fn individual(self) -> &'a mut crate::W<REG> {
+        self.variant(Mdis::Individual)
     }
 }
 impl R {

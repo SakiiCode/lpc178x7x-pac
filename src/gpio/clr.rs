@@ -226,7 +226,7 @@ impl W {
         Pinclr31W::new(self, 31)
     }
 }
-#[doc = "Port0 Output Clear register using FIOMASK.\n\nYou can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`clr::W`](W). See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+#[doc = "PortX Output Clear register using FIOMASK.\n\nYou can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`clr::W`](W). See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
 pub struct ClrSpec;
 impl crate::RegisterSpec for ClrSpec {
     type Ux = u32;

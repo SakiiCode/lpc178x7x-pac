@@ -103,7 +103,7 @@ pub mod dai;
 pub type Txfifo = crate::Reg<txfifo::TxfifoSpec>;
 #[doc = "I2S Transmit FIFO. Access register for the 8 x 32-bit transmitter FIFO."]
 pub mod txfifo;
-#[doc = "RXFIFO (r) register accessor: I2S Receive FIFO. Access register for the 8 x 32-bit receiver FIFO.\n\nYou can [`read`](crate::Reg::read) this register and get [`rxfifo::R`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@rxfifo`] module"]
+#[doc = "RXFIFO (r) register accessor: I2S Receive FIFO. Access register for the 8 x 32-bit receiver FIFO.\n\nYou can [`read`](crate::Reg::read) this register and get [`rxfifo::R`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\n<div class=\"warning\">The register is <b>modified</b> in some way after a read operation.</div>\n\nFor information about available fields see [`mod@rxfifo`] module"]
 #[doc(alias = "RXFIFO")]
 pub type Rxfifo = crate::Reg<rxfifo::RxfifoSpec>;
 #[doc = "I2S Receive FIFO. Access register for the 8 x 32-bit receiver FIFO."]

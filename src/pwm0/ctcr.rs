@@ -7,13 +7,13 @@ pub type W = crate::W<CtcrSpec>;
 #[repr(u8)]
 pub enum Mod {
     #[doc = "0: Timer Mode: the TC is incremented when the Prescale Counter matches the Prescale register."]
-    TimerModeTheTcI = 0,
+    Timer = 0,
     #[doc = "1: Rising edge counter Mode: the TC is incremented on rising edges of the PWM_CAP input selected by bits 3:2."]
-    RisingEdgeCounter_ = 1,
+    CounterRising = 1,
     #[doc = "2: Falling edge counter Mode: the TC is incremented on falling edges of the PWM_CAP input selected by bits 3:2."]
-    FallingEdgeCounter = 2,
+    CounterFalling = 2,
     #[doc = "3: Dual edge counter Mode: the TC is incremented on both edges of the PWM_CAP input selected by bits 3:2."]
-    DualEdgeCounterMo = 3,
+    CounterDual = 3,
 }
 impl From<Mod> for u8 {
     #[inline(always)]
@@ -32,32 +32,32 @@ impl ModR {
     #[inline(always)]
     pub const fn variant(&self) -> Mod {
         match self.bits {
-            0 => Mod::TimerModeTheTcI,
-            1 => Mod::RisingEdgeCounter_,
-            2 => Mod::FallingEdgeCounter,
-            3 => Mod::DualEdgeCounterMo,
+            0 => Mod::Timer,
+            1 => Mod::CounterRising,
+            2 => Mod::CounterFalling,
+            3 => Mod::CounterDual,
             _ => unreachable!(),
         }
     }
     #[doc = "Timer Mode: the TC is incremented when the Prescale Counter matches the Prescale register."]
     #[inline(always)]
-    pub fn is_timer_mode_the_tc_i(&self) -> bool {
-        *self == Mod::TimerModeTheTcI
+    pub fn is_timer(&self) -> bool {
+        *self == Mod::Timer
     }
     #[doc = "Rising edge counter Mode: the TC is incremented on rising edges of the PWM_CAP input selected by bits 3:2."]
     #[inline(always)]
-    pub fn is_rising_edge_counter_(&self) -> bool {
-        *self == Mod::RisingEdgeCounter_
+    pub fn is_counter_rising(&self) -> bool {
+        *self == Mod::CounterRising
     }
     #[doc = "Falling edge counter Mode: the TC is incremented on falling edges of the PWM_CAP input selected by bits 3:2."]
     #[inline(always)]
-    pub fn is_falling_edge_counter(&self) -> bool {
-        *self == Mod::FallingEdgeCounter
+    pub fn is_counter_falling(&self) -> bool {
+        *self == Mod::CounterFalling
     }
     #[doc = "Dual edge counter Mode: the TC is incremented on both edges of the PWM_CAP input selected by bits 3:2."]
     #[inline(always)]
-    pub fn is_dual_edge_counter_mo(&self) -> bool {
-        *self == Mod::DualEdgeCounterMo
+    pub fn is_counter_dual(&self) -> bool {
+        *self == Mod::CounterDual
     }
 }
 #[doc = "Field `MOD` writer - Counter/ Timer Mode"]
@@ -69,23 +69,23 @@ where
 {
     #[doc = "Timer Mode: the TC is incremented when the Prescale Counter matches the Prescale register."]
     #[inline(always)]
-    pub fn timer_mode_the_tc_i(self) -> &'a mut crate::W<REG> {
-        self.variant(Mod::TimerModeTheTcI)
+    pub fn timer(self) -> &'a mut crate::W<REG> {
+        self.variant(Mod::Timer)
     }
     #[doc = "Rising edge counter Mode: the TC is incremented on rising edges of the PWM_CAP input selected by bits 3:2."]
     #[inline(always)]
-    pub fn rising_edge_counter_(self) -> &'a mut crate::W<REG> {
-        self.variant(Mod::RisingEdgeCounter_)
+    pub fn counter_rising(self) -> &'a mut crate::W<REG> {
+        self.variant(Mod::CounterRising)
     }
     #[doc = "Falling edge counter Mode: the TC is incremented on falling edges of the PWM_CAP input selected by bits 3:2."]
     #[inline(always)]
-    pub fn falling_edge_counter(self) -> &'a mut crate::W<REG> {
-        self.variant(Mod::FallingEdgeCounter)
+    pub fn counter_falling(self) -> &'a mut crate::W<REG> {
+        self.variant(Mod::CounterFalling)
     }
     #[doc = "Dual edge counter Mode: the TC is incremented on both edges of the PWM_CAP input selected by bits 3:2."]
     #[inline(always)]
-    pub fn dual_edge_counter_mo(self) -> &'a mut crate::W<REG> {
-        self.variant(Mod::DualEdgeCounterMo)
+    pub fn counter_dual(self) -> &'a mut crate::W<REG> {
+        self.variant(Mod::CounterDual)
     }
 }
 #[doc = "Count Input Select. When bits 1:0 are not 00, these bits select which PWM_CAP pin carries the signal used to increment the TC. Other combinations are reserved.\n\nValue on reset: 0"]
@@ -93,7 +93,7 @@ where
 #[repr(u8)]
 pub enum Cis {
     #[doc = "0: For PWM0: 00 = PWM0_CAP0 (Other combinations are reserved) For PWM1: 00 = PWM1_CAP0, 01 = PWM1_CAP1 (Other combinations are reserved)"]
-    ForPwm0_00EqPwm0_ = 0,
+    Cap0 = 0,
 }
 impl From<Cis> for u8 {
     #[inline(always)]
@@ -112,14 +112,14 @@ impl CisR {
     #[inline(always)]
     pub const fn variant(&self) -> Option<Cis> {
         match self.bits {
-            0 => Some(Cis::ForPwm0_00EqPwm0_),
+            0 => Some(Cis::Cap0),
             _ => None,
         }
     }
     #[doc = "For PWM0: 00 = PWM0_CAP0 (Other combinations are reserved) For PWM1: 00 = PWM1_CAP0, 01 = PWM1_CAP1 (Other combinations are reserved)"]
     #[inline(always)]
-    pub fn is_for_pwm0_00_eq_pwm0_(&self) -> bool {
-        *self == Cis::ForPwm0_00EqPwm0_
+    pub fn is_cap0(&self) -> bool {
+        *self == Cis::Cap0
     }
 }
 #[doc = "Field `CIS` writer - Count Input Select. When bits 1:0 are not 00, these bits select which PWM_CAP pin carries the signal used to increment the TC. Other combinations are reserved."]
@@ -131,8 +131,8 @@ where
 {
     #[doc = "For PWM0: 00 = PWM0_CAP0 (Other combinations are reserved) For PWM1: 00 = PWM1_CAP0, 01 = PWM1_CAP1 (Other combinations are reserved)"]
     #[inline(always)]
-    pub fn for_pwm0_00_eq_pwm0_(self) -> &'a mut crate::W<REG> {
-        self.variant(Cis::ForPwm0_00EqPwm0_)
+    pub fn cap0(self) -> &'a mut crate::W<REG> {
+        self.variant(Cis::Cap0)
     }
 }
 impl R {

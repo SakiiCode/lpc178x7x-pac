@@ -14,9 +14,9 @@ pub type AccbpW<'a, REG> = crate::BitWriter<'a, REG>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Efcan {
     #[doc = "0: Software must read all messages for all enabled IDs on all enabled CAN buses, from the receiving CAN controllers."]
-    SoftwareMustReadA = 0,
+    Software = 0,
     #[doc = "1: The Acceptance Filter itself will take care of receiving and storing messages for selected Standard ID values on selected CAN buses. See Section 21.16 FullCAN mode on page 576."]
-    TheAcceptanceFilte = 1,
+    AcFilter = 1,
 }
 impl From<Efcan> for bool {
     #[inline(always)]
@@ -31,19 +31,19 @@ impl EfcanR {
     #[inline(always)]
     pub const fn variant(&self) -> Efcan {
         match self.bits {
-            false => Efcan::SoftwareMustReadA,
-            true => Efcan::TheAcceptanceFilte,
+            false => Efcan::Software,
+            true => Efcan::AcFilter,
         }
     }
     #[doc = "Software must read all messages for all enabled IDs on all enabled CAN buses, from the receiving CAN controllers."]
     #[inline(always)]
-    pub fn is_software_must_read_a(&self) -> bool {
-        *self == Efcan::SoftwareMustReadA
+    pub fn is_software(&self) -> bool {
+        *self == Efcan::Software
     }
     #[doc = "The Acceptance Filter itself will take care of receiving and storing messages for selected Standard ID values on selected CAN buses. See Section 21.16 FullCAN mode on page 576."]
     #[inline(always)]
-    pub fn is_the_acceptance_filte(&self) -> bool {
-        *self == Efcan::TheAcceptanceFilte
+    pub fn is_ac_filter(&self) -> bool {
+        *self == Efcan::AcFilter
     }
 }
 #[doc = "Field `EFCAN` writer - FullCAN mode"]
@@ -54,13 +54,13 @@ where
 {
     #[doc = "Software must read all messages for all enabled IDs on all enabled CAN buses, from the receiving CAN controllers."]
     #[inline(always)]
-    pub fn software_must_read_a(self) -> &'a mut crate::W<REG> {
-        self.variant(Efcan::SoftwareMustReadA)
+    pub fn software(self) -> &'a mut crate::W<REG> {
+        self.variant(Efcan::Software)
     }
     #[doc = "The Acceptance Filter itself will take care of receiving and storing messages for selected Standard ID values on selected CAN buses. See Section 21.16 FullCAN mode on page 576."]
     #[inline(always)]
-    pub fn the_acceptance_filte(self) -> &'a mut crate::W<REG> {
-        self.variant(Efcan::TheAcceptanceFilte)
+    pub fn ac_filter(self) -> &'a mut crate::W<REG> {
+        self.variant(Efcan::AcFilter)
     }
 }
 impl R {

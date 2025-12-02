@@ -6,9 +6,9 @@ pub type W = crate::W<OtgclkctrlSpec>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum HostClkEn {
     #[doc = "0: Disable the Host clock."]
-    DisableTheHostClo = 0,
+    Disabled = 0,
     #[doc = "1: Enable the Host clock."]
-    EnableTheHostCloc = 1,
+    Enabled = 1,
 }
 impl From<HostClkEn> for bool {
     #[inline(always)]
@@ -23,19 +23,19 @@ impl HostClkEnR {
     #[inline(always)]
     pub const fn variant(&self) -> HostClkEn {
         match self.bits {
-            false => HostClkEn::DisableTheHostClo,
-            true => HostClkEn::EnableTheHostCloc,
+            false => HostClkEn::Disabled,
+            true => HostClkEn::Enabled,
         }
     }
     #[doc = "Disable the Host clock."]
     #[inline(always)]
-    pub fn is_disable_the_host_clo(&self) -> bool {
-        *self == HostClkEn::DisableTheHostClo
+    pub fn is_disabled(&self) -> bool {
+        *self == HostClkEn::Disabled
     }
     #[doc = "Enable the Host clock."]
     #[inline(always)]
-    pub fn is_enable_the_host_cloc(&self) -> bool {
-        *self == HostClkEn::EnableTheHostCloc
+    pub fn is_enabled(&self) -> bool {
+        *self == HostClkEn::Enabled
     }
 }
 #[doc = "Field `HOST_CLK_EN` writer - Host clock enable"]
@@ -46,22 +46,22 @@ where
 {
     #[doc = "Disable the Host clock."]
     #[inline(always)]
-    pub fn disable_the_host_clo(self) -> &'a mut crate::W<REG> {
-        self.variant(HostClkEn::DisableTheHostClo)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(HostClkEn::Disabled)
     }
     #[doc = "Enable the Host clock."]
     #[inline(always)]
-    pub fn enable_the_host_cloc(self) -> &'a mut crate::W<REG> {
-        self.variant(HostClkEn::EnableTheHostCloc)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(HostClkEn::Enabled)
     }
 }
 #[doc = "Device clock enable\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum DevClkEn {
     #[doc = "0: Disable the Device clock."]
-    DisableTheDeviceC = 0,
+    Disabled = 0,
     #[doc = "1: Enable the Device clock."]
-    EnableTheDeviceCl = 1,
+    Enabled = 1,
 }
 impl From<DevClkEn> for bool {
     #[inline(always)]
@@ -76,19 +76,19 @@ impl DevClkEnR {
     #[inline(always)]
     pub const fn variant(&self) -> DevClkEn {
         match self.bits {
-            false => DevClkEn::DisableTheDeviceC,
-            true => DevClkEn::EnableTheDeviceCl,
+            false => DevClkEn::Disabled,
+            true => DevClkEn::Enabled,
         }
     }
     #[doc = "Disable the Device clock."]
     #[inline(always)]
-    pub fn is_disable_the_device_c(&self) -> bool {
-        *self == DevClkEn::DisableTheDeviceC
+    pub fn is_disabled(&self) -> bool {
+        *self == DevClkEn::Disabled
     }
     #[doc = "Enable the Device clock."]
     #[inline(always)]
-    pub fn is_enable_the_device_cl(&self) -> bool {
-        *self == DevClkEn::EnableTheDeviceCl
+    pub fn is_enabled(&self) -> bool {
+        *self == DevClkEn::Enabled
     }
 }
 #[doc = "Field `DEV_CLK_EN` writer - Device clock enable"]
@@ -99,22 +99,22 @@ where
 {
     #[doc = "Disable the Device clock."]
     #[inline(always)]
-    pub fn disable_the_device_c(self) -> &'a mut crate::W<REG> {
-        self.variant(DevClkEn::DisableTheDeviceC)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(DevClkEn::Disabled)
     }
     #[doc = "Enable the Device clock."]
     #[inline(always)]
-    pub fn enable_the_device_cl(self) -> &'a mut crate::W<REG> {
-        self.variant(DevClkEn::EnableTheDeviceCl)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(DevClkEn::Enabled)
     }
 }
 #[doc = "I2C clock enable\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum I2cClkEn {
     #[doc = "0: Disable the I2C clock."]
-    DisableTheI2cCloc = 0,
+    Disabled = 0,
     #[doc = "1: Enable the I2C clock."]
-    EnableTheI2cClock = 1,
+    Enabled = 1,
 }
 impl From<I2cClkEn> for bool {
     #[inline(always)]
@@ -129,19 +129,19 @@ impl I2cClkEnR {
     #[inline(always)]
     pub const fn variant(&self) -> I2cClkEn {
         match self.bits {
-            false => I2cClkEn::DisableTheI2cCloc,
-            true => I2cClkEn::EnableTheI2cClock,
+            false => I2cClkEn::Disabled,
+            true => I2cClkEn::Enabled,
         }
     }
     #[doc = "Disable the I2C clock."]
     #[inline(always)]
-    pub fn is_disable_the_i2c_cloc(&self) -> bool {
-        *self == I2cClkEn::DisableTheI2cCloc
+    pub fn is_disabled(&self) -> bool {
+        *self == I2cClkEn::Disabled
     }
     #[doc = "Enable the I2C clock."]
     #[inline(always)]
-    pub fn is_enable_the_i2c_clock(&self) -> bool {
-        *self == I2cClkEn::EnableTheI2cClock
+    pub fn is_enabled(&self) -> bool {
+        *self == I2cClkEn::Enabled
     }
 }
 #[doc = "Field `I2C_CLK_EN` writer - I2C clock enable"]
@@ -152,22 +152,22 @@ where
 {
     #[doc = "Disable the I2C clock."]
     #[inline(always)]
-    pub fn disable_the_i2c_cloc(self) -> &'a mut crate::W<REG> {
-        self.variant(I2cClkEn::DisableTheI2cCloc)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(I2cClkEn::Disabled)
     }
     #[doc = "Enable the I2C clock."]
     #[inline(always)]
-    pub fn enable_the_i2c_clock(self) -> &'a mut crate::W<REG> {
-        self.variant(I2cClkEn::EnableTheI2cClock)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(I2cClkEn::Enabled)
     }
 }
 #[doc = "OTG clock enable. In device-only applications, this bit enables access to the PORTSEL register.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum OtgClkEn {
     #[doc = "0: Disable the OTG clock."]
-    DisableTheOtgCloc = 0,
+    Disabled = 0,
     #[doc = "1: Enable the OTG clock."]
-    EnableTheOtgClock = 1,
+    Enabled = 1,
 }
 impl From<OtgClkEn> for bool {
     #[inline(always)]
@@ -182,19 +182,19 @@ impl OtgClkEnR {
     #[inline(always)]
     pub const fn variant(&self) -> OtgClkEn {
         match self.bits {
-            false => OtgClkEn::DisableTheOtgCloc,
-            true => OtgClkEn::EnableTheOtgClock,
+            false => OtgClkEn::Disabled,
+            true => OtgClkEn::Enabled,
         }
     }
     #[doc = "Disable the OTG clock."]
     #[inline(always)]
-    pub fn is_disable_the_otg_cloc(&self) -> bool {
-        *self == OtgClkEn::DisableTheOtgCloc
+    pub fn is_disabled(&self) -> bool {
+        *self == OtgClkEn::Disabled
     }
     #[doc = "Enable the OTG clock."]
     #[inline(always)]
-    pub fn is_enable_the_otg_clock(&self) -> bool {
-        *self == OtgClkEn::EnableTheOtgClock
+    pub fn is_enabled(&self) -> bool {
+        *self == OtgClkEn::Enabled
     }
 }
 #[doc = "Field `OTG_CLK_EN` writer - OTG clock enable. In device-only applications, this bit enables access to the PORTSEL register."]
@@ -205,22 +205,22 @@ where
 {
     #[doc = "Disable the OTG clock."]
     #[inline(always)]
-    pub fn disable_the_otg_cloc(self) -> &'a mut crate::W<REG> {
-        self.variant(OtgClkEn::DisableTheOtgCloc)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(OtgClkEn::Disabled)
     }
     #[doc = "Enable the OTG clock."]
     #[inline(always)]
-    pub fn enable_the_otg_clock(self) -> &'a mut crate::W<REG> {
-        self.variant(OtgClkEn::EnableTheOtgClock)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(OtgClkEn::Enabled)
     }
 }
 #[doc = "AHB master clock enable\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum AhbClkEn {
     #[doc = "0: Disable the AHB clock."]
-    DisableTheAhbCloc = 0,
+    Disabled = 0,
     #[doc = "1: Enable the AHB clock."]
-    EnableTheAhbClock = 1,
+    Enabled = 1,
 }
 impl From<AhbClkEn> for bool {
     #[inline(always)]
@@ -235,19 +235,19 @@ impl AhbClkEnR {
     #[inline(always)]
     pub const fn variant(&self) -> AhbClkEn {
         match self.bits {
-            false => AhbClkEn::DisableTheAhbCloc,
-            true => AhbClkEn::EnableTheAhbClock,
+            false => AhbClkEn::Disabled,
+            true => AhbClkEn::Enabled,
         }
     }
     #[doc = "Disable the AHB clock."]
     #[inline(always)]
-    pub fn is_disable_the_ahb_cloc(&self) -> bool {
-        *self == AhbClkEn::DisableTheAhbCloc
+    pub fn is_disabled(&self) -> bool {
+        *self == AhbClkEn::Disabled
     }
     #[doc = "Enable the AHB clock."]
     #[inline(always)]
-    pub fn is_enable_the_ahb_clock(&self) -> bool {
-        *self == AhbClkEn::EnableTheAhbClock
+    pub fn is_enabled(&self) -> bool {
+        *self == AhbClkEn::Enabled
     }
 }
 #[doc = "Field `AHB_CLK_EN` writer - AHB master clock enable"]
@@ -258,13 +258,13 @@ where
 {
     #[doc = "Disable the AHB clock."]
     #[inline(always)]
-    pub fn disable_the_ahb_cloc(self) -> &'a mut crate::W<REG> {
-        self.variant(AhbClkEn::DisableTheAhbCloc)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(AhbClkEn::Disabled)
     }
     #[doc = "Enable the AHB clock."]
     #[inline(always)]
-    pub fn enable_the_ahb_clock(self) -> &'a mut crate::W<REG> {
-        self.variant(AhbClkEn::EnableTheAhbClock)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(AhbClkEn::Enabled)
     }
 }
 impl R {

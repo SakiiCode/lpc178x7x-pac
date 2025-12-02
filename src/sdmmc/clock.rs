@@ -63,9 +63,9 @@ where
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pwrsave {
     #[doc = "0: Always enabled."]
-    AlwaysEnabled_ = 0,
+    AlwaysEnabled = 0,
     #[doc = "1: Clock enabled when bus is active."]
-    ClockEnabledWhenB = 1,
+    ActiveBusOnly = 1,
 }
 impl From<Pwrsave> for bool {
     #[inline(always)]
@@ -80,19 +80,19 @@ impl PwrsaveR {
     #[inline(always)]
     pub const fn variant(&self) -> Pwrsave {
         match self.bits {
-            false => Pwrsave::AlwaysEnabled_,
-            true => Pwrsave::ClockEnabledWhenB,
+            false => Pwrsave::AlwaysEnabled,
+            true => Pwrsave::ActiveBusOnly,
         }
     }
     #[doc = "Always enabled."]
     #[inline(always)]
-    pub fn is_always_enabled_(&self) -> bool {
-        *self == Pwrsave::AlwaysEnabled_
+    pub fn is_always_enabled(&self) -> bool {
+        *self == Pwrsave::AlwaysEnabled
     }
     #[doc = "Clock enabled when bus is active."]
     #[inline(always)]
-    pub fn is_clock_enabled_when_b(&self) -> bool {
-        *self == Pwrsave::ClockEnabledWhenB
+    pub fn is_active_bus_only(&self) -> bool {
+        *self == Pwrsave::ActiveBusOnly
     }
 }
 #[doc = "Field `PWRSAVE` writer - Disable SD_CLK output when bus is idle:"]
@@ -103,22 +103,22 @@ where
 {
     #[doc = "Always enabled."]
     #[inline(always)]
-    pub fn always_enabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwrsave::AlwaysEnabled_)
+    pub fn always_enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwrsave::AlwaysEnabled)
     }
     #[doc = "Clock enabled when bus is active."]
     #[inline(always)]
-    pub fn clock_enabled_when_b(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwrsave::ClockEnabledWhenB)
+    pub fn active_bus_only(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwrsave::ActiveBusOnly)
     }
 }
 #[doc = "Enable bypass of clock divide logic:\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Bypass {
     #[doc = "0: Disable bypass."]
-    DisableBypass_ = 0,
+    Disabled = 0,
     #[doc = "1: Enable bypass. MCLK driven to card bus output (SD_CLK)."]
-    EnableBypassMclk_ = 1,
+    Enabled = 1,
 }
 impl From<Bypass> for bool {
     #[inline(always)]
@@ -133,19 +133,19 @@ impl BypassR {
     #[inline(always)]
     pub const fn variant(&self) -> Bypass {
         match self.bits {
-            false => Bypass::DisableBypass_,
-            true => Bypass::EnableBypassMclk_,
+            false => Bypass::Disabled,
+            true => Bypass::Enabled,
         }
     }
     #[doc = "Disable bypass."]
     #[inline(always)]
-    pub fn is_disable_bypass_(&self) -> bool {
-        *self == Bypass::DisableBypass_
+    pub fn is_disabled(&self) -> bool {
+        *self == Bypass::Disabled
     }
     #[doc = "Enable bypass. MCLK driven to card bus output (SD_CLK)."]
     #[inline(always)]
-    pub fn is_enable_bypass_mclk_(&self) -> bool {
-        *self == Bypass::EnableBypassMclk_
+    pub fn is_enabled(&self) -> bool {
+        *self == Bypass::Enabled
     }
 }
 #[doc = "Field `BYPASS` writer - Enable bypass of clock divide logic:"]
@@ -156,22 +156,22 @@ where
 {
     #[doc = "Disable bypass."]
     #[inline(always)]
-    pub fn disable_bypass_(self) -> &'a mut crate::W<REG> {
-        self.variant(Bypass::DisableBypass_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Bypass::Disabled)
     }
     #[doc = "Enable bypass. MCLK driven to card bus output (SD_CLK)."]
     #[inline(always)]
-    pub fn enable_bypass_mclk_(self) -> &'a mut crate::W<REG> {
-        self.variant(Bypass::EnableBypassMclk_)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Bypass::Enabled)
     }
 }
 #[doc = "Enable wide bus mode.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Widebus {
     #[doc = "0: Standard bus mode (only SD_DAT\\[0\\] used)."]
-    StandardBusModeO = 0,
+    Standard = 0,
     #[doc = "1: Wide bus mode (SD_DAT\\[3:0\\] used)"]
-    WideBusModeSdDa = 1,
+    Wide = 1,
 }
 impl From<Widebus> for bool {
     #[inline(always)]
@@ -186,19 +186,19 @@ impl WidebusR {
     #[inline(always)]
     pub const fn variant(&self) -> Widebus {
         match self.bits {
-            false => Widebus::StandardBusModeO,
-            true => Widebus::WideBusModeSdDa,
+            false => Widebus::Standard,
+            true => Widebus::Wide,
         }
     }
     #[doc = "Standard bus mode (only SD_DAT\\[0\\] used)."]
     #[inline(always)]
-    pub fn is_standard_bus_mode_o(&self) -> bool {
-        *self == Widebus::StandardBusModeO
+    pub fn is_standard(&self) -> bool {
+        *self == Widebus::Standard
     }
     #[doc = "Wide bus mode (SD_DAT\\[3:0\\] used)"]
     #[inline(always)]
-    pub fn is_wide_bus_mode_sd_da(&self) -> bool {
-        *self == Widebus::WideBusModeSdDa
+    pub fn is_wide(&self) -> bool {
+        *self == Widebus::Wide
     }
 }
 #[doc = "Field `WIDEBUS` writer - Enable wide bus mode."]
@@ -209,13 +209,13 @@ where
 {
     #[doc = "Standard bus mode (only SD_DAT\\[0\\] used)."]
     #[inline(always)]
-    pub fn standard_bus_mode_o(self) -> &'a mut crate::W<REG> {
-        self.variant(Widebus::StandardBusModeO)
+    pub fn standard(self) -> &'a mut crate::W<REG> {
+        self.variant(Widebus::Standard)
     }
     #[doc = "Wide bus mode (SD_DAT\\[3:0\\] used)"]
     #[inline(always)]
-    pub fn wide_bus_mode_sd_da(self) -> &'a mut crate::W<REG> {
-        self.variant(Widebus::WideBusModeSdDa)
+    pub fn wide(self) -> &'a mut crate::W<REG> {
+        self.variant(Widebus::Wide)
     }
 }
 impl R {

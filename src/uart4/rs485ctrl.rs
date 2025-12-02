@@ -59,9 +59,9 @@ where
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Rxdis {
     #[doc = "0: Enabled."]
-    Enabled_ = 0,
+    Enabled = 0,
     #[doc = "1: Disabled."]
-    Disabled_ = 1,
+    Disabled = 1,
 }
 impl From<Rxdis> for bool {
     #[inline(always)]
@@ -76,19 +76,19 @@ impl RxdisR {
     #[inline(always)]
     pub const fn variant(&self) -> Rxdis {
         match self.bits {
-            false => Rxdis::Enabled_,
-            true => Rxdis::Disabled_,
+            false => Rxdis::Enabled,
+            true => Rxdis::Disabled,
         }
     }
     #[doc = "Enabled."]
     #[inline(always)]
-    pub fn is_enabled_(&self) -> bool {
-        *self == Rxdis::Enabled_
+    pub fn is_enabled(&self) -> bool {
+        *self == Rxdis::Enabled
     }
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn is_disabled_(&self) -> bool {
-        *self == Rxdis::Disabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Rxdis::Disabled
     }
 }
 #[doc = "Field `RXDIS` writer - Receiver enable."]
@@ -99,22 +99,22 @@ where
 {
     #[doc = "Enabled."]
     #[inline(always)]
-    pub fn enabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Rxdis::Enabled_)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Rxdis::Enabled)
     }
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Rxdis::Disabled_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Rxdis::Disabled)
     }
 }
 #[doc = "AAD enable\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Aaden {
     #[doc = "0: Disabled."]
-    Disabled_ = 0,
+    Disabled = 0,
     #[doc = "1: Enabled."]
-    Enabled_ = 1,
+    Enabled = 1,
 }
 impl From<Aaden> for bool {
     #[inline(always)]
@@ -129,19 +129,19 @@ impl AadenR {
     #[inline(always)]
     pub const fn variant(&self) -> Aaden {
         match self.bits {
-            false => Aaden::Disabled_,
-            true => Aaden::Enabled_,
+            false => Aaden::Disabled,
+            true => Aaden::Enabled,
         }
     }
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn is_disabled_(&self) -> bool {
-        *self == Aaden::Disabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Aaden::Disabled
     }
     #[doc = "Enabled."]
     #[inline(always)]
-    pub fn is_enabled_(&self) -> bool {
-        *self == Aaden::Enabled_
+    pub fn is_enabled(&self) -> bool {
+        *self == Aaden::Enabled
     }
 }
 #[doc = "Field `AADEN` writer - AAD enable"]
@@ -152,22 +152,22 @@ where
 {
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Aaden::Disabled_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Aaden::Disabled)
     }
     #[doc = "Enabled."]
     #[inline(always)]
-    pub fn enabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Aaden::Enabled_)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Aaden::Enabled)
     }
 }
 #[doc = "Direction control for DIR pin.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Dctrl {
     #[doc = "0: Disable Auto Direction Control."]
-    DisableAutoDirecti = 0,
+    Disabled = 0,
     #[doc = "1: Enable Auto Direction Control."]
-    EnableAutoDirectio = 1,
+    Enabled = 1,
 }
 impl From<Dctrl> for bool {
     #[inline(always)]
@@ -182,19 +182,19 @@ impl DctrlR {
     #[inline(always)]
     pub const fn variant(&self) -> Dctrl {
         match self.bits {
-            false => Dctrl::DisableAutoDirecti,
-            true => Dctrl::EnableAutoDirectio,
+            false => Dctrl::Disabled,
+            true => Dctrl::Enabled,
         }
     }
     #[doc = "Disable Auto Direction Control."]
     #[inline(always)]
-    pub fn is_disable_auto_directi(&self) -> bool {
-        *self == Dctrl::DisableAutoDirecti
+    pub fn is_disabled(&self) -> bool {
+        *self == Dctrl::Disabled
     }
     #[doc = "Enable Auto Direction Control."]
     #[inline(always)]
-    pub fn is_enable_auto_directio(&self) -> bool {
-        *self == Dctrl::EnableAutoDirectio
+    pub fn is_enabled(&self) -> bool {
+        *self == Dctrl::Enabled
     }
 }
 #[doc = "Field `DCTRL` writer - Direction control for DIR pin."]
@@ -205,22 +205,22 @@ where
 {
     #[doc = "Disable Auto Direction Control."]
     #[inline(always)]
-    pub fn disable_auto_directi(self) -> &'a mut crate::W<REG> {
-        self.variant(Dctrl::DisableAutoDirecti)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Dctrl::Disabled)
     }
     #[doc = "Enable Auto Direction Control."]
     #[inline(always)]
-    pub fn enable_auto_directio(self) -> &'a mut crate::W<REG> {
-        self.variant(Dctrl::EnableAutoDirectio)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Dctrl::Enabled)
     }
 }
 #[doc = "Direction control pin polarity. This bit reverses the polarity of the direction control signal on the DIR pin.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Oinv {
     #[doc = "0: Low. The direction control pin will be driven to logic 0 when the transmitter has data to be sent. It will be driven to logic 1 after the last bit of data has been transmitted."]
-    LowTheDirectionC = 0,
+    Low = 0,
     #[doc = "1: High. The direction control pin will be driven to logic 1 when the transmitter has data to be sent. It will be driven to logic 0 after the last bit of data has been transmitted."]
-    HighTheDirection_ = 1,
+    High = 1,
 }
 impl From<Oinv> for bool {
     #[inline(always)]
@@ -235,19 +235,19 @@ impl OinvR {
     #[inline(always)]
     pub const fn variant(&self) -> Oinv {
         match self.bits {
-            false => Oinv::LowTheDirectionC,
-            true => Oinv::HighTheDirection_,
+            false => Oinv::Low,
+            true => Oinv::High,
         }
     }
     #[doc = "Low. The direction control pin will be driven to logic 0 when the transmitter has data to be sent. It will be driven to logic 1 after the last bit of data has been transmitted."]
     #[inline(always)]
-    pub fn is_low_the_direction_c(&self) -> bool {
-        *self == Oinv::LowTheDirectionC
+    pub fn is_low(&self) -> bool {
+        *self == Oinv::Low
     }
     #[doc = "High. The direction control pin will be driven to logic 1 when the transmitter has data to be sent. It will be driven to logic 0 after the last bit of data has been transmitted."]
     #[inline(always)]
-    pub fn is_high_the_direction_(&self) -> bool {
-        *self == Oinv::HighTheDirection_
+    pub fn is_high(&self) -> bool {
+        *self == Oinv::High
     }
 }
 #[doc = "Field `OINV` writer - Direction control pin polarity. This bit reverses the polarity of the direction control signal on the DIR pin."]
@@ -258,13 +258,13 @@ where
 {
     #[doc = "Low. The direction control pin will be driven to logic 0 when the transmitter has data to be sent. It will be driven to logic 1 after the last bit of data has been transmitted."]
     #[inline(always)]
-    pub fn low_the_direction_c(self) -> &'a mut crate::W<REG> {
-        self.variant(Oinv::LowTheDirectionC)
+    pub fn low(self) -> &'a mut crate::W<REG> {
+        self.variant(Oinv::Low)
     }
     #[doc = "High. The direction control pin will be driven to logic 1 when the transmitter has data to be sent. It will be driven to logic 0 after the last bit of data has been transmitted."]
     #[inline(always)]
-    pub fn high_the_direction_(self) -> &'a mut crate::W<REG> {
-        self.variant(Oinv::HighTheDirection_)
+    pub fn high(self) -> &'a mut crate::W<REG> {
+        self.variant(Oinv::High)
     }
 }
 impl R {

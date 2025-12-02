@@ -7,7 +7,7 @@ pub type W = crate::W<UsbclkselSpec>;
 #[repr(u8)]
 pub enum Usbdiv {
     #[doc = "0: The divider is turned off, no clock will be provided to the USB subsystem."]
-    NoDiv = 0,
+    Disabled = 0,
     #[doc = "4: PLL0 output is divided by 4. PLL0 output must be 192 MHz."]
     Div4 = 4,
     #[doc = "6: PLL0 output is divided by 6. PLL0 output must be 288 MHz."]
@@ -30,7 +30,7 @@ impl UsbdivR {
     #[inline(always)]
     pub const fn variant(&self) -> Option<Usbdiv> {
         match self.bits {
-            0 => Some(Usbdiv::NoDiv),
+            0 => Some(Usbdiv::Disabled),
             4 => Some(Usbdiv::Div4),
             6 => Some(Usbdiv::Div6),
             _ => None,
@@ -38,8 +38,8 @@ impl UsbdivR {
     }
     #[doc = "The divider is turned off, no clock will be provided to the USB subsystem."]
     #[inline(always)]
-    pub fn is_no_div(&self) -> bool {
-        *self == Usbdiv::NoDiv
+    pub fn is_disabled(&self) -> bool {
+        *self == Usbdiv::Disabled
     }
     #[doc = "PLL0 output is divided by 4. PLL0 output must be 192 MHz."]
     #[inline(always)]
@@ -61,8 +61,8 @@ where
 {
     #[doc = "The divider is turned off, no clock will be provided to the USB subsystem."]
     #[inline(always)]
-    pub fn no_div(self) -> &'a mut crate::W<REG> {
-        self.variant(Usbdiv::NoDiv)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Usbdiv::Disabled)
     }
     #[doc = "PLL0 output is divided by 4. PLL0 output must be 192 MHz."]
     #[inline(always)]
@@ -80,11 +80,11 @@ where
 #[repr(u8)]
 pub enum Usbsel {
     #[doc = "0: Sysclk is used as the input to the USB clock divider. When this clock is selected, the USB can be accessed by software but cannot perform USB functions."]
-    SysclkIsUsedAsTh = 0,
+    Sysclk = 0,
     #[doc = "1: The output of the Main PLL is used as the input to the USB clock divider."]
-    TheOutputOfTheMa = 1,
+    MainPll = 1,
     #[doc = "2: The output of the Alt PLL is used as the input to the USB clock divider."]
-    TheOutputOfTheAl = 2,
+    AltPll = 2,
 }
 impl From<Usbsel> for u8 {
     #[inline(always)]
@@ -103,26 +103,26 @@ impl UsbselR {
     #[inline(always)]
     pub const fn variant(&self) -> Option<Usbsel> {
         match self.bits {
-            0 => Some(Usbsel::SysclkIsUsedAsTh),
-            1 => Some(Usbsel::TheOutputOfTheMa),
-            2 => Some(Usbsel::TheOutputOfTheAl),
+            0 => Some(Usbsel::Sysclk),
+            1 => Some(Usbsel::MainPll),
+            2 => Some(Usbsel::AltPll),
             _ => None,
         }
     }
     #[doc = "Sysclk is used as the input to the USB clock divider. When this clock is selected, the USB can be accessed by software but cannot perform USB functions."]
     #[inline(always)]
-    pub fn is_sysclk_is_used_as_th(&self) -> bool {
-        *self == Usbsel::SysclkIsUsedAsTh
+    pub fn is_sysclk(&self) -> bool {
+        *self == Usbsel::Sysclk
     }
     #[doc = "The output of the Main PLL is used as the input to the USB clock divider."]
     #[inline(always)]
-    pub fn is_the_output_of_the_ma(&self) -> bool {
-        *self == Usbsel::TheOutputOfTheMa
+    pub fn is_main_pll(&self) -> bool {
+        *self == Usbsel::MainPll
     }
     #[doc = "The output of the Alt PLL is used as the input to the USB clock divider."]
     #[inline(always)]
-    pub fn is_the_output_of_the_al(&self) -> bool {
-        *self == Usbsel::TheOutputOfTheAl
+    pub fn is_alt_pll(&self) -> bool {
+        *self == Usbsel::AltPll
     }
 }
 #[doc = "Field `USBSEL` writer - Selects the input clock for the USB clock divider."]
@@ -134,18 +134,18 @@ where
 {
     #[doc = "Sysclk is used as the input to the USB clock divider. When this clock is selected, the USB can be accessed by software but cannot perform USB functions."]
     #[inline(always)]
-    pub fn sysclk_is_used_as_th(self) -> &'a mut crate::W<REG> {
-        self.variant(Usbsel::SysclkIsUsedAsTh)
+    pub fn sysclk(self) -> &'a mut crate::W<REG> {
+        self.variant(Usbsel::Sysclk)
     }
     #[doc = "The output of the Main PLL is used as the input to the USB clock divider."]
     #[inline(always)]
-    pub fn the_output_of_the_ma(self) -> &'a mut crate::W<REG> {
-        self.variant(Usbsel::TheOutputOfTheMa)
+    pub fn main_pll(self) -> &'a mut crate::W<REG> {
+        self.variant(Usbsel::MainPll)
     }
     #[doc = "The output of the Alt PLL is used as the input to the USB clock divider."]
     #[inline(always)]
-    pub fn the_output_of_the_al(self) -> &'a mut crate::W<REG> {
-        self.variant(Usbsel::TheOutputOfTheAl)
+    pub fn alt_pll(self) -> &'a mut crate::W<REG> {
+        self.variant(Usbsel::AltPll)
     }
 }
 impl R {

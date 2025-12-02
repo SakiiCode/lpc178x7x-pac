@@ -8,9 +8,9 @@ pub type Dos1R = crate::BitReader;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Tbs1_1 {
     #[doc = "0: Locked. Software cannot access the Tx Buffer 1 nor write to the corresponding CANxTFI, CANxTID, CANxTDA, and CANxTDB registers because a message is either waiting for transmission or is in transmitting process."]
-    LockedSoftwareCan = 0,
+    Locked = 0,
     #[doc = "1: Released. Software may write a message into the Transmit Buffer 1 and its CANxTFI, CANxTID, CANxTDA, and CANxTDB registers."]
-    ReleasedSoftwareM = 1,
+    Released = 1,
 }
 impl From<Tbs1_1> for bool {
     #[inline(always)]
@@ -25,28 +25,28 @@ impl Tbs1_1R {
     #[inline(always)]
     pub const fn variant(&self) -> Tbs1_1 {
         match self.bits {
-            false => Tbs1_1::LockedSoftwareCan,
-            true => Tbs1_1::ReleasedSoftwareM,
+            false => Tbs1_1::Locked,
+            true => Tbs1_1::Released,
         }
     }
     #[doc = "Locked. Software cannot access the Tx Buffer 1 nor write to the corresponding CANxTFI, CANxTID, CANxTDA, and CANxTDB registers because a message is either waiting for transmission or is in transmitting process."]
     #[inline(always)]
-    pub fn is_locked_software_can(&self) -> bool {
-        *self == Tbs1_1::LockedSoftwareCan
+    pub fn is_locked(&self) -> bool {
+        *self == Tbs1_1::Locked
     }
     #[doc = "Released. Software may write a message into the Transmit Buffer 1 and its CANxTFI, CANxTID, CANxTDA, and CANxTDB registers."]
     #[inline(always)]
-    pub fn is_released_software_m(&self) -> bool {
-        *self == Tbs1_1::ReleasedSoftwareM
+    pub fn is_released(&self) -> bool {
+        *self == Tbs1_1::Released
     }
 }
 #[doc = "Transmission Complete Status.\n\nValue on reset: 1"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Tcs1_1 {
     #[doc = "0: Incomplete. The previously requested transmission for Tx Buffer 1 is not complete."]
-    IncompleteThePrev = 0,
+    Incomplete = 0,
     #[doc = "1: Complete. The previously requested transmission for Tx Buffer 1 has been successfully completed."]
-    CompleteThePrevio = 1,
+    Complete = 1,
 }
 impl From<Tcs1_1> for bool {
     #[inline(always)]
@@ -61,19 +61,19 @@ impl Tcs1_1R {
     #[inline(always)]
     pub const fn variant(&self) -> Tcs1_1 {
         match self.bits {
-            false => Tcs1_1::IncompleteThePrev,
-            true => Tcs1_1::CompleteThePrevio,
+            false => Tcs1_1::Incomplete,
+            true => Tcs1_1::Complete,
         }
     }
     #[doc = "Incomplete. The previously requested transmission for Tx Buffer 1 is not complete."]
     #[inline(always)]
-    pub fn is_incomplete_the_prev(&self) -> bool {
-        *self == Tcs1_1::IncompleteThePrev
+    pub fn is_incomplete(&self) -> bool {
+        *self == Tcs1_1::Incomplete
     }
     #[doc = "Complete. The previously requested transmission for Tx Buffer 1 has been successfully completed."]
     #[inline(always)]
-    pub fn is_complete_the_previo(&self) -> bool {
-        *self == Tcs1_1::CompleteThePrevio
+    pub fn is_complete(&self) -> bool {
+        *self == Tcs1_1::Complete
     }
 }
 #[doc = "Field `RS_1` reader - Receive Status. This bit is identical to the RS bit in the GSR."]
@@ -82,9 +82,9 @@ pub type Rs1R = crate::BitReader;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Ts1_1 {
     #[doc = "0: Idle. There is no transmission from Tx Buffer 1."]
-    IdleThereIsNoTr = 0,
+    Idle = 0,
     #[doc = "1: Transmit. The CAN Controller is transmitting a message from Tx Buffer 1."]
-    TransmitTheCanCo = 1,
+    Transmit = 1,
 }
 impl From<Ts1_1> for bool {
     #[inline(always)]
@@ -99,19 +99,19 @@ impl Ts1_1R {
     #[inline(always)]
     pub const fn variant(&self) -> Ts1_1 {
         match self.bits {
-            false => Ts1_1::IdleThereIsNoTr,
-            true => Ts1_1::TransmitTheCanCo,
+            false => Ts1_1::Idle,
+            true => Ts1_1::Transmit,
         }
     }
     #[doc = "Idle. There is no transmission from Tx Buffer 1."]
     #[inline(always)]
-    pub fn is_idle_there_is_no_tr(&self) -> bool {
-        *self == Ts1_1::IdleThereIsNoTr
+    pub fn is_idle(&self) -> bool {
+        *self == Ts1_1::Idle
     }
     #[doc = "Transmit. The CAN Controller is transmitting a message from Tx Buffer 1."]
     #[inline(always)]
-    pub fn is_transmit_the_can_co(&self) -> bool {
-        *self == Ts1_1::TransmitTheCanCo
+    pub fn is_transmit(&self) -> bool {
+        *self == Ts1_1::Transmit
     }
 }
 #[doc = "Field `ES_1` reader - Error Status. This bit is identical to the ES bit in the CANxGSR."]
@@ -126,9 +126,9 @@ pub type Dos2R = crate::BitReader;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Tbs2_2 {
     #[doc = "0: Locked. Software cannot access the Tx Buffer 2 nor write to the corresponding CANxTFI, CANxTID, CANxTDA, and CANxTDB registers because a message is either waiting for transmission or is in transmitting process."]
-    LockedSoftwareCan = 0,
+    Locked = 0,
     #[doc = "1: Released. Software may write a message into the Transmit Buffer 2 and its CANxTFI, CANxTID, CANxTDA, and CANxTDB registers."]
-    ReleasedSoftwareM = 1,
+    Released = 1,
 }
 impl From<Tbs2_2> for bool {
     #[inline(always)]
@@ -143,28 +143,28 @@ impl Tbs2_2R {
     #[inline(always)]
     pub const fn variant(&self) -> Tbs2_2 {
         match self.bits {
-            false => Tbs2_2::LockedSoftwareCan,
-            true => Tbs2_2::ReleasedSoftwareM,
+            false => Tbs2_2::Locked,
+            true => Tbs2_2::Released,
         }
     }
     #[doc = "Locked. Software cannot access the Tx Buffer 2 nor write to the corresponding CANxTFI, CANxTID, CANxTDA, and CANxTDB registers because a message is either waiting for transmission or is in transmitting process."]
     #[inline(always)]
-    pub fn is_locked_software_can(&self) -> bool {
-        *self == Tbs2_2::LockedSoftwareCan
+    pub fn is_locked(&self) -> bool {
+        *self == Tbs2_2::Locked
     }
     #[doc = "Released. Software may write a message into the Transmit Buffer 2 and its CANxTFI, CANxTID, CANxTDA, and CANxTDB registers."]
     #[inline(always)]
-    pub fn is_released_software_m(&self) -> bool {
-        *self == Tbs2_2::ReleasedSoftwareM
+    pub fn is_released(&self) -> bool {
+        *self == Tbs2_2::Released
     }
 }
 #[doc = "Transmission Complete Status.\n\nValue on reset: 1"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Tcs2_2 {
     #[doc = "0: Incomplete. The previously requested transmission for Tx Buffer 2 is not complete."]
-    IncompleteThePrev = 0,
+    Incomplete = 0,
     #[doc = "1: Complete. The previously requested transmission for Tx Buffer 2 has been successfully completed."]
-    CompleteThePrevio = 1,
+    Complete = 1,
 }
 impl From<Tcs2_2> for bool {
     #[inline(always)]
@@ -179,19 +179,19 @@ impl Tcs2_2R {
     #[inline(always)]
     pub const fn variant(&self) -> Tcs2_2 {
         match self.bits {
-            false => Tcs2_2::IncompleteThePrev,
-            true => Tcs2_2::CompleteThePrevio,
+            false => Tcs2_2::Incomplete,
+            true => Tcs2_2::Complete,
         }
     }
     #[doc = "Incomplete. The previously requested transmission for Tx Buffer 2 is not complete."]
     #[inline(always)]
-    pub fn is_incomplete_the_prev(&self) -> bool {
-        *self == Tcs2_2::IncompleteThePrev
+    pub fn is_incomplete(&self) -> bool {
+        *self == Tcs2_2::Incomplete
     }
     #[doc = "Complete. The previously requested transmission for Tx Buffer 2 has been successfully completed."]
     #[inline(always)]
-    pub fn is_complete_the_previo(&self) -> bool {
-        *self == Tcs2_2::CompleteThePrevio
+    pub fn is_complete(&self) -> bool {
+        *self == Tcs2_2::Complete
     }
 }
 #[doc = "Field `RS_2` reader - Receive Status. This bit is identical to the RS bit in the GSR."]
@@ -200,9 +200,9 @@ pub type Rs2R = crate::BitReader;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Ts2_2 {
     #[doc = "0: Idle. There is no transmission from Tx Buffer 2."]
-    IdleThereIsNoTr = 0,
+    Idle = 0,
     #[doc = "1: Transmit. The CAN Controller is transmitting a message from Tx Buffer 2."]
-    TransmitTheCanCo = 1,
+    Transmit = 1,
 }
 impl From<Ts2_2> for bool {
     #[inline(always)]
@@ -217,19 +217,19 @@ impl Ts2_2R {
     #[inline(always)]
     pub const fn variant(&self) -> Ts2_2 {
         match self.bits {
-            false => Ts2_2::IdleThereIsNoTr,
-            true => Ts2_2::TransmitTheCanCo,
+            false => Ts2_2::Idle,
+            true => Ts2_2::Transmit,
         }
     }
     #[doc = "Idle. There is no transmission from Tx Buffer 2."]
     #[inline(always)]
-    pub fn is_idle_there_is_no_tr(&self) -> bool {
-        *self == Ts2_2::IdleThereIsNoTr
+    pub fn is_idle(&self) -> bool {
+        *self == Ts2_2::Idle
     }
     #[doc = "Transmit. The CAN Controller is transmitting a message from Tx Buffer 2."]
     #[inline(always)]
-    pub fn is_transmit_the_can_co(&self) -> bool {
-        *self == Ts2_2::TransmitTheCanCo
+    pub fn is_transmit(&self) -> bool {
+        *self == Ts2_2::Transmit
     }
 }
 #[doc = "Field `ES_2` reader - Error Status. This bit is identical to the ES bit in the CANxGSR."]
@@ -244,9 +244,9 @@ pub type Dos3R = crate::BitReader;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Tbs3_3 {
     #[doc = "0: Locked. Software cannot access the Tx Buffer 3 nor write to the corresponding CANxTFI, CANxTID, CANxTDA, and CANxTDB registers because a message is either waiting for transmission or is in transmitting process."]
-    LockedSoftwareCan = 0,
+    Locked = 0,
     #[doc = "1: Released. Software may write a message into the Transmit Buffer 3 and its CANxTFI, CANxTID, CANxTDA, and CANxTDB registers."]
-    ReleasedSoftwareM = 1,
+    Released = 1,
 }
 impl From<Tbs3_3> for bool {
     #[inline(always)]
@@ -261,28 +261,28 @@ impl Tbs3_3R {
     #[inline(always)]
     pub const fn variant(&self) -> Tbs3_3 {
         match self.bits {
-            false => Tbs3_3::LockedSoftwareCan,
-            true => Tbs3_3::ReleasedSoftwareM,
+            false => Tbs3_3::Locked,
+            true => Tbs3_3::Released,
         }
     }
     #[doc = "Locked. Software cannot access the Tx Buffer 3 nor write to the corresponding CANxTFI, CANxTID, CANxTDA, and CANxTDB registers because a message is either waiting for transmission or is in transmitting process."]
     #[inline(always)]
-    pub fn is_locked_software_can(&self) -> bool {
-        *self == Tbs3_3::LockedSoftwareCan
+    pub fn is_locked(&self) -> bool {
+        *self == Tbs3_3::Locked
     }
     #[doc = "Released. Software may write a message into the Transmit Buffer 3 and its CANxTFI, CANxTID, CANxTDA, and CANxTDB registers."]
     #[inline(always)]
-    pub fn is_released_software_m(&self) -> bool {
-        *self == Tbs3_3::ReleasedSoftwareM
+    pub fn is_released(&self) -> bool {
+        *self == Tbs3_3::Released
     }
 }
 #[doc = "Transmission Complete Status.\n\nValue on reset: 1"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Tcs3_3 {
     #[doc = "0: Incomplete. The previously requested transmission for Tx Buffer 3 is not complete."]
-    IncompleteThePrev = 0,
+    Incomplete = 0,
     #[doc = "1: Complete. The previously requested transmission for Tx Buffer 3 has been successfully completed."]
-    CompleteThePrevio = 1,
+    Complete = 1,
 }
 impl From<Tcs3_3> for bool {
     #[inline(always)]
@@ -297,19 +297,19 @@ impl Tcs3_3R {
     #[inline(always)]
     pub const fn variant(&self) -> Tcs3_3 {
         match self.bits {
-            false => Tcs3_3::IncompleteThePrev,
-            true => Tcs3_3::CompleteThePrevio,
+            false => Tcs3_3::Incomplete,
+            true => Tcs3_3::Complete,
         }
     }
     #[doc = "Incomplete. The previously requested transmission for Tx Buffer 3 is not complete."]
     #[inline(always)]
-    pub fn is_incomplete_the_prev(&self) -> bool {
-        *self == Tcs3_3::IncompleteThePrev
+    pub fn is_incomplete(&self) -> bool {
+        *self == Tcs3_3::Incomplete
     }
     #[doc = "Complete. The previously requested transmission for Tx Buffer 3 has been successfully completed."]
     #[inline(always)]
-    pub fn is_complete_the_previo(&self) -> bool {
-        *self == Tcs3_3::CompleteThePrevio
+    pub fn is_complete(&self) -> bool {
+        *self == Tcs3_3::Complete
     }
 }
 #[doc = "Field `RS_3` reader - Receive Status. This bit is identical to the RS bit in the GSR."]
@@ -318,9 +318,9 @@ pub type Rs3R = crate::BitReader;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Ts3_3 {
     #[doc = "0: Idle. There is no transmission from Tx Buffer 3."]
-    IdleThereIsNoTr = 0,
+    Idle = 0,
     #[doc = "1: Transmit. The CAN Controller is transmitting a message from Tx Buffer 3."]
-    TransmitTheCanCo = 1,
+    Transmit = 1,
 }
 impl From<Ts3_3> for bool {
     #[inline(always)]
@@ -335,19 +335,19 @@ impl Ts3_3R {
     #[inline(always)]
     pub const fn variant(&self) -> Ts3_3 {
         match self.bits {
-            false => Ts3_3::IdleThereIsNoTr,
-            true => Ts3_3::TransmitTheCanCo,
+            false => Ts3_3::Idle,
+            true => Ts3_3::Transmit,
         }
     }
     #[doc = "Idle. There is no transmission from Tx Buffer 3."]
     #[inline(always)]
-    pub fn is_idle_there_is_no_tr(&self) -> bool {
-        *self == Ts3_3::IdleThereIsNoTr
+    pub fn is_idle(&self) -> bool {
+        *self == Ts3_3::Idle
     }
     #[doc = "Transmit. The CAN Controller is transmitting a message from Tx Buffer 3."]
     #[inline(always)]
-    pub fn is_transmit_the_can_co(&self) -> bool {
-        *self == Ts3_3::TransmitTheCanCo
+    pub fn is_transmit(&self) -> bool {
+        *self == Ts3_3::Transmit
     }
 }
 #[doc = "Field `ES_3` reader - Error Status. This bit is identical to the ES bit in the CANxGSR."]

@@ -7,13 +7,13 @@ pub type W = crate::W<LcrSpec>;
 #[repr(u8)]
 pub enum Wls {
     #[doc = "0: 5-bit character length"]
-    _5BitCharacterLeng = 0,
+    _5Bit = 0,
     #[doc = "1: 6-bit character length"]
-    _6BitCharacterLeng = 1,
+    _6Bit = 1,
     #[doc = "2: 7-bit character length"]
-    _7BitCharacterLeng = 2,
+    _7Bit = 2,
     #[doc = "3: 8-bit character length"]
-    _8BitCharacterLeng = 3,
+    _8Bit = 3,
 }
 impl From<Wls> for u8 {
     #[inline(always)]
@@ -32,32 +32,32 @@ impl WlsR {
     #[inline(always)]
     pub const fn variant(&self) -> Wls {
         match self.bits {
-            0 => Wls::_5BitCharacterLeng,
-            1 => Wls::_6BitCharacterLeng,
-            2 => Wls::_7BitCharacterLeng,
-            3 => Wls::_8BitCharacterLeng,
+            0 => Wls::_5Bit,
+            1 => Wls::_6Bit,
+            2 => Wls::_7Bit,
+            3 => Wls::_8Bit,
             _ => unreachable!(),
         }
     }
     #[doc = "5-bit character length"]
     #[inline(always)]
-    pub fn is_5_bit_character_leng(&self) -> bool {
-        *self == Wls::_5BitCharacterLeng
+    pub fn is_5_bit(&self) -> bool {
+        *self == Wls::_5Bit
     }
     #[doc = "6-bit character length"]
     #[inline(always)]
-    pub fn is_6_bit_character_leng(&self) -> bool {
-        *self == Wls::_6BitCharacterLeng
+    pub fn is_6_bit(&self) -> bool {
+        *self == Wls::_6Bit
     }
     #[doc = "7-bit character length"]
     #[inline(always)]
-    pub fn is_7_bit_character_leng(&self) -> bool {
-        *self == Wls::_7BitCharacterLeng
+    pub fn is_7_bit(&self) -> bool {
+        *self == Wls::_7Bit
     }
     #[doc = "8-bit character length"]
     #[inline(always)]
-    pub fn is_8_bit_character_leng(&self) -> bool {
-        *self == Wls::_8BitCharacterLeng
+    pub fn is_8_bit(&self) -> bool {
+        *self == Wls::_8Bit
     }
 }
 #[doc = "Field `WLS` writer - Word Length Select."]
@@ -69,32 +69,32 @@ where
 {
     #[doc = "5-bit character length"]
     #[inline(always)]
-    pub fn _5_bit_character_leng(self) -> &'a mut crate::W<REG> {
-        self.variant(Wls::_5BitCharacterLeng)
+    pub fn _5_bit(self) -> &'a mut crate::W<REG> {
+        self.variant(Wls::_5Bit)
     }
     #[doc = "6-bit character length"]
     #[inline(always)]
-    pub fn _6_bit_character_leng(self) -> &'a mut crate::W<REG> {
-        self.variant(Wls::_6BitCharacterLeng)
+    pub fn _6_bit(self) -> &'a mut crate::W<REG> {
+        self.variant(Wls::_6Bit)
     }
     #[doc = "7-bit character length"]
     #[inline(always)]
-    pub fn _7_bit_character_leng(self) -> &'a mut crate::W<REG> {
-        self.variant(Wls::_7BitCharacterLeng)
+    pub fn _7_bit(self) -> &'a mut crate::W<REG> {
+        self.variant(Wls::_7Bit)
     }
     #[doc = "8-bit character length"]
     #[inline(always)]
-    pub fn _8_bit_character_leng(self) -> &'a mut crate::W<REG> {
-        self.variant(Wls::_8BitCharacterLeng)
+    pub fn _8_bit(self) -> &'a mut crate::W<REG> {
+        self.variant(Wls::_8Bit)
     }
 }
 #[doc = "Stop Bit Select\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Sbs {
     #[doc = "0: 1 stop bit."]
-    _1StopBit_ = 0,
+    _1Bit = 0,
     #[doc = "1: 2 stop bits (1.5 if UnLCR\\[1:0\\]=00)."]
-    _2StopBits1_5If_ = 1,
+    _2Bits = 1,
 }
 impl From<Sbs> for bool {
     #[inline(always)]
@@ -109,19 +109,19 @@ impl SbsR {
     #[inline(always)]
     pub const fn variant(&self) -> Sbs {
         match self.bits {
-            false => Sbs::_1StopBit_,
-            true => Sbs::_2StopBits1_5If_,
+            false => Sbs::_1Bit,
+            true => Sbs::_2Bits,
         }
     }
     #[doc = "1 stop bit."]
     #[inline(always)]
-    pub fn is_1_stop_bit_(&self) -> bool {
-        *self == Sbs::_1StopBit_
+    pub fn is_1_bit(&self) -> bool {
+        *self == Sbs::_1Bit
     }
     #[doc = "2 stop bits (1.5 if UnLCR\\[1:0\\]=00)."]
     #[inline(always)]
-    pub fn is_2_stop_bits_1_5_if_(&self) -> bool {
-        *self == Sbs::_2StopBits1_5If_
+    pub fn is_2_bits(&self) -> bool {
+        *self == Sbs::_2Bits
     }
 }
 #[doc = "Field `SBS` writer - Stop Bit Select"]
@@ -132,22 +132,22 @@ where
 {
     #[doc = "1 stop bit."]
     #[inline(always)]
-    pub fn _1_stop_bit_(self) -> &'a mut crate::W<REG> {
-        self.variant(Sbs::_1StopBit_)
+    pub fn _1_bit(self) -> &'a mut crate::W<REG> {
+        self.variant(Sbs::_1Bit)
     }
     #[doc = "2 stop bits (1.5 if UnLCR\\[1:0\\]=00)."]
     #[inline(always)]
-    pub fn _2_stop_bits_1_5_if_(self) -> &'a mut crate::W<REG> {
-        self.variant(Sbs::_2StopBits1_5If_)
+    pub fn _2_bits(self) -> &'a mut crate::W<REG> {
+        self.variant(Sbs::_2Bits)
     }
 }
 #[doc = "Parity Enable.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pe {
     #[doc = "0: Disable parity generation and checking."]
-    DisableParityGener = 0,
+    Disabled = 0,
     #[doc = "1: Enable parity generation and checking."]
-    EnableParityGenera = 1,
+    Enabled = 1,
 }
 impl From<Pe> for bool {
     #[inline(always)]
@@ -162,19 +162,19 @@ impl PeR {
     #[inline(always)]
     pub const fn variant(&self) -> Pe {
         match self.bits {
-            false => Pe::DisableParityGener,
-            true => Pe::EnableParityGenera,
+            false => Pe::Disabled,
+            true => Pe::Enabled,
         }
     }
     #[doc = "Disable parity generation and checking."]
     #[inline(always)]
-    pub fn is_disable_parity_gener(&self) -> bool {
-        *self == Pe::DisableParityGener
+    pub fn is_disabled(&self) -> bool {
+        *self == Pe::Disabled
     }
     #[doc = "Enable parity generation and checking."]
     #[inline(always)]
-    pub fn is_enable_parity_genera(&self) -> bool {
-        *self == Pe::EnableParityGenera
+    pub fn is_enabled(&self) -> bool {
+        *self == Pe::Enabled
     }
 }
 #[doc = "Field `PE` writer - Parity Enable."]
@@ -185,13 +185,13 @@ where
 {
     #[doc = "Disable parity generation and checking."]
     #[inline(always)]
-    pub fn disable_parity_gener(self) -> &'a mut crate::W<REG> {
-        self.variant(Pe::DisableParityGener)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pe::Disabled)
     }
     #[doc = "Enable parity generation and checking."]
     #[inline(always)]
-    pub fn enable_parity_genera(self) -> &'a mut crate::W<REG> {
-        self.variant(Pe::EnableParityGenera)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pe::Enabled)
     }
 }
 #[doc = "Parity Select\n\nValue on reset: 0"]
@@ -199,13 +199,13 @@ where
 #[repr(u8)]
 pub enum Ps {
     #[doc = "0: Odd parity. Number of 1s in the transmitted character and the attached parity bit will be odd."]
-    OddParityNumberO = 0,
+    Odd = 0,
     #[doc = "1: Even Parity. Number of 1s in the transmitted character and the attached parity bit will be even."]
-    EvenParityNumber_ = 1,
+    Even = 1,
     #[doc = "2: Forced 1 stick parity."]
-    Forced1StickParit = 2,
+    Forced1Stick = 2,
     #[doc = "3: Forced 0 stick parity."]
-    Forced0StickParit = 3,
+    Forced0Stick = 3,
 }
 impl From<Ps> for u8 {
     #[inline(always)]
@@ -224,32 +224,32 @@ impl PsR {
     #[inline(always)]
     pub const fn variant(&self) -> Ps {
         match self.bits {
-            0 => Ps::OddParityNumberO,
-            1 => Ps::EvenParityNumber_,
-            2 => Ps::Forced1StickParit,
-            3 => Ps::Forced0StickParit,
+            0 => Ps::Odd,
+            1 => Ps::Even,
+            2 => Ps::Forced1Stick,
+            3 => Ps::Forced0Stick,
             _ => unreachable!(),
         }
     }
     #[doc = "Odd parity. Number of 1s in the transmitted character and the attached parity bit will be odd."]
     #[inline(always)]
-    pub fn is_odd_parity_number_o(&self) -> bool {
-        *self == Ps::OddParityNumberO
+    pub fn is_odd(&self) -> bool {
+        *self == Ps::Odd
     }
     #[doc = "Even Parity. Number of 1s in the transmitted character and the attached parity bit will be even."]
     #[inline(always)]
-    pub fn is_even_parity_number_(&self) -> bool {
-        *self == Ps::EvenParityNumber_
+    pub fn is_even(&self) -> bool {
+        *self == Ps::Even
     }
     #[doc = "Forced 1 stick parity."]
     #[inline(always)]
-    pub fn is_forced_1_stick_parit(&self) -> bool {
-        *self == Ps::Forced1StickParit
+    pub fn is_forced_1_stick(&self) -> bool {
+        *self == Ps::Forced1Stick
     }
     #[doc = "Forced 0 stick parity."]
     #[inline(always)]
-    pub fn is_forced_0_stick_parit(&self) -> bool {
-        *self == Ps::Forced0StickParit
+    pub fn is_forced_0_stick(&self) -> bool {
+        *self == Ps::Forced0Stick
     }
 }
 #[doc = "Field `PS` writer - Parity Select"]
@@ -261,32 +261,32 @@ where
 {
     #[doc = "Odd parity. Number of 1s in the transmitted character and the attached parity bit will be odd."]
     #[inline(always)]
-    pub fn odd_parity_number_o(self) -> &'a mut crate::W<REG> {
-        self.variant(Ps::OddParityNumberO)
+    pub fn odd(self) -> &'a mut crate::W<REG> {
+        self.variant(Ps::Odd)
     }
     #[doc = "Even Parity. Number of 1s in the transmitted character and the attached parity bit will be even."]
     #[inline(always)]
-    pub fn even_parity_number_(self) -> &'a mut crate::W<REG> {
-        self.variant(Ps::EvenParityNumber_)
+    pub fn even(self) -> &'a mut crate::W<REG> {
+        self.variant(Ps::Even)
     }
     #[doc = "Forced 1 stick parity."]
     #[inline(always)]
-    pub fn forced_1_stick_parit(self) -> &'a mut crate::W<REG> {
-        self.variant(Ps::Forced1StickParit)
+    pub fn forced_1_stick(self) -> &'a mut crate::W<REG> {
+        self.variant(Ps::Forced1Stick)
     }
     #[doc = "Forced 0 stick parity."]
     #[inline(always)]
-    pub fn forced_0_stick_parit(self) -> &'a mut crate::W<REG> {
-        self.variant(Ps::Forced0StickParit)
+    pub fn forced_0_stick(self) -> &'a mut crate::W<REG> {
+        self.variant(Ps::Forced0Stick)
     }
 }
 #[doc = "Break Control\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Bc {
     #[doc = "0: Disable break transmission."]
-    DisableBreakTransm = 0,
+    Disabled = 0,
     #[doc = "1: Enable break transmission. Output pin UARTn TXD is forced to logic 0 when UnLCR\\[6\\] is active high."]
-    EnableBreakTransmi = 1,
+    Enabled = 1,
 }
 impl From<Bc> for bool {
     #[inline(always)]
@@ -301,19 +301,19 @@ impl BcR {
     #[inline(always)]
     pub const fn variant(&self) -> Bc {
         match self.bits {
-            false => Bc::DisableBreakTransm,
-            true => Bc::EnableBreakTransmi,
+            false => Bc::Disabled,
+            true => Bc::Enabled,
         }
     }
     #[doc = "Disable break transmission."]
     #[inline(always)]
-    pub fn is_disable_break_transm(&self) -> bool {
-        *self == Bc::DisableBreakTransm
+    pub fn is_disabled(&self) -> bool {
+        *self == Bc::Disabled
     }
     #[doc = "Enable break transmission. Output pin UARTn TXD is forced to logic 0 when UnLCR\\[6\\] is active high."]
     #[inline(always)]
-    pub fn is_enable_break_transmi(&self) -> bool {
-        *self == Bc::EnableBreakTransmi
+    pub fn is_enabled(&self) -> bool {
+        *self == Bc::Enabled
     }
 }
 #[doc = "Field `BC` writer - Break Control"]
@@ -324,22 +324,22 @@ where
 {
     #[doc = "Disable break transmission."]
     #[inline(always)]
-    pub fn disable_break_transm(self) -> &'a mut crate::W<REG> {
-        self.variant(Bc::DisableBreakTransm)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Bc::Disabled)
     }
     #[doc = "Enable break transmission. Output pin UARTn TXD is forced to logic 0 when UnLCR\\[6\\] is active high."]
     #[inline(always)]
-    pub fn enable_break_transmi(self) -> &'a mut crate::W<REG> {
-        self.variant(Bc::EnableBreakTransmi)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Bc::Enabled)
     }
 }
 #[doc = "Divisor Latch Access Bit\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Dlab {
     #[doc = "0: Disable access to Divisor Latches."]
-    DisableAccessToDi = 0,
+    Disabled = 0,
     #[doc = "1: Enable access to Divisor Latches."]
-    EnableAccessToDiv = 1,
+    Enabled = 1,
 }
 impl From<Dlab> for bool {
     #[inline(always)]
@@ -354,19 +354,19 @@ impl DlabR {
     #[inline(always)]
     pub const fn variant(&self) -> Dlab {
         match self.bits {
-            false => Dlab::DisableAccessToDi,
-            true => Dlab::EnableAccessToDiv,
+            false => Dlab::Disabled,
+            true => Dlab::Enabled,
         }
     }
     #[doc = "Disable access to Divisor Latches."]
     #[inline(always)]
-    pub fn is_disable_access_to_di(&self) -> bool {
-        *self == Dlab::DisableAccessToDi
+    pub fn is_disabled(&self) -> bool {
+        *self == Dlab::Disabled
     }
     #[doc = "Enable access to Divisor Latches."]
     #[inline(always)]
-    pub fn is_enable_access_to_div(&self) -> bool {
-        *self == Dlab::EnableAccessToDiv
+    pub fn is_enabled(&self) -> bool {
+        *self == Dlab::Enabled
     }
 }
 #[doc = "Field `DLAB` writer - Divisor Latch Access Bit"]
@@ -377,13 +377,13 @@ where
 {
     #[doc = "Disable access to Divisor Latches."]
     #[inline(always)]
-    pub fn disable_access_to_di(self) -> &'a mut crate::W<REG> {
-        self.variant(Dlab::DisableAccessToDi)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Dlab::Disabled)
     }
     #[doc = "Enable access to Divisor Latches."]
     #[inline(always)]
-    pub fn enable_access_to_div(self) -> &'a mut crate::W<REG> {
-        self.variant(Dlab::EnableAccessToDiv)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Dlab::Enabled)
     }
 }
 impl R {

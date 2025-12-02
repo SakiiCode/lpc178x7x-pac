@@ -101,7 +101,7 @@ impl RegisterBlock {
         &self.rs485dly
     }
 }
-#[doc = "RBR (r) register accessor: Receiver Buffer Register. Contains the next received character to be read (DLAB =0).\n\nYou can [`read`](crate::Reg::read) this register and get [`rbr::R`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@rbr`] module"]
+#[doc = "RBR (r) register accessor: Receiver Buffer Register. Contains the next received character to be read (DLAB =0).\n\nYou can [`read`](crate::Reg::read) this register and get [`rbr::R`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\n<div class=\"warning\">The register is <b>modified</b> in some way after a read operation.</div>\n\nFor information about available fields see [`mod@rbr`] module"]
 #[doc(alias = "RBR")]
 pub type Rbr = crate::Reg<rbr::RbrSpec>;
 #[doc = "Receiver Buffer Register. Contains the next received character to be read (DLAB =0)."]
@@ -141,7 +141,7 @@ pub mod fcr;
 pub type Lcr = crate::Reg<lcr::LcrSpec>;
 #[doc = "Line Control Register. Contains controls for frame formatting and break generation."]
 pub mod lcr;
-#[doc = "LSR (r) register accessor: Line Status Register. Contains flags for transmit and receive status, including line errors.\n\nYou can [`read`](crate::Reg::read) this register and get [`lsr::R`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@lsr`] module"]
+#[doc = "LSR (r) register accessor: Line Status Register. Contains flags for transmit and receive status, including line errors.\n\nYou can [`read`](crate::Reg::read) this register and get [`lsr::R`]. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\n<div class=\"warning\">The register is <b>modified</b> in some way after a read operation.</div>\n\nFor information about available fields see [`mod@lsr`] module"]
 #[doc(alias = "LSR")]
 pub type Lsr = crate::Reg<lsr::LsrSpec>;
 #[doc = "Line Status Register. Contains flags for transmit and receive status, including line errors."]

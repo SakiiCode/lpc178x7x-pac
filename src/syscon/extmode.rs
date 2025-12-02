@@ -6,9 +6,9 @@ pub type W = crate::W<ExtmodeSpec>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Extmode0 {
     #[doc = "0: Level sensitive."]
-    LevelSensitive_ = 0,
+    LevelSensitive = 0,
     #[doc = "1: Edge sensitive."]
-    EdgeSensitive_ = 1,
+    EdgeSensitive = 1,
 }
 impl From<Extmode0> for bool {
     #[inline(always)]
@@ -23,19 +23,19 @@ impl Extmode0R {
     #[inline(always)]
     pub const fn variant(&self) -> Extmode0 {
         match self.bits {
-            false => Extmode0::LevelSensitive_,
-            true => Extmode0::EdgeSensitive_,
+            false => Extmode0::LevelSensitive,
+            true => Extmode0::EdgeSensitive,
         }
     }
     #[doc = "Level sensitive."]
     #[inline(always)]
-    pub fn is_level_sensitive_(&self) -> bool {
-        *self == Extmode0::LevelSensitive_
+    pub fn is_level_sensitive(&self) -> bool {
+        *self == Extmode0::LevelSensitive
     }
     #[doc = "Edge sensitive."]
     #[inline(always)]
-    pub fn is_edge_sensitive_(&self) -> bool {
-        *self == Extmode0::EdgeSensitive_
+    pub fn is_edge_sensitive(&self) -> bool {
+        *self == Extmode0::EdgeSensitive
     }
 }
 #[doc = "Field `EXTMODE0` writer - Level or edge sensitivity select for EINT0."]
@@ -46,22 +46,22 @@ where
 {
     #[doc = "Level sensitive."]
     #[inline(always)]
-    pub fn level_sensitive_(self) -> &'a mut crate::W<REG> {
-        self.variant(Extmode0::LevelSensitive_)
+    pub fn level_sensitive(self) -> &'a mut crate::W<REG> {
+        self.variant(Extmode0::LevelSensitive)
     }
     #[doc = "Edge sensitive."]
     #[inline(always)]
-    pub fn edge_sensitive_(self) -> &'a mut crate::W<REG> {
-        self.variant(Extmode0::EdgeSensitive_)
+    pub fn edge_sensitive(self) -> &'a mut crate::W<REG> {
+        self.variant(Extmode0::EdgeSensitive)
     }
 }
 #[doc = "Level or edge sensitivity select for EINT1.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Extmode1 {
     #[doc = "0: Level sensitive."]
-    LevelSensitive_ = 0,
+    LevelSensitive = 0,
     #[doc = "1: Edge sensitive."]
-    EdgeSensitive_ = 1,
+    EdgeSensitive = 1,
 }
 impl From<Extmode1> for bool {
     #[inline(always)]
@@ -76,19 +76,19 @@ impl Extmode1R {
     #[inline(always)]
     pub const fn variant(&self) -> Extmode1 {
         match self.bits {
-            false => Extmode1::LevelSensitive_,
-            true => Extmode1::EdgeSensitive_,
+            false => Extmode1::LevelSensitive,
+            true => Extmode1::EdgeSensitive,
         }
     }
     #[doc = "Level sensitive."]
     #[inline(always)]
-    pub fn is_level_sensitive_(&self) -> bool {
-        *self == Extmode1::LevelSensitive_
+    pub fn is_level_sensitive(&self) -> bool {
+        *self == Extmode1::LevelSensitive
     }
     #[doc = "Edge sensitive."]
     #[inline(always)]
-    pub fn is_edge_sensitive_(&self) -> bool {
-        *self == Extmode1::EdgeSensitive_
+    pub fn is_edge_sensitive(&self) -> bool {
+        *self == Extmode1::EdgeSensitive
     }
 }
 #[doc = "Field `EXTMODE1` writer - Level or edge sensitivity select for EINT1."]
@@ -99,22 +99,22 @@ where
 {
     #[doc = "Level sensitive."]
     #[inline(always)]
-    pub fn level_sensitive_(self) -> &'a mut crate::W<REG> {
-        self.variant(Extmode1::LevelSensitive_)
+    pub fn level_sensitive(self) -> &'a mut crate::W<REG> {
+        self.variant(Extmode1::LevelSensitive)
     }
     #[doc = "Edge sensitive."]
     #[inline(always)]
-    pub fn edge_sensitive_(self) -> &'a mut crate::W<REG> {
-        self.variant(Extmode1::EdgeSensitive_)
+    pub fn edge_sensitive(self) -> &'a mut crate::W<REG> {
+        self.variant(Extmode1::EdgeSensitive)
     }
 }
 #[doc = "Level or edge sensitivity select for EINT2.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Extmode2 {
     #[doc = "0: Level sensitive."]
-    LevelSensitive_ = 0,
+    LevelSensitive = 0,
     #[doc = "1: Edge sensitive."]
-    EdgeSensitive_ = 1,
+    EdgeSensitive = 1,
 }
 impl From<Extmode2> for bool {
     #[inline(always)]
@@ -129,19 +129,19 @@ impl Extmode2R {
     #[inline(always)]
     pub const fn variant(&self) -> Extmode2 {
         match self.bits {
-            false => Extmode2::LevelSensitive_,
-            true => Extmode2::EdgeSensitive_,
+            false => Extmode2::LevelSensitive,
+            true => Extmode2::EdgeSensitive,
         }
     }
     #[doc = "Level sensitive."]
     #[inline(always)]
-    pub fn is_level_sensitive_(&self) -> bool {
-        *self == Extmode2::LevelSensitive_
+    pub fn is_level_sensitive(&self) -> bool {
+        *self == Extmode2::LevelSensitive
     }
     #[doc = "Edge sensitive."]
     #[inline(always)]
-    pub fn is_edge_sensitive_(&self) -> bool {
-        *self == Extmode2::EdgeSensitive_
+    pub fn is_edge_sensitive(&self) -> bool {
+        *self == Extmode2::EdgeSensitive
     }
 }
 #[doc = "Field `EXTMODE2` writer - Level or edge sensitivity select for EINT2."]
@@ -152,22 +152,22 @@ where
 {
     #[doc = "Level sensitive."]
     #[inline(always)]
-    pub fn level_sensitive_(self) -> &'a mut crate::W<REG> {
-        self.variant(Extmode2::LevelSensitive_)
+    pub fn level_sensitive(self) -> &'a mut crate::W<REG> {
+        self.variant(Extmode2::LevelSensitive)
     }
     #[doc = "Edge sensitive."]
     #[inline(always)]
-    pub fn edge_sensitive_(self) -> &'a mut crate::W<REG> {
-        self.variant(Extmode2::EdgeSensitive_)
+    pub fn edge_sensitive(self) -> &'a mut crate::W<REG> {
+        self.variant(Extmode2::EdgeSensitive)
     }
 }
 #[doc = "Level or edge sensitivity select for EINT3.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Extmode3 {
     #[doc = "0: Level sensitive."]
-    LevelSensitive_ = 0,
+    LevelSensitive = 0,
     #[doc = "1: Edge sensitive."]
-    EdgeSensitive_ = 1,
+    EdgeSensitive = 1,
 }
 impl From<Extmode3> for bool {
     #[inline(always)]
@@ -182,19 +182,19 @@ impl Extmode3R {
     #[inline(always)]
     pub const fn variant(&self) -> Extmode3 {
         match self.bits {
-            false => Extmode3::LevelSensitive_,
-            true => Extmode3::EdgeSensitive_,
+            false => Extmode3::LevelSensitive,
+            true => Extmode3::EdgeSensitive,
         }
     }
     #[doc = "Level sensitive."]
     #[inline(always)]
-    pub fn is_level_sensitive_(&self) -> bool {
-        *self == Extmode3::LevelSensitive_
+    pub fn is_level_sensitive(&self) -> bool {
+        *self == Extmode3::LevelSensitive
     }
     #[doc = "Edge sensitive."]
     #[inline(always)]
-    pub fn is_edge_sensitive_(&self) -> bool {
-        *self == Extmode3::EdgeSensitive_
+    pub fn is_edge_sensitive(&self) -> bool {
+        *self == Extmode3::EdgeSensitive
     }
 }
 #[doc = "Field `EXTMODE3` writer - Level or edge sensitivity select for EINT3."]
@@ -205,13 +205,13 @@ where
 {
     #[doc = "Level sensitive."]
     #[inline(always)]
-    pub fn level_sensitive_(self) -> &'a mut crate::W<REG> {
-        self.variant(Extmode3::LevelSensitive_)
+    pub fn level_sensitive(self) -> &'a mut crate::W<REG> {
+        self.variant(Extmode3::LevelSensitive)
     }
     #[doc = "Edge sensitive."]
     #[inline(always)]
-    pub fn edge_sensitive_(self) -> &'a mut crate::W<REG> {
-        self.variant(Extmode3::EdgeSensitive_)
+    pub fn edge_sensitive(self) -> &'a mut crate::W<REG> {
+        self.variant(Extmode3::EdgeSensitive)
     }
 }
 impl R {

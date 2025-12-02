@@ -22,9 +22,9 @@ pub type Tesg2W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Sam {
     #[doc = "0: The bus is sampled once (recommended for high speed buses)"]
-    TheBusIsSampledO = 0,
+    Once = 0,
     #[doc = "1: The bus is sampled 3 times (recommended for low to medium speed buses to filter spikes on the bus-line)"]
-    TheBusIsSampled3 = 1,
+    _3Times = 1,
 }
 impl From<Sam> for bool {
     #[inline(always)]
@@ -39,19 +39,19 @@ impl SamR {
     #[inline(always)]
     pub const fn variant(&self) -> Sam {
         match self.bits {
-            false => Sam::TheBusIsSampledO,
-            true => Sam::TheBusIsSampled3,
+            false => Sam::Once,
+            true => Sam::_3Times,
         }
     }
     #[doc = "The bus is sampled once (recommended for high speed buses)"]
     #[inline(always)]
-    pub fn is_the_bus_is_sampled_o(&self) -> bool {
-        *self == Sam::TheBusIsSampledO
+    pub fn is_once(&self) -> bool {
+        *self == Sam::Once
     }
     #[doc = "The bus is sampled 3 times (recommended for low to medium speed buses to filter spikes on the bus-line)"]
     #[inline(always)]
-    pub fn is_the_bus_is_sampled_3(&self) -> bool {
-        *self == Sam::TheBusIsSampled3
+    pub fn is_3_times(&self) -> bool {
+        *self == Sam::_3Times
     }
 }
 #[doc = "Field `SAM` writer - Sampling"]
@@ -62,13 +62,13 @@ where
 {
     #[doc = "The bus is sampled once (recommended for high speed buses)"]
     #[inline(always)]
-    pub fn the_bus_is_sampled_o(self) -> &'a mut crate::W<REG> {
-        self.variant(Sam::TheBusIsSampledO)
+    pub fn once(self) -> &'a mut crate::W<REG> {
+        self.variant(Sam::Once)
     }
     #[doc = "The bus is sampled 3 times (recommended for low to medium speed buses to filter spikes on the bus-line)"]
     #[inline(always)]
-    pub fn the_bus_is_sampled_3(self) -> &'a mut crate::W<REG> {
-        self.variant(Sam::TheBusIsSampled3)
+    pub fn _3_times(self) -> &'a mut crate::W<REG> {
+        self.variant(Sam::_3Times)
     }
 }
 impl R {

@@ -3,10 +3,8 @@ pub type W = crate::W<FcrSpec>;
 #[doc = "FIFO Enable.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Fifoen {
-    #[doc = "0: UARTn FIFOs are disabled. Must not be used in the application."]
-    UartnFifosAreDisa = 0,
     #[doc = "1: Active high enable for both UARTn Rx and TX FIFOs and UnFCR\\[7:1\\] access. This bit must be set for proper UART operation. Any transition on this bit will automatically clear the related UART FIFOs."]
-    ActiveHighEnableF = 1,
+    ActiveHigh = 1,
 }
 impl From<Fifoen> for bool {
     #[inline(always)]
@@ -20,24 +18,19 @@ impl<'a, REG> FifoenW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
 {
-    #[doc = "UARTn FIFOs are disabled. Must not be used in the application."]
-    #[inline(always)]
-    pub fn uartn_fifos_are_disa(self) -> &'a mut crate::W<REG> {
-        self.variant(Fifoen::UartnFifosAreDisa)
-    }
     #[doc = "Active high enable for both UARTn Rx and TX FIFOs and UnFCR\\[7:1\\] access. This bit must be set for proper UART operation. Any transition on this bit will automatically clear the related UART FIFOs."]
     #[inline(always)]
-    pub fn active_high_enable_f(self) -> &'a mut crate::W<REG> {
-        self.variant(Fifoen::ActiveHighEnableF)
+    pub fn active_high(self) -> &'a mut crate::W<REG> {
+        self.variant(Fifoen::ActiveHigh)
     }
 }
 #[doc = "RX FIFO Reset.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Rxfifores {
     #[doc = "0: No impact on either of UARTn FIFOs."]
-    NoImpactOnEither_ = 0,
+    DoNothing = 0,
     #[doc = "1: Writing a logic 1 to UnFCR\\[1\\] will clear all bytes in UARTn Rx FIFO, reset the pointer logic. This bit is self-clearing."]
-    WritingALogic1To = 1,
+    Reset = 1,
 }
 impl From<Rxfifores> for bool {
     #[inline(always)]
@@ -53,22 +46,22 @@ where
 {
     #[doc = "No impact on either of UARTn FIFOs."]
     #[inline(always)]
-    pub fn no_impact_on_either_(self) -> &'a mut crate::W<REG> {
-        self.variant(Rxfifores::NoImpactOnEither_)
+    pub fn do_nothing(self) -> &'a mut crate::W<REG> {
+        self.variant(Rxfifores::DoNothing)
     }
     #[doc = "Writing a logic 1 to UnFCR\\[1\\] will clear all bytes in UARTn Rx FIFO, reset the pointer logic. This bit is self-clearing."]
     #[inline(always)]
-    pub fn writing_a_logic_1_to(self) -> &'a mut crate::W<REG> {
-        self.variant(Rxfifores::WritingALogic1To)
+    pub fn reset(self) -> &'a mut crate::W<REG> {
+        self.variant(Rxfifores::Reset)
     }
 }
 #[doc = "TX FIFO Reset.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Txfifores {
     #[doc = "0: No impact on either of UARTn FIFOs."]
-    NoImpactOnEither_ = 0,
+    DoNothing = 0,
     #[doc = "1: Writing a logic 1 to UnFCR\\[2\\] will clear all bytes in UARTn TX FIFO, reset the pointer logic. This bit is self-clearing."]
-    WritingALogic1To = 1,
+    Reset = 1,
 }
 impl From<Txfifores> for bool {
     #[inline(always)]
@@ -84,13 +77,13 @@ where
 {
     #[doc = "No impact on either of UARTn FIFOs."]
     #[inline(always)]
-    pub fn no_impact_on_either_(self) -> &'a mut crate::W<REG> {
-        self.variant(Txfifores::NoImpactOnEither_)
+    pub fn do_nothing(self) -> &'a mut crate::W<REG> {
+        self.variant(Txfifores::DoNothing)
     }
     #[doc = "Writing a logic 1 to UnFCR\\[2\\] will clear all bytes in UARTn TX FIFO, reset the pointer logic. This bit is self-clearing."]
     #[inline(always)]
-    pub fn writing_a_logic_1_to(self) -> &'a mut crate::W<REG> {
-        self.variant(Txfifores::WritingALogic1To)
+    pub fn reset(self) -> &'a mut crate::W<REG> {
+        self.variant(Txfifores::Reset)
     }
 }
 #[doc = "Field `DMAMODE` writer - DMA Mode Select. When the FIFO enable (bit 0 of this register) is set, this bit selects the DMA mode. See Section 20.6.6.1."]
@@ -100,13 +93,13 @@ pub type DmamodeW<'a, REG> = crate::BitWriter<'a, REG>;
 #[repr(u8)]
 pub enum Rxtriglvl {
     #[doc = "0: Trigger level 0 (1 character or 0x01)."]
-    TriggerLevel0_1C = 0,
+    Level0 = 0,
     #[doc = "1: Trigger level 1 (4 characters or 0x04)."]
-    TriggerLevel1_4C = 1,
+    Level1 = 1,
     #[doc = "2: Trigger level 2 (8 characters or 0x08)."]
-    TriggerLevel2_8C = 2,
+    Level2 = 2,
     #[doc = "3: Trigger level 3 (14 characters or 0x0E)."]
-    TriggerLevel3_14_ = 3,
+    Level3 = 3,
 }
 impl From<Rxtriglvl> for u8 {
     #[inline(always)]
@@ -127,23 +120,23 @@ where
 {
     #[doc = "Trigger level 0 (1 character or 0x01)."]
     #[inline(always)]
-    pub fn trigger_level_0_1_c(self) -> &'a mut crate::W<REG> {
-        self.variant(Rxtriglvl::TriggerLevel0_1C)
+    pub fn level_0(self) -> &'a mut crate::W<REG> {
+        self.variant(Rxtriglvl::Level0)
     }
     #[doc = "Trigger level 1 (4 characters or 0x04)."]
     #[inline(always)]
-    pub fn trigger_level_1_4_c(self) -> &'a mut crate::W<REG> {
-        self.variant(Rxtriglvl::TriggerLevel1_4C)
+    pub fn level_1(self) -> &'a mut crate::W<REG> {
+        self.variant(Rxtriglvl::Level1)
     }
     #[doc = "Trigger level 2 (8 characters or 0x08)."]
     #[inline(always)]
-    pub fn trigger_level_2_8_c(self) -> &'a mut crate::W<REG> {
-        self.variant(Rxtriglvl::TriggerLevel2_8C)
+    pub fn level_2(self) -> &'a mut crate::W<REG> {
+        self.variant(Rxtriglvl::Level2)
     }
     #[doc = "Trigger level 3 (14 characters or 0x0E)."]
     #[inline(always)]
-    pub fn trigger_level_3_14_(self) -> &'a mut crate::W<REG> {
-        self.variant(Rxtriglvl::TriggerLevel3_14_)
+    pub fn level_3(self) -> &'a mut crate::W<REG> {
+        self.variant(Rxtriglvl::Level3)
     }
 }
 impl W {

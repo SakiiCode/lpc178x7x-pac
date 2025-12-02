@@ -9,7 +9,7 @@ impl R {
         RbrR::new((self.bits & 0xff) as u8)
     }
 }
-#[doc = "Receiver Buffer Register. Contains the next received character to be read (DLAB =0).\n\nYou can [`read`](crate::Reg::read) this register and get [`rbr::R`](R). See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+#[doc = "Receiver Buffer Register. Contains the next received character to be read (DLAB =0).\n\nYou can [`read`](crate::Reg::read) this register and get [`rbr::R`](R). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\n<div class=\"warning\">The register is <b>modified</b> in some way after a read operation.</div>"]
 pub struct RbrSpec;
 impl crate::RegisterSpec for RbrSpec {
     type Ux = u32;

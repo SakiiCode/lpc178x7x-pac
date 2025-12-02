@@ -7,11 +7,11 @@ pub type W = crate::W<DaoSpec>;
 #[repr(u8)]
 pub enum Wordwidth {
     #[doc = "0: 8-bit data"]
-    _8BitData = 0,
+    _8Bit = 0,
     #[doc = "1: 16-bit data"]
-    _16BitData = 1,
+    _16Bit = 1,
     #[doc = "3: 32-bit data"]
-    _32BitData = 3,
+    _32Bit = 3,
 }
 impl From<Wordwidth> for u8 {
     #[inline(always)]
@@ -30,26 +30,26 @@ impl WordwidthR {
     #[inline(always)]
     pub const fn variant(&self) -> Option<Wordwidth> {
         match self.bits {
-            0 => Some(Wordwidth::_8BitData),
-            1 => Some(Wordwidth::_16BitData),
-            3 => Some(Wordwidth::_32BitData),
+            0 => Some(Wordwidth::_8Bit),
+            1 => Some(Wordwidth::_16Bit),
+            3 => Some(Wordwidth::_32Bit),
             _ => None,
         }
     }
     #[doc = "8-bit data"]
     #[inline(always)]
-    pub fn is_8_bit_data(&self) -> bool {
-        *self == Wordwidth::_8BitData
+    pub fn is_8_bit(&self) -> bool {
+        *self == Wordwidth::_8Bit
     }
     #[doc = "16-bit data"]
     #[inline(always)]
-    pub fn is_16_bit_data(&self) -> bool {
-        *self == Wordwidth::_16BitData
+    pub fn is_16_bit(&self) -> bool {
+        *self == Wordwidth::_16Bit
     }
     #[doc = "32-bit data"]
     #[inline(always)]
-    pub fn is_32_bit_data(&self) -> bool {
-        *self == Wordwidth::_32BitData
+    pub fn is_32_bit(&self) -> bool {
+        *self == Wordwidth::_32Bit
     }
 }
 #[doc = "Field `WORDWIDTH` writer - Selects the number of bytes in data as follows:"]
@@ -61,18 +61,18 @@ where
 {
     #[doc = "8-bit data"]
     #[inline(always)]
-    pub fn _8_bit_data(self) -> &'a mut crate::W<REG> {
-        self.variant(Wordwidth::_8BitData)
+    pub fn _8_bit(self) -> &'a mut crate::W<REG> {
+        self.variant(Wordwidth::_8Bit)
     }
     #[doc = "16-bit data"]
     #[inline(always)]
-    pub fn _16_bit_data(self) -> &'a mut crate::W<REG> {
-        self.variant(Wordwidth::_16BitData)
+    pub fn _16_bit(self) -> &'a mut crate::W<REG> {
+        self.variant(Wordwidth::_16Bit)
     }
     #[doc = "32-bit data"]
     #[inline(always)]
-    pub fn _32_bit_data(self) -> &'a mut crate::W<REG> {
-        self.variant(Wordwidth::_32BitData)
+    pub fn _32_bit(self) -> &'a mut crate::W<REG> {
+        self.variant(Wordwidth::_32Bit)
     }
 }
 #[doc = "Field `MONO` reader - When 1, data is of monaural format. When 0, the data is in stereo format."]

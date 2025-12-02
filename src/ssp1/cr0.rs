@@ -7,31 +7,31 @@ pub type W = crate::W<Cr0Spec>;
 #[repr(u8)]
 pub enum Dss {
     #[doc = "3: 4-bit transfer"]
-    _4BitTransfer = 3,
+    _4Bit = 3,
     #[doc = "4: 5-bit transfer"]
-    _5BitTransfer = 4,
+    _5Bit = 4,
     #[doc = "5: 6-bit transfer"]
-    _6BitTransfer = 5,
+    _6Bit = 5,
     #[doc = "6: 7-bit transfer"]
-    _7BitTransfer = 6,
+    _7Bit = 6,
     #[doc = "7: 8-bit transfer"]
-    _8BitTransfer = 7,
+    _8Bit = 7,
     #[doc = "8: 9-bit transfer"]
-    _9BitTransfer = 8,
+    _9Bit = 8,
     #[doc = "9: 10-bit transfer"]
-    _10BitTransfer = 9,
+    _10Bit = 9,
     #[doc = "10: 11-bit transfer"]
-    _11BitTransfer = 10,
+    _11Bit = 10,
     #[doc = "11: 12-bit transfer"]
-    _12BitTransfer = 11,
+    _12Bit = 11,
     #[doc = "12: 13-bit transfer"]
-    _13BitTransfer = 12,
+    _13Bit = 12,
     #[doc = "13: 14-bit transfer"]
-    _14BitTransfer = 13,
+    _14Bit = 13,
     #[doc = "14: 15-bit transfer"]
-    _15BitTransfer = 14,
+    _15Bit = 14,
     #[doc = "15: 16-bit transfer"]
-    _16BitTransfer = 15,
+    _16Bit = 15,
 }
 impl From<Dss> for u8 {
     #[inline(always)]
@@ -50,86 +50,86 @@ impl DssR {
     #[inline(always)]
     pub const fn variant(&self) -> Option<Dss> {
         match self.bits {
-            3 => Some(Dss::_4BitTransfer),
-            4 => Some(Dss::_5BitTransfer),
-            5 => Some(Dss::_6BitTransfer),
-            6 => Some(Dss::_7BitTransfer),
-            7 => Some(Dss::_8BitTransfer),
-            8 => Some(Dss::_9BitTransfer),
-            9 => Some(Dss::_10BitTransfer),
-            10 => Some(Dss::_11BitTransfer),
-            11 => Some(Dss::_12BitTransfer),
-            12 => Some(Dss::_13BitTransfer),
-            13 => Some(Dss::_14BitTransfer),
-            14 => Some(Dss::_15BitTransfer),
-            15 => Some(Dss::_16BitTransfer),
+            3 => Some(Dss::_4Bit),
+            4 => Some(Dss::_5Bit),
+            5 => Some(Dss::_6Bit),
+            6 => Some(Dss::_7Bit),
+            7 => Some(Dss::_8Bit),
+            8 => Some(Dss::_9Bit),
+            9 => Some(Dss::_10Bit),
+            10 => Some(Dss::_11Bit),
+            11 => Some(Dss::_12Bit),
+            12 => Some(Dss::_13Bit),
+            13 => Some(Dss::_14Bit),
+            14 => Some(Dss::_15Bit),
+            15 => Some(Dss::_16Bit),
             _ => None,
         }
     }
     #[doc = "4-bit transfer"]
     #[inline(always)]
-    pub fn is_4_bit_transfer(&self) -> bool {
-        *self == Dss::_4BitTransfer
+    pub fn is_4_bit(&self) -> bool {
+        *self == Dss::_4Bit
     }
     #[doc = "5-bit transfer"]
     #[inline(always)]
-    pub fn is_5_bit_transfer(&self) -> bool {
-        *self == Dss::_5BitTransfer
+    pub fn is_5_bit(&self) -> bool {
+        *self == Dss::_5Bit
     }
     #[doc = "6-bit transfer"]
     #[inline(always)]
-    pub fn is_6_bit_transfer(&self) -> bool {
-        *self == Dss::_6BitTransfer
+    pub fn is_6_bit(&self) -> bool {
+        *self == Dss::_6Bit
     }
     #[doc = "7-bit transfer"]
     #[inline(always)]
-    pub fn is_7_bit_transfer(&self) -> bool {
-        *self == Dss::_7BitTransfer
+    pub fn is_7_bit(&self) -> bool {
+        *self == Dss::_7Bit
     }
     #[doc = "8-bit transfer"]
     #[inline(always)]
-    pub fn is_8_bit_transfer(&self) -> bool {
-        *self == Dss::_8BitTransfer
+    pub fn is_8_bit(&self) -> bool {
+        *self == Dss::_8Bit
     }
     #[doc = "9-bit transfer"]
     #[inline(always)]
-    pub fn is_9_bit_transfer(&self) -> bool {
-        *self == Dss::_9BitTransfer
+    pub fn is_9_bit(&self) -> bool {
+        *self == Dss::_9Bit
     }
     #[doc = "10-bit transfer"]
     #[inline(always)]
-    pub fn is_10_bit_transfer(&self) -> bool {
-        *self == Dss::_10BitTransfer
+    pub fn is_10_bit(&self) -> bool {
+        *self == Dss::_10Bit
     }
     #[doc = "11-bit transfer"]
     #[inline(always)]
-    pub fn is_11_bit_transfer(&self) -> bool {
-        *self == Dss::_11BitTransfer
+    pub fn is_11_bit(&self) -> bool {
+        *self == Dss::_11Bit
     }
     #[doc = "12-bit transfer"]
     #[inline(always)]
-    pub fn is_12_bit_transfer(&self) -> bool {
-        *self == Dss::_12BitTransfer
+    pub fn is_12_bit(&self) -> bool {
+        *self == Dss::_12Bit
     }
     #[doc = "13-bit transfer"]
     #[inline(always)]
-    pub fn is_13_bit_transfer(&self) -> bool {
-        *self == Dss::_13BitTransfer
+    pub fn is_13_bit(&self) -> bool {
+        *self == Dss::_13Bit
     }
     #[doc = "14-bit transfer"]
     #[inline(always)]
-    pub fn is_14_bit_transfer(&self) -> bool {
-        *self == Dss::_14BitTransfer
+    pub fn is_14_bit(&self) -> bool {
+        *self == Dss::_14Bit
     }
     #[doc = "15-bit transfer"]
     #[inline(always)]
-    pub fn is_15_bit_transfer(&self) -> bool {
-        *self == Dss::_15BitTransfer
+    pub fn is_15_bit(&self) -> bool {
+        *self == Dss::_15Bit
     }
     #[doc = "16-bit transfer"]
     #[inline(always)]
-    pub fn is_16_bit_transfer(&self) -> bool {
-        *self == Dss::_16BitTransfer
+    pub fn is_16_bit(&self) -> bool {
+        *self == Dss::_16Bit
     }
 }
 #[doc = "Field `DSS` writer - Data Size Select. This field controls the number of bits transferred in each frame. Values 0000-0010 are not supported and should not be used."]
@@ -141,68 +141,68 @@ where
 {
     #[doc = "4-bit transfer"]
     #[inline(always)]
-    pub fn _4_bit_transfer(self) -> &'a mut crate::W<REG> {
-        self.variant(Dss::_4BitTransfer)
+    pub fn _4_bit(self) -> &'a mut crate::W<REG> {
+        self.variant(Dss::_4Bit)
     }
     #[doc = "5-bit transfer"]
     #[inline(always)]
-    pub fn _5_bit_transfer(self) -> &'a mut crate::W<REG> {
-        self.variant(Dss::_5BitTransfer)
+    pub fn _5_bit(self) -> &'a mut crate::W<REG> {
+        self.variant(Dss::_5Bit)
     }
     #[doc = "6-bit transfer"]
     #[inline(always)]
-    pub fn _6_bit_transfer(self) -> &'a mut crate::W<REG> {
-        self.variant(Dss::_6BitTransfer)
+    pub fn _6_bit(self) -> &'a mut crate::W<REG> {
+        self.variant(Dss::_6Bit)
     }
     #[doc = "7-bit transfer"]
     #[inline(always)]
-    pub fn _7_bit_transfer(self) -> &'a mut crate::W<REG> {
-        self.variant(Dss::_7BitTransfer)
+    pub fn _7_bit(self) -> &'a mut crate::W<REG> {
+        self.variant(Dss::_7Bit)
     }
     #[doc = "8-bit transfer"]
     #[inline(always)]
-    pub fn _8_bit_transfer(self) -> &'a mut crate::W<REG> {
-        self.variant(Dss::_8BitTransfer)
+    pub fn _8_bit(self) -> &'a mut crate::W<REG> {
+        self.variant(Dss::_8Bit)
     }
     #[doc = "9-bit transfer"]
     #[inline(always)]
-    pub fn _9_bit_transfer(self) -> &'a mut crate::W<REG> {
-        self.variant(Dss::_9BitTransfer)
+    pub fn _9_bit(self) -> &'a mut crate::W<REG> {
+        self.variant(Dss::_9Bit)
     }
     #[doc = "10-bit transfer"]
     #[inline(always)]
-    pub fn _10_bit_transfer(self) -> &'a mut crate::W<REG> {
-        self.variant(Dss::_10BitTransfer)
+    pub fn _10_bit(self) -> &'a mut crate::W<REG> {
+        self.variant(Dss::_10Bit)
     }
     #[doc = "11-bit transfer"]
     #[inline(always)]
-    pub fn _11_bit_transfer(self) -> &'a mut crate::W<REG> {
-        self.variant(Dss::_11BitTransfer)
+    pub fn _11_bit(self) -> &'a mut crate::W<REG> {
+        self.variant(Dss::_11Bit)
     }
     #[doc = "12-bit transfer"]
     #[inline(always)]
-    pub fn _12_bit_transfer(self) -> &'a mut crate::W<REG> {
-        self.variant(Dss::_12BitTransfer)
+    pub fn _12_bit(self) -> &'a mut crate::W<REG> {
+        self.variant(Dss::_12Bit)
     }
     #[doc = "13-bit transfer"]
     #[inline(always)]
-    pub fn _13_bit_transfer(self) -> &'a mut crate::W<REG> {
-        self.variant(Dss::_13BitTransfer)
+    pub fn _13_bit(self) -> &'a mut crate::W<REG> {
+        self.variant(Dss::_13Bit)
     }
     #[doc = "14-bit transfer"]
     #[inline(always)]
-    pub fn _14_bit_transfer(self) -> &'a mut crate::W<REG> {
-        self.variant(Dss::_14BitTransfer)
+    pub fn _14_bit(self) -> &'a mut crate::W<REG> {
+        self.variant(Dss::_14Bit)
     }
     #[doc = "15-bit transfer"]
     #[inline(always)]
-    pub fn _15_bit_transfer(self) -> &'a mut crate::W<REG> {
-        self.variant(Dss::_15BitTransfer)
+    pub fn _15_bit(self) -> &'a mut crate::W<REG> {
+        self.variant(Dss::_15Bit)
     }
     #[doc = "16-bit transfer"]
     #[inline(always)]
-    pub fn _16_bit_transfer(self) -> &'a mut crate::W<REG> {
-        self.variant(Dss::_16BitTransfer)
+    pub fn _16_bit(self) -> &'a mut crate::W<REG> {
+        self.variant(Dss::_16Bit)
     }
 }
 #[doc = "Frame Format.\n\nValue on reset: 0"]
@@ -215,8 +215,6 @@ pub enum Frf {
     Ti = 1,
     #[doc = "2: Microwire"]
     Microwire = 2,
-    #[doc = "3: This combination is not supported and should not be used."]
-    ThisCombinationIs_ = 3,
 }
 impl From<Frf> for u8 {
     #[inline(always)]
@@ -238,7 +236,6 @@ impl FrfR {
             0 => Frf::Spi,
             1 => Frf::Ti,
             2 => Frf::Microwire,
-            3 => Frf::ThisCombinationIs_,
             _ => unreachable!(),
         }
     }
@@ -257,14 +254,9 @@ impl FrfR {
     pub fn is_microwire(&self) -> bool {
         *self == Frf::Microwire
     }
-    #[doc = "This combination is not supported and should not be used."]
-    #[inline(always)]
-    pub fn is_this_combination_is_(&self) -> bool {
-        *self == Frf::ThisCombinationIs_
-    }
 }
 #[doc = "Field `FRF` writer - Frame Format."]
-pub type FrfW<'a, REG> = crate::FieldWriter<'a, REG, 2, Frf, crate::Safe>;
+pub type FrfW<'a, REG> = crate::FieldWriter<'a, REG, 2, Frf>;
 impl<'a, REG> FrfW<'a, REG>
 where
     REG: crate::Writable + crate::RegisterSpec,
@@ -284,11 +276,6 @@ where
     #[inline(always)]
     pub fn microwire(self) -> &'a mut crate::W<REG> {
         self.variant(Frf::Microwire)
-    }
-    #[doc = "This combination is not supported and should not be used."]
-    #[inline(always)]
-    pub fn this_combination_is_(self) -> &'a mut crate::W<REG> {
-        self.variant(Frf::ThisCombinationIs_)
     }
 }
 #[doc = "Clock Out Polarity. This bit is only used in SPI mode.\n\nValue on reset: 0"]

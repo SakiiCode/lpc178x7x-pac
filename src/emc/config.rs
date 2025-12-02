@@ -60,8 +60,6 @@ where
 pub enum Clkr {
     #[doc = "0: 1:1(POR reset value)"]
     Porreset = 0,
-    #[doc = "1: 1:2 (this option is not available on the LPC178x/177x)"]
-    Donotuse = 1,
 }
 impl From<Clkr> for bool {
     #[inline(always)]
@@ -77,18 +75,13 @@ impl ClkrR {
     pub const fn variant(&self) -> Clkr {
         match self.bits {
             false => Clkr::Porreset,
-            true => Clkr::Donotuse,
+            _ => unreachable!(),
         }
     }
     #[doc = "1:1(POR reset value)"]
     #[inline(always)]
     pub fn is_porreset(&self) -> bool {
         *self == Clkr::Porreset
-    }
-    #[doc = "1:2 (this option is not available on the LPC178x/177x)"]
-    #[inline(always)]
-    pub fn is_donotuse(&self) -> bool {
-        *self == Clkr::Donotuse
     }
 }
 #[doc = "Field `CLKR` writer - CCLK: CLKOUT ratio. This bit must contain 0 for proper operation of the EMC."]
@@ -101,11 +94,6 @@ where
     #[inline(always)]
     pub fn porreset(self) -> &'a mut crate::W<REG> {
         self.variant(Clkr::Porreset)
-    }
-    #[doc = "1:2 (this option is not available on the LPC178x/177x)"]
-    #[inline(always)]
-    pub fn donotuse(self) -> &'a mut crate::W<REG> {
-        self.variant(Clkr::Donotuse)
     }
 }
 impl R {

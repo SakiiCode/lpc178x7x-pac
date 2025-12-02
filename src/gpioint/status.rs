@@ -4,9 +4,9 @@ pub type R = crate::R<StatusSpec>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum P0int {
     #[doc = "0: No pending interrupts on Port 0."]
-    NoPendingInterrupt = 0,
+    Empty = 0,
     #[doc = "1: At least one pending interrupt on Port 0."]
-    AtLeastOnePending = 1,
+    Pending = 1,
 }
 impl From<P0int> for bool {
     #[inline(always)]
@@ -21,28 +21,28 @@ impl P0intR {
     #[inline(always)]
     pub const fn variant(&self) -> P0int {
         match self.bits {
-            false => P0int::NoPendingInterrupt,
-            true => P0int::AtLeastOnePending,
+            false => P0int::Empty,
+            true => P0int::Pending,
         }
     }
     #[doc = "No pending interrupts on Port 0."]
     #[inline(always)]
-    pub fn is_no_pending_interrupt(&self) -> bool {
-        *self == P0int::NoPendingInterrupt
+    pub fn is_empty(&self) -> bool {
+        *self == P0int::Empty
     }
     #[doc = "At least one pending interrupt on Port 0."]
     #[inline(always)]
-    pub fn is_at_least_one_pending(&self) -> bool {
-        *self == P0int::AtLeastOnePending
+    pub fn is_pending(&self) -> bool {
+        *self == P0int::Pending
     }
 }
 #[doc = "Port 2 GPIO interrupt pending.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum P2int {
     #[doc = "0: No pending interrupts on Port 2."]
-    NoPendingInterrupt = 0,
+    Empty = 0,
     #[doc = "1: At least one pending interrupt on Port 2."]
-    AtLeastOnePending = 1,
+    Pending = 1,
 }
 impl From<P2int> for bool {
     #[inline(always)]
@@ -57,19 +57,19 @@ impl P2intR {
     #[inline(always)]
     pub const fn variant(&self) -> P2int {
         match self.bits {
-            false => P2int::NoPendingInterrupt,
-            true => P2int::AtLeastOnePending,
+            false => P2int::Empty,
+            true => P2int::Pending,
         }
     }
     #[doc = "No pending interrupts on Port 2."]
     #[inline(always)]
-    pub fn is_no_pending_interrupt(&self) -> bool {
-        *self == P2int::NoPendingInterrupt
+    pub fn is_empty(&self) -> bool {
+        *self == P2int::Empty
     }
     #[doc = "At least one pending interrupt on Port 2."]
     #[inline(always)]
-    pub fn is_at_least_one_pending(&self) -> bool {
-        *self == P2int::AtLeastOnePending
+    pub fn is_pending(&self) -> bool {
+        *self == P2int::Pending
     }
 }
 impl R {

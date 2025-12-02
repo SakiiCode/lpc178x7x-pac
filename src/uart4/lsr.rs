@@ -184,9 +184,9 @@ impl BiR {
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Thre {
     #[doc = "0: UnTHR contains valid data."]
-    UnthrContainsValid = 0,
+    ValidData = 0,
     #[doc = "1: UnTHR is empty."]
-    UnthrIsEmpty_ = 1,
+    Empty = 1,
 }
 impl From<Thre> for bool {
     #[inline(always)]
@@ -201,19 +201,19 @@ impl ThreR {
     #[inline(always)]
     pub const fn variant(&self) -> Thre {
         match self.bits {
-            false => Thre::UnthrContainsValid,
-            true => Thre::UnthrIsEmpty_,
+            false => Thre::ValidData,
+            true => Thre::Empty,
         }
     }
     #[doc = "UnTHR contains valid data."]
     #[inline(always)]
-    pub fn is_unthr_contains_valid(&self) -> bool {
-        *self == Thre::UnthrContainsValid
+    pub fn is_valid_data(&self) -> bool {
+        *self == Thre::ValidData
     }
     #[doc = "UnTHR is empty."]
     #[inline(always)]
-    pub fn is_unthr_is_empty_(&self) -> bool {
-        *self == Thre::UnthrIsEmpty_
+    pub fn is_empty(&self) -> bool {
+        *self == Thre::Empty
     }
 }
 #[doc = "Transmitter Empty. TEMT is set when both UnTHR and UnTSR are empty; TEMT is cleared when either the UnTSR or the UnTHR contain valid data.\n\nValue on reset: 1"]
@@ -256,9 +256,9 @@ impl TemtR {
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Rxfe {
     #[doc = "0: UnRBR contains no UARTn RX errors or UnFCR\\[0\\]=0."]
-    UnrbrContainsNoUa = 0,
+    NoError = 0,
     #[doc = "1: UARTn RBR contains at least one UARTn RX error."]
-    UartnRbrContainsA = 1,
+    Errors = 1,
 }
 impl From<Rxfe> for bool {
     #[inline(always)]
@@ -273,19 +273,19 @@ impl RxfeR {
     #[inline(always)]
     pub const fn variant(&self) -> Rxfe {
         match self.bits {
-            false => Rxfe::UnrbrContainsNoUa,
-            true => Rxfe::UartnRbrContainsA,
+            false => Rxfe::NoError,
+            true => Rxfe::Errors,
         }
     }
     #[doc = "UnRBR contains no UARTn RX errors or UnFCR\\[0\\]=0."]
     #[inline(always)]
-    pub fn is_unrbr_contains_no_ua(&self) -> bool {
-        *self == Rxfe::UnrbrContainsNoUa
+    pub fn is_no_error(&self) -> bool {
+        *self == Rxfe::NoError
     }
     #[doc = "UARTn RBR contains at least one UARTn RX error."]
     #[inline(always)]
-    pub fn is_uartn_rbr_contains_a(&self) -> bool {
-        *self == Rxfe::UartnRbrContainsA
+    pub fn is_errors(&self) -> bool {
+        *self == Rxfe::Errors
     }
 }
 impl R {
@@ -330,7 +330,7 @@ impl R {
         RxfeR::new(((self.bits >> 7) & 1) != 0)
     }
 }
-#[doc = "Line Status Register. Contains flags for transmit and receive status, including line errors.\n\nYou can [`read`](crate::Reg::read) this register and get [`lsr::R`](R). See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+#[doc = "Line Status Register. Contains flags for transmit and receive status, including line errors.\n\nYou can [`read`](crate::Reg::read) this register and get [`lsr::R`](R). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\n<div class=\"warning\">The register is <b>modified</b> in some way after a read operation.</div>"]
 pub struct LsrSpec;
 impl crate::RegisterSpec for LsrSpec {
     type Ux = u32;

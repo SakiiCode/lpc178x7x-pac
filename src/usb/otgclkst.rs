@@ -4,9 +4,9 @@ pub type R = crate::R<OtgclkstSpec>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum HostClkOn {
     #[doc = "0: Host clock is not available."]
-    HostClockIsNotAv = 0,
+    NotAvailable = 0,
     #[doc = "1: Host clock is available."]
-    HostClockIsAvaila = 1,
+    Available = 1,
 }
 impl From<HostClkOn> for bool {
     #[inline(always)]
@@ -21,28 +21,28 @@ impl HostClkOnR {
     #[inline(always)]
     pub const fn variant(&self) -> HostClkOn {
         match self.bits {
-            false => HostClkOn::HostClockIsNotAv,
-            true => HostClkOn::HostClockIsAvaila,
+            false => HostClkOn::NotAvailable,
+            true => HostClkOn::Available,
         }
     }
     #[doc = "Host clock is not available."]
     #[inline(always)]
-    pub fn is_host_clock_is_not_av(&self) -> bool {
-        *self == HostClkOn::HostClockIsNotAv
+    pub fn is_not_available(&self) -> bool {
+        *self == HostClkOn::NotAvailable
     }
     #[doc = "Host clock is available."]
     #[inline(always)]
-    pub fn is_host_clock_is_availa(&self) -> bool {
-        *self == HostClkOn::HostClockIsAvaila
+    pub fn is_available(&self) -> bool {
+        *self == HostClkOn::Available
     }
 }
 #[doc = "Device clock status.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum DevClkOn {
     #[doc = "0: Device clock is not available."]
-    DeviceClockIsNot_ = 0,
+    NotAvailable = 0,
     #[doc = "1: Device clock is available."]
-    DeviceClockIsAvai = 1,
+    Available = 1,
 }
 impl From<DevClkOn> for bool {
     #[inline(always)]
@@ -57,28 +57,28 @@ impl DevClkOnR {
     #[inline(always)]
     pub const fn variant(&self) -> DevClkOn {
         match self.bits {
-            false => DevClkOn::DeviceClockIsNot_,
-            true => DevClkOn::DeviceClockIsAvai,
+            false => DevClkOn::NotAvailable,
+            true => DevClkOn::Available,
         }
     }
     #[doc = "Device clock is not available."]
     #[inline(always)]
-    pub fn is_device_clock_is_not_(&self) -> bool {
-        *self == DevClkOn::DeviceClockIsNot_
+    pub fn is_not_available(&self) -> bool {
+        *self == DevClkOn::NotAvailable
     }
     #[doc = "Device clock is available."]
     #[inline(always)]
-    pub fn is_device_clock_is_avai(&self) -> bool {
-        *self == DevClkOn::DeviceClockIsAvai
+    pub fn is_available(&self) -> bool {
+        *self == DevClkOn::Available
     }
 }
 #[doc = "I2C clock status.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum I2cClkOn {
     #[doc = "0: I2C clock is not available."]
-    I2cClockIsNotAva = 0,
+    NotAvailable = 0,
     #[doc = "1: I2C clock is available."]
-    I2cClockIsAvailab = 1,
+    Available = 1,
 }
 impl From<I2cClkOn> for bool {
     #[inline(always)]
@@ -93,28 +93,28 @@ impl I2cClkOnR {
     #[inline(always)]
     pub const fn variant(&self) -> I2cClkOn {
         match self.bits {
-            false => I2cClkOn::I2cClockIsNotAva,
-            true => I2cClkOn::I2cClockIsAvailab,
+            false => I2cClkOn::NotAvailable,
+            true => I2cClkOn::Available,
         }
     }
     #[doc = "I2C clock is not available."]
     #[inline(always)]
-    pub fn is_i2c_clock_is_not_ava(&self) -> bool {
-        *self == I2cClkOn::I2cClockIsNotAva
+    pub fn is_not_available(&self) -> bool {
+        *self == I2cClkOn::NotAvailable
     }
     #[doc = "I2C clock is available."]
     #[inline(always)]
-    pub fn is_i2c_clock_is_availab(&self) -> bool {
-        *self == I2cClkOn::I2cClockIsAvailab
+    pub fn is_available(&self) -> bool {
+        *self == I2cClkOn::Available
     }
 }
 #[doc = "OTG clock status.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum OtgClkOn {
     #[doc = "0: OTG clock is not available."]
-    OtgClockIsNotAva = 0,
+    NotAvailable = 0,
     #[doc = "1: OTG clock is available."]
-    OtgClockIsAvailab = 1,
+    Available = 1,
 }
 impl From<OtgClkOn> for bool {
     #[inline(always)]
@@ -129,28 +129,28 @@ impl OtgClkOnR {
     #[inline(always)]
     pub const fn variant(&self) -> OtgClkOn {
         match self.bits {
-            false => OtgClkOn::OtgClockIsNotAva,
-            true => OtgClkOn::OtgClockIsAvailab,
+            false => OtgClkOn::NotAvailable,
+            true => OtgClkOn::Available,
         }
     }
     #[doc = "OTG clock is not available."]
     #[inline(always)]
-    pub fn is_otg_clock_is_not_ava(&self) -> bool {
-        *self == OtgClkOn::OtgClockIsNotAva
+    pub fn is_not_available(&self) -> bool {
+        *self == OtgClkOn::NotAvailable
     }
     #[doc = "OTG clock is available."]
     #[inline(always)]
-    pub fn is_otg_clock_is_availab(&self) -> bool {
-        *self == OtgClkOn::OtgClockIsAvailab
+    pub fn is_available(&self) -> bool {
+        *self == OtgClkOn::Available
     }
 }
 #[doc = "AHB master clock status.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum AhbClkOn {
     #[doc = "0: AHB clock is not available."]
-    AhbClockIsNotAva = 0,
+    NotAvailable = 0,
     #[doc = "1: AHB clock is available."]
-    AhbClockIsAvailab = 1,
+    Available = 1,
 }
 impl From<AhbClkOn> for bool {
     #[inline(always)]
@@ -165,19 +165,19 @@ impl AhbClkOnR {
     #[inline(always)]
     pub const fn variant(&self) -> AhbClkOn {
         match self.bits {
-            false => AhbClkOn::AhbClockIsNotAva,
-            true => AhbClkOn::AhbClockIsAvailab,
+            false => AhbClkOn::NotAvailable,
+            true => AhbClkOn::Available,
         }
     }
     #[doc = "AHB clock is not available."]
     #[inline(always)]
-    pub fn is_ahb_clock_is_not_ava(&self) -> bool {
-        *self == AhbClkOn::AhbClockIsNotAva
+    pub fn is_not_available(&self) -> bool {
+        *self == AhbClkOn::NotAvailable
     }
     #[doc = "AHB clock is available."]
     #[inline(always)]
-    pub fn is_ahb_clock_is_availab(&self) -> bool {
-        *self == AhbClkOn::AhbClockIsAvailab
+    pub fn is_available(&self) -> bool {
+        *self == AhbClkOn::Available
     }
 }
 impl R {

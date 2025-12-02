@@ -6,9 +6,9 @@ pub type W = crate::W<PcrSpec>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pwmsel2 {
     #[doc = "0: Single edge controlled mode is selected."]
-    SingleEdgeControll = 0,
+    SingleEdge = 0,
     #[doc = "1: Double edge controlled mode is selected."]
-    DoubleEdgeControll = 1,
+    DoubleEdge = 1,
 }
 impl From<Pwmsel2> for bool {
     #[inline(always)]
@@ -23,19 +23,19 @@ impl Pwmsel2R {
     #[inline(always)]
     pub const fn variant(&self) -> Pwmsel2 {
         match self.bits {
-            false => Pwmsel2::SingleEdgeControll,
-            true => Pwmsel2::DoubleEdgeControll,
+            false => Pwmsel2::SingleEdge,
+            true => Pwmsel2::DoubleEdge,
         }
     }
     #[doc = "Single edge controlled mode is selected."]
     #[inline(always)]
-    pub fn is_single_edge_controll(&self) -> bool {
-        *self == Pwmsel2::SingleEdgeControll
+    pub fn is_single_edge(&self) -> bool {
+        *self == Pwmsel2::SingleEdge
     }
     #[doc = "Double edge controlled mode is selected."]
     #[inline(always)]
-    pub fn is_double_edge_controll(&self) -> bool {
-        *self == Pwmsel2::DoubleEdgeControll
+    pub fn is_double_edge(&self) -> bool {
+        *self == Pwmsel2::DoubleEdge
     }
 }
 #[doc = "Field `PWMSEL2` writer - PWM\\[2\\] output single/double edge mode control."]
@@ -46,22 +46,22 @@ where
 {
     #[doc = "Single edge controlled mode is selected."]
     #[inline(always)]
-    pub fn single_edge_controll(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmsel2::SingleEdgeControll)
+    pub fn single_edge(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmsel2::SingleEdge)
     }
     #[doc = "Double edge controlled mode is selected."]
     #[inline(always)]
-    pub fn double_edge_controll(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmsel2::DoubleEdgeControll)
+    pub fn double_edge(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmsel2::DoubleEdge)
     }
 }
 #[doc = "PWM\\[3\\] output edge control.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pwmsel3 {
     #[doc = "0: Single edge controlled mode is selected."]
-    SingleEdgeControll = 0,
+    SingleEdge = 0,
     #[doc = "1: Double edge controlled mode is selected."]
-    DoubleEdgeControll = 1,
+    DoubleEdge = 1,
 }
 impl From<Pwmsel3> for bool {
     #[inline(always)]
@@ -76,19 +76,19 @@ impl Pwmsel3R {
     #[inline(always)]
     pub const fn variant(&self) -> Pwmsel3 {
         match self.bits {
-            false => Pwmsel3::SingleEdgeControll,
-            true => Pwmsel3::DoubleEdgeControll,
+            false => Pwmsel3::SingleEdge,
+            true => Pwmsel3::DoubleEdge,
         }
     }
     #[doc = "Single edge controlled mode is selected."]
     #[inline(always)]
-    pub fn is_single_edge_controll(&self) -> bool {
-        *self == Pwmsel3::SingleEdgeControll
+    pub fn is_single_edge(&self) -> bool {
+        *self == Pwmsel3::SingleEdge
     }
     #[doc = "Double edge controlled mode is selected."]
     #[inline(always)]
-    pub fn is_double_edge_controll(&self) -> bool {
-        *self == Pwmsel3::DoubleEdgeControll
+    pub fn is_double_edge(&self) -> bool {
+        *self == Pwmsel3::DoubleEdge
     }
 }
 #[doc = "Field `PWMSEL3` writer - PWM\\[3\\] output edge control."]
@@ -99,22 +99,22 @@ where
 {
     #[doc = "Single edge controlled mode is selected."]
     #[inline(always)]
-    pub fn single_edge_controll(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmsel3::SingleEdgeControll)
+    pub fn single_edge(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmsel3::SingleEdge)
     }
     #[doc = "Double edge controlled mode is selected."]
     #[inline(always)]
-    pub fn double_edge_controll(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmsel3::DoubleEdgeControll)
+    pub fn double_edge(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmsel3::DoubleEdge)
     }
 }
 #[doc = "PWM\\[4\\] output edge control.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pwmsel4 {
     #[doc = "0: Single edge controlled mode is selected."]
-    SingleEdgeControll = 0,
+    SingleEdge = 0,
     #[doc = "1: Double edge controlled mode is selected."]
-    DoubleEdgeControll = 1,
+    DoubleEdge = 1,
 }
 impl From<Pwmsel4> for bool {
     #[inline(always)]
@@ -129,19 +129,19 @@ impl Pwmsel4R {
     #[inline(always)]
     pub const fn variant(&self) -> Pwmsel4 {
         match self.bits {
-            false => Pwmsel4::SingleEdgeControll,
-            true => Pwmsel4::DoubleEdgeControll,
+            false => Pwmsel4::SingleEdge,
+            true => Pwmsel4::DoubleEdge,
         }
     }
     #[doc = "Single edge controlled mode is selected."]
     #[inline(always)]
-    pub fn is_single_edge_controll(&self) -> bool {
-        *self == Pwmsel4::SingleEdgeControll
+    pub fn is_single_edge(&self) -> bool {
+        *self == Pwmsel4::SingleEdge
     }
     #[doc = "Double edge controlled mode is selected."]
     #[inline(always)]
-    pub fn is_double_edge_controll(&self) -> bool {
-        *self == Pwmsel4::DoubleEdgeControll
+    pub fn is_double_edge(&self) -> bool {
+        *self == Pwmsel4::DoubleEdge
     }
 }
 #[doc = "Field `PWMSEL4` writer - PWM\\[4\\] output edge control."]
@@ -152,22 +152,22 @@ where
 {
     #[doc = "Single edge controlled mode is selected."]
     #[inline(always)]
-    pub fn single_edge_controll(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmsel4::SingleEdgeControll)
+    pub fn single_edge(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmsel4::SingleEdge)
     }
     #[doc = "Double edge controlled mode is selected."]
     #[inline(always)]
-    pub fn double_edge_controll(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmsel4::DoubleEdgeControll)
+    pub fn double_edge(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmsel4::DoubleEdge)
     }
 }
 #[doc = "PWM\\[5\\] output edge control.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pwmsel5 {
     #[doc = "0: Single edge controlled mode is selected."]
-    SingleEdgeControll = 0,
+    SingleEdge = 0,
     #[doc = "1: Double edge controlled mode is selected."]
-    DoubleEdgeControll = 1,
+    DoubleEdge = 1,
 }
 impl From<Pwmsel5> for bool {
     #[inline(always)]
@@ -182,19 +182,19 @@ impl Pwmsel5R {
     #[inline(always)]
     pub const fn variant(&self) -> Pwmsel5 {
         match self.bits {
-            false => Pwmsel5::SingleEdgeControll,
-            true => Pwmsel5::DoubleEdgeControll,
+            false => Pwmsel5::SingleEdge,
+            true => Pwmsel5::DoubleEdge,
         }
     }
     #[doc = "Single edge controlled mode is selected."]
     #[inline(always)]
-    pub fn is_single_edge_controll(&self) -> bool {
-        *self == Pwmsel5::SingleEdgeControll
+    pub fn is_single_edge(&self) -> bool {
+        *self == Pwmsel5::SingleEdge
     }
     #[doc = "Double edge controlled mode is selected."]
     #[inline(always)]
-    pub fn is_double_edge_controll(&self) -> bool {
-        *self == Pwmsel5::DoubleEdgeControll
+    pub fn is_double_edge(&self) -> bool {
+        *self == Pwmsel5::DoubleEdge
     }
 }
 #[doc = "Field `PWMSEL5` writer - PWM\\[5\\] output edge control."]
@@ -205,22 +205,22 @@ where
 {
     #[doc = "Single edge controlled mode is selected."]
     #[inline(always)]
-    pub fn single_edge_controll(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmsel5::SingleEdgeControll)
+    pub fn single_edge(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmsel5::SingleEdge)
     }
     #[doc = "Double edge controlled mode is selected."]
     #[inline(always)]
-    pub fn double_edge_controll(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmsel5::DoubleEdgeControll)
+    pub fn double_edge(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmsel5::DoubleEdge)
     }
 }
 #[doc = "PWM\\[6\\] output edge control.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pwmsel6 {
     #[doc = "0: Single edge controlled mode is selected."]
-    SingleEdgeControll = 0,
+    SingleEdge = 0,
     #[doc = "1: Double edge controlled mode is selected."]
-    DoubleEdgeControll = 1,
+    DoubleEdge = 1,
 }
 impl From<Pwmsel6> for bool {
     #[inline(always)]
@@ -235,19 +235,19 @@ impl Pwmsel6R {
     #[inline(always)]
     pub const fn variant(&self) -> Pwmsel6 {
         match self.bits {
-            false => Pwmsel6::SingleEdgeControll,
-            true => Pwmsel6::DoubleEdgeControll,
+            false => Pwmsel6::SingleEdge,
+            true => Pwmsel6::DoubleEdge,
         }
     }
     #[doc = "Single edge controlled mode is selected."]
     #[inline(always)]
-    pub fn is_single_edge_controll(&self) -> bool {
-        *self == Pwmsel6::SingleEdgeControll
+    pub fn is_single_edge(&self) -> bool {
+        *self == Pwmsel6::SingleEdge
     }
     #[doc = "Double edge controlled mode is selected."]
     #[inline(always)]
-    pub fn is_double_edge_controll(&self) -> bool {
-        *self == Pwmsel6::DoubleEdgeControll
+    pub fn is_double_edge(&self) -> bool {
+        *self == Pwmsel6::DoubleEdge
     }
 }
 #[doc = "Field `PWMSEL6` writer - PWM\\[6\\] output edge control."]
@@ -258,22 +258,22 @@ where
 {
     #[doc = "Single edge controlled mode is selected."]
     #[inline(always)]
-    pub fn single_edge_controll(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmsel6::SingleEdgeControll)
+    pub fn single_edge(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmsel6::SingleEdge)
     }
     #[doc = "Double edge controlled mode is selected."]
     #[inline(always)]
-    pub fn double_edge_controll(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmsel6::DoubleEdgeControll)
+    pub fn double_edge(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmsel6::DoubleEdge)
     }
 }
 #[doc = "PWM\\[1\\] output enable control.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pwmena1 {
     #[doc = "0: The PWM output is disabled."]
-    ThePwmOutputIsDi = 0,
+    Disabled = 0,
     #[doc = "1: The PWM output is enabled."]
-    ThePwmOutputIsEn = 1,
+    Enabled = 1,
 }
 impl From<Pwmena1> for bool {
     #[inline(always)]
@@ -288,19 +288,19 @@ impl Pwmena1R {
     #[inline(always)]
     pub const fn variant(&self) -> Pwmena1 {
         match self.bits {
-            false => Pwmena1::ThePwmOutputIsDi,
-            true => Pwmena1::ThePwmOutputIsEn,
+            false => Pwmena1::Disabled,
+            true => Pwmena1::Enabled,
         }
     }
     #[doc = "The PWM output is disabled."]
     #[inline(always)]
-    pub fn is_the_pwm_output_is_di(&self) -> bool {
-        *self == Pwmena1::ThePwmOutputIsDi
+    pub fn is_disabled(&self) -> bool {
+        *self == Pwmena1::Disabled
     }
     #[doc = "The PWM output is enabled."]
     #[inline(always)]
-    pub fn is_the_pwm_output_is_en(&self) -> bool {
-        *self == Pwmena1::ThePwmOutputIsEn
+    pub fn is_enabled(&self) -> bool {
+        *self == Pwmena1::Enabled
     }
 }
 #[doc = "Field `PWMENA1` writer - PWM\\[1\\] output enable control."]
@@ -311,22 +311,22 @@ where
 {
     #[doc = "The PWM output is disabled."]
     #[inline(always)]
-    pub fn the_pwm_output_is_di(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmena1::ThePwmOutputIsDi)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmena1::Disabled)
     }
     #[doc = "The PWM output is enabled."]
     #[inline(always)]
-    pub fn the_pwm_output_is_en(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmena1::ThePwmOutputIsEn)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmena1::Enabled)
     }
 }
 #[doc = "PWM\\[2\\] output enable control.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pwmena2 {
     #[doc = "0: The PWM output is disabled."]
-    ThePwmOutputIsDi = 0,
+    Disabled = 0,
     #[doc = "1: The PWM output is enabled."]
-    ThePwmOutputIsEn = 1,
+    Enabled = 1,
 }
 impl From<Pwmena2> for bool {
     #[inline(always)]
@@ -341,19 +341,19 @@ impl Pwmena2R {
     #[inline(always)]
     pub const fn variant(&self) -> Pwmena2 {
         match self.bits {
-            false => Pwmena2::ThePwmOutputIsDi,
-            true => Pwmena2::ThePwmOutputIsEn,
+            false => Pwmena2::Disabled,
+            true => Pwmena2::Enabled,
         }
     }
     #[doc = "The PWM output is disabled."]
     #[inline(always)]
-    pub fn is_the_pwm_output_is_di(&self) -> bool {
-        *self == Pwmena2::ThePwmOutputIsDi
+    pub fn is_disabled(&self) -> bool {
+        *self == Pwmena2::Disabled
     }
     #[doc = "The PWM output is enabled."]
     #[inline(always)]
-    pub fn is_the_pwm_output_is_en(&self) -> bool {
-        *self == Pwmena2::ThePwmOutputIsEn
+    pub fn is_enabled(&self) -> bool {
+        *self == Pwmena2::Enabled
     }
 }
 #[doc = "Field `PWMENA2` writer - PWM\\[2\\] output enable control."]
@@ -364,22 +364,22 @@ where
 {
     #[doc = "The PWM output is disabled."]
     #[inline(always)]
-    pub fn the_pwm_output_is_di(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmena2::ThePwmOutputIsDi)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmena2::Disabled)
     }
     #[doc = "The PWM output is enabled."]
     #[inline(always)]
-    pub fn the_pwm_output_is_en(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmena2::ThePwmOutputIsEn)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmena2::Enabled)
     }
 }
 #[doc = "PWM\\[3\\] output enable control.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pwmena3 {
     #[doc = "0: The PWM output is disabled."]
-    ThePwmOutputIsDi = 0,
+    Disabled = 0,
     #[doc = "1: The PWM output is enabled."]
-    ThePwmOutputIsEn = 1,
+    Enabled = 1,
 }
 impl From<Pwmena3> for bool {
     #[inline(always)]
@@ -394,19 +394,19 @@ impl Pwmena3R {
     #[inline(always)]
     pub const fn variant(&self) -> Pwmena3 {
         match self.bits {
-            false => Pwmena3::ThePwmOutputIsDi,
-            true => Pwmena3::ThePwmOutputIsEn,
+            false => Pwmena3::Disabled,
+            true => Pwmena3::Enabled,
         }
     }
     #[doc = "The PWM output is disabled."]
     #[inline(always)]
-    pub fn is_the_pwm_output_is_di(&self) -> bool {
-        *self == Pwmena3::ThePwmOutputIsDi
+    pub fn is_disabled(&self) -> bool {
+        *self == Pwmena3::Disabled
     }
     #[doc = "The PWM output is enabled."]
     #[inline(always)]
-    pub fn is_the_pwm_output_is_en(&self) -> bool {
-        *self == Pwmena3::ThePwmOutputIsEn
+    pub fn is_enabled(&self) -> bool {
+        *self == Pwmena3::Enabled
     }
 }
 #[doc = "Field `PWMENA3` writer - PWM\\[3\\] output enable control."]
@@ -417,22 +417,22 @@ where
 {
     #[doc = "The PWM output is disabled."]
     #[inline(always)]
-    pub fn the_pwm_output_is_di(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmena3::ThePwmOutputIsDi)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmena3::Disabled)
     }
     #[doc = "The PWM output is enabled."]
     #[inline(always)]
-    pub fn the_pwm_output_is_en(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmena3::ThePwmOutputIsEn)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmena3::Enabled)
     }
 }
 #[doc = "PWM\\[4\\] output enable control.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pwmena4 {
     #[doc = "0: The PWM output is disabled."]
-    ThePwmOutputIsDi = 0,
+    Disabled = 0,
     #[doc = "1: The PWM output is enabled."]
-    ThePwmOutputIsEn = 1,
+    Enabled = 1,
 }
 impl From<Pwmena4> for bool {
     #[inline(always)]
@@ -447,19 +447,19 @@ impl Pwmena4R {
     #[inline(always)]
     pub const fn variant(&self) -> Pwmena4 {
         match self.bits {
-            false => Pwmena4::ThePwmOutputIsDi,
-            true => Pwmena4::ThePwmOutputIsEn,
+            false => Pwmena4::Disabled,
+            true => Pwmena4::Enabled,
         }
     }
     #[doc = "The PWM output is disabled."]
     #[inline(always)]
-    pub fn is_the_pwm_output_is_di(&self) -> bool {
-        *self == Pwmena4::ThePwmOutputIsDi
+    pub fn is_disabled(&self) -> bool {
+        *self == Pwmena4::Disabled
     }
     #[doc = "The PWM output is enabled."]
     #[inline(always)]
-    pub fn is_the_pwm_output_is_en(&self) -> bool {
-        *self == Pwmena4::ThePwmOutputIsEn
+    pub fn is_enabled(&self) -> bool {
+        *self == Pwmena4::Enabled
     }
 }
 #[doc = "Field `PWMENA4` writer - PWM\\[4\\] output enable control."]
@@ -470,22 +470,22 @@ where
 {
     #[doc = "The PWM output is disabled."]
     #[inline(always)]
-    pub fn the_pwm_output_is_di(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmena4::ThePwmOutputIsDi)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmena4::Disabled)
     }
     #[doc = "The PWM output is enabled."]
     #[inline(always)]
-    pub fn the_pwm_output_is_en(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmena4::ThePwmOutputIsEn)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmena4::Enabled)
     }
 }
 #[doc = "PWM\\[5\\] output enable control.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pwmena5 {
     #[doc = "0: The PWM output is disabled."]
-    ThePwmOutputIsDi = 0,
+    Disabled = 0,
     #[doc = "1: The PWM output is enabled."]
-    ThePwmOutputIsEn = 1,
+    Enabled = 1,
 }
 impl From<Pwmena5> for bool {
     #[inline(always)]
@@ -500,19 +500,19 @@ impl Pwmena5R {
     #[inline(always)]
     pub const fn variant(&self) -> Pwmena5 {
         match self.bits {
-            false => Pwmena5::ThePwmOutputIsDi,
-            true => Pwmena5::ThePwmOutputIsEn,
+            false => Pwmena5::Disabled,
+            true => Pwmena5::Enabled,
         }
     }
     #[doc = "The PWM output is disabled."]
     #[inline(always)]
-    pub fn is_the_pwm_output_is_di(&self) -> bool {
-        *self == Pwmena5::ThePwmOutputIsDi
+    pub fn is_disabled(&self) -> bool {
+        *self == Pwmena5::Disabled
     }
     #[doc = "The PWM output is enabled."]
     #[inline(always)]
-    pub fn is_the_pwm_output_is_en(&self) -> bool {
-        *self == Pwmena5::ThePwmOutputIsEn
+    pub fn is_enabled(&self) -> bool {
+        *self == Pwmena5::Enabled
     }
 }
 #[doc = "Field `PWMENA5` writer - PWM\\[5\\] output enable control."]
@@ -523,22 +523,22 @@ where
 {
     #[doc = "The PWM output is disabled."]
     #[inline(always)]
-    pub fn the_pwm_output_is_di(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmena5::ThePwmOutputIsDi)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmena5::Disabled)
     }
     #[doc = "The PWM output is enabled."]
     #[inline(always)]
-    pub fn the_pwm_output_is_en(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmena5::ThePwmOutputIsEn)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmena5::Enabled)
     }
 }
 #[doc = "PWM\\[6\\] output enable control. See PWMENA1 for details.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pwmena6 {
     #[doc = "0: The PWM output is disabled."]
-    ThePwmOutputIsDi = 0,
+    Disabled = 0,
     #[doc = "1: The PWM output is enabled."]
-    ThePwmOutputIsEn = 1,
+    Enabled = 1,
 }
 impl From<Pwmena6> for bool {
     #[inline(always)]
@@ -553,19 +553,19 @@ impl Pwmena6R {
     #[inline(always)]
     pub const fn variant(&self) -> Pwmena6 {
         match self.bits {
-            false => Pwmena6::ThePwmOutputIsDi,
-            true => Pwmena6::ThePwmOutputIsEn,
+            false => Pwmena6::Disabled,
+            true => Pwmena6::Enabled,
         }
     }
     #[doc = "The PWM output is disabled."]
     #[inline(always)]
-    pub fn is_the_pwm_output_is_di(&self) -> bool {
-        *self == Pwmena6::ThePwmOutputIsDi
+    pub fn is_disabled(&self) -> bool {
+        *self == Pwmena6::Disabled
     }
     #[doc = "The PWM output is enabled."]
     #[inline(always)]
-    pub fn is_the_pwm_output_is_en(&self) -> bool {
-        *self == Pwmena6::ThePwmOutputIsEn
+    pub fn is_enabled(&self) -> bool {
+        *self == Pwmena6::Enabled
     }
 }
 #[doc = "Field `PWMENA6` writer - PWM\\[6\\] output enable control. See PWMENA1 for details."]
@@ -576,13 +576,13 @@ where
 {
     #[doc = "The PWM output is disabled."]
     #[inline(always)]
-    pub fn the_pwm_output_is_di(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmena6::ThePwmOutputIsDi)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmena6::Disabled)
     }
     #[doc = "The PWM output is enabled."]
     #[inline(always)]
-    pub fn the_pwm_output_is_en(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmena6::ThePwmOutputIsEn)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmena6::Enabled)
     }
 }
 impl R {

@@ -6,9 +6,9 @@ pub type W = crate::W<McrSpec>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pwmmr0i {
     #[doc = "0: Disabled."]
-    Disabled_ = 0,
+    Disabled = 0,
     #[doc = "1: Interrupt on PWMMR0: an interrupt is generated when PWMMR0 matches the value in the PWMTC."]
-    InterruptOnPwmmr0 = 1,
+    Enabled = 1,
 }
 impl From<Pwmmr0i> for bool {
     #[inline(always)]
@@ -23,19 +23,19 @@ impl Pwmmr0iR {
     #[inline(always)]
     pub const fn variant(&self) -> Pwmmr0i {
         match self.bits {
-            false => Pwmmr0i::Disabled_,
-            true => Pwmmr0i::InterruptOnPwmmr0,
+            false => Pwmmr0i::Disabled,
+            true => Pwmmr0i::Enabled,
         }
     }
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn is_disabled_(&self) -> bool {
-        *self == Pwmmr0i::Disabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Pwmmr0i::Disabled
     }
     #[doc = "Interrupt on PWMMR0: an interrupt is generated when PWMMR0 matches the value in the PWMTC."]
     #[inline(always)]
-    pub fn is_interrupt_on_pwmmr0(&self) -> bool {
-        *self == Pwmmr0i::InterruptOnPwmmr0
+    pub fn is_enabled(&self) -> bool {
+        *self == Pwmmr0i::Enabled
     }
 }
 #[doc = "Field `PWMMR0I` writer - Interrupt PWM0"]
@@ -46,22 +46,22 @@ where
 {
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmmr0i::Disabled_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmmr0i::Disabled)
     }
     #[doc = "Interrupt on PWMMR0: an interrupt is generated when PWMMR0 matches the value in the PWMTC."]
     #[inline(always)]
-    pub fn interrupt_on_pwmmr0(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmmr0i::InterruptOnPwmmr0)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmmr0i::Enabled)
     }
 }
 #[doc = "Reset PWM0\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pwmmr0r {
     #[doc = "0: Disabled."]
-    Disabled_ = 0,
+    Disabled = 0,
     #[doc = "1: Reset on PWMMR0: the PWMTC will be reset if PWMMR0 matches it."]
-    ResetOnPwmmr0The = 1,
+    Enabled = 1,
 }
 impl From<Pwmmr0r> for bool {
     #[inline(always)]
@@ -76,19 +76,19 @@ impl Pwmmr0rR {
     #[inline(always)]
     pub const fn variant(&self) -> Pwmmr0r {
         match self.bits {
-            false => Pwmmr0r::Disabled_,
-            true => Pwmmr0r::ResetOnPwmmr0The,
+            false => Pwmmr0r::Disabled,
+            true => Pwmmr0r::Enabled,
         }
     }
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn is_disabled_(&self) -> bool {
-        *self == Pwmmr0r::Disabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Pwmmr0r::Disabled
     }
     #[doc = "Reset on PWMMR0: the PWMTC will be reset if PWMMR0 matches it."]
     #[inline(always)]
-    pub fn is_reset_on_pwmmr0_the(&self) -> bool {
-        *self == Pwmmr0r::ResetOnPwmmr0The
+    pub fn is_enabled(&self) -> bool {
+        *self == Pwmmr0r::Enabled
     }
 }
 #[doc = "Field `PWMMR0R` writer - Reset PWM0"]
@@ -99,13 +99,13 @@ where
 {
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmmr0r::Disabled_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmmr0r::Disabled)
     }
     #[doc = "Reset on PWMMR0: the PWMTC will be reset if PWMMR0 matches it."]
     #[inline(always)]
-    pub fn reset_on_pwmmr0_the(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmmr0r::ResetOnPwmmr0The)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmmr0r::Enabled)
     }
 }
 #[doc = "Stop PWM0\n\nValue on reset: 0"]
@@ -114,7 +114,7 @@ pub enum Pwmmr0s {
     #[doc = "0: Disabled"]
     Disabled = 0,
     #[doc = "1: Stop on PWMMR0: the PWMTC and PWMPC will be stopped and PWMTCR bit 0 will be set to 0 if PWMMR0 matches the PWMTC."]
-    StopOnPwmmr0The_ = 1,
+    Enabled = 1,
 }
 impl From<Pwmmr0s> for bool {
     #[inline(always)]
@@ -130,7 +130,7 @@ impl Pwmmr0sR {
     pub const fn variant(&self) -> Pwmmr0s {
         match self.bits {
             false => Pwmmr0s::Disabled,
-            true => Pwmmr0s::StopOnPwmmr0The_,
+            true => Pwmmr0s::Enabled,
         }
     }
     #[doc = "Disabled"]
@@ -140,8 +140,8 @@ impl Pwmmr0sR {
     }
     #[doc = "Stop on PWMMR0: the PWMTC and PWMPC will be stopped and PWMTCR bit 0 will be set to 0 if PWMMR0 matches the PWMTC."]
     #[inline(always)]
-    pub fn is_stop_on_pwmmr0_the_(&self) -> bool {
-        *self == Pwmmr0s::StopOnPwmmr0The_
+    pub fn is_enabled(&self) -> bool {
+        *self == Pwmmr0s::Enabled
     }
 }
 #[doc = "Field `PWMMR0S` writer - Stop PWM0"]
@@ -157,17 +157,17 @@ where
     }
     #[doc = "Stop on PWMMR0: the PWMTC and PWMPC will be stopped and PWMTCR bit 0 will be set to 0 if PWMMR0 matches the PWMTC."]
     #[inline(always)]
-    pub fn stop_on_pwmmr0_the_(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmmr0s::StopOnPwmmr0The_)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmmr0s::Enabled)
     }
 }
 #[doc = "Interrupt PWM1\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pwmmr1i {
     #[doc = "0: Disabled."]
-    Disabled_ = 0,
+    Disabled = 0,
     #[doc = "1: Interrupt on PWMMR1: an interrupt is generated when PWMMR1 matches the value in the PWMTC."]
-    InterruptOnPwmmr1 = 1,
+    Enabled = 1,
 }
 impl From<Pwmmr1i> for bool {
     #[inline(always)]
@@ -182,19 +182,19 @@ impl Pwmmr1iR {
     #[inline(always)]
     pub const fn variant(&self) -> Pwmmr1i {
         match self.bits {
-            false => Pwmmr1i::Disabled_,
-            true => Pwmmr1i::InterruptOnPwmmr1,
+            false => Pwmmr1i::Disabled,
+            true => Pwmmr1i::Enabled,
         }
     }
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn is_disabled_(&self) -> bool {
-        *self == Pwmmr1i::Disabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Pwmmr1i::Disabled
     }
     #[doc = "Interrupt on PWMMR1: an interrupt is generated when PWMMR1 matches the value in the PWMTC."]
     #[inline(always)]
-    pub fn is_interrupt_on_pwmmr1(&self) -> bool {
-        *self == Pwmmr1i::InterruptOnPwmmr1
+    pub fn is_enabled(&self) -> bool {
+        *self == Pwmmr1i::Enabled
     }
 }
 #[doc = "Field `PWMMR1I` writer - Interrupt PWM1"]
@@ -205,22 +205,22 @@ where
 {
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmmr1i::Disabled_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmmr1i::Disabled)
     }
     #[doc = "Interrupt on PWMMR1: an interrupt is generated when PWMMR1 matches the value in the PWMTC."]
     #[inline(always)]
-    pub fn interrupt_on_pwmmr1(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmmr1i::InterruptOnPwmmr1)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmmr1i::Enabled)
     }
 }
 #[doc = "Reset PWM1\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pwmmr1r {
     #[doc = "0: Disabled."]
-    Disabled_ = 0,
+    Disabled = 0,
     #[doc = "1: Reset on PWMMR1: the PWMTC will be reset if PWMMR1 matches it."]
-    ResetOnPwmmr1The = 1,
+    Enabled = 1,
 }
 impl From<Pwmmr1r> for bool {
     #[inline(always)]
@@ -235,19 +235,19 @@ impl Pwmmr1rR {
     #[inline(always)]
     pub const fn variant(&self) -> Pwmmr1r {
         match self.bits {
-            false => Pwmmr1r::Disabled_,
-            true => Pwmmr1r::ResetOnPwmmr1The,
+            false => Pwmmr1r::Disabled,
+            true => Pwmmr1r::Enabled,
         }
     }
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn is_disabled_(&self) -> bool {
-        *self == Pwmmr1r::Disabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Pwmmr1r::Disabled
     }
     #[doc = "Reset on PWMMR1: the PWMTC will be reset if PWMMR1 matches it."]
     #[inline(always)]
-    pub fn is_reset_on_pwmmr1_the(&self) -> bool {
-        *self == Pwmmr1r::ResetOnPwmmr1The
+    pub fn is_enabled(&self) -> bool {
+        *self == Pwmmr1r::Enabled
     }
 }
 #[doc = "Field `PWMMR1R` writer - Reset PWM1"]
@@ -258,13 +258,13 @@ where
 {
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmmr1r::Disabled_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmmr1r::Disabled)
     }
     #[doc = "Reset on PWMMR1: the PWMTC will be reset if PWMMR1 matches it."]
     #[inline(always)]
-    pub fn reset_on_pwmmr1_the(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmmr1r::ResetOnPwmmr1The)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmmr1r::Enabled)
     }
 }
 #[doc = "Stop PWM1\n\nValue on reset: 0"]
@@ -273,7 +273,7 @@ pub enum Pwmmr1s {
     #[doc = "0: Disabled"]
     Disabled = 0,
     #[doc = "1: Stop on PWMMR1: the PWMTC and PWMPC will be stopped and PWMTCR bit 0 will be set to 0 if PWMMR1 matches the PWMTC."]
-    StopOnPwmmr1The_ = 1,
+    Enabled = 1,
 }
 impl From<Pwmmr1s> for bool {
     #[inline(always)]
@@ -289,7 +289,7 @@ impl Pwmmr1sR {
     pub const fn variant(&self) -> Pwmmr1s {
         match self.bits {
             false => Pwmmr1s::Disabled,
-            true => Pwmmr1s::StopOnPwmmr1The_,
+            true => Pwmmr1s::Enabled,
         }
     }
     #[doc = "Disabled"]
@@ -299,8 +299,8 @@ impl Pwmmr1sR {
     }
     #[doc = "Stop on PWMMR1: the PWMTC and PWMPC will be stopped and PWMTCR bit 0 will be set to 0 if PWMMR1 matches the PWMTC."]
     #[inline(always)]
-    pub fn is_stop_on_pwmmr1_the_(&self) -> bool {
-        *self == Pwmmr1s::StopOnPwmmr1The_
+    pub fn is_enabled(&self) -> bool {
+        *self == Pwmmr1s::Enabled
     }
 }
 #[doc = "Field `PWMMR1S` writer - Stop PWM1"]
@@ -316,17 +316,17 @@ where
     }
     #[doc = "Stop on PWMMR1: the PWMTC and PWMPC will be stopped and PWMTCR bit 0 will be set to 0 if PWMMR1 matches the PWMTC."]
     #[inline(always)]
-    pub fn stop_on_pwmmr1_the_(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmmr1s::StopOnPwmmr1The_)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmmr1s::Enabled)
     }
 }
 #[doc = "Interrupt PWM0\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pwmmr2i {
     #[doc = "0: Disabled."]
-    Disabled_ = 0,
+    Disabled = 0,
     #[doc = "1: Interrupt on PWMMR2: an interrupt is generated when PWMMR2 matches the value in the PWMTC."]
-    InterruptOnPwmmr2 = 1,
+    Enabled = 1,
 }
 impl From<Pwmmr2i> for bool {
     #[inline(always)]
@@ -341,19 +341,19 @@ impl Pwmmr2iR {
     #[inline(always)]
     pub const fn variant(&self) -> Pwmmr2i {
         match self.bits {
-            false => Pwmmr2i::Disabled_,
-            true => Pwmmr2i::InterruptOnPwmmr2,
+            false => Pwmmr2i::Disabled,
+            true => Pwmmr2i::Enabled,
         }
     }
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn is_disabled_(&self) -> bool {
-        *self == Pwmmr2i::Disabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Pwmmr2i::Disabled
     }
     #[doc = "Interrupt on PWMMR2: an interrupt is generated when PWMMR2 matches the value in the PWMTC."]
     #[inline(always)]
-    pub fn is_interrupt_on_pwmmr2(&self) -> bool {
-        *self == Pwmmr2i::InterruptOnPwmmr2
+    pub fn is_enabled(&self) -> bool {
+        *self == Pwmmr2i::Enabled
     }
 }
 #[doc = "Field `PWMMR2I` writer - Interrupt PWM0"]
@@ -364,22 +364,22 @@ where
 {
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmmr2i::Disabled_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmmr2i::Disabled)
     }
     #[doc = "Interrupt on PWMMR2: an interrupt is generated when PWMMR2 matches the value in the PWMTC."]
     #[inline(always)]
-    pub fn interrupt_on_pwmmr2(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmmr2i::InterruptOnPwmmr2)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmmr2i::Enabled)
     }
 }
 #[doc = "Reset PWM0\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pwmmr2r {
     #[doc = "0: Disabled."]
-    Disabled_ = 0,
+    Disabled = 0,
     #[doc = "1: Reset on PWMMR2: the PWMTC will be reset if PWMMR2 matches it."]
-    ResetOnPwmmr2The = 1,
+    Enabled = 1,
 }
 impl From<Pwmmr2r> for bool {
     #[inline(always)]
@@ -394,19 +394,19 @@ impl Pwmmr2rR {
     #[inline(always)]
     pub const fn variant(&self) -> Pwmmr2r {
         match self.bits {
-            false => Pwmmr2r::Disabled_,
-            true => Pwmmr2r::ResetOnPwmmr2The,
+            false => Pwmmr2r::Disabled,
+            true => Pwmmr2r::Enabled,
         }
     }
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn is_disabled_(&self) -> bool {
-        *self == Pwmmr2r::Disabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Pwmmr2r::Disabled
     }
     #[doc = "Reset on PWMMR2: the PWMTC will be reset if PWMMR2 matches it."]
     #[inline(always)]
-    pub fn is_reset_on_pwmmr2_the(&self) -> bool {
-        *self == Pwmmr2r::ResetOnPwmmr2The
+    pub fn is_enabled(&self) -> bool {
+        *self == Pwmmr2r::Enabled
     }
 }
 #[doc = "Field `PWMMR2R` writer - Reset PWM0"]
@@ -417,13 +417,13 @@ where
 {
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmmr2r::Disabled_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmmr2r::Disabled)
     }
     #[doc = "Reset on PWMMR2: the PWMTC will be reset if PWMMR2 matches it."]
     #[inline(always)]
-    pub fn reset_on_pwmmr2_the(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmmr2r::ResetOnPwmmr2The)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmmr2r::Enabled)
     }
 }
 #[doc = "Stop PWM0\n\nValue on reset: 0"]
@@ -432,7 +432,7 @@ pub enum Pwmmr2s {
     #[doc = "0: Disabled"]
     Disabled = 0,
     #[doc = "1: Stop on PWMMR2: the PWMTC and PWMPC will be stopped and PWMTCR bit 0 will be set to 0 if PWMMR0 matches the PWMTC."]
-    StopOnPwmmr2The_ = 1,
+    Enabled = 1,
 }
 impl From<Pwmmr2s> for bool {
     #[inline(always)]
@@ -448,7 +448,7 @@ impl Pwmmr2sR {
     pub const fn variant(&self) -> Pwmmr2s {
         match self.bits {
             false => Pwmmr2s::Disabled,
-            true => Pwmmr2s::StopOnPwmmr2The_,
+            true => Pwmmr2s::Enabled,
         }
     }
     #[doc = "Disabled"]
@@ -458,8 +458,8 @@ impl Pwmmr2sR {
     }
     #[doc = "Stop on PWMMR2: the PWMTC and PWMPC will be stopped and PWMTCR bit 0 will be set to 0 if PWMMR0 matches the PWMTC."]
     #[inline(always)]
-    pub fn is_stop_on_pwmmr2_the_(&self) -> bool {
-        *self == Pwmmr2s::StopOnPwmmr2The_
+    pub fn is_enabled(&self) -> bool {
+        *self == Pwmmr2s::Enabled
     }
 }
 #[doc = "Field `PWMMR2S` writer - Stop PWM0"]
@@ -475,17 +475,17 @@ where
     }
     #[doc = "Stop on PWMMR2: the PWMTC and PWMPC will be stopped and PWMTCR bit 0 will be set to 0 if PWMMR0 matches the PWMTC."]
     #[inline(always)]
-    pub fn stop_on_pwmmr2_the_(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmmr2s::StopOnPwmmr2The_)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmmr2s::Enabled)
     }
 }
 #[doc = "Interrupt PWM3\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pwmmr3i {
     #[doc = "0: Disabled."]
-    Disabled_ = 0,
+    Disabled = 0,
     #[doc = "1: Interrupt on PWMMR3: an interrupt is generated when PWMMR3 matches the value in the PWMTC."]
-    InterruptOnPwmmr3 = 1,
+    Enabled = 1,
 }
 impl From<Pwmmr3i> for bool {
     #[inline(always)]
@@ -500,19 +500,19 @@ impl Pwmmr3iR {
     #[inline(always)]
     pub const fn variant(&self) -> Pwmmr3i {
         match self.bits {
-            false => Pwmmr3i::Disabled_,
-            true => Pwmmr3i::InterruptOnPwmmr3,
+            false => Pwmmr3i::Disabled,
+            true => Pwmmr3i::Enabled,
         }
     }
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn is_disabled_(&self) -> bool {
-        *self == Pwmmr3i::Disabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Pwmmr3i::Disabled
     }
     #[doc = "Interrupt on PWMMR3: an interrupt is generated when PWMMR3 matches the value in the PWMTC."]
     #[inline(always)]
-    pub fn is_interrupt_on_pwmmr3(&self) -> bool {
-        *self == Pwmmr3i::InterruptOnPwmmr3
+    pub fn is_enabled(&self) -> bool {
+        *self == Pwmmr3i::Enabled
     }
 }
 #[doc = "Field `PWMMR3I` writer - Interrupt PWM3"]
@@ -523,22 +523,22 @@ where
 {
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmmr3i::Disabled_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmmr3i::Disabled)
     }
     #[doc = "Interrupt on PWMMR3: an interrupt is generated when PWMMR3 matches the value in the PWMTC."]
     #[inline(always)]
-    pub fn interrupt_on_pwmmr3(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmmr3i::InterruptOnPwmmr3)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmmr3i::Enabled)
     }
 }
 #[doc = "Reset PWM3\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pwmmr3r {
     #[doc = "0: Disabled."]
-    Disabled_ = 0,
+    Disabled = 0,
     #[doc = "1: Reset on PWMMR3: the PWMTC will be reset if PWMMR3 matches it."]
-    ResetOnPwmmr3The = 1,
+    Enabled = 1,
 }
 impl From<Pwmmr3r> for bool {
     #[inline(always)]
@@ -553,19 +553,19 @@ impl Pwmmr3rR {
     #[inline(always)]
     pub const fn variant(&self) -> Pwmmr3r {
         match self.bits {
-            false => Pwmmr3r::Disabled_,
-            true => Pwmmr3r::ResetOnPwmmr3The,
+            false => Pwmmr3r::Disabled,
+            true => Pwmmr3r::Enabled,
         }
     }
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn is_disabled_(&self) -> bool {
-        *self == Pwmmr3r::Disabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Pwmmr3r::Disabled
     }
     #[doc = "Reset on PWMMR3: the PWMTC will be reset if PWMMR3 matches it."]
     #[inline(always)]
-    pub fn is_reset_on_pwmmr3_the(&self) -> bool {
-        *self == Pwmmr3r::ResetOnPwmmr3The
+    pub fn is_enabled(&self) -> bool {
+        *self == Pwmmr3r::Enabled
     }
 }
 #[doc = "Field `PWMMR3R` writer - Reset PWM3"]
@@ -576,13 +576,13 @@ where
 {
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmmr3r::Disabled_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmmr3r::Disabled)
     }
     #[doc = "Reset on PWMMR3: the PWMTC will be reset if PWMMR3 matches it."]
     #[inline(always)]
-    pub fn reset_on_pwmmr3_the(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmmr3r::ResetOnPwmmr3The)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmmr3r::Enabled)
     }
 }
 #[doc = "Stop PWM0\n\nValue on reset: 0"]
@@ -591,7 +591,7 @@ pub enum Pwmmr3s {
     #[doc = "0: Disabled"]
     Disabled = 0,
     #[doc = "1: Stop on PWMMR3: the PWMTC and PWMPC will be stopped and PWMTCR bit 0 will be set to 0 if PWMMR0 matches the PWMTC."]
-    StopOnPwmmr3The_ = 1,
+    Enabled = 1,
 }
 impl From<Pwmmr3s> for bool {
     #[inline(always)]
@@ -607,7 +607,7 @@ impl Pwmmr3sR {
     pub const fn variant(&self) -> Pwmmr3s {
         match self.bits {
             false => Pwmmr3s::Disabled,
-            true => Pwmmr3s::StopOnPwmmr3The_,
+            true => Pwmmr3s::Enabled,
         }
     }
     #[doc = "Disabled"]
@@ -617,8 +617,8 @@ impl Pwmmr3sR {
     }
     #[doc = "Stop on PWMMR3: the PWMTC and PWMPC will be stopped and PWMTCR bit 0 will be set to 0 if PWMMR0 matches the PWMTC."]
     #[inline(always)]
-    pub fn is_stop_on_pwmmr3_the_(&self) -> bool {
-        *self == Pwmmr3s::StopOnPwmmr3The_
+    pub fn is_enabled(&self) -> bool {
+        *self == Pwmmr3s::Enabled
     }
 }
 #[doc = "Field `PWMMR3S` writer - Stop PWM0"]
@@ -634,17 +634,17 @@ where
     }
     #[doc = "Stop on PWMMR3: the PWMTC and PWMPC will be stopped and PWMTCR bit 0 will be set to 0 if PWMMR0 matches the PWMTC."]
     #[inline(always)]
-    pub fn stop_on_pwmmr3_the_(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmmr3s::StopOnPwmmr3The_)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmmr3s::Enabled)
     }
 }
 #[doc = "Interrupt PWM4\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pwmmr4i {
     #[doc = "0: Disabled."]
-    Disabled_ = 0,
+    Disabled = 0,
     #[doc = "1: Interrupt on PWMMR4: an interrupt is generated when PWMMR4 matches the value in the PWMTC."]
-    InterruptOnPwmmr4 = 1,
+    Enabled = 1,
 }
 impl From<Pwmmr4i> for bool {
     #[inline(always)]
@@ -659,19 +659,19 @@ impl Pwmmr4iR {
     #[inline(always)]
     pub const fn variant(&self) -> Pwmmr4i {
         match self.bits {
-            false => Pwmmr4i::Disabled_,
-            true => Pwmmr4i::InterruptOnPwmmr4,
+            false => Pwmmr4i::Disabled,
+            true => Pwmmr4i::Enabled,
         }
     }
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn is_disabled_(&self) -> bool {
-        *self == Pwmmr4i::Disabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Pwmmr4i::Disabled
     }
     #[doc = "Interrupt on PWMMR4: an interrupt is generated when PWMMR4 matches the value in the PWMTC."]
     #[inline(always)]
-    pub fn is_interrupt_on_pwmmr4(&self) -> bool {
-        *self == Pwmmr4i::InterruptOnPwmmr4
+    pub fn is_enabled(&self) -> bool {
+        *self == Pwmmr4i::Enabled
     }
 }
 #[doc = "Field `PWMMR4I` writer - Interrupt PWM4"]
@@ -682,22 +682,22 @@ where
 {
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmmr4i::Disabled_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmmr4i::Disabled)
     }
     #[doc = "Interrupt on PWMMR4: an interrupt is generated when PWMMR4 matches the value in the PWMTC."]
     #[inline(always)]
-    pub fn interrupt_on_pwmmr4(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmmr4i::InterruptOnPwmmr4)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmmr4i::Enabled)
     }
 }
 #[doc = "Reset PWM4\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pwmmr4r {
     #[doc = "0: Disabled."]
-    Disabled_ = 0,
+    Disabled = 0,
     #[doc = "1: Reset on PWMMR4: the PWMTC will be reset if PWMMR4 matches it."]
-    ResetOnPwmmr4The = 1,
+    Enabled = 1,
 }
 impl From<Pwmmr4r> for bool {
     #[inline(always)]
@@ -712,19 +712,19 @@ impl Pwmmr4rR {
     #[inline(always)]
     pub const fn variant(&self) -> Pwmmr4r {
         match self.bits {
-            false => Pwmmr4r::Disabled_,
-            true => Pwmmr4r::ResetOnPwmmr4The,
+            false => Pwmmr4r::Disabled,
+            true => Pwmmr4r::Enabled,
         }
     }
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn is_disabled_(&self) -> bool {
-        *self == Pwmmr4r::Disabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Pwmmr4r::Disabled
     }
     #[doc = "Reset on PWMMR4: the PWMTC will be reset if PWMMR4 matches it."]
     #[inline(always)]
-    pub fn is_reset_on_pwmmr4_the(&self) -> bool {
-        *self == Pwmmr4r::ResetOnPwmmr4The
+    pub fn is_enabled(&self) -> bool {
+        *self == Pwmmr4r::Enabled
     }
 }
 #[doc = "Field `PWMMR4R` writer - Reset PWM4"]
@@ -735,13 +735,13 @@ where
 {
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmmr4r::Disabled_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmmr4r::Disabled)
     }
     #[doc = "Reset on PWMMR4: the PWMTC will be reset if PWMMR4 matches it."]
     #[inline(always)]
-    pub fn reset_on_pwmmr4_the(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmmr4r::ResetOnPwmmr4The)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmmr4r::Enabled)
     }
 }
 #[doc = "Stop PWM4\n\nValue on reset: 0"]
@@ -750,7 +750,7 @@ pub enum Pwmmr4s {
     #[doc = "0: Disabled"]
     Disabled = 0,
     #[doc = "1: Stop on PWMMR4: the PWMTC and PWMPC will be stopped and PWMTCR bit 0 will be set to 0 if PWMMR4 matches the PWMTC."]
-    StopOnPwmmr4The_ = 1,
+    Enabled = 1,
 }
 impl From<Pwmmr4s> for bool {
     #[inline(always)]
@@ -766,7 +766,7 @@ impl Pwmmr4sR {
     pub const fn variant(&self) -> Pwmmr4s {
         match self.bits {
             false => Pwmmr4s::Disabled,
-            true => Pwmmr4s::StopOnPwmmr4The_,
+            true => Pwmmr4s::Enabled,
         }
     }
     #[doc = "Disabled"]
@@ -776,8 +776,8 @@ impl Pwmmr4sR {
     }
     #[doc = "Stop on PWMMR4: the PWMTC and PWMPC will be stopped and PWMTCR bit 0 will be set to 0 if PWMMR4 matches the PWMTC."]
     #[inline(always)]
-    pub fn is_stop_on_pwmmr4_the_(&self) -> bool {
-        *self == Pwmmr4s::StopOnPwmmr4The_
+    pub fn is_enabled(&self) -> bool {
+        *self == Pwmmr4s::Enabled
     }
 }
 #[doc = "Field `PWMMR4S` writer - Stop PWM4"]
@@ -793,17 +793,17 @@ where
     }
     #[doc = "Stop on PWMMR4: the PWMTC and PWMPC will be stopped and PWMTCR bit 0 will be set to 0 if PWMMR4 matches the PWMTC."]
     #[inline(always)]
-    pub fn stop_on_pwmmr4_the_(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmmr4s::StopOnPwmmr4The_)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmmr4s::Enabled)
     }
 }
 #[doc = "Interrupt PWM5\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pwmmr5i {
     #[doc = "0: Disabled."]
-    Disabled_ = 0,
+    Disabled = 0,
     #[doc = "1: Interrupt on PWMMR5: an interrupt is generated when PWMMR5 matches the value in the PWMTC."]
-    InterruptOnPwmmr5 = 1,
+    Enabled = 1,
 }
 impl From<Pwmmr5i> for bool {
     #[inline(always)]
@@ -818,19 +818,19 @@ impl Pwmmr5iR {
     #[inline(always)]
     pub const fn variant(&self) -> Pwmmr5i {
         match self.bits {
-            false => Pwmmr5i::Disabled_,
-            true => Pwmmr5i::InterruptOnPwmmr5,
+            false => Pwmmr5i::Disabled,
+            true => Pwmmr5i::Enabled,
         }
     }
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn is_disabled_(&self) -> bool {
-        *self == Pwmmr5i::Disabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Pwmmr5i::Disabled
     }
     #[doc = "Interrupt on PWMMR5: an interrupt is generated when PWMMR5 matches the value in the PWMTC."]
     #[inline(always)]
-    pub fn is_interrupt_on_pwmmr5(&self) -> bool {
-        *self == Pwmmr5i::InterruptOnPwmmr5
+    pub fn is_enabled(&self) -> bool {
+        *self == Pwmmr5i::Enabled
     }
 }
 #[doc = "Field `PWMMR5I` writer - Interrupt PWM5"]
@@ -841,22 +841,22 @@ where
 {
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmmr5i::Disabled_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmmr5i::Disabled)
     }
     #[doc = "Interrupt on PWMMR5: an interrupt is generated when PWMMR5 matches the value in the PWMTC."]
     #[inline(always)]
-    pub fn interrupt_on_pwmmr5(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmmr5i::InterruptOnPwmmr5)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmmr5i::Enabled)
     }
 }
 #[doc = "Reset PWM5\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pwmmr5r {
     #[doc = "0: Disabled."]
-    Disabled_ = 0,
+    Disabled = 0,
     #[doc = "1: Reset on PWMMR5: the PWMTC will be reset if PWMMR5 matches it."]
-    ResetOnPwmmr5The = 1,
+    Enabled = 1,
 }
 impl From<Pwmmr5r> for bool {
     #[inline(always)]
@@ -871,19 +871,19 @@ impl Pwmmr5rR {
     #[inline(always)]
     pub const fn variant(&self) -> Pwmmr5r {
         match self.bits {
-            false => Pwmmr5r::Disabled_,
-            true => Pwmmr5r::ResetOnPwmmr5The,
+            false => Pwmmr5r::Disabled,
+            true => Pwmmr5r::Enabled,
         }
     }
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn is_disabled_(&self) -> bool {
-        *self == Pwmmr5r::Disabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Pwmmr5r::Disabled
     }
     #[doc = "Reset on PWMMR5: the PWMTC will be reset if PWMMR5 matches it."]
     #[inline(always)]
-    pub fn is_reset_on_pwmmr5_the(&self) -> bool {
-        *self == Pwmmr5r::ResetOnPwmmr5The
+    pub fn is_enabled(&self) -> bool {
+        *self == Pwmmr5r::Enabled
     }
 }
 #[doc = "Field `PWMMR5R` writer - Reset PWM5"]
@@ -894,13 +894,13 @@ where
 {
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmmr5r::Disabled_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmmr5r::Disabled)
     }
     #[doc = "Reset on PWMMR5: the PWMTC will be reset if PWMMR5 matches it."]
     #[inline(always)]
-    pub fn reset_on_pwmmr5_the(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmmr5r::ResetOnPwmmr5The)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmmr5r::Enabled)
     }
 }
 #[doc = "Stop PWM5\n\nValue on reset: 0"]
@@ -909,7 +909,7 @@ pub enum Pwmmr5s {
     #[doc = "0: Disabled"]
     Disabled = 0,
     #[doc = "1: Stop on PWMMR5: the PWMTC and PWMPC will be stopped and PWMTCR bit 0 will be set to 0 if PWMMR5 matches the PWMTC."]
-    StopOnPwmmr5The_ = 1,
+    Enabled = 1,
 }
 impl From<Pwmmr5s> for bool {
     #[inline(always)]
@@ -925,7 +925,7 @@ impl Pwmmr5sR {
     pub const fn variant(&self) -> Pwmmr5s {
         match self.bits {
             false => Pwmmr5s::Disabled,
-            true => Pwmmr5s::StopOnPwmmr5The_,
+            true => Pwmmr5s::Enabled,
         }
     }
     #[doc = "Disabled"]
@@ -935,8 +935,8 @@ impl Pwmmr5sR {
     }
     #[doc = "Stop on PWMMR5: the PWMTC and PWMPC will be stopped and PWMTCR bit 0 will be set to 0 if PWMMR5 matches the PWMTC."]
     #[inline(always)]
-    pub fn is_stop_on_pwmmr5_the_(&self) -> bool {
-        *self == Pwmmr5s::StopOnPwmmr5The_
+    pub fn is_enabled(&self) -> bool {
+        *self == Pwmmr5s::Enabled
     }
 }
 #[doc = "Field `PWMMR5S` writer - Stop PWM5"]
@@ -952,17 +952,17 @@ where
     }
     #[doc = "Stop on PWMMR5: the PWMTC and PWMPC will be stopped and PWMTCR bit 0 will be set to 0 if PWMMR5 matches the PWMTC."]
     #[inline(always)]
-    pub fn stop_on_pwmmr5_the_(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmmr5s::StopOnPwmmr5The_)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmmr5s::Enabled)
     }
 }
 #[doc = "Interrupt PWM6\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pwmmr6i {
     #[doc = "0: Disabled."]
-    Disabled_ = 0,
+    Disabled = 0,
     #[doc = "1: Interrupt on PWMMR6: an interrupt is generated when PWMMR6 matches the value in the PWMTC."]
-    InterruptOnPwmmr6 = 1,
+    Enabled = 1,
 }
 impl From<Pwmmr6i> for bool {
     #[inline(always)]
@@ -977,19 +977,19 @@ impl Pwmmr6iR {
     #[inline(always)]
     pub const fn variant(&self) -> Pwmmr6i {
         match self.bits {
-            false => Pwmmr6i::Disabled_,
-            true => Pwmmr6i::InterruptOnPwmmr6,
+            false => Pwmmr6i::Disabled,
+            true => Pwmmr6i::Enabled,
         }
     }
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn is_disabled_(&self) -> bool {
-        *self == Pwmmr6i::Disabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Pwmmr6i::Disabled
     }
     #[doc = "Interrupt on PWMMR6: an interrupt is generated when PWMMR6 matches the value in the PWMTC."]
     #[inline(always)]
-    pub fn is_interrupt_on_pwmmr6(&self) -> bool {
-        *self == Pwmmr6i::InterruptOnPwmmr6
+    pub fn is_enabled(&self) -> bool {
+        *self == Pwmmr6i::Enabled
     }
 }
 #[doc = "Field `PWMMR6I` writer - Interrupt PWM6"]
@@ -1000,22 +1000,22 @@ where
 {
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmmr6i::Disabled_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmmr6i::Disabled)
     }
     #[doc = "Interrupt on PWMMR6: an interrupt is generated when PWMMR6 matches the value in the PWMTC."]
     #[inline(always)]
-    pub fn interrupt_on_pwmmr6(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmmr6i::InterruptOnPwmmr6)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmmr6i::Enabled)
     }
 }
 #[doc = "Reset PWM6\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pwmmr6r {
     #[doc = "0: Disabled."]
-    Disabled_ = 0,
+    Disabled = 0,
     #[doc = "1: Reset on PWMMR6: the PWMTC will be reset if PWMMR6 matches it."]
-    ResetOnPwmmr6The = 1,
+    Enabled = 1,
 }
 impl From<Pwmmr6r> for bool {
     #[inline(always)]
@@ -1030,19 +1030,19 @@ impl Pwmmr6rR {
     #[inline(always)]
     pub const fn variant(&self) -> Pwmmr6r {
         match self.bits {
-            false => Pwmmr6r::Disabled_,
-            true => Pwmmr6r::ResetOnPwmmr6The,
+            false => Pwmmr6r::Disabled,
+            true => Pwmmr6r::Enabled,
         }
     }
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn is_disabled_(&self) -> bool {
-        *self == Pwmmr6r::Disabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Pwmmr6r::Disabled
     }
     #[doc = "Reset on PWMMR6: the PWMTC will be reset if PWMMR6 matches it."]
     #[inline(always)]
-    pub fn is_reset_on_pwmmr6_the(&self) -> bool {
-        *self == Pwmmr6r::ResetOnPwmmr6The
+    pub fn is_enabled(&self) -> bool {
+        *self == Pwmmr6r::Enabled
     }
 }
 #[doc = "Field `PWMMR6R` writer - Reset PWM6"]
@@ -1053,13 +1053,13 @@ where
 {
     #[doc = "Disabled."]
     #[inline(always)]
-    pub fn disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmmr6r::Disabled_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmmr6r::Disabled)
     }
     #[doc = "Reset on PWMMR6: the PWMTC will be reset if PWMMR6 matches it."]
     #[inline(always)]
-    pub fn reset_on_pwmmr6_the(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmmr6r::ResetOnPwmmr6The)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmmr6r::Enabled)
     }
 }
 #[doc = "Stop PWM6\n\nValue on reset: 0"]
@@ -1068,7 +1068,7 @@ pub enum Pwmmr6s {
     #[doc = "0: Disabled"]
     Disabled = 0,
     #[doc = "1: Stop on PWMMR6: the PWMTC and PWMPC will be stopped and PWMTCR bit 0 will be set to 0 if PWMMR6 matches the PWMTC."]
-    StopOnPwmmr6The_ = 1,
+    Enabled = 1,
 }
 impl From<Pwmmr6s> for bool {
     #[inline(always)]
@@ -1084,7 +1084,7 @@ impl Pwmmr6sR {
     pub const fn variant(&self) -> Pwmmr6s {
         match self.bits {
             false => Pwmmr6s::Disabled,
-            true => Pwmmr6s::StopOnPwmmr6The_,
+            true => Pwmmr6s::Enabled,
         }
     }
     #[doc = "Disabled"]
@@ -1094,8 +1094,8 @@ impl Pwmmr6sR {
     }
     #[doc = "Stop on PWMMR6: the PWMTC and PWMPC will be stopped and PWMTCR bit 0 will be set to 0 if PWMMR6 matches the PWMTC."]
     #[inline(always)]
-    pub fn is_stop_on_pwmmr6_the_(&self) -> bool {
-        *self == Pwmmr6s::StopOnPwmmr6The_
+    pub fn is_enabled(&self) -> bool {
+        *self == Pwmmr6s::Enabled
     }
 }
 #[doc = "Field `PWMMR6S` writer - Stop PWM6"]
@@ -1111,8 +1111,8 @@ where
     }
     #[doc = "Stop on PWMMR6: the PWMTC and PWMPC will be stopped and PWMTCR bit 0 will be set to 0 if PWMMR6 matches the PWMTC."]
     #[inline(always)]
-    pub fn stop_on_pwmmr6_the_(self) -> &'a mut crate::W<REG> {
-        self.variant(Pwmmr6s::StopOnPwmmr6The_)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Pwmmr6s::Enabled)
     }
 }
 impl R {

@@ -4,9 +4,9 @@ pub type R = crate::R<ConSpec>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Run0 {
     #[doc = "0: Stop."]
-    Stop_ = 0,
+    Stop = 0,
     #[doc = "1: Run."]
-    Run_ = 1,
+    Start = 1,
 }
 impl From<Run0> for bool {
     #[inline(always)]
@@ -21,28 +21,28 @@ impl Run0R {
     #[inline(always)]
     pub const fn variant(&self) -> Run0 {
         match self.bits {
-            false => Run0::Stop_,
-            true => Run0::Run_,
+            false => Run0::Stop,
+            true => Run0::Start,
         }
     }
     #[doc = "Stop."]
     #[inline(always)]
-    pub fn is_stop_(&self) -> bool {
-        *self == Run0::Stop_
+    pub fn is_stop(&self) -> bool {
+        *self == Run0::Stop
     }
     #[doc = "Run."]
     #[inline(always)]
-    pub fn is_run_(&self) -> bool {
-        *self == Run0::Run_
+    pub fn is_start(&self) -> bool {
+        *self == Run0::Start
     }
 }
 #[doc = "Edge/center aligned operation for channel 0.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Center0 {
     #[doc = "0: Edge-aligned."]
-    EdgeAligned_ = 0,
+    Edge = 0,
     #[doc = "1: Center-aligned."]
-    CenterAligned_ = 1,
+    Center = 1,
 }
 impl From<Center0> for bool {
     #[inline(always)]
@@ -57,28 +57,28 @@ impl Center0R {
     #[inline(always)]
     pub const fn variant(&self) -> Center0 {
         match self.bits {
-            false => Center0::EdgeAligned_,
-            true => Center0::CenterAligned_,
+            false => Center0::Edge,
+            true => Center0::Center,
         }
     }
     #[doc = "Edge-aligned."]
     #[inline(always)]
-    pub fn is_edge_aligned_(&self) -> bool {
-        *self == Center0::EdgeAligned_
+    pub fn is_edge(&self) -> bool {
+        *self == Center0::Edge
     }
     #[doc = "Center-aligned."]
     #[inline(always)]
-    pub fn is_center_aligned_(&self) -> bool {
-        *self == Center0::CenterAligned_
+    pub fn is_center(&self) -> bool {
+        *self == Center0::Center
     }
 }
 #[doc = "Selects polarity of the MCOA0 and MCOB0 pins.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pola0 {
     #[doc = "0: Passive state is LOW, active state is HIGH."]
-    PassiveStateIsLow = 0,
+    ActiveHigh = 0,
     #[doc = "1: Passive state is HIGH, active state is LOW."]
-    PassiveStateIsHig = 1,
+    ActiveLow = 1,
 }
 impl From<Pola0> for bool {
     #[inline(always)]
@@ -93,28 +93,28 @@ impl Pola0R {
     #[inline(always)]
     pub const fn variant(&self) -> Pola0 {
         match self.bits {
-            false => Pola0::PassiveStateIsLow,
-            true => Pola0::PassiveStateIsHig,
+            false => Pola0::ActiveHigh,
+            true => Pola0::ActiveLow,
         }
     }
     #[doc = "Passive state is LOW, active state is HIGH."]
     #[inline(always)]
-    pub fn is_passive_state_is_low(&self) -> bool {
-        *self == Pola0::PassiveStateIsLow
+    pub fn is_active_high(&self) -> bool {
+        *self == Pola0::ActiveHigh
     }
     #[doc = "Passive state is HIGH, active state is LOW."]
     #[inline(always)]
-    pub fn is_passive_state_is_hig(&self) -> bool {
-        *self == Pola0::PassiveStateIsHig
+    pub fn is_active_low(&self) -> bool {
+        *self == Pola0::ActiveLow
     }
 }
 #[doc = "Controls the dead-time feature for channel 0.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Dte0 {
     #[doc = "0: Dead-time disabled."]
-    DeadTimeDisabled_ = 0,
+    Disabled = 0,
     #[doc = "1: Dead-time enabled."]
-    DeadTimeEnabled_ = 1,
+    Enabled = 1,
 }
 impl From<Dte0> for bool {
     #[inline(always)]
@@ -129,19 +129,19 @@ impl Dte0R {
     #[inline(always)]
     pub const fn variant(&self) -> Dte0 {
         match self.bits {
-            false => Dte0::DeadTimeDisabled_,
-            true => Dte0::DeadTimeEnabled_,
+            false => Dte0::Disabled,
+            true => Dte0::Enabled,
         }
     }
     #[doc = "Dead-time disabled."]
     #[inline(always)]
-    pub fn is_dead_time_disabled_(&self) -> bool {
-        *self == Dte0::DeadTimeDisabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Dte0::Disabled
     }
     #[doc = "Dead-time enabled."]
     #[inline(always)]
-    pub fn is_dead_time_enabled_(&self) -> bool {
-        *self == Dte0::DeadTimeEnabled_
+    pub fn is_enabled(&self) -> bool {
+        *self == Dte0::Enabled
     }
 }
 #[doc = "Enable/disable updates of functional registers for channel 0 (see Section 24.8.2).\n\nValue on reset: 0"]
@@ -184,9 +184,9 @@ impl Disup0R {
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Run1 {
     #[doc = "0: Stop."]
-    Stop_ = 0,
+    Stop = 0,
     #[doc = "1: Run."]
-    Run_ = 1,
+    Start = 1,
 }
 impl From<Run1> for bool {
     #[inline(always)]
@@ -201,28 +201,28 @@ impl Run1R {
     #[inline(always)]
     pub const fn variant(&self) -> Run1 {
         match self.bits {
-            false => Run1::Stop_,
-            true => Run1::Run_,
+            false => Run1::Stop,
+            true => Run1::Start,
         }
     }
     #[doc = "Stop."]
     #[inline(always)]
-    pub fn is_stop_(&self) -> bool {
-        *self == Run1::Stop_
+    pub fn is_stop(&self) -> bool {
+        *self == Run1::Stop
     }
     #[doc = "Run."]
     #[inline(always)]
-    pub fn is_run_(&self) -> bool {
-        *self == Run1::Run_
+    pub fn is_start(&self) -> bool {
+        *self == Run1::Start
     }
 }
 #[doc = "Edge/center aligned operation for channel 1.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Center1 {
     #[doc = "0: Edge-aligned."]
-    EdgeAligned_ = 0,
+    Edge = 0,
     #[doc = "1: Center-aligned."]
-    CenterAligned_ = 1,
+    Center = 1,
 }
 impl From<Center1> for bool {
     #[inline(always)]
@@ -237,28 +237,28 @@ impl Center1R {
     #[inline(always)]
     pub const fn variant(&self) -> Center1 {
         match self.bits {
-            false => Center1::EdgeAligned_,
-            true => Center1::CenterAligned_,
+            false => Center1::Edge,
+            true => Center1::Center,
         }
     }
     #[doc = "Edge-aligned."]
     #[inline(always)]
-    pub fn is_edge_aligned_(&self) -> bool {
-        *self == Center1::EdgeAligned_
+    pub fn is_edge(&self) -> bool {
+        *self == Center1::Edge
     }
     #[doc = "Center-aligned."]
     #[inline(always)]
-    pub fn is_center_aligned_(&self) -> bool {
-        *self == Center1::CenterAligned_
+    pub fn is_center(&self) -> bool {
+        *self == Center1::Center
     }
 }
 #[doc = "Selects polarity of the MCOA1 and MCOB1 pins.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pola1 {
     #[doc = "0: Passive state is LOW, active state is HIGH."]
-    PassiveStateIsLow = 0,
+    ActiveHigh = 0,
     #[doc = "1: Passive state is HIGH, active state is LOW."]
-    PassiveStateIsHig = 1,
+    ActiveLow = 1,
 }
 impl From<Pola1> for bool {
     #[inline(always)]
@@ -273,28 +273,28 @@ impl Pola1R {
     #[inline(always)]
     pub const fn variant(&self) -> Pola1 {
         match self.bits {
-            false => Pola1::PassiveStateIsLow,
-            true => Pola1::PassiveStateIsHig,
+            false => Pola1::ActiveHigh,
+            true => Pola1::ActiveLow,
         }
     }
     #[doc = "Passive state is LOW, active state is HIGH."]
     #[inline(always)]
-    pub fn is_passive_state_is_low(&self) -> bool {
-        *self == Pola1::PassiveStateIsLow
+    pub fn is_active_high(&self) -> bool {
+        *self == Pola1::ActiveHigh
     }
     #[doc = "Passive state is HIGH, active state is LOW."]
     #[inline(always)]
-    pub fn is_passive_state_is_hig(&self) -> bool {
-        *self == Pola1::PassiveStateIsHig
+    pub fn is_active_low(&self) -> bool {
+        *self == Pola1::ActiveLow
     }
 }
 #[doc = "Controls the dead-time feature for channel 1.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Dte1 {
     #[doc = "0: Dead-time disabled."]
-    DeadTimeDisabled_ = 0,
+    Disabled = 0,
     #[doc = "1: Dead-time enabled."]
-    DeadTimeEnabled_ = 1,
+    Enabled = 1,
 }
 impl From<Dte1> for bool {
     #[inline(always)]
@@ -309,19 +309,19 @@ impl Dte1R {
     #[inline(always)]
     pub const fn variant(&self) -> Dte1 {
         match self.bits {
-            false => Dte1::DeadTimeDisabled_,
-            true => Dte1::DeadTimeEnabled_,
+            false => Dte1::Disabled,
+            true => Dte1::Enabled,
         }
     }
     #[doc = "Dead-time disabled."]
     #[inline(always)]
-    pub fn is_dead_time_disabled_(&self) -> bool {
-        *self == Dte1::DeadTimeDisabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Dte1::Disabled
     }
     #[doc = "Dead-time enabled."]
     #[inline(always)]
-    pub fn is_dead_time_enabled_(&self) -> bool {
-        *self == Dte1::DeadTimeEnabled_
+    pub fn is_enabled(&self) -> bool {
+        *self == Dte1::Enabled
     }
 }
 #[doc = "Enable/disable updates of functional registers for channel 1 (see Section 24.8.2).\n\nValue on reset: 0"]
@@ -364,9 +364,9 @@ impl Disup1R {
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Run2 {
     #[doc = "0: Stop."]
-    Stop_ = 0,
+    Stop = 0,
     #[doc = "1: Run."]
-    Run_ = 1,
+    Start = 1,
 }
 impl From<Run2> for bool {
     #[inline(always)]
@@ -381,28 +381,28 @@ impl Run2R {
     #[inline(always)]
     pub const fn variant(&self) -> Run2 {
         match self.bits {
-            false => Run2::Stop_,
-            true => Run2::Run_,
+            false => Run2::Stop,
+            true => Run2::Start,
         }
     }
     #[doc = "Stop."]
     #[inline(always)]
-    pub fn is_stop_(&self) -> bool {
-        *self == Run2::Stop_
+    pub fn is_stop(&self) -> bool {
+        *self == Run2::Stop
     }
     #[doc = "Run."]
     #[inline(always)]
-    pub fn is_run_(&self) -> bool {
-        *self == Run2::Run_
+    pub fn is_start(&self) -> bool {
+        *self == Run2::Start
     }
 }
 #[doc = "Edge/center aligned operation for channel 2.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Center2 {
     #[doc = "0: Edge-aligned."]
-    EdgeAligned_ = 0,
+    Edge = 0,
     #[doc = "1: Center-aligned."]
-    CenterAligned_ = 1,
+    Center = 1,
 }
 impl From<Center2> for bool {
     #[inline(always)]
@@ -417,28 +417,28 @@ impl Center2R {
     #[inline(always)]
     pub const fn variant(&self) -> Center2 {
         match self.bits {
-            false => Center2::EdgeAligned_,
-            true => Center2::CenterAligned_,
+            false => Center2::Edge,
+            true => Center2::Center,
         }
     }
     #[doc = "Edge-aligned."]
     #[inline(always)]
-    pub fn is_edge_aligned_(&self) -> bool {
-        *self == Center2::EdgeAligned_
+    pub fn is_edge(&self) -> bool {
+        *self == Center2::Edge
     }
     #[doc = "Center-aligned."]
     #[inline(always)]
-    pub fn is_center_aligned_(&self) -> bool {
-        *self == Center2::CenterAligned_
+    pub fn is_center(&self) -> bool {
+        *self == Center2::Center
     }
 }
 #[doc = "Selects polarity of the MCOA2 and MCOB2 pins.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pola2 {
     #[doc = "0: Passive state is LOW, active state is HIGH."]
-    PassiveStateIsLow = 0,
+    ActiveHigh = 0,
     #[doc = "1: Passive state is HIGH, active state is LOW."]
-    PassiveStateIsHig = 1,
+    ActiveLow = 1,
 }
 impl From<Pola2> for bool {
     #[inline(always)]
@@ -453,28 +453,28 @@ impl Pola2R {
     #[inline(always)]
     pub const fn variant(&self) -> Pola2 {
         match self.bits {
-            false => Pola2::PassiveStateIsLow,
-            true => Pola2::PassiveStateIsHig,
+            false => Pola2::ActiveHigh,
+            true => Pola2::ActiveLow,
         }
     }
     #[doc = "Passive state is LOW, active state is HIGH."]
     #[inline(always)]
-    pub fn is_passive_state_is_low(&self) -> bool {
-        *self == Pola2::PassiveStateIsLow
+    pub fn is_active_high(&self) -> bool {
+        *self == Pola2::ActiveHigh
     }
     #[doc = "Passive state is HIGH, active state is LOW."]
     #[inline(always)]
-    pub fn is_passive_state_is_hig(&self) -> bool {
-        *self == Pola2::PassiveStateIsHig
+    pub fn is_active_low(&self) -> bool {
+        *self == Pola2::ActiveLow
     }
 }
 #[doc = "Controls the dead-time feature for channel 1.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Dte2 {
     #[doc = "0: Dead-time disabled."]
-    DeadTimeDisabled_ = 0,
+    Disabled = 0,
     #[doc = "1: Dead-time enabled."]
-    DeadTimeEnabled_ = 1,
+    Enabled = 1,
 }
 impl From<Dte2> for bool {
     #[inline(always)]
@@ -489,19 +489,19 @@ impl Dte2R {
     #[inline(always)]
     pub const fn variant(&self) -> Dte2 {
         match self.bits {
-            false => Dte2::DeadTimeDisabled_,
-            true => Dte2::DeadTimeEnabled_,
+            false => Dte2::Disabled,
+            true => Dte2::Enabled,
         }
     }
     #[doc = "Dead-time disabled."]
     #[inline(always)]
-    pub fn is_dead_time_disabled_(&self) -> bool {
-        *self == Dte2::DeadTimeDisabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Dte2::Disabled
     }
     #[doc = "Dead-time enabled."]
     #[inline(always)]
-    pub fn is_dead_time_enabled_(&self) -> bool {
-        *self == Dte2::DeadTimeEnabled_
+    pub fn is_enabled(&self) -> bool {
+        *self == Dte2::Enabled
     }
 }
 #[doc = "Enable/disable updates of functional registers for channel 2 (see Section 24.8.2).\n\nValue on reset: 0"]
@@ -580,9 +580,9 @@ impl InvbdcR {
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Acmode {
     #[doc = "0: 3-phase AC-mode off: Each PWM channel uses its own timer-counter and period register."]
-    _3PhaseAcModeOff = 0,
+    Disabled = 0,
     #[doc = "1: 3-phase AC-mode on: All PWM channels use the timer-counter and period register of channel 0."]
-    _3PhaseAcModeOn_ = 1,
+    Enabled = 1,
 }
 impl From<Acmode> for bool {
     #[inline(always)]
@@ -597,28 +597,28 @@ impl AcmodeR {
     #[inline(always)]
     pub const fn variant(&self) -> Acmode {
         match self.bits {
-            false => Acmode::_3PhaseAcModeOff,
-            true => Acmode::_3PhaseAcModeOn_,
+            false => Acmode::Disabled,
+            true => Acmode::Enabled,
         }
     }
     #[doc = "3-phase AC-mode off: Each PWM channel uses its own timer-counter and period register."]
     #[inline(always)]
-    pub fn is_3_phase_ac_mode_off(&self) -> bool {
-        *self == Acmode::_3PhaseAcModeOff
+    pub fn is_disabled(&self) -> bool {
+        *self == Acmode::Disabled
     }
     #[doc = "3-phase AC-mode on: All PWM channels use the timer-counter and period register of channel 0."]
     #[inline(always)]
-    pub fn is_3_phase_ac_mode_on_(&self) -> bool {
-        *self == Acmode::_3PhaseAcModeOn_
+    pub fn is_enabled(&self) -> bool {
+        *self == Acmode::Enabled
     }
 }
 #[doc = "3-phase DC mode select (see Section 24.8.6).\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Dcmode {
     #[doc = "0: 3-phase DC mode off: PWM channels are independent (unless bit ACMODE = 1)"]
-    _3PhaseDcModeOff = 0,
+    Disabled = 0,
     #[doc = "1: 3-phase DC mode on: The internal MCOA0 output is routed through the CP register (i.e. a mask) register to all six PWM outputs."]
-    _3PhaseDcModeOn_ = 1,
+    Enabled = 1,
 }
 impl From<Dcmode> for bool {
     #[inline(always)]
@@ -633,19 +633,19 @@ impl DcmodeR {
     #[inline(always)]
     pub const fn variant(&self) -> Dcmode {
         match self.bits {
-            false => Dcmode::_3PhaseDcModeOff,
-            true => Dcmode::_3PhaseDcModeOn_,
+            false => Dcmode::Disabled,
+            true => Dcmode::Enabled,
         }
     }
     #[doc = "3-phase DC mode off: PWM channels are independent (unless bit ACMODE = 1)"]
     #[inline(always)]
-    pub fn is_3_phase_dc_mode_off(&self) -> bool {
-        *self == Dcmode::_3PhaseDcModeOff
+    pub fn is_disabled(&self) -> bool {
+        *self == Dcmode::Disabled
     }
     #[doc = "3-phase DC mode on: The internal MCOA0 output is routed through the CP register (i.e. a mask) register to all six PWM outputs."]
     #[inline(always)]
-    pub fn is_3_phase_dc_mode_on_(&self) -> bool {
-        *self == Dcmode::_3PhaseDcModeOn_
+    pub fn is_enabled(&self) -> bool {
+        *self == Dcmode::Enabled
     }
 }
 impl R {

@@ -40,9 +40,9 @@ impl TdiR {
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Afi {
     #[doc = "0: No arbitration failure on last transmission."]
-    NoArbitrationFailu = 0,
+    NoArbFailure = 0,
     #[doc = "1: Arbitration failure occurred on last transmission."]
-    ArbitrationFailure_ = 1,
+    ArbFailure = 1,
 }
 impl From<Afi> for bool {
     #[inline(always)]
@@ -57,28 +57,28 @@ impl AfiR {
     #[inline(always)]
     pub const fn variant(&self) -> Afi {
         match self.bits {
-            false => Afi::NoArbitrationFailu,
-            true => Afi::ArbitrationFailure_,
+            false => Afi::NoArbFailure,
+            true => Afi::ArbFailure,
         }
     }
     #[doc = "No arbitration failure on last transmission."]
     #[inline(always)]
-    pub fn is_no_arbitration_failu(&self) -> bool {
-        *self == Afi::NoArbitrationFailu
+    pub fn is_no_arb_failure(&self) -> bool {
+        *self == Afi::NoArbFailure
     }
     #[doc = "Arbitration failure occurred on last transmission."]
     #[inline(always)]
-    pub fn is_arbitration_failure_(&self) -> bool {
-        *self == Afi::ArbitrationFailure_
+    pub fn is_arb_failure(&self) -> bool {
+        *self == Afi::ArbFailure
     }
 }
 #[doc = "No Acknowledge Interrupt. After every byte of data is sent, the transmitter expects an acknowledge from the receiver. This bit is set if the acknowledge is not received. It is cleared when a byte is written to the master TX FIFO.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Nai {
     #[doc = "0: Last transmission received an acknowledge."]
-    AcknowledgeRcvd = 0,
+    AckRcvd = 0,
     #[doc = "1: Last transmission did not receive an acknowledge."]
-    NoAcknowledgeRcvd = 1,
+    NoAckRcvd = 1,
 }
 impl From<Nai> for bool {
     #[inline(always)]
@@ -93,19 +93,19 @@ impl NaiR {
     #[inline(always)]
     pub const fn variant(&self) -> Nai {
         match self.bits {
-            false => Nai::AcknowledgeRcvd,
-            true => Nai::NoAcknowledgeRcvd,
+            false => Nai::AckRcvd,
+            true => Nai::NoAckRcvd,
         }
     }
     #[doc = "Last transmission received an acknowledge."]
     #[inline(always)]
-    pub fn is_acknowledge_rcvd(&self) -> bool {
-        *self == Nai::AcknowledgeRcvd
+    pub fn is_ack_rcvd(&self) -> bool {
+        *self == Nai::AckRcvd
     }
     #[doc = "Last transmission did not receive an acknowledge."]
     #[inline(always)]
-    pub fn is_no_acknowledge_rcvd(&self) -> bool {
-        *self == Nai::NoAcknowledgeRcvd
+    pub fn is_no_ack_rcvd(&self) -> bool {
+        *self == Nai::NoAckRcvd
     }
 }
 #[doc = "Master Data Request Interrupt. Once a transmission is started, the transmitter must have data to transmit as long as it isn't followed by a stop condition or it will hold SCL low until more data is available. The Master Data Request bit is set when the master transmitter is data-starved. If the master TX FIFO is empty and the last byte did not have a STOP condition flag, then SCL is held low until the CPU writes another byte to transmit. This bit is cleared when a byte is written to the master TX FIFO.\n\nValue on reset: 0"]
@@ -190,9 +190,9 @@ pub type SdaR = crate::BitReader;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Rff {
     #[doc = "0: RX FIFO is not full"]
-    RxFifoIsNotFull = 0,
+    NotFull = 0,
     #[doc = "1: RX FIFO is full"]
-    RxFifoIsFull = 1,
+    Full = 1,
 }
 impl From<Rff> for bool {
     #[inline(always)]
@@ -207,26 +207,26 @@ impl RffR {
     #[inline(always)]
     pub const fn variant(&self) -> Rff {
         match self.bits {
-            false => Rff::RxFifoIsNotFull,
-            true => Rff::RxFifoIsFull,
+            false => Rff::NotFull,
+            true => Rff::Full,
         }
     }
     #[doc = "RX FIFO is not full"]
     #[inline(always)]
-    pub fn is_rx_fifo_is_not_full(&self) -> bool {
-        *self == Rff::RxFifoIsNotFull
+    pub fn is_not_full(&self) -> bool {
+        *self == Rff::NotFull
     }
     #[doc = "RX FIFO is full"]
     #[inline(always)]
-    pub fn is_rx_fifo_is_full(&self) -> bool {
-        *self == Rff::RxFifoIsFull
+    pub fn is_full(&self) -> bool {
+        *self == Rff::Full
     }
 }
 #[doc = "Receive FIFO Empty. RFE is set when the RX FIFO is empty and is cleared when the RX FIFO contains valid data.\n\nValue on reset: 1"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Rfe {
     #[doc = "0: RX FIFO contains data."]
-    Data = 0,
+    ValidData = 0,
     #[doc = "1: RX FIFO is empty"]
     Empty = 1,
 }
@@ -243,14 +243,14 @@ impl RfeR {
     #[inline(always)]
     pub const fn variant(&self) -> Rfe {
         match self.bits {
-            false => Rfe::Data,
+            false => Rfe::ValidData,
             true => Rfe::Empty,
         }
     }
     #[doc = "RX FIFO contains data."]
     #[inline(always)]
-    pub fn is_data(&self) -> bool {
-        *self == Rfe::Data
+    pub fn is_valid_data(&self) -> bool {
+        *self == Rfe::ValidData
     }
     #[doc = "RX FIFO is empty"]
     #[inline(always)]
@@ -262,9 +262,9 @@ impl RfeR {
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Tff {
     #[doc = "0: TX FIFO is not full."]
-    TxFifoIsNotFull_ = 0,
+    NotFull = 0,
     #[doc = "1: TX FIFO is full"]
-    TxFifoIsFull = 1,
+    Full = 1,
 }
 impl From<Tff> for bool {
     #[inline(always)]
@@ -279,19 +279,19 @@ impl TffR {
     #[inline(always)]
     pub const fn variant(&self) -> Tff {
         match self.bits {
-            false => Tff::TxFifoIsNotFull_,
-            true => Tff::TxFifoIsFull,
+            false => Tff::NotFull,
+            true => Tff::Full,
         }
     }
     #[doc = "TX FIFO is not full."]
     #[inline(always)]
-    pub fn is_tx_fifo_is_not_full_(&self) -> bool {
-        *self == Tff::TxFifoIsNotFull_
+    pub fn is_not_full(&self) -> bool {
+        *self == Tff::NotFull
     }
     #[doc = "TX FIFO is full"]
     #[inline(always)]
-    pub fn is_tx_fifo_is_full(&self) -> bool {
-        *self == Tff::TxFifoIsFull
+    pub fn is_full(&self) -> bool {
+        *self == Tff::Full
     }
 }
 #[doc = "Transmit FIFO Empty. TFE is set when the TX FIFO is empty and is cleared when the TX FIFO contains valid data.\n\nValue on reset: 1"]

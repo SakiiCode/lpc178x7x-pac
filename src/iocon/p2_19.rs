@@ -67,13 +67,13 @@ where
 #[repr(u8)]
 pub enum Mode {
     #[doc = "0: Inactive (no pull-down/pull-up resistor enabled)."]
-    InactiveNoPullDo = 0,
+    Inactive = 0,
     #[doc = "1: Pull-down resistor enabled."]
-    PullDownResistorE = 1,
+    Pulldown = 1,
     #[doc = "2: Pull-up resistor enabled."]
-    PullUpResistorEna = 2,
+    Pullup = 2,
     #[doc = "3: Repeater mode."]
-    RepeaterMode_ = 3,
+    Repeater = 3,
 }
 impl From<Mode> for u8 {
     #[inline(always)]
@@ -92,32 +92,32 @@ impl ModeR {
     #[inline(always)]
     pub const fn variant(&self) -> Mode {
         match self.bits {
-            0 => Mode::InactiveNoPullDo,
-            1 => Mode::PullDownResistorE,
-            2 => Mode::PullUpResistorEna,
-            3 => Mode::RepeaterMode_,
+            0 => Mode::Inactive,
+            1 => Mode::Pulldown,
+            2 => Mode::Pullup,
+            3 => Mode::Repeater,
             _ => unreachable!(),
         }
     }
     #[doc = "Inactive (no pull-down/pull-up resistor enabled)."]
     #[inline(always)]
-    pub fn is_inactive_no_pull_do(&self) -> bool {
-        *self == Mode::InactiveNoPullDo
+    pub fn is_inactive(&self) -> bool {
+        *self == Mode::Inactive
     }
     #[doc = "Pull-down resistor enabled."]
     #[inline(always)]
-    pub fn is_pull_down_resistor_e(&self) -> bool {
-        *self == Mode::PullDownResistorE
+    pub fn is_pulldown(&self) -> bool {
+        *self == Mode::Pulldown
     }
     #[doc = "Pull-up resistor enabled."]
     #[inline(always)]
-    pub fn is_pull_up_resistor_ena(&self) -> bool {
-        *self == Mode::PullUpResistorEna
+    pub fn is_pullup(&self) -> bool {
+        *self == Mode::Pullup
     }
     #[doc = "Repeater mode."]
     #[inline(always)]
-    pub fn is_repeater_mode_(&self) -> bool {
-        *self == Mode::RepeaterMode_
+    pub fn is_repeater(&self) -> bool {
+        *self == Mode::Repeater
     }
 }
 #[doc = "Field `MODE` writer - Selects function mode (on-chip pull-up/pull-down resistor control)."]
@@ -129,32 +129,32 @@ where
 {
     #[doc = "Inactive (no pull-down/pull-up resistor enabled)."]
     #[inline(always)]
-    pub fn inactive_no_pull_do(self) -> &'a mut crate::W<REG> {
-        self.variant(Mode::InactiveNoPullDo)
+    pub fn inactive(self) -> &'a mut crate::W<REG> {
+        self.variant(Mode::Inactive)
     }
     #[doc = "Pull-down resistor enabled."]
     #[inline(always)]
-    pub fn pull_down_resistor_e(self) -> &'a mut crate::W<REG> {
-        self.variant(Mode::PullDownResistorE)
+    pub fn pulldown(self) -> &'a mut crate::W<REG> {
+        self.variant(Mode::Pulldown)
     }
     #[doc = "Pull-up resistor enabled."]
     #[inline(always)]
-    pub fn pull_up_resistor_ena(self) -> &'a mut crate::W<REG> {
-        self.variant(Mode::PullUpResistorEna)
+    pub fn pullup(self) -> &'a mut crate::W<REG> {
+        self.variant(Mode::Pullup)
     }
     #[doc = "Repeater mode."]
     #[inline(always)]
-    pub fn repeater_mode_(self) -> &'a mut crate::W<REG> {
-        self.variant(Mode::RepeaterMode_)
+    pub fn repeater(self) -> &'a mut crate::W<REG> {
+        self.variant(Mode::Repeater)
     }
 }
 #[doc = "Hysteresis.\n\nValue on reset: 1"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Hys {
     #[doc = "0: Disable."]
-    Disable_ = 0,
+    Disabled = 0,
     #[doc = "1: Enable."]
-    Enable_ = 1,
+    Enabled = 1,
 }
 impl From<Hys> for bool {
     #[inline(always)]
@@ -169,19 +169,19 @@ impl HysR {
     #[inline(always)]
     pub const fn variant(&self) -> Hys {
         match self.bits {
-            false => Hys::Disable_,
-            true => Hys::Enable_,
+            false => Hys::Disabled,
+            true => Hys::Enabled,
         }
     }
     #[doc = "Disable."]
     #[inline(always)]
-    pub fn is_disable_(&self) -> bool {
-        *self == Hys::Disable_
+    pub fn is_disabled(&self) -> bool {
+        *self == Hys::Disabled
     }
     #[doc = "Enable."]
     #[inline(always)]
-    pub fn is_enable_(&self) -> bool {
-        *self == Hys::Enable_
+    pub fn is_enabled(&self) -> bool {
+        *self == Hys::Enabled
     }
 }
 #[doc = "Field `HYS` writer - Hysteresis."]
@@ -192,22 +192,22 @@ where
 {
     #[doc = "Disable."]
     #[inline(always)]
-    pub fn disable_(self) -> &'a mut crate::W<REG> {
-        self.variant(Hys::Disable_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Hys::Disabled)
     }
     #[doc = "Enable."]
     #[inline(always)]
-    pub fn enable_(self) -> &'a mut crate::W<REG> {
-        self.variant(Hys::Enable_)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Hys::Enabled)
     }
 }
 #[doc = "Invert input\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Inv {
     #[doc = "0: Input not inverted (HIGH on pin reads as 1, LOW on pin reads as 0)."]
-    InputNotInverted_ = 0,
+    ActiveHigh = 0,
     #[doc = "1: Input inverted (HIGH on pin reads as 0, LOW on pin reads as 1)."]
-    InputInvertedHigh = 1,
+    ActiveLow = 1,
 }
 impl From<Inv> for bool {
     #[inline(always)]
@@ -222,19 +222,19 @@ impl InvR {
     #[inline(always)]
     pub const fn variant(&self) -> Inv {
         match self.bits {
-            false => Inv::InputNotInverted_,
-            true => Inv::InputInvertedHigh,
+            false => Inv::ActiveHigh,
+            true => Inv::ActiveLow,
         }
     }
     #[doc = "Input not inverted (HIGH on pin reads as 1, LOW on pin reads as 0)."]
     #[inline(always)]
-    pub fn is_input_not_inverted_(&self) -> bool {
-        *self == Inv::InputNotInverted_
+    pub fn is_active_high(&self) -> bool {
+        *self == Inv::ActiveHigh
     }
     #[doc = "Input inverted (HIGH on pin reads as 0, LOW on pin reads as 1)."]
     #[inline(always)]
-    pub fn is_input_inverted_high(&self) -> bool {
-        *self == Inv::InputInvertedHigh
+    pub fn is_active_low(&self) -> bool {
+        *self == Inv::ActiveLow
     }
 }
 #[doc = "Field `INV` writer - Invert input"]
@@ -245,22 +245,22 @@ where
 {
     #[doc = "Input not inverted (HIGH on pin reads as 1, LOW on pin reads as 0)."]
     #[inline(always)]
-    pub fn input_not_inverted_(self) -> &'a mut crate::W<REG> {
-        self.variant(Inv::InputNotInverted_)
+    pub fn active_high(self) -> &'a mut crate::W<REG> {
+        self.variant(Inv::ActiveHigh)
     }
     #[doc = "Input inverted (HIGH on pin reads as 0, LOW on pin reads as 1)."]
     #[inline(always)]
-    pub fn input_inverted_high(self) -> &'a mut crate::W<REG> {
-        self.variant(Inv::InputInvertedHigh)
+    pub fn active_low(self) -> &'a mut crate::W<REG> {
+        self.variant(Inv::ActiveLow)
     }
 }
 #[doc = "Selects Analog/Digital mode.\n\nValue on reset: 1"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Admode {
     #[doc = "0: Analog input mode."]
-    AnalogInputMode_ = 0,
+    Analog = 0,
     #[doc = "1: Digital functional mode."]
-    DigitalFunctionalM = 1,
+    Digital = 1,
 }
 impl From<Admode> for bool {
     #[inline(always)]
@@ -275,19 +275,19 @@ impl AdmodeR {
     #[inline(always)]
     pub const fn variant(&self) -> Admode {
         match self.bits {
-            false => Admode::AnalogInputMode_,
-            true => Admode::DigitalFunctionalM,
+            false => Admode::Analog,
+            true => Admode::Digital,
         }
     }
     #[doc = "Analog input mode."]
     #[inline(always)]
-    pub fn is_analog_input_mode_(&self) -> bool {
-        *self == Admode::AnalogInputMode_
+    pub fn is_analog(&self) -> bool {
+        *self == Admode::Analog
     }
     #[doc = "Digital functional mode."]
     #[inline(always)]
-    pub fn is_digital_functional_m(&self) -> bool {
-        *self == Admode::DigitalFunctionalM
+    pub fn is_digital(&self) -> bool {
+        *self == Admode::Digital
     }
 }
 #[doc = "Field `ADMODE` writer - Selects Analog/Digital mode."]
@@ -298,22 +298,22 @@ where
 {
     #[doc = "Analog input mode."]
     #[inline(always)]
-    pub fn analog_input_mode_(self) -> &'a mut crate::W<REG> {
-        self.variant(Admode::AnalogInputMode_)
+    pub fn analog(self) -> &'a mut crate::W<REG> {
+        self.variant(Admode::Analog)
     }
     #[doc = "Digital functional mode."]
     #[inline(always)]
-    pub fn digital_functional_m(self) -> &'a mut crate::W<REG> {
-        self.variant(Admode::DigitalFunctionalM)
+    pub fn digital(self) -> &'a mut crate::W<REG> {
+        self.variant(Admode::Digital)
     }
 }
 #[doc = "Selects 10 ns input glitch filter.\n\nValue on reset: 1"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Filtr {
     #[doc = "0: Filter disabled."]
-    FilterDisabled_ = 0,
+    Disabled = 0,
     #[doc = "1: Filter enabled."]
-    FilterEnabled_ = 1,
+    Enabled = 1,
 }
 impl From<Filtr> for bool {
     #[inline(always)]
@@ -328,19 +328,19 @@ impl FiltrR {
     #[inline(always)]
     pub const fn variant(&self) -> Filtr {
         match self.bits {
-            false => Filtr::FilterDisabled_,
-            true => Filtr::FilterEnabled_,
+            false => Filtr::Disabled,
+            true => Filtr::Enabled,
         }
     }
     #[doc = "Filter disabled."]
     #[inline(always)]
-    pub fn is_filter_disabled_(&self) -> bool {
-        *self == Filtr::FilterDisabled_
+    pub fn is_disabled(&self) -> bool {
+        *self == Filtr::Disabled
     }
     #[doc = "Filter enabled."]
     #[inline(always)]
-    pub fn is_filter_enabled_(&self) -> bool {
-        *self == Filtr::FilterEnabled_
+    pub fn is_enabled(&self) -> bool {
+        *self == Filtr::Enabled
     }
 }
 #[doc = "Field `FILTR` writer - Selects 10 ns input glitch filter."]
@@ -351,22 +351,22 @@ where
 {
     #[doc = "Filter disabled."]
     #[inline(always)]
-    pub fn filter_disabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Filtr::FilterDisabled_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Filtr::Disabled)
     }
     #[doc = "Filter enabled."]
     #[inline(always)]
-    pub fn filter_enabled_(self) -> &'a mut crate::W<REG> {
-        self.variant(Filtr::FilterEnabled_)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Filtr::Enabled)
     }
 }
 #[doc = "Open-drain mode.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Od {
     #[doc = "0: Disable."]
-    Disable_ = 0,
+    Disabled = 0,
     #[doc = "1: Open-drain mode enabled. This is not a true open-drain mode."]
-    OpenDrainModeEnab = 1,
+    Enabled = 1,
 }
 impl From<Od> for bool {
     #[inline(always)]
@@ -381,19 +381,19 @@ impl OdR {
     #[inline(always)]
     pub const fn variant(&self) -> Od {
         match self.bits {
-            false => Od::Disable_,
-            true => Od::OpenDrainModeEnab,
+            false => Od::Disabled,
+            true => Od::Enabled,
         }
     }
     #[doc = "Disable."]
     #[inline(always)]
-    pub fn is_disable_(&self) -> bool {
-        *self == Od::Disable_
+    pub fn is_disabled(&self) -> bool {
+        *self == Od::Disabled
     }
     #[doc = "Open-drain mode enabled. This is not a true open-drain mode."]
     #[inline(always)]
-    pub fn is_open_drain_mode_enab(&self) -> bool {
-        *self == Od::OpenDrainModeEnab
+    pub fn is_enabled(&self) -> bool {
+        *self == Od::Enabled
     }
 }
 #[doc = "Field `OD` writer - Open-drain mode."]
@@ -404,13 +404,13 @@ where
 {
     #[doc = "Disable."]
     #[inline(always)]
-    pub fn disable_(self) -> &'a mut crate::W<REG> {
-        self.variant(Od::Disable_)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Od::Disabled)
     }
     #[doc = "Open-drain mode enabled. This is not a true open-drain mode."]
     #[inline(always)]
-    pub fn open_drain_mode_enab(self) -> &'a mut crate::W<REG> {
-        self.variant(Od::OpenDrainModeEnab)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Od::Enabled)
     }
 }
 impl R {

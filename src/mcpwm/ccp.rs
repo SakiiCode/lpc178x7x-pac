@@ -6,9 +6,9 @@ pub type W = crate::W<CcpSpec>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Ccpa0 {
     #[doc = "0: MCOA0 passive."]
-    Mcoa0Passive_ = 0,
+    Passive = 0,
     #[doc = "1: internal MCOA0."]
-    InternalMcoa0_ = 1,
+    Follow = 1,
 }
 impl From<Ccpa0> for bool {
     #[inline(always)]
@@ -23,19 +23,19 @@ impl Ccpa0R {
     #[inline(always)]
     pub const fn variant(&self) -> Ccpa0 {
         match self.bits {
-            false => Ccpa0::Mcoa0Passive_,
-            true => Ccpa0::InternalMcoa0_,
+            false => Ccpa0::Passive,
+            true => Ccpa0::Follow,
         }
     }
     #[doc = "MCOA0 passive."]
     #[inline(always)]
-    pub fn is_mcoa0_passive_(&self) -> bool {
-        *self == Ccpa0::Mcoa0Passive_
+    pub fn is_passive(&self) -> bool {
+        *self == Ccpa0::Passive
     }
     #[doc = "internal MCOA0."]
     #[inline(always)]
-    pub fn is_internal_mcoa0_(&self) -> bool {
-        *self == Ccpa0::InternalMcoa0_
+    pub fn is_follow(&self) -> bool {
+        *self == Ccpa0::Follow
     }
 }
 #[doc = "Field `CCPA0` writer - Communication pattern output A, channel 0."]
@@ -46,22 +46,22 @@ where
 {
     #[doc = "MCOA0 passive."]
     #[inline(always)]
-    pub fn mcoa0_passive_(self) -> &'a mut crate::W<REG> {
-        self.variant(Ccpa0::Mcoa0Passive_)
+    pub fn passive(self) -> &'a mut crate::W<REG> {
+        self.variant(Ccpa0::Passive)
     }
     #[doc = "internal MCOA0."]
     #[inline(always)]
-    pub fn internal_mcoa0_(self) -> &'a mut crate::W<REG> {
-        self.variant(Ccpa0::InternalMcoa0_)
+    pub fn follow(self) -> &'a mut crate::W<REG> {
+        self.variant(Ccpa0::Follow)
     }
 }
 #[doc = "Communication pattern output B, channel 0.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Ccpb0 {
     #[doc = "0: MCOB0 passive."]
-    Mcob0Passive_ = 0,
+    Passive = 0,
     #[doc = "1: MCOB0 tracks internal MCOA0."]
-    Mcob0TracksInterna = 1,
+    Follow = 1,
 }
 impl From<Ccpb0> for bool {
     #[inline(always)]
@@ -76,19 +76,19 @@ impl Ccpb0R {
     #[inline(always)]
     pub const fn variant(&self) -> Ccpb0 {
         match self.bits {
-            false => Ccpb0::Mcob0Passive_,
-            true => Ccpb0::Mcob0TracksInterna,
+            false => Ccpb0::Passive,
+            true => Ccpb0::Follow,
         }
     }
     #[doc = "MCOB0 passive."]
     #[inline(always)]
-    pub fn is_mcob0_passive_(&self) -> bool {
-        *self == Ccpb0::Mcob0Passive_
+    pub fn is_passive(&self) -> bool {
+        *self == Ccpb0::Passive
     }
     #[doc = "MCOB0 tracks internal MCOA0."]
     #[inline(always)]
-    pub fn is_mcob0_tracks_interna(&self) -> bool {
-        *self == Ccpb0::Mcob0TracksInterna
+    pub fn is_follow(&self) -> bool {
+        *self == Ccpb0::Follow
     }
 }
 #[doc = "Field `CCPB0` writer - Communication pattern output B, channel 0."]
@@ -99,22 +99,22 @@ where
 {
     #[doc = "MCOB0 passive."]
     #[inline(always)]
-    pub fn mcob0_passive_(self) -> &'a mut crate::W<REG> {
-        self.variant(Ccpb0::Mcob0Passive_)
+    pub fn passive(self) -> &'a mut crate::W<REG> {
+        self.variant(Ccpb0::Passive)
     }
     #[doc = "MCOB0 tracks internal MCOA0."]
     #[inline(always)]
-    pub fn mcob0_tracks_interna(self) -> &'a mut crate::W<REG> {
-        self.variant(Ccpb0::Mcob0TracksInterna)
+    pub fn follow(self) -> &'a mut crate::W<REG> {
+        self.variant(Ccpb0::Follow)
     }
 }
 #[doc = "Communication pattern output A, channel 1.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Ccpa1 {
     #[doc = "0: MCOA1 passive."]
-    Mcoa1Passive_ = 0,
+    Passive = 0,
     #[doc = "1: MCOA1 tracks internal MCOA0."]
-    Mcoa1TracksInterna = 1,
+    Follow = 1,
 }
 impl From<Ccpa1> for bool {
     #[inline(always)]
@@ -129,19 +129,19 @@ impl Ccpa1R {
     #[inline(always)]
     pub const fn variant(&self) -> Ccpa1 {
         match self.bits {
-            false => Ccpa1::Mcoa1Passive_,
-            true => Ccpa1::Mcoa1TracksInterna,
+            false => Ccpa1::Passive,
+            true => Ccpa1::Follow,
         }
     }
     #[doc = "MCOA1 passive."]
     #[inline(always)]
-    pub fn is_mcoa1_passive_(&self) -> bool {
-        *self == Ccpa1::Mcoa1Passive_
+    pub fn is_passive(&self) -> bool {
+        *self == Ccpa1::Passive
     }
     #[doc = "MCOA1 tracks internal MCOA0."]
     #[inline(always)]
-    pub fn is_mcoa1_tracks_interna(&self) -> bool {
-        *self == Ccpa1::Mcoa1TracksInterna
+    pub fn is_follow(&self) -> bool {
+        *self == Ccpa1::Follow
     }
 }
 #[doc = "Field `CCPA1` writer - Communication pattern output A, channel 1."]
@@ -152,22 +152,22 @@ where
 {
     #[doc = "MCOA1 passive."]
     #[inline(always)]
-    pub fn mcoa1_passive_(self) -> &'a mut crate::W<REG> {
-        self.variant(Ccpa1::Mcoa1Passive_)
+    pub fn passive(self) -> &'a mut crate::W<REG> {
+        self.variant(Ccpa1::Passive)
     }
     #[doc = "MCOA1 tracks internal MCOA0."]
     #[inline(always)]
-    pub fn mcoa1_tracks_interna(self) -> &'a mut crate::W<REG> {
-        self.variant(Ccpa1::Mcoa1TracksInterna)
+    pub fn follow(self) -> &'a mut crate::W<REG> {
+        self.variant(Ccpa1::Follow)
     }
 }
 #[doc = "Communication pattern output B, channel 1.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Ccpb1 {
     #[doc = "0: MCOB1 passive."]
-    Mcob1Passive_ = 0,
+    Passive = 0,
     #[doc = "1: MCOB1 tracks internal MCOA0."]
-    Mcob1TracksInterna = 1,
+    Follow = 1,
 }
 impl From<Ccpb1> for bool {
     #[inline(always)]
@@ -182,19 +182,19 @@ impl Ccpb1R {
     #[inline(always)]
     pub const fn variant(&self) -> Ccpb1 {
         match self.bits {
-            false => Ccpb1::Mcob1Passive_,
-            true => Ccpb1::Mcob1TracksInterna,
+            false => Ccpb1::Passive,
+            true => Ccpb1::Follow,
         }
     }
     #[doc = "MCOB1 passive."]
     #[inline(always)]
-    pub fn is_mcob1_passive_(&self) -> bool {
-        *self == Ccpb1::Mcob1Passive_
+    pub fn is_passive(&self) -> bool {
+        *self == Ccpb1::Passive
     }
     #[doc = "MCOB1 tracks internal MCOA0."]
     #[inline(always)]
-    pub fn is_mcob1_tracks_interna(&self) -> bool {
-        *self == Ccpb1::Mcob1TracksInterna
+    pub fn is_follow(&self) -> bool {
+        *self == Ccpb1::Follow
     }
 }
 #[doc = "Field `CCPB1` writer - Communication pattern output B, channel 1."]
@@ -205,22 +205,22 @@ where
 {
     #[doc = "MCOB1 passive."]
     #[inline(always)]
-    pub fn mcob1_passive_(self) -> &'a mut crate::W<REG> {
-        self.variant(Ccpb1::Mcob1Passive_)
+    pub fn passive(self) -> &'a mut crate::W<REG> {
+        self.variant(Ccpb1::Passive)
     }
     #[doc = "MCOB1 tracks internal MCOA0."]
     #[inline(always)]
-    pub fn mcob1_tracks_interna(self) -> &'a mut crate::W<REG> {
-        self.variant(Ccpb1::Mcob1TracksInterna)
+    pub fn follow(self) -> &'a mut crate::W<REG> {
+        self.variant(Ccpb1::Follow)
     }
 }
 #[doc = "Communication pattern output A, channel 2.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Ccpa2 {
     #[doc = "0: MCOA2 passive."]
-    Mcoa2Passive_ = 0,
+    Passive = 0,
     #[doc = "1: MCOA2 tracks internal MCOA0."]
-    Mcoa2TracksInterna = 1,
+    Follow = 1,
 }
 impl From<Ccpa2> for bool {
     #[inline(always)]
@@ -235,19 +235,19 @@ impl Ccpa2R {
     #[inline(always)]
     pub const fn variant(&self) -> Ccpa2 {
         match self.bits {
-            false => Ccpa2::Mcoa2Passive_,
-            true => Ccpa2::Mcoa2TracksInterna,
+            false => Ccpa2::Passive,
+            true => Ccpa2::Follow,
         }
     }
     #[doc = "MCOA2 passive."]
     #[inline(always)]
-    pub fn is_mcoa2_passive_(&self) -> bool {
-        *self == Ccpa2::Mcoa2Passive_
+    pub fn is_passive(&self) -> bool {
+        *self == Ccpa2::Passive
     }
     #[doc = "MCOA2 tracks internal MCOA0."]
     #[inline(always)]
-    pub fn is_mcoa2_tracks_interna(&self) -> bool {
-        *self == Ccpa2::Mcoa2TracksInterna
+    pub fn is_follow(&self) -> bool {
+        *self == Ccpa2::Follow
     }
 }
 #[doc = "Field `CCPA2` writer - Communication pattern output A, channel 2."]
@@ -258,22 +258,22 @@ where
 {
     #[doc = "MCOA2 passive."]
     #[inline(always)]
-    pub fn mcoa2_passive_(self) -> &'a mut crate::W<REG> {
-        self.variant(Ccpa2::Mcoa2Passive_)
+    pub fn passive(self) -> &'a mut crate::W<REG> {
+        self.variant(Ccpa2::Passive)
     }
     #[doc = "MCOA2 tracks internal MCOA0."]
     #[inline(always)]
-    pub fn mcoa2_tracks_interna(self) -> &'a mut crate::W<REG> {
-        self.variant(Ccpa2::Mcoa2TracksInterna)
+    pub fn follow(self) -> &'a mut crate::W<REG> {
+        self.variant(Ccpa2::Follow)
     }
 }
 #[doc = "Communication pattern output B, channel 2.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Ccpb2 {
     #[doc = "0: MCOB2 passive."]
-    Mcob2Passive_ = 0,
+    Passive = 0,
     #[doc = "1: MCOB2 tracks internal MCOA0."]
-    Mcob2TracksInterna = 1,
+    Follow = 1,
 }
 impl From<Ccpb2> for bool {
     #[inline(always)]
@@ -288,19 +288,19 @@ impl Ccpb2R {
     #[inline(always)]
     pub const fn variant(&self) -> Ccpb2 {
         match self.bits {
-            false => Ccpb2::Mcob2Passive_,
-            true => Ccpb2::Mcob2TracksInterna,
+            false => Ccpb2::Passive,
+            true => Ccpb2::Follow,
         }
     }
     #[doc = "MCOB2 passive."]
     #[inline(always)]
-    pub fn is_mcob2_passive_(&self) -> bool {
-        *self == Ccpb2::Mcob2Passive_
+    pub fn is_passive(&self) -> bool {
+        *self == Ccpb2::Passive
     }
     #[doc = "MCOB2 tracks internal MCOA0."]
     #[inline(always)]
-    pub fn is_mcob2_tracks_interna(&self) -> bool {
-        *self == Ccpb2::Mcob2TracksInterna
+    pub fn is_follow(&self) -> bool {
+        *self == Ccpb2::Follow
     }
 }
 #[doc = "Field `CCPB2` writer - Communication pattern output B, channel 2."]
@@ -311,13 +311,13 @@ where
 {
     #[doc = "MCOB2 passive."]
     #[inline(always)]
-    pub fn mcob2_passive_(self) -> &'a mut crate::W<REG> {
-        self.variant(Ccpb2::Mcob2Passive_)
+    pub fn passive(self) -> &'a mut crate::W<REG> {
+        self.variant(Ccpb2::Passive)
     }
     #[doc = "MCOB2 tracks internal MCOA0."]
     #[inline(always)]
-    pub fn mcob2_tracks_interna(self) -> &'a mut crate::W<REG> {
-        self.variant(Ccpb2::Mcob2TracksInterna)
+    pub fn follow(self) -> &'a mut crate::W<REG> {
+        self.variant(Ccpb2::Follow)
     }
 }
 impl R {

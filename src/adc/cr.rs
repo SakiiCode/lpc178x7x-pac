@@ -121,9 +121,9 @@ where
 #[repr(u8)]
 pub enum Start {
     #[doc = "0: No start (this value should be used when clearing PDN to 0)."]
-    NoStartThisValue = 0,
+    NoStart = 0,
     #[doc = "1: Start conversion now."]
-    StartConversionNow = 1,
+    StartNow = 1,
     #[doc = "2: Start conversion when the edge selected by bit 27 occurs on the P2\\[10\\] pin."]
     P2_10 = 2,
     #[doc = "3: Start conversion when the edge selected by bit 27 occurs on the P1\\[27\\] pin."]
@@ -154,8 +154,8 @@ impl StartR {
     #[inline(always)]
     pub const fn variant(&self) -> Start {
         match self.bits {
-            0 => Start::NoStartThisValue,
-            1 => Start::StartConversionNow,
+            0 => Start::NoStart,
+            1 => Start::StartNow,
             2 => Start::P2_10,
             3 => Start::P1_27,
             4 => Start::Mat0_1,
@@ -167,13 +167,13 @@ impl StartR {
     }
     #[doc = "No start (this value should be used when clearing PDN to 0)."]
     #[inline(always)]
-    pub fn is_no_start_this_value(&self) -> bool {
-        *self == Start::NoStartThisValue
+    pub fn is_no_start(&self) -> bool {
+        *self == Start::NoStart
     }
     #[doc = "Start conversion now."]
     #[inline(always)]
-    pub fn is_start_conversion_now(&self) -> bool {
-        *self == Start::StartConversionNow
+    pub fn is_start_now(&self) -> bool {
+        *self == Start::StartNow
     }
     #[doc = "Start conversion when the edge selected by bit 27 occurs on the P2\\[10\\] pin."]
     #[inline(always)]
@@ -215,13 +215,13 @@ where
 {
     #[doc = "No start (this value should be used when clearing PDN to 0)."]
     #[inline(always)]
-    pub fn no_start_this_value(self) -> &'a mut crate::W<REG> {
-        self.variant(Start::NoStartThisValue)
+    pub fn no_start(self) -> &'a mut crate::W<REG> {
+        self.variant(Start::NoStart)
     }
     #[doc = "Start conversion now."]
     #[inline(always)]
-    pub fn start_conversion_now(self) -> &'a mut crate::W<REG> {
-        self.variant(Start::StartConversionNow)
+    pub fn start_now(self) -> &'a mut crate::W<REG> {
+        self.variant(Start::StartNow)
     }
     #[doc = "Start conversion when the edge selected by bit 27 occurs on the P2\\[10\\] pin."]
     #[inline(always)]

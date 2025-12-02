@@ -10,9 +10,9 @@ pub type CalvalW<'a, REG> = crate::FieldWriter<'a, REG, 17, u32>;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Caldir {
     #[doc = "1: Backward calibration. When CALVAL is equal to the calibration counter, the RTC timers will stop incrementing for 1 second."]
-    BackwardCalibration = 1,
+    Backward = 1,
     #[doc = "0: Forward calibration. When CALVAL is equal to the calibration counter, the RTC timers will jump by 2 seconds."]
-    ForwardCalibration_ = 0,
+    Forward = 0,
 }
 impl From<Caldir> for bool {
     #[inline(always)]
@@ -27,19 +27,19 @@ impl CaldirR {
     #[inline(always)]
     pub const fn variant(&self) -> Caldir {
         match self.bits {
-            true => Caldir::BackwardCalibration,
-            false => Caldir::ForwardCalibration_,
+            true => Caldir::Backward,
+            false => Caldir::Forward,
         }
     }
     #[doc = "Backward calibration. When CALVAL is equal to the calibration counter, the RTC timers will stop incrementing for 1 second."]
     #[inline(always)]
-    pub fn is_backward_calibration(&self) -> bool {
-        *self == Caldir::BackwardCalibration
+    pub fn is_backward(&self) -> bool {
+        *self == Caldir::Backward
     }
     #[doc = "Forward calibration. When CALVAL is equal to the calibration counter, the RTC timers will jump by 2 seconds."]
     #[inline(always)]
-    pub fn is_forward_calibration_(&self) -> bool {
-        *self == Caldir::ForwardCalibration_
+    pub fn is_forward(&self) -> bool {
+        *self == Caldir::Forward
     }
 }
 #[doc = "Field `CALDIR` writer - Calibration direction"]
@@ -50,13 +50,13 @@ where
 {
     #[doc = "Backward calibration. When CALVAL is equal to the calibration counter, the RTC timers will stop incrementing for 1 second."]
     #[inline(always)]
-    pub fn backward_calibration(self) -> &'a mut crate::W<REG> {
-        self.variant(Caldir::BackwardCalibration)
+    pub fn backward(self) -> &'a mut crate::W<REG> {
+        self.variant(Caldir::Backward)
     }
     #[doc = "Forward calibration. When CALVAL is equal to the calibration counter, the RTC timers will jump by 2 seconds."]
     #[inline(always)]
-    pub fn forward_calibration_(self) -> &'a mut crate::W<REG> {
-        self.variant(Caldir::ForwardCalibration_)
+    pub fn forward(self) -> &'a mut crate::W<REG> {
+        self.variant(Caldir::Forward)
     }
 }
 impl R {
