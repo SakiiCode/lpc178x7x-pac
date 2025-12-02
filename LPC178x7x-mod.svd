@@ -12289,7 +12289,7 @@
 					<dimIncrement>0x20</dimIncrement>
 					<dimIndex>0-5</dimIndex>
 					<name>DIR%s</name>
-					<description>GPIO Port0 Direction control register.</description>
+					<description>GPIO PortX Direction control register.</description>
 					<addressOffset>0x000</addressOffset>
 					<access>read-write</access>
 					<resetValue>0</resetValue>
@@ -12526,7 +12526,7 @@
 					<dimIncrement>0x20</dimIncrement>
 					<dimIndex>0-5</dimIndex>
 					<name>MASK%s</name>
-					<description>Mask register for Port0.</description>
+					<description>Mask register for PortX.</description>
 					<addressOffset>0x010</addressOffset>
 					<access>read-write</access>
 					<resetValue>0</resetValue>
@@ -12891,7 +12891,7 @@
 					<dimIncrement>0x20</dimIncrement>
 					<dimIndex>0-5</dimIndex>
 					<name>PIN%s</name>
-					<description>Port0 Pin value register using FIOMASK.</description>
+					<description>PortX Pin value register using FIOMASK.</description>
 					<addressOffset>0x014</addressOffset>
 					<access>read-write</access>
 					<resetValue>0</resetValue>
@@ -13160,7 +13160,7 @@
 					<dimIncrement>0x20</dimIncrement>
 					<dimIndex>0-5</dimIndex>
 					<name>SET%s</name>
-					<description>Port0 Output Set register using FIOMASK.</description>
+					<description>PortX Output Set register using FIOMASK.</description>
 					<addressOffset>0x018</addressOffset>
 					<access>read-write</access>
 					<resetValue>0</resetValue>
@@ -13397,7 +13397,7 @@
 					<dimIncrement>0x20</dimIncrement>
 					<dimIndex>0-5</dimIndex>
 					<name>CLR%s</name>
-					<description>Port0 Output Clear register using FIOMASK.</description>
+					<description>PortX Output Clear register using FIOMASK.</description>
 					<addressOffset>0x01C</addressOffset>
 					<access>write-only</access>
 					<resetValue>0</resetValue>
