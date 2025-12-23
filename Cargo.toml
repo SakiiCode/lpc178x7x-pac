@@ -2,12 +2,13 @@
 name = "lpc178x7x-pac"
 version = "0.1.0"
 edition = "2021"
+description = "Peripheral Access Crate for the NXP LPC17xx series microcontrollers"
 readme = "README.md"
-description="Peripheral Access Crate for the NXP LPC17xx series microcontrollers"
 repository = "https://github.com/SakiiCode/lpc178x7x-pac"
 license = "MIT"
 keywords = ["arm", "cortex-m", "lpc", "nxp", "svd2rust"]
 categories = ["embedded", "hardware-support", "no-std"]
+exclude = ["LPC178x7x-mod.svd", "generate.sh"]
 
 [dependencies]
 cortex-m = "0.7.6"
